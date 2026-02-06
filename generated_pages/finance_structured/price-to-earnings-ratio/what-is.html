@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A clear, simple explanation of price to earnings ratio - definition, key concepts, examples, and common misconceptions.">
+    <title>What is Price To Earnings Ratio? - Simple Explanation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { color: #1a1a1a; }
+        h2 { color: #2a2a2a; margin-top: 32px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        p { margin-bottom: 16px; }
+        .example { background: #f5f5f5; padding: 16px; border-radius: 8px; margin: 16px 0; }
+        h3 { color: #3a3a3a; margin-top: 24px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background: #f5f5f5; font-weight: 600; }
+        tr:nth-child(even) { background: #fafafa; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>What is Price To Earnings Ratio?</h1>
+
+        
+<style>
+.calculator {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+}
+.calculator h3 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.calculator label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.calculator button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.calculator button:hover {
+    background: #1557b0;
+}
+.calc-result {
+    margin-top: 16px;
+    padding: 12px;
+    background: white;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+.calc-result p {
+    margin: 8px 0;
+}
+.calc-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tab-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+.tab-btn.active {
+    background: #1a73e8;
+    color: white;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+</style>
+
+<div class="calculator" id="pe-calc">
+    <h3>Price-to-Earnings (P/E) Ratio Calculator</h3>
+    <div class="calc-grid">
+        <label>Stock Price ($): <input type="number" id="pe-price" value="150" min="0" step="0.01"></label>
+        <label>Earnings per Share ($): <input type="number" id="pe-eps" value="5" step="0.01"></label>
+    </div>
+    <button onclick="calcPE()">Calculate</button>
+    <div class="calc-result" id="pe-result"></div>
+</div>
+<script>
+function calcPE() {
+    const price = parseFloat(document.getElementById('pe-price').value);
+    const eps = parseFloat(document.getElementById('pe-eps').value);
+    if (eps === 0) {
+        document.getElementById('pe-result').innerHTML = '<p>EPS cannot be zero</p>';
+        return;
+    }
+    const pe = price / eps;
+    const earningsYield = (eps / price) * 100;
+    let interpretation = '';
+    if (pe < 15) interpretation = 'May indicate undervalued or slow growth';
+    else if (pe < 25) interpretation = 'Moderate valuation';
+    else interpretation = 'May indicate overvalued or high growth expected';
+    document.getElementById('pe-result').innerHTML = `
+        <p><strong>P/E Ratio:</strong> ${pe.toFixed(2)}</p>
+        <p><strong>Earnings Yield:</strong> ${earningsYield.toFixed(2)}%</p>
+        <p><em>${interpretation}</em></p>
+    `;
+}
+calcPE();
+</script>
+
+
+        <p>Price to earnings ratio is a financial metric that helps investors and analysts determine the value of a company by comparing its stock price to its earnings per share.</p>
+
+<p>The price to earnings ratio, often abbreviated as P/E ratio, is a useful tool for evaluating the performance of a company. It is calculated by dividing the current stock price of a company by its earnings per share, which is the amount of profit a company makes per share of stock. This ratio gives investors an idea of how much they are paying for each dollar of earnings. For example, if a company has a stock price of $50 and its earnings per share are $5, the P/E ratio would be 10, meaning that investors are paying $10 for every $1 of earnings.</p>
+
+<p>The P/E ratio can be used to compare the value of different companies within the same industry or to compare the value of a company to the overall market. A high P/E ratio may indicate that investors have high expectations for a company's future growth, while a low P/E ratio may indicate that a company is undervalued. However, it is essential to consider other factors, such as the company's financial health, management team, and industry trends, when making investment decisions. The P/E ratio is just one of many metrics that investors use to evaluate a company's potential for growth and profitability.</p>
+
+<p>In addition to its use in evaluating individual companies, the P/E ratio can also be used to compare the overall market to historical averages. This can help investors determine if the market is overvalued or undervalued, which can inform their investment decisions. The P/E ratio is a widely used metric, and its simplicity makes it accessible to investors of all levels. It is essential to understand the P/E ratio and how it is calculated to make informed investment decisions.</p>
+
+<p>The key components of the price to earnings ratio include:</p>
+<ul>
+  <li>Earnings per share, which is the amount of profit a company makes per share of stock</li>
+  <li>Stock price, which is the current market price of a company's stock</li>
+  <li>Industry averages, which provide a benchmark for comparing a company's P/E ratio to its peers</li>
+  <li>Historical averages, which provide a benchmark for comparing a company's P/E ratio to its past performance</li>
+  <li>Growth expectations, which can influence a company's P/E ratio by reflecting investors' expectations for future growth</li>
+  <li>Risk factors, such as debt and competition, which can impact a company's P/E ratio by affecting its financial health and potential for growth</li>
+</ul>
+
+<p>Some common misconceptions about the price to earnings ratio include:</p>
+<ul>
+  <li>That a high P/E ratio always indicates a company is overvalued, when in fact it may reflect high growth expectations</li>
+  <li>That a low P/E ratio always indicates a company is undervalued, when in fact it may reflect low growth expectations or poor financial health</li>
+  <li>That the P/E ratio is the only metric needed to evaluate a company, when in fact it should be considered in conjunction with other metrics, such as revenue growth and debt levels</li>
+  <li>That the P/E ratio is only relevant for individual companies, when in fact it can also be used to evaluate the overall market</li>
+</ul>
+
+<p>For example, consider a company that has a stock price of $20 and earnings per share of $2. If the company's industry average P/E ratio is 15, the company's P/E ratio would be 10, indicating that it may be undervalued compared to its peers. However, if the company has high growth expectations and a strong management team, its P/E ratio may be lower than its peers due to its potential for future growth.</p>
+
+<p>In summary, the price to earnings ratio is a financial metric that helps investors and analysts determine the value of a company by comparing its stock price to its earnings per share, providing a useful tool for evaluating a company's potential for growth and profitability.</p>
+    </article>
+</body>
+</html>

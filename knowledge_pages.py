@@ -34,6 +34,23 @@ try:
 except ImportError:
     GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "")
 
+try:
+    from config import XAI_API_KEY
+except ImportError:
+    XAI_API_KEY = os.environ.get("XAI_API_KEY", "")
+
+try:
+    from config import GROQ_API_KEY
+except ImportError:
+    GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
+
+# Try to import OpenAI SDK (used for xAI Grok and Groq)
+try:
+    from openai import OpenAI
+    OPENAI_SDK_AVAILABLE = True
+except ImportError:
+    OPENAI_SDK_AVAILABLE = False
+
 # Import calculators
 try:
     from calculators import get_calculator_html, get_calculator_for_topic
@@ -51,6 +68,241 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 TOPICS_FILE = BASE_DIR / "topics.json"
 GENERATED_LOG = BASE_DIR / "generated_pages_log.json"
 PENDING_TOPICS = BASE_DIR / "pending_topics.json"  # Topics discovered for future generation
+CANONICAL_CONCEPTS_DIR = BASE_DIR  # Where canonical_concepts_*.json files live
+ANGLE_REGISTRY_FILE = BASE_DIR / "angle_registry.json"
+
+
+def load_angle_registry():
+    """Load the frozen angle registry."""
+    if ANGLE_REGISTRY_FILE.exists():
+        return json.loads(ANGLE_REGISTRY_FILE.read_text())
+    return None
+
+
+def get_canonical_slug(concept, angle_id):
+    """
+    Generate the canonical slug for a concept+angle pair.
+    Uses the frozen angle registry - no positional prefixes allowed.
+    """
+    registry = load_angle_registry()
+    if not registry:
+        # Fallback to simple pattern
+        return slugify(concept) if angle_id == "definition" else f"{angle_id}-{slugify(concept)}"
+
+    angle_config = registry.get("angles", {}).get(angle_id)
+    if not angle_config:
+        return slugify(concept)
+
+    pattern = angle_config.get("slug_pattern", "{concept}")
+    return pattern.replace("{concept}", slugify(concept))
+
+
+def get_canonical_title(concept, angle_id):
+    """Generate the canonical title for a concept+angle pair."""
+    registry = load_angle_registry()
+    if not registry:
+        return concept.title()
+
+    angle_config = registry.get("angles", {}).get(angle_id)
+    if not angle_config:
+        return concept.title()
+
+    pattern = angle_config.get("title_pattern", "{Concept}")
+    return pattern.replace("{Concept}", concept.title())
+
+
+def get_concept_completion_status(concept, category, generated_set):
+    """
+    Check completion status for a single concept.
+    Returns dict with status per angle.
+    """
+    registry = load_angle_registry()
+    if not registry:
+        return {"error": "No angle registry found"}
+
+    angles = registry.get("angles", {})
+    concept_slug = slugify(concept)
+
+    status = {
+        "concept": concept,
+        "category": category,
+        "angles": {},
+        "required_complete": 0,
+        "required_total": 0,
+        "optional_complete": 0,
+        "optional_total": 0,
+        "is_complete": False,
+    }
+
+    for angle_id, angle_config in angles.items():
+        slug = get_canonical_slug(concept, angle_id)
+        is_required = angle_config.get("required", False)
+        exists = slug in generated_set
+
+        status["angles"][angle_id] = {
+            "slug": slug,
+            "exists": exists,
+            "required": is_required,
+        }
+
+        if is_required:
+            status["required_total"] += 1
+            if exists:
+                status["required_complete"] += 1
+        else:
+            status["optional_total"] += 1
+            if exists:
+                status["optional_complete"] += 1
+
+    # Concept is complete when all required angles exist
+    status["is_complete"] = status["required_complete"] == status["required_total"]
+
+    return status
+
+
+def get_category_completion_report(category):
+    """
+    Generate a completion report for all concepts in a category.
+    Shows exactly which concepts are missing which angles.
+    """
+    # Get concepts for this category
+    concepts = TOPIC_CATEGORIES.get(category, [])
+    if not concepts:
+        return {"error": f"No concepts found for category: {category}"}
+
+    # Load generated pages
+    log_data = load_generated_log()
+    generated = set()
+    for entry in log_data.get("generated", []):
+        if isinstance(entry, dict):
+            generated.add(entry.get("slug", ""))
+        else:
+            generated.add(slugify(str(entry)))
+
+    # Also check files on disk
+    category_dir = OUTPUT_DIR / category
+    if category_dir.exists():
+        for f in category_dir.glob("*.json"):
+            generated.add(f.stem)
+
+    report = {
+        "category": category,
+        "total_concepts": len(concepts),
+        "complete_concepts": 0,
+        "incomplete_concepts": [],
+        "missing_angles_summary": {},
+    }
+
+    registry = load_angle_registry()
+    if not registry:
+        return {"error": "No angle registry found"}
+
+    for concept in concepts:
+        status = get_concept_completion_status(concept, category, generated)
+
+        if status["is_complete"]:
+            report["complete_concepts"] += 1
+        else:
+            # Find missing required angles
+            missing = []
+            for angle_id, angle_status in status["angles"].items():
+                if angle_status["required"] and not angle_status["exists"]:
+                    missing.append(angle_id)
+                    # Track summary
+                    report["missing_angles_summary"][angle_id] = \
+                        report["missing_angles_summary"].get(angle_id, 0) + 1
+
+            report["incomplete_concepts"].append({
+                "concept": concept,
+                "missing_required": missing,
+                "required_complete": status["required_complete"],
+                "required_total": status["required_total"],
+            })
+
+    report["completion_percentage"] = (
+        report["complete_concepts"] / report["total_concepts"] * 100
+        if report["total_concepts"] > 0 else 0
+    )
+
+    return report
+
+
+def load_canonical_concepts(domain):
+    """
+    Load the canonical concept list for a domain.
+    These are the AUTHORITATIVE concepts for closure tracking.
+
+    Returns: dict with concepts by subcategory, or None if not found
+    """
+    canonical_file = CANONICAL_CONCEPTS_DIR / f"canonical_concepts_{domain}.json"
+    if canonical_file.exists():
+        data = json.loads(canonical_file.read_text())
+        return data
+    return None
+
+
+def get_canonical_concept_list(domain):
+    """
+    Get flat list of all canonical concepts for a domain.
+    """
+    data = load_canonical_concepts(domain)
+    if not data:
+        return []
+
+    concepts = []
+    for subcategory, concept_list in data.get("concepts", {}).items():
+        concepts.extend(concept_list)
+
+    return concepts
+
+
+def get_domain_closure_status(domain):
+    """
+    Get closure status for a domain using canonical concepts.
+    """
+    canonical = load_canonical_concepts(domain)
+    if not canonical:
+        return {"error": f"No canonical concepts file for domain: {domain}"}
+
+    concepts = get_canonical_concept_list(domain)
+    log_data = load_generated_log()
+    generated = set(g.lower() for g in log_data.get("generated", []))
+
+    # Calculate coverage against canonical list
+    covered = 0
+    uncovered = []
+
+    for concept in concepts:
+        # Check if base or any angle exists
+        if concept.lower() in generated:
+            covered += 1
+        else:
+            # Check angles
+            has_angle = False
+            for pattern in CANONICAL_EXPANSIONS:
+                expanded = pattern.format(topic=concept).lower()
+                if expanded in generated:
+                    has_angle = True
+                    break
+            if has_angle:
+                covered += 1
+            else:
+                uncovered.append(concept)
+
+    total = len(concepts)
+    percentage = (covered / total * 100) if total > 0 else 0
+
+    return {
+        "domain": domain,
+        "total_concepts": total,
+        "covered": covered,
+        "uncovered_count": len(uncovered),
+        "percentage": percentage,
+        "boundary": canonical.get("boundary", {}),
+        "thresholds": canonical.get("closure_metrics", {}),
+        "is_closed": percentage >= 98.0,
+        "uncovered_sample": uncovered[:20],
+    }
 
 
 def log(message, level="INFO"):
@@ -151,6 +403,215 @@ Structure (follow exactly):
 Constraints:
 - 600-900 words total
 - Clear hierarchy and organization
+- No emojis
+- Evergreen content only"""
+
+
+# =============================================================================
+# QUESTION-FRAME PROMPTS (Upgrade 3: Question Templates)
+# =============================================================================
+
+HOW_IT_WORKS_PROMPT = """You are generating an evergreen "how it works" explanation page.
+
+Topic: How {topic} works
+
+Rules:
+- Focus on mechanism, process, and steps
+- 8th-grade reading level
+- No opinions, no dates, no trends
+- Explain cause and effect clearly
+
+Structure (follow exactly):
+1. QUICK ANSWER: 1-2 sentences explaining the core mechanism
+2. STEP-BY-STEP PROCESS: Break down how it works into 4-6 clear steps
+3. KEY COMPONENTS: What parts/elements are involved and their roles
+4. VISUAL ANALOGY: One simple analogy that makes the mechanism intuitive
+5. COMMON QUESTIONS: 3-4 "but what about..." questions people have
+6. SUMMARY: One sentence capturing the essential mechanism
+
+Constraints:
+- 500-700 words total
+- Process-focused language (first, then, next, finally)
+- No emojis
+- Evergreen content only"""
+
+
+WHY_IT_MATTERS_PROMPT = """You are generating an evergreen "why it matters" explanation page.
+
+Topic: Why {topic} matters
+
+Rules:
+- Focus on importance, impact, and relevance
+- 8th-grade reading level
+- No opinions, no dates, no trends
+- Concrete benefits and consequences
+
+Structure (follow exactly):
+1. CORE IMPORTANCE: 1-2 sentences on why this concept matters
+2. REAL-WORLD IMPACT: 3-4 ways this affects everyday life or decisions
+3. WHAT HAPPENS WITHOUT IT: Consequences of ignoring or not understanding this
+4. WHO NEEDS TO KNOW THIS: Groups of people for whom this is especially relevant
+5. CONNECTION TO BIGGER PICTURE: How this fits into larger systems or concepts
+6. SUMMARY: One sentence on the essential importance
+
+Constraints:
+- 400-600 words total
+- Benefit-focused language
+- No emojis
+- Evergreen content only"""
+
+
+EXAMPLES_PROMPT = """You are generating an evergreen examples page.
+
+Topic: Examples of {topic}
+
+Rules:
+- Focus on concrete, relatable examples
+- 8th-grade reading level
+- No opinions, no dates, no trends
+- Variety of contexts and scales
+
+Structure (follow exactly):
+1. INTRODUCTION: Brief definition of {topic} to set context
+2. EVERYDAY EXAMPLES: 3-4 examples from daily life everyone can relate to
+3. NOTABLE EXAMPLES: 2-3 well-known or classic examples
+4. EDGE CASES: 1-2 unusual or surprising examples that still qualify
+5. NON-EXAMPLES: 2-3 things people often confuse for this but aren't
+6. PATTERN: What do all valid examples have in common?
+
+Constraints:
+- 500-700 words total
+- Concrete and specific (names, numbers, scenarios)
+- No emojis
+- Evergreen content only"""
+
+
+MISCONCEPTIONS_PROMPT = """You are generating an evergreen misconceptions/myths page.
+
+Topic: Common misconceptions about {topic}
+
+Rules:
+- Focus on what people get wrong and why
+- 8th-grade reading level
+- No opinions, no dates, no trends
+- Respectful correction, not condescension
+
+Structure (follow exactly):
+1. INTRODUCTION: Why misconceptions about {topic} are common
+2. MISCONCEPTION LIST: 5-7 common myths, each with:
+   - The myth (what people believe)
+   - The reality (what's actually true)
+   - Why people believe this (the source of confusion)
+3. HOW TO REMEMBER: Simple tips to avoid these mistakes
+4. SUMMARY: The one thing to remember to avoid confusion
+
+Constraints:
+- 500-700 words total
+- "Myth vs Reality" format
+- No emojis
+- Evergreen content only"""
+
+
+BEGINNER_GUIDE_PROMPT = """You are generating an evergreen beginner's guide page.
+
+Topic: {topic} for beginners
+
+Rules:
+- Assume zero prior knowledge
+- 6th-grade reading level (simpler than usual)
+- No jargon without immediate explanation
+- Encouraging and accessible tone
+
+Structure (follow exactly):
+1. WHAT YOU'LL LEARN: 1-2 sentences on what this guide covers
+2. THE BASICS: Simplest possible explanation of {topic}
+3. KEY TERMS: 4-6 vocabulary words with plain definitions
+4. FIRST STEPS: What a beginner should do or understand first
+5. COMMON BEGINNER MISTAKES: 3-4 pitfalls to avoid
+6. NEXT STEPS: What to learn after mastering the basics
+
+Constraints:
+- 400-600 words total
+- Short sentences, simple words
+- No emojis
+- Evergreen content only"""
+
+
+WHAT_AFFECTS_PROMPT = """You are generating an evergreen "what affects" explanation page.
+
+Topic: What affects {topic}
+
+Rules:
+- Focus on factors, influences, and variables
+- 8th-grade reading level
+- No opinions, no dates, no trends
+- Cause-and-effect relationships
+
+Structure (follow exactly):
+1. INTRODUCTION: Brief definition of {topic} and why understanding influences matters
+2. MAIN FACTORS: 5-7 things that affect {topic}, each with:
+   - The factor name
+   - How it influences {topic}
+   - Whether the effect is positive, negative, or variable
+3. INTERCONNECTIONS: How these factors relate to each other
+4. CONTROLLABLE VS UNCONTROLLABLE: Which factors can be managed
+5. SUMMARY: The most important factors to understand
+
+Constraints:
+- 500-700 words total
+- Clear cause-effect language
+- No emojis
+- Evergreen content only"""
+
+
+WHAT_DEPENDS_ON_PROMPT = """You are generating an evergreen "what it depends on" explanation page.
+
+Topic: What {topic} depends on
+
+Rules:
+- Focus on prerequisites, requirements, and foundations
+- 8th-grade reading level
+- No opinions, no dates, no trends
+- Dependency relationships
+
+Structure (follow exactly):
+1. INTRODUCTION: Brief definition of {topic} and why dependencies matter
+2. KEY DEPENDENCIES: 4-6 things {topic} requires or depends on, each with:
+   - The dependency
+   - Why it's necessary
+   - What happens without it
+3. ORDER OF IMPORTANCE: Which dependencies are most critical
+4. COMMON GAPS: What people often overlook or assume
+5. SUMMARY: The essential foundation for {topic}
+
+Constraints:
+- 400-600 words total
+- Prerequisite-focused language
+- No emojis
+- Evergreen content only"""
+
+
+WHAT_USED_FOR_PROMPT = """You are generating an evergreen "what it's used for" explanation page.
+
+Topic: What {topic} is used for
+
+Rules:
+- Focus on applications, purposes, and practical uses
+- 8th-grade reading level
+- No opinions, no dates, no trends
+- Real-world applications
+
+Structure (follow exactly):
+1. INTRODUCTION: Brief definition of {topic} and its general purpose
+2. PRIMARY USES: 3-4 main applications with concrete examples
+3. SECONDARY USES: 2-3 less common but valid applications
+4. WHO USES IT: Groups or fields that rely on {topic}
+5. LIMITATIONS: What {topic} is NOT used for (to avoid confusion)
+6. SUMMARY: The core purpose of {topic}
+
+Constraints:
+- 500-700 words total
+- Application-focused language
 - No emojis
 - Evergreen content only"""
 
@@ -430,6 +891,386 @@ TOPIC_CATEGORIES = {
 }
 
 
+# =============================================================================
+# CANONICAL EXPANSION ENGINE (Upgrade 1)
+# =============================================================================
+# Turn one topic into 12 pages covering every canonical angle
+# Based on: How humans naturally ask questions about any concept
+
+CANONICAL_EXPANSIONS = [
+    # 1. Base definition (what is X)
+    "{topic}",
+
+    # 2-4. Core understanding angles
+    "how does {topic} work",           # Mechanism
+    "why {topic} matters",             # Importance
+    "examples of {topic}",             # Concrete illustrations
+
+    # 5-7. Structure angles (some concepts won't have all 3)
+    "parts of {topic}",                # Components
+    "stages of {topic}",               # Process/sequence
+    "types of {topic}",                # Categories
+
+    # 8-10. Relationship angles
+    "what affects {topic}",            # Influences
+    "what {topic} depends on",         # Prerequisites
+    "what {topic} is used for",        # Applications
+
+    # 11-12. Clarification angles
+    "common misconceptions about {topic}",  # Myth-busting
+    "{topic} for beginners",           # Entry-level guide
+]
+
+# The 12 Canonical Angles (for reference and completeness tracking)
+CANONICAL_ANGLES = [
+    "definition",      # What is X
+    "how",             # How does X work
+    "why",             # Why does X matter
+    "examples",        # Examples of X
+    "parts",           # Parts of X
+    "stages",          # Stages of X
+    "types",           # Types of X
+    "affects",         # What affects X
+    "depends",         # What X depends on
+    "used_for",        # What X is used for
+    "misconceptions",  # Common misconceptions about X
+    "beginner",        # X for beginners
+]
+
+# Map expansion patterns to their prompt/angle types
+EXPANSION_TO_PROMPT_TYPE = {
+    "how does {topic} work": "how",
+    "why {topic} matters": "why",
+    "examples of {topic}": "examples",
+    "parts of {topic}": "parts",
+    "stages of {topic}": "stages",
+    "types of {topic}": "types",
+    "what affects {topic}": "affects",
+    "what {topic} depends on": "depends",
+    "what {topic} is used for": "used_for",
+    "common misconceptions about {topic}": "misconceptions",
+    "{topic} for beginners": "beginner",
+}
+
+# Reverse mapping: angle ID to human-readable topic pattern
+EXPANSION_TO_PATTERN = {
+    "definition": "{topic}",
+    "how": "how does {topic} work",
+    "why": "why {topic} matters",
+    "examples": "examples of {topic}",
+    "parts": "parts of {topic}",
+    "stages": "stages of {topic}",
+    "types": "types of {topic}",
+    "affects": "what affects {topic}",
+    "depends": "what {topic} depends on",
+    "used_for": "what {topic} is used for",
+    "misconceptions": "common misconceptions about {topic}",
+    "beginner": "{topic} for beginners",
+}
+
+# Which angles are optional (not all concepts have these)
+OPTIONAL_ANGLES = {"parts", "stages", "types"}
+
+
+def expand_topic_to_angles(topic):
+    """
+    Explode one topic into multiple canonical angles.
+
+    Example: "compound interest" becomes:
+    - compound interest (definition)
+    - how does compound interest work
+    - why compound interest matters
+    - examples of compound interest
+    - common misconceptions about compound interest
+    - compound interest for beginners
+
+    Returns list of expanded topic strings.
+    """
+    expanded = []
+    for pattern in CANONICAL_EXPANSIONS:
+        expanded_topic = pattern.format(topic=topic)
+        expanded.append(expanded_topic)
+    return expanded
+
+
+def get_all_expanded_topics(categories=None):
+    """
+    Get all topics expanded into all canonical angles.
+    Uses the frozen angle registry for canonical naming.
+
+    Args:
+        categories: List of category names to expand, or None for all
+
+    Returns:
+        List of {"topic": str, "base_topic": str, "category": str, "angle": str, "canonical_slug": str}
+    """
+    all_expanded = []
+
+    # Try to use the angle registry for canonical slugs
+    registry = load_angle_registry()
+    angles_from_registry = registry.get("angles", {}) if registry else {}
+
+    for category, topics in TOPIC_CATEGORIES.items():
+        # Skip comparison/classification - they have their own formats
+        if category in ["comparisons", "classifications"]:
+            continue
+        if categories and category not in categories:
+            continue
+
+        for base_topic in topics:
+            # If we have a registry, use it for canonical expansion
+            if angles_from_registry:
+                for angle_id, angle_config in angles_from_registry.items():
+                    # Generate display topic (human-readable)
+                    pattern = EXPANSION_TO_PATTERN.get(angle_id, "{topic}")
+                    expanded_topic = pattern.format(topic=base_topic)
+
+                    # Generate canonical slug (machine-readable, no a-b-c prefixes)
+                    canonical_slug = get_canonical_slug(base_topic, angle_id)
+
+                    all_expanded.append({
+                        "topic": expanded_topic,
+                        "base_topic": base_topic,
+                        "category": category,
+                        "angle": angle_id,
+                        "canonical_slug": canonical_slug,
+                        "required": angle_config.get("required", False),
+                    })
+            else:
+                # Fallback to old pattern-based expansion
+                for pattern in CANONICAL_EXPANSIONS:
+                    expanded_topic = pattern.format(topic=base_topic)
+
+                    # Determine the angle type
+                    if pattern == "{topic}":
+                        angle = "definition"
+                    else:
+                        angle = EXPANSION_TO_PROMPT_TYPE.get(pattern, "definition")
+
+                    all_expanded.append({
+                        "topic": expanded_topic,
+                        "base_topic": base_topic,
+                        "category": category,
+                        "angle": angle,
+                        "canonical_slug": slugify(expanded_topic),
+                    })
+
+    # Also include comparisons and classifications as-is
+    for category in ["comparisons", "classifications"]:
+        if categories and category not in categories:
+            continue
+        for topic in TOPIC_CATEGORIES.get(category, []):
+            all_expanded.append({
+                "topic": topic,
+                "base_topic": topic,
+                "category": category,
+                "angle": "comparison" if category == "comparisons" else "classification",
+            })
+
+    return all_expanded
+
+
+def count_expanded_topics():
+    """Count total pages possible with canonical expansion."""
+    expanded = get_all_expanded_topics()
+    return len(expanded)
+
+
+# =============================================================================
+# CONCEPT GRAPH (Upgrade 2)
+# =============================================================================
+# Track relationships: parents, children, related, comparisons
+
+CONCEPT_GRAPH_FILE = BASE_DIR / "concept_graph.json"
+
+
+def load_concept_graph():
+    """Load the concept graph from file."""
+    if CONCEPT_GRAPH_FILE.exists():
+        return json.loads(CONCEPT_GRAPH_FILE.read_text())
+    return {}
+
+
+def save_concept_graph(graph):
+    """Save the concept graph to file."""
+    CONCEPT_GRAPH_FILE.write_text(json.dumps(graph, indent=2))
+
+
+def add_concept_to_graph(concept, parents=None, children=None, related=None, comparisons=None):
+    """
+    Add or update a concept in the graph.
+
+    Args:
+        concept: The concept name (lowercase)
+        parents: List of parent/broader concepts
+        children: List of child/narrower concepts
+        related: List of related concepts (not hierarchical)
+        comparisons: List of concepts commonly compared with this one
+    """
+    graph = load_concept_graph()
+
+    concept_lower = concept.lower()
+
+    if concept_lower not in graph:
+        graph[concept_lower] = {
+            "parents": [],
+            "children": [],
+            "related": [],
+            "comparisons": [],
+        }
+
+    # Merge new relationships (avoid duplicates)
+    if parents:
+        graph[concept_lower]["parents"] = list(set(graph[concept_lower]["parents"] + [p.lower() for p in parents]))
+    if children:
+        graph[concept_lower]["children"] = list(set(graph[concept_lower]["children"] + [c.lower() for c in children]))
+    if related:
+        graph[concept_lower]["related"] = list(set(graph[concept_lower]["related"] + [r.lower() for r in related]))
+    if comparisons:
+        graph[concept_lower]["comparisons"] = list(set(graph[concept_lower]["comparisons"] + [c.lower() for c in comparisons]))
+
+    save_concept_graph(graph)
+    return graph[concept_lower]
+
+
+def generate_concept_relationships(topic):
+    """
+    Use AI to extract concept relationships for a topic.
+    Returns dict with parents, children, related, comparisons.
+    """
+    prompt = f"""Analyze the concept "{topic}" and identify its relationships.
+
+Return ONLY a JSON object with these keys (no other text):
+{{
+    "parents": ["broader concepts this falls under, max 3"],
+    "children": ["narrower sub-concepts, max 5"],
+    "related": ["related but not hierarchical concepts, max 5"],
+    "comparisons": ["concepts commonly compared with this, max 3"]
+}}
+
+Rules:
+- Use lowercase for all terms
+- Only include real, commonly searched concepts
+- Parents should be broader categories
+- Children should be specific subtopics
+- Related should be adjacent concepts
+- Comparisons should be things people often confuse or compare
+
+Example for "compound interest":
+{{
+    "parents": ["interest", "finance"],
+    "children": ["compound interest formula", "continuous compounding", "compound frequency"],
+    "related": ["time value of money", "exponential growth", "savings account"],
+    "comparisons": ["simple interest"]
+}}
+
+Now analyze: "{topic}"
+"""
+
+    try:
+        if GENAI_AVAILABLE:
+            response = generate_with_gemini_prompt(prompt)
+        else:
+            response = generate_with_requests_prompt(prompt)
+
+        # Extract JSON from response
+        # Handle potential markdown code blocks
+        text = response.strip()
+        if text.startswith("```"):
+            text = text.split("```")[1]
+            if text.startswith("json"):
+                text = text[4:]
+        text = text.strip()
+
+        return json.loads(text)
+
+    except Exception as e:
+        log(f"Failed to generate relationships for {topic}: {e}", "ERROR")
+        return {"parents": [], "children": [], "related": [], "comparisons": []}
+
+
+def build_concept_graph_for_topics(topics=None, use_ai=True):
+    """
+    Build/expand the concept graph for given topics.
+
+    Args:
+        topics: List of topics, or None for all TOPIC_CATEGORIES
+        use_ai: Whether to use AI to generate relationships
+    """
+    if topics is None:
+        topics = []
+        for category, topic_list in TOPIC_CATEGORIES.items():
+            if category not in ["comparisons", "classifications"]:
+                topics.extend(topic_list)
+
+    graph = load_concept_graph()
+    added = 0
+
+    for topic in topics:
+        topic_lower = topic.lower()
+
+        # Skip if already in graph with relationships
+        if topic_lower in graph and any(graph[topic_lower].values()):
+            continue
+
+        log(f"Building graph for: {topic}")
+
+        if use_ai:
+            relationships = generate_concept_relationships(topic)
+            add_concept_to_graph(
+                topic,
+                parents=relationships.get("parents", []),
+                children=relationships.get("children", []),
+                related=relationships.get("related", []),
+                comparisons=relationships.get("comparisons", []),
+            )
+            added += 1
+
+            # Rate limiting
+            import time
+            time.sleep(1)
+        else:
+            # Just add empty entry
+            add_concept_to_graph(topic)
+            added += 1
+
+    log(f"Added {added} concepts to graph", "SUCCESS")
+    return load_concept_graph()
+
+
+def get_comparison_pairs_from_graph():
+    """
+    Extract all comparison pairs from the concept graph.
+    Returns list of "X vs Y" strings for comparison page generation.
+    """
+    graph = load_concept_graph()
+    pairs = set()
+
+    for concept, relations in graph.items():
+        for comparison in relations.get("comparisons", []):
+            # Create canonical pair (alphabetical order to avoid duplicates)
+            pair = tuple(sorted([concept, comparison]))
+            pairs.add(pair)
+
+    # Format as "X vs Y"
+    return [f"{a} vs {b}" for a, b in pairs]
+
+
+def get_child_topics_from_graph():
+    """
+    Extract all child topics from the graph for expansion.
+    Returns list of topics that could be generated.
+    """
+    graph = load_concept_graph()
+    children = set()
+
+    for concept, relations in graph.items():
+        for child in relations.get("children", []):
+            children.add(child)
+
+    return list(children)
+
+
 def get_all_topics():
     """Get all topics from all categories."""
     all_topics = []
@@ -449,6 +1290,381 @@ def load_generated_log():
 def save_generated_log(log_data):
     """Save generation log."""
     GENERATED_LOG.write_text(json.dumps(log_data, indent=2))
+
+
+# =============================================================================
+# COMPLETENESS TRACKING (Upgrade 4: Done Metrics)
+# =============================================================================
+# Four metrics define "DONE":
+# 1. Concept Coverage: Do we have pages for all concepts?
+# 2. Angle Coverage: Does each concept have all 12 angles?
+# 3. Graph Connectivity: Are concepts connected (no orphans)?
+# 4. Question Coverage: Do all question frames resolve to pages?
+
+def calculate_concept_coverage(category=None):
+    """
+    METRIC 1: Concept Coverage
+    What % of canonical concepts have at least one page?
+
+    Returns: dict with count, total, percentage
+    """
+    log_data = load_generated_log()
+    generated = set(g.lower() for g in log_data.get("generated", []))
+
+    # Get all base concepts (not expansions)
+    if category:
+        concepts = [t.lower() for t in TOPIC_CATEGORIES.get(category, [])]
+    else:
+        concepts = []
+        for cat, topics in TOPIC_CATEGORIES.items():
+            if cat not in ["comparisons", "classifications"]:
+                concepts.extend(t.lower() for t in topics)
+
+    # Check which concepts have at least one page (base or any angle)
+    covered = 0
+    uncovered = []
+
+    for concept in concepts:
+        # Check if base concept or any angle exists
+        has_page = concept in generated
+        if not has_page:
+            for pattern in CANONICAL_EXPANSIONS:
+                expanded = pattern.format(topic=concept).lower()
+                if expanded in generated:
+                    has_page = True
+                    break
+
+        if has_page:
+            covered += 1
+        else:
+            uncovered.append(concept)
+
+    total = len(concepts)
+    percentage = (covered / total * 100) if total > 0 else 0
+
+    return {
+        "covered": covered,
+        "total": total,
+        "percentage": percentage,
+        "uncovered": uncovered[:20],  # First 20 uncovered
+        "done": percentage >= 98.0,
+    }
+
+
+def calculate_angle_coverage(category=None):
+    """
+    METRIC 2: Angle Coverage
+    What % of concepts have all 12 canonical angles?
+
+    Returns: dict with stats and gaps
+    """
+    log_data = load_generated_log()
+    generated = set(g.lower() for g in log_data.get("generated", []))
+
+    # Get base concepts
+    if category:
+        concepts = [t.lower() for t in TOPIC_CATEGORIES.get(category, [])]
+    else:
+        concepts = []
+        for cat, topics in TOPIC_CATEGORIES.items():
+            if cat not in ["comparisons", "classifications"]:
+                concepts.extend(t.lower() for t in topics)
+
+    # Required angles (excluding optional structure angles)
+    required_angles = [a for a in CANONICAL_ANGLES if a not in OPTIONAL_ANGLES]
+    num_required = len(required_angles)  # 9 required angles
+
+    # Track coverage per concept
+    fully_covered = 0
+    partial_coverage = []
+    gaps = []
+
+    for concept in concepts:
+        angles_present = 0
+        missing_angles = []
+
+        for pattern in CANONICAL_EXPANSIONS:
+            expanded = pattern.format(topic=concept).lower()
+            angle_type = EXPANSION_TO_PROMPT_TYPE.get(pattern, "definition")
+
+            if expanded in generated:
+                angles_present += 1
+            elif angle_type not in OPTIONAL_ANGLES:
+                missing_angles.append(angle_type)
+
+        # Count as fully covered if >= 10/12 angles (allowing 2 optional missing)
+        if angles_present >= 10:
+            fully_covered += 1
+        else:
+            partial_coverage.append({
+                "concept": concept,
+                "angles": angles_present,
+                "missing": missing_angles[:3],
+            })
+
+    total = len(concepts)
+    percentage = (fully_covered / total * 100) if total > 0 else 0
+
+    # Get top gaps (most common missing angles)
+    angle_gaps = {}
+    for pc in partial_coverage:
+        for angle in pc.get("missing", []):
+            angle_gaps[angle] = angle_gaps.get(angle, 0) + 1
+
+    top_gaps = sorted(angle_gaps.items(), key=lambda x: -x[1])[:5]
+
+    return {
+        "fully_covered": fully_covered,
+        "total": total,
+        "percentage": percentage,
+        "partial": partial_coverage[:10],
+        "top_gaps": top_gaps,
+        "done": percentage >= 95.0,
+    }
+
+
+def calculate_graph_connectivity():
+    """
+    METRIC 3: Graph Connectivity
+    What % of concepts are orphans (no connections)?
+
+    Returns: dict with orphan stats
+    """
+    graph = load_concept_graph()
+
+    if not graph:
+        return {
+            "total_nodes": 0,
+            "orphans": 0,
+            "orphan_percentage": 100.0,
+            "orphan_list": [],
+            "done": False,
+        }
+
+    orphans = []
+
+    for concept, relations in graph.items():
+        has_parent = bool(relations.get("parents"))
+        has_child = bool(relations.get("children"))
+        has_related = bool(relations.get("related"))
+        has_comparison = bool(relations.get("comparisons"))
+
+        # Orphan if no connections at all
+        if not (has_parent or has_child or has_related or has_comparison):
+            orphans.append(concept)
+
+    total = len(graph)
+    orphan_count = len(orphans)
+    orphan_percentage = (orphan_count / total * 100) if total > 0 else 100
+
+    return {
+        "total_nodes": total,
+        "orphans": orphan_count,
+        "orphan_percentage": orphan_percentage,
+        "orphan_list": orphans[:20],
+        "done": orphan_percentage <= 2.0,
+    }
+
+
+def calculate_question_coverage(category=None):
+    """
+    METRIC 4: Question-Space Coverage
+    What % of (concept x question_frame) combinations resolve to pages?
+
+    Returns: dict with coverage stats
+    """
+    log_data = load_generated_log()
+    generated = set(g.lower() for g in log_data.get("generated", []))
+
+    # Get base concepts
+    if category:
+        concepts = [t.lower() for t in TOPIC_CATEGORIES.get(category, [])]
+    else:
+        concepts = []
+        for cat, topics in TOPIC_CATEGORIES.items():
+            if cat not in ["comparisons", "classifications"]:
+                concepts.extend(t.lower() for t in topics)
+
+    # Count all question-frame combinations
+    total_questions = 0
+    resolved_questions = 0
+    unresolved = []
+
+    for concept in concepts:
+        for pattern in CANONICAL_EXPANSIONS:
+            question = pattern.format(topic=concept).lower()
+            total_questions += 1
+
+            if question in generated:
+                resolved_questions += 1
+            else:
+                if len(unresolved) < 50:
+                    unresolved.append(question)
+
+    percentage = (resolved_questions / total_questions * 100) if total_questions > 0 else 0
+
+    return {
+        "resolved": resolved_questions,
+        "total": total_questions,
+        "percentage": percentage,
+        "unresolved": unresolved[:20],
+        "done": percentage >= 95.0,
+    }
+
+
+def calculate_completeness(category=None):
+    """
+    Calculate all five completeness metrics.
+
+    Returns: dict with all metrics and overall done status
+    """
+    concept_cov = calculate_concept_coverage(category)
+    angle_cov = calculate_angle_coverage(category)
+    graph_conn = calculate_graph_connectivity()
+    question_cov = calculate_question_coverage(category)
+    calc_cov = calculate_calculator_coverage(category)
+
+    # Overall done: all 5 metrics pass
+    all_done = (
+        concept_cov["done"] and
+        angle_cov["done"] and
+        graph_conn["done"] and
+        question_cov["done"] and
+        calc_cov["done"]
+    )
+
+    return {
+        "concept_coverage": concept_cov,
+        "angle_coverage": angle_cov,
+        "graph_connectivity": graph_conn,
+        "question_coverage": question_cov,
+        "calculator_coverage": calc_cov,
+        "all_done": all_done,
+        "category": category or "all",
+    }
+
+
+def calculate_calculator_coverage(category=None):
+    """
+    METRIC 5: Calculator Coverage
+    What % of calculator-eligible pages have working calculators?
+
+    Returns: dict with calculator stats
+    """
+    if not CALCULATORS_AVAILABLE:
+        return {
+            "eligible": 0,
+            "covered": 0,
+            "percentage": 0,
+            "missing": [],
+            "done": True,  # No calculators module = skip this metric
+        }
+
+    from calculators import CALCULATOR_TOPICS, CALCULATORS
+
+    # Get base concepts for category
+    if category:
+        concepts = [t.lower() for t in TOPIC_CATEGORIES.get(category, [])]
+    else:
+        concepts = []
+        for cat, topics in TOPIC_CATEGORIES.items():
+            if cat not in ["comparisons", "classifications"]:
+                concepts.extend(t.lower() for t in topics)
+
+    eligible = []
+    covered = []
+    missing = []
+
+    for concept in concepts:
+        calc_type = CALCULATOR_TOPICS.get(concept)
+
+        if calc_type is None:
+            # Explicitly marked as no calculator needed
+            continue
+
+        eligible.append(concept)
+
+        if calc_type in CALCULATORS:
+            covered.append(concept)
+        else:
+            missing.append({"concept": concept, "calc_type": calc_type})
+
+    total_eligible = len(eligible)
+    total_covered = len(covered)
+    percentage = (total_covered / total_eligible * 100) if total_eligible > 0 else 100
+
+    return {
+        "eligible": total_eligible,
+        "covered": total_covered,
+        "percentage": percentage,
+        "missing": missing[:20],
+        "done": percentage >= 95.0,
+    }
+
+
+def get_next_actions(completeness):
+    """
+    Based on completeness metrics, recommend what to do next.
+
+    Returns: list of actionable recommendations
+    """
+    actions = []
+
+    cc = completeness["concept_coverage"]
+    ac = completeness["angle_coverage"]
+    gc = completeness["graph_connectivity"]
+    qc = completeness["question_coverage"]
+
+    # Priority 1: Concept coverage (need base concepts first)
+    if not cc["done"]:
+        uncovered = cc.get("uncovered", [])[:5]
+        actions.append({
+            "priority": 1,
+            "action": "Generate base definition pages",
+            "reason": f"Only {cc['percentage']:.1f}% concept coverage (need 98%)",
+            "command": f"--topic \"{uncovered[0]}\"" if uncovered else "--count 10",
+            "targets": uncovered,
+        })
+
+    # Priority 2: Graph connectivity (need relationships)
+    if not gc["done"] and gc["total_nodes"] < len(TOPIC_CATEGORIES.get("finance", [])):
+        actions.append({
+            "priority": 2,
+            "action": "Build concept graph",
+            "reason": f"Only {gc['total_nodes']} concepts in graph",
+            "command": "--build-graph --count 20",
+        })
+
+    # Priority 3: Angle coverage (expand existing concepts)
+    if not ac["done"] and cc["percentage"] > 50:
+        top_gaps = ac.get("top_gaps", [])
+        gap_angles = [g[0] for g in top_gaps[:3]]
+        actions.append({
+            "priority": 3,
+            "action": "Generate missing angles",
+            "reason": f"Only {ac['percentage']:.1f}% angle coverage (need 95%)",
+            "command": "--generate-expanded --count 20",
+            "focus_angles": gap_angles,
+        })
+
+    # Priority 4: Question coverage
+    if not qc["done"] and ac["percentage"] > 80:
+        actions.append({
+            "priority": 4,
+            "action": "Fill question gaps",
+            "reason": f"Only {qc['percentage']:.1f}% question coverage (need 95%)",
+            "command": "--generate-expanded --count 50",
+        })
+
+    if not actions:
+        actions.append({
+            "priority": 0,
+            "action": "Domain complete!",
+            "reason": "All metrics pass thresholds",
+            "command": "Move to next domain",
+        })
+
+    return sorted(actions, key=lambda x: x["priority"])
 
 
 # =============================================================================
@@ -513,22 +1729,147 @@ def generate_with_requests_prompt(prompt):
         raise Exception(f"API error: {response.status_code}")
 
 
+def generate_with_grok(prompt, model="grok-2"):
+    """
+    Generate content using xAI Grok API.
+    Uses OpenAI-compatible SDK with xAI base URL.
+
+    Models available:
+    - grok-2: Most capable ($5/$15 per 1M tokens)
+    - grok-2-mini: Faster, cheaper ($2/$10 per 1M tokens)
+    """
+    if not OPENAI_SDK_AVAILABLE:
+        raise Exception("OpenAI SDK not installed. Run: pip install openai")
+
+    if not XAI_API_KEY:
+        raise Exception("XAI_API_KEY not configured in config.py")
+
+    client = OpenAI(
+        api_key=XAI_API_KEY,
+        base_url="https://api.x.ai/v1",
+    )
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": "You are an expert educational content writer creating evergreen reference pages."},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0.7,
+        max_tokens=2000,
+    )
+
+    return response.choices[0].message.content
+
+
+def generate_with_groq(prompt, model="llama-3.3-70b-versatile"):
+    """
+    Generate content using Groq API (fast inference).
+    Uses OpenAI-compatible SDK with Groq base URL.
+
+    Models available:
+    - llama-3.3-70b-versatile: Best quality (recommended)
+    - llama-3.1-8b-instant: Faster, smaller
+    - mixtral-8x7b-32768: Good alternative
+    - gemma2-9b-it: Google's Gemma
+
+    Free tier: 30 requests/minute, 14,400 requests/day
+    """
+    if not OPENAI_SDK_AVAILABLE:
+        raise Exception("OpenAI SDK not installed. Run: pip install openai")
+
+    if not GROQ_API_KEY:
+        raise Exception("GROQ_API_KEY not configured in config.py")
+
+    client = OpenAI(
+        api_key=GROQ_API_KEY,
+        base_url="https://api.groq.com/openai/v1",
+    )
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": "You are an expert educational content writer creating evergreen reference pages."},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0.7,
+        max_tokens=2000,
+    )
+
+    return response.choices[0].message.content
+
+
 def detect_page_type(topic):
-    """Detect what type of page this topic needs."""
+    """
+    Detect what type of page this topic needs.
+
+    Returns one of the 12 canonical angles + comparison/classification:
+    - "definition" (default - what is X)
+    - "comparison" (X vs Y)
+    - "classification" (for items in classifications category)
+    - "how" (how does X work)
+    - "why" (why X matters)
+    - "examples" (examples of X)
+    - "parts" (parts of X)
+    - "stages" (stages of X)
+    - "types" (types of X)
+    - "affects" (what affects X)
+    - "depends" (what X depends on)
+    - "used_for" (what X is used for)
+    - "misconceptions" (common misconceptions about X)
+    - "beginner" (X for beginners)
+    """
     topic_lower = topic.lower()
 
     # Comparison pages (X vs Y)
     if " vs " in topic_lower or " versus " in topic_lower:
         return "comparison"
 
-    # Classification pages
-    classification_keywords = [
-        "types of", "kinds of", "parts of", "stages of",
-        "layers of", "levels of", "branches of", "forms of"
-    ]
+    # Structure angles (parts/stages/types) - check before generic classification
+    if topic_lower.startswith("parts of "):
+        return "parts"
+    if topic_lower.startswith("stages of "):
+        return "stages"
+    if topic_lower.startswith("types of ") or topic_lower.startswith("kinds of "):
+        return "types"
+
+    # Other classification patterns (layers, levels, branches, forms)
+    classification_keywords = ["layers of", "levels of", "branches of", "forms of"]
     for keyword in classification_keywords:
         if topic_lower.startswith(keyword):
             return "classification"
+
+    # Question-frame pages
+    if topic_lower.startswith("how does ") and " work" in topic_lower:
+        return "how"
+    if topic_lower.startswith("how ") and " works" in topic_lower:
+        return "how"
+    if topic_lower.startswith("why ") and " matters" in topic_lower:
+        return "why"
+    if topic_lower.startswith("why ") and " is important" in topic_lower:
+        return "why"
+    if topic_lower.startswith("examples of "):
+        return "examples"
+
+    # Relationship angles
+    if topic_lower.startswith("what affects "):
+        return "affects"
+    if topic_lower.startswith("what ") and " depends on" in topic_lower:
+        return "depends"
+    if topic_lower.startswith("what ") and " is used for" in topic_lower:
+        return "used_for"
+
+    # Clarification angles
+    if topic_lower.startswith("common misconceptions about "):
+        return "misconceptions"
+    if topic_lower.startswith("myths about "):
+        return "misconceptions"
+    if topic_lower.endswith(" for beginners"):
+        return "beginner"
+    if topic_lower.startswith("introduction to "):
+        return "beginner"
+    if topic_lower.startswith("beginner's guide to "):
+        return "beginner"
 
     # Default: definition page
     return "definition"
@@ -538,22 +1879,127 @@ def get_prompt_for_topic(topic):
     """Get the appropriate prompt template for a topic."""
     page_type = detect_page_type(topic)
 
+    # Extract base topic for question-frame prompts
+    base_topic = extract_base_topic(topic)
+
     if page_type == "comparison":
         return COMPARISON_PAGE_PROMPT.format(topic=topic)
     elif page_type == "classification":
         return CLASSIFICATION_PAGE_PROMPT.format(topic=topic)
+    elif page_type == "how":
+        return HOW_IT_WORKS_PROMPT.format(topic=base_topic)
+    elif page_type == "why":
+        return WHY_IT_MATTERS_PROMPT.format(topic=base_topic)
+    elif page_type == "examples":
+        return EXAMPLES_PROMPT.format(topic=base_topic)
+    elif page_type in ("parts", "stages", "types"):
+        # Structure angles use classification prompt
+        return CLASSIFICATION_PAGE_PROMPT.format(topic=topic)
+    elif page_type == "affects":
+        return WHAT_AFFECTS_PROMPT.format(topic=base_topic)
+    elif page_type == "depends":
+        return WHAT_DEPENDS_ON_PROMPT.format(topic=base_topic)
+    elif page_type == "used_for":
+        return WHAT_USED_FOR_PROMPT.format(topic=base_topic)
+    elif page_type == "misconceptions":
+        return MISCONCEPTIONS_PROMPT.format(topic=base_topic)
+    elif page_type == "beginner":
+        return BEGINNER_GUIDE_PROMPT.format(topic=base_topic)
     else:
         return KNOWLEDGE_PAGE_PROMPT.format(topic=topic)
 
 
-def generate_content(topic):
-    """Generate page content using available method."""
+def extract_base_topic(topic):
+    """
+    Extract the base topic from a question-framed topic.
+
+    Examples:
+    - "how does compound interest work" -> "compound interest"
+    - "examples of photosynthesis" -> "photosynthesis"
+    - "compound interest for beginners" -> "compound interest"
+    - "parts of a cell" -> "a cell"
+    - "what affects inflation" -> "inflation"
+    - "what gravity is used for" -> "gravity"
+    """
+    topic_lower = topic.lower()
+
+    # Remove question frames (order matters - longer patterns first)
+    prefixes = [
+        "common misconceptions about ",
+        "beginner's guide to ",
+        "introduction to ",
+        "how does ",
+        "examples of ",
+        "myths about ",
+        "parts of ",
+        "stages of ",
+        "types of ",
+        "kinds of ",
+        "what affects ",
+        "how ",
+        "why ",
+        "what ",
+    ]
+
+    suffixes = [
+        " is used for",
+        " depends on",
+        " for beginners",
+        " is important",
+        " matters",
+        " works",
+        " work",
+    ]
+
+    result = topic_lower
+
+    for prefix in prefixes:
+        if result.startswith(prefix):
+            result = result[len(prefix):]
+            break
+
+    for suffix in suffixes:
+        if result.endswith(suffix):
+            result = result[:-len(suffix)]
+            break
+
+    return result.strip()
+
+
+def generate_content(topic, provider=None):
+    """
+    Generate page content using available method.
+
+    Provider priority (if not specified):
+    1. Groq - if GROQ_API_KEY is set (fast, free tier)
+    2. Grok (xAI) - if XAI_API_KEY is set
+    3. Gemini - if GOOGLE_API_KEY is set
+    """
     try:
         prompt = get_prompt_for_topic(topic)
         page_type = detect_page_type(topic)
         log(f"  Page type: {page_type}")
 
-        if GENAI_AVAILABLE:
+        # Determine provider
+        if provider is None:
+            if GROQ_API_KEY and OPENAI_SDK_AVAILABLE:
+                provider = "groq"
+            elif XAI_API_KEY and OPENAI_SDK_AVAILABLE:
+                provider = "grok"
+            elif GENAI_AVAILABLE and GOOGLE_API_KEY:
+                provider = "gemini"
+            elif GOOGLE_API_KEY:
+                provider = "gemini-rest"
+            else:
+                raise Exception("No API key configured (GROQ_API_KEY, XAI_API_KEY, or GOOGLE_API_KEY)")
+
+        log(f"  Provider: {provider}")
+
+        if provider == "groq":
+            return generate_with_groq(prompt)
+        elif provider == "grok":
+            return generate_with_grok(prompt, model="grok-2")
+        elif provider == "gemini":
             return generate_with_gemini_prompt(prompt)
         else:
             return generate_with_requests_prompt(prompt)
@@ -600,6 +2046,7 @@ date: {datetime.now().strftime("%Y-%m-%d")}
 def get_page_title(topic):
     """Generate appropriate title based on page type."""
     page_type = detect_page_type(topic)
+    base_topic = extract_base_topic(topic)
 
     if page_type == "comparison":
         # "ETF vs Mutual Fund" -> "ETF vs Mutual Fund: Key Differences Explained"
@@ -607,9 +2054,129 @@ def get_page_title(topic):
     elif page_type == "classification":
         # "Types of Ecosystems" -> "Types of Ecosystems: Complete Guide"
         return f"{topic.title()}: Complete Guide"
+    elif page_type == "how":
+        # "how does compound interest work" -> "How Does Compound Interest Work?"
+        return f"How Does {base_topic.title()} Work?"
+    elif page_type == "why":
+        # "why compound interest matters" -> "Why Compound Interest Matters"
+        return f"Why {base_topic.title()} Matters"
+    elif page_type == "examples":
+        # "examples of photosynthesis" -> "Examples of Photosynthesis"
+        return f"Examples of {base_topic.title()}"
+    elif page_type == "misconceptions":
+        # "common misconceptions about X" -> "Common Misconceptions About X"
+        return f"Common Misconceptions About {base_topic.title()}"
+    elif page_type == "beginner":
+        # "X for beginners" -> "X for Beginners: A Simple Guide"
+        return f"{base_topic.title()} for Beginners: A Simple Guide"
     else:
         # "Compound Interest" -> "What is Compound Interest?"
         return f"What is {topic.title()}?"
+
+
+def markdown_to_html(content):
+    """Convert markdown content to HTML."""
+    import re
+
+    lines = content.strip().split('\n')
+    html_lines = []
+    in_list = False
+    in_table = False
+    table_header_done = False
+
+    for line in lines:
+        stripped = line.strip()
+
+        # Skip empty lines but close any open lists
+        if not stripped:
+            if in_list:
+                html_lines.append('</ul>')
+                in_list = False
+            if in_table:
+                html_lines.append('</tbody></table>')
+                in_table = False
+                table_header_done = False
+            html_lines.append('')
+            continue
+
+        # Headers
+        if stripped.startswith('## '):
+            if in_list:
+                html_lines.append('</ul>')
+                in_list = False
+            html_lines.append(f'<h2>{stripped[3:]}</h2>')
+            continue
+        elif stripped.startswith('### '):
+            if in_list:
+                html_lines.append('</ul>')
+                in_list = False
+            html_lines.append(f'<h3>{stripped[4:]}</h3>')
+            continue
+
+        # Table rows
+        if stripped.startswith('|') and stripped.endswith('|'):
+            # Skip separator rows like | --- | --- | --- |
+            if re.match(r'^[\|\s\-:]+$', stripped):
+                continue
+
+            cells = [cell.strip() for cell in stripped.split('|')[1:-1]]
+
+            if not in_table:
+                html_lines.append('<table class="comparison-table"><thead><tr>')
+                for cell in cells:
+                    cell_html = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', cell)
+                    html_lines.append(f'<th>{cell_html}</th>')
+                html_lines.append('</tr></thead><tbody>')
+                in_table = True
+                table_header_done = True
+            else:
+                html_lines.append('<tr>')
+                for cell in cells:
+                    cell_html = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', cell)
+                    html_lines.append(f'<td>{cell_html}</td>')
+                html_lines.append('</tr>')
+            continue
+
+        # Close table if we hit non-table content
+        if in_table and not stripped.startswith('|'):
+            html_lines.append('</tbody></table>')
+            in_table = False
+            table_header_done = False
+
+        # List items (*, -, •)
+        if stripped.startswith('* ') or stripped.startswith('- ') or stripped.startswith('• '):
+            if not in_list:
+                html_lines.append('<ul>')
+                in_list = True
+            item_text = stripped[2:].strip()
+            # Convert bold markdown
+            item_text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', item_text)
+            html_lines.append(f'  <li>{item_text}</li>')
+            continue
+
+        # Close list if we hit non-list content
+        if in_list and not (stripped.startswith('* ') or stripped.startswith('- ') or stripped.startswith('• ') or stripped.startswith('  ')):
+            html_lines.append('</ul>')
+            in_list = False
+
+        # Indented continuation of list item
+        if in_list and stripped.startswith('  '):
+            # This is a continuation, append to previous line
+            continue
+
+        # Regular paragraph
+        para_text = stripped
+        # Convert bold markdown
+        para_text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', para_text)
+        html_lines.append(f'<p>{para_text}</p>')
+
+    # Close any open tags
+    if in_list:
+        html_lines.append('</ul>')
+    if in_table:
+        html_lines.append('</tbody></table>')
+
+    return '\n'.join(html_lines)
 
 
 def format_as_html(topic, content):
@@ -618,21 +2185,8 @@ def format_as_html(topic, content):
     page_title = get_page_title(topic)
     page_type = detect_page_type(topic)
 
-    # Convert content paragraphs to HTML
-    paragraphs = content.strip().split("\n\n")
-    html_content = ""
-
-    for para in paragraphs:
-        para = para.strip()
-        if para.startswith("- ") or para.startswith("• "):
-            # It's a list
-            items = [line.strip().lstrip("-•").strip() for line in para.split("\n") if line.strip()]
-            html_content += "<ul>\n"
-            for item in items:
-                html_content += f"  <li>{item}</li>\n"
-            html_content += "</ul>\n"
-        elif para:
-            html_content += f"<p>{para}</p>\n"
+    # Convert markdown content to HTML
+    html_content = markdown_to_html(content)
 
     # Get calculator if applicable
     calculator_html = get_calculator_html(topic) or ""
@@ -640,10 +2194,22 @@ def format_as_html(topic, content):
         log(f"  Adding calculator for: {topic}", "SUCCESS")
 
     # Generate meta description based on page type
+    base_topic = extract_base_topic(topic)
+
     if page_type == "comparison":
         meta_desc = f"Compare {topic} - key differences, similarities, and when to use each. Clear explanation with examples."
     elif page_type == "classification":
         meta_desc = f"Complete guide to {topic} - all categories explained with definitions and examples."
+    elif page_type == "how":
+        meta_desc = f"Learn how {base_topic} works with this step-by-step explanation. Simple guide to the process and mechanism."
+    elif page_type == "why":
+        meta_desc = f"Understand why {base_topic} matters - real-world impact, importance, and relevance explained simply."
+    elif page_type == "examples":
+        meta_desc = f"Clear examples of {base_topic} from everyday life. Concrete illustrations to help you understand the concept."
+    elif page_type == "misconceptions":
+        meta_desc = f"Common misconceptions about {base_topic} debunked. Learn what people get wrong and the real facts."
+    elif page_type == "beginner":
+        meta_desc = f"{base_topic.title()} explained for beginners. Simple introduction with key terms and first steps."
     else:
         meta_desc = f"A clear, simple explanation of {topic} - definition, key concepts, examples, and common misconceptions."
 
@@ -669,6 +2235,11 @@ def format_as_html(topic, content):
         li {{ margin-bottom: 8px; }}
         p {{ margin-bottom: 16px; }}
         .example {{ background: #f5f5f5; padding: 16px; border-radius: 8px; margin: 16px 0; }}
+        h3 {{ color: #3a3a3a; margin-top: 24px; }}
+        table {{ border-collapse: collapse; width: 100%; margin: 20px 0; }}
+        th, td {{ border: 1px solid #ddd; padding: 12px; text-align: left; }}
+        th {{ background: #f5f5f5; font-weight: 600; }}
+        tr:nth-child(even) {{ background: #fafafa; }}
     </style>
 </head>
 <body>
@@ -1069,6 +2640,7 @@ if __name__ == "__main__":
     parser.add_argument("--topic", type=str, help="Single topic to generate")
     parser.add_argument("--category", type=str, help="Category to generate from")
     parser.add_argument("--count", type=int, default=5, help="Number of pages to generate")
+    parser.add_argument("--provider", type=str, choices=["groq", "grok", "gemini"], help="AI provider to use (default: auto-detect)")
     parser.add_argument("--list-topics", action="store_true", help="List all available topics")
     parser.add_argument("--list-categories", action="store_true", help="List all categories")
     parser.add_argument("--self-propagate", action="store_true", help="Run self-propagating mode")
@@ -1076,9 +2648,561 @@ if __name__ == "__main__":
     parser.add_argument("--show-pending", action="store_true", help="Show pending discovered topics")
     parser.add_argument("--show-calculators", action="store_true", help="List topics with calculators")
 
+    # Canonical Expansion (Upgrade 1)
+    parser.add_argument("--expand-topics", action="store_true", help="Show canonical expansion statistics")
+    parser.add_argument("--show-expanded", type=str, help="Show all angles for a specific topic")
+    parser.add_argument("--generate-expanded", action="store_true", help="Generate from expanded topic list")
+
+    # Concept Graph (Upgrade 2)
+    parser.add_argument("--build-graph", action="store_true", help="Build concept graph using AI")
+    parser.add_argument("--show-graph", action="store_true", help="Show concept graph")
+    parser.add_argument("--graph-topic", type=str, help="Show graph for specific topic")
+    parser.add_argument("--graph-comparisons", action="store_true", help="Show comparison pairs from graph")
+
+    # System status
+    parser.add_argument("--status", action="store_true", help="Show system status and capabilities")
+    parser.add_argument("--detect-type", type=str, help="Show detected page type for a topic")
+
+    # Completeness tracking (Upgrade 4)
+    parser.add_argument("--completeness", action="store_true", help="Show completeness dashboard with all 4 metrics")
+    parser.add_argument("--gaps", action="store_true", help="Show what's missing and next actions")
+
+    # Domain closure (canonical concepts)
+    parser.add_argument("--domain-status", type=str, help="Show closure status for a domain (e.g., finance)")
+    parser.add_argument("--list-canonical", type=str, help="List all canonical concepts for a domain")
+
+    # Maintenance
+    parser.add_argument("--rerender", action="store_true", help="Re-render HTML from existing JSON files (fixes markdown conversion)")
+    parser.add_argument("--restructure", action="store_true", help="Restructure into concept folders with canonical angle names")
+    parser.add_argument("--dry-run", action="store_true", help="Show what restructure would do without making changes")
+
+    # Closure tracking (per-concept completion)
+    parser.add_argument("--closure-report", action="store_true", help="Show per-concept completion status (uses strict 8-angle registry)")
+    parser.add_argument("--concept-status", type=str, help="Show completion status for a specific concept")
+
     args = parser.parse_args()
 
-    if args.list_categories:
+    # =========================================================================
+    # SYSTEM STATUS
+    # =========================================================================
+    if args.status:
+        log_data = load_generated_log()
+        generated_count = len(log_data.get("generated", []))
+        pending = load_pending_topics()
+        graph = load_concept_graph()
+
+        # Count base topics
+        base_count = sum(len(topics) for cat, topics in TOPIC_CATEGORIES.items()
+                        if cat not in ["comparisons", "classifications"])
+        comparison_count = len(TOPIC_CATEGORIES.get("comparisons", []))
+        classification_count = len(TOPIC_CATEGORIES.get("classifications", []))
+        expanded_count = count_expanded_topics()
+
+        print("=" * 60)
+        print("KNOWLEDGE FACTORY STATUS")
+        print("=" * 60)
+
+        print("\n[TOPIC COVERAGE]")
+        print(f"  Base topics:           {base_count}")
+        print(f"  Comparisons:           {comparison_count}")
+        print(f"  Classifications:       {classification_count}")
+        print(f"  Expansion angles:      {len(CANONICAL_EXPANSIONS)}")
+        print(f"  -----------------------------")
+        print(f"  TOTAL POSSIBLE:        {expanded_count} pages")
+
+        print("\n[GENERATION PROGRESS]")
+        print(f"  Already generated:     {generated_count}")
+        print(f"  Pending (discovered):  {len(pending)}")
+        print(f"  Remaining:             {expanded_count - generated_count}")
+        print(f"  Progress:              {generated_count/expanded_count*100:.1f}%")
+
+        print("\n[CONCEPT GRAPH]")
+        print(f"  Concepts mapped:       {len(graph)}")
+        if graph:
+            total_children = sum(len(g.get("children", [])) for g in graph.values())
+            total_comparisons = sum(len(g.get("comparisons", [])) for g in graph.values())
+            print(f"  Child topics:          {total_children}")
+            print(f"  Comparison pairs:      {total_comparisons // 2}")
+
+        print("\n[PAGE TYPES SUPPORTED]")
+        print("  - Definition (what is X)")
+        print("  - How it works (mechanism)")
+        print("  - Why it matters (importance)")
+        print("  - Examples (concrete illustrations)")
+        print("  - Misconceptions (myth busting)")
+        print("  - Beginner guide (intro)")
+        print("  - Comparison (X vs Y)")
+        print("  - Classification (types/parts/stages)")
+
+        print("\n" + "=" * 60)
+
+    elif args.detect_type:
+        # Show detected page type
+        topic = args.detect_type
+        page_type = detect_page_type(topic)
+        base_topic = extract_base_topic(topic)
+        title = get_page_title(topic)
+
+        print(f"\nTopic:      {topic}")
+        print(f"Page type:  {page_type}")
+        print(f"Base topic: {base_topic}")
+        print(f"Title:      {title}")
+
+    # =========================================================================
+    # MAINTENANCE - Re-render HTML from JSON
+    # =========================================================================
+    elif args.rerender:
+        import json
+        category = args.category
+        if not category:
+            print("Error: --rerender requires --category")
+            sys.exit(1)
+
+        category_dir = OUTPUT_DIR / category
+        if not category_dir.exists():
+            print(f"Error: Category directory not found: {category_dir}")
+            sys.exit(1)
+
+        json_files = list(category_dir.glob("*.json"))
+        print(f"Found {len(json_files)} JSON files in {category}")
+        print("Re-rendering HTML files...")
+
+        rerendered = 0
+        for json_path in json_files:
+            try:
+                with open(json_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+
+                topic = data.get("topic", "")
+                content = data.get("content", "")
+
+                if not topic or not content:
+                    continue
+
+                # Re-generate HTML using updated converter
+                html_content = format_as_html(topic, content)
+                html_path = json_path.with_suffix(".html")
+                html_path.write_text(html_content, encoding="utf-8")
+                rerendered += 1
+
+                if rerendered % 25 == 0:
+                    print(f"  Re-rendered {rerendered}/{len(json_files)}...")
+
+            except Exception as e:
+                print(f"  Error with {json_path.name}: {e}")
+
+        print(f"\nRe-rendered {rerendered} HTML files.")
+
+    # =========================================================================
+    # RESTRUCTURE INTO CONCEPT FOLDERS
+    # =========================================================================
+    elif args.restructure:
+        import re
+        import shutil
+
+        category = args.category
+        if not category:
+            print("Error: --restructure requires --category")
+            sys.exit(1)
+
+        dry_run = args.dry_run
+        category_dir = OUTPUT_DIR / category
+
+        if not category_dir.exists():
+            print(f"Error: Category directory not found: {category_dir}")
+            sys.exit(1)
+
+        # Load angle registry
+        registry = load_angle_registry()
+        if not registry:
+            print("Error: No angle registry found")
+            sys.exit(1)
+
+        # Mapping from old file patterns to new angle names
+        angle_mappings = [
+            (r'^how-does-(.+)-work$', 'how-it-works', lambda m: m.group(1)),
+            (r'^what-(.+)-depends-on$', 'what-it-depends-on', lambda m: m.group(1)),
+            (r'^what-affects-(.+)$', 'what-affects-it', lambda m: m.group(1)),
+            (r'^types-of-(.+)$', 'types-of', lambda m: m.group(1)),
+            (r'^examples-of-(.+)$', 'example-of', lambda m: m.group(1)),
+            (r'^common-misconceptions-about-(.+)$', 'common-misconceptions-about', lambda m: m.group(1)),
+            (r'^(.+)-vs-(.+)$', 'vs', lambda m: m.group(1)),  # Keep first concept as folder
+        ]
+
+        # Deprecated patterns (will be quarantined)
+        deprecated_patterns = [
+            r'^why-(.+)-matters$',
+            r'^what-(.+)-is-used-for$',
+            r'^(.+)-for-beginners$',
+            r'^parts-of-(.+)$',
+            r'^stages-of-(.+)$',
+        ]
+
+        # Get all JSON files (source of truth)
+        json_files = list(category_dir.glob("*.json"))
+        print(f"Found {len(json_files)} files in {category}")
+
+        # Create output structure
+        restructured_dir = OUTPUT_DIR / f"{category}_structured"
+        deprecated_dir = OUTPUT_DIR / f"{category}_deprecated"
+
+        if not dry_run:
+            restructured_dir.mkdir(exist_ok=True)
+            deprecated_dir.mkdir(exist_ok=True)
+
+        stats = {"moved": 0, "deprecated": 0, "base_def": 0, "unknown": 0}
+        concepts_found = set()
+
+        for json_path in json_files:
+            stem = json_path.stem  # filename without extension
+            concept = None
+            new_angle = None
+            is_deprecated = False
+
+            # Check if deprecated
+            for pattern in deprecated_patterns:
+                match = re.match(pattern, stem)
+                if match:
+                    is_deprecated = True
+                    concept = match.group(1)
+                    break
+
+            if is_deprecated:
+                if dry_run:
+                    print(f"  [DEPRECATED] {stem} -> {deprecated_dir.name}/")
+                else:
+                    # Move all formats to deprecated
+                    for ext in ['.json', '.md', '.html']:
+                        src = json_path.with_suffix(ext)
+                        if src.exists():
+                            shutil.move(str(src), str(deprecated_dir / src.name))
+                stats["deprecated"] += 1
+                continue
+
+            # Check angle mappings
+            for pattern, angle, extract_concept in angle_mappings:
+                match = re.match(pattern, stem)
+                if match:
+                    concept = extract_concept(match)
+                    new_angle = angle
+                    break
+
+            # If no pattern matched, it's likely a base definition
+            if not concept:
+                # Assume it's "what-is" (base definition)
+                concept = stem
+                new_angle = "what-is"
+                stats["base_def"] += 1
+
+            if concept and new_angle:
+                concepts_found.add(concept)
+                concept_dir = restructured_dir / concept
+
+                if dry_run:
+                    print(f"  {stem} -> {concept}/{new_angle}")
+                else:
+                    concept_dir.mkdir(exist_ok=True)
+                    # Move all formats
+                    for ext in ['.json', '.md', '.html']:
+                        src = json_path.with_suffix(ext)
+                        if src.exists():
+                            dst = concept_dir / f"{new_angle}{ext}"
+                            shutil.copy2(str(src), str(dst))
+                stats["moved"] += 1
+            else:
+                if dry_run:
+                    print(f"  [UNKNOWN] {stem}")
+                stats["unknown"] += 1
+
+        print(f"\n{'[DRY RUN] ' if dry_run else ''}Restructure Summary:")
+        print(f"  Concepts found:  {len(concepts_found)}")
+        print(f"  Files moved:     {stats['moved']}")
+        print(f"  Base definitions: {stats['base_def']}")
+        print(f"  Deprecated:      {stats['deprecated']}")
+        print(f"  Unknown:         {stats['unknown']}")
+
+        if not dry_run:
+            print(f"\nStructured output: {restructured_dir}")
+            print(f"Deprecated files:  {deprecated_dir}")
+
+            # Show sample concept
+            sample = list(concepts_found)[0] if concepts_found else None
+            if sample:
+                sample_dir = restructured_dir / sample
+                print(f"\nSample concept folder ({sample}):")
+                for f in sorted(sample_dir.glob("*")):
+                    print(f"  {f.name}")
+
+    # =========================================================================
+    # CLOSURE REPORT (Per-Concept Completion)
+    # =========================================================================
+    elif args.closure_report:
+        category = args.category
+        if not category:
+            print("Error: --closure-report requires --category")
+            sys.exit(1)
+
+        report = get_category_completion_report(category)
+
+        if "error" in report:
+            print(f"Error: {report['error']}")
+            sys.exit(1)
+
+        print("=" * 70)
+        print(f"CLOSURE REPORT: {category.upper()}")
+        print("=" * 70)
+
+        print(f"\n[SUMMARY]")
+        print(f"  Total concepts:     {report['total_concepts']}")
+        print(f"  Complete:           {report['complete_concepts']}")
+        print(f"  Incomplete:         {len(report['incomplete_concepts'])}")
+        print(f"  Completion:         {report['completion_percentage']:.1f}%")
+
+        if report['missing_angles_summary']:
+            print(f"\n[MISSING ANGLES SUMMARY]")
+            for angle_id, count in sorted(report['missing_angles_summary'].items(), key=lambda x: -x[1]):
+                print(f"  {angle_id}: missing in {count} concepts")
+
+        if report['incomplete_concepts']:
+            print(f"\n[INCOMPLETE CONCEPTS] (showing first 15)")
+            for item in report['incomplete_concepts'][:15]:
+                missing_str = ", ".join(item['missing_required'][:4])
+                if len(item['missing_required']) > 4:
+                    missing_str += f" (+{len(item['missing_required']) - 4} more)"
+                print(f"  - {item['concept']}")
+                print(f"    Required: {item['required_complete']}/{item['required_total']}")
+                print(f"    Missing: {missing_str}")
+
+        # Show what's needed for closure
+        if report['completion_percentage'] < 100:
+            total_missing = sum(report['missing_angles_summary'].values())
+            print(f"\n[NEXT STEPS]")
+            print(f"  {total_missing} pages needed for complete closure")
+            print(f"  Run: python knowledge_pages.py --generate-expanded --category {category} --count {min(total_missing, 50)}")
+
+    elif args.concept_status:
+        concept = args.concept_status
+        category = args.category or "finance"  # Default to finance
+
+        # Load generated pages
+        log_data = load_generated_log()
+        generated = set()
+        for entry in log_data.get("generated", []):
+            if isinstance(entry, dict):
+                generated.add(entry.get("slug", ""))
+            else:
+                generated.add(slugify(str(entry)))
+
+        # Also check files on disk
+        category_dir = OUTPUT_DIR / category
+        if category_dir.exists():
+            for f in category_dir.glob("*.json"):
+                generated.add(f.stem)
+
+        status = get_concept_completion_status(concept, category, generated)
+
+        print("=" * 60)
+        print(f"CONCEPT STATUS: {concept}")
+        print("=" * 60)
+
+        print(f"\n[REQUIRED ANGLES] ({status['required_complete']}/{status['required_total']})")
+        for angle_id, angle_status in status['angles'].items():
+            if angle_status['required']:
+                marker = "[x]" if angle_status['exists'] else "[ ]"
+                print(f"  {marker} {angle_id}: {angle_status['slug']}")
+
+        print(f"\n[OPTIONAL ANGLES] ({status['optional_complete']}/{status['optional_total']})")
+        for angle_id, angle_status in status['angles'].items():
+            if not angle_status['required']:
+                marker = "[x]" if angle_status['exists'] else "[ ]"
+                print(f"  {marker} {angle_id}: {angle_status['slug']}")
+
+        print(f"\n[STATUS]")
+        if status['is_complete']:
+            print("  COMPLETE - All required angles exist")
+        else:
+            missing = [a for a, s in status['angles'].items() if s['required'] and not s['exists']]
+            print(f"  INCOMPLETE - Missing: {', '.join(missing)}")
+
+    # =========================================================================
+    # DOMAIN CLOSURE (Canonical Concepts)
+    # =========================================================================
+    elif args.domain_status:
+        domain = args.domain_status.lower()
+        status = get_domain_closure_status(domain)
+
+        if "error" in status:
+            print(f"Error: {status['error']}")
+            print(f"Create file: canonical_concepts_{domain}.json")
+        else:
+            print("=" * 70)
+            print(f"DOMAIN CLOSURE STATUS: {domain.upper()}")
+            print("=" * 70)
+
+            print(f"\n[BOUNDARY]")
+            boundary = status.get("boundary", {})
+            if boundary.get("includes"):
+                print(f"  Includes: {', '.join(boundary['includes'][:5])}...")
+            if boundary.get("excludes"):
+                print(f"  Excludes: {', '.join(boundary['excludes'][:3])}...")
+
+            print(f"\n[CANONICAL CONCEPTS]")
+            print(f"  Total defined: {status['total_concepts']}")
+            print(f"  Covered:       {status['covered']}")
+            print(f"  Remaining:     {status['uncovered_count']}")
+            print(f"  Progress:      {status['percentage']:.1f}%")
+
+            print(f"\n[CLOSURE STATUS]")
+            if status['is_closed']:
+                print("  *** DOMAIN IS CLOSED ***")
+                print("  No new concepts needed. Ready for licensing/embedding.")
+            else:
+                print(f"  NOT CLOSED - {status['uncovered_count']} concepts remaining")
+                if status['uncovered_sample']:
+                    print(f"\n  Sample uncovered concepts:")
+                    for c in status['uncovered_sample'][:10]:
+                        print(f"    - {c}")
+
+            print("\n" + "=" * 70)
+
+    elif args.list_canonical:
+        domain = args.list_canonical.lower()
+        data = load_canonical_concepts(domain)
+
+        if not data:
+            print(f"No canonical concepts file for: {domain}")
+            print(f"Create file: canonical_concepts_{domain}.json")
+        else:
+            print(f"CANONICAL CONCEPTS: {domain.upper()}")
+            print("=" * 60)
+
+            for subcategory, concepts in data.get("concepts", {}).items():
+                print(f"\n[{subcategory.upper()}] ({len(concepts)} concepts)")
+                for c in concepts:
+                    print(f"  - {c}")
+
+            total = sum(len(c) for c in data.get("concepts", {}).values())
+            print(f"\n{'=' * 60}")
+            print(f"TOTAL: {total} canonical concepts")
+
+    # =========================================================================
+    # COMPLETENESS DASHBOARD (Upgrade 4)
+    # =========================================================================
+    elif args.completeness:
+        # Show all 4 completeness metrics
+        comp = calculate_completeness(category=args.category)
+
+        print("=" * 70)
+        print("UNIVERSAL KNOWLEDGE INDEX - COMPLETENESS DASHBOARD")
+        if args.category:
+            print(f"Category: {args.category}")
+        print("=" * 70)
+
+        # Metric 1: Concept Coverage
+        cc = comp["concept_coverage"]
+        status1 = "PASS" if cc["done"] else "FAIL"
+        print(f"\n[METRIC 1] CONCEPT COVERAGE          {cc['percentage']:6.1f}%  [{status1}]")
+        print(f"           Threshold: >= 98%")
+        print(f"           Covered: {cc['covered']}/{cc['total']} base concepts")
+
+        # Metric 2: Angle Coverage
+        ac = comp["angle_coverage"]
+        status2 = "PASS" if ac["done"] else "FAIL"
+        print(f"\n[METRIC 2] ANGLE COVERAGE            {ac['percentage']:6.1f}%  [{status2}]")
+        print(f"           Threshold: >= 95%")
+        print(f"           Complete: {ac['fully_covered']}/{ac['total']} concepts have 10+ angles")
+        if ac["top_gaps"]:
+            gaps_str = ", ".join(f"{g[0]}({g[1]})" for g in ac["top_gaps"][:3])
+            print(f"           Top gaps: {gaps_str}")
+
+        # Metric 3: Graph Connectivity
+        gc = comp["graph_connectivity"]
+        status3 = "PASS" if gc["done"] else "FAIL"
+        print(f"\n[METRIC 3] GRAPH CONNECTIVITY        {100-gc['orphan_percentage']:6.1f}%  [{status3}]")
+        print(f"           Threshold: <= 2% orphans")
+        print(f"           Nodes: {gc['total_nodes']}, Orphans: {gc['orphans']}")
+
+        # Metric 4: Question Coverage
+        qc = comp["question_coverage"]
+        status4 = "PASS" if qc["done"] else "FAIL"
+        print(f"\n[METRIC 4] QUESTION COVERAGE         {qc['percentage']:6.1f}%  [{status4}]")
+        print(f"           Threshold: >= 95%")
+        print(f"           Resolved: {qc['resolved']}/{qc['total']} question-concept pairs")
+
+        # Metric 5: Calculator Coverage
+        calc = comp["calculator_coverage"]
+        status5 = "PASS" if calc["done"] else "FAIL"
+        print(f"\n[METRIC 5] CALCULATOR COVERAGE       {calc['percentage']:6.1f}%  [{status5}]")
+        print(f"           Threshold: >= 95%")
+        print(f"           Covered: {calc['covered']}/{calc['eligible']} calculator-eligible topics")
+        if calc["missing"]:
+            missing_str = ", ".join(m["concept"] for m in calc["missing"][:3])
+            print(f"           Missing: {missing_str}")
+
+        # Overall status
+        print("\n" + "-" * 70)
+        if comp["all_done"]:
+            print("DOMAIN STATUS: *** COMPLETE ***")
+            print("All 5 metrics pass. This domain is done.")
+        else:
+            passing = sum([cc["done"], ac["done"], gc["done"], qc["done"], calc["done"]])
+            print(f"DOMAIN STATUS: IN PROGRESS ({passing}/5 metrics passing)")
+
+        print("=" * 70)
+
+    elif args.gaps:
+        # Show what's missing and recommended actions
+        comp = calculate_completeness(category=args.category)
+        actions = get_next_actions(comp)
+
+        print("=" * 70)
+        print("KNOWLEDGE INDEX - GAPS & NEXT ACTIONS")
+        if args.category:
+            print(f"Category: {args.category}")
+        print("=" * 70)
+
+        # Show gaps per metric
+        cc = comp["concept_coverage"]
+        if cc["uncovered"]:
+            print(f"\n[UNCOVERED CONCEPTS] ({len(cc['uncovered'])} shown)")
+            for c in cc["uncovered"][:10]:
+                print(f"  - {c}")
+
+        ac = comp["angle_coverage"]
+        if ac["partial"]:
+            print(f"\n[INCOMPLETE ANGLE COVERAGE] ({len(ac['partial'])} concepts)")
+            for p in ac["partial"][:5]:
+                missing_str = ", ".join(p["missing"][:3])
+                print(f"  - {p['concept']}: {p['angles']}/12 angles (missing: {missing_str})")
+
+        gc = comp["graph_connectivity"]
+        if gc["orphan_list"]:
+            print(f"\n[ORPHAN NODES] ({gc['orphans']} total)")
+            for o in gc["orphan_list"][:10]:
+                print(f"  - {o}")
+
+        qc = comp["question_coverage"]
+        if qc["unresolved"]:
+            print(f"\n[UNRESOLVED QUESTIONS] ({qc['total'] - qc['resolved']} total)")
+            for q in qc["unresolved"][:10]:
+                print(f"  - {q}")
+
+        # Recommended actions
+        print("\n" + "-" * 70)
+        print("RECOMMENDED ACTIONS (in priority order):")
+        print("-" * 70)
+        for i, action in enumerate(actions, 1):
+            print(f"\n{i}. {action['action']}")
+            print(f"   Reason: {action['reason']}")
+            print(f"   Command: python knowledge_pages.py {action.get('command', '')}")
+            if action.get("targets"):
+                print(f"   Targets: {', '.join(action['targets'][:3])}")
+            if action.get("focus_angles"):
+                print(f"   Focus on: {', '.join(action['focus_angles'])}")
+
+        print("\n" + "=" * 70)
+
+    elif args.list_categories:
         print("Available categories:")
         for cat, topics in TOPIC_CATEGORIES.items():
             print(f"  {cat}: {len(topics)} topics")
@@ -1109,6 +3233,178 @@ if __name__ == "__main__":
                 print(f"  - {topic}")
         else:
             print("Calculators module not available")
+
+    # =========================================================================
+    # CANONICAL EXPANSION COMMANDS (Upgrade 1)
+    # =========================================================================
+    elif args.expand_topics:
+        # Show expansion statistics
+        base_count = sum(len(topics) for cat, topics in TOPIC_CATEGORIES.items()
+                        if cat not in ["comparisons", "classifications"])
+        comparison_count = len(TOPIC_CATEGORIES.get("comparisons", []))
+        classification_count = len(TOPIC_CATEGORIES.get("classifications", []))
+
+        expanded_count = count_expanded_topics()
+
+        print("=" * 60)
+        print("CANONICAL EXPANSION STATISTICS")
+        print("=" * 60)
+        print(f"\nBase topics (definition pages):     {base_count}")
+        print(f"Comparison pages (X vs Y):          {comparison_count}")
+        print(f"Classification pages:               {classification_count}")
+        print(f"\nExpansion angles per topic:         {len(CANONICAL_EXPANSIONS)}")
+        print(f"  - {', '.join(CANONICAL_EXPANSIONS)}")
+        print(f"\nTOTAL POSSIBLE PAGES:               {expanded_count}")
+        print(f"\nMultiplier: {expanded_count / base_count:.1f}x")
+
+    elif args.show_expanded:
+        # Show all angles for a specific topic
+        topic = args.show_expanded
+        angles = expand_topic_to_angles(topic)
+        print(f"\nCanonical angles for '{topic}':")
+        print("-" * 40)
+        for i, angle in enumerate(angles, 1):
+            page_type = detect_page_type(angle)
+            print(f"  {i}. {angle}")
+            print(f"     Type: {page_type}")
+
+    elif args.generate_expanded:
+        # Generate from expanded topic list
+        log_data = load_generated_log()
+        already_generated = set(log_data.get("generated", []))
+
+        # Get all expanded topics
+        all_expanded = get_all_expanded_topics(
+            categories=[args.category] if args.category else None
+        )
+
+        # Filter out already generated
+        pending = [t for t in all_expanded if t["topic"] not in already_generated]
+
+        if not pending:
+            log("All expanded topics already generated!", "SUCCESS")
+        else:
+            log(f"Found {len(pending)} expanded topics to generate")
+            log(f"(out of {len(all_expanded)} total)")
+
+            # Take requested count
+            to_generate = pending[:args.count]
+
+            results = []
+            for i, topic_info in enumerate(to_generate, 1):
+                topic = topic_info["topic"]
+                cat = topic_info["category"]
+                angle = topic_info["angle"]
+
+                print(f"\n[{i}/{len(to_generate)}] {topic}")
+                print(f"  Category: {cat}, Angle: {angle}")
+                print("-" * 40)
+
+                try:
+                    result = generate_knowledge_page(topic, category=cat)
+                    results.append(result)
+                    log_data["generated"].append(topic)
+                    save_generated_log(log_data)
+
+                except Exception as e:
+                    log(f"Failed: {e}", "ERROR")
+                    log_data.setdefault("failed", []).append({"topic": topic, "error": str(e)})
+                    save_generated_log(log_data)
+
+                # Rate limiting
+                if i < len(to_generate):
+                    import time
+                    time.sleep(2)
+
+            print("\n" + "=" * 60)
+            log(f"Generated {len(results)}/{len(to_generate)} pages", "SUCCESS")
+
+    # =========================================================================
+    # CONCEPT GRAPH COMMANDS (Upgrade 2)
+    # =========================================================================
+    elif args.build_graph:
+        # Build concept graph using AI
+        topics = None
+        if args.category:
+            topics = TOPIC_CATEGORIES.get(args.category, [])
+
+        if args.count and topics:
+            topics = topics[:args.count]
+
+        log("Building concept graph...")
+        graph = build_concept_graph_for_topics(topics, use_ai=True)
+        log(f"Graph now has {len(graph)} concepts", "SUCCESS")
+
+    elif args.show_graph:
+        # Show full concept graph
+        graph = load_concept_graph()
+        if not graph:
+            print("Concept graph is empty. Run --build-graph first.")
+        else:
+            print(f"\nConcept Graph ({len(graph)} concepts)")
+            print("=" * 60)
+            for concept, relations in sorted(graph.items()):
+                print(f"\n{concept.upper()}")
+                if relations.get("parents"):
+                    print(f"  Parents: {', '.join(relations['parents'])}")
+                if relations.get("children"):
+                    print(f"  Children: {', '.join(relations['children'])}")
+                if relations.get("related"):
+                    print(f"  Related: {', '.join(relations['related'])}")
+                if relations.get("comparisons"):
+                    print(f"  Compare with: {', '.join(relations['comparisons'])}")
+
+    elif args.graph_topic:
+        # Show graph for specific topic
+        graph = load_concept_graph()
+        topic = args.graph_topic.lower()
+
+        if topic not in graph:
+            print(f"'{topic}' not in graph. Building...")
+            relations = generate_concept_relationships(topic)
+            add_concept_to_graph(
+                topic,
+                parents=relations.get("parents", []),
+                children=relations.get("children", []),
+                related=relations.get("related", []),
+                comparisons=relations.get("comparisons", []),
+            )
+            graph = load_concept_graph()
+
+        print(f"\nConcept: {topic.upper()}")
+        print("-" * 40)
+        relations = graph.get(topic, {})
+        print(f"Parents:     {', '.join(relations.get('parents', [])) or 'none'}")
+        print(f"Children:    {', '.join(relations.get('children', [])) or 'none'}")
+        print(f"Related:     {', '.join(relations.get('related', [])) or 'none'}")
+        print(f"Compare:     {', '.join(relations.get('comparisons', [])) or 'none'}")
+
+        # Show potential pages
+        print(f"\nPotential pages from this concept:")
+        all_related = (
+            relations.get("children", []) +
+            [f"{topic} vs {c}" for c in relations.get("comparisons", [])]
+        )
+        for r in all_related[:10]:
+            print(f"  - {r}")
+
+    elif args.graph_comparisons:
+        # Show comparison pairs from graph
+        pairs = get_comparison_pairs_from_graph()
+        existing_comparisons = set(t.lower() for t in TOPIC_CATEGORIES.get("comparisons", []))
+
+        print(f"\nComparison pairs from concept graph:")
+        print("=" * 60)
+
+        new_pairs = []
+        for pair in pairs:
+            if pair.lower() in existing_comparisons:
+                print(f"  [EXISTS] {pair}")
+            else:
+                print(f"  [NEW]    {pair}")
+                new_pairs.append(pair)
+
+        print(f"\nTotal: {len(pairs)} pairs ({len(new_pairs)} new)")
 
     elif args.self_propagate:
         # Self-propagating mode

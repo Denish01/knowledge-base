@@ -1,0 +1,75 @@
+{
+  "version": "2.0",
+  "description": "Frozen angle registry - STRICT 8 angles only, no extras",
+
+  "angles": {
+    "what-is": {
+      "slug": "what-is",
+      "description": "Definition of the concept",
+      "required": true
+    },
+    "how-it-works": {
+      "slug": "how-it-works",
+      "description": "Mechanism or process explanation",
+      "required": true
+    },
+    "what-it-depends-on": {
+      "slug": "what-it-depends-on",
+      "description": "Structural dependencies",
+      "required": true
+    },
+    "what-affects-it": {
+      "slug": "what-affects-it",
+      "description": "Variables that influence outcomes",
+      "required": true
+    },
+    "types-of": {
+      "slug": "types-of",
+      "description": "Categories or forms (if applicable)",
+      "required": false
+    },
+    "example-of": {
+      "slug": "example-of",
+      "description": "Concrete illustrative example",
+      "required": true
+    },
+    "common-misconceptions-about": {
+      "slug": "common-misconceptions-about",
+      "description": "Frequent misunderstandings",
+      "required": true
+    },
+    "vs": {
+      "slug": "vs",
+      "description": "Comparison to nearest related concept",
+      "required": false,
+      "note": "Requires defining comparison target per concept"
+    }
+  },
+
+  "rules": {
+    "total_angles": 8,
+    "required_for_closure": 6,
+    "forbidden_suffixes": ["for-beginners", "guide", "explained", "matters", "used-for", "parts-of", "stages-of"],
+    "forbidden_prefixes": ["a-", "b-", "c-", "1-", "2-", "3-"],
+    "file_structure": "concept-folder",
+    "naming": "Each concept gets its own folder. Files are named by angle only (what-is.md, not concept-what-is.md)"
+  },
+
+  "mapping_from_old": {
+    "compound-interest": "what-is",
+    "how-does-*-work": "how-it-works",
+    "what-*-depends-on": "what-it-depends-on",
+    "what-affects-*": "what-affects-it",
+    "types-of-*": "types-of",
+    "examples-of-*": "example-of",
+    "common-misconceptions-about-*": "common-misconceptions-about"
+  },
+
+  "deprecated_angles": [
+    "why-*-matters",
+    "what-*-is-used-for",
+    "*-for-beginners",
+    "parts-of-*",
+    "stages-of-*"
+  ]
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A clear, simple explanation of net worth - definition, key concepts, examples, and common misconceptions.">
+    <title>What is Net Worth? - Simple Explanation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { color: #1a1a1a; }
+        h2 { color: #2a2a2a; margin-top: 32px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        p { margin-bottom: 16px; }
+        .example { background: #f5f5f5; padding: 16px; border-radius: 8px; margin: 16px 0; }
+        h3 { color: #3a3a3a; margin-top: 24px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background: #f5f5f5; font-weight: 600; }
+        tr:nth-child(even) { background: #fafafa; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>What is Net Worth?</h1>
+
+        
+<style>
+.calculator {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+}
+.calculator h3 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.calculator label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.calculator button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.calculator button:hover {
+    background: #1557b0;
+}
+.calc-result {
+    margin-top: 16px;
+    padding: 12px;
+    background: white;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+.calc-result p {
+    margin: 8px 0;
+}
+.calc-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tab-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+.tab-btn.active {
+    background: #1a73e8;
+    color: white;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+</style>
+
+<div class="calculator" id="networth-calc">
+    <h3>Net Worth Calculator</h3>
+    <h4>Assets</h4>
+    <div class="calc-grid">
+        <label>Cash & Savings ($): <input type="number" id="nw-cash" value="10000" min="0"></label>
+        <label>Investments ($): <input type="number" id="nw-invest" value="50000" min="0"></label>
+        <label>Real Estate ($): <input type="number" id="nw-property" value="300000" min="0"></label>
+        <label>Other Assets ($): <input type="number" id="nw-other" value="20000" min="0"></label>
+    </div>
+    <h4>Liabilities</h4>
+    <div class="calc-grid">
+        <label>Mortgage ($): <input type="number" id="nw-mortgage" value="200000" min="0"></label>
+        <label>Car Loans ($): <input type="number" id="nw-car" value="15000" min="0"></label>
+        <label>Student Loans ($): <input type="number" id="nw-student" value="25000" min="0"></label>
+        <label>Credit Cards ($): <input type="number" id="nw-credit" value="5000" min="0"></label>
+    </div>
+    <button onclick="calcNetWorth()">Calculate</button>
+    <div class="calc-result" id="networth-result"></div>
+</div>
+<script>
+function calcNetWorth() {
+    const assets = parseFloat(document.getElementById('nw-cash').value) +
+                   parseFloat(document.getElementById('nw-invest').value) +
+                   parseFloat(document.getElementById('nw-property').value) +
+                   parseFloat(document.getElementById('nw-other').value);
+    const liabilities = parseFloat(document.getElementById('nw-mortgage').value) +
+                        parseFloat(document.getElementById('nw-car').value) +
+                        parseFloat(document.getElementById('nw-student').value) +
+                        parseFloat(document.getElementById('nw-credit').value);
+    const netWorth = assets - liabilities;
+    document.getElementById('networth-result').innerHTML = `
+        <p><strong>Total Assets:</strong> $${assets.toLocaleString()}</p>
+        <p><strong>Total Liabilities:</strong> $${liabilities.toLocaleString()}</p>
+        <p><strong>Net Worth:</strong> $${netWorth.toLocaleString()}</p>
+        <p><em>${netWorth >= 0 ? 'Positive net worth' : 'Negative net worth - focus on debt reduction'}</em></p>
+    `;
+}
+calcNetWorth();
+</script>
+
+
+        <p>Net worth is the total value of an individual's or organization's assets minus their liabilities, providing a snapshot of their overall financial health.</p>
+
+<p>Understanding net worth is essential for making informed financial decisions. It is a measure of what someone owns, such as cash, investments, and property, minus what they owe, like debts and loans. This calculation gives a clear picture of a person's or organization's financial situation, helping them identify areas where they can improve. Net worth can change over time due to various factors, including income, expenses, investments, and debt repayment.</p>
+
+<p>Calculating net worth involves gathering information about assets and liabilities. Assets include items of value, such as savings accounts, stocks, bonds, and real estate. Liabilities, on the other hand, are amounts owed to others, like credit card balances, mortgages, and car loans. By subtracting the total liabilities from the total assets, one can determine their net worth. This calculation is a simple yet effective way to assess financial well-being.</p>
+
+<p>Net worth is not the same as income, which is the amount of money earned over a certain period. While income is essential for maintaining a lifestyle, net worth provides a more comprehensive view of one's financial situation. It takes into account not only the money earned but also the assets accumulated and debts owed. This distinction is crucial for long-term financial planning and stability.</p>
+
+<p>Key components of net worth include:</p>
+<ul>
+  <li>Assets, such as cash, investments, and property</li>
+  <li>Liabilities, including debts and loans</li>
+  <li>Income, which affects the ability to accumulate assets and pay off liabilities</li>
+  <li>Expenses, which can impact the growth of assets and the reduction of liabilities</li>
+  <li>Debt management, which involves strategies for paying off liabilities</li>
+  <li>Investment strategies, which aim to grow assets over time</li>
+</ul>
+
+<p>Common misconceptions about net worth include:</p>
+<ul>
+  <li>Believing that a high income automatically translates to a high net worth, when in fact it is possible to have a high income and low net worth due to excessive spending or debt</li>
+  <li>Assuming that net worth is only relevant for wealthy individuals, when in fact it is essential for anyone looking to manage their finances effectively</li>
+  <li>Thinking that net worth is a static value, when in fact it can fluctuate over time due to various financial decisions and events</li>
+  <li>Overlooking the importance of debt management in calculating net worth, which can significantly impact the overall financial situation</li>
+</ul>
+
+<p>A real-world example of net worth can be seen in the case of a person who owns a house worth $200,000, has $50,000 in savings, and earns $75,000 per year. However, they also have a mortgage of $150,000, a car loan of $20,000, and credit card debt of $10,000. To calculate their net worth, they would add up their assets ($200,000 + $50,000 = $250,000) and subtract their liabilities ($150,000 + $20,000 + $10,000 = $180,000), resulting in a net worth of $70,000.</p>
+
+<p>In summary, net worth is a measure of an individual's or organization's financial health, calculated by subtracting total liabilities from total assets, providing a comprehensive view of their financial situation and guiding informed financial decisions.</p>
+    </article>
+</body>
+</html>

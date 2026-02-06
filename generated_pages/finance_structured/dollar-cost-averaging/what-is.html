@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A clear, simple explanation of dollar cost averaging - definition, key concepts, examples, and common misconceptions.">
+    <title>What is Dollar Cost Averaging? - Simple Explanation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { color: #1a1a1a; }
+        h2 { color: #2a2a2a; margin-top: 32px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        p { margin-bottom: 16px; }
+        .example { background: #f5f5f5; padding: 16px; border-radius: 8px; margin: 16px 0; }
+        h3 { color: #3a3a3a; margin-top: 24px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background: #f5f5f5; font-weight: 600; }
+        tr:nth-child(even) { background: #fafafa; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>What is Dollar Cost Averaging?</h1>
+
+        
+<style>
+.calculator {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+}
+.calculator h3 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.calculator label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.calculator button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.calculator button:hover {
+    background: #1557b0;
+}
+.calc-result {
+    margin-top: 16px;
+    padding: 12px;
+    background: white;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+.calc-result p {
+    margin: 8px 0;
+}
+.calc-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tab-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+.tab-btn.active {
+    background: #1a73e8;
+    color: white;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+</style>
+
+<div class="calculator" id="dca-calc">
+    <h3>Dollar Cost Averaging Calculator</h3>
+    <div class="calc-grid">
+        <label>Monthly Investment ($): <input type="number" id="dca-monthly" value="500" min="0"></label>
+        <label>Investment Period (years): <input type="number" id="dca-years" value="10" min="1" max="50"></label>
+        <label>Expected Annual Return (%): <input type="number" id="dca-return" value="8" min="0" step="0.5"></label>
+    </div>
+    <button onclick="calcDCA()">Calculate</button>
+    <div class="calc-result" id="dca-result"></div>
+</div>
+<script>
+function calcDCA() {
+    const monthly = parseFloat(document.getElementById('dca-monthly').value);
+    const years = parseFloat(document.getElementById('dca-years').value);
+    const annualReturn = parseFloat(document.getElementById('dca-return').value) / 100;
+    const monthlyReturn = annualReturn / 12;
+    const months = years * 12;
+    const totalContributed = monthly * months;
+    const futureValue = monthly * ((Math.pow(1 + monthlyReturn, months) - 1) / monthlyReturn);
+    const earnings = futureValue - totalContributed;
+    document.getElementById('dca-result').innerHTML = `
+        <p><strong>Total Invested:</strong> $${totalContributed.toLocaleString()}</p>
+        <p><strong>Investment Earnings:</strong> $${earnings.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Final Value:</strong> $${futureValue.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><em>DCA reduces timing risk by investing consistently over time</em></p>
+    `;
+}
+calcDCA();
+</script>
+
+
+        <p>Dollar cost averaging is a investment strategy that involves investing a fixed amount of money at regular intervals, regardless of the market's performance.</p>
+
+<p>The main idea behind dollar cost averaging is to reduce the impact of market volatility on investments. When an investor uses this strategy, they are not trying to time the market or predict its ups and downs. Instead, they are investing a fixed amount of money at regular intervals, such as every month or quarter. This approach helps to smooth out the effects of market fluctuations, as the investor is buying more units of an investment when the price is low and fewer units when the price is high.</p>
+
+<p>Over time, this strategy can help to lower the average cost per unit of the investment, which is where the term "dollar cost averaging" comes from. For example, if an investor is buying shares of a stock, they may buy more shares when the price is low and fewer shares when the price is high. This approach can help to reduce the risk of investing in the market, as the investor is not putting all of their money into the market at once. It can also help to make investing more affordable, as the investor is only investing a fixed amount of money at a time.</p>
+
+<p>Dollar cost averaging is often used in combination with a long-term investment strategy, as it can help to reduce the impact of market volatility over time. It is also a disciplined approach to investing, as the investor is committing to invest a fixed amount of money at regular intervals, regardless of what the market is doing. This approach can help to take the emotion out of investing, as the investor is not trying to make investment decisions based on short-term market movements.</p>
+
+<p>The key components of dollar cost averaging include:</p>
+<ul>
+  <li>Investing a fixed amount of money at regular intervals</li>
+  <li>Investing regardless of the market's performance</li>
+  <li>Reducing the impact of market volatility on investments</li>
+  <li>Lowering the average cost per unit of the investment over time</li>
+  <li>Using a long-term investment strategy</li>
+  <li>Disciplined approach to investing, with a commitment to invest a fixed amount of money at regular intervals</li>
+</ul>
+
+<p>Some common misconceptions about dollar cost averaging include:</p>
+<ul>
+  <li>That it is a way to guarantee high returns on investments</li>
+  <li>That it is only suitable for beginner investors</li>
+  <li>That it is a way to time the market or predict its ups and downs</li>
+  <li>That it is a complex or difficult investment strategy to implement</li>
+</ul>
+
+<p>For example, suppose an investor wants to invest $100 per month in a mutual fund. They set up an automatic investment plan to transfer $100 from their bank account to their investment account every month. Over the course of a year, the price of the mutual fund may fluctuate, but the investor will continue to invest $100 per month, regardless of the price. As a result, they may buy more units of the mutual fund when the price is low and fewer units when the price is high, which can help to lower their average cost per unit over time.</p>
+
+<p>In summary, dollar cost averaging is a disciplined investment strategy that involves investing a fixed amount of money at regular intervals, regardless of the market's performance, in order to reduce the impact of market volatility and lower the average cost per unit of an investment over time.</p>
+    </article>
+</body>
+</html>
