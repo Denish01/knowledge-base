@@ -1,0 +1,30 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_192150_micro_niche_typography_2_ideogram.png",
+  "size": "1024x1024",
+  "provider": "ideogram",
+  "idea": {
+    "type": "micro_niche",
+    "category": "hobby",
+    "niche": "hobbies",
+    "sub_niche": "fishing",
+    "hobby_type": "Salmon",
+    "identity": "Dad",
+    "template": "typography",
+    "priority": "medium",
+    "prompt_vars": {
+      "quote": "Salmon Fishing Dad: Teaching patience one cast at a time",
+      "subject": "Salmon fishing",
+      "style": "vintage",
+      "color_scheme": "vintage"
+    },
+    "tags": [
+      "fishing",
+      "salmon",
+      "fishing dad",
+      "hobby gift",
+      "fishing lover"
+    ]
+  },
+  "prompt": "\"Salmon Fishing Dad: Teaching patience one cast at a time\" in bold vintage typography, vintage colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_192150"
+}

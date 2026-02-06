@@ -1,0 +1,30 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_190824_micro_niche_typography_4_ideogram.png",
+  "size": "1024x1024",
+  "provider": "ideogram",
+  "idea": {
+    "type": "micro_niche",
+    "category": "profession",
+    "niche": "professions",
+    "sub_niche": "bartender",
+    "specialty": "Dive Bar",
+    "template": "typography",
+    "priority": "high",
+    "prompt_vars": {
+      "quote": "Bartender: My job is all about the pour decisions",
+      "subject": "Dive Bar bartender",
+      "style": "clean modern",
+      "color_scheme": "vibrant"
+    },
+    "tags": [
+      "bartender",
+      "dive bar",
+      "career gift",
+      "bartender life",
+      "work humor",
+      "coworker gift"
+    ]
+  },
+  "prompt": "\"Bartender: My job is all about the pour decisions\" in bold clean modern typography, vibrant colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_190824"
+}

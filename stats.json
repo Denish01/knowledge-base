@@ -1,0 +1,71 @@
+{
+  "total_generated": 19,
+  "total_uploaded": 0,
+  "total_failed": 0,
+  "by_niche": {
+    "professions": 5,
+    "hobbies": 5,
+    "dogs": 7,
+    "cats": 2
+  },
+  "by_template": {
+    "illustration": 2,
+    "minimalist": 1,
+    "typography": 16
+  },
+  "by_provider": {
+    "ideogram": 13,
+    "pollinations": 1,
+    "stablehorde": 5
+  },
+  "runs": [
+    {
+      "timestamp": "2026-02-05T18:58:18.123408",
+      "generated": 3,
+      "uploaded": 0,
+      "failed": 0
+    },
+    {
+      "timestamp": "2026-02-05T19:06:53.494726",
+      "generated": 4,
+      "uploaded": 0,
+      "failed": 0
+    },
+    {
+      "timestamp": "2026-02-05T19:14:49.466263",
+      "generated": 2,
+      "uploaded": 0,
+      "failed": 0
+    },
+    {
+      "timestamp": "2026-02-05T19:16:14.646048",
+      "generated": 2,
+      "uploaded": 0,
+      "failed": 0
+    },
+    {
+      "timestamp": "2026-02-05T19:17:59.465894",
+      "generated": 1,
+      "uploaded": 0,
+      "failed": 0
+    },
+    {
+      "timestamp": "2026-02-05T19:21:14.558195",
+      "generated": 2,
+      "uploaded": 0,
+      "failed": 0
+    },
+    {
+      "timestamp": "2026-02-05T21:01:17.144140",
+      "generated": 2,
+      "uploaded": 0,
+      "failed": 0
+    },
+    {
+      "timestamp": "2026-02-05T21:07:20.892920",
+      "generated": 3,
+      "uploaded": 0,
+      "failed": 0
+    }
+  ]
+}

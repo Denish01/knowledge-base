@@ -1,0 +1,83 @@
+name: Self-Propagating Knowledge Pages
+
+on:
+  schedule:
+    # Run daily at 3 AM UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Number of pages to generate'
+        required: false
+        default: '10'
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install google-genai requests
+
+      - name: Run self-propagating generator
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          python knowledge_pages.py --self-propagate --count ${{ github.event.inputs.count || '10' }}
+
+      - name: Update index page
+        run: |
+          python -c "
+          import os
+          from pathlib import Path
+
+          # Count generated pages
+          pages_dir = Path('generated_pages')
+          count = sum(1 for f in pages_dir.rglob('*.html') if f.name != 'index.html')
+          print(f'Total pages: {count}')
+          "
+
+      - name: Commit generated pages
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Knowledge Factory Bot"
+          git add .
+          git diff --staged --quiet || git commit -m "🤖 Auto-generated $(date +'%Y-%m-%d') - Knowledge pages"
+          git push
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main  # Get latest after generate job pushed
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'generated_pages'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,142 @@
+name: Asset Generator Pipeline
+
+on:
+  schedule:
+    # Daily generation at 2 AM UTC
+    - cron: '0 2 * * *'
+    # Weekly report on Mondays at 8 AM UTC
+    - cron: '0 8 * * 1'
+    # Seasonal check on Sundays at midnight
+    - cron: '0 0 * * 0'
+
+  # Manual trigger
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode'
+        required: true
+        default: 'generate'
+        type: choice
+        options:
+          - generate
+          - generate-dry-run
+          - report
+          - check-seasonal
+      design_count:
+        description: 'Number of designs (generate mode only)'
+        required: false
+        default: '10'
+        type: string
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests Pillow pytrends
+
+      - name: Create config file
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          IDEOGRAM_API_KEY: ${{ secrets.IDEOGRAM_API_KEY }}
+          LEONARDO_API_KEY: ${{ secrets.LEONARDO_API_KEY }}
+          REPLICATE_API_KEY: ${{ secrets.REPLICATE_API_KEY }}
+          WIRESTOCK_EMAIL: ${{ secrets.WIRESTOCK_EMAIL }}
+          WIRESTOCK_PASSWORD: ${{ secrets.WIRESTOCK_PASSWORD }}
+          PRINTFUL_API_KEY: ${{ secrets.PRINTFUL_API_KEY }}
+        run: |
+          cat > config_secrets.py << 'EOF'
+          import os
+
+          # API Keys from secrets
+          OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY', '')
+          IDEOGRAM_API_KEY = os.environ.get('IDEOGRAM_API_KEY', '')
+          LEONARDO_API_KEY = os.environ.get('LEONARDO_API_KEY', '')
+          REPLICATE_API_KEY = os.environ.get('REPLICATE_API_KEY', '')
+
+          # Platform credentials
+          WIRESTOCK_EMAIL = os.environ.get('WIRESTOCK_EMAIL', '')
+          WIRESTOCK_PASSWORD = os.environ.get('WIRESTOCK_PASSWORD', '')
+          PRINTFUL_API_KEY = os.environ.get('PRINTFUL_API_KEY', '')
+
+          # Copy other settings from config.py
+          EOF
+
+          # Append non-secret config
+          grep -v "API_KEY\|EMAIL\|PASSWORD" config.py >> config_secrets.py || true
+          mv config_secrets.py config.py
+
+      # Daily generation (default)
+      - name: Run daily generation
+        if: github.event.schedule == '0 2 * * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'generate')
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          IDEOGRAM_API_KEY: ${{ secrets.IDEOGRAM_API_KEY }}
+          LEONARDO_API_KEY: ${{ secrets.LEONARDO_API_KEY }}
+          REPLICATE_API_KEY: ${{ secrets.REPLICATE_API_KEY }}
+          WIRESTOCK_EMAIL: ${{ secrets.WIRESTOCK_EMAIL }}
+          WIRESTOCK_PASSWORD: ${{ secrets.WIRESTOCK_PASSWORD }}
+          PRINTFUL_API_KEY: ${{ secrets.PRINTFUL_API_KEY }}
+        run: |
+          DESIGNS="${{ github.event.inputs.design_count || '10' }}"
+          python pipeline.py --designs $DESIGNS
+
+      # Dry run (no uploads)
+      - name: Run dry run
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'generate-dry-run'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          IDEOGRAM_API_KEY: ${{ secrets.IDEOGRAM_API_KEY }}
+        run: |
+          DESIGNS="${{ github.event.inputs.design_count || '5' }}"
+          python pipeline.py --designs $DESIGNS --dry-run
+
+      # Weekly report
+      - name: Generate weekly report
+        if: github.event.schedule == '0 8 * * 1' || (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'report')
+        run: python pipeline.py --report
+
+      # Seasonal check (Sundays)
+      - name: Check seasonal events
+        if: github.event.schedule == '0 0 * * 0' || (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'check-seasonal')
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          IDEOGRAM_API_KEY: ${{ secrets.IDEOGRAM_API_KEY }}
+          WIRESTOCK_EMAIL: ${{ secrets.WIRESTOCK_EMAIL }}
+          WIRESTOCK_PASSWORD: ${{ secrets.WIRESTOCK_PASSWORD }}
+        run: python pipeline.py --check-seasonal
+
+      # Commit logs and stats back to repo
+      - name: Commit results
+        if: always()
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add stats.json pipeline_log.json upload_log.json used_ideas.json trends_cache.json 2>/dev/null || true
+          git add generated_designs/*.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "Update pipeline stats [skip ci]"
+          git push || true
+
+      # Upload generated designs as artifacts
+      - name: Save designs as artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: designs-${{ github.run_number }}
+          path: |
+            generated_designs/*.png
+            generated_designs/*.json
+            stats.json
+            pipeline_log.json
+          retention-days: 30

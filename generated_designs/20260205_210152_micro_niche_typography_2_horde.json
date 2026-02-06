@@ -1,0 +1,31 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_210152_micro_niche_typography_2_horde.png",
+  "size": "1024x1024",
+  "cost": 0.0,
+  "provider": "stablehorde",
+  "idea": {
+    "type": "micro_niche",
+    "category": "dog_breed",
+    "niche": "dogs",
+    "sub_niche": "Husky",
+    "breed_key": "husky",
+    "identity": "Parent",
+    "template": "typography",
+    "priority": "high",
+    "prompt_vars": {
+      "quote": "I didn't adopt a Husky, I adopted a tornado",
+      "subject": "Husky",
+      "style": "bold modern",
+      "color_scheme": "black and white"
+    },
+    "tags": [
+      "husky",
+      "husky parent",
+      "dog lover",
+      "dog gift",
+      "husky"
+    ]
+  },
+  "prompt": "\"I didn't adopt a Husky, I adopted a tornado\" in bold bold modern typography, black and white colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_210152"
+}

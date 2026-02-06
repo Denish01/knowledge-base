@@ -1,0 +1,31 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_210803_micro_niche_typography_2_horde.png",
+  "size": "1024x1024",
+  "cost": 0.0,
+  "provider": "stablehorde",
+  "idea": {
+    "type": "micro_niche",
+    "category": "profession",
+    "niche": "professions",
+    "sub_niche": "teacher",
+    "specialty": "PE",
+    "template": "typography",
+    "priority": "high",
+    "prompt_vars": {
+      "quote": "I'm a PE Teacher - I can't fix stupid but I can educate it",
+      "subject": "PE teacher",
+      "style": "distressed",
+      "color_scheme": "vibrant"
+    },
+    "tags": [
+      "teacher",
+      "pe",
+      "career gift",
+      "teacher life",
+      "work humor",
+      "coworker gift"
+    ]
+  },
+  "prompt": "\"I'm a PE Teacher - I can't fix stupid but I can educate it\" in bold distressed typography, vibrant colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_210803"
+}

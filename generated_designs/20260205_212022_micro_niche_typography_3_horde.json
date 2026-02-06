@@ -1,0 +1,31 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_212022_micro_niche_typography_3_horde.png",
+  "size": "1024x1024",
+  "cost": 0.0,
+  "provider": "stablehorde",
+  "idea": {
+    "type": "micro_niche",
+    "category": "dog_breed",
+    "niche": "dogs",
+    "sub_niche": "Dachshund",
+    "breed_key": "dachshund",
+    "identity": "Owner",
+    "template": "typography",
+    "priority": "high",
+    "prompt_vars": {
+      "quote": "I like long walks and wiener dogs",
+      "subject": "Dachshund",
+      "style": "vintage",
+      "color_scheme": "earth tones"
+    },
+    "tags": [
+      "dachshund",
+      "dachshund owner",
+      "dog lover",
+      "dog gift",
+      "dachshund"
+    ]
+  },
+  "prompt": "\"I like long walks and wiener dogs\" in bold vintage typography, earth tones colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_212022"
+}

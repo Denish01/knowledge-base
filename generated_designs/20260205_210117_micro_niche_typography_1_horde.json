@@ -1,0 +1,31 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_210117_micro_niche_typography_1_horde.png",
+  "size": "1024x1024",
+  "cost": 0.0,
+  "provider": "stablehorde",
+  "idea": {
+    "type": "micro_niche",
+    "category": "hobby",
+    "niche": "hobbies",
+    "sub_niche": "quilting",
+    "hobby_type": "Machine",
+    "identity": "Dad",
+    "template": "typography",
+    "priority": "medium",
+    "prompt_vars": {
+      "quote": "Machine Quilting: My fabric stash has a fabric stash",
+      "subject": "Machine quilting",
+      "style": "bold",
+      "color_scheme": "vintage"
+    },
+    "tags": [
+      "quilting",
+      "machine",
+      "quilting dad",
+      "hobby gift",
+      "quilting lover"
+    ]
+  },
+  "prompt": "\"Machine Quilting: My fabric stash has a fabric stash\" in bold bold typography, vintage colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_210117"
+}

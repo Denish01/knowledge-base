@@ -1,0 +1,30 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_190724_micro_niche_typography_2_ideogram.png",
+  "size": "1024x1024",
+  "provider": "ideogram",
+  "idea": {
+    "type": "micro_niche",
+    "category": "dog_breed",
+    "niche": "dogs",
+    "sub_niche": "Bernese Mountain Dog",
+    "breed_key": "bernese_mountain_dog",
+    "identity": "Dad",
+    "template": "typography",
+    "priority": "high",
+    "prompt_vars": {
+      "quote": "I work hard so my Berner can nap in comfort",
+      "subject": "Bernese Mountain Dog",
+      "style": "hand-lettered",
+      "color_scheme": "black and white"
+    },
+    "tags": [
+      "bernese mountain dog",
+      "bernese mountain dog dad",
+      "dog lover",
+      "dog gift",
+      "bernese mountain dog"
+    ]
+  },
+  "prompt": "\"I work hard so my Berner can nap in comfort\" in bold hand-lettered typography, black and white colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_190724"
+}

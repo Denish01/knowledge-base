@@ -1,0 +1,28 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_190753_seasonal_micro_typography_3_ideogram.png",
+  "size": "1024x1024",
+  "provider": "ideogram",
+  "idea": {
+    "type": "seasonal_micro",
+    "category": "seasonal",
+    "event": "Valentine's Day",
+    "niche": "dogs",
+    "sub_niche": "French Bulldog",
+    "template": "typography",
+    "priority": "high",
+    "prompt_vars": {
+      "quote": "Valentine's Day is better with my French Bulldog",
+      "subject": "French Bulldog Valentine's Day",
+      "style": "festive bold",
+      "color_scheme": "holiday colors"
+    },
+    "tags": [
+      "valentine's day",
+      "french bulldog",
+      "valentine's day french bulldog",
+      "holiday gift"
+    ]
+  },
+  "prompt": "\"Valentine's Day is better with my French Bulldog\" in bold festive bold typography, holiday colors colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_190753"
+}

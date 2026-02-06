@@ -1,0 +1,16 @@
+# Core dependencies
+requests>=2.31.0
+Pillow>=10.0.0
+
+# Trend scanning
+pytrends>=4.9.2
+
+# Optional: Background removal (install separately if needed)
+# rembg>=2.0.50
+
+# Optional: Browser automation for Redbubble (install separately if needed)
+# selenium>=4.15.0
+# webdriver-manager>=4.0.1
+
+# Optional: Advanced image processing
+# opencv-python>=4.8.0

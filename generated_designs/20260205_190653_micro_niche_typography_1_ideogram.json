@@ -1,0 +1,30 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_190653_micro_niche_typography_1_ideogram.png",
+  "size": "1024x1024",
+  "provider": "ideogram",
+  "idea": {
+    "type": "micro_niche",
+    "category": "profession",
+    "niche": "professions",
+    "sub_niche": "trucker",
+    "specialty": "Flatbed",
+    "template": "typography",
+    "priority": "high",
+    "prompt_vars": {
+      "quote": "Flatbed Trucker: Miles ahead of the rest",
+      "subject": "Flatbed trucker",
+      "style": "distressed",
+      "color_scheme": "vibrant"
+    },
+    "tags": [
+      "trucker",
+      "flatbed",
+      "career gift",
+      "trucker life",
+      "work humor",
+      "coworker gift"
+    ]
+  },
+  "prompt": "\"Flatbed Trucker: Miles ahead of the rest\" in bold distressed typography, vibrant colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_190653"
+}

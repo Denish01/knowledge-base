@@ -1,0 +1,20 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_185858_seasonal_typography_2_ideogram.png",
+  "size": "1024x1024",
+  "provider": "ideogram",
+  "idea": {
+    "type": "seasonal",
+    "event": "Valentine's Day",
+    "template": "typography",
+    "priority": "high",
+    "prompt_vars": {
+      "subject": "Valentine's Day",
+      "style": "festive",
+      "mood": "celebratory",
+      "quote": "Hustle until your haters ask if you're hiring",
+      "color_scheme": "vibrant"
+    }
+  },
+  "prompt": "\"Hustle until your haters ask if you're hiring\" in bold festive typography, vibrant colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_185858"
+}

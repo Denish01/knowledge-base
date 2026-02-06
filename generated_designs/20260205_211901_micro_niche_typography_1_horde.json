@@ -1,0 +1,31 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_211901_micro_niche_typography_1_horde.png",
+  "size": "1024x1024",
+  "cost": 0.0,
+  "provider": "stablehorde",
+  "idea": {
+    "type": "micro_niche",
+    "category": "dog_breed",
+    "niche": "dogs",
+    "sub_niche": "Corgi",
+    "breed_key": "corgi",
+    "identity": "Parent",
+    "template": "typography",
+    "priority": "high",
+    "prompt_vars": {
+      "quote": "Corgi butt, don't care",
+      "subject": "Corgi",
+      "style": "bold modern",
+      "color_scheme": "earth tones"
+    },
+    "tags": [
+      "corgi",
+      "corgi parent",
+      "dog lover",
+      "dog gift",
+      "corgi"
+    ]
+  },
+  "prompt": "\"Corgi butt, don't care\" in bold bold modern typography, earth tones colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_211901"
+}

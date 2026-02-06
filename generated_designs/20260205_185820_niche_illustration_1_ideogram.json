@@ -1,0 +1,21 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_185820_niche_illustration_1_ideogram.png",
+  "size": "1024x1024",
+  "provider": "ideogram",
+  "idea": {
+    "type": "niche",
+    "niche": "hobbies",
+    "sub_niche": "hiking",
+    "template": "illustration",
+    "priority": "normal",
+    "prompt_vars": {
+      "subject": "hiking",
+      "style": "retro",
+      "angle": "hiking life",
+      "mood": "peaceful",
+      "color_scheme": "cool"
+    }
+  },
+  "prompt": "retro illustration of hiking, peaceful mood, cool color palette, clean lines, suitable for merchandise, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_185820"
+}

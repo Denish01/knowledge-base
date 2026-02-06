@@ -1,0 +1,31 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_210720_micro_niche_typography_1_horde.png",
+  "size": "1024x1024",
+  "cost": 0.0,
+  "provider": "stablehorde",
+  "idea": {
+    "type": "micro_niche",
+    "category": "cat_breed",
+    "niche": "cats",
+    "sub_niche": "Black Cat",
+    "breed_key": "black_cat",
+    "identity": "Mom",
+    "template": "typography",
+    "priority": "high",
+    "prompt_vars": {
+      "quote": "The void stares back and wants treats",
+      "subject": "Black Cat",
+      "style": "minimalist",
+      "color_scheme": "vibrant"
+    },
+    "tags": [
+      "black cat",
+      "black cat mom",
+      "cat lover",
+      "cat gift",
+      "crazy cat lady"
+    ]
+  },
+  "prompt": "\"The void stares back and wants treats\" in bold minimalist typography, vibrant colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_210720"
+}

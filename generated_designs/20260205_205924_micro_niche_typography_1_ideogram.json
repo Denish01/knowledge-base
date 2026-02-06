@@ -1,0 +1,18 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_205924_micro_niche_typography_1_ideogram.png",
+  "size": "1024x1024",
+  "provider": "ideogram",
+  "idea": {
+    "type": "micro_niche",
+    "template": "typography",
+    "niche": "dogs",
+    "sub_niche": "Corgi",
+    "prompt_vars": {
+      "quote": "Corgi Mom: Fluffy Butt Enthusiast",
+      "style": "bold modern",
+      "color_scheme": "vibrant"
+    }
+  },
+  "prompt": "\"Corgi Mom: Fluffy Butt Enthusiast\" in bold bold modern typography, vibrant colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_205924"
+}

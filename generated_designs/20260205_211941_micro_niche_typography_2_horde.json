@@ -1,0 +1,31 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_211941_micro_niche_typography_2_horde.png",
+  "size": "1024x1024",
+  "cost": 0.0,
+  "provider": "stablehorde",
+  "idea": {
+    "type": "micro_niche",
+    "category": "cat_breed",
+    "niche": "cats",
+    "sub_niche": "Black Cat",
+    "breed_key": "black_cat",
+    "identity": "Parent",
+    "template": "typography",
+    "priority": "high",
+    "prompt_vars": {
+      "quote": "Black cats are good luck, fight me",
+      "subject": "Black Cat",
+      "style": "minimalist",
+      "color_scheme": "pastel"
+    },
+    "tags": [
+      "black cat",
+      "black cat parent",
+      "cat lover",
+      "cat gift",
+      "crazy cat lady"
+    ]
+  },
+  "prompt": "\"Black cats are good luck, fight me\" in bold minimalist typography, pastel colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_211941"
+}

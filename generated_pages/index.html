@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free educational resources - clear explanations of finance, math, science, and more.">
+    <title>Knowledge Base - Learn Anything Simply</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background: #fafafa;
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #1a73e8;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #1a73e8;
+            margin-top: 40px;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .category-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .category-card h3 {
+            margin-top: 0;
+            color: #1a73e8;
+        }
+        .category-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .category-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .category-card li:last-child {
+            border-bottom: none;
+        }
+        .category-card a {
+            color: #333;
+            text-decoration: none;
+        }
+        .category-card a:hover {
+            color: #1a73e8;
+        }
+        .calc-badge {
+            background: #e8f0fe;
+            color: #1a73e8;
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 8px;
+        }
+        .stats {
+            background: #1a73e8;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .stat-num {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Knowledge Base</h1>
+    <p>Clear, simple explanations with interactive calculators. No fluff, just facts.</p>
+
+    <div class="stats">
+        <div>
+            <div class="stat-num">165+</div>
+            <div class="stat-label">Topics</div>
+        </div>
+        <div>
+            <div class="stat-num">12</div>
+            <div class="stat-label">Calculators</div>
+        </div>
+        <div>
+            <div class="stat-num">7</div>
+            <div class="stat-label">Categories</div>
+        </div>
+    </div>
+
+    <div class="category-grid">
+        <div class="category-card">
+            <h3>💰 Finance</h3>
+            <ul>
+                <li><a href="finance/compound-interest.html">Compound Interest</a><span class="calc-badge">CALC</span></li>
+                <li><a href="finance/mortgage-amortization.html">Mortgage Amortization</a><span class="calc-badge">CALC</span></li>
+                <li><a href="finance/index-fund.html">Index Fund</a></li>
+                <li><a href="finance/dollar-cost-averaging.html">Dollar Cost Averaging</a></li>
+                <li><a href="finance/roth-ira.html">Roth IRA</a><span class="calc-badge">CALC</span></li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h3>🔬 Science</h3>
+            <ul>
+                <li><a href="science/photosynthesis.html">Photosynthesis</a></li>
+                <li><a href="science/water-cycle.html">Water Cycle</a></li>
+                <li><a href="science/cellular-respiration.html">Cellular Respiration</a></li>
+                <li><a href="science/natural-selection.html">Natural Selection</a></li>
+                <li><a href="science/osmosis.html">Osmosis</a></li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h3>📐 Math</h3>
+            <ul>
+                <li><a href="math/percentages.html">Percentages</a><span class="calc-badge">CALC</span></li>
+                <li><a href="math/mean-median-mode.html">Mean, Median, Mode</a><span class="calc-badge">CALC</span></li>
+                <li><a href="math/pythagorean-theorem.html">Pythagorean Theorem</a><span class="calc-badge">CALC</span></li>
+                <li><a href="math/standard-deviation.html">Standard Deviation</a><span class="calc-badge">CALC</span></li>
+                <li><a href="math/probability.html">Probability</a><span class="calc-badge">CALC</span></li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h3>📊 Economics</h3>
+            <ul>
+                <li><a href="economics/supply-and-demand.html">Supply and Demand</a></li>
+                <li><a href="economics/inflation.html">Inflation</a><span class="calc-badge">CALC</span></li>
+                <li><a href="economics/gross-domestic-product.html">Gross Domestic Product</a></li>
+                <li><a href="economics/opportunity-cost.html">Opportunity Cost</a></li>
+                <li><a href="economics/recession.html">Recession</a></li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h3>🧬 Biology</h3>
+            <ul>
+                <li><a href="biology/cell-membrane.html">Cell Membrane</a></li>
+                <li><a href="biology/mitochondria.html">Mitochondria</a></li>
+                <li><a href="biology/dna-replication.html">DNA Replication</a></li>
+                <li><a href="biology/enzyme.html">Enzyme</a></li>
+                <li><a href="biology/chromosome.html">Chromosome</a></li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h3>🦋 Life Cycles</h3>
+            <ul>
+                <li><a href="life_cycles/butterfly-life-cycle.html">Butterfly Life Cycle</a></li>
+                <li><a href="life_cycles/frog-life-cycle.html">Frog Life Cycle</a></li>
+                <li><a href="life_cycles/mosquito-life-cycle.html">Mosquito Life Cycle</a></li>
+                <li><a href="life_cycles/bee-life-cycle.html">Bee Life Cycle</a></li>
+                <li><a href="life_cycles/plant-life-cycle.html">Plant Life Cycle</a></li>
+            </ul>
+        </div>
+
+        <div class="category-card">
+            <h3>📝 Language</h3>
+            <ul>
+                <li><a href="language/noun.html">Noun</a></li>
+                <li><a href="language/verb.html">Verb</a></li>
+                <li><a href="language/metaphor.html">Metaphor</a></li>
+                <li><a href="language/thesis-statement.html">Thesis Statement</a></li>
+                <li><a href="language/paragraph-structure.html">Paragraph Structure</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer style="margin-top: 60px; text-align: center; color: #666; font-size: 14px;">
+        <p>Auto-generated educational content. Updated daily.</p>
+    </footer>
+</body>
+</html>

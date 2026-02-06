@@ -1,0 +1,30 @@
+{
+  "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_191614_micro_niche_typography_1_ideogram.png",
+  "size": "1024x1024",
+  "provider": "ideogram",
+  "idea": {
+    "type": "micro_niche",
+    "category": "hobby",
+    "niche": "hobbies",
+    "sub_niche": "gardening",
+    "hobby_type": "Succulent",
+    "identity": "Dad",
+    "template": "typography",
+    "priority": "medium",
+    "prompt_vars": {
+      "quote": "Succulent Garden: Dirty hands, clean soul",
+      "subject": "Succulent gardening",
+      "style": "rustic",
+      "color_scheme": "bold"
+    },
+    "tags": [
+      "gardening",
+      "succulent",
+      "gardening dad",
+      "hobby gift",
+      "gardening lover"
+    ]
+  },
+  "prompt": "\"Succulent Garden: Dirty hands, clean soul\" in bold rustic typography, bold colors, centered composition, transparent background, suitable for t-shirt printing, high quality, professional, print-ready, 300 DPI",
+  "timestamp": "20260205_191614"
+}

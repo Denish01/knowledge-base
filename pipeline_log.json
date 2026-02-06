@@ -1,0 +1,201 @@
+[
+  {
+    "timestamp": "2026-02-05T18:58:18.123408",
+    "target_designs": 3,
+    "generated": 3,
+    "uploaded": 0,
+    "failed": 0,
+    "designs": []
+  },
+  {
+    "timestamp": "2026-02-05T19:06:53.494726",
+    "target_designs": 4,
+    "generated": 4,
+    "uploaded": 0,
+    "failed": 0,
+    "designs": []
+  },
+  {
+    "timestamp": "2026-02-05T19:14:49.466263",
+    "target_designs": 2,
+    "generated": 2,
+    "uploaded": 0,
+    "failed": 0,
+    "designs": []
+  },
+  {
+    "timestamp": "2026-02-05T19:16:14.646048",
+    "target_designs": 2,
+    "generated": 2,
+    "uploaded": 0,
+    "failed": 0,
+    "designs": []
+  },
+  {
+    "timestamp": "2026-02-05T19:17:59.465894",
+    "target_designs": 1,
+    "generated": 1,
+    "uploaded": 0,
+    "failed": 0,
+    "designs": []
+  },
+  {
+    "timestamp": "2026-02-05T19:21:14.558195",
+    "target_designs": 2,
+    "generated": 2,
+    "uploaded": 0,
+    "failed": 0,
+    "designs": []
+  },
+  {
+    "timestamp": "2026-02-05T21:01:17.144140",
+    "target_designs": 2,
+    "generated": 2,
+    "uploaded": 0,
+    "failed": 0,
+    "designs": [
+      {
+        "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_210117_micro_niche_typography_1_horde.png",
+        "idea": {
+          "type": "micro_niche",
+          "category": "hobby",
+          "niche": "hobbies",
+          "sub_niche": "quilting",
+          "hobby_type": "Machine",
+          "identity": "Dad",
+          "template": "typography",
+          "priority": "medium",
+          "prompt_vars": {
+            "quote": "Machine Quilting: My fabric stash has a fabric stash",
+            "subject": "Machine quilting",
+            "style": "bold",
+            "color_scheme": "vintage"
+          },
+          "tags": [
+            "quilting",
+            "machine",
+            "quilting dad",
+            "hobby gift",
+            "quilting lover"
+          ]
+        },
+        "provider": "stablehorde"
+      },
+      {
+        "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_210152_micro_niche_typography_2_horde.png",
+        "idea": {
+          "type": "micro_niche",
+          "category": "dog_breed",
+          "niche": "dogs",
+          "sub_niche": "Husky",
+          "breed_key": "husky",
+          "identity": "Parent",
+          "template": "typography",
+          "priority": "high",
+          "prompt_vars": {
+            "quote": "I didn't adopt a Husky, I adopted a tornado",
+            "subject": "Husky",
+            "style": "bold modern",
+            "color_scheme": "black and white"
+          },
+          "tags": [
+            "husky",
+            "husky parent",
+            "dog lover",
+            "dog gift",
+            "husky"
+          ]
+        },
+        "provider": "stablehorde"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-05T21:07:20.892920",
+    "target_designs": 3,
+    "generated": 3,
+    "uploaded": 0,
+    "failed": 0,
+    "designs": [
+      {
+        "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_210720_micro_niche_typography_1_horde.png",
+        "idea": {
+          "type": "micro_niche",
+          "category": "cat_breed",
+          "niche": "cats",
+          "sub_niche": "Black Cat",
+          "breed_key": "black_cat",
+          "identity": "Mom",
+          "template": "typography",
+          "priority": "high",
+          "prompt_vars": {
+            "quote": "The void stares back and wants treats",
+            "subject": "Black Cat",
+            "style": "minimalist",
+            "color_scheme": "vibrant"
+          },
+          "tags": [
+            "black cat",
+            "black cat mom",
+            "cat lover",
+            "cat gift",
+            "crazy cat lady"
+          ]
+        },
+        "provider": "stablehorde"
+      },
+      {
+        "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_210803_micro_niche_typography_2_horde.png",
+        "idea": {
+          "type": "micro_niche",
+          "category": "profession",
+          "niche": "professions",
+          "sub_niche": "teacher",
+          "specialty": "PE",
+          "template": "typography",
+          "priority": "high",
+          "prompt_vars": {
+            "quote": "I'm a PE Teacher - I can't fix stupid but I can educate it",
+            "subject": "PE teacher",
+            "style": "distressed",
+            "color_scheme": "vibrant"
+          },
+          "tags": [
+            "teacher",
+            "pe",
+            "career gift",
+            "teacher life",
+            "work humor",
+            "coworker gift"
+          ]
+        },
+        "provider": "stablehorde"
+      },
+      {
+        "image_path": "E:\\Projects\\Blog template\\asset-generator\\generated_designs\\20260205_210838_seasonal_micro_typography_3_horde.png",
+        "idea": {
+          "type": "seasonal_micro",
+          "category": "seasonal",
+          "event": "Valentine's Day",
+          "niche": "dogs",
+          "sub_niche": "Boxer",
+          "template": "typography",
+          "priority": "high",
+          "prompt_vars": {
+            "quote": "Valentine's Day is better with my Boxer",
+            "subject": "Boxer Valentine's Day",
+            "style": "festive bold",
+            "color_scheme": "holiday colors"
+          },
+          "tags": [
+            "valentine's day",
+            "boxer",
+            "valentine's day boxer",
+            "holiday gift"
+          ]
+        },
+        "provider": "stablehorde"
+      }
+    ]
+  }
+]

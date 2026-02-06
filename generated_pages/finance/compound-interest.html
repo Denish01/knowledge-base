@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A clear, simple explanation of compound interest - definition, key concepts, examples, and common misconceptions.">
+    <title>What is Compound Interest? - Simple Explanation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { color: #1a1a1a; }
+        h2 { color: #2a2a2a; margin-top: 32px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        p { margin-bottom: 16px; }
+        .example { background: #f5f5f5; padding: 16px; border-radius: 8px; margin: 16px 0; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>What is Compound Interest?</h1>
+
+        <p><strong>Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods.</strong></p>
+
+        <h2>Simple Explanation</h2>
+        <p>When you save or invest money, you earn interest on your original amount. With compound interest, you also earn interest on the interest you've already earned. This creates a snowball effect where your money grows faster over time.</p>
+
+        <p>Think of it as "interest on interest." The longer you leave your money to grow, the more powerful this effect becomes. This is why compound interest is often called one of the most powerful forces in finance.</p>
+
+        <p>The frequency of compounding matters too. Interest can compound daily, monthly, quarterly, or annually. More frequent compounding means faster growth, though the difference is usually small.</p>
+
+        <h2>Key Components</h2>
+        <ul>
+            <li><strong>Principal</strong> - The original amount of money you start with</li>
+            <li><strong>Interest Rate</strong> - The percentage earned on your money per period</li>
+            <li><strong>Compounding Frequency</strong> - How often interest is calculated and added</li>
+            <li><strong>Time</strong> - The length of time money is invested or borrowed</li>
+            <li><strong>Future Value</strong> - The total amount after compound interest is applied</li>
+        </ul>
+
+        <h2>Common Misconceptions</h2>
+        <ul>
+            <li><strong>"Simple and compound interest are basically the same"</strong> - Over long periods, compound interest produces significantly more growth than simple interest</li>
+            <li><strong>"Compounding only matters for large amounts"</strong> - Even small amounts benefit greatly from compounding over time</li>
+            <li><strong>"The interest rate is all that matters"</strong> - Time and compounding frequency are equally important factors</li>
+            <li><strong>"Compound interest only applies to savings"</strong> - It also applies to debt, which is why credit card balances can grow quickly</li>
+        </ul>
+
+        <h2>Real-World Example</h2>
+        <div class="example">
+            <p>You deposit $1,000 in a savings account with 5% annual interest, compounded yearly.</p>
+            <ul>
+                <li>Year 1: $1,000 + $50 interest = $1,050</li>
+                <li>Year 2: $1,050 + $52.50 interest = $1,102.50</li>
+                <li>Year 3: $1,102.50 + $55.13 interest = $1,157.63</li>
+            </ul>
+            <p>Notice how the interest earned increases each year because you're earning interest on a larger amount.</p>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Compound interest is the process of earning interest on both your original money and previously earned interest, causing your wealth to grow exponentially over time.</p>
+
+        <!-- EMBEDDED CALCULATOR -->
+        <style>
+        .calculator {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .calculator h3 {
+            margin-top: 0;
+            color: #1a73e8;
+        }
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .calculator label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+        }
+        .calculator input, .calculator select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .calculator button {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .calculator button:hover {
+            background: #1557b0;
+        }
+        .calc-result {
+            margin-top: 16px;
+            padding: 12px;
+            background: white;
+            border-radius: 4px;
+            border-left: 4px solid #1a73e8;
+        }
+        .calc-result p {
+            margin: 8px 0;
+        }
+        </style>
+
+        <div class="calculator" id="compound-calc">
+            <h3>Try It: Compound Interest Calculator</h3>
+            <div class="calc-grid">
+                <label>Initial Amount ($)
+                    <input type="number" id="ci-principal" value="1000" min="0">
+                </label>
+                <label>Annual Interest Rate (%)
+                    <input type="number" id="ci-rate" value="5" min="0" max="100" step="0.1">
+                </label>
+                <label>Time (years)
+                    <input type="number" id="ci-time" value="10" min="1" max="50">
+                </label>
+                <label>Compound Frequency
+                    <select id="ci-frequency">
+                        <option value="1">Annually</option>
+                        <option value="4">Quarterly</option>
+                        <option value="12" selected>Monthly</option>
+                        <option value="365">Daily</option>
+                    </select>
+                </label>
+            </div>
+            <button onclick="calculateCompound()">Calculate</button>
+            <div class="calc-result" id="ci-result"></div>
+        </div>
+        <script>
+        function calculateCompound() {
+            const P = parseFloat(document.getElementById('ci-principal').value);
+            const r = parseFloat(document.getElementById('ci-rate').value) / 100;
+            const t = parseFloat(document.getElementById('ci-time').value);
+            const n = parseFloat(document.getElementById('ci-frequency').value);
+
+            const A = P * Math.pow((1 + r/n), n*t);
+            const interest = A - P;
+
+            document.getElementById('ci-result').innerHTML = `
+                <p><strong>Future Value:</strong> $${A.toFixed(2)}</p>
+                <p><strong>Total Interest Earned:</strong> $${interest.toFixed(2)}</p>
+                <p><strong>Growth:</strong> ${((A/P - 1) * 100).toFixed(1)}%</p>
+            `;
+        }
+        calculateCompound();
+        </script>
+
+    </article>
+</body>
+</html>
