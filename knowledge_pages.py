@@ -111,9 +111,10 @@ def get_canonical_title(concept, angle_id):
     return pattern.replace("{Concept}", concept.title())
 
 
-def get_concept_completion_status(concept, category, generated_set):
+def get_concept_completion_status(concept, category, generated_set=None):
     """
     Check completion status for a single concept.
+    Checks the structured folder format: {category}_structured/{concept}/{angle}.json
     Returns dict with status per angle.
     """
     registry = load_angle_registry()
@@ -122,6 +123,9 @@ def get_concept_completion_status(concept, category, generated_set):
 
     angles = registry.get("angles", {})
     concept_slug = slugify(concept)
+
+    # Check structured folder
+    structured_dir = OUTPUT_DIR / f"{category}_structured" / concept_slug
 
     status = {
         "concept": concept,
@@ -135,12 +139,14 @@ def get_concept_completion_status(concept, category, generated_set):
     }
 
     for angle_id, angle_config in angles.items():
-        slug = get_canonical_slug(concept, angle_id)
         is_required = angle_config.get("required", False)
-        exists = slug in generated_set
+
+        # Check if angle file exists in structured folder
+        angle_file = structured_dir / f"{angle_id}.json"
+        exists = angle_file.exists()
 
         status["angles"][angle_id] = {
-            "slug": slug,
+            "slug": angle_id,
             "exists": exists,
             "required": is_required,
         }
@@ -163,27 +169,13 @@ def get_concept_completion_status(concept, category, generated_set):
 def get_category_completion_report(category):
     """
     Generate a completion report for all concepts in a category.
+    Uses the structured folder format: {category}_structured/{concept}/{angle}.json
     Shows exactly which concepts are missing which angles.
     """
     # Get concepts for this category
     concepts = TOPIC_CATEGORIES.get(category, [])
     if not concepts:
         return {"error": f"No concepts found for category: {category}"}
-
-    # Load generated pages
-    log_data = load_generated_log()
-    generated = set()
-    for entry in log_data.get("generated", []):
-        if isinstance(entry, dict):
-            generated.add(entry.get("slug", ""))
-        else:
-            generated.add(slugify(str(entry)))
-
-    # Also check files on disk
-    category_dir = OUTPUT_DIR / category
-    if category_dir.exists():
-        for f in category_dir.glob("*.json"):
-            generated.add(f.stem)
 
     report = {
         "category": category,
@@ -198,7 +190,7 @@ def get_category_completion_report(category):
         return {"error": "No angle registry found"}
 
     for concept in concepts:
-        status = get_concept_completion_status(concept, category, generated)
+        status = get_concept_completion_status(concept, category)
 
         if status["is_complete"]:
             report["complete_concepts"] += 1
