@@ -451,9 +451,10 @@ def format_as_html(topic, content):
 <body>
     <article>
         <h1>What is {topic.title()}?</h1>
-        {html_content}
 
         {calculator_html}
+
+        {html_content}
     </article>
 </body>
 </html>

@@ -20,54 +20,6 @@
         li { margin-bottom: 8px; }
         p { margin-bottom: 16px; }
         .example { background: #f5f5f5; padding: 16px; border-radius: 8px; margin: 16px 0; }
-    </style>
-</head>
-<body>
-    <article>
-        <h1>What is Compound Interest?</h1>
-
-        <p><strong>Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods.</strong></p>
-
-        <h2>Simple Explanation</h2>
-        <p>When you save or invest money, you earn interest on your original amount. With compound interest, you also earn interest on the interest you've already earned. This creates a snowball effect where your money grows faster over time.</p>
-
-        <p>Think of it as "interest on interest." The longer you leave your money to grow, the more powerful this effect becomes. This is why compound interest is often called one of the most powerful forces in finance.</p>
-
-        <p>The frequency of compounding matters too. Interest can compound daily, monthly, quarterly, or annually. More frequent compounding means faster growth, though the difference is usually small.</p>
-
-        <h2>Key Components</h2>
-        <ul>
-            <li><strong>Principal</strong> - The original amount of money you start with</li>
-            <li><strong>Interest Rate</strong> - The percentage earned on your money per period</li>
-            <li><strong>Compounding Frequency</strong> - How often interest is calculated and added</li>
-            <li><strong>Time</strong> - The length of time money is invested or borrowed</li>
-            <li><strong>Future Value</strong> - The total amount after compound interest is applied</li>
-        </ul>
-
-        <h2>Common Misconceptions</h2>
-        <ul>
-            <li><strong>"Simple and compound interest are basically the same"</strong> - Over long periods, compound interest produces significantly more growth than simple interest</li>
-            <li><strong>"Compounding only matters for large amounts"</strong> - Even small amounts benefit greatly from compounding over time</li>
-            <li><strong>"The interest rate is all that matters"</strong> - Time and compounding frequency are equally important factors</li>
-            <li><strong>"Compound interest only applies to savings"</strong> - It also applies to debt, which is why credit card balances can grow quickly</li>
-        </ul>
-
-        <h2>Real-World Example</h2>
-        <div class="example">
-            <p>You deposit $1,000 in a savings account with 5% annual interest, compounded yearly.</p>
-            <ul>
-                <li>Year 1: $1,000 + $50 interest = $1,050</li>
-                <li>Year 2: $1,050 + $52.50 interest = $1,102.50</li>
-                <li>Year 3: $1,102.50 + $55.13 interest = $1,157.63</li>
-            </ul>
-            <p>Notice how the interest earned increases each year because you're earning interest on a larger amount.</p>
-        </div>
-
-        <h2>Summary</h2>
-        <p>Compound interest is the process of earning interest on both your original money and previously earned interest, causing your wealth to grow exponentially over time.</p>
-
-        <!-- EMBEDDED CALCULATOR -->
-        <style>
         .calculator {
             background: #f8f9fa;
             border: 1px solid #e0e0e0;
@@ -120,10 +72,15 @@
         .calc-result p {
             margin: 8px 0;
         }
-        </style>
+    </style>
+</head>
+<body>
+    <article>
+        <h1>What is Compound Interest?</h1>
 
+        <!-- CALCULATOR AT TOP -->
         <div class="calculator" id="compound-calc">
-            <h3>Try It: Compound Interest Calculator</h3>
+            <h3>Compound Interest Calculator</h3>
             <div class="calc-grid">
                 <label>Initial Amount ($)
                     <input type="number" id="ci-principal" value="1000" min="0">
@@ -164,6 +121,47 @@
         }
         calculateCompound();
         </script>
+
+        <!-- CONTENT BELOW -->
+        <p><strong>Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods.</strong></p>
+
+        <h2>Simple Explanation</h2>
+        <p>When you save or invest money, you earn interest on your original amount. With compound interest, you also earn interest on the interest you've already earned. This creates a snowball effect where your money grows faster over time.</p>
+
+        <p>Think of it as "interest on interest." The longer you leave your money to grow, the more powerful this effect becomes. This is why compound interest is often called one of the most powerful forces in finance.</p>
+
+        <p>The frequency of compounding matters too. Interest can compound daily, monthly, quarterly, or annually. More frequent compounding means faster growth, though the difference is usually small.</p>
+
+        <h2>Key Components</h2>
+        <ul>
+            <li><strong>Principal</strong> - The original amount of money you start with</li>
+            <li><strong>Interest Rate</strong> - The percentage earned on your money per period</li>
+            <li><strong>Compounding Frequency</strong> - How often interest is calculated and added</li>
+            <li><strong>Time</strong> - The length of time money is invested or borrowed</li>
+            <li><strong>Future Value</strong> - The total amount after compound interest is applied</li>
+        </ul>
+
+        <h2>Common Misconceptions</h2>
+        <ul>
+            <li><strong>"Simple and compound interest are basically the same"</strong> - Over long periods, compound interest produces significantly more growth than simple interest</li>
+            <li><strong>"Compounding only matters for large amounts"</strong> - Even small amounts benefit greatly from compounding over time</li>
+            <li><strong>"The interest rate is all that matters"</strong> - Time and compounding frequency are equally important factors</li>
+            <li><strong>"Compound interest only applies to savings"</strong> - It also applies to debt, which is why credit card balances can grow quickly</li>
+        </ul>
+
+        <h2>Real-World Example</h2>
+        <div class="example">
+            <p>You deposit $1,000 in a savings account with 5% annual interest, compounded yearly.</p>
+            <ul>
+                <li>Year 1: $1,000 + $50 interest = $1,050</li>
+                <li>Year 2: $1,050 + $52.50 interest = $1,102.50</li>
+                <li>Year 3: $1,102.50 + $55.13 interest = $1,157.63</li>
+            </ul>
+            <p>Notice how the interest earned increases each year because you're earning interest on a larger amount.</p>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Compound interest is the process of earning interest on both your original money and previously earned interest, causing your wealth to grow exponentially over time.</p>
 
     </article>
 </body>
