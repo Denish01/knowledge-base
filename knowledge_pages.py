@@ -91,6 +91,71 @@ Constraints:
 
 
 # =============================================================================
+# COMPARISON PAGE PROMPT (X vs Y)
+# =============================================================================
+
+COMPARISON_PAGE_PROMPT = """You are generating an evergreen comparison page.
+
+Compare: {topic}
+
+Rules:
+- Neutral, factual, no winner declared
+- 8th-grade reading level
+- No opinions, no recommendations
+- No dates or trends
+
+Structure (follow exactly):
+1. INTRODUCTION: One paragraph explaining what both terms are and why people compare them
+2. SIDE-BY-SIDE COMPARISON: A clear list comparing key aspects:
+   - Definition of each
+   - Key characteristics of each
+   - When to use each
+   - Pros and cons of each
+3. KEY DIFFERENCES: 4-5 bullet points highlighting the main distinctions
+4. KEY SIMILARITIES: 2-3 bullet points of what they share
+5. SIMPLE EXAMPLE: One scenario showing when you'd choose each
+6. SUMMARY: One sentence capturing the core difference
+
+Constraints:
+- 600-800 words total
+- Balanced treatment (no bias toward either option)
+- No emojis
+- Evergreen content only"""
+
+
+# =============================================================================
+# CLASSIFICATION PAGE PROMPT (Types of X, Parts of X)
+# =============================================================================
+
+CLASSIFICATION_PAGE_PROMPT = """You are generating an evergreen classification/list page.
+
+Topic: {topic}
+
+Rules:
+- Factual, structured, comprehensive
+- 8th-grade reading level
+- No opinions or rankings
+- No dates or trends
+
+Structure (follow exactly):
+1. INTRODUCTION: One paragraph explaining what {topic} covers and why classification matters
+2. MAIN CATEGORIES: List each type/part/stage with:
+   - Name
+   - Brief definition (1-2 sentences)
+   - Key characteristics
+   - Simple example
+3. COMPARISON TABLE: Summarize differences between categories
+4. HOW THEY RELATE: Brief explanation of how categories connect or differ
+5. SUMMARY: One sentence capturing the classification system
+
+Constraints:
+- 600-900 words total
+- Clear hierarchy and organization
+- No emojis
+- Evergreen content only"""
+
+
+# =============================================================================
 # TOPIC DATABASE
 # =============================================================================
 
@@ -274,6 +339,94 @@ TOPIC_CATEGORIES = {
         "jellyfish life cycle",
         "turtle life cycle",
     ],
+
+    # COMPARISON PAGES (X vs Y) - High intent, evergreen
+    "comparisons": [
+        "ETF vs mutual fund",
+        "stocks vs bonds",
+        "saving vs investing",
+        "simple interest vs compound interest",
+        "roth ira vs traditional ira",
+        "debit card vs credit card",
+        "fixed rate vs variable rate",
+        "gross income vs net income",
+        "assets vs liabilities",
+        "bull market vs bear market",
+        "mitosis vs meiosis",
+        "dna vs rna",
+        "plant cell vs animal cell",
+        "aerobic vs anaerobic respiration",
+        "photosynthesis vs cellular respiration",
+        "weather vs climate",
+        "speed vs velocity",
+        "mass vs weight",
+        "heat vs temperature",
+        "element vs compound",
+        "atom vs molecule",
+        "acid vs base",
+        "conductor vs insulator",
+        "series circuit vs parallel circuit",
+        "renewable vs nonrenewable energy",
+        "mean vs median",
+        "area vs perimeter",
+        "radius vs diameter",
+        "ratio vs proportion",
+        "expression vs equation",
+        "noun vs verb",
+        "simile vs metaphor",
+        "active voice vs passive voice",
+        "fact vs opinion",
+        "summary vs paraphrase",
+        "democracy vs republic",
+        "needs vs wants",
+        "import vs export",
+        "revenue vs profit",
+        "inflation vs deflation",
+    ],
+
+    # CLASSIFICATION PAGES (Types of X, Parts of X)
+    "classifications": [
+        "types of ecosystems",
+        "types of energy",
+        "types of rocks",
+        "types of clouds",
+        "types of volcanoes",
+        "types of plate boundaries",
+        "types of chemical reactions",
+        "types of waves",
+        "types of muscles",
+        "types of joints",
+        "types of blood cells",
+        "types of neurons",
+        "types of investments",
+        "types of bank accounts",
+        "types of insurance",
+        "types of taxes",
+        "types of loans",
+        "types of sentences",
+        "types of triangles",
+        "types of angles",
+        "types of graphs",
+        "types of fractions",
+        "types of government",
+        "types of economic systems",
+        "parts of a cell",
+        "parts of a plant",
+        "parts of a flower",
+        "parts of the brain",
+        "parts of the heart",
+        "parts of an atom",
+        "parts of speech",
+        "parts of a sentence",
+        "stages of the water cycle",
+        "stages of cellular respiration",
+        "stages of mitosis",
+        "stages of meiosis",
+        "branches of government",
+        "layers of the atmosphere",
+        "layers of the earth",
+        "levels of organization in biology",
+    ],
 }
 
 
@@ -304,6 +457,12 @@ def save_generated_log(log_data):
 
 def generate_with_gemini(topic):
     """Generate knowledge page content using Gemini."""
+    prompt = get_prompt_for_topic(topic)
+    return generate_with_gemini_prompt(prompt)
+
+
+def generate_with_gemini_prompt(prompt):
+    """Generate content using Gemini with a custom prompt."""
     if not GENAI_AVAILABLE:
         raise Exception("google-genai package not installed")
 
@@ -311,8 +470,6 @@ def generate_with_gemini(topic):
         raise Exception("GOOGLE_API_KEY not configured")
 
     client = genai.Client(api_key=GOOGLE_API_KEY)
-
-    prompt = KNOWLEDGE_PAGE_PROMPT.format(topic=topic)
 
     response = client.models.generate_content(
         model="gemini-2.0-flash",  # Text model, not image
@@ -324,14 +481,18 @@ def generate_with_gemini(topic):
 
 def generate_with_requests(topic):
     """Generate using REST API (fallback)."""
+    prompt = get_prompt_for_topic(topic)
+    return generate_with_requests_prompt(prompt)
+
+
+def generate_with_requests_prompt(prompt):
+    """Generate content using REST API with a custom prompt."""
     import requests
 
     if not GOOGLE_API_KEY:
         raise Exception("GOOGLE_API_KEY not configured")
 
     url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
-
-    prompt = KNOWLEDGE_PAGE_PROMPT.format(topic=topic)
 
     payload = {
         "contents": [{"parts": [{"text": prompt}]}]
@@ -352,13 +513,50 @@ def generate_with_requests(topic):
         raise Exception(f"API error: {response.status_code}")
 
 
+def detect_page_type(topic):
+    """Detect what type of page this topic needs."""
+    topic_lower = topic.lower()
+
+    # Comparison pages (X vs Y)
+    if " vs " in topic_lower or " versus " in topic_lower:
+        return "comparison"
+
+    # Classification pages
+    classification_keywords = [
+        "types of", "kinds of", "parts of", "stages of",
+        "layers of", "levels of", "branches of", "forms of"
+    ]
+    for keyword in classification_keywords:
+        if topic_lower.startswith(keyword):
+            return "classification"
+
+    # Default: definition page
+    return "definition"
+
+
+def get_prompt_for_topic(topic):
+    """Get the appropriate prompt template for a topic."""
+    page_type = detect_page_type(topic)
+
+    if page_type == "comparison":
+        return COMPARISON_PAGE_PROMPT.format(topic=topic)
+    elif page_type == "classification":
+        return CLASSIFICATION_PAGE_PROMPT.format(topic=topic)
+    else:
+        return KNOWLEDGE_PAGE_PROMPT.format(topic=topic)
+
+
 def generate_content(topic):
     """Generate page content using available method."""
     try:
+        prompt = get_prompt_for_topic(topic)
+        page_type = detect_page_type(topic)
+        log(f"  Page type: {page_type}")
+
         if GENAI_AVAILABLE:
-            return generate_with_gemini(topic)
+            return generate_with_gemini_prompt(prompt)
         else:
-            return generate_with_requests(topic)
+            return generate_with_requests_prompt(prompt)
     except Exception as e:
         log(f"Generation failed: {e}", "ERROR")
         raise
@@ -399,9 +597,26 @@ date: {datetime.now().strftime("%Y-%m-%d")}
     return md
 
 
+def get_page_title(topic):
+    """Generate appropriate title based on page type."""
+    page_type = detect_page_type(topic)
+
+    if page_type == "comparison":
+        # "ETF vs Mutual Fund" -> "ETF vs Mutual Fund: Key Differences Explained"
+        return f"{topic.title()}: Key Differences Explained"
+    elif page_type == "classification":
+        # "Types of Ecosystems" -> "Types of Ecosystems: Complete Guide"
+        return f"{topic.title()}: Complete Guide"
+    else:
+        # "Compound Interest" -> "What is Compound Interest?"
+        return f"What is {topic.title()}?"
+
+
 def format_as_html(topic, content):
     """Format content as standalone HTML with embedded calculator if applicable."""
     slug = slugify(topic)
+    page_title = get_page_title(topic)
+    page_type = detect_page_type(topic)
 
     # Convert content paragraphs to HTML
     paragraphs = content.strip().split("\n\n")
@@ -424,13 +639,21 @@ def format_as_html(topic, content):
     if calculator_html:
         log(f"  Adding calculator for: {topic}", "SUCCESS")
 
+    # Generate meta description based on page type
+    if page_type == "comparison":
+        meta_desc = f"Compare {topic} - key differences, similarities, and when to use each. Clear explanation with examples."
+    elif page_type == "classification":
+        meta_desc = f"Complete guide to {topic} - all categories explained with definitions and examples."
+    else:
+        meta_desc = f"A clear, simple explanation of {topic} - definition, key concepts, examples, and common misconceptions."
+
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of {topic} - definition, key concepts, examples, and common misconceptions.">
-    <title>What is {topic.title()}? - Simple Explanation</title>
+    <meta name="description" content="{meta_desc}">
+    <title>{page_title} - Simple Explanation</title>
     <style>
         body {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -450,7 +673,7 @@ def format_as_html(topic, content):
 </head>
 <body>
     <article>
-        <h1>What is {topic.title()}?</h1>
+        <h1>{page_title}</h1>
 
         {calculator_html}
 
