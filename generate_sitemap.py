@@ -11,7 +11,7 @@ from urllib.parse import quote
 # Configuration
 BASE_URL = "https://360library.com"
 OUTPUT_DIR = Path(__file__).parent / "generated_pages"
-SITEMAP_PATH = Path(__file__).parent / "sitemap.xml"
+SITEMAP_PATH = Path(__file__).parent / "generated_pages" / "sitemap.xml"
 
 def get_all_pages():
     """Crawl all structured folders and collect page URLs."""

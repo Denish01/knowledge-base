@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(find:*)",
+      "Bash(dir:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(findstr:*)",
+      "Bash(if exist .githubworkflows echo EXISTS else echo NOT_EXISTS)",
+      "Bash(gh workflow run:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(del:*)",
+      "Bash(ls:*)",
+      "Bash(git rebase:*)",
+      "WebFetch(domain:360library.com)",
+      "Bash(gh run list:*)",
+      "Bash(timeout:*)",
+      "Bash(powershell:*)"
+    ]
+  }
+}
