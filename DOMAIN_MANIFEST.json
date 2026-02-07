@@ -66,12 +66,13 @@
       ]
     },
     "economics": {
-      "status": "IN_PROGRESS",
+      "status": "CLOSED",
       "priority": 92,
-      "concepts": 50,
+      "concepts": 25,
       "pages": 200,
       "canonical_file": "canonical_concepts_economics.json",
-      "notes": "Natural extension of finance - Tier 2"
+      "notes": "Natural extension of finance - Tier 2",
+      "closure_date": "2026-02-07"
     },
     "health": {
       "status": "QUEUED",
@@ -99,9 +100,9 @@
     }
   },
   "totals": {
-    "domains_closed": 4,
-    "domains_queued": 4,
-    "total_concepts": 330,
+    "domains_closed": 5,
+    "domains_queued": 3,
+    "total_concepts": 305,
     "total_pages": 1615
   },
   "angle_registry": {

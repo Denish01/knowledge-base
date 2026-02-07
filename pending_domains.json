@@ -10,8 +10,9 @@
       "tier": 2,
       "concepts_estimated": 30,
       "discovered_date": "2026-02-06",
-      "status": "processing",
-      "notes": "Natural extension of finance - high RPM"
+      "status": "completed",
+      "notes": "Natural extension of finance - high RPM",
+      "completed_date": "2026-02-07"
     },
     {
       "domain": "health",
@@ -84,11 +85,12 @@
       "notes": "Health adjacent"
     }
   ],
-  "processing": "economics",
+  "processing": null,
   "completed": [
     "finance",
     "life_obligations",
     "science",
-    "math"
+    "math",
+    "economics"
   ]
 }
