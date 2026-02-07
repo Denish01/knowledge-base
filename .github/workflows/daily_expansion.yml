@@ -21,6 +21,11 @@ permissions:
   pages: write
   id-token: write
 
+# Only one expansion job at a time
+concurrency:
+  group: expansion
+  cancel-in-progress: false
+
 env:
   GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
   GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
@@ -158,9 +163,13 @@ jobs:
 
           # Push with retry logic
           for i in 1 2 3; do
-            git push && break
-            echo "Push failed, pulling and retrying..."
-            git pull --rebase
+            if git push; then
+              echo "Push successful"
+              break
+            fi
+            echo "Push attempt $i failed, rebasing..."
+            git pull --rebase --autostash
+            sleep 2
           done
 
   deploy:
