@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A clear, simple explanation of annual percentage rate - definition, key concepts, examples, and common misconceptions.">
+    <title>What is Annual Percentage Rate? - Simple Explanation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { color: #1a1a1a; }
+        h2 { color: #2a2a2a; margin-top: 32px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        p { margin-bottom: 16px; }
+        .example { background: #f5f5f5; padding: 16px; border-radius: 8px; margin: 16px 0; }
+        h3 { color: #3a3a3a; margin-top: 24px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background: #f5f5f5; font-weight: 600; }
+        tr:nth-child(even) { background: #fafafa; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>What is Annual Percentage Rate?</h1>
+
+        
+<style>
+.calculator {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+}
+.calculator h3 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.calculator label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.calculator button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.calculator button:hover {
+    background: #1557b0;
+}
+.calc-result {
+    margin-top: 16px;
+    padding: 12px;
+    background: white;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+.calc-result p {
+    margin: 8px 0;
+}
+.calc-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tab-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+.tab-btn.active {
+    background: #1a73e8;
+    color: white;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+</style>
+
+<div class="calculator" id="apr-apy-calc">
+    <h3>APR vs APY Calculator</h3>
+    <div class="calc-grid">
+        <label>Nominal Rate (APR) (%): <input type="number" id="apr-rate" value="12" min="0" step="0.1"></label>
+        <label>Compounding Frequency:
+            <select id="apr-freq">
+                <option value="1">Annually</option>
+                <option value="2">Semi-annually</option>
+                <option value="4">Quarterly</option>
+                <option value="12" selected>Monthly</option>
+                <option value="365">Daily</option>
+            </select>
+        </label>
+    </div>
+    <button onclick="calcAPY()">Calculate APY</button>
+    <div class="calc-result" id="apr-result"></div>
+</div>
+<script>
+function calcAPY() {
+    const apr = parseFloat(document.getElementById('apr-rate').value) / 100;
+    const n = parseInt(document.getElementById('apr-freq').value);
+    const apy = Math.pow(1 + apr/n, n) - 1;
+    const diff = apy - apr;
+    document.getElementById('apr-result').innerHTML = `
+        <p><strong>APR (Nominal):</strong> ${(apr*100).toFixed(2)}%</p>
+        <p><strong>APY (Effective):</strong> ${(apy*100).toFixed(2)}%</p>
+        <p><strong>Difference:</strong> ${(diff*100).toFixed(2)}% more with compounding</p>
+        <p><em>APY accounts for compound interest; APR does not.</em></p>
+    `;
+}
+calcAPY();
+</script>
+
+
+        <p>Annual percentage rate is a measure of the total cost of borrowing money, taking into account the interest rate and other fees associated with a loan.</p>
+
+<p>The annual percentage rate, or APR, is an important concept in personal finance because it helps borrowers understand the true cost of borrowing money. When you borrow money, you typically agree to repay the loan with interest, which is a percentage of the amount borrowed. The interest rate is usually expressed as a yearly rate, and it can vary depending on the type of loan and the lender. However, the APR is a more comprehensive measure of the cost of borrowing because it includes not only the interest rate but also other fees, such as origination fees or late payment fees.</p>
+
+<p>The APR is calculated by taking into account the total amount of interest and fees paid over the life of the loan, and then expressing that amount as a yearly rate. This means that the APR will usually be higher than the interest rate, because it includes the additional fees. For example, if you borrow $1,000 at an interest rate of 10%, you might expect to pay $100 in interest over the course of a year. However, if the lender also charges an origination fee of $50, the total cost of borrowing would be $150, which would result in a higher APR.</p>
+
+<p>Understanding the APR is important because it allows borrowers to compare the cost of different loans and make informed decisions about which loan is the best option. It's also important to note that the APR is not the same as the annual interest rate, which is the rate at which interest is charged on a loan. The annual interest rate is usually lower than the APR, because it does not include the additional fees.</p>
+
+<p>The key components of the annual percentage rate include:</p>
+<ul>
+  <li>The nominal interest rate, which is the basic interest rate charged on a loan</li>
+  <li>The compounding frequency, which is the number of times per year that interest is charged</li>
+  <li>The fees associated with the loan, such as origination fees or late payment fees</li>
+  <li>The loan term, which is the length of time over which the loan is repaid</li>
+  <li>The loan amount, which is the total amount borrowed</li>
+  <li>The payment schedule, which is the frequency at which payments are made on the loan</li>
+</ul>
+
+<p>There are several common misconceptions about the annual percentage rate, including:</p>
+<ul>
+  <li>That the APR is the same as the interest rate, which is not true because the APR includes additional fees</li>
+  <li>That the APR is only relevant for credit cards, when in fact it applies to all types of loans</li>
+  <li>That a low APR is always the best option, when in fact other factors such as the loan term and fees should also be considered</li>
+  <li>That the APR is set by the government, when in fact it is set by the lender and can vary widely depending on the type of loan and the borrower's creditworthiness</li>
+</ul>
+
+<p>For example, suppose you borrow $5,000 to buy a car, and the lender offers you a loan with an interest rate of 6% and an origination fee of $100. The loan has a term of 5 years, and you will make monthly payments of $966. The APR on this loan would be approximately 6.5%, which means that over the course of the loan, you would pay a total of $6,349, including $1,349 in interest and fees.</p>
+
+<p>In summary, the annual percentage rate is a measure of the total cost of borrowing money, taking into account the interest rate and other fees associated with a loan, and it is an important concept for borrowers to understand when making informed decisions about which loan is the best option.</p>
+    </article>
+</body>
+</html>

@@ -1,0 +1,38 @@
+---
+title: "What is Market Capitalization?"
+slug: market-capitalization
+description: "A clear, simple explanation of market capitalization - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-06
+---
+
+# What is Market Capitalization?
+
+Market capitalization is the total value of a company's outstanding shares, calculated by multiplying the number of shares by the current market price of one share.
+
+Market capitalization, also known as market cap, is a way to measure the size of a company. It gives an idea of how much a company is worth at a given time. To calculate market capitalization, you need to know the number of outstanding shares and the current market price of one share. Outstanding shares refer to the total number of shares that are currently owned by shareholders, including individual investors, institutions, and company insiders. The market price of a share can fluctuate constantly, depending on the forces of supply and demand in the market.
+
+The market capitalization of a company can change frequently, as the market price of its shares goes up or down. This is because market capitalization is directly tied to the market price of the shares. When the market price of a share increases, the market capitalization of the company also increases, and vice versa. Market capitalization is an important metric for investors, as it helps them understand the size and scope of a company. It is also used to categorize companies into different size groups, such as small-cap, mid-cap, and large-cap.
+
+Market capitalization is not the same as a company's book value or its total assets. Book value refers to the value of a company's assets minus its liabilities, as recorded on its balance sheet. Total assets, on the other hand, refer to the total value of a company's assets, including both tangible and intangible assets. Market capitalization, by contrast, reflects the market's expectations of a company's future performance and growth prospects. It is a forward-looking metric that takes into account the company's potential for growth, its competitive position, and its management team.
+
+The key components of market capitalization include:
+* Outstanding shares: the total number of shares that are currently owned by shareholders
+* Market price: the current price of one share
+* Shareholder ownership: the percentage of shares owned by different types of shareholders, such as individual investors, institutions, and company insiders
+* Market liquidity: the ability to buy or sell shares quickly and at a fair price
+* Company size: the categorization of a company into different size groups, such as small-cap, mid-cap, and large-cap
+* Industry comparison: the comparison of a company's market capitalization to that of its peers in the same industry
+
+There are several common misconceptions about market capitalization, including:
+* That market capitalization is the same as a company's book value or total assets
+* That market capitalization only reflects a company's current financial performance
+* That market capitalization is a perfect measure of a company's value
+* That market capitalization is only important for large companies
+
+For example, suppose a company has 10 million outstanding shares, and the current market price of one share is $50. The market capitalization of the company would be $500 million, calculated by multiplying the number of outstanding shares by the market price of one share. This means that if you were to buy all of the company's outstanding shares, it would cost you $500 million.
+
+In summary, market capitalization is a measure of a company's size and value, calculated by multiplying the number of outstanding shares by the current market price of one share, and it provides investors with important information about a company's potential for growth and its competitive position.
+
+---
+
+*This is an evergreen reference page. Content is factual and timeless.*
