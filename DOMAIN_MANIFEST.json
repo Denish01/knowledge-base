@@ -127,7 +127,7 @@
     "sitemap": "sitemap.xml",
     "index": "generated_pages/index.html",
     "robots": "generated_pages/robots.txt",
-    "base_url": "https://your-domain.com",
+    "base_url": "https://360library.com",
     "hosting": "pending"
   },
 

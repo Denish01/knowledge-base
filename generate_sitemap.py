@@ -9,7 +9,7 @@ from datetime import datetime
 from urllib.parse import quote
 
 # Configuration
-BASE_URL = "https://your-domain.com"  # Update this before deployment
+BASE_URL = "https://360library.com"
 OUTPUT_DIR = Path(__file__).parent / "generated_pages"
 SITEMAP_PATH = Path(__file__).parent / "sitemap.xml"
 
