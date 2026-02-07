@@ -1,0 +1,30 @@
+---
+title: "What is Examples Of Supply And Demand?"
+slug: examples-of-supply-and-demand
+description: "A clear, simple explanation of examples of supply and demand - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-06
+---
+
+# What is Examples Of Supply And Demand?
+
+1. INTRODUCTION
+Supply and demand is a fundamental concept in economics that describes the relationship between the availability of a product or service and the desire for it. The law of supply and demand states that when the supply of a product is high and the demand for it is low, the price tends to fall. Conversely, when the demand for a product is high and the supply is low, the price tends to rise. This concept is essential in understanding how markets work and how prices are determined.
+
+2. EVERYDAY EXAMPLES
+In daily life, supply and demand is evident in various scenarios. For instance, a farmer who grows apples may have a high supply of apples during the harvest season. If the demand for apples is low, the farmer may be forced to lower the price to encourage people to buy. On the other hand, a popular restaurant in a small town may have a high demand for its food, but a limited supply of tables. As a result, the restaurant may raise its prices or implement a waiting list to manage the demand. Another example is a housing market where the supply of apartments is low, and the demand is high. In this case, landlords may increase the rent, and real estate agents may raise the prices of apartments. Additionally, a small business that sells unique handmade crafts may have a low supply of products, but a high demand from customers. The business may raise its prices or limit production to maintain exclusivity.
+
+3. NOTABLE EXAMPLES
+The concept of supply and demand is also evident in larger-scale scenarios. For example, the oil industry is heavily influenced by supply and demand. When there is a disruption in oil production, such as a natural disaster or a geopolitical conflict, the supply of oil decreases, and the price tends to rise. Conversely, when new oil fields are discovered, or production increases, the supply of oil rises, and the price tends to fall. Another example is the airline industry, where the demand for flights is high during peak travel seasons, such as summer and holidays. As a result, airlines may raise their prices or offer limited discounts to manage the demand. The De Beers diamond company is also a classic example of supply and demand. By controlling the supply of diamonds and creating an illusion of scarcity, De Beers was able to maintain high prices and create a perception of diamonds as rare and valuable.
+
+4. EDGE CASES
+In some cases, supply and demand can be influenced by unique factors. For instance, a rare disease may create a high demand for a specific medication, but the supply may be limited due to the complexity of production or the lack of research. As a result, the price of the medication may rise significantly, making it inaccessible to some patients. Another example is a natural disaster, such as a hurricane, which can disrupt the supply chain and create a high demand for emergency services and supplies. In this case, the prices of essential goods and services may rise due to the limited supply and high demand.
+
+5. NON-EXAMPLES
+Some scenarios may seem like examples of supply and demand, but they are not. For instance, a charity event where people donate money to a good cause is not an example of supply and demand. The donation is a voluntary act, and the price is not determined by the market. Another example is a government subsidy, where the government provides financial support to a specific industry or group. In this case, the price is not determined by the market, but rather by the government's policy. Additionally, a social movement, such as a protest or a boycott, may influence the demand for a product or service, but it is not a direct example of supply and demand.
+
+6. PATTERN
+Despite the variety of contexts and scales, all valid examples of supply and demand share a common pattern. They all involve a market or a system where the price of a product or service is determined by the interaction between the supply and demand. The price tends to rise when the demand is high and the supply is low, and it tends to fall when the supply is high and the demand is low. This pattern is evident in everyday life, notable examples, and edge cases, and it is a fundamental principle of economics that helps us understand how markets work and how prices are determined.
+
+---
+
+*This is an evergreen reference page. Content is factual and timeless.*

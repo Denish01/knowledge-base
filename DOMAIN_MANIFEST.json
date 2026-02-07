@@ -2,7 +2,6 @@
   "version": "1.0",
   "description": "Master manifest for Universal Knowledge Index - tracks all domains, status, and roadmap",
   "last_updated": "2026-02-06",
-
   "domains": {
     "finance": {
       "status": "CLOSED",
@@ -67,11 +66,11 @@
       ]
     },
     "economics": {
-      "status": "QUEUED",
+      "status": "IN_PROGRESS",
       "priority": 92,
-      "concepts": 30,
-      "pages": 0,
-      "canonical_file": null,
+      "concepts": 50,
+      "pages": 200,
+      "canonical_file": "canonical_concepts_economics.json",
       "notes": "Natural extension of finance - Tier 2"
     },
     "health": {
@@ -99,14 +98,12 @@
       "notes": "Evergreen tech fundamentals - Tier 2"
     }
   },
-
   "totals": {
     "domains_closed": 4,
     "domains_queued": 4,
-    "total_concepts": 180,
-    "total_pages": 1415
+    "total_concepts": 330,
+    "total_pages": 1615
   },
-
   "angle_registry": {
     "file": "angle_registry.json",
     "required_angles": 6,
@@ -122,7 +119,6 @@
       "vs"
     ]
   },
-
   "deployment": {
     "sitemap": "sitemap.xml",
     "index": "generated_pages/index.html",
@@ -130,7 +126,6 @@
     "base_url": "https://360library.com",
     "hosting": "pending"
   },
-
   "roadmap": {
     "phase_1": {
       "name": "Foundation",
@@ -180,7 +175,6 @@
       ]
     }
   },
-
   "commands": {
     "generate": "python knowledge_pages.py --generate-expanded --category {domain} --count N",
     "check_status": "python knowledge_pages.py --closure-report --category {domain}",
