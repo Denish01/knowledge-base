@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Income Eligibility Work?"
+title: "How Income Eligibility Works"
 slug: how-does-income-eligibility-work
 description: "A clear, simple explanation of how does income eligibility work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Income Eligibility Work?
+# How Income Eligibility Works
 
 1. QUICK ANSWER: Income eligibility is determined through a process that involves assessing an individual's or family's income against a set of established guidelines to decide whether they qualify for certain benefits or programs. This process typically considers various factors, including income sources, household size, and expenses, to make an eligibility determination.
 

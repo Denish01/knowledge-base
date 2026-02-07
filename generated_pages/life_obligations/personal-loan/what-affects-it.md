@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Personal Loan?"
+title: "What Affects Personal Loan"
 slug: what-affects-personal-loan
 description: "A clear, simple explanation of what affects personal loan - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Personal Loan?
+# What Affects Personal Loan
 
 1. INTRODUCTION:
 A personal loan is a type of loan that individuals can borrow from lenders to cover various expenses, such as debt consolidation, weddings, or home improvements. Understanding the factors that affect personal loans is crucial because it helps borrowers make informed decisions and navigate the loan process effectively. By recognizing the influences on personal loans, individuals can better manage their debt, avoid potential pitfalls, and secure more favorable loan terms. In this explanation, we will explore the key factors that impact personal loans and examine their cause-and-effect relationships.

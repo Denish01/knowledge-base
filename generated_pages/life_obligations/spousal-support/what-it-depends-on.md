@@ -1,11 +1,11 @@
 ---
-title: "What is What Spousal Support Depends On?"
+title: "What Spousal Support Depends On"
 slug: what-spousal-support-depends-on
 description: "A clear, simple explanation of what spousal support depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Spousal Support Depends On?
+# What Spousal Support Depends On
 
 1. INTRODUCTION:
 Spousal support, also known as alimony, is a financial arrangement where one spouse provides monetary assistance to the other after a divorce or separation. Understanding what spousal support depends on is crucial for individuals navigating the process. The dependencies that underpin spousal support are essential, as they determine the eligibility, amount, and duration of the support. Without a clear grasp of these prerequisites, individuals may face uncertainty, delays, or even the denial of support.

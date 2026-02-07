@@ -1,11 +1,11 @@
 ---
-title: "What is What Social Security Depends On?"
+title: "What Social Security Depends On"
 slug: what-social-security-depends-on
 description: "A clear, simple explanation of what social security depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Social Security Depends On?
+# What Social Security Depends On
 
 1. INTRODUCTION:
 Social security refers to the financial assistance provided to individuals who are retired, disabled, or unemployed. Understanding what social security depends on is crucial for individuals to plan and prepare for their future financial stability. The various dependencies that underlie social security highlight the complexity and multifaceted nature of this system. By examining these dependencies, individuals can better appreciate the prerequisites that must be met in order to receive social security benefits.

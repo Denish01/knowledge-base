@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Recession?"
+title: "Types of Recession"
 slug: types-of-recession
 description: "A clear, simple explanation of types of recession - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Recession?
+# Types of Recession
 
 ## INTRODUCTION
 The concept of recession is a crucial aspect of economics, referring to a period of economic decline or contraction. Understanding the different types of recession is essential for economists, policymakers, and individuals to navigate and respond to economic downturns effectively. Classification of recessions matters because it helps identify the underlying causes, predict the potential duration and impact, and inform strategies for recovery. By categorizing recessions, experts can develop targeted policies and interventions to mitigate the effects and promote economic growth. This page provides an overview of the main types of recession, their characteristics, and how they relate to each other.

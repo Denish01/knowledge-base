@@ -1,11 +1,11 @@
 ---
-title: "What is What Affordability Assessment Depends On?"
+title: "What Affordability Assessment Depends On"
 slug: what-affordability-assessment-depends-on
 description: "A clear, simple explanation of what affordability assessment depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affordability Assessment Depends On?
+# What Affordability Assessment Depends On
 
 1. INTRODUCTION:
 Affordability assessment is the process of evaluating whether an individual or organization can afford a particular product, service, or investment. It involves analyzing various factors to determine the feasibility of a purchase or expenditure. Understanding what affordability assessment depends on is crucial, as it helps identify the prerequisites and requirements necessary for making informed decisions. The accuracy and reliability of an affordability assessment rely heavily on the presence of certain key dependencies.

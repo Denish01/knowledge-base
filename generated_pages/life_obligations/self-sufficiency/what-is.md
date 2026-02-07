@@ -1,11 +1,11 @@
 ---
-title: "What is Self-Sufficiency?"
+title: "What Is Self Sufficiency?"
 slug: self-sufficiency
 description: "A clear, simple explanation of self-sufficiency - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Self-Sufficiency?
+# What Is Self Sufficiency?
 
 Self-sufficiency is the ability of an individual, family, or community to provide for their own needs without relying heavily on external resources or support.
 

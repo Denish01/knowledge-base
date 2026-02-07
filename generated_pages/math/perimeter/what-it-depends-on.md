@@ -1,11 +1,11 @@
 ---
-title: "What is What Perimeter Depends On?"
+title: "What Perimeter Depends On"
 slug: what-perimeter-depends-on
 description: "A clear, simple explanation of what perimeter depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Perimeter Depends On?
+# What Perimeter Depends On
 
 1. INTRODUCTION
 Perimeter refers to the distance around a shape or an area. Understanding what perimeter depends on is crucial in various fields, including mathematics, engineering, and architecture. The dependencies that affect perimeter are fundamental principles that must be considered to calculate and apply perimeter accurately. Without a clear understanding of these dependencies, calculations and applications can be flawed, leading to errors and inaccuracies.

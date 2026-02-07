@@ -1,11 +1,11 @@
 ---
-title: "What is Tax Filing?"
+title: "What Is Tax Filing?"
 slug: tax-filing
 description: "A clear, simple explanation of tax filing - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Tax Filing?
+# What Is Tax Filing?
 
 Tax filing is the process by which individuals and organizations submit their tax returns to the relevant authorities, typically including information about their income, expenses, and other financial activities.
 

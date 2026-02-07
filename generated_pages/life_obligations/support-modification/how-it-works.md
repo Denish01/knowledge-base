@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Support Modification Work?"
+title: "How Support Modification Works"
 slug: how-does-support-modification-work
 description: "A clear, simple explanation of how does support modification work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Support Modification Work?
+# How Support Modification Works
 
 1. QUICK ANSWER: Support modification works by adjusting the level of financial or material assistance provided to an individual or group based on changes in their circumstances or needs. This process involves a series of steps that evaluate the current situation and determine the necessary adjustments to ensure fair and adequate support.
 

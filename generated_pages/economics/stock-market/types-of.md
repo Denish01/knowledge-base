@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Stock Market?"
+title: "Types of Stock Market"
 slug: types-of-stock-market
 description: "A clear, simple explanation of types of stock market - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Stock Market?
+# Types of Stock Market
 
 ## INTRODUCTION
 The stock market is a complex system that enables the buying and selling of securities, and understanding its various types is essential for investors, financial analysts, and economists. Classification of the stock market into different types helps in identifying the characteristics, advantages, and disadvantages of each category, which is crucial for making informed investment decisions. The classification of the stock market covers various aspects, including the types of stocks, trading mechanisms, and market structures. This categorization provides a framework for analyzing the stock market and its components, allowing individuals to navigate the complex world of finance with greater ease and clarity.

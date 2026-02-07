@@ -1,11 +1,11 @@
 ---
-title: "What is Cohabitation?"
+title: "What Is Cohabitation?"
 slug: cohabitation
 description: "A clear, simple explanation of cohabitation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Cohabitation?
+# What Is Cohabitation?
 
 Cohabitation is a living arrangement where two or more people, often in a romantic relationship, reside together in the same household without being married.
 

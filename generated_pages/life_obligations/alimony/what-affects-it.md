@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Alimony?"
+title: "What Affects Alimony"
 slug: what-affects-alimony
 description: "A clear, simple explanation of what affects alimony - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Alimony?
+# What Affects Alimony
 
 INTRODUCTION
 Alimony, also known as spousal support, is a payment made by one spouse to the other after a divorce or separation. Understanding the factors that affect alimony is crucial, as it can significantly impact the financial well-being of both parties involved. The amount and duration of alimony payments can vary greatly depending on several factors, making it essential to recognize these influences to navigate the process effectively.

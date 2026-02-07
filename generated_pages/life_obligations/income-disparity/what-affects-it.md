@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Income Disparity?"
+title: "What Affects Income Disparity"
 slug: what-affects-income-disparity
 description: "A clear, simple explanation of what affects income disparity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Income Disparity?
+# What Affects Income Disparity
 
 1. INTRODUCTION
 Income disparity refers to the unequal distribution of income among individuals or groups within a society. Understanding the factors that influence income disparity is crucial because it helps identify the causes of economic inequality and informs strategies to address it. By recognizing the various factors that affect income disparity, individuals and policymakers can work towards creating a more equitable distribution of resources. This knowledge is essential for developing effective solutions to reduce economic inequality and promote social justice.

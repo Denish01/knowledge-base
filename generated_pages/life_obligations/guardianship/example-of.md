@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Guardianship?"
+title: "Example of Guardianship"
 slug: examples-of-guardianship
 description: "A clear, simple explanation of examples of guardianship - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Guardianship?
+# Example of Guardianship
 
 1. INTRODUCTION
 Guardianship refers to the legal relationship between a guardian, who has the responsibility to care for and make decisions on behalf of another person, known as the ward. This relationship is established to protect the well-being and interests of the ward, who may be unable to care for themselves due to age, disability, or other circumstances. Guardianship can take many forms and can be applied in various contexts, ranging from family relationships to professional arrangements.

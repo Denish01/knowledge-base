@@ -1,11 +1,11 @@
 ---
-title: "What is Estate Planning Vs?"
+title: "Estate Planning Compared"
 slug: estate-planning-vs
 description: "A clear, simple explanation of estate planning vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Estate Planning Vs?
+# Estate Planning Compared
 
 Estate planning refers to the process of managing and distributing a person's assets after their death or incapacitation.
 

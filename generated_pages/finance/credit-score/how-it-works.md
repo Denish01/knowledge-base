@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Credit Score Work?"
+title: "How Credit Score Works"
 slug: how-does-credit-score-work
 description: "A clear, simple explanation of how does credit score work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Credit Score Work?
+# How Credit Score Works
 
 1. QUICK ANSWER: A credit score is a three-digit number that represents an individual's creditworthiness, calculated based on their credit history and behavior. It works by evaluating an individual's past borrowing and repayment actions to predict their future ability to manage debt.
 

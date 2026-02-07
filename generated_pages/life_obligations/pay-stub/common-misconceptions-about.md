@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Pay Stub?"
+title: "Common Misconceptions About Pay Stub"
 slug: common-misconceptions-about-pay-stub
 description: "A clear, simple explanation of common misconceptions about pay stub - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Pay Stub?
+# Common Misconceptions About Pay Stub
 
 1. INTRODUCTION:
 Pay stubs are an essential part of employment, providing employees with a detailed breakdown of their earnings and deductions. Despite their importance, many people have misconceptions about pay stubs. These misconceptions can lead to confusion and misunderstandings about one's pay. The reasons for these misconceptions are varied, but they often stem from a lack of understanding about the components of a pay stub and how they are calculated. In this article, we will explore common misconceptions about pay stubs, clarify the reality behind these myths, and provide tips on how to avoid these mistakes.

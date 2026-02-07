@@ -1,11 +1,11 @@
 ---
-title: "What is Child Support Obligation Vs?"
+title: "Child Support Obligation Compared"
 slug: child-support-obligation-vs
 description: "A clear, simple explanation of child support obligation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Child Support Obligation Vs?
+# Child Support Obligation Compared
 
 Child support obligation refers to the legal responsibility of a parent to provide financial support for their child or children. 
 

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Mitosis Work?"
+title: "How Mitosis Works"
 slug: how-does-mitosis-work
 description: "A clear, simple explanation of how does mitosis work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Mitosis Work?
+# How Mitosis Works
 
 1. QUICK ANSWER: Mitosis is a complex process by which a cell divides into two daughter cells that are genetically identical to the parent cell. This process involves the replication of DNA and the separation of chromosomes, resulting in two cells with the same number of chromosomes as the parent cell.
 

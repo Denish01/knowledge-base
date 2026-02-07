@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Earning Capacity?"
+title: "Types of Earning Capacity"
 slug: types-of-earning-capacity
 description: "A clear, simple explanation of types of earning capacity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Earning Capacity?
+# Types of Earning Capacity
 
 ## INTRODUCTION
 Earning capacity refers to an individual's ability to generate income through various means, such as employment, investments, or entrepreneurship. Classifying types of earning capacity is essential as it helps individuals understand their financial potential, make informed career choices, and plan for their financial future. By categorizing earning capacity, individuals can identify areas where they excel and those that require improvement, ultimately leading to better financial management and decision-making. Understanding the different types of earning capacity can also facilitate communication between individuals, employers, and financial advisors, ensuring that everyone is on the same page when discussing financial goals and expectations.

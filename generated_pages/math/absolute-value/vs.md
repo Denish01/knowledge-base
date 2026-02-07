@@ -1,11 +1,11 @@
 ---
-title: "What is Absolute Value Vs?"
+title: "Absolute Value Compared"
 slug: absolute-value-vs
 description: "A clear, simple explanation of absolute value vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Absolute Value Vs?
+# Absolute Value Compared
 
 Absolute value vs refers to the comparison between the absolute value of a number and other mathematical concepts, such as absolute value inequalities, equations, and functions. 
 

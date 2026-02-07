@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Eligibility Criteria?"
+title: "Example of Eligibility Criteria"
 slug: examples-of-eligibility-criteria
 description: "A clear, simple explanation of examples of eligibility criteria - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Eligibility Criteria?
+# Example of Eligibility Criteria
 
 1. INTRODUCTION:
 Eligibility criteria refer to the specific requirements or conditions that must be met in order to qualify for something, such as a service, benefit, or opportunity. These criteria can be used to determine who is entitled to participate, receive a benefit, or access a particular resource. Eligibility criteria are used in various contexts, including education, employment, healthcare, and government programs, to ensure that resources are allocated fairly and efficiently.

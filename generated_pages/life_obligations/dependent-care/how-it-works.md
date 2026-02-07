@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Dependent Care Work?"
+title: "How Dependent Care Works"
 slug: how-does-dependent-care-work
 description: "A clear, simple explanation of how does dependent care work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Dependent Care Work?
+# How Dependent Care Works
 
 1. QUICK ANSWER: Dependent care is a system where individuals or families receive support for caring for their dependents, such as children, adults, or people with disabilities, through various programs and services. This support can come in the form of financial assistance, respite care, or other forms of aid, and is designed to help caregivers manage their responsibilities and provide the best possible care for their dependents.
 

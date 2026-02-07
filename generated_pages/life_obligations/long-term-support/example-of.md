@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Long-Term Support?"
+title: "Example of Long Term Support"
 slug: examples-of-long-term-support
 description: "A clear, simple explanation of examples of long-term support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Long-Term Support?
+# Example of Long Term Support
 
 1. INTRODUCTION:
 Long-term support refers to the ongoing assistance or maintenance provided to individuals, groups, or systems over an extended period. This support can take many forms, including financial, emotional, or physical, and is often crucial for the continued success or well-being of the recipient. Understanding long-term support is essential in various aspects of life, from personal relationships to professional and community development.

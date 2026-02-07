@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Index Fund?"
+title: "Example of Index Fund"
 slug: examples-of-index-fund
 description: "A clear, simple explanation of examples of index fund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Index Fund?
+# Example of Index Fund
 
 1. INTRODUCTION
 An index fund is a type of investment that pools money from many investors to buy a small piece of the entire market, such as the stock market or bond market. It aims to track the performance of a specific market index, like the S&P 500, by holding a representative sample of the same securities in the same proportions. This allows investors to own a small part of the entire market, providing broad diversification and potentially reducing risk.

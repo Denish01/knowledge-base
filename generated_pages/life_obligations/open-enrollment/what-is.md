@@ -1,11 +1,11 @@
 ---
-title: "What is Open Enrollment?"
+title: "What Is Open Enrollment?"
 slug: open-enrollment
 description: "A clear, simple explanation of open enrollment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Open Enrollment?
+# What Is Open Enrollment?
 
 Open enrollment is a period of time during which individuals can enroll in or change their health insurance plans, often with certain limitations and requirements.
 

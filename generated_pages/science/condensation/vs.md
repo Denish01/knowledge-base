@@ -1,11 +1,11 @@
 ---
-title: "What is Condensation Vs?"
+title: "Condensation Compared"
 slug: condensation-vs
 description: "A clear, simple explanation of condensation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Condensation Vs?
+# Condensation Compared
 
 Condensation is the process by which water vapor in the air is changed into liquid water, typically resulting in the formation of droplets on surfaces.
 

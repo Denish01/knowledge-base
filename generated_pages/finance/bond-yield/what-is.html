@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A clear, simple explanation of bond yield - definition, key concepts, examples, and common misconceptions.">
-    <title>What is Bond Yield? - Simple Explanation</title>
+    <title>What Is Bond Yield? - Simple Explanation</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -29,112 +29,9 @@
 </head>
 <body>
     <article>
-        <h1>What is Bond Yield?</h1>
+        <h1>What Is Bond Yield?</h1>
 
         
-<style>
-.calculator {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 24px 0;
-}
-.calculator h3 {
-    margin-top: 0;
-    color: #1a73e8;
-}
-.calc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 16px;
-}
-.calculator label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-}
-.calculator input, .calculator select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.calculator button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.calculator button:hover {
-    background: #1557b0;
-}
-.calc-result {
-    margin-top: 16px;
-    padding: 12px;
-    background: white;
-    border-radius: 4px;
-    border-left: 4px solid #1a73e8;
-}
-.calc-result p {
-    margin: 8px 0;
-}
-.calc-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.tab-btn {
-    background: #e0e0e0;
-    color: #333;
-}
-.tab-btn.active {
-    background: #1a73e8;
-    color: white;
-}
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-</style>
-
-<div class="calculator" id="bond-yield-calc">
-    <h3>Bond Yield Calculator</h3>
-    <div class="calc-grid">
-        <label>Face Value ($): <input type="number" id="bond-face" value="1000" min="0"></label>
-        <label>Annual Coupon Payment ($): <input type="number" id="bond-coupon" value="50" min="0"></label>
-        <label>Current Market Price ($): <input type="number" id="bond-price" value="950" min="0"></label>
-        <label>Years to Maturity: <input type="number" id="bond-years" value="10" min="1"></label>
-    </div>
-    <button onclick="calcBondYield()">Calculate</button>
-    <div class="calc-result" id="bond-result"></div>
-</div>
-<script>
-function calcBondYield() {
-    const face = parseFloat(document.getElementById('bond-face').value);
-    const coupon = parseFloat(document.getElementById('bond-coupon').value);
-    const price = parseFloat(document.getElementById('bond-price').value);
-    const years = parseFloat(document.getElementById('bond-years').value);
-    const currentYield = (coupon / price) * 100;
-    const ytm = ((coupon + (face - price) / years) / ((face + price) / 2)) * 100;
-    document.getElementById('bond-result').innerHTML = `
-        <p><strong>Current Yield:</strong> ${currentYield.toFixed(2)}%</p>
-        <p><strong>Yield to Maturity (approx):</strong> ${ytm.toFixed(2)}%</p>
-        <p><strong>Coupon Rate:</strong> ${((coupon/face)*100).toFixed(2)}%</p>
-        <p><em>Trading at ${price < face ? 'discount' : price > face ? 'premium' : 'par'}</em></p>
-    `;
-}
-calcBondYield();
-</script>
-
 
         <p>Bond yield is a measure of the return an investor can expect to earn from a bond, typically expressed as a percentage of the bond's face value.</p>
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Income Eligibility?"
+title: "What Is Income Eligibility?"
 slug: income-eligibility
 description: "A clear, simple explanation of income eligibility - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Income Eligibility?
+# What Is Income Eligibility?
 
 Income eligibility is a set of criteria used to determine whether an individual or family meets the financial requirements to receive certain benefits, services, or programs.
 

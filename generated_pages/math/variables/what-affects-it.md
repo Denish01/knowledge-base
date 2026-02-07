@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Variables?"
+title: "What Affects Variables"
 slug: what-affects-variables
 description: "A clear, simple explanation of what affects variables - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Variables?
+# What Affects Variables
 
 1. INTRODUCTION
 

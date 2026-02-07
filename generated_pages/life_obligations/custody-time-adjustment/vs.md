@@ -1,11 +1,11 @@
 ---
-title: "What is Custody Time Adjustment Vs?"
+title: "Custody Time Adjustment Compared"
 slug: custody-time-adjustment-vs
 description: "A clear, simple explanation of custody time adjustment vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Custody Time Adjustment Vs?
+# Custody Time Adjustment Compared
 
 Custody time adjustment refers to the process of modifying a child custody arrangement to better suit the needs of the child and the parents involved.
 

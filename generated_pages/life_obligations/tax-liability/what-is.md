@@ -1,11 +1,11 @@
 ---
-title: "What is Tax Liability?"
+title: "What Is Tax Liability?"
 slug: tax-liability
 description: "A clear, simple explanation of tax liability - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Tax Liability?
+# What Is Tax Liability?
 
 Tax liability is the amount of money that an individual or organization is required to pay to the government in the form of taxes.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Square Roots Work?"
+title: "How Square Roots Works"
 slug: how-does-square-roots-work
 description: "A clear, simple explanation of how does square roots work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Square Roots Work?
+# How Square Roots Works
 
 1. QUICK ANSWER: 
 The square root of a number is a value that, when multiplied by itself, gives the original number. This process involves finding a number that, when squared, equals a given value, and it is a fundamental operation in mathematics.

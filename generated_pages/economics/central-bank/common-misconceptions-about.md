@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Central Bank?"
+title: "Common Misconceptions About Central Bank"
 slug: common-misconceptions-about-central-bank
 description: "A clear, simple explanation of common misconceptions about central bank - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Central Bank?
+# Common Misconceptions About Central Bank
 
 1. INTRODUCTION: 
 Misconceptions about central banks are common due to the complex nature of their role in the economy. Central banks are often misunderstood because their actions and decisions can have far-reaching effects on the financial system, making it difficult for people to fully comprehend their functions and responsibilities. Additionally, the terminology and concepts used in central banking can be unfamiliar to many, leading to misconceptions and myths. Understanding the actual role and functions of central banks can help clarify these misconceptions and provide a clearer picture of their importance in the economy.

@@ -1,11 +1,11 @@
 ---
-title: "What is Spousal Support?"
+title: "What Is Spousal Support?"
 slug: spousal-support
 description: "A clear, simple explanation of spousal support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Spousal Support?
+# What Is Spousal Support?
 
 Spousal support is a legal obligation where one spouse provides financial assistance to the other spouse, typically after a divorce or separation. 
 

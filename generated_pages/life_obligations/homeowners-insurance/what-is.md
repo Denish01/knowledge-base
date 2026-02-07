@@ -1,11 +1,11 @@
 ---
-title: "What is Homeowners Insurance?"
+title: "What Is Homeowners Insurance?"
 slug: homeowners-insurance
 description: "A clear, simple explanation of homeowners insurance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Homeowners Insurance?
+# What Is Homeowners Insurance?
 
 Homeowners insurance is a type of property insurance that provides financial protection to homeowners against losses or damages to their home and its contents.
 

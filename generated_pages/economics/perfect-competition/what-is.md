@@ -1,11 +1,11 @@
 ---
-title: "What is Perfect Competition?"
+title: "What Is Perfect Competition?"
 slug: perfect-competition
 description: "A clear, simple explanation of perfect competition - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Perfect Competition?
+# What Is Perfect Competition?
 
 Perfect competition is a market structure in which a large number of firms produce a homogeneous product, and no single firm has the power to influence the market price.
 

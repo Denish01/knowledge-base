@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Parental Obligation?"
+title: "What Affects Parental Obligation"
 slug: what-affects-parental-obligation
 description: "A clear, simple explanation of what affects parental obligation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Parental Obligation?
+# What Affects Parental Obligation
 
 1. INTRODUCTION:
 Parental obligation refers to the responsibilities and duties that parents have towards their children, including providing for their physical, emotional, and financial well-being. Understanding the factors that affect parental obligation is crucial because it helps parents, policymakers, and social workers identify the causes of neglect or inadequate care and develop effective strategies to support families. By recognizing the influences on parental obligation, individuals can work to create a nurturing environment that allows children to thrive.

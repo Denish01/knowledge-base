@@ -1,11 +1,11 @@
 ---
-title: "What is Employer Match?"
+title: "What Is Employer Match?"
 slug: employer-match
 description: "A clear, simple explanation of employer match - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Employer Match?
+# What Is Employer Match?
 
 Employer match refers to the amount of money an employer contributes to an employee's retirement or savings plan, usually based on the amount the employee contributes. 
 

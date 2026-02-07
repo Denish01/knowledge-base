@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Spousal Support Duration?"
+title: "What Affects Spousal Support Duration"
 slug: what-affects-spousal-support-duration
 description: "A clear, simple explanation of what affects spousal support duration - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Spousal Support Duration?
+# What Affects Spousal Support Duration
 
 INTRODUCTION
 Spousal support duration refers to the length of time one spouse is required to provide financial support to the other after a divorce or separation. Understanding the factors that affect spousal support duration is crucial for individuals navigating the divorce process, as it can significantly impact their financial well-being and future plans. The duration of spousal support can be influenced by a variety of factors, and recognizing these influences can help individuals make informed decisions and prepare for the outcome of their divorce proceedings.

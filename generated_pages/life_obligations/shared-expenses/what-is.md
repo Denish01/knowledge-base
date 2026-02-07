@@ -1,11 +1,11 @@
 ---
-title: "What is Shared Expenses?"
+title: "What Is Shared Expenses?"
 slug: shared-expenses
 description: "A clear, simple explanation of shared expenses - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Shared Expenses?
+# What Is Shared Expenses?
 
 Shared expenses is a financial arrangement where two or more individuals or parties split the cost of a particular item, service, or obligation.
 

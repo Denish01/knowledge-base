@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Evaporation Work?"
+title: "How Evaporation Works"
 slug: how-does-evaporation-work
 description: "A clear, simple explanation of how does evaporation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Evaporation Work?
+# How Evaporation Works
 
 1. QUICK ANSWER: Evaporation is the process by which a liquid transforms into a gas or vapor, occurring when the molecules of the liquid gain enough energy to escape into the air. This process is driven by the heat and temperature of the surroundings, which provides the necessary energy for the molecules to transition from a liquid to a gas state.
 

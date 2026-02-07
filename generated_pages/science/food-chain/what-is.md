@@ -1,11 +1,11 @@
 ---
-title: "What is Food Chain?"
+title: "What Is Food Chain?"
 slug: food-chain
 description: "A clear, simple explanation of food chain - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Food Chain?
+# What Is Food Chain?
 
 Food chain refers to the series of events where one organism is eaten by another, resulting in the transfer of energy from one species to another in an ecosystem.
 

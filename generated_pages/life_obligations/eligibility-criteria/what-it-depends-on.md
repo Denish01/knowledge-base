@@ -1,11 +1,11 @@
 ---
-title: "What is What Eligibility Criteria Depends On?"
+title: "What Eligibility Criteria Depends On"
 slug: what-eligibility-criteria-depends-on
 description: "A clear, simple explanation of what eligibility criteria depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Eligibility Criteria Depends On?
+# What Eligibility Criteria Depends On
 
 1. INTRODUCTION:
 Eligibility criteria refer to the set of requirements or conditions that must be met to qualify for something, such as a program, service, or benefit. Understanding what eligibility criteria depend on is crucial because it helps individuals and organizations determine whether they meet the necessary prerequisites. Dependencies are essential in this context, as they form the foundation upon which eligibility is assessed. By recognizing these dependencies, individuals can better navigate the process of determining their eligibility.

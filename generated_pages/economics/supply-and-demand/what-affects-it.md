@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Supply And Demand?"
+title: "What Affects Supply And Demand"
 slug: what-affects-supply-and-demand
 description: "A clear, simple explanation of what affects supply and demand - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Supply And Demand?
+# What Affects Supply And Demand
 
 INTRODUCTION
 Supply and demand are two fundamental concepts in economics that determine the prices of goods and services. Supply refers to the amount of a product or service that producers are willing and able to produce and sell, while demand refers to the amount of a product or service that consumers are willing and able to buy. Understanding the factors that affect supply and demand is crucial for businesses, policymakers, and individuals to make informed decisions. The factors that influence supply and demand can have a significant impact on the economy, and recognizing these influences is essential for navigating the complex world of economics.

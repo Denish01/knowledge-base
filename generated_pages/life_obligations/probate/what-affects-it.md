@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Probate?"
+title: "What Affects Probate"
 slug: what-affects-probate
 description: "A clear, simple explanation of what affects probate - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Probate?
+# What Affects Probate
 
 1. INTRODUCTION:
 Probate is the legal process of settling the estate of a deceased person. It involves verifying the validity of their will, paying off debts, and distributing assets to beneficiaries. Understanding what affects probate is essential because it can help individuals and families navigate this complex process more efficiently. The factors that influence probate can significantly impact the duration, cost, and outcome of the process. By recognizing these factors, individuals can take steps to minimize potential issues and ensure a smoother transition of assets.

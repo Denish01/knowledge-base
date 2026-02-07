@@ -1,11 +1,11 @@
 ---
-title: "What is Water Cycle?"
+title: "What Is Water Cycle?"
 slug: water-cycle
 description: "A clear, simple explanation of water cycle - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Water Cycle?
+# What Is Water Cycle?
 
 Water cycle refers to the continuous process by which water is circulated between the Earth and the atmosphere, involving the movement of water in three phases: liquid, solid, and gas. 
 

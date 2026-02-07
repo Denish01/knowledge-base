@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Home Inspection?"
+title: "What Affects Home Inspection"
 slug: what-affects-home-inspection
 description: "A clear, simple explanation of what affects home inspection - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Home Inspection?
+# What Affects Home Inspection
 
 1. INTRODUCTION
 

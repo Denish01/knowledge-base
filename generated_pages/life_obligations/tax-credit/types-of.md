@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Tax Credit?"
+title: "Types of Tax Credit"
 slug: types-of-tax-credit
 description: "A clear, simple explanation of types of tax credit - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Tax Credit?
+# Types of Tax Credit
 
 ## INTRODUCTION
 The concept of tax credits encompasses a wide range of classifications, each designed to benefit different groups of taxpayers or to encourage specific behaviors and investments. Understanding the various types of tax credits is crucial for individuals and businesses to navigate the complex tax system effectively and to maximize their eligibility for these credits. Classification matters because it helps in identifying which credits are applicable to one's situation, thereby facilitating better tax planning and potentially reducing tax liabilities.

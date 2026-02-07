@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Income Adjustment Work?"
+title: "How Income Adjustment Works"
 slug: how-does-income-adjustment-work
 description: "A clear, simple explanation of how does income adjustment work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Income Adjustment Work?
+# How Income Adjustment Works
 
 1. QUICK ANSWER: Income adjustment is a process that modifies an individual's or household's income to account for changes in their financial situation, ensuring that their income accurately reflects their current circumstances. This mechanism involves recalculating income based on various factors, such as changes in employment, family size, or expenses, to determine the adjusted income.
 

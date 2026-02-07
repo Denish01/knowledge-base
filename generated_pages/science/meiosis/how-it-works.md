@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Meiosis Work?"
+title: "How Meiosis Works"
 slug: how-does-meiosis-work
 description: "A clear, simple explanation of how does meiosis work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Meiosis Work?
+# How Meiosis Works
 
 1. QUICK ANSWER: Meiosis is a process of cell division that reduces the number of chromosomes in reproductive cells, resulting in the production of gametes with unique combinations of genetic traits. This process involves a series of steps that ensure genetic diversity and proper chromosome distribution.
 

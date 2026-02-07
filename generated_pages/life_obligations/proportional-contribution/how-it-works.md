@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Proportional Contribution Work?"
+title: "How Proportional Contribution Works"
 slug: how-does-proportional-contribution-work
 description: "A clear, simple explanation of how does proportional contribution work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Proportional Contribution Work?
+# How Proportional Contribution Works
 
 1. QUICK ANSWER: Proportional contribution is a mechanism where each participant's contribution is based on their individual share or proportion of the total. This approach ensures that everyone contributes fairly and equally, relative to their own capacity or resources.
 

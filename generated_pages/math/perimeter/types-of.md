@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Perimeter?"
+title: "Types of Perimeter"
 slug: types-of-perimeter
 description: "A clear, simple explanation of types of perimeter - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Perimeter?
+# Types of Perimeter
 
 1. INTRODUCTION:
 The concept of perimeter is a fundamental aspect of geometry, referring to the distance around a shape or object. Understanding the different types of perimeter is essential in various fields, including architecture, engineering, and design. Classification of perimeters is crucial as it helps in identifying and calculating the boundaries of various shapes, which is vital for measuring areas, volumes, and sizes. By categorizing perimeters, individuals can better comprehend the characteristics and properties of different shapes, making it easier to work with and manipulate them. This classification system provides a comprehensive framework for understanding the various types of perimeters, enabling individuals to apply this knowledge in practical scenarios.

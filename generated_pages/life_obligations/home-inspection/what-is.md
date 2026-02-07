@@ -1,11 +1,11 @@
 ---
-title: "What is Home Inspection?"
+title: "What Is Home Inspection?"
 slug: home-inspection
 description: "A clear, simple explanation of home inspection - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Home Inspection?
+# What Is Home Inspection?
 
 Home inspection is a thorough examination of a home's condition, including its major systems and components, to identify any potential defects or issues.
 

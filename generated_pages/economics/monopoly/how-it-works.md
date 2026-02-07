@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Monopoly Work?"
+title: "How Monopoly Works"
 slug: how-does-monopoly-work
 description: "A clear, simple explanation of how does monopoly work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Monopoly Work?
+# How Monopoly Works
 
 1. QUICK ANSWER: Monopoly is a real estate trading game where players roll dice to move around a board, buying and selling properties, and collecting rent from other players who land on them. The goal is to accumulate wealth and drive others into bankruptcy by strategically acquiring and managing properties.
 

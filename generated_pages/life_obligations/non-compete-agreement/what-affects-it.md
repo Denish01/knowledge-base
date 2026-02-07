@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Non-Compete Agreement?"
+title: "What Affects Non Compete Agreement"
 slug: what-affects-non-compete-agreement
 description: "A clear, simple explanation of what affects non-compete agreement - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Non-Compete Agreement?
+# What Affects Non Compete Agreement
 
 1. INTRODUCTION:
 A non-compete agreement is a contract between an employer and an employee that restricts the employee from working for a competitor or starting a similar business after leaving the company. Understanding the factors that affect non-compete agreements is crucial for both employers and employees, as it helps them navigate the complexities of these contracts and make informed decisions. The influences on non-compete agreements can determine their enforceability, scope, and overall effectiveness. By recognizing these factors, parties involved can better anticipate the consequences of signing or negotiating such an agreement.

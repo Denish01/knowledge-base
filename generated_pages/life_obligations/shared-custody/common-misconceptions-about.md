@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Shared Custody?"
+title: "Common Misconceptions About Shared Custody"
 slug: common-misconceptions-about-shared-custody
 description: "A clear, simple explanation of common misconceptions about shared custody - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Shared Custody?
+# Common Misconceptions About Shared Custody
 
 1. INTRODUCTION: Why misconceptions about shared custody are common
 

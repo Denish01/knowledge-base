@@ -1,11 +1,11 @@
 ---
-title: "What is Insurance Deductible?"
+title: "What Is Insurance Deductible?"
 slug: insurance-deductible
 description: "A clear, simple explanation of insurance deductible - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Insurance Deductible?
+# What Is Insurance Deductible?
 
 Insurance deductible is a specific amount of money that an individual must pay out of pocket for healthcare expenses or other insured losses before their insurance coverage kicks in.
 

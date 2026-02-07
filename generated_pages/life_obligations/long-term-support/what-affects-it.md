@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Long-Term Support?"
+title: "What Affects Long Term Support"
 slug: what-affects-long-term-support
 description: "A clear, simple explanation of what affects long-term support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Long-Term Support?
+# What Affects Long Term Support
 
 INTRODUCTION
 Long-term support refers to the ongoing assistance and resources provided to individuals or systems over an extended period. Understanding the factors that affect long-term support is crucial, as it enables individuals and organizations to make informed decisions and take proactive steps to ensure the sustainability and effectiveness of support systems. By recognizing the influences that shape long-term support, it is possible to identify potential challenges and opportunities, ultimately leading to better outcomes.

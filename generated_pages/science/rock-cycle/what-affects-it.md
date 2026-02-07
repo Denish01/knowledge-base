@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Rock Cycle?"
+title: "What Affects Rock Cycle"
 slug: what-affects-rock-cycle
 description: "A clear, simple explanation of what affects rock cycle - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Rock Cycle?
+# What Affects Rock Cycle
 
 1. INTRODUCTION
 The rock cycle is the process by which rocks are formed, transformed, and destroyed. It is a continuous process that involves the interaction of geological forces, such as weathering, erosion, and plate tectonics. Understanding the factors that affect the rock cycle is crucial because it helps us comprehend the dynamic nature of the Earth's surface and the processes that shape our planet. By recognizing the influences on the rock cycle, we can better appreciate the complex relationships between geological processes and the resulting landforms.

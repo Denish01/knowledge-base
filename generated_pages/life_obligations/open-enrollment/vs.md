@@ -1,11 +1,11 @@
 ---
-title: "What is Open Enrollment Vs?"
+title: "Open Enrollment Compared"
 slug: open-enrollment-vs
 description: "A clear, simple explanation of open enrollment vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Open Enrollment Vs?
+# Open Enrollment Compared
 
 Open enrollment is a period of time when individuals can enroll in or change their health insurance plans, often with guaranteed acceptance and without penalty.
 

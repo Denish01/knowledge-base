@@ -1,11 +1,11 @@
 ---
-title: "What is What Income Shares Model Depends On?"
+title: "What Income Shares Model Depends On"
 slug: what-income-shares-model-depends-on
 description: "A clear, simple explanation of what income shares model depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Income Shares Model Depends On?
+# What Income Shares Model Depends On
 
 1. INTRODUCTION
 The income shares model is a method used to calculate the amount of child support one parent must pay to the other. It is based on the income of both parents and the amount of time each parent spends with the child. Understanding the dependencies of the income shares model is crucial, as it helps ensure that child support calculations are fair and accurate. The model's effectiveness relies on various prerequisites, requirements, and foundations, which are essential for its proper functioning.

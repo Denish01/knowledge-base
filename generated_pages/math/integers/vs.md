@@ -1,11 +1,11 @@
 ---
-title: "What is Integers Vs?"
+title: "Integers Compared"
 slug: integers-vs
 description: "A clear, simple explanation of integers vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Integers Vs?
+# Integers Compared
 
 Integers vs refers to the comparison and distinction between integers and other types of numbers, including fractions, decimals, and non-integer values.
 

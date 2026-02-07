@@ -1,11 +1,11 @@
 ---
-title: "What is What Employer Match Depends On?"
+title: "What Employer Match Depends On"
 slug: what-employer-match-depends-on
 description: "A clear, simple explanation of what employer match depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Employer Match Depends On?
+# What Employer Match Depends On
 
 1. INTRODUCTION:
 An employer match is a benefit offered by some employers where they contribute a certain amount of money to an employee's retirement account, usually based on the employee's own contributions. Understanding what an employer match depends on is crucial for both employers and employees to make the most of this benefit. The dependencies that govern employer match are essential prerequisites that must be met for the match to be effective. In this explanation, we will explore the key dependencies that influence employer match.

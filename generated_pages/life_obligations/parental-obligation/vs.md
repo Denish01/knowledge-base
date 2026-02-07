@@ -1,11 +1,11 @@
 ---
-title: "What is Parental Obligation Vs?"
+title: "Parental Obligation Compared"
 slug: parental-obligation-vs
 description: "A clear, simple explanation of parental obligation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Parental Obligation Vs?
+# Parental Obligation Compared
 
 Parental obligation refers to the legal and moral responsibilities that parents have towards their children, which include providing for their physical, emotional, and financial well-being.
 

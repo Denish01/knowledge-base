@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Noncustodial Parent?"
+title: "Example of Noncustodial Parent"
 slug: examples-of-noncustodial-parent
 description: "A clear, simple explanation of examples of noncustodial parent - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Noncustodial Parent?
+# Example of Noncustodial Parent
 
 1. INTRODUCTION
 A noncustodial parent is a parent who does not have primary physical custody of their child. This means they do not live with the child and may have limited visitation rights or shared custody arrangements. Noncustodial parents still have parental responsibilities and may be involved in their child's life, but they do not provide daily care.

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Child Support?"
+title: "What Affects Child Support"
 slug: what-affects-child-support
 description: "A clear, simple explanation of what affects child support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Child Support?
+# What Affects Child Support
 
 INTRODUCTION
 Child support is a financial arrangement where one parent provides monetary assistance to the other parent for the care and well-being of their child. Understanding the factors that affect child support is crucial for both parents, as it can significantly impact their financial situation and the child's quality of life. Knowing what influences child support can help parents make informed decisions and navigate the complexities of the child support system.

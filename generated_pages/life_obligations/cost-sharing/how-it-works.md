@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Cost Sharing Work?"
+title: "How Cost Sharing Works"
 slug: how-does-cost-sharing-work
 description: "A clear, simple explanation of how does cost sharing work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Cost Sharing Work?
+# How Cost Sharing Works
 
 1. QUICK ANSWER: 
 Cost sharing is a mechanism where the financial burden of a particular service or product is divided among multiple parties, typically to make it more affordable for individuals. This is usually achieved through a predetermined agreement or contract that outlines the terms and proportions of the shared costs.

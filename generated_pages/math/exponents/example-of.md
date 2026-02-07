@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Exponents?"
+title: "Example of Exponents"
 slug: examples-of-exponents
 description: "A clear, simple explanation of examples of exponents - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Exponents?
+# Example of Exponents
 
 1. INTRODUCTION:
 Exponents are a fundamental concept in mathematics that represent the operation of repeated multiplication. In simpler terms, an exponent is a shorthand way of writing a number raised to a power, where the number is multiplied by itself as many times as the power indicates. For instance, 2^3 (read as "2 to the power of 3") equals 2 * 2 * 2, which equals 8. This concept is crucial in various mathematical operations and is applied across different fields and aspects of our lives.

@@ -1,11 +1,11 @@
 ---
-title: "What is Inflation Vs?"
+title: "Inflation Compared"
 slug: inflation-vs
 description: "A clear, simple explanation of inflation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Inflation Vs?
+# Inflation Compared
 
 Inflation vs deflation refers to the two opposing economic phenomena that affect the purchasing power of money and the overall economy.
 

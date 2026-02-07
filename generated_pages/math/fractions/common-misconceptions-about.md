@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Fractions?"
+title: "Common Misconceptions About Fractions"
 slug: common-misconceptions-about-fractions
 description: "A clear, simple explanation of common misconceptions about fractions - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Fractions?
+# Common Misconceptions About Fractions
 
 1. INTRODUCTION: 
 Fractions are a fundamental concept in mathematics, and understanding them is crucial for more advanced math topics. However, misconceptions about fractions are common, even among students who have received proper instruction. These misconceptions can arise from various sources, including incomplete understanding, misleading examples, or a lack of practice. As a result, it is essential to address these misconceptions to ensure a solid foundation in math.

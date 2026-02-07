@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Support Adjustment?"
+title: "What Affects Support Adjustment"
 slug: what-affects-support-adjustment
 description: "A clear, simple explanation of what affects support adjustment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Support Adjustment?
+# What Affects Support Adjustment
 
 1. INTRODUCTION
 Support adjustment refers to the process of modifying or changing the level of support provided to an individual or system. Understanding the factors that affect support adjustment is crucial, as it enables individuals and organizations to make informed decisions and take proactive steps to optimize support. The ability to adjust support effectively can have a significant impact on outcomes, efficiency, and overall well-being. By recognizing the influences on support adjustment, it is possible to identify areas for improvement and develop strategies to achieve better results.

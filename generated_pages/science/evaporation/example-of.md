@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Evaporation?"
+title: "Example of Evaporation"
 slug: examples-of-evaporation
 description: "A clear, simple explanation of examples of evaporation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Evaporation?
+# Example of Evaporation
 
 1. INTRODUCTION
 Evaporation is the process by which a liquid transforms into a gas or vapor. This transformation occurs when the molecules of a substance gain enough energy to break free from the surface tension of the liquid and turn into vapor. Evaporation is an essential part of the water cycle and plays a crucial role in various natural and human-made processes.

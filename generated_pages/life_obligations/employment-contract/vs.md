@@ -1,11 +1,11 @@
 ---
-title: "What is Employment Contract Vs?"
+title: "Employment Contract Compared"
 slug: employment-contract-vs
 description: "A clear, simple explanation of employment contract vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Employment Contract Vs?
+# Employment Contract Compared
 
 Employment contract refers to a legally binding agreement between an employer and employee that outlines the terms and conditions of employment. 
 

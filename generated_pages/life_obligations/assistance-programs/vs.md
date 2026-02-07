@@ -1,11 +1,11 @@
 ---
-title: "What is Assistance Programs Vs?"
+title: "Assistance Programs Compared"
 slug: assistance-programs-vs
 description: "A clear, simple explanation of assistance programs vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Assistance Programs Vs?
+# Assistance Programs Compared
 
 Assistance programs vs social services is a comparison between two types of support systems that help individuals in need. 
 

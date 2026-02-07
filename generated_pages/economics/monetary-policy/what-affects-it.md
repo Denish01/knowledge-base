@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Monetary Policy?"
+title: "What Affects Monetary Policy"
 slug: what-affects-monetary-policy
 description: "A clear, simple explanation of what affects monetary policy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Monetary Policy?
+# What Affects Monetary Policy
 
 1. INTRODUCTION:
 Monetary policy refers to the actions taken by a central bank to manage the money supply and interest rates in an economy. Understanding the factors that affect monetary policy is crucial because it helps individuals, businesses, and governments make informed decisions about investments, borrowing, and spending. The influences on monetary policy can have significant effects on the overall health of the economy, making it essential to comprehend the complex relationships between these factors.

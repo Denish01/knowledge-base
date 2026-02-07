@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Probate Work?"
+title: "How Probate Works"
 slug: how-does-probate-work
 description: "A clear, simple explanation of how does probate work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Probate Work?
+# How Probate Works
 
 1. QUICK ANSWER: 
 Probate is a legal process that takes place after someone's death, where a court oversees the distribution of their assets, known as their estate, to the rightful heirs. This process ensures that the deceased person's wishes, as outlined in their will, are carried out and their debts are paid.

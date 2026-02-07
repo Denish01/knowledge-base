@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Coordinate Plane?"
+title: "Example of Coordinate Plane"
 slug: examples-of-coordinate-plane
 description: "A clear, simple explanation of examples of coordinate plane - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Coordinate Plane?
+# Example of Coordinate Plane
 
 1. INTRODUCTION
 A coordinate plane is a two-dimensional grid system used to describe the position of points in space. It consists of two axes, the x-axis and the y-axis, which intersect at a point called the origin. The x-axis runs horizontally, while the y-axis runs vertically. Each point on the plane is represented by a pair of coordinates, (x, y), which indicate the distance from the origin along the x-axis and y-axis, respectively. The coordinate plane is a fundamental concept in mathematics and is used in various fields, including geography, physics, and engineering.

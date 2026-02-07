@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Water Cycle?"
+title: "What Affects Water Cycle"
 slug: what-affects-water-cycle
 description: "A clear, simple explanation of what affects water cycle - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Water Cycle?
+# What Affects Water Cycle
 
 1. INTRODUCTION:
 The water cycle, also known as the hydrologic cycle, is the continuous process by which water is circulated between the Earth and the atmosphere. It involves the movement of water in three phases: liquid, solid (ice), and gas (water vapor). Understanding the factors that affect the water cycle is crucial because it helps us appreciate the complex interactions within our environment and the potential consequences of human activities on the planet's water resources. The water cycle is essential for life on Earth, and recognizing the influences on this process can inform decisions related to water management, conservation, and sustainability.

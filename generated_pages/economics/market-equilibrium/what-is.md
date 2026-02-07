@@ -1,11 +1,11 @@
 ---
-title: "What is Market Equilibrium?"
+title: "What Is Market Equilibrium?"
 slug: market-equilibrium
 description: "A clear, simple explanation of market equilibrium - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Market Equilibrium?
+# What Is Market Equilibrium?
 
 Market equilibrium is a state in which the supply of a product or service equals the demand for it, resulting in no tendency for the price to change.
 

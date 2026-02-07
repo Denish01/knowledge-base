@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Non-Compete Agreement?"
+title: "Example of Non Compete Agreement"
 slug: examples-of-non-compete-agreement
 description: "A clear, simple explanation of examples of non-compete agreement - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Non-Compete Agreement?
+# Example of Non Compete Agreement
 
 1. INTRODUCTION
 A non-compete agreement is a contract between two parties where one party agrees not to compete with the other in a specific business or industry. This type of agreement is often used by employers to prevent former employees from starting their own businesses or working for competitors. Non-compete agreements can be found in various contexts, from small businesses to large corporations, and can have significant implications for individuals and companies.

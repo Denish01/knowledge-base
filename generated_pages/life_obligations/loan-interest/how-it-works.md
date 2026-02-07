@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Loan Interest Work?"
+title: "How Loan Interest Works"
 slug: how-does-loan-interest-work
 description: "A clear, simple explanation of how does loan interest work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Loan Interest Work?
+# How Loan Interest Works
 
 1. QUICK ANSWER: Loan interest is the cost of borrowing money, calculated as a percentage of the loan amount, and is typically paid back to the lender along with the original borrowed amount. This interest is essentially the fee for being able to use someone else's money for a period of time.
 

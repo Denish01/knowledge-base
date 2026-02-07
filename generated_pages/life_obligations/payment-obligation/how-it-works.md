@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Payment Obligation Work?"
+title: "How Payment Obligation Works"
 slug: how-does-payment-obligation-work
 description: "A clear, simple explanation of how does payment obligation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Payment Obligation Work?
+# How Payment Obligation Works
 
 1. QUICK ANSWER: A payment obligation is a commitment to pay a certain amount of money to another party, and it works by creating a legally binding agreement between the payer and the payee. This agreement outlines the terms of the payment, including the amount, method, and timing of the payment.
 

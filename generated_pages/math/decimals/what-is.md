@@ -1,11 +1,11 @@
 ---
-title: "What is Decimals?"
+title: "What Is Decimals?"
 slug: decimals
 description: "A clear, simple explanation of decimals - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Decimals?
+# What Is Decimals?
 
 Decimals is a numerical system that represents a fraction of a whole as a sequence of digits after a point, known as the decimal point.
 

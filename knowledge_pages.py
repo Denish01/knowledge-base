@@ -1099,7 +1099,7 @@ ANGLE_TO_TITLE = {
     "types-of": "Types of {Topic}",
     "example-of": "Example of {Topic}",
     "common-misconceptions-about": "Common Misconceptions About {Topic}",
-    "vs": "{Topic} vs",
+    "vs": "{Topic} Compared",
 }
 
 
@@ -2925,12 +2925,19 @@ if __name__ == "__main__":
             print(f"Error: Category directory not found: {category_dir}")
             sys.exit(1)
 
-        json_files = list(category_dir.glob("*.json"))
+        # Find JSON files recursively (handles both flat and concept-folder structures)
+        json_files = list(category_dir.glob("**/*.json"))
         print(f"Found {len(json_files)} JSON files in {category}")
         print("Re-rendering HTML files with correct titles...")
 
-        # Patterns to detect angle from filename and extract base concept
-        angle_patterns = [
+        # Canonical angles (filename in concept folder structure)
+        canonical_angles = {
+            'what-is', 'how-it-works', 'what-it-depends-on', 'what-affects-it',
+            'types-of', 'example-of', 'common-misconceptions-about', 'vs'
+        }
+
+        # Old flat file patterns to detect angle and extract base concept
+        flat_patterns = [
             (r'^what-(.+)-depends-on$', 'what-it-depends-on', lambda m: m.group(1)),
             (r'^what-affects-(.+)$', 'what-affects-it', lambda m: m.group(1)),
             (r'^how-does-(.+)-work$', 'how-it-works', lambda m: m.group(1)),
@@ -2952,17 +2959,24 @@ if __name__ == "__main__":
                 if not topic or not content:
                     continue
 
-                # Detect angle and base concept from filename
                 filename = json_path.stem
-                angle_id = "what-is"  # default
-                base_concept = filename
+                parent_folder = json_path.parent.name
 
-                for pattern, angle, extractor in angle_patterns:
-                    match = re.match(pattern, filename)
-                    if match:
-                        angle_id = angle
-                        base_concept = extractor(match)
-                        break
+                # Check if this is concept folder structure (file is an angle name)
+                if filename in canonical_angles:
+                    angle_id = filename
+                    base_concept = parent_folder
+                else:
+                    # Fall back to flat file pattern matching
+                    angle_id = "what-is"  # default
+                    base_concept = filename
+
+                    for pattern, angle, extractor in flat_patterns:
+                        match = re.match(pattern, filename)
+                        if match:
+                            angle_id = angle
+                            base_concept = extractor(match)
+                            break
 
                 # Get correct title for this angle
                 page_title = get_angle_title(base_concept, angle_id)

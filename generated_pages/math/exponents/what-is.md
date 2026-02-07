@@ -1,11 +1,11 @@
 ---
-title: "What is Exponents?"
+title: "What Is Exponents?"
 slug: exponents
 description: "A clear, simple explanation of exponents - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Exponents?
+# What Is Exponents?
 
 Exponents refer to a mathematical operation that involves raising a number, called the base, to a power, which is indicated by an exponent. 
 

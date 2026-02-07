@@ -1,11 +1,11 @@
 ---
-title: "What is Consumer Price Index?"
+title: "What Is Consumer Price Index?"
 slug: consumer-price-index
 description: "A clear, simple explanation of consumer price index - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Consumer Price Index?
+# What Is Consumer Price Index?
 
 Consumer price index refers to a statistical measure that tracks the average change in prices of a basket of goods and services consumed by households over time.
 

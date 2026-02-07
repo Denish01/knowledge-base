@@ -1,11 +1,11 @@
 ---
-title: "What is Percentages Vs?"
+title: "Percentages Compared"
 slug: percentages-vs
 description: "A clear, simple explanation of percentages vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Percentages Vs?
+# Percentages Compared
 
 Percentages vs fractions is a comparison between two mathematical concepts used to express parts of a whole.
 

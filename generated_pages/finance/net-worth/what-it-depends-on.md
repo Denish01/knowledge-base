@@ -1,11 +1,11 @@
 ---
-title: "What is What Net Worth Depends On?"
+title: "What Net Worth Depends On"
 slug: what-net-worth-depends-on
 description: "A clear, simple explanation of what net worth depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Net Worth Depends On?
+# What Net Worth Depends On
 
 1. INTRODUCTION:
 Net worth is the total value of an individual's or organization's assets minus their liabilities. Understanding what net worth depends on is crucial for building and maintaining a strong financial foundation. Dependencies are the prerequisites, requirements, or foundations necessary for achieving a certain level of net worth. Without these dependencies, net worth cannot be accurately calculated or effectively managed. This page explains the key dependencies that determine net worth.

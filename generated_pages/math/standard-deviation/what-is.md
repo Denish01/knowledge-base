@@ -1,11 +1,11 @@
 ---
-title: "What is Standard Deviation?"
+title: "What Is Standard Deviation?"
 slug: standard-deviation
 description: "A clear, simple explanation of standard deviation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Standard Deviation?
+# What Is Standard Deviation?
 
 Standard deviation is a measure of the amount of variation or dispersion in a set of values, indicating how spread out the values are from the average value.
 

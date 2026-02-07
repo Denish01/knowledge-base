@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Condensation Work?"
+title: "How Condensation Works"
 slug: how-does-condensation-work
 description: "A clear, simple explanation of how does condensation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Condensation Work?
+# How Condensation Works
 
 1. QUICK ANSWER: Condensation is the process by which water vapor in the air is changed into liquid water, typically occurring when the air reaches its dew point and can no longer hold all the moisture. This process happens because the air cools down, causing the water vapor to condense into droplets.
 

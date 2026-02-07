@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Benefit Phaseout Work?"
+title: "How Benefit Phaseout Works"
 slug: how-does-benefit-phaseout-work
 description: "A clear, simple explanation of how does benefit phaseout work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Benefit Phaseout Work?
+# How Benefit Phaseout Works
 
 1. QUICK ANSWER: Benefit phaseout is a mechanism that reduces or eliminates benefits as a certain condition, such as income, is met or exceeded. This process helps ensure that benefits are targeted towards those who need them most, while also preventing abuse of the system.
 

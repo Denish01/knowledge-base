@@ -1,11 +1,11 @@
 ---
-title: "What is Liquidity?"
+title: "What Is Liquidity?"
 slug: liquidity
 description: "A clear, simple explanation of liquidity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Liquidity?
+# What Is Liquidity?
 
 Liquidity is the ability to quickly and easily convert assets into cash without significantly affecting their value.
 

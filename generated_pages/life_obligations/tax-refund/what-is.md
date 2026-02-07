@@ -1,11 +1,11 @@
 ---
-title: "What is Tax Refund?"
+title: "What Is Tax Refund?"
 slug: tax-refund
 description: "A clear, simple explanation of tax refund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Tax Refund?
+# What Is Tax Refund?
 
 Tax refund is a payment made by a government to a taxpayer when the taxpayer has paid more taxes than they owe. 
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Assistance Programs?"
+title: "Example of Assistance Programs"
 slug: examples-of-assistance-programs
 description: "A clear, simple explanation of examples of assistance programs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Assistance Programs?
+# Example of Assistance Programs
 
 1. INTRODUCTION
 Assistance programs are designed to provide support and aid to individuals, groups, or communities in need. These programs can be offered by governments, non-profit organizations, or private companies, and they can take many different forms. The purpose of assistance programs is to help people overcome challenges, achieve their goals, and improve their overall well-being. Assistance programs can be found in various aspects of life, from education and healthcare to employment and housing.

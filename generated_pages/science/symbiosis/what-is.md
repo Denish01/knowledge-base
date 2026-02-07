@@ -1,11 +1,11 @@
 ---
-title: "What is Symbiosis?"
+title: "What Is Symbiosis?"
 slug: symbiosis
 description: "A clear, simple explanation of symbiosis - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Symbiosis?
+# What Is Symbiosis?
 
 Symbiosis is a biological relationship between two or more different species that live together in close association, often to the benefit of one or both of the species involved.
 

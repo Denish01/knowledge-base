@@ -1,11 +1,11 @@
 ---
-title: "What is Will Vs?"
+title: "Will Compared"
 slug: will-vs
 description: "A clear, simple explanation of will vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Will Vs?
+# Will Compared
 
 Will vs refers to the contrast between two fundamental concepts in the English language, namely "will" and "shall," which are often used to express future tense, intention, or obligation.
 

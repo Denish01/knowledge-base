@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Obligation Estimate?"
+title: "Types of Obligation Estimate"
 slug: types-of-obligation-estimate
 description: "A clear, simple explanation of types of obligation estimate - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Obligation Estimate?
+# Types of Obligation Estimate
 
 ## INTRODUCTION
 Obligation estimates refer to the process of evaluating and predicting the potential costs and liabilities associated with a particular project, contract, or agreement. Classification of obligation estimates is crucial as it enables individuals and organizations to understand the different types of estimates, their characteristics, and applications. This classification system helps in making informed decisions, managing risks, and ensuring compliance with regulatory requirements. By understanding the various types of obligation estimates, stakeholders can better navigate complex projects and agreements, and allocate resources effectively.

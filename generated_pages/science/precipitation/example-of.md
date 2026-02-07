@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Precipitation?"
+title: "Example of Precipitation"
 slug: examples-of-precipitation
 description: "A clear, simple explanation of examples of precipitation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Precipitation?
+# Example of Precipitation
 
 1. INTRODUCTION
 Precipitation refers to any form of water that falls from the sky to the Earth's surface. This includes rain, snow, sleet, and hail. Precipitation is a crucial part of the Earth's water cycle, helping to distribute water around the planet and support life. Understanding precipitation is important for predicting weather patterns, managing water resources, and mitigating the effects of extreme weather events.

@@ -1,11 +1,11 @@
 ---
-title: "What is Perimeter?"
+title: "What Is Perimeter?"
 slug: perimeter
 description: "A clear, simple explanation of perimeter - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Perimeter?
+# What Is Perimeter?
 
 Perimeter is a mathematical concept that refers to the distance around a shape or a figure. 
 

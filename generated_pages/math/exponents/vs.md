@@ -1,11 +1,11 @@
 ---
-title: "What is Exponents Vs?"
+title: "Exponents Compared"
 slug: exponents-vs
 description: "A clear, simple explanation of exponents vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Exponents Vs?
+# Exponents Compared
 
 Exponents vs refers to the comparison and understanding of exponential expressions, which are mathematical operations that involve raising a number to a certain power.
 

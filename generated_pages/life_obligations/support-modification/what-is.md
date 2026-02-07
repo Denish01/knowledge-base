@@ -1,11 +1,11 @@
 ---
-title: "What is Support Modification?"
+title: "What Is Support Modification?"
 slug: support-modification
 description: "A clear, simple explanation of support modification - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Support Modification?
+# What Is Support Modification?
 
 Support modification is a process of altering the way a system, structure, or organization provides assistance or maintenance to ensure it continues to function effectively and efficiently.
 

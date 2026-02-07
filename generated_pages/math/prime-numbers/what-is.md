@@ -1,11 +1,11 @@
 ---
-title: "What is Prime Numbers?"
+title: "What Is Prime Numbers?"
 slug: prime-numbers
 description: "A clear, simple explanation of prime numbers - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Prime Numbers?
+# What Is Prime Numbers?
 
 Prime numbers is a fundamental concept in mathematics that refers to positive integers that are divisible only by themselves and one.
 

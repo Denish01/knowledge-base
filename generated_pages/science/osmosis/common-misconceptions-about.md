@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Osmosis?"
+title: "Common Misconceptions About Osmosis"
 slug: common-misconceptions-about-osmosis
 description: "A clear, simple explanation of common misconceptions about osmosis - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Osmosis?
+# Common Misconceptions About Osmosis
 
 1. INTRODUCTION: Why misconceptions about osmosis are common
 

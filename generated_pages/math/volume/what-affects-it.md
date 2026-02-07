@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Volume?"
+title: "What Affects Volume"
 slug: what-affects-volume
 description: "A clear, simple explanation of what affects volume - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Volume?
+# What Affects Volume
 
 1. INTRODUCTION
 

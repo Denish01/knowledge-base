@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Affordability Assessment?"
+title: "What Affects Affordability Assessment"
 slug: what-affects-affordability-assessment
 description: "A clear, simple explanation of what affects affordability assessment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Affordability Assessment?
+# What Affects Affordability Assessment
 
 1. INTRODUCTION
 Affordability assessment is the process of evaluating whether a person or organization can afford a particular product, service, or expense. Understanding the factors that influence affordability assessment is crucial because it helps individuals and organizations make informed decisions about their financial resources. By knowing what affects affordability assessment, people can better manage their expenses and avoid financial difficulties. This understanding is essential for achieving financial stability and security.

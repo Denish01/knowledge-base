@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Square Roots?"
+title: "Example of Square Roots"
 slug: examples-of-square-roots
 description: "A clear, simple explanation of examples of square roots - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Square Roots?
+# Example of Square Roots
 
 1. INTRODUCTION
 A square root of a number is a value that, when multiplied by itself, gives the original number. For example, the square root of 16 is 4, because 4 multiplied by 4 equals 16. Square roots are used in various mathematical operations and are essential in solving equations and problems in different fields. Understanding square roots is crucial for advancing in mathematics and other subjects that rely heavily on mathematical concepts.

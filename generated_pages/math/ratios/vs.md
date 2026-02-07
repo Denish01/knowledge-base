@@ -1,11 +1,11 @@
 ---
-title: "What is Ratios Vs?"
+title: "Ratios Compared"
 slug: ratios-vs
 description: "A clear, simple explanation of ratios vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Ratios Vs?
+# Ratios Compared
 
 Ratios vs proportions is a mathematical concept that refers to the comparison of two or more quantities, often used to describe the relationship between different parts of a whole.
 

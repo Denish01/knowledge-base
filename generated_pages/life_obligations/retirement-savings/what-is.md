@@ -1,11 +1,11 @@
 ---
-title: "What is Retirement Savings?"
+title: "What Is Retirement Savings?"
 slug: retirement-savings
 description: "A clear, simple explanation of retirement savings - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Retirement Savings?
+# What Is Retirement Savings?
 
 Retirement savings is a type of long-term financial planning that involves setting aside a portion of one's income to support oneself during retirement.
 

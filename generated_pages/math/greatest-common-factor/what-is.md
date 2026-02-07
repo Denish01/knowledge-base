@@ -1,11 +1,11 @@
 ---
-title: "What is Greatest Common Factor?"
+title: "What Is Greatest Common Factor?"
 slug: greatest-common-factor
 description: "A clear, simple explanation of greatest common factor - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Greatest Common Factor?
+# What Is Greatest Common Factor?
 
 Greatest common factor is a mathematical concept that refers to the largest positive integer that divides two or more numbers without leaving a remainder.
 

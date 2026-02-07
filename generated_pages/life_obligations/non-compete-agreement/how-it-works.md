@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Non-Compete Agreement Work?"
+title: "How Non Compete Agreement Works"
 slug: how-does-non-compete-agreement-work
 description: "A clear, simple explanation of how does non-compete agreement work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Non-Compete Agreement Work?
+# How Non Compete Agreement Works
 
 1. QUICK ANSWER: A non-compete agreement is a contract between an employer and an employee that restricts the employee from working for a competitor or starting a similar business after leaving the company. This agreement is designed to protect the employer's trade secrets, business practices, and customer relationships by limiting the employee's ability to use the knowledge and expertise gained while working for the company in a competing venture.
 

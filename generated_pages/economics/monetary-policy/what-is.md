@@ -1,11 +1,11 @@
 ---
-title: "What is Monetary Policy?"
+title: "What Is Monetary Policy?"
 slug: monetary-policy
 description: "A clear, simple explanation of monetary policy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Monetary Policy?
+# What Is Monetary Policy?
 
 Monetary policy is the actions taken by a central bank to control the money supply and interest rates in an economy. 
 

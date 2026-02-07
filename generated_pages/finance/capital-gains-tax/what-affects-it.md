@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Capital Gains Tax?"
+title: "What Affects Capital Gains Tax"
 slug: what-affects-capital-gains-tax
 description: "A clear, simple explanation of what affects capital gains tax - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Capital Gains Tax?
+# What Affects Capital Gains Tax
 
 1. INTRODUCTION:
 Capital gains tax is a type of tax levied on the profit made from the sale of an asset, such as stocks, real estate, or investments. Understanding the factors that affect capital gains tax is essential for individuals and businesses to make informed decisions about their investments and minimize their tax liability. The amount of capital gains tax owed can significantly impact the overall profit made from an investment, making it crucial to comprehend the various influences that determine this tax.

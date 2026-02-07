@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Benefit Reduction Work?"
+title: "How Benefit Reduction Works"
 slug: how-does-benefit-reduction-work
 description: "A clear, simple explanation of how does benefit reduction work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Benefit Reduction Work?
+# How Benefit Reduction Works
 
 1. QUICK ANSWER: Benefit reduction works by gradually decreasing the amount of benefits an individual receives based on their income or other factors, ensuring that those who need assistance the most receive the most support. This mechanism helps to allocate resources efficiently and effectively.
 

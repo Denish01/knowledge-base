@@ -1,11 +1,11 @@
 ---
-title: "What is Proportional Contribution?"
+title: "What Is Proportional Contribution?"
 slug: proportional-contribution
 description: "A clear, simple explanation of proportional contribution - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Proportional Contribution?
+# What Is Proportional Contribution?
 
 Proportional contribution refers to the idea that the amount of effort, time, or resources contributed by an individual or group is directly related to the benefits or rewards they receive.
 

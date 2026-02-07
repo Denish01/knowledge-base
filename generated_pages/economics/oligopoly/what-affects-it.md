@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Oligopoly?"
+title: "What Affects Oligopoly"
 slug: what-affects-oligopoly
 description: "A clear, simple explanation of what affects oligopoly - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Oligopoly?
+# What Affects Oligopoly
 
 1. INTRODUCTION
 

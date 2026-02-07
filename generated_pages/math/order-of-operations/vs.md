@@ -1,11 +1,11 @@
 ---
-title: "What is Order Of Operations Vs?"
+title: "Order Of Operations Compared"
 slug: order-of-operations-vs
 description: "A clear, simple explanation of order of operations vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Order Of Operations Vs?
+# Order Of Operations Compared
 
 Order of operations refers to a set of rules that dictates the order in which mathematical operations should be performed when there are multiple operations in an expression.
 

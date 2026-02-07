@@ -1,11 +1,11 @@
 ---
-title: "What is Support Adjustment Vs?"
+title: "Support Adjustment Compared"
 slug: support-adjustment-vs
 description: "A clear, simple explanation of support adjustment vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Support Adjustment Vs?
+# Support Adjustment Compared
 
 Support adjustment vs refers to the process of comparing and evaluating the level of support provided to individuals or systems to ensure that it is adequate and effective in achieving desired outcomes.
 

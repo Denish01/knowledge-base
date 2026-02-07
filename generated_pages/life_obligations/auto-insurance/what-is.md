@@ -1,11 +1,11 @@
 ---
-title: "What is Auto Insurance?"
+title: "What Is Auto Insurance?"
 slug: auto-insurance
 description: "A clear, simple explanation of auto insurance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Auto Insurance?
+# What Is Auto Insurance?
 
 Auto insurance is a type of financial protection that helps individuals and businesses manage the risks associated with owning and operating a vehicle.
 

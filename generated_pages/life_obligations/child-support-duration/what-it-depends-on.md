@@ -1,11 +1,11 @@
 ---
-title: "What is What Child Support Duration Depends On?"
+title: "What Child Support Duration Depends On"
 slug: what-child-support-duration-depends-on
 description: "A clear, simple explanation of what child support duration depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Child Support Duration Depends On?
+# What Child Support Duration Depends On
 
 1. INTRODUCTION:
 Child support duration refers to the length of time a non-custodial parent is required to provide financial support for their child. Understanding the factors that influence child support duration is crucial for ensuring the well-being and stability of the child. The duration of child support depends on various prerequisites, requirements, and foundations, which are essential for determining the length of time support is needed. These dependencies are critical in establishing a fair and effective child support arrangement.

@@ -1,11 +1,11 @@
 ---
-title: "What is Capital Gains Tax?"
+title: "What Is Capital Gains Tax?"
 slug: capital-gains-tax
 description: "A clear, simple explanation of capital gains tax - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Capital Gains Tax?
+# What Is Capital Gains Tax?
 
 Capital gains tax is a type of tax imposed on the profit made from the sale of an asset, such as property, stocks, or investments, that has increased in value over time.
 

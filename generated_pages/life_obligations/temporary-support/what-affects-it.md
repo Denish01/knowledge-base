@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Temporary Support?"
+title: "What Affects Temporary Support"
 slug: what-affects-temporary-support
 description: "A clear, simple explanation of what affects temporary support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Temporary Support?
+# What Affects Temporary Support
 
 INTRODUCTION
 Temporary support refers to the assistance or help provided to individuals or groups for a limited period, often during times of need or crisis. Understanding the factors that affect temporary support is crucial, as it can significantly impact the effectiveness and outcome of the support provided. By recognizing the influences on temporary support, individuals and organizations can better navigate the complexities of providing aid and make informed decisions to maximize the positive impact.

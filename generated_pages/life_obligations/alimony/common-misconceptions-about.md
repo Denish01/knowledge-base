@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Alimony?"
+title: "Common Misconceptions About Alimony"
 slug: common-misconceptions-about-alimony
 description: "A clear, simple explanation of common misconceptions about alimony - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Alimony?
+# Common Misconceptions About Alimony
 
 1. INTRODUCTION: Why misconceptions about alimony are common
 

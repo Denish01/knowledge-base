@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Monetary Policy?"
+title: "Types of Monetary Policy"
 slug: types-of-monetary-policy
 description: "A clear, simple explanation of types of monetary policy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Monetary Policy?
+# Types of Monetary Policy
 
 ## INTRODUCTION
 Monetary policy refers to the actions taken by a central bank to control the money supply and interest rates in an economy. The types of monetary policy are important to understand because they help to classify and analyze the various tools and strategies used by central banks to achieve their economic objectives. Classification of monetary policy is crucial as it enables economists and policymakers to identify the most effective approaches to managing the economy, addressing issues such as inflation, unemployment, and economic growth. By understanding the different types of monetary policy, individuals can better comprehend the complex interactions between the central bank, financial markets, and the overall economy.

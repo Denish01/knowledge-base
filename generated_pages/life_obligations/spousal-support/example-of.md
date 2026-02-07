@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Spousal Support?"
+title: "Example of Spousal Support"
 slug: examples-of-spousal-support
 description: "A clear, simple explanation of examples of spousal support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Spousal Support?
+# Example of Spousal Support
 
 1. INTRODUCTION
 Spousal support refers to the financial assistance provided by one spouse to the other, typically after a divorce or separation. This support is intended to help the recipient spouse maintain a reasonable standard of living, considering the circumstances of the marriage and the parties involved. Spousal support can take various forms and can be awarded in different contexts.

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Friction?"
+title: "Example of Friction"
 slug: examples-of-friction
 description: "A clear, simple explanation of examples of friction - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Friction?
+# Example of Friction
 
 1. INTRODUCTION
 Friction is a force that opposes motion between two surfaces that are in contact. It is a fundamental concept in physics and engineering, and it plays a crucial role in our daily lives. Friction can be either beneficial or detrimental, depending on the situation. In this article, we will explore various examples of friction in different contexts and scales.

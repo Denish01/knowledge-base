@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Support Deviation?"
+title: "Example of Support Deviation"
 slug: examples-of-support-deviation
 description: "A clear, simple explanation of examples of support deviation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Support Deviation?
+# Example of Support Deviation
 
 1. INTRODUCTION:
 Support deviation refers to the difference between the expected and actual performance or behavior of a system, process, or individual. It can occur in various contexts, including engineering, finance, education, and more. Understanding support deviation is crucial for identifying areas of improvement, optimizing performance, and making informed decisions.

@@ -1,11 +1,11 @@
 ---
-title: "What is Required Minimum Distribution Vs?"
+title: "Required Minimum Distribution Compared"
 slug: required-minimum-distribution-vs
 description: "A clear, simple explanation of required minimum distribution vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Required Minimum Distribution Vs?
+# Required Minimum Distribution Compared
 
 Required Minimum Distribution refers to the minimum amount of money that must be withdrawn each year from certain retirement accounts, such as 401(k) and IRA accounts, once the account owner reaches a certain age.
 

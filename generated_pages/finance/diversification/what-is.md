@@ -1,11 +1,11 @@
 ---
-title: "What is Diversification?"
+title: "What Is Diversification?"
 slug: diversification
 description: "A clear, simple explanation of diversification - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Diversification?
+# What Is Diversification?
 
 Diversification is a strategy used to manage risk by spreading investments or activities across different areas, reducing dependence on any one particular thing.
 

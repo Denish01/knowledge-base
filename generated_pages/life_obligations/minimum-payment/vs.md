@@ -1,11 +1,11 @@
 ---
-title: "What is Minimum Payment Vs?"
+title: "Minimum Payment Compared"
 slug: minimum-payment-vs
 description: "A clear, simple explanation of minimum payment vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Minimum Payment Vs?
+# Minimum Payment Compared
 
 Minimum payment vs full payment is a financial concept that refers to the choice between paying only the minimum amount due on a debt or paying the full amount owed.
 

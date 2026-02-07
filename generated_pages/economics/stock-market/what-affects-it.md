@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Stock Market?"
+title: "What Affects Stock Market"
 slug: what-affects-stock-market
 description: "A clear, simple explanation of what affects stock market - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Stock Market?
+# What Affects Stock Market
 
 1. INTRODUCTION
 

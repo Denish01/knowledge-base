@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Support Deviation?"
+title: "Types of Support Deviation"
 slug: types-of-support-deviation
 description: "A clear, simple explanation of types of support deviation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Support Deviation?
+# Types of Support Deviation
 
 ## INTRODUCTION
 Types of support deviation refer to the various ways in which a structure or system can deviate from its intended or original design, often due to external or internal factors. This classification is crucial in understanding and addressing the issues that arise from such deviations, as it helps identify the root cause and informs the necessary corrective actions. By categorizing support deviations, engineers, architects, and other professionals can better analyze and mitigate the effects of these deviations, ensuring the stability, safety, and functionality of the structure or system.

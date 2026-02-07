@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Gross Income For Support?"
+title: "Common Misconceptions About Gross Income For Support"
 slug: common-misconceptions-about-gross-income-for-support
 description: "A clear, simple explanation of common misconceptions about gross income for support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Gross Income For Support?
+# Common Misconceptions About Gross Income For Support
 
 1. INTRODUCTION:
 Gross income for support is a crucial aspect of family law, and it is essential to understand the concept accurately. However, misconceptions about gross income for support are common due to the complexity of the topic and the varying laws and regulations that govern it. Many people rely on misinformation or incomplete knowledge, leading to confusion and potential errors in calculating support. This page aims to clarify common misconceptions about gross income for support, providing a clear understanding of the concept and its application.

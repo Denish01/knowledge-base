@@ -1,11 +1,11 @@
 ---
-title: "What is Trade Deficit Vs?"
+title: "Trade Deficit Compared"
 slug: trade-deficit-vs
 description: "A clear, simple explanation of trade deficit vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Trade Deficit Vs?
+# Trade Deficit Compared
 
 Trade deficit refers to a situation where a country imports more goods and services than it exports, resulting in a negative balance of trade.
 

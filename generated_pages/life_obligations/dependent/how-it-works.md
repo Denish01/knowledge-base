@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Dependent Work?"
+title: "How Dependent Works"
 slug: how-does-dependent-work
 description: "A clear, simple explanation of how does dependent work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Dependent Work?
+# How Dependent Works
 
 1. QUICK ANSWER: 
 Dependent status refers to a condition where an individual relies on another person, typically a family member, for financial support. The mechanism of dependent status involves a series of steps and components that determine whether an individual qualifies as a dependent and the benefits they are entitled to receive.

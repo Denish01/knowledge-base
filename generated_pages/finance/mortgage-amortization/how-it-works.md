@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Mortgage Amortization Work?"
+title: "How Mortgage Amortization Works"
 slug: how-does-mortgage-amortization-work
 description: "A clear, simple explanation of how does mortgage amortization work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Mortgage Amortization Work?
+# How Mortgage Amortization Works
 
 1. QUICK ANSWER: Mortgage amortization is a process where a borrower repays a loan by making regular payments, which are applied to both the interest and the principal amount, gradually reducing the outstanding balance over time. This process allows borrowers to own their homes or properties by paying off the loan in installments.
 

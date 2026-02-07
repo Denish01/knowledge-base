@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Photosynthesis Work?"
+title: "How Photosynthesis Works"
 slug: how-does-photosynthesis-work
 description: "A clear, simple explanation of how does photosynthesis work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Photosynthesis Work?
+# How Photosynthesis Works
 
 1. QUICK ANSWER: 
 Photosynthesis is the process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of glucose, a type of sugar. This process occurs in specialized parts of the cells of these organisms and involves the conversion of carbon dioxide and water into glucose and oxygen.

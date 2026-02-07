@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Capital Gains Tax?"
+title: "Example of Capital Gains Tax"
 slug: examples-of-capital-gains-tax
 description: "A clear, simple explanation of examples of capital gains tax - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Capital Gains Tax?
+# Example of Capital Gains Tax
 
 1. INTRODUCTION:
 Capital gains tax is a type of tax that is applied to the profit made from the sale of an asset, such as a house, a car, or stocks. This tax is typically levied when the selling price of the asset is higher than its original purchase price. Understanding capital gains tax is important for individuals and businesses to manage their finances effectively.

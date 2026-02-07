@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Exchange Traded Fund?"
+title: "Example of Exchange Traded Fund"
 slug: examples-of-exchange-traded-fund
 description: "A clear, simple explanation of examples of exchange traded fund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Exchange Traded Fund?
+# Example of Exchange Traded Fund
 
 1. INTRODUCTION:
 An exchange traded fund (ETF) is a type of investment fund that is traded on a stock exchange, like individual stocks. It holds a basket of assets, such as stocks, bonds, or commodities, and is designed to track the performance of a particular index, sector, or asset class. This allows investors to gain diversified exposure to a range of assets with a single investment.

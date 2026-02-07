@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Public Assistance?"
+title: "Types of Public Assistance"
 slug: types-of-public-assistance
 description: "A clear, simple explanation of types of public assistance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Public Assistance?
+# Types of Public Assistance
 
 ## INTRODUCTION
 Public assistance programs are designed to provide support to individuals and families in need, helping them to access basic necessities such as food, housing, healthcare, and education. The classification of public assistance is crucial as it helps to organize and understand the various types of programs available, ensuring that individuals can access the right type of assistance for their specific needs. By categorizing public assistance programs, governments and organizations can better allocate resources, streamline application processes, and ultimately provide more effective support to those who require it. Understanding the different types of public assistance is essential for both individuals seeking help and those responsible for implementing and managing these programs.

@@ -1,11 +1,11 @@
 ---
-title: "What is Opportunity Cost Vs?"
+title: "Opportunity Cost Compared"
 slug: opportunity-cost-vs
 description: "A clear, simple explanation of opportunity cost vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Opportunity Cost Vs?
+# Opportunity Cost Compared
 
 Opportunity cost refers to the value of the next best alternative that is given up when a choice is made, representing the trade-off between different options.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Benefit Estimation?"
+title: "What Is Benefit Estimation?"
 slug: benefit-estimation
 description: "A clear, simple explanation of benefit estimation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Benefit Estimation?
+# What Is Benefit Estimation?
 
 Benefit estimation is a process used to calculate and predict the potential advantages and value that can be gained from a particular project, investment, or decision.
 

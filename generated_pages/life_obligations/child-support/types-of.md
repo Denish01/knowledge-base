@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Child Support?"
+title: "Types of Child Support"
 slug: types-of-child-support
 description: "A clear, simple explanation of types of child support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Child Support?
+# Types of Child Support
 
 INTRODUCTION
 The types of child support refer to the various ways in which financial assistance is provided to children whose parents are separated, divorced, or never married. Classification of child support is essential as it helps individuals understand their obligations and entitlements, and facilitates the development of effective support arrangements that cater to the unique needs of each family. By categorizing child support into different types, parents, caregivers, and legal professionals can better navigate the complexities of child support and ensure that children receive the financial care they deserve.

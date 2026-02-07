@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Parental Obligation Work?"
+title: "How Parental Obligation Works"
 slug: how-does-parental-obligation-work
 description: "A clear, simple explanation of how does parental obligation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Parental Obligation Work?
+# How Parental Obligation Works
 
 1. QUICK ANSWER: Parental obligation works through a legal mechanism that requires parents to provide financial support to their children, ensuring they receive the necessary care and resources for their well-being. This obligation is typically enforced by family courts, which determine the amount and duration of support based on various factors.
 

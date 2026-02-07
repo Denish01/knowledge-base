@@ -1,11 +1,11 @@
 ---
-title: "What is Rehabilitative Support Vs?"
+title: "Rehabilitative Support Compared"
 slug: rehabilitative-support-vs
 description: "A clear, simple explanation of rehabilitative support vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Rehabilitative Support Vs?
+# Rehabilitative Support Compared
 
 Rehabilitative support refers to a range of services and interventions designed to help individuals recover from illness, injury, or disability, and regain their physical, emotional, and social functioning.
 

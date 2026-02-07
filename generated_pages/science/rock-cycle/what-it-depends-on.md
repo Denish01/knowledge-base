@@ -1,11 +1,11 @@
 ---
-title: "What is What Rock Cycle Depends On?"
+title: "What Rock Cycle Depends On"
 slug: what-rock-cycle-depends-on
 description: "A clear, simple explanation of what rock cycle depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Rock Cycle Depends On?
+# What Rock Cycle Depends On
 
 1. INTRODUCTION
 The rock cycle is the process by which rocks are formed, transformed, and destroyed. It is a fundamental concept in geology that helps us understand the Earth's composition and the processes that shape our planet. The rock cycle depends on several key factors, and understanding these dependencies is crucial for grasping the underlying mechanisms that drive this process. The dependencies that govern the rock cycle are essential prerequisites that must be present for the process to occur, and they have a significant impact on our understanding of the Earth's geology.

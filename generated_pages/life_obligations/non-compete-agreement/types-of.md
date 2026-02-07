@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Non-Compete Agreement?"
+title: "Types of Non Compete Agreement"
 slug: types-of-non-compete-agreement
 description: "A clear, simple explanation of types of non-compete agreement - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Non-Compete Agreement?
+# Types of Non Compete Agreement
 
 ## INTRODUCTION
 A non-compete agreement is a contract between an employer and an employee that restricts the employee's ability to work for a competitor or start a similar business after leaving the company. The classification of non-compete agreements is crucial as it helps employers, employees, and legal professionals understand the different types of agreements, their purposes, and their implications. Classifying non-compete agreements enables individuals to navigate the complexities of these contracts and make informed decisions. By understanding the various types of non-compete agreements, parties involved can better negotiate, enforce, or challenge these agreements, ultimately protecting their interests and preventing potential disputes.

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Trade Surplus?"
+title: "What Affects Trade Surplus"
 slug: what-affects-trade-surplus
 description: "A clear, simple explanation of what affects trade surplus - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Trade Surplus?
+# What Affects Trade Surplus
 
 1. INTRODUCTION
 

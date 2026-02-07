@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Child Support Obligation?"
+title: "Types of Child Support Obligation"
 slug: types-of-child-support-obligation
 description: "A clear, simple explanation of types of child support obligation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Child Support Obligation?
+# Types of Child Support Obligation
 
 INTRODUCTION
 Child support obligations are legal requirements for parents to provide financial support for their children, and understanding the different types of these obligations is essential for navigating the complexities of family law. The classification of child support obligations matters because it helps parents, lawyers, and judges determine the appropriate amount and type of support to be paid, taking into account factors such as income, custody arrangements, and the child's needs. By categorizing child support obligations, individuals can better comprehend their responsibilities and ensure that the child's well-being is prioritized. This classification system provides a framework for understanding the various types of child support obligations, their characteristics, and how they relate to one another.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Linear Equations Work?"
+title: "How Linear Equations Works"
 slug: how-does-linear-equations-work
 description: "A clear, simple explanation of how does linear equations work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Linear Equations Work?
+# How Linear Equations Works
 
 1. QUICK ANSWER: 
 Linear equations work by representing a relationship between two variables, often represented as x and y, in a straight line. This relationship is defined by a specific equation, which can be solved to find the value of one variable when the other is known.

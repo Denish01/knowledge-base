@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Probability?"
+title: "Example of Probability"
 slug: examples-of-probability
 description: "A clear, simple explanation of examples of probability - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Probability?
+# Example of Probability
 
 1. INTRODUCTION
 Probability is a measure of the likelihood that an event will occur. It is a number between 0 and 1 that represents the chance or probability of an event happening. A probability of 0 means the event is impossible, while a probability of 1 means the event is certain. Understanding probability is important in many areas of life, from making decisions to predicting outcomes.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Price Elasticity Work?"
+title: "How Price Elasticity Works"
 slug: how-does-price-elasticity-work
 description: "A clear, simple explanation of how does price elasticity work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Price Elasticity Work?
+# How Price Elasticity Works
 
 1. QUICK ANSWER: Price elasticity is a measure of how much the quantity of a product or service demanded changes when its price changes. It works by calculating the percentage change in quantity demanded in response to a percentage change in price, allowing businesses and economists to understand the sensitivity of demand to price fluctuations.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Long-Term Support Depends On?"
+title: "What Long Term Support Depends On"
 slug: what-long-term-support-depends-on
 description: "A clear, simple explanation of what long-term support depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Long-Term Support Depends On?
+# What Long Term Support Depends On
 
 1. INTRODUCTION:
 Long-term support refers to the ongoing assistance and maintenance provided to individuals, systems, or products over an extended period. Understanding what long-term support depends on is crucial for its successful implementation and sustainability. The effectiveness of long-term support is directly tied to the presence of certain prerequisites, requirements, and foundations. Without these essential elements, long-term support can be inefficient, ineffective, or even impossible. Therefore, identifying and addressing these dependencies is vital for anyone seeking to establish a robust and enduring support system.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Alimony Work?"
+title: "How Alimony Works"
 slug: how-does-alimony-work
 description: "A clear, simple explanation of how does alimony work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Alimony Work?
+# How Alimony Works
 
 1. QUICK ANSWER: Alimony, also known as spousal support, is a court-ordered payment from one spouse to the other after a divorce or separation, intended to provide financial support to the recipient. The amount and duration of alimony payments are determined by the court based on various factors, including the couple's income, assets, and living situation.
 

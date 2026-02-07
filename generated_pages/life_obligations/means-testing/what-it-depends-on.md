@@ -1,11 +1,11 @@
 ---
-title: "What is What Means Testing Depends On?"
+title: "What Means Testing Depends On"
 slug: what-means-testing-depends-on
 description: "A clear, simple explanation of what means testing depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Means Testing Depends On?
+# What Means Testing Depends On
 
 1. INTRODUCTION
 Means testing is a process used to determine whether an individual or family is eligible for government assistance or benefits based on their financial situation. It involves evaluating income, assets, and expenses to assess a person's ability to pay for certain services or support. Understanding the dependencies of means testing is crucial, as it helps identify the essential prerequisites and foundations required for an accurate assessment. The accuracy of means testing depends on various factors, making it essential to recognize these dependencies to ensure a fair and effective evaluation process.

@@ -1,11 +1,11 @@
 ---
-title: "What is Required Minimum Distribution?"
+title: "What Is Required Minimum Distribution?"
 slug: required-minimum-distribution
 description: "A clear, simple explanation of required minimum distribution - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Required Minimum Distribution?
+# What Is Required Minimum Distribution?
 
 Required minimum distribution is a rule that requires individuals with certain types of retirement accounts to withdraw a minimum amount of money from their accounts each year.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Potential Energy?"
+title: "Example of Potential Energy"
 slug: examples-of-potential-energy
 description: "A clear, simple explanation of examples of potential energy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Potential Energy?
+# Example of Potential Energy
 
 1. INTRODUCTION
 Potential energy is the energy an object possesses due to its position or configuration. It is the stored energy that an object has when it is at rest but has the potential to be converted into kinetic energy, which is the energy of motion. This type of energy is all around us and plays a crucial role in various natural and man-made phenomena.

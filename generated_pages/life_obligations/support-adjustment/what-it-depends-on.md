@@ -1,11 +1,11 @@
 ---
-title: "What is What Support Adjustment Depends On?"
+title: "What Support Adjustment Depends On"
 slug: what-support-adjustment-depends-on
 description: "A clear, simple explanation of what support adjustment depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Support Adjustment Depends On?
+# What Support Adjustment Depends On
 
 1. INTRODUCTION:
 Support adjustment refers to the process of modifying or changing the level of support provided to an individual, group, or system. This can include adjusting the type, frequency, or intensity of support to better meet the needs of the recipient. Understanding the dependencies of support adjustment is crucial, as it helps to ensure that the support provided is effective and sustainable. The dependencies of support adjustment are the foundation upon which successful support is built, and neglecting them can lead to inadequate or ineffective support.

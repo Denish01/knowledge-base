@@ -1,11 +1,11 @@
 ---
-title: "What is Photosynthesis?"
+title: "What Is Photosynthesis?"
 slug: photosynthesis
 description: "A clear, simple explanation of photosynthesis - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Photosynthesis?
+# What Is Photosynthesis?
 
 Photosynthesis is the process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of organic compounds, such as glucose.
 

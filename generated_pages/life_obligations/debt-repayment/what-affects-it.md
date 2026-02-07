@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Debt Repayment?"
+title: "What Affects Debt Repayment"
 slug: what-affects-debt-repayment
 description: "A clear, simple explanation of what affects debt repayment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Debt Repayment?
+# What Affects Debt Repayment
 
 1. INTRODUCTION:
 Debt repayment refers to the process of paying back borrowed money, often with interest, to creditors. Understanding the factors that affect debt repayment is crucial for individuals and organizations to manage their finances effectively and make informed decisions about borrowing and repayment. By recognizing the influences on debt repayment, individuals can develop strategies to pay off debts efficiently and avoid financial difficulties.

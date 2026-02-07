@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Earning Capacity Work?"
+title: "How Earning Capacity Works"
 slug: how-does-earning-capacity-work
 description: "A clear, simple explanation of how does earning capacity work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Earning Capacity Work?
+# How Earning Capacity Works
 
 1. QUICK ANSWER: Earning capacity refers to an individual's ability to produce income, and it works by calculating the amount of money a person can potentially earn based on their skills, education, and experience. This calculation is used to determine a person's potential for generating income over a certain period of time.
 

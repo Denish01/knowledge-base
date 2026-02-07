@@ -1,11 +1,11 @@
 ---
-title: "What is Credit Score?"
+title: "What Is Credit Score?"
 slug: credit-score
 description: "A clear, simple explanation of credit score - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Credit Score?
+# What Is Credit Score?
 
 Credit score refers to a numerical value that represents an individual's or business's creditworthiness, indicating their ability to repay debts and manage financial obligations.
 

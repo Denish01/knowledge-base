@@ -1,11 +1,11 @@
 ---
-title: "What is Student Loan?"
+title: "What Is Student Loan?"
 slug: student-loan
 description: "A clear, simple explanation of student loan - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Student Loan?
+# What Is Student Loan?
 
 Student loan is a type of financial aid that allows students to borrow money to pay for their education, with the understanding that they will repay the loan, typically with interest, after they complete their studies.
 

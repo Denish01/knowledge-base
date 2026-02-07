@@ -1,11 +1,11 @@
 ---
-title: "What is Proportions Vs?"
+title: "Proportions Compared"
 slug: proportions-vs
 description: "A clear, simple explanation of proportions vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Proportions Vs?
+# Proportions Compared
 
 Proportions vs refers to the comparison of two or more quantities to determine their relative size or amount. 
 

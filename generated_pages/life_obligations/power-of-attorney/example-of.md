@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Power Of Attorney?"
+title: "Example of Power Of Attorney"
 slug: examples-of-power-of-attorney
 description: "A clear, simple explanation of examples of power of attorney - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Power Of Attorney?
+# Example of Power Of Attorney
 
 1. INTRODUCTION
 A power of attorney is a legal document that allows one person to act on behalf of another person in financial, legal, or other matters. It is a way for an individual to grant authority to someone else to make decisions and take actions in their name. This can be useful in a variety of situations, such as when someone is unable to manage their own affairs due to illness or disability, or when they need someone to act on their behalf in a business or financial matter.

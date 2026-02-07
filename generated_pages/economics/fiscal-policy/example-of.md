@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Fiscal Policy?"
+title: "Example of Fiscal Policy"
 slug: examples-of-fiscal-policy
 description: "A clear, simple explanation of examples of fiscal policy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Fiscal Policy?
+# Example of Fiscal Policy
 
 1. INTRODUCTION:
 Fiscal policy refers to the use of government spending and taxation to influence the overall level of economic activity. It is a tool used by governments to manage the economy by adjusting the amount of money available for spending and investing. Fiscal policy can be used to stimulate economic growth, reduce inflation, or stabilize the economy during times of recession.

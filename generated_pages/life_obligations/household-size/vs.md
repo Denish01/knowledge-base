@@ -1,11 +1,11 @@
 ---
-title: "What is Household Size Vs?"
+title: "Household Size Compared"
 slug: household-size-vs
 description: "A clear, simple explanation of household size vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Household Size Vs?
+# Household Size Compared
 
 Household size vs refers to the comparison of the number of people living in a household to other factors, such as income, expenses, and living space, in order to understand the relationships and trade-offs between these variables.
 

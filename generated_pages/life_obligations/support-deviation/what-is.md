@@ -1,11 +1,11 @@
 ---
-title: "What is Support Deviation?"
+title: "What Is Support Deviation?"
 slug: support-deviation
 description: "A clear, simple explanation of support deviation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Support Deviation?
+# What Is Support Deviation?
 
 Support deviation is a statistical concept that measures the amount of variation or dispersion of a set of data from its mean value, and it is an important aspect of understanding and analyzing data in various fields.
 

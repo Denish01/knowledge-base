@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Credit Card Debt?"
+title: "What Affects Credit Card Debt"
 slug: what-affects-credit-card-debt
 description: "A clear, simple explanation of what affects credit card debt - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Credit Card Debt?
+# What Affects Credit Card Debt
 
 INTRODUCTION
 Credit card debt refers to the amount of money an individual owes to a credit card company. Understanding the factors that affect credit card debt is essential because it can help individuals manage their debt more effectively and make informed financial decisions. Credit card debt can have significant consequences on a person's financial stability and credit score. By recognizing the influences on credit card debt, individuals can take steps to mitigate its negative effects and work towards becoming debt-free.

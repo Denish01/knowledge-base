@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Temporary Support Work?"
+title: "How Temporary Support Works"
 slug: how-does-temporary-support-work
 description: "A clear, simple explanation of how does temporary support work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Temporary Support Work?
+# How Temporary Support Works
 
 1. QUICK ANSWER: Temporary support works by providing a stable and secure environment for something or someone to recover, grow, or develop, and it does so through a series of planned steps and interventions. This support system is designed to be in place for a limited time, after which the supported entity is expected to be self-sufficient.
 

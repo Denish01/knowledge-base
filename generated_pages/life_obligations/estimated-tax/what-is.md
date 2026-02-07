@@ -1,11 +1,11 @@
 ---
-title: "What is Estimated Tax?"
+title: "What Is Estimated Tax?"
 slug: estimated-tax
 description: "A clear, simple explanation of estimated tax - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Estimated Tax?
+# What Is Estimated Tax?
 
 Estimated tax is a method of paying taxes on income that is not subject to withholding, such as self-employment income, interest, dividends, and capital gains.
 

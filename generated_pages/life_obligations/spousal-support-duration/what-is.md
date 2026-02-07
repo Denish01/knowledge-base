@@ -1,11 +1,11 @@
 ---
-title: "What is Spousal Support Duration?"
+title: "What Is Spousal Support Duration?"
 slug: spousal-support-duration
 description: "A clear, simple explanation of spousal support duration - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Spousal Support Duration?
+# What Is Spousal Support Duration?
 
 Spousal support duration is the length of time that one spouse is required to provide financial support to the other spouse after a divorce or separation. 
 

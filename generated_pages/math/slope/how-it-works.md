@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Slope Work?"
+title: "How Slope Works"
 slug: how-does-slope-work
 description: "A clear, simple explanation of how does slope work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Slope Work?
+# How Slope Works
 
 1. QUICK ANSWER: Slope is a measure of how steep a line or surface is, calculated as the ratio of the vertical distance (rise) to the horizontal distance (run) between two points. This ratio determines the steepness of the slope, with higher ratios indicating steeper slopes.
 

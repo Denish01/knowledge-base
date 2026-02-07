@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Home Maintenance?"
+title: "What Affects Home Maintenance"
 slug: what-affects-home-maintenance
 description: "A clear, simple explanation of what affects home maintenance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Home Maintenance?
+# What Affects Home Maintenance
 
 1. INTRODUCTION:
 Home maintenance refers to the tasks and activities performed to keep a home in good condition, ensuring the safety, comfort, and durability of the structure and its systems. Understanding the factors that affect home maintenance is essential for homeowners, as it enables them to prioritize tasks, allocate resources, and make informed decisions. Effective home maintenance can prevent costly repairs, reduce energy consumption, and enhance the overall quality of life. By recognizing the influences on home maintenance, individuals can take proactive steps to protect their investment and create a safe and healthy living environment.

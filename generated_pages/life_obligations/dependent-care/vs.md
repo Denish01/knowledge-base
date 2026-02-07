@@ -1,11 +1,11 @@
 ---
-title: "What is Dependent Care Vs?"
+title: "Dependent Care Compared"
 slug: dependent-care-vs
 description: "A clear, simple explanation of dependent care vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Dependent Care Vs?
+# Dependent Care Compared
 
 Dependent care refers to the support and assistance provided to individuals who are unable to care for themselves, such as children, elderly, or disabled family members.
 

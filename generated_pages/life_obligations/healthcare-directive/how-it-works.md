@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Healthcare Directive Work?"
+title: "How Healthcare Directive Works"
 slug: how-does-healthcare-directive-work
 description: "A clear, simple explanation of how does healthcare directive work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Healthcare Directive Work?
+# How Healthcare Directive Works
 
 1. QUICK ANSWER: A healthcare directive is a legal document that outlines a person's medical preferences and appoints someone to make decisions on their behalf if they become unable to do so themselves. This document works by providing a clear set of instructions that healthcare providers must follow, ensuring that the person's wishes are respected and carried out.
 

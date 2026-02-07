@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Guardianship Work?"
+title: "How Guardianship Works"
 slug: how-does-guardianship-work
 description: "A clear, simple explanation of how does guardianship work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Guardianship Work?
+# How Guardianship Works
 
 1. QUICK ANSWER: Guardianship is a legal process where one person, known as the guardian, is appointed to make decisions and take care of another person, known as the ward, who is unable to manage their own affairs. This process involves a series of steps and components that work together to ensure the ward's well-being and protection.
 

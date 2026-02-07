@@ -1,11 +1,11 @@
 ---
-title: "What is Tax Refund Vs?"
+title: "Tax Refund Compared"
 slug: tax-refund-vs
 description: "A clear, simple explanation of tax refund vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Tax Refund Vs?
+# Tax Refund Compared
 
 Tax refund vs tax owed is a comparison between the amount of money an individual or business has paid in taxes and the amount of taxes they actually owe, resulting in either a refund or an amount owed to the government.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Friction Work?"
+title: "How Friction Works"
 slug: how-does-friction-work
 description: "A clear, simple explanation of how does friction work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Friction Work?
+# How Friction Works
 
 1. QUICK ANSWER: Friction is the force that opposes motion between two surfaces that are in contact, and it works by converting some of the energy used to move an object into heat. This force is created by the interaction between the tiny bumps and ridges on the surfaces of the objects.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Estate Planning Depends On?"
+title: "What Estate Planning Depends On"
 slug: what-estate-planning-depends-on
 description: "A clear, simple explanation of what estate planning depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Estate Planning Depends On?
+# What Estate Planning Depends On
 
 INTRODUCTION
 Estate planning is the process of preparing for the distribution and management of one's assets after death or incapacitation. It involves creating a set of instructions and legal documents that outline how an individual's property, finances, and personal affairs should be handled. Understanding what estate planning depends on is crucial, as it helps individuals ensure that their wishes are respected and their loved ones are protected. The effectiveness of an estate plan relies on several key factors, which must be in place before a plan can be considered comprehensive.

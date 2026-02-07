@@ -1,11 +1,11 @@
 ---
-title: "What is Comparative Advantage?"
+title: "What Is Comparative Advantage?"
 slug: comparative-advantage
 description: "A clear, simple explanation of comparative advantage - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Comparative Advantage?
+# What Is Comparative Advantage?
 
 Comparative advantage is a concept in economics that refers to the ability of a country or individual to produce a particular good or service at a lower opportunity cost than others.
 

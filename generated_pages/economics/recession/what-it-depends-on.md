@@ -1,11 +1,11 @@
 ---
-title: "What is What Recession Depends On?"
+title: "What Recession Depends On"
 slug: what-recession-depends-on
 description: "A clear, simple explanation of what recession depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Recession Depends On?
+# What Recession Depends On
 
 1. INTRODUCTION
 A recession is a period of economic decline, typically defined as a decline in gross domestic product (GDP) for two or more consecutive quarters. Understanding what recession depends on is crucial for individuals, businesses, and governments to prepare for and respond to economic downturns. The dependencies that lead to a recession are complex and interconnected, making it essential to examine the prerequisites and foundations that contribute to an economic decline.

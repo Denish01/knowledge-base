@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Gravity?"
+title: "What Affects Gravity"
 slug: what-affects-gravity
 description: "A clear, simple explanation of what affects gravity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Gravity?
+# What Affects Gravity
 
 1. INTRODUCTION:
 Gravity is a fundamental force of nature that attracts objects with mass towards each other. Understanding the factors that affect gravity is essential in various fields, including physics, engineering, and astronomy. The strength and direction of gravity can be influenced by several factors, which in turn affect the behavior of objects on Earth and in the universe. Recognizing these influences is crucial for predicting and explaining natural phenomena, designing structures, and navigating through space.

@@ -1,11 +1,11 @@
 ---
-title: "What is Order Of Operations?"
+title: "What Is Order Of Operations?"
 slug: order-of-operations
 description: "A clear, simple explanation of order of operations - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Order Of Operations?
+# What Is Order Of Operations?
 
 Order of operations is a mathematical concept that refers to the specific sequence in which mathematical operations must be performed when there are multiple operations in an expression.
 

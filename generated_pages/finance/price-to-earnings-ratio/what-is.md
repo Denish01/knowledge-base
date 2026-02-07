@@ -1,11 +1,11 @@
 ---
-title: "What is Price To Earnings Ratio?"
+title: "What Is Price To Earnings Ratio?"
 slug: price-to-earnings-ratio
 description: "A clear, simple explanation of price to earnings ratio - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Price To Earnings Ratio?
+# What Is Price To Earnings Ratio?
 
 Price to earnings ratio is a financial metric that helps investors and analysts determine the value of a company by comparing its stock price to its earnings per share.
 

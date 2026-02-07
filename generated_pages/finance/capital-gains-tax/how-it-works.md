@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Capital Gains Tax Work?"
+title: "How Capital Gains Tax Works"
 slug: how-does-capital-gains-tax-work
 description: "A clear, simple explanation of how does capital gains tax work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Capital Gains Tax Work?
+# How Capital Gains Tax Works
 
 1. QUICK ANSWER: Capital gains tax is a tax on the profit made from selling an investment, such as stocks, real estate, or other assets, and it works by calculating the difference between the sale price and the original purchase price. The tax is then applied to this profit, known as a capital gain, at a rate that depends on the type of asset and the length of time it was held.
 

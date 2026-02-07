@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Loan Interest?"
+title: "Example of Loan Interest"
 slug: examples-of-loan-interest
 description: "A clear, simple explanation of examples of loan interest - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Loan Interest?
+# Example of Loan Interest
 
 1. INTRODUCTION
 Loan interest is the amount of money that a borrower must pay to a lender in addition to the principal amount borrowed. It is essentially a fee for being able to use someone else's money. Loan interest can be calculated in various ways, including simple interest and compound interest, and it can have a significant impact on the total cost of a loan.

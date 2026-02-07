@@ -1,11 +1,11 @@
 ---
-title: "What is Net Income For Support?"
+title: "What Is Net Income For Support?"
 slug: net-income-for-support
 description: "A clear, simple explanation of net income for support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Net Income For Support?
+# What Is Net Income For Support?
 
 Net income for support is the amount of money an individual or family has available to spend on basic needs, such as food, shelter, and clothing, after all necessary expenses have been paid.
 

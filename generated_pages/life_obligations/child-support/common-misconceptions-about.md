@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Child Support?"
+title: "Common Misconceptions About Child Support"
 slug: common-misconceptions-about-child-support
 description: "A clear, simple explanation of common misconceptions about child support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Child Support?
+# Common Misconceptions About Child Support
 
 1. INTRODUCTION:
 Child support is a vital aspect of ensuring the well-being of children when their parents are no longer together. However, misconceptions about child support are common due to the complexity of the laws and the emotional nature of family relationships. These misconceptions can lead to confusion, frustration, and sometimes, conflict. Understanding the truth behind these myths is essential for navigating the child support process effectively.

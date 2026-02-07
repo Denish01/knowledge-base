@@ -1,11 +1,11 @@
 ---
-title: "What is Mortgage Payment?"
+title: "What Is Mortgage Payment?"
 slug: mortgage-payment
 description: "A clear, simple explanation of mortgage payment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Mortgage Payment?
+# What Is Mortgage Payment?
 
 Mortgage payment is a regular payment made by a borrower to a lender to repay a loan used to purchase a home or other real estate property.
 

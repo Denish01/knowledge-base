@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Income Tax?"
+title: "Types of Income Tax"
 slug: types-of-income-tax
 description: "A clear, simple explanation of types of income tax - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Income Tax?
+# Types of Income Tax
 
 1. INTRODUCTION
 

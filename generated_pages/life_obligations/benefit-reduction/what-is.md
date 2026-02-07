@@ -1,11 +1,11 @@
 ---
-title: "What is Benefit Reduction?"
+title: "What Is Benefit Reduction?"
 slug: benefit-reduction
 description: "A clear, simple explanation of benefit reduction - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Benefit Reduction?
+# What Is Benefit Reduction?
 
 Benefit reduction is a process where the amount of financial assistance or advantage received by an individual or group is decreased or limited in some way.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Deflation Work?"
+title: "How Deflation Works"
 slug: how-does-deflation-work
 description: "A clear, simple explanation of how does deflation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Deflation Work?
+# How Deflation Works
 
 1. QUICK ANSWER: Deflation is a economic phenomenon where the general price level of goods and services in an economy decreases over time, resulting in an increase in the purchasing power of money. This occurs when the supply of goods and services exceeds the demand, leading to a decrease in prices.
 

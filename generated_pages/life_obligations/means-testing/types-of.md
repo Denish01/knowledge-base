@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Means Testing?"
+title: "Types of Means Testing"
 slug: types-of-means-testing
 description: "A clear, simple explanation of types of means testing - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Means Testing?
+# Types of Means Testing
 
 ## INTRODUCTION
 Means testing refers to the process of evaluating an individual's or family's financial situation to determine their eligibility for government assistance programs, benefits, or services. This process involves assessing income, assets, and expenses to gauge a person's ability to pay for certain necessities or services. Classification of means testing is crucial as it helps governments and organizations to effectively target resources, ensure fairness, and prevent abuse of the system. By categorizing means testing, it becomes easier to understand the different approaches used to evaluate financial need, and how they apply to various situations and programs.

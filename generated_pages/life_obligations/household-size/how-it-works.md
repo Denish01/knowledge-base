@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Household Size Work?"
+title: "How Household Size Works"
 slug: how-does-household-size-work
 description: "A clear, simple explanation of how does household size work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Household Size Work?
+# How Household Size Works
 
 1. QUICK ANSWER: Household size refers to the number of people living in a dwelling, and it is determined by the number of individuals who share a common living space and resources. The size of a household is calculated by counting the number of people who regularly reside in the home.
 

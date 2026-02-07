@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Pay Stub Work?"
+title: "How Pay Stub Works"
 slug: how-does-pay-stub-work
 description: "A clear, simple explanation of how does pay stub work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Pay Stub Work?
+# How Pay Stub Works
 
 1. QUICK ANSWER: A pay stub is a document that outlines an employee's pay details, including earnings, deductions, and net pay, and it works by providing a transparent record of the employee's compensation. The pay stub is generated based on the employee's salary, hours worked, and various deductions, such as taxes and benefits.
 

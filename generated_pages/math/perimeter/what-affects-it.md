@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Perimeter?"
+title: "What Affects Perimeter"
 slug: what-affects-perimeter
 description: "A clear, simple explanation of what affects perimeter - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Perimeter?
+# What Affects Perimeter
 
 1. INTRODUCTION
 Perimeter refers to the total length of the boundary or border that surrounds a shape or an object. Understanding the factors that affect perimeter is crucial in various fields such as architecture, engineering, and design. The perimeter of a shape or object can significantly impact its functionality, aesthetics, and overall usability. For instance, in construction, the perimeter of a building determines the amount of fencing or walling required, while in design, it can influence the overall visual appeal of a product. By recognizing the factors that influence perimeter, individuals can make informed decisions and optimize their designs to achieve specific goals.

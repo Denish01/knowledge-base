@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Social Security?"
+title: "What Affects Social Security"
 slug: what-affects-social-security
 description: "A clear, simple explanation of what affects social security - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Social Security?
+# What Affects Social Security
 
 1. INTRODUCTION:
 Social security refers to the financial assistance provided by the government to its citizens, particularly the elderly, disabled, and unemployed. Understanding the factors that affect social security is essential because it helps individuals and policymakers make informed decisions about their financial futures and the overall well-being of society. The influences on social security are complex and multifaceted, and grasping these relationships is crucial for effective planning and management.

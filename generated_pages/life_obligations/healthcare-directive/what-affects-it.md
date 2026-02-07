@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Healthcare Directive?"
+title: "What Affects Healthcare Directive"
 slug: what-affects-healthcare-directive
 description: "A clear, simple explanation of what affects healthcare directive - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Healthcare Directive?
+# What Affects Healthcare Directive
 
 1. INTRODUCTION:
 A healthcare directive, also known as a living will, is a document that outlines a person's medical preferences and decisions in the event they become unable to communicate. Understanding the factors that affect healthcare directives is crucial, as it helps individuals make informed decisions about their care and ensures their wishes are respected. Various influences can impact the creation, implementation, and effectiveness of healthcare directives, making it essential to recognize these factors to ensure that one's healthcare wishes are carried out as intended.

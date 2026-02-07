@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Bond Yield?"
+title: "Common Misconceptions About Bond Yield"
 slug: common-misconceptions-about-bond-yield
 description: "A clear, simple explanation of common misconceptions about bond yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Bond Yield?
+# Common Misconceptions About Bond Yield
 
 1. INTRODUCTION: 
 Bond yield is a fundamental concept in finance, and understanding it is crucial for making informed investment decisions. However, misconceptions about bond yield are common, even among experienced investors. This is partly because bond yield can be complex and nuanced, and the terminology used to describe it can be confusing. Additionally, the way bond yield is presented in the media and other sources can sometimes perpetuate misconceptions. As a result, it's essential to take a closer look at what people get wrong about bond yield and why.

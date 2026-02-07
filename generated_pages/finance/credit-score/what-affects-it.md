@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Credit Score?"
+title: "What Affects Credit Score"
 slug: what-affects-credit-score
 description: "A clear, simple explanation of what affects credit score - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Credit Score?
+# What Affects Credit Score
 
 1. INTRODUCTION
 

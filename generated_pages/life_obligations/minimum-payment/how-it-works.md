@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Minimum Payment Work?"
+title: "How Minimum Payment Works"
 slug: how-does-minimum-payment-work
 description: "A clear, simple explanation of how does minimum payment work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Minimum Payment Work?
+# How Minimum Payment Works
 
 1. QUICK ANSWER: The minimum payment is the smallest amount of money that a borrower must pay each month to keep their account in good standing, and it is typically calculated as a percentage of the outstanding balance. This payment is usually made to cover a portion of the interest and principal amount owed.
 

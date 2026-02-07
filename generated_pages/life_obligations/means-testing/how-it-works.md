@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Means Testing Work?"
+title: "How Means Testing Works"
 slug: how-does-means-testing-work
 description: "A clear, simple explanation of how does means testing work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Means Testing Work?
+# How Means Testing Works
 
 1. QUICK ANSWER: Means testing is a process used to determine whether an individual or family is eligible for certain government benefits or programs by assessing their financial resources. It involves evaluating an individual's income, assets, and expenses to decide whether they meet the financial criteria for a particular program.
 

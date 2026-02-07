@@ -1,11 +1,11 @@
 ---
-title: "What is Alimony Vs?"
+title: "Alimony Compared"
 slug: alimony-vs
 description: "A clear, simple explanation of alimony vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Alimony Vs?
+# Alimony Compared
 
 Alimony vs child support is a comparison between two types of financial support that may be awarded to a spouse or parent during or after a divorce or separation. 
 

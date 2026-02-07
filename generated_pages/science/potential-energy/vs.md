@@ -1,11 +1,11 @@
 ---
-title: "What is Potential Energy Vs?"
+title: "Potential Energy Compared"
 slug: potential-energy-vs
 description: "A clear, simple explanation of potential energy vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Potential Energy Vs?
+# Potential Energy Compared
 
 Potential energy vs kinetic energy is a fundamental concept in physics that refers to the two main forms of energy that an object can possess.
 

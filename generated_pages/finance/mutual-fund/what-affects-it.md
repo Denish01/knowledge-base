@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Mutual Fund?"
+title: "What Affects Mutual Fund"
 slug: what-affects-mutual-fund
 description: "A clear, simple explanation of what affects mutual fund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Mutual Fund?
+# What Affects Mutual Fund
 
 1. INTRODUCTION:
 A mutual fund is a type of investment vehicle that pools money from many investors to purchase a diversified portfolio of stocks, bonds, or other securities. Understanding the factors that affect mutual funds is crucial for investors to make informed decisions and manage their investments effectively. Various factors can influence the performance and value of a mutual fund, and being aware of these influences can help investors navigate the complexities of the investment world.

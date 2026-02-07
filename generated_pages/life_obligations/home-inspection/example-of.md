@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Home Inspection?"
+title: "Example of Home Inspection"
 slug: examples-of-home-inspection
 description: "A clear, simple explanation of examples of home inspection - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Home Inspection?
+# Example of Home Inspection
 
 1. INTRODUCTION
 A home inspection is a thorough examination of a home's condition, typically conducted by a professional inspector. The purpose of a home inspection is to identify any potential issues or defects in the property, including problems with the foundation, plumbing, electrical systems, and other crucial components. This process helps buyers make informed decisions when purchasing a home and can also be useful for homeowners looking to maintain or improve their property.

@@ -1,11 +1,11 @@
 ---
-title: "What is Stock Market?"
+title: "What Is Stock Market?"
 slug: stock-market
 description: "A clear, simple explanation of stock market - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Stock Market?
+# What Is Stock Market?
 
 Stock market refers to a system that allows people to buy and sell parts of companies, known as stocks or shares, in the hope of earning a profit. 
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Central Bank?"
+title: "Types of Central Bank"
 slug: types-of-central-bank
 description: "A clear, simple explanation of types of central bank - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Central Bank?
+# Types of Central Bank
 
 ## INTRODUCTION
 The classification of central banks is a crucial aspect of understanding the monetary system of a country. Central banks play a vital role in maintaining the stability of a nation's economy, and their types vary based on their functions, structures, and objectives. The classification of central banks covers different models, each with its unique characteristics, advantages, and challenges. Understanding these types is essential for economists, policymakers, and anyone interested in the functioning of the global economy. By categorizing central banks, we can better comprehend their roles, responsibilities, and interactions with other economic institutions, ultimately leading to more effective monetary policy decisions.

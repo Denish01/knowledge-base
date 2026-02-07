@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Linear Equations?"
+title: "What Affects Linear Equations"
 slug: what-affects-linear-equations
 description: "A clear, simple explanation of what affects linear equations - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Linear Equations?
+# What Affects Linear Equations
 
 1. INTRODUCTION:
 Linear equations are mathematical expressions that describe a relationship between two or more variables, where the highest power of the variable is one. These equations are fundamental in various fields, including mathematics, physics, and engineering. Understanding the factors that affect linear equations is crucial because it helps individuals solve problems, make predictions, and model real-world phenomena accurately. The influences on linear equations can either facilitate or hinder the solution process, making it essential to recognize and manage them.

@@ -1,11 +1,11 @@
 ---
-title: "What is What Credit Score Depends On?"
+title: "What Credit Score Depends On"
 slug: what-credit-score-depends-on
 description: "A clear, simple explanation of what credit score depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Credit Score Depends On?
+# What Credit Score Depends On
 
 1. INTRODUCTION
 A credit score is a numerical representation of an individual's or business's creditworthiness, calculated based on their credit history. Understanding what a credit score depends on is essential for maintaining a good credit score, as it helps individuals and businesses make informed decisions about their financial actions. The dependencies of a credit score are the foundation upon which it is calculated, and knowing these prerequisites is crucial for managing credit effectively.

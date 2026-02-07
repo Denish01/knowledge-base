@@ -1,11 +1,11 @@
 ---
-title: "What is Pension Vs?"
+title: "Pension Compared"
 slug: pension-vs
 description: "A clear, simple explanation of pension vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Pension Vs?
+# Pension Compared
 
 Pension vs refers to a comparison between a pension and other types of retirement plans, highlighting the key differences and similarities between these financial arrangements.
 

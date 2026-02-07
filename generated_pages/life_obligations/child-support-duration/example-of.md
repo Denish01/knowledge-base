@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Child Support Duration?"
+title: "Example of Child Support Duration"
 slug: examples-of-child-support-duration
 description: "A clear, simple explanation of examples of child support duration - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Child Support Duration?
+# Example of Child Support Duration
 
 1. INTRODUCTION
 Child support duration refers to the length of time during which one parent is required to provide financial support to their child or children. This duration can vary significantly depending on factors such as the age of the child, the laws of the jurisdiction, and the specific circumstances of the family. Understanding the different examples of child support duration can help individuals navigate the complex legal landscape surrounding child support.

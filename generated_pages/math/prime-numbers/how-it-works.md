@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Prime Numbers Work?"
+title: "How Prime Numbers Works"
 slug: how-does-prime-numbers-work
 description: "A clear, simple explanation of how does prime numbers work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Prime Numbers Work?
+# How Prime Numbers Works
 
 1. QUICK ANSWER: 
 Prime numbers work by following a specific set of rules that define their generation and behavior. The core mechanism of prime numbers involves a process of division and elimination, where a number is considered prime if it has exactly two distinct positive divisors: 1 and itself.

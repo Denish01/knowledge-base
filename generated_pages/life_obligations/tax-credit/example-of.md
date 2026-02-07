@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Tax Credit?"
+title: "Example of Tax Credit"
 slug: examples-of-tax-credit
 description: "A clear, simple explanation of examples of tax credit - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Tax Credit?
+# Example of Tax Credit
 
 1. INTRODUCTION:
 A tax credit is a reduction in the amount of tax an individual or business owes to the government. It is a direct subtraction from the total tax liability, unlike a tax deduction which reduces taxable income. Tax credits are designed to encourage certain behaviors or support specific groups, such as low-income families, students, or homeowners. They can be claimed by individuals or businesses and are usually subject to specific eligibility criteria.

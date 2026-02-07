@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Compound Interest?"
+title: "What Affects Compound Interest"
 slug: what-affects-compound-interest
 description: "A clear, simple explanation of what affects compound interest - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Compound Interest?
+# What Affects Compound Interest
 
 1. INTRODUCTION
 Compound interest is the process by which interest is earned on both the principal amount and any accrued interest over time. Understanding the factors that affect compound interest is essential for making informed decisions about investments and savings. By recognizing the influences on compound interest, individuals can optimize their financial strategies and achieve their long-term goals. The factors that affect compound interest are crucial to comprehend, as they can significantly impact the overall growth of an investment or savings account.

@@ -1,11 +1,11 @@
 ---
-title: "What is Health Insurance Vs?"
+title: "Health Insurance Compared"
 slug: health-insurance-vs
 description: "A clear, simple explanation of health insurance vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Health Insurance Vs?
+# Health Insurance Compared
 
 Health insurance vs other types of insurance is a comparison of different insurance plans that provide financial protection against various types of risks, with health insurance specifically designed to cover medical expenses.
 

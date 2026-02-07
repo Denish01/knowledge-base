@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Parental Obligation?"
+title: "Types of Parental Obligation"
 slug: types-of-parental-obligation
 description: "A clear, simple explanation of types of parental obligation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Parental Obligation?
+# Types of Parental Obligation
 
 ## INTRODUCTION
 Parental obligation refers to the various responsibilities and duties that parents have towards their children, encompassing both physical and emotional care, as well as financial support. The classification of these obligations is crucial as it helps in understanding the diverse needs of children at different stages of their development and the corresponding responsibilities of parents. By categorizing parental obligations, parents, caregivers, and legal entities can better navigate the complexities of child-rearing, ensuring that children receive comprehensive care and support. This classification system also aids in legal and social contexts, where the specifics of parental duties can significantly impact family dynamics and child welfare.

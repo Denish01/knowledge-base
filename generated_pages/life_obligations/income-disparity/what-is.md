@@ -1,11 +1,11 @@
 ---
-title: "What is Income Disparity?"
+title: "What Is Income Disparity?"
 slug: income-disparity
 description: "A clear, simple explanation of income disparity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Income Disparity?
+# What Is Income Disparity?
 
 Income disparity refers to the uneven distribution of income among individuals, households, or groups within a population, resulting in significant differences in the amount of money people have to spend or save.
 

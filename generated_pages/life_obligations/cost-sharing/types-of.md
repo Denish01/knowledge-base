@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Cost Sharing?"
+title: "Types of Cost Sharing"
 slug: types-of-cost-sharing
 description: "A clear, simple explanation of types of cost sharing - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Cost Sharing?
+# Types of Cost Sharing
 
 1. INTRODUCTION:
 Cost sharing refers to the various methods by which individuals, organizations, or governments distribute and manage financial burdens associated with providing goods, services, or benefits. Classification of cost sharing types is essential as it helps in understanding the different mechanisms through which costs can be allocated, allowing for more informed decision-making and effective financial planning. By categorizing cost sharing methods, individuals and organizations can better navigate the complexities of financial responsibilities and make choices that suit their specific needs and circumstances.

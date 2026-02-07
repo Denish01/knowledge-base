@@ -1,11 +1,11 @@
 ---
-title: "What is Prime Numbers Vs?"
+title: "Prime Numbers Compared"
 slug: prime-numbers-vs
 description: "A clear, simple explanation of prime numbers vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Prime Numbers Vs?
+# Prime Numbers Compared
 
 Prime numbers vs composite numbers is a fundamental concept in mathematics that refers to the comparison between prime numbers, which are numbers that have exactly two distinct positive divisors, and composite numbers, which are numbers that have more than two distinct positive divisors.
 

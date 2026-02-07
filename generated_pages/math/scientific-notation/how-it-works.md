@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Scientific Notation Work?"
+title: "How Scientific Notation Works"
 slug: how-does-scientific-notation-work
 description: "A clear, simple explanation of how does scientific notation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Scientific Notation Work?
+# How Scientific Notation Works
 
 1. QUICK ANSWER: Scientific notation is a way of expressing very large or very small numbers in a concise form by using powers of 10. This notation works by breaking down a number into a coefficient and an exponent, which represents the power of 10 to which the coefficient is raised.
 

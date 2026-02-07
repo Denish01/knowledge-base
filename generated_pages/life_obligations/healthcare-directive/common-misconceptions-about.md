@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Healthcare Directive?"
+title: "Common Misconceptions About Healthcare Directive"
 slug: common-misconceptions-about-healthcare-directive
 description: "A clear, simple explanation of common misconceptions about healthcare directive - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Healthcare Directive?
+# Common Misconceptions About Healthcare Directive
 
 1. INTRODUCTION: 
 Misconceptions about healthcare directives are common because the topic can be complex and overwhelming. A healthcare directive, also known as an advance directive, is a document that outlines a person's wishes for medical treatment in the event they become unable to communicate. People may not fully understand the purpose, benefits, and requirements of a healthcare directive, leading to misunderstandings and incorrect assumptions. These misconceptions can lead to confusion, anxiety, and potentially, poor decision-making. It is essential to address these misconceptions to ensure that individuals can make informed decisions about their healthcare.

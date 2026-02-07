@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Standard Deviation?"
+title: "Example of Standard Deviation"
 slug: examples-of-standard-deviation
 description: "A clear, simple explanation of examples of standard deviation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Standard Deviation?
+# Example of Standard Deviation
 
 1. INTRODUCTION:
 Standard deviation is a measure of how spread out a set of numbers is from its average value. It gives an idea of how much individual data points deviate from the mean. A low standard deviation means that most of the numbers are close to the average, while a high standard deviation indicates that the numbers are more spread out. Understanding standard deviation is crucial in various fields, including science, finance, and social sciences, as it helps in making informed decisions and predictions.

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Child Support Duration?"
+title: "What Affects Child Support Duration"
 slug: what-affects-child-support-duration
 description: "A clear, simple explanation of what affects child support duration - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Child Support Duration?
+# What Affects Child Support Duration
 
 INTRODUCTION
 Child support duration refers to the length of time that one parent is required to provide financial support to their child or children. Understanding the factors that affect child support duration is crucial for parents, as it can have a significant impact on their financial planning and stability. The duration of child support can vary greatly depending on several influences, and being aware of these factors can help parents navigate the complex process of determining child support.

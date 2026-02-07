@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Potential Energy?"
+title: "What Affects Potential Energy"
 slug: what-affects-potential-energy
 description: "A clear, simple explanation of what affects potential energy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Potential Energy?
+# What Affects Potential Energy
 
 1. INTRODUCTION:
 Potential energy is the stored energy an object has due to its position, configuration, or state. Understanding the factors that affect potential energy is crucial in various fields, including physics, engineering, and environmental science. By recognizing the influences on potential energy, individuals can better comprehend the behavior of objects and systems, making informed decisions and predictions. The ability to analyze and manipulate potential energy is essential for designing and optimizing systems, from simple machines to complex ecosystems.

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Spousal Support Duration?"
+title: "Example of Spousal Support Duration"
 slug: examples-of-spousal-support-duration
 description: "A clear, simple explanation of examples of spousal support duration - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Spousal Support Duration?
+# Example of Spousal Support Duration
 
 1. INTRODUCTION:
 Spousal support duration refers to the length of time one spouse is required to provide financial assistance to the other after a divorce or separation. This can vary greatly depending on factors such as the length of the marriage, income levels, and the ability of each spouse to support themselves. Understanding the different scenarios in which spousal support duration is determined can help clarify this complex aspect of family law.

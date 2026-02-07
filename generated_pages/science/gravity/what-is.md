@@ -1,11 +1,11 @@
 ---
-title: "What is Gravity?"
+title: "What Is Gravity?"
 slug: gravity
 description: "A clear, simple explanation of gravity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Gravity?
+# What Is Gravity?
 
 Gravity is a fundamental force of nature that causes objects with mass to attract each other. 
 

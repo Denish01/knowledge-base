@@ -1,11 +1,11 @@
 ---
-title: "What is Mitosis Vs?"
+title: "Mitosis Compared"
 slug: mitosis-vs
 description: "A clear, simple explanation of mitosis vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Mitosis Vs?
+# Mitosis Compared
 
 Mitosis refers to a type of cell division that results in two daughter cells that are genetically identical to the parent cell. 
 

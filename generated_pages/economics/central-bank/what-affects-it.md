@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Central Bank?"
+title: "What Affects Central Bank"
 slug: what-affects-central-bank
 description: "A clear, simple explanation of what affects central bank - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Central Bank?
+# What Affects Central Bank
 
 1. INTRODUCTION:
 A central bank is an institution that manages a country's monetary policy, regulates its financial system, and provides banking services to the government and other banks. Understanding what affects a central bank is crucial because it has a significant impact on the overall economy. The central bank's decisions can influence interest rates, inflation, employment rates, and the stability of the financial system. By recognizing the factors that affect a central bank, individuals and organizations can better comprehend the reasoning behind its decisions and how they may impact the economy.

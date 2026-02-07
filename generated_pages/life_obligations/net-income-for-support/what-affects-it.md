@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Net Income For Support?"
+title: "What Affects Net Income For Support"
 slug: what-affects-net-income-for-support
 description: "A clear, simple explanation of what affects net income for support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Net Income For Support?
+# What Affects Net Income For Support
 
 1. INTRODUCTION:
 Net income for support refers to the amount of money available to support oneself or others after all necessary expenses have been deducted. Understanding the factors that affect net income for support is crucial because it helps individuals and families make informed decisions about their financial resources and plan for their well-being. By knowing what influences net income, people can take steps to maximize their support and achieve their financial goals. This understanding is essential for creating a stable and secure financial foundation.

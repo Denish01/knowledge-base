@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Eligibility Criteria?"
+title: "What Affects Eligibility Criteria"
 slug: what-affects-eligibility-criteria
 description: "A clear, simple explanation of what affects eligibility criteria - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Eligibility Criteria?
+# What Affects Eligibility Criteria
 
 INTRODUCTION
 Eligibility criteria refer to the standards or requirements that must be met to qualify for a particular program, service, or opportunity. Understanding the factors that affect eligibility criteria is crucial because it helps individuals and organizations navigate the complex process of determining who is eligible and who is not. By recognizing the influences on eligibility criteria, people can better prepare themselves to meet the necessary requirements and increase their chances of qualification. In this explanation, we will explore the main factors that affect eligibility criteria and how they interact with each other.

@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Price Elasticity?"
+title: "Common Misconceptions About Price Elasticity"
 slug: common-misconceptions-about-price-elasticity
 description: "A clear, simple explanation of common misconceptions about price elasticity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Price Elasticity?
+# Common Misconceptions About Price Elasticity
 
 1. INTRODUCTION: 
 Price elasticity is a fundamental concept in economics that measures how much the quantity of a product demanded changes in response to a change in its price. Despite its importance, misconceptions about price elasticity are common. This is partly because the concept can be complex and nuanced, making it difficult for people to fully understand. Additionally, real-world examples and exceptions can sometimes be misinterpreted, leading to misunderstandings. Understanding these misconceptions is crucial for making informed decisions in business and economics.

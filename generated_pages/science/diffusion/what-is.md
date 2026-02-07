@@ -1,11 +1,11 @@
 ---
-title: "What is Diffusion?"
+title: "What Is Diffusion?"
 slug: diffusion
 description: "A clear, simple explanation of diffusion - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Diffusion?
+# What Is Diffusion?
 
 Diffusion is the process by which particles or substances move from an area of higher concentration to an area of lower concentration, resulting in uniform distribution.
 

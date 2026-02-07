@@ -1,11 +1,11 @@
 ---
-title: "What is Central Bank?"
+title: "What Is Central Bank?"
 slug: central-bank
 description: "A clear, simple explanation of central bank - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Central Bank?
+# What Is Central Bank?
 
 Central bank is a national institution that manages a country's monetary policy, regulates its financial system, and provides banking services to the government and commercial banks.
 

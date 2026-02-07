@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Mitosis?"
+title: "Example of Mitosis"
 slug: examples-of-mitosis
 description: "A clear, simple explanation of examples of mitosis - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Mitosis?
+# Example of Mitosis
 
 1. INTRODUCTION
 Mitosis is a type of cell division that results in two daughter cells having the same number of chromosomes as the parent cell. This process is essential for growth, repair, and maintenance of living organisms. Mitosis occurs in somatic cells, which are non-reproductive cells, and is a crucial aspect of development and tissue repair.

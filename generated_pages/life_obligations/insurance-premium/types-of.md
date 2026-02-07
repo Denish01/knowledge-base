@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Insurance Premium?"
+title: "Types of Insurance Premium"
 slug: types-of-insurance-premium
 description: "A clear, simple explanation of types of insurance premium - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Insurance Premium?
+# Types of Insurance Premium
 
 1. INTRODUCTION
 

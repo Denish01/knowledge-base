@@ -1,11 +1,11 @@
 ---
-title: "What is Education Funding Vs?"
+title: "Education Funding Compared"
 slug: education-funding-vs
 description: "A clear, simple explanation of education funding vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Education Funding Vs?
+# Education Funding Compared
 
 Education funding versus other public expenditures is a critical aspect of a country's budget allocation, referring to the process of distributing financial resources to support the education system in comparison to other essential public services.
 

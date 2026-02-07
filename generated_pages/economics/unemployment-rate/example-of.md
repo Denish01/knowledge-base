@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Unemployment Rate?"
+title: "Example of Unemployment Rate"
 slug: examples-of-unemployment-rate
 description: "A clear, simple explanation of examples of unemployment rate - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Unemployment Rate?
+# Example of Unemployment Rate
 
 1. INTRODUCTION
 The unemployment rate is a measure of the number of people who are able and willing to work but are currently without a job. It is typically expressed as a percentage of the total labor force. Understanding the unemployment rate is important because it can have a significant impact on individuals, communities, and the economy as a whole. In this page, we will explore a variety of examples to illustrate the concept of unemployment rate in different contexts and scales.

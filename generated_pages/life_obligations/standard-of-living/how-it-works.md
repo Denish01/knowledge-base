@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Standard Of Living Work?"
+title: "How Standard Of Living Works"
 slug: how-does-standard-of-living-work
 description: "A clear, simple explanation of how does standard of living work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Standard Of Living Work?
+# How Standard Of Living Works
 
 1. QUICK ANSWER: 
 The standard of living is determined by the amount of goods and services that individuals or families can afford to purchase, which is influenced by factors such as income, prices, and access to resources. This mechanism is based on the interaction between personal and societal factors that affect the availability and affordability of necessities and luxuries.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Rent Payment Work?"
+title: "How Rent Payment Works"
 slug: how-does-rent-payment-work
 description: "A clear, simple explanation of how does rent payment work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Rent Payment Work?
+# How Rent Payment Works
 
 1. QUICK ANSWER: Rent payment works through a series of transactions between the tenant, landlord, and financial institutions, ultimately resulting in the transfer of funds from the tenant to the landlord. This mechanism involves a set of steps that ensure the rent is paid on time and the tenant's account is updated accordingly.
 

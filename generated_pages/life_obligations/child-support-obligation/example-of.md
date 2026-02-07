@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Child Support Obligation?"
+title: "Example of Child Support Obligation"
 slug: examples-of-child-support-obligation
 description: "A clear, simple explanation of examples of child support obligation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Child Support Obligation?
+# Example of Child Support Obligation
 
 1. INTRODUCTION
 A child support obligation refers to the financial responsibility of a parent to provide for their child's basic needs, such as food, clothing, education, and healthcare, when the parents are no longer living together. This obligation is typically determined by a court and is based on factors such as the income of both parents, the child's living arrangements, and the child's financial needs. The purpose of child support is to ensure that the child's standard of living is maintained, even if the parents are not together.

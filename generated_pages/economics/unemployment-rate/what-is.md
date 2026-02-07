@@ -1,11 +1,11 @@
 ---
-title: "What is Unemployment Rate?"
+title: "What Is Unemployment Rate?"
 slug: unemployment-rate
 description: "A clear, simple explanation of unemployment rate - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Unemployment Rate?
+# What Is Unemployment Rate?
 
 Unemployment rate refers to the percentage of people in a labor force who are currently without a job and are actively looking for work. 
 

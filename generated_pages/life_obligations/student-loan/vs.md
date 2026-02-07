@@ -1,11 +1,11 @@
 ---
-title: "What is Student Loan Vs?"
+title: "Student Loan Compared"
 slug: student-loan-vs
 description: "A clear, simple explanation of student loan vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Student Loan Vs?
+# Student Loan Compared
 
 Student loan vs refers to the comparison of different types of financial aid options available to students to help them pay for their education expenses.
 

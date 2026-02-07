@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Household Income Work?"
+title: "How Household Income Works"
 slug: how-does-household-income-work
 description: "A clear, simple explanation of how does household income work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Household Income Work?
+# How Household Income Works
 
 1. QUICK ANSWER: Household income works by combining the earnings of all household members to determine the total amount of money available for expenses, savings, and investments. This total amount is calculated by adding up the income from various sources, such as salaries, wages, and investments.
 

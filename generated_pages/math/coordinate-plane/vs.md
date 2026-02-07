@@ -1,11 +1,11 @@
 ---
-title: "What is Coordinate Plane Vs?"
+title: "Coordinate Plane Compared"
 slug: coordinate-plane-vs
 description: "A clear, simple explanation of coordinate plane vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Coordinate Plane Vs?
+# Coordinate Plane Compared
 
 Coordinate plane vs refers to the comparison and understanding of the fundamental concepts of the coordinate plane, which is a two-dimensional plane where points are represented by ordered pairs of numbers, and other related mathematical concepts.
 

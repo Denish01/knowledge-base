@@ -1,11 +1,11 @@
 ---
-title: "What is Pythagorean Theorem?"
+title: "What Is Pythagorean Theorem?"
 slug: pythagorean-theorem
 description: "A clear, simple explanation of pythagorean theorem - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Pythagorean Theorem?
+# What Is Pythagorean Theorem?
 
 Pythagorean theorem refers to a fundamental concept in geometry that describes the relationship between the lengths of the sides of a right-angled triangle.
 

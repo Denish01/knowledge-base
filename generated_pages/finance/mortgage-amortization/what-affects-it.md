@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Mortgage Amortization?"
+title: "What Affects Mortgage Amortization"
 slug: what-affects-mortgage-amortization
 description: "A clear, simple explanation of what affects mortgage amortization - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Mortgage Amortization?
+# What Affects Mortgage Amortization
 
 INTRODUCTION
 Mortgage amortization is the process of gradually paying off a mortgage loan through regular payments. Understanding the factors that affect mortgage amortization is crucial for homeowners, as it helps them make informed decisions about their loan and manage their finances effectively. By knowing what influences mortgage amortization, individuals can better plan their payments, reduce their debt, and achieve their long-term financial goals.

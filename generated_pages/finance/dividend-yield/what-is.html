@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A clear, simple explanation of dividend yield - definition, key concepts, examples, and common misconceptions.">
-    <title>What is Dividend Yield? - Simple Explanation</title>
+    <title>What Is Dividend Yield? - Simple Explanation</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -29,109 +29,9 @@
 </head>
 <body>
     <article>
-        <h1>What is Dividend Yield?</h1>
+        <h1>What Is Dividend Yield?</h1>
 
         
-<style>
-.calculator {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 24px 0;
-}
-.calculator h3 {
-    margin-top: 0;
-    color: #1a73e8;
-}
-.calc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 16px;
-}
-.calculator label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-}
-.calculator input, .calculator select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.calculator button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.calculator button:hover {
-    background: #1557b0;
-}
-.calc-result {
-    margin-top: 16px;
-    padding: 12px;
-    background: white;
-    border-radius: 4px;
-    border-left: 4px solid #1a73e8;
-}
-.calc-result p {
-    margin: 8px 0;
-}
-.calc-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.tab-btn {
-    background: #e0e0e0;
-    color: #333;
-}
-.tab-btn.active {
-    background: #1a73e8;
-    color: white;
-}
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-</style>
-
-<div class="calculator" id="div-yield-calc">
-    <h3>Dividend Yield Calculator</h3>
-    <div class="calc-grid">
-        <label>Annual Dividend per Share ($): <input type="number" id="div-annual" value="2.50" min="0" step="0.01"></label>
-        <label>Stock Price ($): <input type="number" id="div-price" value="50" min="0.01" step="0.01"></label>
-        <label>Shares Owned (optional): <input type="number" id="div-shares" value="100" min="0"></label>
-    </div>
-    <button onclick="calcDivYield()">Calculate</button>
-    <div class="calc-result" id="div-result"></div>
-</div>
-<script>
-function calcDivYield() {
-    const dividend = parseFloat(document.getElementById('div-annual').value);
-    const price = parseFloat(document.getElementById('div-price').value);
-    const shares = parseFloat(document.getElementById('div-shares').value) || 0;
-    const yieldPct = (dividend / price) * 100;
-    const annualIncome = dividend * shares;
-    document.getElementById('div-result').innerHTML = `
-        <p><strong>Dividend Yield:</strong> ${yieldPct.toFixed(2)}%</p>
-        <p><strong>Annual Income (${shares} shares):</strong> $${annualIncome.toFixed(2)}</p>
-        <p><strong>Quarterly Income:</strong> $${(annualIncome/4).toFixed(2)}</p>
-    `;
-}
-calcDivYield();
-</script>
-
 
         <p>Dividend yield is a measure of the return on investment for a stock that pays dividends, calculated by dividing the annual dividend payment by the stock's current price.</p>
 

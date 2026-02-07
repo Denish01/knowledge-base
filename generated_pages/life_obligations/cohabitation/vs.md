@@ -1,11 +1,11 @@
 ---
-title: "What is Cohabitation Vs?"
+title: "Cohabitation Compared"
 slug: cohabitation-vs
 description: "A clear, simple explanation of cohabitation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Cohabitation Vs?
+# Cohabitation Compared
 
 Cohabitation vs marriage is a comparison between two types of long-term relationships where individuals live together in a committed partnership, with cohabitation referring to living together without being legally married and marriage being a legally recognized union.
 

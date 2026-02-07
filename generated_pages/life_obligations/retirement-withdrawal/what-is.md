@@ -1,11 +1,11 @@
 ---
-title: "What is Retirement Withdrawal?"
+title: "What Is Retirement Withdrawal?"
 slug: retirement-withdrawal
 description: "A clear, simple explanation of retirement withdrawal - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Retirement Withdrawal?
+# What Is Retirement Withdrawal?
 
 Retirement withdrawal is the process of taking money out of a retirement account, such as a 401(k) or IRA, to support living expenses after one stops working.
 

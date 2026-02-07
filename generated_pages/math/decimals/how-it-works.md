@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Decimals Work?"
+title: "How Decimals Works"
 slug: how-does-decimals-work
 description: "A clear, simple explanation of how does decimals work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Decimals Work?
+# How Decimals Works
 
 1. QUICK ANSWER: Decimals work by representing fractions of whole numbers using a point, known as the decimal point, which separates the whole number part from the fractional part. This allows for precise representation and calculation of quantities that are not whole numbers.
 

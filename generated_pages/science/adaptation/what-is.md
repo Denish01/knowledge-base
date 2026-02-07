@@ -1,11 +1,11 @@
 ---
-title: "What is Adaptation?"
+title: "What Is Adaptation?"
 slug: adaptation
 description: "A clear, simple explanation of adaptation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Adaptation?
+# What Is Adaptation?
 
 Adaptation is a process by which organisms, systems, or individuals become better suited to their environment, often resulting in increased survival, growth, or success.
 

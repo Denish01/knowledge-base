@@ -1,11 +1,11 @@
 ---
-title: "What is Mortgage Amortization?"
+title: "What Is Mortgage Amortization?"
 slug: mortgage-amortization
 description: "A clear, simple explanation of mortgage amortization - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Mortgage Amortization?
+# What Is Mortgage Amortization?
 
 Mortgage amortization is a process of gradually paying off a debt, typically a home loan, through regular payments that cover both the interest and principal amount borrowed.
 

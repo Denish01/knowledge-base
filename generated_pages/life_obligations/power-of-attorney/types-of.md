@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Power Of Attorney?"
+title: "Types of Power Of Attorney"
 slug: types-of-power-of-attorney
 description: "A clear, simple explanation of types of power of attorney - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Power Of Attorney?
+# Types of Power Of Attorney
 
 1. INTRODUCTION:
 Types of power of attorney refer to the different ways in which an individual can grant authority to another person or entity to act on their behalf in various matters, such as financial, medical, or personal decisions. Classification of power of attorney is crucial as it helps individuals understand the specific scope and limitations of the authority they are granting, ensuring that their interests are protected and their wishes are respected. By understanding the different types of power of attorney, individuals can make informed decisions about which type to use in different situations, and professionals, such as lawyers and financial advisors, can provide guidance and support to their clients.

@@ -1,11 +1,11 @@
 ---
-title: "What is Tax Credit Vs?"
+title: "Tax Credit Compared"
 slug: tax-credit-vs
 description: "A clear, simple explanation of tax credit vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Tax Credit Vs?
+# Tax Credit Compared
 
 Tax credit vs deduction is a comparison between two types of tax benefits that individuals and businesses can claim to reduce their tax liability.
 

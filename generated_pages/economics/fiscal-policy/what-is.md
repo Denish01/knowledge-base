@@ -1,11 +1,11 @@
 ---
-title: "What is Fiscal Policy?"
+title: "What Is Fiscal Policy?"
 slug: fiscal-policy
 description: "A clear, simple explanation of fiscal policy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Fiscal Policy?
+# What Is Fiscal Policy?
 
 Fiscal policy is a set of actions taken by a government to manage its spending and taxation in order to influence the overall level of economic activity.
 

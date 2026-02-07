@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Photosynthesis?"
+title: "What Affects Photosynthesis"
 slug: what-affects-photosynthesis
 description: "A clear, simple explanation of what affects photosynthesis - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Photosynthesis?
+# What Affects Photosynthesis
 
 1. INTRODUCTION:
 Photosynthesis is the process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of glucose. This process is essential for life on Earth, as it provides energy and organic compounds for growth and development. Understanding the factors that affect photosynthesis is crucial, as it can help us appreciate the complexities of this process and how it is influenced by various elements. By recognizing these influences, we can better comprehend the intricate relationships between plants and their environment.

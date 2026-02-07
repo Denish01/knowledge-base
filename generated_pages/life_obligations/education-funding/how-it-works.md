@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Education Funding Work?"
+title: "How Education Funding Works"
 slug: how-does-education-funding-work
 description: "A clear, simple explanation of how does education funding work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Education Funding Work?
+# How Education Funding Works
 
 1. QUICK ANSWER: Education funding works through a complex mechanism where governments, institutions, and individuals contribute money to support the education system, which is then allocated to various sectors such as schools, universities, and programs. This allocation is typically based on a combination of factors, including student enrollment, academic performance, and socioeconomic needs.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Variables?"
+title: "What Is Variables?"
 slug: variables
 description: "A clear, simple explanation of variables - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Variables?
+# What Is Variables?
 
 Variables is a fundamental concept in mathematics, science, and programming that refers to a symbol or name that represents a value that can change or vary.
 

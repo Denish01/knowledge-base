@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Pythagorean Theorem Work?"
+title: "How Pythagorean Theorem Works"
 slug: how-does-pythagorean-theorem-work
 description: "A clear, simple explanation of how does pythagorean theorem work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Pythagorean Theorem Work?
+# How Pythagorean Theorem Works
 
 1. QUICK ANSWER: The Pythagorean theorem is a mathematical concept that works by calculating the length of the hypotenuse of a right-angled triangle using the lengths of the other two sides. This is achieved through a simple equation that relates the lengths of the sides, allowing for the determination of the hypotenuse.
 

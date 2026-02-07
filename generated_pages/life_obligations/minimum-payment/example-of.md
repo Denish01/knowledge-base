@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Minimum Payment?"
+title: "Example of Minimum Payment"
 slug: examples-of-minimum-payment
 description: "A clear, simple explanation of examples of minimum payment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Minimum Payment?
+# Example of Minimum Payment
 
 1. INTRODUCTION:
 A minimum payment is the smallest amount that must be paid to fulfill a financial obligation, such as a credit card bill, loan, or rent. It is the least amount required to avoid penalties, fees, or other negative consequences. Understanding minimum payments is crucial for managing personal finances effectively.

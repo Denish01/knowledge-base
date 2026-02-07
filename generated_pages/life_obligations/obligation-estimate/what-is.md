@@ -1,11 +1,11 @@
 ---
-title: "What is Obligation Estimate?"
+title: "What Is Obligation Estimate?"
 slug: obligation-estimate
 description: "A clear, simple explanation of obligation estimate - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Obligation Estimate?
+# What Is Obligation Estimate?
 
 Obligation estimate is a calculation of the amount of money or resources that an individual or organization is expected to provide in order to fulfill a commitment or responsibility.
 

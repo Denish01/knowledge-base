@@ -1,11 +1,11 @@
 ---
-title: "What is Beneficiary Designation?"
+title: "What Is Beneficiary Designation?"
 slug: beneficiary-designation
 description: "A clear, simple explanation of beneficiary designation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Beneficiary Designation?
+# What Is Beneficiary Designation?
 
 Beneficiary designation is a provision that allows individuals to name specific people or entities to receive certain benefits, such as life insurance proceeds, retirement accounts, or other assets, after their death.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Tax Withholding?"
+title: "What Is Tax Withholding?"
 slug: tax-withholding
 description: "A clear, simple explanation of tax withholding - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Tax Withholding?
+# What Is Tax Withholding?
 
 Tax withholding is a process where an employer deducts a portion of an employee's income and pays it to the government as part of the employee's tax obligation.
 

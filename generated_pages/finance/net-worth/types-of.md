@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Net Worth?"
+title: "Types of Net Worth"
 slug: types-of-net-worth
 description: "A clear, simple explanation of types of net worth - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Net Worth?
+# Types of Net Worth
 
 INTRODUCTION
 Net worth is a measure of an individual's or entity's financial health, calculated by subtracting total liabilities from total assets. Understanding the different types of net worth is essential for effective financial planning, investment, and decision-making. Classification of net worth into various categories helps individuals and organizations to assess their financial situation, set goals, and make informed decisions about resource allocation. By recognizing the distinct types of net worth, individuals can better navigate their financial journey, identify areas for improvement, and develop strategies to achieve financial stability and growth.

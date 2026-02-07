@@ -1,11 +1,11 @@
 ---
-title: "What is Greatest Common Factor Vs?"
+title: "Greatest Common Factor Compared"
 slug: greatest-common-factor-vs
 description: "A clear, simple explanation of greatest common factor vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Greatest Common Factor Vs?
+# Greatest Common Factor Compared
 
 Greatest common factor vs is a mathematical concept that refers to the comparison of the largest positive integer that divides two or more numbers without leaving a remainder.
 

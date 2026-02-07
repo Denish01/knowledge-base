@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A clear, simple explanation of child support - definition, key concepts, examples, and common misconceptions.">
-    <title>What is Child Support? - Simple Explanation</title>
+    <title>What Is Child Support? - Simple Explanation</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -29,121 +29,9 @@
 </head>
 <body>
     <article>
-        <h1>What is Child Support?</h1>
+        <h1>What Is Child Support?</h1>
 
         
-<style>
-.calculator {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 24px 0;
-}
-.calculator h3 {
-    margin-top: 0;
-    color: #1a73e8;
-}
-.calc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 16px;
-}
-.calculator label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-}
-.calculator input, .calculator select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.calculator button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.calculator button:hover {
-    background: #1557b0;
-}
-.calc-result {
-    margin-top: 16px;
-    padding: 12px;
-    background: white;
-    border-radius: 4px;
-    border-left: 4px solid #1a73e8;
-}
-.calc-result p {
-    margin: 8px 0;
-}
-.calc-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.tab-btn {
-    background: #e0e0e0;
-    color: #333;
-}
-.tab-btn.active {
-    background: #1a73e8;
-    color: white;
-}
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-</style>
-
-<div class="calculator" id="childsupport-calc">
-    <h3>Child Support Estimator</h3>
-    <p><em>Generic estimate only - actual amounts vary by jurisdiction and circumstances</em></p>
-    <div class="calc-grid">
-        <label>Non-custodial Parent Monthly Income ($): <input type="number" id="cs-income" value="5000" min="0"></label>
-        <label>Number of Children:
-            <select id="cs-children">
-                <option value="1">1 child</option>
-                <option value="2" selected>2 children</option>
-                <option value="3">3 children</option>
-                <option value="4">4 children</option>
-                <option value="5">5+ children</option>
-            </select>
-        </label>
-    </div>
-    <button onclick="calcChildSupport()">Estimate</button>
-    <div class="calc-result" id="cs-result"></div>
-</div>
-<script>
-function calcChildSupport() {
-    const income = parseFloat(document.getElementById('cs-income').value);
-    const children = parseInt(document.getElementById('cs-children').value);
-    // Generic percentage model (varies significantly by state/country)
-    const pct = {1: 0.17, 2: 0.25, 3: 0.29, 4: 0.31, 5: 0.35}[children] || 0.35;
-    const estimate = income * pct;
-    document.getElementById('cs-result').innerHTML = `
-        <p><strong>Estimated Monthly Support:</strong> $${estimate.toFixed(2)}</p>
-        <p><strong>Percentage of Income:</strong> ${(pct*100).toFixed(0)}%</p>
-        <p><strong>Annual Total:</strong> $${(estimate*12).toFixed(2)}</p>
-        <p style="color:#666;font-size:12px"><em>This is a rough estimate using a simplified income-share model.
-        Actual child support depends on both parents' incomes, custody arrangements,
-        healthcare costs, childcare, and jurisdiction-specific guidelines.
-        Consult a family law attorney for accurate calculations.</em></p>
-    `;
-}
-calcChildSupport();
-</script>
-
 
         <p>Child support is a legal obligation where one parent provides financial assistance to the other parent for the care and well-being of their child or children.</p>
 

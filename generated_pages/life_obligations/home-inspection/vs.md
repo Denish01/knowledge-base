@@ -1,11 +1,11 @@
 ---
-title: "What is Home Inspection Vs?"
+title: "Home Inspection Compared"
 slug: home-inspection-vs
 description: "A clear, simple explanation of home inspection vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Home Inspection Vs?
+# Home Inspection Compared
 
 Home inspection vs appraisal refers to the comparison between two separate evaluations of a property's condition and value. 
 

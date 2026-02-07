@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A clear, simple explanation of net worth - definition, key concepts, examples, and common misconceptions.">
-    <title>What is Net Worth? - Simple Explanation</title>
+    <title>What Is Net Worth? - Simple Explanation</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -29,123 +29,9 @@
 </head>
 <body>
     <article>
-        <h1>What is Net Worth?</h1>
+        <h1>What Is Net Worth?</h1>
 
         
-<style>
-.calculator {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 24px 0;
-}
-.calculator h3 {
-    margin-top: 0;
-    color: #1a73e8;
-}
-.calc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 16px;
-}
-.calculator label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-}
-.calculator input, .calculator select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.calculator button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.calculator button:hover {
-    background: #1557b0;
-}
-.calc-result {
-    margin-top: 16px;
-    padding: 12px;
-    background: white;
-    border-radius: 4px;
-    border-left: 4px solid #1a73e8;
-}
-.calc-result p {
-    margin: 8px 0;
-}
-.calc-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.tab-btn {
-    background: #e0e0e0;
-    color: #333;
-}
-.tab-btn.active {
-    background: #1a73e8;
-    color: white;
-}
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-</style>
-
-<div class="calculator" id="networth-calc">
-    <h3>Net Worth Calculator</h3>
-    <h4>Assets</h4>
-    <div class="calc-grid">
-        <label>Cash & Savings ($): <input type="number" id="nw-cash" value="10000" min="0"></label>
-        <label>Investments ($): <input type="number" id="nw-invest" value="50000" min="0"></label>
-        <label>Real Estate ($): <input type="number" id="nw-property" value="300000" min="0"></label>
-        <label>Other Assets ($): <input type="number" id="nw-other" value="20000" min="0"></label>
-    </div>
-    <h4>Liabilities</h4>
-    <div class="calc-grid">
-        <label>Mortgage ($): <input type="number" id="nw-mortgage" value="200000" min="0"></label>
-        <label>Car Loans ($): <input type="number" id="nw-car" value="15000" min="0"></label>
-        <label>Student Loans ($): <input type="number" id="nw-student" value="25000" min="0"></label>
-        <label>Credit Cards ($): <input type="number" id="nw-credit" value="5000" min="0"></label>
-    </div>
-    <button onclick="calcNetWorth()">Calculate</button>
-    <div class="calc-result" id="networth-result"></div>
-</div>
-<script>
-function calcNetWorth() {
-    const assets = parseFloat(document.getElementById('nw-cash').value) +
-                   parseFloat(document.getElementById('nw-invest').value) +
-                   parseFloat(document.getElementById('nw-property').value) +
-                   parseFloat(document.getElementById('nw-other').value);
-    const liabilities = parseFloat(document.getElementById('nw-mortgage').value) +
-                        parseFloat(document.getElementById('nw-car').value) +
-                        parseFloat(document.getElementById('nw-student').value) +
-                        parseFloat(document.getElementById('nw-credit').value);
-    const netWorth = assets - liabilities;
-    document.getElementById('networth-result').innerHTML = `
-        <p><strong>Total Assets:</strong> $${assets.toLocaleString()}</p>
-        <p><strong>Total Liabilities:</strong> $${liabilities.toLocaleString()}</p>
-        <p><strong>Net Worth:</strong> $${netWorth.toLocaleString()}</p>
-        <p><em>${netWorth >= 0 ? 'Positive net worth' : 'Negative net worth - focus on debt reduction'}</em></p>
-    `;
-}
-calcNetWorth();
-</script>
-
 
         <p>Net worth is the total value of an individual's or organization's assets minus their liabilities, providing a snapshot of their overall financial health.</p>
 

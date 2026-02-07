@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Affordability Assessment?"
+title: "Types of Affordability Assessment"
 slug: types-of-affordability-assessment
 description: "A clear, simple explanation of types of affordability assessment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Affordability Assessment?
+# Types of Affordability Assessment
 
 1. INTRODUCTION:
 Affordability assessment is a crucial process that helps individuals, organizations, and governments determine whether a product, service, or project is financially viable. The classification of affordability assessments is essential because it enables the identification of the most suitable method for a particular situation, ensuring that resources are allocated efficiently and effectively. By understanding the different types of affordability assessments, decision-makers can make informed choices that balance financial constraints with social, economic, and environmental considerations. The classification of affordability assessments covers various methods, each with its own strengths and weaknesses, and is used in diverse fields such as healthcare, education, housing, and infrastructure development.

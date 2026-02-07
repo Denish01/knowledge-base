@@ -1,11 +1,11 @@
 ---
-title: "What is Renters Insurance Vs?"
+title: "Renters Insurance Compared"
 slug: renters-insurance-vs
 description: "A clear, simple explanation of renters insurance vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Renters Insurance Vs?
+# Renters Insurance Compared
 
 Renters insurance vs refers to the comparison between renters insurance and other types of insurance or financial protection options available to individuals who rent their homes.
 

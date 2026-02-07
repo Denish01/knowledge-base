@@ -1,11 +1,11 @@
 ---
-title: "What is Cost Sharing Vs?"
+title: "Cost Sharing Compared"
 slug: cost-sharing-vs
 description: "A clear, simple explanation of cost sharing vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Cost Sharing Vs?
+# Cost Sharing Compared
 
 Cost sharing refers to the practice of dividing the expenses of a particular service or project among multiple parties, allowing each participant to contribute a portion of the overall costs.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Bear Market?"
+title: "Example of Bear Market"
 slug: examples-of-bear-market
 description: "A clear, simple explanation of examples of bear market - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Bear Market?
+# Example of Bear Market
 
 1. INTRODUCTION:
 A bear market refers to a period when the value of investments, such as stocks or real estate, continuously decreases over time. This can happen in various contexts and scales, from personal finances to global economies. Understanding what constitutes a bear market is essential for making informed decisions about investments and financial planning.

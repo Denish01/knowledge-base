@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Bond Yield?"
+title: "Types of Bond Yield"
 slug: types-of-bond-yield
 description: "A clear, simple explanation of types of bond yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Bond Yield?
+# Types of Bond Yield
 
 ## INTRODUCTION
 The concept of bond yield is crucial in understanding the performance and value of bonds, which are debt securities issued by entities to raise capital. Bond yield refers to the return an investor can expect from a bond, taking into account the interest payments and the capital gain or loss when the bond matures. The classification of bond yield types is essential because it helps investors, financial analysts, and economists understand the various ways bond yields can be calculated and interpreted, thereby facilitating informed decision-making in the bond market. By categorizing bond yields, individuals can better analyze the risks, returns, and characteristics of different bonds, which is vital for portfolio management and financial planning.

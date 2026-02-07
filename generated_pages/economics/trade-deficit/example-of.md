@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Trade Deficit?"
+title: "Example of Trade Deficit"
 slug: examples-of-trade-deficit
 description: "A clear, simple explanation of examples of trade deficit - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Trade Deficit?
+# Example of Trade Deficit
 
 1. INTRODUCTION
 A trade deficit occurs when a country or an individual imports more goods and services than they export. This means that the value of the goods and services being brought in exceeds the value of the goods and services being sent out. Understanding trade deficits is important because they can have significant effects on a country's economy and its relationships with other countries.

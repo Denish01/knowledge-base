@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Market Capitalization?"
+title: "What Affects Market Capitalization"
 slug: what-affects-market-capitalization
 description: "A clear, simple explanation of what affects market capitalization - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Market Capitalization?
+# What Affects Market Capitalization
 
 INTRODUCTION
 Market capitalization, often referred to as market cap, is the total value of a company's outstanding shares. It is calculated by multiplying the total number of shares by the current market price of one share. Understanding the factors that affect market capitalization is crucial for investors, as it helps them make informed decisions about their investments. Changes in market capitalization can significantly impact a company's reputation, access to funding, and overall financial health. Therefore, it is essential to recognize the various influences that can impact a company's market capitalization.

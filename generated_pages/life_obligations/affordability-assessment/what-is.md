@@ -1,11 +1,11 @@
 ---
-title: "What is Affordability Assessment?"
+title: "What Is Affordability Assessment?"
 slug: affordability-assessment
 description: "A clear, simple explanation of affordability assessment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Affordability Assessment?
+# What Is Affordability Assessment?
 
 Affordability assessment is a method used to evaluate whether an individual or organization can afford a particular product, service, or project, taking into account their financial resources and other relevant factors.
 

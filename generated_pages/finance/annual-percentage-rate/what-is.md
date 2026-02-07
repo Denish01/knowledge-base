@@ -1,11 +1,11 @@
 ---
-title: "What is Annual Percentage Rate?"
+title: "What Is Annual Percentage Rate?"
 slug: annual-percentage-rate
 description: "A clear, simple explanation of annual percentage rate - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Annual Percentage Rate?
+# What Is Annual Percentage Rate?
 
 Annual percentage rate is a measure of the total cost of borrowing money, taking into account the interest rate and other fees associated with a loan.
 

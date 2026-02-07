@@ -1,11 +1,11 @@
 ---
-title: "What is Proportional Contribution Vs?"
+title: "Proportional Contribution Compared"
 slug: proportional-contribution-vs
 description: "A clear, simple explanation of proportional contribution vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Proportional Contribution Vs?
+# Proportional Contribution Compared
 
 Proportional contribution refers to the idea that the amount of something, such as effort or resources, contributed by each individual or group is proportional to the amount they receive or benefit from.
 

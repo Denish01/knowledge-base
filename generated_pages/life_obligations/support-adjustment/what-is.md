@@ -1,11 +1,11 @@
 ---
-title: "What is Support Adjustment?"
+title: "What Is Support Adjustment?"
 slug: support-adjustment
 description: "A clear, simple explanation of support adjustment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Support Adjustment?
+# What Is Support Adjustment?
 
 Support adjustment is a process by which individuals, families, or organizations adapt to changes in their environment, circumstances, or needs, in order to maintain stability, well-being, and effectiveness.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Earning Capacity?"
+title: "Example of Earning Capacity"
 slug: examples-of-earning-capacity
 description: "A clear, simple explanation of examples of earning capacity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Earning Capacity?
+# Example of Earning Capacity
 
 1. INTRODUCTION
 Earning capacity refers to the amount of money an individual can potentially earn based on their skills, education, experience, and occupation. It is a measure of one's ability to generate income and is often used to determine financial support, insurance benefits, and career advancement opportunities.

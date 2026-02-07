@@ -1,11 +1,11 @@
 ---
-title: "What is What Gravity Depends On?"
+title: "What Gravity Depends On"
 slug: what-gravity-depends-on
 description: "A clear, simple explanation of what gravity depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Gravity Depends On?
+# What Gravity Depends On
 
 1. INTRODUCTION:
 Gravity is a fundamental force of nature that governs the behavior of objects with mass or energy. It is responsible for the attraction between two objects, and its effects are evident in everyday life, from the falling of objects to the orbits of planets. Understanding what gravity depends on is crucial for grasping its underlying mechanisms and principles. The dependencies of gravity are essential prerequisites for its existence and operation, and recognizing these relationships is vital for a comprehensive understanding of the natural world.

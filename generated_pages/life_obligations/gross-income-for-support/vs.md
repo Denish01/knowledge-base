@@ -1,11 +1,11 @@
 ---
-title: "What is Gross Income For Support Vs?"
+title: "Gross Income For Support Compared"
 slug: gross-income-for-support-vs
 description: "A clear, simple explanation of gross income for support vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Gross Income For Support Vs?
+# Gross Income For Support Compared
 
 Gross income for support is a calculation used to determine the amount of money an individual has available to pay for the support of dependents, such as children or spouses.
 

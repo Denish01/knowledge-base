@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Fiscal Policy Work?"
+title: "How Fiscal Policy Works"
 slug: how-does-fiscal-policy-work
 description: "A clear, simple explanation of how does fiscal policy work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Fiscal Policy Work?
+# How Fiscal Policy Works
 
 1. QUICK ANSWER: Fiscal policy works by using government spending and taxation to manage the overall level of economic activity, with the goal of promoting economic growth, stability, and full employment. This is achieved by adjusting the amount of money the government takes in through taxes and the amount it spends on various programs and activities.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Price Elasticity?"
+title: "Types of Price Elasticity"
 slug: types-of-price-elasticity
 description: "A clear, simple explanation of types of price elasticity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Price Elasticity?
+# Types of Price Elasticity
 
 ## INTRODUCTION
 The concept of price elasticity is a crucial aspect of economics, as it helps businesses and policymakers understand how changes in prices affect the demand for goods and services. The classification of price elasticity into different types is essential, as it enables a more nuanced understanding of the complex relationships between prices, demand, and supply. By categorizing price elasticity, economists can better analyze and predict the effects of price changes on various markets and industries. This classification system is vital for making informed decisions about pricing strategies, taxation, and other economic policies.

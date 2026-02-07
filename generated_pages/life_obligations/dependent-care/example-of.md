@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Dependent Care?"
+title: "Example of Dependent Care"
 slug: examples-of-dependent-care
 description: "A clear, simple explanation of examples of dependent care - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Dependent Care?
+# Example of Dependent Care
 
 1. INTRODUCTION
 Dependent care refers to the support and assistance provided to individuals who are unable to care for themselves, such as children, the elderly, and people with disabilities. This type of care can be provided by family members, friends, or professional caregivers, and can range from basic needs like food and shelter to more complex needs like medical care and emotional support. Understanding dependent care is essential for recognizing the importance of support systems in our lives.

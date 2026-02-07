@@ -1,11 +1,11 @@
 ---
-title: "What is Least Common Multiple Vs?"
+title: "Least Common Multiple Compared"
 slug: least-common-multiple-vs
 description: "A clear, simple explanation of least common multiple vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Least Common Multiple Vs?
+# Least Common Multiple Compared
 
 Least common multiple refers to the smallest multiple that is common to two or more numbers, and it is a fundamental concept in mathematics that helps us understand the relationships between different numbers.
 

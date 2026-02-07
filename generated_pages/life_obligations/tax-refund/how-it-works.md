@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Tax Refund Work?"
+title: "How Tax Refund Works"
 slug: how-does-tax-refund-work
 description: "A clear, simple explanation of how does tax refund work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Tax Refund Work?
+# How Tax Refund Works
 
 1. QUICK ANSWER: A tax refund is the result of an individual or business overpaying their taxes throughout the year, and the government returns the excess amount. This process involves the taxpayer filing their tax return, which calculates the amount of taxes owed versus the amount already paid.
 

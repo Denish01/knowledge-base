@@ -1,11 +1,11 @@
 ---
-title: "What is Evaporation Vs?"
+title: "Evaporation Compared"
 slug: evaporation-vs
 description: "A clear, simple explanation of evaporation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Evaporation Vs?
+# Evaporation Compared
 
 Evaporation vs condensation is a comparison between two fundamental processes that occur in the Earth's water cycle, involving the transformation of water from one state to another.
 

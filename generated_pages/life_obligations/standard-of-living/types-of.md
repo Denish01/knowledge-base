@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Standard Of Living?"
+title: "Types of Standard Of Living"
 slug: types-of-standard-of-living
 description: "A clear, simple explanation of types of standard of living - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Standard Of Living?
+# Types of Standard Of Living
 
 1. INTRODUCTION
 

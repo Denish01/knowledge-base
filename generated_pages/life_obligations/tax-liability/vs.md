@@ -1,11 +1,11 @@
 ---
-title: "What is Tax Liability Vs?"
+title: "Tax Liability Compared"
 slug: tax-liability-vs
 description: "A clear, simple explanation of tax liability vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Tax Liability Vs?
+# Tax Liability Compared
 
 Tax liability vs refers to the comparison between the amount of taxes an individual or business owes to the government and the amount of taxes they have already paid or are exempt from paying.
 

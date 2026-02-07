@@ -1,11 +1,11 @@
 ---
-title: "What is Eligibility Criteria?"
+title: "What Is Eligibility Criteria?"
 slug: eligibility-criteria
 description: "A clear, simple explanation of eligibility criteria - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Eligibility Criteria?
+# What Is Eligibility Criteria?
 
 Eligibility criteria is a set of standards or requirements that must be met in order to qualify for something, such as a program, service, or opportunity.
 

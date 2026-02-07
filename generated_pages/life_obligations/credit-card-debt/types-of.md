@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Credit Card Debt?"
+title: "Types of Credit Card Debt"
 slug: types-of-credit-card-debt
 description: "A clear, simple explanation of types of credit card debt - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Credit Card Debt?
+# Types of Credit Card Debt
 
 1. INTRODUCTION:
 The classification of credit card debt is essential for understanding the various forms it can take and how to manage it effectively. Credit card debt encompasses a range of categories, each with distinct characteristics and implications for borrowers. By recognizing and categorizing these types of debt, individuals can better navigate their financial obligations and make informed decisions about debt repayment and credit management. This classification system covers various stages and forms of credit card debt, providing a comprehensive framework for understanding and addressing debt-related issues.

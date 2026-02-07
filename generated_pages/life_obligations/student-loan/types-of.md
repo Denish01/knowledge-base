@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Student Loan?"
+title: "Types of Student Loan"
 slug: types-of-student-loan
 description: "A clear, simple explanation of types of student loan - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Student Loan?
+# Types of Student Loan
 
 ## INTRODUCTION
 The classification of student loans is a crucial aspect of understanding the various options available to individuals seeking financial assistance for their education. Student loans can be categorized into different types based on factors such as the lender, interest rates, repayment terms, and eligibility criteria. Understanding these categories is essential for borrowers to make informed decisions about which loan best suits their needs. The classification of student loans helps borrowers navigate the complex landscape of financial aid and ensures they are aware of the terms and conditions associated with each loan. By categorizing student loans, borrowers can compare and contrast different options, ultimately selecting the loan that best aligns with their financial situation and educational goals.

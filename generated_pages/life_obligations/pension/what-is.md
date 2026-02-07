@@ -1,11 +1,11 @@
 ---
-title: "What is Pension?"
+title: "What Is Pension?"
 slug: pension
 description: "A clear, simple explanation of pension - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Pension?
+# What Is Pension?
 
 Pension is a type of retirement plan that provides a steady income to individuals after they stop working, typically in the form of a series of monthly payments.
 

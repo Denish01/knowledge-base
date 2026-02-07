@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Rent Payment?"
+title: "What Affects Rent Payment"
 slug: what-affects-rent-payment
 description: "A clear, simple explanation of what affects rent payment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Rent Payment?
+# What Affects Rent Payment
 
 1. INTRODUCTION:
 Rent payment refers to the amount of money a tenant pays to a landlord for the use of a property. Understanding the factors that affect rent payment is essential for both tenants and landlords, as it helps them make informed decisions about their housing costs and investments. The amount of rent paid can significantly impact an individual's or family's budget, and being aware of the influences on rent payment can help them plan and manage their finances more effectively.

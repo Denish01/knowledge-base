@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Order Of Operations?"
+title: "What Affects Order Of Operations"
 slug: what-affects-order-of-operations
 description: "A clear, simple explanation of what affects order of operations - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Order Of Operations?
+# What Affects Order Of Operations
 
 1. INTRODUCTION
 

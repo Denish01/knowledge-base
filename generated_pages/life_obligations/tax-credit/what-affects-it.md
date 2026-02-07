@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Tax Credit?"
+title: "What Affects Tax Credit"
 slug: what-affects-tax-credit
 description: "A clear, simple explanation of what affects tax credit - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Tax Credit?
+# What Affects Tax Credit
 
 1. INTRODUCTION
 

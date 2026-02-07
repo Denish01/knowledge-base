@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Cohabitation?"
+title: "Example of Cohabitation"
 slug: examples-of-cohabitation
 description: "A clear, simple explanation of examples of cohabitation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Cohabitation?
+# Example of Cohabitation
 
 1. INTRODUCTION
 Cohabitation refers to the act of living together in the same space, often implying a shared residence or close proximity between individuals or entities. This concept can be applied to various aspects of life, from personal relationships to ecological systems. Understanding cohabitation is essential in recognizing the interconnectedness and interdependence that exist within different contexts.

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Perimeter?"
+title: "Example of Perimeter"
 slug: examples-of-perimeter
 description: "A clear, simple explanation of examples of perimeter - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Perimeter?
+# Example of Perimeter
 
 1. INTRODUCTION: 
 The perimeter of a shape or an area is the distance around it. It is a fundamental concept in geometry and is used in various contexts to calculate the total length of the boundary of a shape. Understanding perimeter is essential for solving problems in mathematics, architecture, engineering, and other fields. It is calculated by adding up the lengths of all the sides of a shape.

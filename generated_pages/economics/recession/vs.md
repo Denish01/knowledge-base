@@ -1,11 +1,11 @@
 ---
-title: "What is Recession Vs?"
+title: "Recession Compared"
 slug: recession-vs
 description: "A clear, simple explanation of recession vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Recession Vs?
+# Recession Compared
 
 Recession vs refers to the comparison between a recession, which is a period of economic decline, and other economic states, such as depression, stagnation, or growth.
 

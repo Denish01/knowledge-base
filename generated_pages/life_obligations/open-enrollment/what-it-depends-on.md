@@ -1,11 +1,11 @@
 ---
-title: "What is What Open Enrollment Depends On?"
+title: "What Open Enrollment Depends On"
 slug: what-open-enrollment-depends-on
 description: "A clear, simple explanation of what open enrollment depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Open Enrollment Depends On?
+# What Open Enrollment Depends On
 
 1. INTRODUCTION:
 Open enrollment refers to a period when individuals can sign up for or change their health insurance plans, often through their employer or a government-sponsored program. Understanding what open enrollment depends on is crucial for a successful and stress-free enrollment process. Open enrollment is not a standalone process, but rather it relies on several key factors that must be in place before, during, and after the enrollment period. These dependencies can significantly impact the outcome of the enrollment process, making it essential to recognize and address them.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Absolute Value Work?"
+title: "How Absolute Value Works"
 slug: how-does-absolute-value-work
 description: "A clear, simple explanation of how does absolute value work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Absolute Value Work?
+# How Absolute Value Works
 
 1. QUICK ANSWER: Absolute value is a mathematical operation that determines the distance of a number from zero on the number line, regardless of direction. This operation works by removing the negative sign from any negative number, resulting in a non-negative value.
 

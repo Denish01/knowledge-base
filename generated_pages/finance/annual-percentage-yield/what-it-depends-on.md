@@ -1,11 +1,11 @@
 ---
-title: "What is What Annual Percentage Yield Depends On?"
+title: "What Annual Percentage Yield Depends On"
 slug: what-annual-percentage-yield-depends-on
 description: "A clear, simple explanation of what annual percentage yield depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Annual Percentage Yield Depends On?
+# What Annual Percentage Yield Depends On
 
 1. INTRODUCTION:
 Annual percentage yield, or APY, is the rate of return on an investment or deposit over a year, including the effects of compounding interest. Understanding what APY depends on is crucial for making informed financial decisions. The dependencies of APY are the foundation upon which it is calculated and can significantly impact the actual return on investment. Without a clear understanding of these prerequisites, individuals may misinterpret the true value of their investments.

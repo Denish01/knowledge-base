@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Kinetic Energy?"
+title: "Example of Kinetic Energy"
 slug: examples-of-kinetic-energy
 description: "A clear, simple explanation of examples of kinetic energy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Kinetic Energy?
+# Example of Kinetic Energy
 
 1. INTRODUCTION:
 Kinetic energy is the energy an object possesses due to its motion. It is a fundamental concept in physics that helps explain how objects move and interact with their environment. The amount of kinetic energy an object has depends on its mass and velocity. In general, the more massive an object is and the faster it moves, the more kinetic energy it possesses.

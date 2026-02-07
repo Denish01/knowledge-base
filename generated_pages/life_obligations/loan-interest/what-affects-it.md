@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Loan Interest?"
+title: "What Affects Loan Interest"
 slug: what-affects-loan-interest
 description: "A clear, simple explanation of what affects loan interest - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Loan Interest?
+# What Affects Loan Interest
 
 1. INTRODUCTION:
 Loan interest is the cost of borrowing money, expressed as a percentage of the loan amount. Understanding the factors that affect loan interest is crucial for borrowers, as it can significantly impact the total amount paid over the life of the loan. By recognizing the influences on loan interest, individuals can make informed decisions when applying for loans and managing their debt.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Spousal Support Work?"
+title: "How Spousal Support Works"
 slug: how-does-spousal-support-work
 description: "A clear, simple explanation of how does spousal support work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Spousal Support Work?
+# How Spousal Support Works
 
 1. QUICK ANSWER: Spousal support, also known as alimony, is a court-ordered payment from one spouse to the other after a divorce or separation, intended to provide financial assistance to the spouse who earns less or has a lower standard of living. The amount and duration of spousal support are determined by the court based on various factors, including the length of the marriage, income, and earning potential of both spouses.
 

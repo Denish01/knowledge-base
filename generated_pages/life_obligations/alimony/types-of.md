@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Alimony?"
+title: "Types of Alimony"
 slug: types-of-alimony
 description: "A clear, simple explanation of types of alimony - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Alimony?
+# Types of Alimony
 
 1. INTRODUCTION:
 The classification of alimony, also known as spousal support, is a crucial aspect of family law, as it determines the financial obligations of one spouse to the other during or after a divorce. Understanding the different types of alimony is essential for individuals going through a divorce, as well as for legal professionals and financial advisors. Classification matters because it helps to clarify the purposes, durations, and payment structures of each type, ensuring that the financial needs of both parties are met. By categorizing alimony into distinct types, individuals can better navigate the complex process of divorce and make informed decisions about their financial futures.

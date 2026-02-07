@@ -1,11 +1,11 @@
 ---
-title: "What is Mean Median Mode?"
+title: "What Is Mean Median Mode?"
 slug: mean-median-mode
 description: "A clear, simple explanation of mean median mode - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Mean Median Mode?
+# What Is Mean Median Mode?
 
 Mean median mode is a collection of statistical measures used to describe the central tendency of a set of data, which is essential in understanding and analyzing numerical information.
 

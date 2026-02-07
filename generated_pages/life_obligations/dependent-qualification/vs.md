@@ -1,11 +1,11 @@
 ---
-title: "What is Dependent Qualification Vs?"
+title: "Dependent Qualification Compared"
 slug: dependent-qualification-vs
 description: "A clear, simple explanation of dependent qualification vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Dependent Qualification Vs?
+# Dependent Qualification Compared
 
 Dependent qualification vs independent qualification refers to the distinction between two types of qualification requirements that are used to determine an individual's eligibility for a particular status, benefit, or opportunity.
 

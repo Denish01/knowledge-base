@@ -1,11 +1,11 @@
 ---
-title: "What is Diffusion Vs?"
+title: "Diffusion Compared"
 slug: diffusion-vs
 description: "A clear, simple explanation of diffusion vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Diffusion Vs?
+# Diffusion Compared
 
 Diffusion refers to the process by which particles or substances move from an area of higher concentration to an area of lower concentration, resulting in uniform distribution.
 

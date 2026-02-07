@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Greatest Common Factor?"
+title: "Example of Greatest Common Factor"
 slug: examples-of-greatest-common-factor
 description: "A clear, simple explanation of examples of greatest common factor - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Greatest Common Factor?
+# Example of Greatest Common Factor
 
 1. INTRODUCTION:
 The greatest common factor (GCF) is a mathematical concept used to find the largest positive integer that divides two or more numbers without leaving a remainder. It is a fundamental idea in mathematics, essential for various calculations and problem-solving. Understanding the GCF is crucial for simplifying fractions, solving equations, and performing other mathematical operations.

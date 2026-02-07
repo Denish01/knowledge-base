@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Net Worth Work?"
+title: "How Net Worth Works"
 slug: how-does-net-worth-work
 description: "A clear, simple explanation of how does net worth work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Net Worth Work?
+# How Net Worth Works
 
 1. QUICK ANSWER: Net worth is calculated by subtracting an individual's total liabilities from their total assets, resulting in a numerical value that represents their overall financial situation. This calculation provides a snapshot of a person's financial health at a given time.
 

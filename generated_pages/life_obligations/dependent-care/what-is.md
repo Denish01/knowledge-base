@@ -1,11 +1,11 @@
 ---
-title: "What is Dependent Care?"
+title: "What Is Dependent Care?"
 slug: dependent-care
 description: "A clear, simple explanation of dependent care - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Dependent Care?
+# What Is Dependent Care?
 
 Dependent care refers to the support and assistance provided to individuals who are unable to care for themselves, such as children, adults with disabilities, and elderly persons.
 

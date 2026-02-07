@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Dividend Yield?"
+title: "Common Misconceptions About Dividend Yield"
 slug: common-misconceptions-about-dividend-yield
 description: "A clear, simple explanation of common misconceptions about dividend yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Dividend Yield?
+# Common Misconceptions About Dividend Yield
 
 1. INTRODUCTION:
 Dividend yield is a fundamental concept in investing, representing the ratio of annual dividend payments to the stock's current price. Despite its importance, misconceptions about dividend yield are common due to misunderstandings of its calculation, implications, and relationship with stock performance. These misconceptions can lead to incorrect investment decisions, making it essential to clarify the myths surrounding dividend yield.

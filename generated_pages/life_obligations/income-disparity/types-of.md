@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Income Disparity?"
+title: "Types of Income Disparity"
 slug: types-of-income-disparity
 description: "A clear, simple explanation of types of income disparity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Income Disparity?
+# Types of Income Disparity
 
 ## INTRODUCTION
 Income disparity refers to the differences in income levels among individuals, groups, or populations. The classification of income disparity is crucial as it helps to understand the various forms and dimensions of income inequality, enabling policymakers, researchers, and stakeholders to develop targeted strategies to address these disparities. By categorizing income disparity, it becomes possible to identify the root causes, consequences, and potential solutions to this complex issue. Understanding the different types of income disparity is essential for creating effective policies and programs that promote economic equality and social justice.

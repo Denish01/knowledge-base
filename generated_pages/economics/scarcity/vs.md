@@ -1,11 +1,11 @@
 ---
-title: "What is Scarcity Vs?"
+title: "Scarcity Compared"
 slug: scarcity-vs
 description: "A clear, simple explanation of scarcity vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Scarcity Vs?
+# Scarcity Compared
 
 Scarcity refers to the fundamental economic problem that arises when the needs and wants of individuals are unlimited, but the resources available to satisfy those needs and wants are limited. 
 

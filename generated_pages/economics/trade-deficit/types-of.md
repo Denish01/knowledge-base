@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Trade Deficit?"
+title: "Types of Trade Deficit"
 slug: types-of-trade-deficit
 description: "A clear, simple explanation of types of trade deficit - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Trade Deficit?
+# Types of Trade Deficit
 
 ## INTRODUCTION
 A trade deficit occurs when a country imports more goods and services than it exports, resulting in a net outflow of funds. The classification of trade deficits is essential to understand the underlying causes and consequences of this economic phenomenon. Different types of trade deficits provide insights into the structure of a country's economy, its trade relationships, and the factors driving its trade imbalance. By categorizing trade deficits, economists and policymakers can identify areas for improvement, develop targeted strategies to address trade imbalances, and promote sustainable economic growth. This classification system covers various aspects of trade deficits, including their causes, characteristics, and implications, allowing for a comprehensive understanding of this complex economic issue.

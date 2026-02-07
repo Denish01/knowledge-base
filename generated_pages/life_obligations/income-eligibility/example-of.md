@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Income Eligibility?"
+title: "Example of Income Eligibility"
 slug: examples-of-income-eligibility
 description: "A clear, simple explanation of examples of income eligibility - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Income Eligibility?
+# Example of Income Eligibility
 
 1. INTRODUCTION:
 Income eligibility refers to the criteria used to determine whether an individual or family qualifies for a particular program, service, or benefit based on their income level. This can include government assistance programs, financial aid, or other forms of support. Income eligibility is typically determined by comparing an individual's or family's income to a certain threshold or range, which can vary depending on the specific program or service.

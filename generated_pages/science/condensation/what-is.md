@@ -1,11 +1,11 @@
 ---
-title: "What is Condensation?"
+title: "What Is Condensation?"
 slug: condensation
 description: "A clear, simple explanation of condensation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Condensation?
+# What Is Condensation?
 
 Condensation is the process by which water vapor in the air is changed into liquid water, typically occurring when the air reaches its dew point, which is the temperature at which the air becomes saturated with water vapor and can no longer hold any more moisture.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Liquidity?"
+title: "What Affects Liquidity"
 slug: what-affects-liquidity
 description: "A clear, simple explanation of what affects liquidity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Liquidity?
+# What Affects Liquidity
 
 1. INTRODUCTION:
 Liquidity refers to the ability to buy or sell an asset quickly and at a stable price. Understanding what affects liquidity is essential for investors, businesses, and individuals who need to manage their financial resources efficiently. Liquidity is crucial because it determines how easily an asset can be converted into cash without significantly affecting its value. Various factors influence liquidity, and recognizing these factors is vital for making informed decisions in the financial market.

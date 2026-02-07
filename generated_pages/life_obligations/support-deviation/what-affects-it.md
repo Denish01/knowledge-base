@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Support Deviation?"
+title: "What Affects Support Deviation"
 slug: what-affects-support-deviation
 description: "A clear, simple explanation of what affects support deviation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Support Deviation?
+# What Affects Support Deviation
 
 1. INTRODUCTION:
 Support deviation refers to the difference between the expected and actual level of support provided to individuals, teams, or systems. Understanding the factors that affect support deviation is crucial because it helps identify the causes of discrepancies and enables the development of strategies to minimize or eliminate them. By recognizing the influences on support deviation, individuals and organizations can optimize their support systems, leading to improved performance, increased efficiency, and enhanced overall satisfaction.

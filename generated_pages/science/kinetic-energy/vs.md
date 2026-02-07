@@ -1,11 +1,11 @@
 ---
-title: "What is Kinetic Energy Vs?"
+title: "Kinetic Energy Compared"
 slug: kinetic-energy-vs
 description: "A clear, simple explanation of kinetic energy vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Kinetic Energy Vs?
+# Kinetic Energy Compared
 
 Kinetic energy vs potential energy is a comparison between two fundamental concepts in physics that describe the energy of motion and the energy of position.
 

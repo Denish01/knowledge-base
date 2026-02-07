@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Shared Custody Work?"
+title: "How Shared Custody Works"
 slug: how-does-shared-custody-work
 description: "A clear, simple explanation of how does shared custody work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Shared Custody Work?
+# How Shared Custody Works
 
 1. QUICK ANSWER: Shared custody is a mechanism where two parents have joint responsibility for their child's upbringing, with the child spending time with each parent according to a predetermined schedule. This arrangement allows both parents to be involved in the child's life, even if they are no longer living together.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Spousal Support Duration?"
+title: "Types of Spousal Support Duration"
 slug: types-of-spousal-support-duration
 description: "A clear, simple explanation of types of spousal support duration - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Spousal Support Duration?
+# Types of Spousal Support Duration
 
 1. INTRODUCTION:
 Types of spousal support duration refer to the various periods of time during which one spouse is required to provide financial support to the other after a divorce or separation. Classifying these durations is important because it helps individuals understand their obligations and rights, as well as the potential implications for their financial futures. By understanding the different types of spousal support duration, individuals can better navigate the divorce process and make informed decisions about their financial well-being. Classification also enables courts and legal professionals to apply consistent and fair standards when determining spousal support arrangements.

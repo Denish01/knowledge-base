@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Social Security Work?"
+title: "How Social Security Works"
 slug: how-does-social-security-work
 description: "A clear, simple explanation of how does social security work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Social Security Work?
+# How Social Security Works
 
 1. QUICK ANSWER: Social security works by collecting taxes from workers and using that money to fund benefits for eligible recipients, such as retirees, disabled individuals, and the survivors of deceased workers. This system relies on a trust fund that accumulates surplus taxes to cover future benefit payments.
 

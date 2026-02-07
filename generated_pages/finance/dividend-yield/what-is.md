@@ -1,11 +1,11 @@
 ---
-title: "What is Dividend Yield?"
+title: "What Is Dividend Yield?"
 slug: dividend-yield
 description: "A clear, simple explanation of dividend yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Dividend Yield?
+# What Is Dividend Yield?
 
 Dividend yield is a measure of the return on investment for a stock that pays dividends, calculated by dividing the annual dividend payment by the stock's current price.
 

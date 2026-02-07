@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Long-Term Support Work?"
+title: "How Long Term Support Works"
 slug: how-does-long-term-support-work
 description: "A clear, simple explanation of how does long-term support work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Long-Term Support Work?
+# How Long Term Support Works
 
 1. QUICK ANSWER: Long-term support is a process where individuals or organizations provide ongoing assistance and resources to help others achieve their goals and maintain stability over an extended period. This mechanism involves a series of coordinated steps to ensure that the support provided is consistent and effective.
 

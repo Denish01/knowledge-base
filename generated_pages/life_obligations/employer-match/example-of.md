@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Employer Match?"
+title: "Example of Employer Match"
 slug: examples-of-employer-match
 description: "A clear, simple explanation of examples of employer match - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Employer Match?
+# Example of Employer Match
 
 1. INTRODUCTION:
 An employer match refers to the practice where an employer contributes a certain amount of money to an employee's retirement account or other savings plan, typically based on the employee's own contributions. This is often seen as a benefit to encourage employees to save for their future. For instance, if an employee contributes $100 to their 401(k) plan, their employer might contribute an additional $50, making the total savings $150. This concept is widely used in various employment settings and can vary in terms of the percentage matched and the conditions under which the match is made.

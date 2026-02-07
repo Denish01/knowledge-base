@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Guardianship?"
+title: "What Affects Guardianship"
 slug: what-affects-guardianship
 description: "A clear, simple explanation of what affects guardianship - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Guardianship?
+# What Affects Guardianship
 
 1. INTRODUCTION:
 Guardianship is a legal relationship where one person, the guardian, is responsible for the care and well-being of another person, often a minor or an individual who is unable to care for themselves. Understanding the factors that affect guardianship is crucial because it can help individuals navigate the complexities of this relationship and make informed decisions. The influences on guardianship can have significant effects on the lives of all parties involved, making it essential to recognize and comprehend these factors.

@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Spousal Support?"
+title: "Common Misconceptions About Spousal Support"
 slug: common-misconceptions-about-spousal-support
 description: "A clear, simple explanation of common misconceptions about spousal support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Spousal Support?
+# Common Misconceptions About Spousal Support
 
 1. INTRODUCTION: 
 Spousal support, also known as alimony, is a court-ordered payment from one spouse to the other after a divorce. Despite its importance, many people hold misconceptions about spousal support. These misconceptions often arise from a lack of understanding about the laws and regulations surrounding divorce and separation. The complexity of the legal system, combined with the emotional nature of divorce, can lead to confusion and misinformation. It is essential to separate fact from fiction to ensure that individuals navigating the divorce process make informed decisions.

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Monetary Policy?"
+title: "Example of Monetary Policy"
 slug: examples-of-monetary-policy
 description: "A clear, simple explanation of examples of monetary policy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Monetary Policy?
+# Example of Monetary Policy
 
 1. INTRODUCTION
 Monetary policy refers to the actions taken by a central bank to control the money supply and interest rates in an economy. The goal of monetary policy is to promote economic growth, stability, and low inflation. Central banks use various tools, such as setting interest rates and buying or selling government securities, to achieve these objectives. Understanding monetary policy is essential to grasping how economies function and how economic decisions are made.

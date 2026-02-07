@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Stock Market Work?"
+title: "How Stock Market Works"
 slug: how-does-stock-market-work
 description: "A clear, simple explanation of how does stock market work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Stock Market Work?
+# How Stock Market Works
 
 1. QUICK ANSWER: 
 The stock market works by allowing buyers and sellers to trade shares of companies, with prices determined by the forces of supply and demand. This mechanism enables individuals and institutions to invest in businesses, potentially earning returns through dividends or capital appreciation.

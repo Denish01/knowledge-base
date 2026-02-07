@@ -1,11 +1,11 @@
 ---
-title: "What is Exchange Traded Fund?"
+title: "What Is Exchange Traded Fund?"
 slug: exchange-traded-fund
 description: "A clear, simple explanation of exchange traded fund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Exchange Traded Fund?
+# What Is Exchange Traded Fund?
 
 Exchange traded fund is a type of investment fund that is traded on a stock exchange, like individual stocks, and holds a basket of assets, such as stocks, bonds, or commodities.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Support Deviation Work?"
+title: "How Support Deviation Works"
 slug: how-does-support-deviation-work
 description: "A clear, simple explanation of how does support deviation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Support Deviation Work?
+# How Support Deviation Works
 
 1. QUICK ANSWER: Support deviation works by measuring the difference between expected and actual performance, allowing for adjustments to be made to get back on track. This mechanism is crucial in various fields, including quality control, finance, and project management, where staying within predetermined limits is essential.
 

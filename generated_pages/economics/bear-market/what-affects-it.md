@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Bear Market?"
+title: "What Affects Bear Market"
 slug: what-affects-bear-market
 description: "A clear, simple explanation of what affects bear market - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Bear Market?
+# What Affects Bear Market
 
 1. INTRODUCTION
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Diffusion?"
+title: "Example of Diffusion"
 slug: examples-of-diffusion
 description: "A clear, simple explanation of examples of diffusion - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Diffusion?
+# Example of Diffusion
 
 1. INTRODUCTION:
 Diffusion is the process by which particles or substances move from an area of higher concentration to an area of lower concentration, resulting in uniform distribution. This concept is fundamental in understanding various natural and man-made phenomena. Diffusion occurs in different contexts and scales, from the molecular level to large-scale environmental processes.

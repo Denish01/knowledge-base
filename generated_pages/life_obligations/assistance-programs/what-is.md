@@ -1,11 +1,11 @@
 ---
-title: "What is Assistance Programs?"
+title: "What Is Assistance Programs?"
 slug: assistance-programs
 description: "A clear, simple explanation of assistance programs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Assistance Programs?
+# What Is Assistance Programs?
 
 Assistance programs is a term that refers to services or resources provided to individuals or groups in need, with the goal of improving their overall well-being or helping them overcome specific challenges.
 

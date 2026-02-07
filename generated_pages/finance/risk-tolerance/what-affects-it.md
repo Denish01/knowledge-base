@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Risk Tolerance?"
+title: "What Affects Risk Tolerance"
 slug: what-affects-risk-tolerance
 description: "A clear, simple explanation of what affects risk tolerance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Risk Tolerance?
+# What Affects Risk Tolerance
 
 1. INTRODUCTION
 Risk tolerance refers to an individual's willingness to take on risk in various aspects of life, including financial investments, career decisions, and personal choices. Understanding the factors that influence risk tolerance is crucial because it can help individuals make informed decisions that align with their personal comfort level and goals. By recognizing the factors that affect risk tolerance, individuals can better navigate uncertain situations and develop strategies to manage risk effectively.

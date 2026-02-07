@@ -1,11 +1,11 @@
 ---
-title: "What is Custody Time Adjustment?"
+title: "What Is Custody Time Adjustment?"
 slug: custody-time-adjustment
 description: "A clear, simple explanation of custody time adjustment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Custody Time Adjustment?
+# What Is Custody Time Adjustment?
 
 Custody time adjustment is a process used to modify the amount of time a child spends with each parent after a divorce or separation, taking into account various factors that may have changed since the initial custody arrangement was made.
 

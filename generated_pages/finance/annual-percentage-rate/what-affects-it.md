@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Annual Percentage Rate?"
+title: "What Affects Annual Percentage Rate"
 slug: what-affects-annual-percentage-rate
 description: "A clear, simple explanation of what affects annual percentage rate - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Annual Percentage Rate?
+# What Affects Annual Percentage Rate
 
 1. INTRODUCTION:
 The annual percentage rate (APR) is the rate charged on a loan or credit product over a year, including fees. Understanding what affects APR is crucial for borrowers to make informed decisions about their financial obligations. APR influences the total cost of borrowing, and knowing its determinants can help individuals navigate the lending market more effectively. By grasping the factors that impact APR, borrowers can better manage their debt and make more informed financial choices.

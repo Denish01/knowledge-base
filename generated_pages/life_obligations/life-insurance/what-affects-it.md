@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Life Insurance?"
+title: "What Affects Life Insurance"
 slug: what-affects-life-insurance
 description: "A clear, simple explanation of what affects life insurance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Life Insurance?
+# What Affects Life Insurance
 
 1. INTRODUCTION:
 Life insurance is a contract between an individual and an insurance company, where the company agrees to pay a specified amount to the individual's beneficiaries in the event of their death. Understanding what affects life insurance is crucial because it helps individuals make informed decisions about their policies and premiums. The cost and coverage of life insurance can be influenced by various factors, and recognizing these factors is essential for choosing the right policy.

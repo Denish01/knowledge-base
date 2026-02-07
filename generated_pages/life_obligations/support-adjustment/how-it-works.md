@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Support Adjustment Work?"
+title: "How Support Adjustment Works"
 slug: how-does-support-adjustment-work
 description: "A clear, simple explanation of how does support adjustment work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Support Adjustment Work?
+# How Support Adjustment Works
 
 1. QUICK ANSWER: Support adjustment works by modifying the level of assistance provided to an individual or system, allowing for optimal performance and stability. This is achieved through a series of steps that assess, adjust, and refine the support levels to meet the specific needs of the individual or system.
 

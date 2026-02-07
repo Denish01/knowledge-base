@@ -1,11 +1,11 @@
 ---
-title: "What is Earning Capacity Vs?"
+title: "Earning Capacity Compared"
 slug: earning-capacity-vs
 description: "A clear, simple explanation of earning capacity vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Earning Capacity Vs?
+# Earning Capacity Compared
 
 Earning capacity vs refers to the comparison between an individual's potential earnings and their actual earnings, often used to assess financial losses or damages in various contexts, such as personal injury or employment law.
 

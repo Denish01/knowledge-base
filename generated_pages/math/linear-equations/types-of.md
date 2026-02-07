@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Linear Equations?"
+title: "Types of Linear Equations"
 slug: types-of-linear-equations
 description: "A clear, simple explanation of types of linear equations - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Linear Equations?
+# Types of Linear Equations
 
 ## INTRODUCTION
 The study of linear equations is a fundamental aspect of algebra and mathematics as a whole. Linear equations are equations in which the highest power of the variable(s) is 1, and they can be classified into several types based on their form, the number of variables they contain, and their application. Understanding the different types of linear equations is crucial because it helps in identifying the appropriate method for solving them and in applying these equations to real-world problems. Classification of linear equations matters as it provides a systematic approach to solving and analyzing these equations, making it easier to understand and work with them in various mathematical and scientific contexts.

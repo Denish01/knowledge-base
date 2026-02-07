@@ -1,11 +1,11 @@
 ---
-title: "What is Property Tax?"
+title: "What Is Property Tax?"
 slug: property-tax
 description: "A clear, simple explanation of property tax - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Property Tax?
+# What Is Property Tax?
 
 Property tax is a type of tax that is levied on real estate and other types of property by local governments.
 

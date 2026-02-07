@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Dependent?"
+title: "What Affects Dependent"
 slug: what-affects-dependent
 description: "A clear, simple explanation of what affects dependent - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Dependent?
+# What Affects Dependent
 
 1. INTRODUCTION:
 A dependent is an individual who relies on another person or entity for financial support. Understanding the factors that affect dependents is crucial because it helps identify the causes of their reliance and determines the best course of action to promote self-sufficiency. Recognizing the influences on dependents can also inform policies and programs aimed at supporting vulnerable populations. By examining the factors that affect dependents, we can better understand the complexities of dependency and develop effective strategies to address it.

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Food Web?"
+title: "Example of Food Web"
 slug: examples-of-food-web
 description: "A clear, simple explanation of examples of food web - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Food Web?
+# Example of Food Web
 
 1. INTRODUCTION
 A food web is a network of relationships between different species in an ecosystem, where each species plays a role as either a producer, consumer, or decomposer. Producers, such as plants and algae, create their own food through photosynthesis. Consumers, including animals, eat other organisms to obtain energy. Decomposers, like bacteria and fungi, break down dead organisms and recycle nutrients. These interactions form a complex web of relationships that sustain life in an ecosystem.

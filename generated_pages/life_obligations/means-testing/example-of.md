@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Means Testing?"
+title: "Example of Means Testing"
 slug: examples-of-means-testing
 description: "A clear, simple explanation of examples of means testing - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Means Testing?
+# Example of Means Testing
 
 1. INTRODUCTION:
 Means testing is a process used to determine whether someone is eligible for a particular benefit or service based on their financial situation. It involves assessing an individual's income, assets, and expenses to decide whether they meet the required criteria for receiving assistance, subsidies, or other forms of support. Means testing is commonly used in various contexts, including government programs, education, and social services.

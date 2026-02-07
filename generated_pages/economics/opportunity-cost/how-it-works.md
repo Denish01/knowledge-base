@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Opportunity Cost Work?"
+title: "How Opportunity Cost Works"
 slug: how-does-opportunity-cost-work
 description: "A clear, simple explanation of how does opportunity cost work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Opportunity Cost Work?
+# How Opportunity Cost Works
 
 1. QUICK ANSWER: Opportunity cost refers to the value of the next best alternative that is given up when a choice is made, and it is a fundamental concept in understanding how decisions are made in economics. Essentially, it is the cost of choosing one option over another, where the cost is measured by the value of the alternative that is not chosen.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Fractions?"
+title: "What Is Fractions?"
 slug: fractions
 description: "A clear, simple explanation of fractions - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Fractions?
+# What Is Fractions?
 
 Fractions is a mathematical concept that refers to a part of a whole, expressed as a ratio of two integers, the numerator and the denominator. 
 

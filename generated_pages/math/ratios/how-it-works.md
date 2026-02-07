@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Ratios Work?"
+title: "How Ratios Works"
 slug: how-does-ratios-work
 description: "A clear, simple explanation of how does ratios work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Ratios Work?
+# How Ratios Works
 
 1. QUICK ANSWER: 
 A ratio is a way to compare two quantities by dividing one by the other, and it works by establishing a relationship between the two quantities that can be used to make predictions or calculations. This comparison can be expressed as a fraction, decimal, or percentage, and it provides a clear understanding of how the two quantities are related.

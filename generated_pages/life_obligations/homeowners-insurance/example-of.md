@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Homeowners Insurance?"
+title: "Example of Homeowners Insurance"
 slug: examples-of-homeowners-insurance
 description: "A clear, simple explanation of examples of homeowners insurance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Homeowners Insurance?
+# Example of Homeowners Insurance
 
 1. INTRODUCTION:
 Homeowners insurance is a type of property insurance that covers a private residence against losses or damages. It provides financial protection to homeowners in the event of unforeseen circumstances such as natural disasters, theft, or accidents. This type of insurance typically includes coverage for the structure of the home, personal belongings, and liability for accidents that may occur on the property.

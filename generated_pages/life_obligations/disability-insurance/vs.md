@@ -1,11 +1,11 @@
 ---
-title: "What is Disability Insurance Vs?"
+title: "Disability Insurance Compared"
 slug: disability-insurance-vs
 description: "A clear, simple explanation of disability insurance vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Disability Insurance Vs?
+# Disability Insurance Compared
 
 Disability insurance vs refers to a comparison between different types of insurance policies that provide financial protection to individuals who become unable to work due to illness or injury.
 

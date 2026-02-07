@@ -1,11 +1,11 @@
 ---
-title: "What is Dna Replication Vs?"
+title: "Dna Replication Compared"
 slug: dna-replication-vs
 description: "A clear, simple explanation of dna replication vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Dna Replication Vs?
+# Dna Replication Compared
 
 DNA replication vs transcription is a comparison between two fundamental biological processes that occur within cells, specifically referring to the creation of new DNA molecules and the synthesis of RNA from DNA.
 

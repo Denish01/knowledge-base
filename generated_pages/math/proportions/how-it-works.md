@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Proportions Work?"
+title: "How Proportions Works"
 slug: how-does-proportions-work
 description: "A clear, simple explanation of how does proportions work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Proportions Work?
+# How Proportions Works
 
 1. QUICK ANSWER: Proportions work by establishing a relationship between two sets of numbers, allowing for the comparison of their corresponding parts. This relationship is based on the idea that if two ratios are equal, then the quantities they represent are proportional.
 

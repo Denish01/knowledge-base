@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Dividend Yield?"
+title: "Example of Dividend Yield"
 slug: examples-of-dividend-yield
 description: "A clear, simple explanation of examples of dividend yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Dividend Yield?
+# Example of Dividend Yield
 
 1. INTRODUCTION
 Dividend yield is a measure of the return on investment for a stock, calculated by dividing the annual dividend payment by the stock's current price. It represents the ratio of the dividend paid per share to the stock's current price per share. This metric is crucial for investors as it helps them evaluate the potential income they can earn from their investments. Understanding dividend yield is essential for making informed investment decisions.

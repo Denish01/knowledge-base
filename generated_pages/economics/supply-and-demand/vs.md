@@ -1,11 +1,11 @@
 ---
-title: "What is Supply And Demand Vs?"
+title: "Supply And Demand Compared"
 slug: supply-and-demand-vs
 description: "A clear, simple explanation of supply and demand vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Supply And Demand Vs?
+# Supply And Demand Compared
 
 Supply and demand refers to the fundamental economic principle that explains how the price and quantity of a product or service are determined by the interaction between the amount of the product or service that producers are willing to sell and the amount that consumers are willing to buy.
 

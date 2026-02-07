@@ -1,11 +1,11 @@
 ---
-title: "What is Rock Cycle?"
+title: "What Is Rock Cycle?"
 slug: rock-cycle
 description: "A clear, simple explanation of rock cycle - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Rock Cycle?
+# What Is Rock Cycle?
 
 Rock cycle is a process that describes the dynamic transformation of rocks between three main types: igneous, sedimentary, and metamorphic, through various geological processes.
 

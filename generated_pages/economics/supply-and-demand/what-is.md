@@ -1,11 +1,11 @@
 ---
-title: "What is Supply And Demand?"
+title: "What Is Supply And Demand?"
 slug: supply-and-demand
 description: "A clear, simple explanation of supply and demand - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Supply And Demand?
+# What Is Supply And Demand?
 
 Supply and demand is the fundamental concept in economics that describes the relationship between the availability of a product or service and the desire for it among consumers.
 

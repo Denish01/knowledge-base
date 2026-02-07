@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Pay Stub?"
+title: "Example of Pay Stub"
 slug: examples-of-pay-stub
 description: "A clear, simple explanation of examples of pay stub - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Pay Stub?
+# Example of Pay Stub
 
 1. INTRODUCTION
 A pay stub is a document that shows an employee's pay details for a specific period. It includes information such as the employee's name, pay rate, hours worked, deductions, and net pay. Pay stubs are typically provided by employers to their employees with each paycheck. They serve as a record of the employee's earnings and can be useful for tracking income, filing taxes, and verifying employment.

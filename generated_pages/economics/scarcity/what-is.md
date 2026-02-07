@@ -1,11 +1,11 @@
 ---
-title: "What is Scarcity?"
+title: "What Is Scarcity?"
 slug: scarcity
 description: "A clear, simple explanation of scarcity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Scarcity?
+# What Is Scarcity?
 
 Scarcity is a fundamental economic concept that refers to the limited availability of resources in relation to the unlimited wants and needs of individuals and societies.
 

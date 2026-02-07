@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Health Insurance?"
+title: "What Affects Health Insurance"
 slug: what-affects-health-insurance
 description: "A clear, simple explanation of what affects health insurance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Health Insurance?
+# What Affects Health Insurance
 
 1. INTRODUCTION:
 Health insurance is a type of coverage that helps individuals pay for medical expenses, such as hospital stays, doctor visits, and prescriptions. Understanding the factors that affect health insurance is crucial because it can help individuals make informed decisions about their coverage and financial planning. The influences on health insurance can have a significant impact on the cost, availability, and quality of coverage, making it essential to recognize these factors and their effects.

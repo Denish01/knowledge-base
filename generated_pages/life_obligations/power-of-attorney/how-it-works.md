@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Power Of Attorney Work?"
+title: "How Power Of Attorney Works"
 slug: how-does-power-of-attorney-work
 description: "A clear, simple explanation of how does power of attorney work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Power Of Attorney Work?
+# How Power Of Attorney Works
 
 1. QUICK ANSWER: 
 A power of attorney is a legal document that allows one person, known as the agent or attorney-in-fact, to act on behalf of another person, known as the principal, in financial, medical, or other matters. This document gives the agent the authority to make decisions and take actions for the principal, as if the principal were making them themselves.

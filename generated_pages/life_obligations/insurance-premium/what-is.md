@@ -1,11 +1,11 @@
 ---
-title: "What is Insurance Premium?"
+title: "What Is Insurance Premium?"
 slug: insurance-premium
 description: "A clear, simple explanation of insurance premium - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Insurance Premium?
+# What Is Insurance Premium?
 
 Insurance premium is a payment made by a policyholder to an insurance company in exchange for insurance coverage.
 

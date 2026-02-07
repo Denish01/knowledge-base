@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Affordability Assessment Work?"
+title: "How Affordability Assessment Works"
 slug: how-does-affordability-assessment-work
 description: "A clear, simple explanation of how does affordability assessment work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Affordability Assessment Work?
+# How Affordability Assessment Works
 
 1. QUICK ANSWER: An affordability assessment is a process used to determine whether an individual or family can afford a particular expense, such as a loan or housing, by evaluating their income, expenses, and debt. This assessment helps lenders and financial institutions make informed decisions about creditworthiness and reduces the risk of default.
 

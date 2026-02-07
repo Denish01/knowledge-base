@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Long-Term Support?"
+title: "Common Misconceptions About Long Term Support"
 slug: common-misconceptions-about-long-term-support
 description: "A clear, simple explanation of common misconceptions about long-term support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Long-Term Support?
+# Common Misconceptions About Long Term Support
 
 1. INTRODUCTION:
 Long-term support is a vital aspect of care for individuals with ongoing health needs, disabilities, or age-related conditions. Despite its importance, there are many misconceptions surrounding long-term support. These misconceptions can lead to confusion, mistrust, and inadequate care. One reason for these misconceptions is the complexity of the long-term support system, which can be difficult to navigate. Additionally, the emotional and financial stresses associated with caring for a loved one can contribute to misunderstandings. It is essential to address these misconceptions to ensure that individuals receive the care and support they need.

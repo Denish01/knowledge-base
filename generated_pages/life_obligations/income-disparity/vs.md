@@ -1,11 +1,11 @@
 ---
-title: "What is Income Disparity Vs?"
+title: "Income Disparity Compared"
 slug: income-disparity-vs
 description: "A clear, simple explanation of income disparity vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Income Disparity Vs?
+# Income Disparity Compared
 
 Income disparity refers to the unequal distribution of income among individuals, groups, or societies, resulting in significant differences in the amount of money earned by different people.
 

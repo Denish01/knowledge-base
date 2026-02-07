@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Required Minimum Distribution?"
+title: "What Affects Required Minimum Distribution"
 slug: what-affects-required-minimum-distribution
 description: "A clear, simple explanation of what affects required minimum distribution - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Required Minimum Distribution?
+# What Affects Required Minimum Distribution
 
 INTRODUCTION
 Required minimum distribution (RMD) refers to the minimum amount of money that must be withdrawn from a retirement account each year. Understanding the factors that affect RMD is crucial for individuals who have retirement accounts, as it helps them plan for their financial future and avoid potential penalties. The amount of RMD is determined by the account balance and the account holder's age, but several other factors also influence the calculation. In this explanation, we will explore the key factors that affect required minimum distribution and how they interact with each other.

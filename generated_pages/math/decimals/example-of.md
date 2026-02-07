@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Decimals?"
+title: "Example of Decimals"
 slug: examples-of-decimals
 description: "A clear, simple explanation of examples of decimals - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Decimals?
+# Example of Decimals
 
 1. INTRODUCTION:
 Decimals are a way of representing fractions in a more readable and usable format, particularly when dealing with measurements or quantities that are not whole numbers. They are written with a decimal point, which separates the whole number from the fractional part. For instance, 3.14 is a decimal representation of the fraction 314/100. Decimals are essential in various aspects of life, from simple calculations to complex scientific computations.

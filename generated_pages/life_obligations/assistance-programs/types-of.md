@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Assistance Programs?"
+title: "Types of Assistance Programs"
 slug: types-of-assistance-programs
 description: "A clear, simple explanation of types of assistance programs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Assistance Programs?
+# Types of Assistance Programs
 
 ## INTRODUCTION
 Assistance programs are designed to provide support to individuals, families, or communities in need. These programs can be categorized into different types based on their purpose, target audience, and level of support. Understanding the various types of assistance programs is essential to ensure that individuals receive the right kind of help when they need it. Classification of assistance programs matters because it enables policymakers, social workers, and individuals to identify the most suitable programs for specific needs, allocate resources effectively, and evaluate the impact of these programs. By categorizing assistance programs, it becomes easier to navigate the complex landscape of support services and make informed decisions about which programs to utilize or support.

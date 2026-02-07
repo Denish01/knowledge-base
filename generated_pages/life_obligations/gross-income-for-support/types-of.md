@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Gross Income For Support?"
+title: "Types of Gross Income For Support"
 slug: types-of-gross-income-for-support
 description: "A clear, simple explanation of types of gross income for support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Gross Income For Support?
+# Types of Gross Income For Support
 
 ## INTRODUCTION
 Types of gross income for support refers to the various sources of income that are considered when determining an individual's or family's financial support obligations, such as child support or spousal support. Classification of these income sources matters because it helps ensure that support calculations are accurate and fair, taking into account the different types of income that individuals may receive. By understanding the different categories of gross income for support, individuals and authorities can better navigate the complex process of determining support obligations. This classification system is essential for promoting fairness and consistency in support calculations, and it helps to prevent disputes and misunderstandings.

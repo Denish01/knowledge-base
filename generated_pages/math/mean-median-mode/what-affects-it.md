@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Mean Median Mode?"
+title: "What Affects Mean Median Mode"
 slug: what-affects-mean-median-mode
 description: "A clear, simple explanation of what affects mean median mode - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Mean Median Mode?
+# What Affects Mean Median Mode
 
 1. INTRODUCTION:
 Mean, median, and mode are three fundamental concepts in statistics that help describe and analyze datasets. The mean is the average value of a dataset, the median is the middle value when the data is arranged in order, and the mode is the most frequently occurring value. Understanding the factors that affect these measures is crucial because it enables individuals to make informed decisions, identify patterns, and draw accurate conclusions from data. By recognizing the influences on mean, median, and mode, one can better comprehend the characteristics of a dataset and make more effective use of statistical analysis.

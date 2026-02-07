@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Mutual Fund?"
+title: "Types of Mutual Fund"
 slug: types-of-mutual-fund
 description: "A clear, simple explanation of types of mutual fund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Mutual Fund?
+# Types of Mutual Fund
 
 ## INTRODUCTION
 The classification of mutual funds is a crucial aspect of understanding the various investment options available in the market. Mutual funds are investment vehicles that pool money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. The different types of mutual funds cater to varying investment objectives, risk tolerance, and time horizons, making it essential to understand the distinct characteristics of each category. By classifying mutual funds, investors can make informed decisions about their investment portfolio and achieve their financial goals. This classification system provides a framework for understanding the diverse range of mutual funds, enabling investors to navigate the complex investment landscape with confidence.

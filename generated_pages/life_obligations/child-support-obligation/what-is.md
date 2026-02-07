@@ -1,11 +1,11 @@
 ---
-title: "What is Child Support Obligation?"
+title: "What Is Child Support Obligation?"
 slug: child-support-obligation
 description: "A clear, simple explanation of child support obligation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Child Support Obligation?
+# What Is Child Support Obligation?
 
 Child support obligation is a legal requirement for a non-custodial parent to provide financial support to their child or children. 
 

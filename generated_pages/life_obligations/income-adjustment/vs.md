@@ -1,11 +1,11 @@
 ---
-title: "What is Income Adjustment Vs?"
+title: "Income Adjustment Compared"
 slug: income-adjustment-vs
 description: "A clear, simple explanation of income adjustment vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Income Adjustment Vs?
+# Income Adjustment Compared
 
 Income adjustment vs refers to the process of modifying an individual's or household's income to account for various factors that affect their purchasing power and financial situation.
 

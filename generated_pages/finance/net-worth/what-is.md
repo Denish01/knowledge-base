@@ -1,11 +1,11 @@
 ---
-title: "What is Net Worth?"
+title: "What Is Net Worth?"
 slug: net-worth
 description: "A clear, simple explanation of net worth - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Net Worth?
+# What Is Net Worth?
 
 Net worth is the total value of an individual's or organization's assets minus their liabilities, providing a snapshot of their overall financial health.
 

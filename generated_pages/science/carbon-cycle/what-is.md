@@ -1,11 +1,11 @@
 ---
-title: "What is Carbon Cycle?"
+title: "What Is Carbon Cycle?"
 slug: carbon-cycle
 description: "A clear, simple explanation of carbon cycle - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Carbon Cycle?
+# What Is Carbon Cycle?
 
 Carbon cycle is the process by which carbon is exchanged between the atmosphere, oceans, land, and living things. 
 

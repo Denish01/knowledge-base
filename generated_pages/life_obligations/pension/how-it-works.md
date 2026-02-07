@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Pension Work?"
+title: "How Pension Works"
 slug: how-does-pension-work
 description: "A clear, simple explanation of how does pension work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Pension Work?
+# How Pension Works
 
 1. QUICK ANSWER: A pension is a type of retirement plan that provides a steady income stream to individuals after they stop working, typically funded by a combination of employer and employee contributions. The core mechanism of a pension involves accumulating funds during an individual's working years, which are then used to provide a guaranteed income in retirement.
 

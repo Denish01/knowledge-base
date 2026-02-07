@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Inflation Rate?"
+title: "Example of Inflation Rate"
 slug: examples-of-inflation-rate
 description: "A clear, simple explanation of examples of inflation rate - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Inflation Rate?
+# Example of Inflation Rate
 
 1. INTRODUCTION
 Inflation rate is a measure of how quickly prices for goods and services are rising in an economy. It is typically expressed as a percentage increase over a certain period of time, usually a year. Understanding inflation rate is crucial because it affects the purchasing power of money. For instance, if the inflation rate is high, the same amount of money can buy fewer goods and services than it could before. In this page, we will explore various examples of inflation rate to help illustrate this concept.

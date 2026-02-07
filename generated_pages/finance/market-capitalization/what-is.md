@@ -1,11 +1,11 @@
 ---
-title: "What is Market Capitalization?"
+title: "What Is Market Capitalization?"
 slug: market-capitalization
 description: "A clear, simple explanation of market capitalization - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Market Capitalization?
+# What Is Market Capitalization?
 
 Market capitalization is the total value of a company's outstanding shares, calculated by multiplying the number of shares by the current market price of one share.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Square Roots?"
+title: "What Is Square Roots?"
 slug: square-roots
 description: "A clear, simple explanation of square roots - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Square Roots?
+# What Is Square Roots?
 
 Square roots refer to a mathematical operation that finds a value that, when multiplied by itself, gives a specified number. 
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Tax Deduction?"
+title: "What Is Tax Deduction?"
 slug: tax-deduction
 description: "A clear, simple explanation of tax deduction - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Tax Deduction?
+# What Is Tax Deduction?
 
 Tax deduction is a reduction in the amount of income that is subject to taxation, resulting in a lower tax liability for individuals or businesses.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Water Cycle Vs?"
+title: "Water Cycle Compared"
 slug: water-cycle-vs
 description: "A clear, simple explanation of water cycle vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Water Cycle Vs?
+# Water Cycle Compared
 
 Water cycle refers to the continuous process by which water is circulated between the Earth and the atmosphere, involving the movement of water in three phases: liquid, solid, and gas.
 

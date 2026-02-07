@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Food Web Work?"
+title: "How Food Web Works"
 slug: how-does-food-web-work
 description: "A clear, simple explanation of how does food web work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Food Web Work?
+# How Food Web Works
 
 1. QUICK ANSWER: 
 A food web is a complex network of relationships between organisms in an ecosystem, where each species plays a role as either a producer, consumer, or decomposer, and energy is transferred from one level to the next. This mechanism allows for the circulation of nutrients and energy throughout the ecosystem, supporting the survival of all organisms within it.

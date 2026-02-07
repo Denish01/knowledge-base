@@ -1,11 +1,11 @@
 ---
-title: "What is Renters Insurance?"
+title: "What Is Renters Insurance?"
 slug: renters-insurance
 description: "A clear, simple explanation of renters insurance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Renters Insurance?
+# What Is Renters Insurance?
 
 Renters insurance is a type of insurance policy that provides financial protection to individuals who rent their homes against losses or damages to their personal property and liability for accidents that may occur in the rented space.
 

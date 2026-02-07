@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A clear, simple explanation of market capitalization - definition, key concepts, examples, and common misconceptions.">
-    <title>What is Market Capitalization? - Simple Explanation</title>
+    <title>What Is Market Capitalization? - Simple Explanation</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -29,114 +29,9 @@
 </head>
 <body>
     <article>
-        <h1>What is Market Capitalization?</h1>
+        <h1>What Is Market Capitalization?</h1>
 
         
-<style>
-.calculator {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 24px 0;
-}
-.calculator h3 {
-    margin-top: 0;
-    color: #1a73e8;
-}
-.calc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 16px;
-}
-.calculator label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-}
-.calculator input, .calculator select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.calculator button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.calculator button:hover {
-    background: #1557b0;
-}
-.calc-result {
-    margin-top: 16px;
-    padding: 12px;
-    background: white;
-    border-radius: 4px;
-    border-left: 4px solid #1a73e8;
-}
-.calc-result p {
-    margin: 8px 0;
-}
-.calc-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.tab-btn {
-    background: #e0e0e0;
-    color: #333;
-}
-.tab-btn.active {
-    background: #1a73e8;
-    color: white;
-}
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-</style>
-
-<div class="calculator" id="mktcap-calc">
-    <h3>Market Capitalization Calculator</h3>
-    <div class="calc-grid">
-        <label>Stock Price ($): <input type="number" id="mc-price" value="150" min="0" step="0.01"></label>
-        <label>Shares Outstanding (millions): <input type="number" id="mc-shares" value="1000" min="0"></label>
-    </div>
-    <button onclick="calcMarketCap()">Calculate</button>
-    <div class="calc-result" id="mktcap-result"></div>
-</div>
-<script>
-function calcMarketCap() {
-    const price = parseFloat(document.getElementById('mc-price').value);
-    const shares = parseFloat(document.getElementById('mc-shares').value) * 1000000;
-    const cap = price * shares;
-    let size = '';
-    if (cap >= 200e9) size = 'Mega Cap (>$200B)';
-    else if (cap >= 10e9) size = 'Large Cap ($10B-$200B)';
-    else if (cap >= 2e9) size = 'Mid Cap ($2B-$10B)';
-    else if (cap >= 300e6) size = 'Small Cap ($300M-$2B)';
-    else size = 'Micro Cap (<$300M)';
-    const formatted = cap >= 1e12 ? (cap/1e12).toFixed(2) + ' Trillion' :
-                      cap >= 1e9 ? (cap/1e9).toFixed(2) + ' Billion' :
-                      (cap/1e6).toFixed(2) + ' Million';
-    document.getElementById('mktcap-result').innerHTML = `
-        <p><strong>Market Cap:</strong> $${formatted}</p>
-        <p><strong>Classification:</strong> ${size}</p>
-    `;
-}
-calcMarketCap();
-</script>
-
 
         <p>Market capitalization is the total value of a company's outstanding shares, calculated by multiplying the number of shares by the current market price of one share.</p>
 

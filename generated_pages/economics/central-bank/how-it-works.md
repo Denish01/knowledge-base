@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Central Bank Work?"
+title: "How Central Bank Works"
 slug: how-does-central-bank-work
 description: "A clear, simple explanation of how does central bank work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Central Bank Work?
+# How Central Bank Works
 
 1. QUICK ANSWER: A central bank works by regulating the money supply and setting interest rates to promote economic growth and stability. It achieves this through a complex process involving the management of a country's monetary policy, which has a direct impact on the overall economy.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Government Benefits?"
+title: "What Is Government Benefits?"
 slug: government-benefits
 description: "A clear, simple explanation of government benefits - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Government Benefits?
+# What Is Government Benefits?
 
 Government benefits is a type of financial or service-based assistance provided by a government to its citizens, often to help them meet their basic needs or achieve a specific goal.
 

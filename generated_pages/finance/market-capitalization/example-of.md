@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Market Capitalization?"
+title: "Example of Market Capitalization"
 slug: examples-of-market-capitalization
 description: "A clear, simple explanation of examples of market capitalization - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Market Capitalization?
+# Example of Market Capitalization
 
 1. INTRODUCTION:
 Market capitalization refers to the total value of a company's outstanding shares. It is calculated by multiplying the number of shares by the current market price per share. This measure is used to determine the size of a company and can be an important factor in investment decisions. Understanding market capitalization is essential for anyone interested in the stock market and the valuation of companies.

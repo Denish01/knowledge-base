@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Percentage Of Income Model?"
+title: "Types of Percentage Of Income Model"
 slug: types-of-percentage-of-income-model
 description: "A clear, simple explanation of types of percentage of income model - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Percentage Of Income Model?
+# Types of Percentage Of Income Model
 
 1. INTRODUCTION
 

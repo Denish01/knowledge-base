@@ -1,11 +1,11 @@
 ---
-title: "What is Linear Equations Vs?"
+title: "Linear Equations Compared"
 slug: linear-equations-vs
 description: "A clear, simple explanation of linear equations vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Linear Equations Vs?
+# Linear Equations Compared
 
 Linear equations vs refers to the comparison and contrast of linear equations with other types of mathematical equations, highlighting their unique characteristics and differences.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Tax Credit Depends On?"
+title: "What Tax Credit Depends On"
 slug: what-tax-credit-depends-on
 description: "A clear, simple explanation of what tax credit depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Tax Credit Depends On?
+# What Tax Credit Depends On
 
 1. INTRODUCTION:
 A tax credit is a direct reduction in the amount of tax an individual or business owes to the government. Understanding what a tax credit depends on is crucial because it determines eligibility and the amount of credit that can be claimed. Tax credits have specific prerequisites that must be met in order to qualify, making it essential to comprehend these dependencies.

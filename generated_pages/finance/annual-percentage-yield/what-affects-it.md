@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Annual Percentage Yield?"
+title: "What Affects Annual Percentage Yield"
 slug: what-affects-annual-percentage-yield
 description: "A clear, simple explanation of what affects annual percentage yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Annual Percentage Yield?
+# What Affects Annual Percentage Yield
 
 INTRODUCTION
 Annual percentage yield (APY) is the rate of return on an investment or deposit over a year, including the effect of compounding interest. Understanding the factors that affect APY is crucial for individuals and organizations to make informed decisions about their financial resources. By knowing what influences APY, people can optimize their investments, manage their finances effectively, and achieve their long-term goals. The factors that affect APY are multifaceted and interconnected, making it essential to grasp the cause-and-effect relationships between them.

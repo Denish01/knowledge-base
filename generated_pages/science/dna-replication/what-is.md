@@ -1,11 +1,11 @@
 ---
-title: "What is Dna Replication?"
+title: "What Is Dna Replication?"
 slug: dna-replication
 description: "A clear, simple explanation of dna replication - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Dna Replication?
+# What Is Dna Replication?
 
 DNA replication is the process by which a cell makes an exact copy of its DNA before cell division. 
 

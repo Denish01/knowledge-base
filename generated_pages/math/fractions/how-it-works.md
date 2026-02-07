@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Fractions Work?"
+title: "How Fractions Works"
 slug: how-does-fractions-work
 description: "A clear, simple explanation of how does fractions work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Fractions Work?
+# How Fractions Works
 
 1. QUICK ANSWER: Fractions work by representing a part of a whole as a ratio of two numbers, the numerator and the denominator, which can be used to compare, add, subtract, multiply, and divide parts of a whole. This mechanism allows for precise calculations and measurements in various mathematical and real-world applications.
 

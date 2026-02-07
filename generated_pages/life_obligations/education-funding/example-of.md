@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Education Funding?"
+title: "Example of Education Funding"
 slug: examples-of-education-funding
 description: "A clear, simple explanation of examples of education funding - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Education Funding?
+# Example of Education Funding
 
 1. INTRODUCTION
 Education funding refers to the financial resources allocated to support the provision of educational services and programs. This funding can come from various sources, including government agencies, private organizations, and individuals. The primary purpose of education funding is to ensure that students have access to quality educational resources, facilities, and instructors. Education funding can be used to cover a wide range of expenses, including teacher salaries, textbook purchases, and infrastructure development.

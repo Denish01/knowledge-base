@@ -1,11 +1,11 @@
 ---
-title: "What is Utility Bills?"
+title: "What Is Utility Bills?"
 slug: utility-bills
 description: "A clear, simple explanation of utility bills - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Utility Bills?
+# What Is Utility Bills?
 
 Utility bills is a type of regular payment that households and businesses make to cover the cost of essential services such as electricity, gas, water, and waste management.
 

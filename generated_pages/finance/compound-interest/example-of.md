@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Compound Interest?"
+title: "Example of Compound Interest"
 slug: examples-of-compound-interest
 description: "A clear, simple explanation of examples of compound interest - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Compound Interest?
+# Example of Compound Interest
 
 1. INTRODUCTION:
 Compound interest is a financial concept where the interest earned on an initial amount of money is reinvested, generating additional interest over time. This process creates a snowball effect, where the total amount of money grows exponentially. Compound interest can be applied to various financial instruments, such as savings accounts, investments, and loans. Understanding how compound interest works is essential for making informed decisions about personal finance and managing money effectively.

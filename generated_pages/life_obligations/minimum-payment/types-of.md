@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Minimum Payment?"
+title: "Types of Minimum Payment"
 slug: types-of-minimum-payment
 description: "A clear, simple explanation of types of minimum payment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Minimum Payment?
+# Types of Minimum Payment
 
 1. INTRODUCTION
 

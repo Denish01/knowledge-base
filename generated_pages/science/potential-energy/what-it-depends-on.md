@@ -1,11 +1,11 @@
 ---
-title: "What is What Potential Energy Depends On?"
+title: "What Potential Energy Depends On"
 slug: what-potential-energy-depends-on
 description: "A clear, simple explanation of what potential energy depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Potential Energy Depends On?
+# What Potential Energy Depends On
 
 1. INTRODUCTION:
 Potential energy is the stored energy an object has due to its position, configuration, or state. Understanding what potential energy depends on is crucial because it helps us recognize the fundamental prerequisites for this energy to exist and be utilized. The dependencies of potential energy are essential to comprehend its role in various physical phenomena and to accurately calculate and predict the behavior of objects in different situations.

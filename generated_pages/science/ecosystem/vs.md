@@ -1,11 +1,11 @@
 ---
-title: "What is Ecosystem Vs?"
+title: "Ecosystem Compared"
 slug: ecosystem-vs
 description: "A clear, simple explanation of ecosystem vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Ecosystem Vs?
+# Ecosystem Compared
 
 Ecosystem refers to a community of living organisms, including plants, animals, and microorganisms, and non-living components, such as water, air, and soil, that interact with each other in a specific environment.
 

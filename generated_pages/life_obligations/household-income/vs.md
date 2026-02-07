@@ -1,11 +1,11 @@
 ---
-title: "What is Household Income Vs?"
+title: "Household Income Compared"
 slug: household-income-vs
 description: "A clear, simple explanation of household income vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Household Income Vs?
+# Household Income Compared
 
 Household income vs refers to the comparison of the total earnings of all household members with various factors such as expenses, debt, and savings to understand the financial well-being of a family.
 

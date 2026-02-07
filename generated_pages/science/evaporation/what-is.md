@@ -1,11 +1,11 @@
 ---
-title: "What is Evaporation?"
+title: "What Is Evaporation?"
 slug: evaporation
 description: "A clear, simple explanation of evaporation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Evaporation?
+# What Is Evaporation?
 
 Evaporation is the process by which a liquid transforms into a gas or vapor, occurring when the molecules of the liquid gain enough energy to escape into the air as gas.
 

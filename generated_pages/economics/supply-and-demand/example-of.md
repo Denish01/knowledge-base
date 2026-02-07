@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Supply And Demand?"
+title: "Example of Supply And Demand"
 slug: examples-of-supply-and-demand
 description: "A clear, simple explanation of examples of supply and demand - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Supply And Demand?
+# Example of Supply And Demand
 
 1. INTRODUCTION
 Supply and demand is a fundamental concept in economics that describes the relationship between the availability of a product or service and the desire for it. The law of supply and demand states that when the supply of a product is high and the demand for it is low, the price tends to fall. Conversely, when the demand for a product is high and the supply is low, the price tends to rise. This concept is essential in understanding how markets work and how prices are determined.

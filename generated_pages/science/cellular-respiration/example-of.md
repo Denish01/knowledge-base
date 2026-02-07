@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Cellular Respiration?"
+title: "Example of Cellular Respiration"
 slug: examples-of-cellular-respiration
 description: "A clear, simple explanation of examples of cellular respiration - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Cellular Respiration?
+# Example of Cellular Respiration
 
 1. INTRODUCTION
 Cellular respiration is the process by which cells generate energy from the food they consume. It is a vital function that occurs in the cells of all living organisms, from bacteria to humans. This process involves the breakdown of glucose and other organic molecules to produce ATP, which is the energy currency of the cell. Understanding cellular respiration is crucial for grasping how life sustains itself at the most fundamental level.

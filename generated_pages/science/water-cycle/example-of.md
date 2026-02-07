@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Water Cycle?"
+title: "Example of Water Cycle"
 slug: examples-of-water-cycle
 description: "A clear, simple explanation of examples of water cycle - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Water Cycle?
+# Example of Water Cycle
 
 1. INTRODUCTION
 The water cycle, also known as the hydrologic cycle, refers to the continuous process by which water is circulated between the Earth and the atmosphere. It involves the movement of water in three phases: liquid, solid (ice), and gas (water vapor). The water cycle is essential for life on Earth, as it helps regulate the planet's temperature, weather patterns, and the distribution of water around the globe.

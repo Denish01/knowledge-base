@@ -1,11 +1,11 @@
 ---
-title: "What is Number Of Dependents?"
+title: "What Is Number Of Dependents?"
 slug: number-of-dependents
 description: "A clear, simple explanation of number of dependents - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Number Of Dependents?
+# What Is Number Of Dependents?
 
 Number of dependents refers to the quantity of individuals, typically family members, who rely on another person, usually the primary breadwinner, for financial support and care.
 

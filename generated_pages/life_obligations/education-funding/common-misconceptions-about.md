@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Education Funding?"
+title: "Common Misconceptions About Education Funding"
 slug: common-misconceptions-about-education-funding
 description: "A clear, simple explanation of common misconceptions about education funding - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Education Funding?
+# Common Misconceptions About Education Funding
 
 1. INTRODUCTION: Why misconceptions about education funding are common
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Rent Payment?"
+title: "What Is Rent Payment?"
 slug: rent-payment
 description: "A clear, simple explanation of rent payment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Rent Payment?
+# What Is Rent Payment?
 
 Rent payment is the process by which a tenant pays a landlord for the use of a property, typically on a monthly basis. 
 

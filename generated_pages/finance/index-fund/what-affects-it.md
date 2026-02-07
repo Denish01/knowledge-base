@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Index Fund?"
+title: "What Affects Index Fund"
 slug: what-affects-index-fund
 description: "A clear, simple explanation of what affects index fund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Index Fund?
+# What Affects Index Fund
 
 1. INTRODUCTION:
 An index fund is a type of investment that aims to track the performance of a specific stock market index, such as the S&P 500. It does this by holding a portfolio of stocks that mirrors the composition of the index. Understanding the factors that affect index funds is crucial for investors, as it can help them make informed decisions and manage their investments effectively. By knowing what influences index funds, investors can better navigate the complexities of the financial market and achieve their investment goals.

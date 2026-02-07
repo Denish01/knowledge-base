@@ -1,11 +1,11 @@
 ---
-title: "What is Household Size?"
+title: "What Is Household Size?"
 slug: household-size
 description: "A clear, simple explanation of household size - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Household Size?
+# What Is Household Size?
 
 Household size is the number of people who live together in a single dwelling unit, such as a house, apartment, or condominium. 
 

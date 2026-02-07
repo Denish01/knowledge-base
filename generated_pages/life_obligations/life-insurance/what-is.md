@@ -1,11 +1,11 @@
 ---
-title: "What is Life Insurance?"
+title: "What Is Life Insurance?"
 slug: life-insurance
 description: "A clear, simple explanation of life insurance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Life Insurance?
+# What Is Life Insurance?
 
 Life insurance is a type of financial protection that provides a death benefit to the beneficiaries of the insured person in the event of their passing. 
 

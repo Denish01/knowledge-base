@@ -1,11 +1,11 @@
 ---
-title: "What is Bear Market Vs?"
+title: "Bear Market Compared"
 slug: bear-market-vs
 description: "A clear, simple explanation of bear market vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Bear Market Vs?
+# Bear Market Compared
 
 Bear market refers to a period of time when the overall value of stocks or other investments is decreasing, often accompanied by a lack of investor confidence and a decrease in economic activity.
 

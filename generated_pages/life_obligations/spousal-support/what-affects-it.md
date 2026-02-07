@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Spousal Support?"
+title: "What Affects Spousal Support"
 slug: what-affects-spousal-support
 description: "A clear, simple explanation of what affects spousal support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Spousal Support?
+# What Affects Spousal Support
 
 INTRODUCTION
 Spousal support, also known as alimony, is a payment made by one spouse to the other after a divorce or separation. Understanding the factors that affect spousal support is crucial for individuals going through a divorce, as it can significantly impact their financial well-being. The amount and duration of spousal support can vary greatly depending on several influences. By recognizing these factors, individuals can better navigate the divorce process and make informed decisions about their financial future.

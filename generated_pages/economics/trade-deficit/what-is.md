@@ -1,11 +1,11 @@
 ---
-title: "What is Trade Deficit?"
+title: "What Is Trade Deficit?"
 slug: trade-deficit
 description: "A clear, simple explanation of trade deficit - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Trade Deficit?
+# What Is Trade Deficit?
 
 Trade deficit refers to a situation where a country imports more goods and services than it exports, resulting in a net outflow of money from the country.
 

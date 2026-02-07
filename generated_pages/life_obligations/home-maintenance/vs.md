@@ -1,11 +1,11 @@
 ---
-title: "What is Home Maintenance Vs?"
+title: "Home Maintenance Compared"
 slug: home-maintenance-vs
 description: "A clear, simple explanation of home maintenance vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Home Maintenance Vs?
+# Home Maintenance Compared
 
 Home maintenance vs repair refers to the regular upkeep and care of a home to prevent damage and extend its lifespan, as opposed to repair, which involves fixing existing problems. 
 

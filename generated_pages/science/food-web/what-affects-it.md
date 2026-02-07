@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Food Web?"
+title: "What Affects Food Web"
 slug: what-affects-food-web
 description: "A clear, simple explanation of what affects food web - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Food Web?
+# What Affects Food Web
 
 1. INTRODUCTION
 

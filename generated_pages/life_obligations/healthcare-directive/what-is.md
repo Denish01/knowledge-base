@@ -1,11 +1,11 @@
 ---
-title: "What is Healthcare Directive?"
+title: "What Is Healthcare Directive?"
 slug: healthcare-directive
 description: "A clear, simple explanation of healthcare directive - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Healthcare Directive?
+# What Is Healthcare Directive?
 
 Healthcare directive is a written statement that outlines a person's wishes and preferences for medical treatment in the event that they become unable to communicate their decisions.
 

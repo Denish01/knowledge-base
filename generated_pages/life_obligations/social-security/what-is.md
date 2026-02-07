@@ -1,11 +1,11 @@
 ---
-title: "What is Social Security?"
+title: "What Is Social Security?"
 slug: social-security
 description: "A clear, simple explanation of social security - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Social Security?
+# What Is Social Security?
 
 Social security is a government-run program that provides financial assistance to individuals who are retired, disabled, or unemployed, and to the dependents of deceased workers.
 

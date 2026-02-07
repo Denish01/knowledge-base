@@ -1,11 +1,11 @@
 ---
-title: "What is Benefits Enrollment?"
+title: "What Is Benefits Enrollment?"
 slug: benefits-enrollment
 description: "A clear, simple explanation of benefits enrollment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Benefits Enrollment?
+# What Is Benefits Enrollment?
 
 Benefits enrollment is the process by which individuals select and sign up for various benefits, such as health insurance, retirement plans, and other employee benefits, typically offered by an employer or organization.
 
