@@ -2,7 +2,6 @@
   "version": "1.0",
   "description": "Domain queue for self-expanding knowledge system",
   "last_updated": "2026-02-06",
-
   "queue": [
     {
       "domain": "economics",
@@ -11,7 +10,7 @@
       "tier": 2,
       "concepts_estimated": 30,
       "discovered_date": "2026-02-06",
-      "status": "pending",
+      "status": "processing",
       "notes": "Natural extension of finance - high RPM"
     },
     {
@@ -85,9 +84,7 @@
       "notes": "Health adjacent"
     }
   ],
-
-  "processing": null,
-
+  "processing": "economics",
   "completed": [
     "finance",
     "life_obligations",

@@ -1,0 +1,30 @@
+---
+title: "What is Examples Of Opportunity Cost?"
+slug: examples-of-opportunity-cost
+description: "A clear, simple explanation of examples of opportunity cost - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-06
+---
+
+# What is Examples Of Opportunity Cost?
+
+1. INTRODUCTION
+Opportunity cost refers to the value of the next best alternative that is given up when a choice is made. In other words, it is the benefit that could have been realized if a different option had been chosen. Understanding opportunity cost is essential in making informed decisions, as it helps to evaluate the potential consequences of choosing one option over another.
+
+2. EVERYDAY EXAMPLES
+Opportunity cost is a concept that applies to many everyday situations. For instance, consider a student who decides to spend their Saturday working at a part-time job instead of studying for an exam. The opportunity cost of working is the potential improvement in exam score that could have been achieved by studying. Another example is a person who chooses to buy a new video game for $60 instead of putting that money into a savings account. The opportunity cost of buying the video game is the interest that could have been earned if the money had been saved. Additionally, a family that decides to go on a vacation to the beach instead of the mountains gives up the experiences and memories they could have had in the mountains. A commuter who chooses to drive to work instead of taking public transportation gives up the time they could have used for reading or relaxing during their daily commute.
+
+3. NOTABLE EXAMPLES
+Historically, the construction of the Aswan Dam in Egypt is a notable example of opportunity cost. The dam was built to provide hydroelectric power and control flooding, but it also resulted in the relocation of thousands of people and the destruction of several archaeological sites. The opportunity cost of building the dam was the preservation of these historical sites and the maintenance of the traditional way of life for the people who were relocated. Another example is the decision by Coca-Cola to introduce New Coke in the 1980s. The company replaced its original formula with a new one, but the move was met with widespread consumer dissatisfaction. The opportunity cost of introducing New Coke was the potential sales and customer loyalty that could have been maintained if the company had stuck with the original formula.
+
+4. EDGE CASES
+A unique example of opportunity cost is the decision by the British government to maintain a claim on the Falkland Islands. The cost of maintaining this claim, including the expense of defending the islands, is an opportunity cost because it means that the government cannot use those resources for other purposes, such as funding social programs or investing in education. Another unusual example is the opportunity cost of a person's decision to pursue a career as a professional athlete. The opportunity cost of dedicating time and resources to athletic training is the potential career advancement and financial gain that could have been achieved in a different field.
+
+5. NON-EXAMPLES
+Some things that people often confuse with opportunity cost are not actually examples of this concept. For instance, a person who buys a ticket to a concert and then decides not to attend does not experience an opportunity cost, because they have already made their choice and cannot go back. Another non-example is a situation where someone is forced to make a choice due to circumstances beyond their control, such as a natural disaster. In this case, the person is not giving up anything by choosing one option over another, because they have no other choice. A third non-example is a decision that has no alternative, such as a person who must choose to pay their rent or face eviction. In this case, there is no opportunity cost, because there is no other viable option.
+
+6. PATTERN
+All valid examples of opportunity cost have one thing in common: they involve a choice between two or more alternatives, and the decision to choose one option means giving up the potential benefits of the other options. Whether it is a personal decision, a business choice, or a government policy, opportunity cost is always about the value of what could have been achieved if a different option had been chosen. By recognizing and evaluating opportunity costs, individuals and organizations can make more informed decisions and achieve their goals more effectively.
+
+---
+
+*This is an evergreen reference page. Content is factual and timeless.*

@@ -1,0 +1,141 @@
+{
+  "domain": "economics",
+  "generated_date": "2026-02-06",
+  "total_concepts": 31,
+  "subcategories": {
+    "microeconomics": [
+      {
+        "concept": "opportunity-cost",
+        "title": "Opportunity Cost"
+      },
+      {
+        "concept": "supply-and-demand",
+        "title": "Supply and Demand"
+      },
+      {
+        "concept": "elasticity-of-demand",
+        "title": "Elasticity of Demand"
+      },
+      {
+        "concept": "elasticity-of-supply",
+        "title": "Elasticity of Supply"
+      },
+      {
+        "concept": "consumer-surplus",
+        "title": "Consumer Surplus"
+      },
+      {
+        "concept": "producer-surplus",
+        "title": "Producer Surplus"
+      },
+      {
+        "concept": "scarcity",
+        "title": "Scarcity"
+      },
+      {
+        "concept": "externalities",
+        "title": "Externalities"
+      },
+      {
+        "concept": "public-goods",
+        "title": "Public Goods"
+      },
+      {
+        "concept": "cost-benefit-analysis",
+        "title": "Cost-Benefit Analysis"
+      }
+    ],
+    "trade": [
+      {
+        "concept": "comparative-advantage",
+        "title": "Comparative Advantage"
+      },
+      {
+        "concept": "absolute-advantage",
+        "title": "Absolute Advantage"
+      },
+      {
+        "concept": "international-trade",
+        "title": "International Trade"
+      },
+      {
+        "concept": "tariffs-and-quotas",
+        "title": "Tariffs and Quotas"
+      },
+      {
+        "concept": "exchange-rates",
+        "title": "Exchange Rates"
+      },
+      {
+        "concept": "balance-of-payments",
+        "title": "Balance of Payments"
+      }
+    ],
+    "markets": [
+      {
+        "concept": "market-equilibrium",
+        "title": "Market Equilibrium"
+      },
+      {
+        "concept": "market-structures",
+        "title": "Market Structures"
+      },
+      {
+        "concept": "perfect-competition",
+        "title": "Perfect Competition"
+      },
+      {
+        "concept": "monopoly",
+        "title": "Monopoly"
+      },
+      {
+        "concept": "oligopoly",
+        "title": "Oligopoly"
+      },
+      {
+        "concept": "monopsony",
+        "title": "Monopsony"
+      }
+    ],
+    "macroeconomics": [
+      {
+        "concept": "gross-domestic-product",
+        "title": "Gross Domestic Product"
+      },
+      {
+        "concept": "inflation-rate",
+        "title": "Inflation Rate"
+      },
+      {
+        "concept": "unemployment-rate",
+        "title": "Unemployment Rate"
+      },
+      {
+        "concept": "comparative-economics",
+        "title": "Comparative Economics"
+      },
+      {
+        "concept": "economic-growth",
+        "title": "Economic Growth"
+      },
+      {
+        "concept": "economic-indicators",
+        "title": "Economic Indicators"
+      },
+      {
+        "concept": "national-income",
+        "title": "National Income"
+      }
+    ],
+    "policy": [
+      {
+        "concept": "fiscal-policy",
+        "title": "Fiscal Policy"
+      },
+      {
+        "concept": "monetary-policy",
+        "title": "Monetary Policy"
+      }
+    ]
+  }
+}
