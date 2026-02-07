@@ -19,7 +19,8 @@ def get_all_pages():
 
     # Find all *_structured directories
     for structured_dir in OUTPUT_DIR.glob("*_structured"):
-        domain = structured_dir.name.replace("_structured", "")
+        # Keep full folder name for URL (includes _structured)
+        domain_folder = structured_dir.name
 
         # Each concept folder
         for concept_dir in structured_dir.iterdir():
@@ -30,8 +31,8 @@ def get_all_pages():
                 for html_file in concept_dir.glob("*.html"):
                     angle = html_file.stem
 
-                    # Build URL path
-                    url_path = f"/{domain}/{concept}/{angle}"
+                    # Build URL path - matches actual folder structure
+                    url_path = f"/{domain_folder}/{concept}/{angle}"
 
                     # Get last modified time
                     mtime = datetime.fromtimestamp(html_file.stat().st_mtime)
@@ -108,8 +109,9 @@ def generate_index_page(pages_by_domain):
     <p>A structured knowledge index covering finance and life obligations.</p>
 """
 
-    for domain, concepts in pages_by_domain.items():
-        domain_title = domain.replace("_", " ").title()
+    for domain_folder, concepts in pages_by_domain.items():
+        # Display name without _structured suffix
+        domain_title = domain_folder.replace("_structured", "").replace("_", " ").title()
         html += f"\n    <h2>{domain_title}</h2>\n"
         html += f"    <p class='domain-stats'>{len(concepts)} concepts</p>\n"
         html += "    <div class='concept-grid'>\n"
@@ -120,7 +122,8 @@ def generate_index_page(pages_by_domain):
             html += f"        <h3>{concept_title}</h3>\n"
             for angle in sorted(angles):
                 angle_display = angle.replace("-", " ").title()
-                html += f"        <a href='/{domain}/{concept}/{angle}.html'>{angle_display}</a>\n"
+                # Use full domain_folder path to match actual folder structure
+                html += f"        <a href='/{domain_folder}/{concept}/{angle}.html'>{angle_display}</a>\n"
             html += "      </div>\n"
 
         html += "    </div>\n"
