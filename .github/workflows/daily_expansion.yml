@@ -14,10 +14,6 @@ on:
         description: 'Max pages to generate'
         required: false
         default: '200'
-      force_discover:
-        description: 'Force discover new domains (true/false)'
-        required: false
-        default: 'false'
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -144,17 +140,12 @@ jobs:
         if: steps.pick.outputs.domain != ''
         run: python domain_discovery.py --update-manifest ${{ steps.pick.outputs.domain }}
 
-      # Step 8: Auto-discover new domains if queue is low
+      # Step 8: Auto-discover new domains if queue is low (< 3 pending)
       - name: Refill queue if needed
         if: steps.pick.outputs.domain != ''
         run: |
-          if [ "${{ github.event.inputs.force_discover }}" == "true" ]; then
-            echo "Force discovering new domains..."
-            python domain_discovery.py --discover --discover-count 5
-          else
-            echo "Checking if queue needs refilling..."
-            python domain_discovery.py --refill-queue
-          fi
+          echo "Checking if queue needs refilling..."
+          python domain_discovery.py --refill-queue
 
       # Step 9: Regenerate sitemap
       - name: Generate sitemap
