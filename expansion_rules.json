@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "description": "Safety rails for self-expanding knowledge system",
+
+  "limits": {
+    "max_domains_per_day": 1,
+    "max_concepts_per_domain": 50,
+    "min_concepts_per_domain": 15,
+    "max_pages_per_day": 200,
+    "required_angles": 6,
+    "optional_angles": 2
+  },
+
+  "quality_gates": {
+    "require_concept_list": true,
+    "require_no_duplicates": true,
+    "require_evergreen": true,
+    "require_monetization_potential": true,
+    "min_priority_score": 30
+  },
+
+  "scoring_weights": {
+    "search_volume": 0.25,
+    "competition_inverse": 0.20,
+    "monetization": 0.25,
+    "evergreen_score": 0.20,
+    "closure_feasibility": 0.10
+  },
+
+  "tier_bonuses": {
+    "pre_seeded_tier_1": 25,
+    "pre_seeded_tier_2": 20,
+    "pre_seeded_tier_3": 15,
+    "finance_adjacent": 15,
+    "education_adjacent": 10,
+    "health_topics": 5
+  },
+
+  "forbidden_domains": [
+    "news",
+    "current_events",
+    "celebrity",
+    "politics",
+    "controversial_topics",
+    "gambling",
+    "adult_content",
+    "weapons",
+    "drugs"
+  ],
+
+  "forbidden_keywords": [
+    "breaking",
+    "latest",
+    "trending",
+    "viral",
+    "2024",
+    "2025",
+    "2026",
+    "new",
+    "update",
+    "rumor",
+    "leak"
+  ],
+
+  "required_patterns": {
+    "slug_format": "lowercase-hyphenated",
+    "no_positional_prefixes": true,
+    "no_date_references": true,
+    "no_brand_names": true
+  },
+
+  "adjacency_map": {
+    "finance": ["economics", "business", "investing", "accounting"],
+    "life_obligations": ["law", "insurance", "government", "family"],
+    "science": ["environment", "biology", "chemistry", "physics"],
+    "math": ["statistics", "logic", "geometry", "algebra"],
+    "health": ["nutrition", "fitness", "medicine", "mental_health"],
+    "psychology": ["behavior", "cognition", "development", "social"],
+    "technology": ["computing", "engineering", "systems", "networks"]
+  }
+}

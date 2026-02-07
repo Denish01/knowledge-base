@@ -1,0 +1,189 @@
+name: Daily Domain Expansion
+
+on:
+  schedule:
+    # Run daily at 3 AM UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    inputs:
+      force_domain:
+        description: 'Force specific domain (leave empty for auto)'
+        required: false
+        default: ''
+      pages_per_run:
+        description: 'Max pages to generate'
+        required: false
+        default: '200'
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+env:
+  GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+  GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    outputs:
+      domain: ${{ steps.pick.outputs.domain }}
+      closed: ${{ steps.check.outputs.closed }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install openai requests
+
+      - name: Show expansion status
+        run: python domain_discovery.py --status
+
+      # Step 1: Pick next domain
+      - name: Pick next domain
+        id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.force_domain }}" ]; then
+            DOMAIN="${{ github.event.inputs.force_domain }}"
+          else
+            DOMAIN=$(python domain_discovery.py --pick-next 2>/dev/null | grep "NEXT_DOMAIN=" | cut -d= -f2)
+          fi
+
+          if [ -z "$DOMAIN" ]; then
+            echo "No domain to process"
+            echo "domain=" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          echo "Selected domain: $DOMAIN"
+          echo "domain=$DOMAIN" >> $GITHUB_OUTPUT
+
+      # Step 2: Lock domain
+      - name: Lock domain
+        if: steps.pick.outputs.domain != ''
+        run: python domain_discovery.py --lock ${{ steps.pick.outputs.domain }}
+
+      # Step 3: Generate concepts if needed
+      - name: Generate concepts
+        if: steps.pick.outputs.domain != ''
+        run: |
+          DOMAIN=${{ steps.pick.outputs.domain }}
+          if [ ! -f "canonical_concepts_${DOMAIN}.json" ]; then
+            echo "Generating concepts for $DOMAIN..."
+            python domain_discovery.py --generate-concepts $DOMAIN
+          else
+            echo "Concepts already exist for $DOMAIN"
+          fi
+
+      # Step 4: Generate pages
+      - name: Generate pages
+        if: steps.pick.outputs.domain != ''
+        run: |
+          DOMAIN=${{ steps.pick.outputs.domain }}
+          COUNT=${{ github.event.inputs.pages_per_run || '200' }}
+          echo "Generating up to $COUNT pages for $DOMAIN..."
+          python knowledge_pages.py --generate-expanded --category $DOMAIN --count $COUNT
+
+      # Step 5: Check closure status
+      - name: Check closure
+        id: check
+        if: steps.pick.outputs.domain != ''
+        run: |
+          DOMAIN=${{ steps.pick.outputs.domain }}
+          python domain_discovery.py --check-closure $DOMAIN
+
+          # Check if 100% complete
+          CLOSED=$(python -c "
+          import json
+          from pathlib import Path
+          from domain_discovery import check_domain_closure
+          status = check_domain_closure('$DOMAIN')
+          print('true' if status and status['closed'] else 'false')
+          ")
+          echo "closed=$CLOSED" >> $GITHUB_OUTPUT
+
+      # Step 6: Unlock domain
+      - name: Unlock domain
+        if: steps.pick.outputs.domain != ''
+        run: |
+          DOMAIN=${{ steps.pick.outputs.domain }}
+          if [ "${{ steps.check.outputs.closed }}" == "true" ]; then
+            python domain_discovery.py --unlock $DOMAIN
+          else
+            echo "Domain not yet closed, keeping in processing state"
+          fi
+
+      # Step 7: Update manifest
+      - name: Update manifest
+        if: steps.pick.outputs.domain != ''
+        run: python domain_discovery.py --update-manifest ${{ steps.pick.outputs.domain }}
+
+      # Step 8: Regenerate sitemap
+      - name: Generate sitemap
+        if: steps.pick.outputs.domain != ''
+        run: python generate_sitemap.py
+
+      # Step 9: Commit changes
+      - name: Commit changes
+        if: steps.pick.outputs.domain != ''
+        run: |
+          DOMAIN=${{ steps.pick.outputs.domain }}
+          git config --local user.email "action@github.com"
+          git config --local user.name "Knowledge Factory Bot"
+          git add .
+
+          if [ "${{ steps.check.outputs.closed }}" == "true" ]; then
+            MSG="Auto-expand: Close $DOMAIN domain"
+          else
+            MSG="Auto-expand: Progress on $DOMAIN domain"
+          fi
+
+          git diff --staged --quiet || git commit -m "$MSG"
+          git push
+
+  deploy:
+    needs: expand
+    if: needs.expand.outputs.domain != ''
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'generated_pages'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  notify:
+    needs: [expand, deploy]
+    if: always() && needs.expand.outputs.domain != ''
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Summary
+        run: |
+          echo "## Daily Expansion Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Domain:** ${{ needs.expand.outputs.domain }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Closed:** ${{ needs.expand.outputs.closed }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Deployment: ${{ needs.deploy.result }}" >> $GITHUB_STEP_SUMMARY

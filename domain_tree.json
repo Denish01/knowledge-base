@@ -1,0 +1,163 @@
+{
+  "version": "1.0",
+  "description": "Pre-seeded domain expansion tree - guaranteed quality domains",
+
+  "tiers": {
+    "tier_1": {
+      "name": "Foundation",
+      "status": "COMPLETE",
+      "domains": {
+        "finance": {
+          "concepts": 25,
+          "pages": 175,
+          "rpm_estimate": "$25-45",
+          "subcategories": ["investments", "retirement", "taxes", "banking", "metrics"]
+        },
+        "life_obligations": {
+          "concepts": 105,
+          "pages": 840,
+          "rpm_estimate": "$20-35",
+          "subcategories": ["tax_obligations", "insurance_obligations", "debt_obligations", "retirement_obligations", "legal_obligations", "housing_obligations", "family_dependency", "child_support", "spousal_support", "government_benefits", "payment_mechanics", "employment_obligations", "family_budget"]
+        },
+        "science": {
+          "concepts": 25,
+          "pages": 200,
+          "rpm_estimate": "$10-20",
+          "subcategories": ["biology", "chemistry", "physics", "earth_science"]
+        },
+        "math": {
+          "concepts": 25,
+          "pages": 200,
+          "rpm_estimate": "$10-20",
+          "subcategories": ["arithmetic", "algebra", "geometry", "statistics"]
+        }
+      }
+    },
+
+    "tier_2": {
+      "name": "Expansion",
+      "status": "QUEUED",
+      "domains": {
+        "economics": {
+          "concepts_target": 30,
+          "priority": 92,
+          "rpm_estimate": "$25-40",
+          "parent": "finance",
+          "subcategories": ["microeconomics", "macroeconomics", "markets", "policy", "trade"]
+        },
+        "health": {
+          "concepts_target": 40,
+          "priority": 88,
+          "rpm_estimate": "$20-35",
+          "parent": null,
+          "subcategories": ["body_systems", "conditions", "prevention", "wellness", "medical_terms"]
+        },
+        "psychology": {
+          "concepts_target": 25,
+          "priority": 75,
+          "rpm_estimate": "$15-25",
+          "parent": "life_obligations",
+          "subcategories": ["cognitive", "behavioral", "developmental", "social", "clinical"]
+        },
+        "technology": {
+          "concepts_target": 35,
+          "priority": 70,
+          "rpm_estimate": "$15-30",
+          "parent": null,
+          "subcategories": ["computing_basics", "internet", "hardware", "software", "security"]
+        }
+      }
+    },
+
+    "tier_3": {
+      "name": "Scale",
+      "status": "PLANNED",
+      "domains": {
+        "law": {
+          "concepts_target": 30,
+          "priority": 65,
+          "rpm_estimate": "$30-50",
+          "parent": "life_obligations",
+          "subcategories": ["contracts", "property", "torts", "criminal", "constitutional"]
+        },
+        "business": {
+          "concepts_target": 35,
+          "priority": 60,
+          "rpm_estimate": "$20-35",
+          "parent": "finance",
+          "subcategories": ["management", "marketing", "operations", "strategy", "entrepreneurship"]
+        },
+        "environment": {
+          "concepts_target": 25,
+          "priority": 55,
+          "rpm_estimate": "$10-20",
+          "parent": "science",
+          "subcategories": ["ecosystems", "climate", "conservation", "pollution", "sustainability"]
+        },
+        "nutrition": {
+          "concepts_target": 30,
+          "priority": 50,
+          "rpm_estimate": "$15-25",
+          "parent": "health",
+          "subcategories": ["macronutrients", "micronutrients", "diets", "metabolism", "food_science"]
+        }
+      }
+    },
+
+    "tier_4": {
+      "name": "Synthesis",
+      "status": "PLANNED",
+      "domains": {
+        "philosophy": {
+          "concepts_target": 25,
+          "priority": 45,
+          "rpm_estimate": "$8-15",
+          "parent": "psychology",
+          "subcategories": ["ethics", "logic", "metaphysics", "epistemology", "aesthetics"]
+        },
+        "sociology": {
+          "concepts_target": 25,
+          "priority": 40,
+          "rpm_estimate": "$10-18",
+          "parent": null,
+          "subcategories": ["institutions", "culture", "stratification", "deviance", "change"]
+        },
+        "history": {
+          "concepts_target": 50,
+          "priority": 35,
+          "rpm_estimate": "$8-15",
+          "parent": null,
+          "subcategories": ["ancient", "medieval", "modern", "methods", "historiography"]
+        },
+        "geography": {
+          "concepts_target": 30,
+          "priority": 30,
+          "rpm_estimate": "$8-15",
+          "parent": "science",
+          "subcategories": ["physical", "human", "cartography", "regions", "geopolitics"]
+        }
+      }
+    }
+  },
+
+  "expansion_order": [
+    "economics",
+    "health",
+    "psychology",
+    "technology",
+    "law",
+    "business",
+    "environment",
+    "nutrition",
+    "philosophy",
+    "sociology",
+    "history",
+    "geography"
+  ],
+
+  "total_planned": {
+    "domains": 16,
+    "concepts_estimated": 500,
+    "pages_estimated": 4000
+  }
+}
