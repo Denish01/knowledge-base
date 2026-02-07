@@ -1,0 +1,38 @@
+---
+title: "What is Disability Insurance?"
+slug: disability-insurance
+description: "A clear, simple explanation of disability insurance - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-06
+---
+
+# What is Disability Insurance?
+
+Disability insurance is a type of insurance that provides financial protection to individuals who become unable to work due to a physical or mental disability.
+
+Disability insurance is designed to help individuals maintain their standard of living and meet their financial obligations, such as paying bills and supporting their families, in the event that they are no longer able to work. This type of insurance can provide a portion of an individual's income, typically ranging from 50 to 70 percent, to help replace lost earnings. Disability insurance can be purchased as an individual policy or as a group policy through an employer.
+
+There are different types of disability insurance, including short-term and long-term disability insurance. Short-term disability insurance provides benefits for a limited period, usually up to a year, while long-term disability insurance provides benefits for an extended period, often until the individual reaches retirement age. The specific terms and conditions of a disability insurance policy can vary depending on the insurance company and the type of policy.
+
+In addition to providing financial protection, disability insurance can also offer a range of other benefits, such as help with rehabilitation and return-to-work programs. These programs can assist individuals in recovering from their disability and returning to work as soon as possible. Disability insurance can also provide a sense of security and peace of mind, knowing that financial support is available in the event of a disability.
+
+The key components of disability insurance include:
+* Definition of disability: The specific criteria used to determine whether an individual is eligible for benefits, such as the inability to perform job-related tasks or the inability to engage in any occupation.
+* Elimination period: The length of time an individual must be disabled before benefits begin, often ranging from 30 to 90 days.
+* Benefit period: The length of time benefits are paid, which can range from a few months to several years or even a lifetime.
+* Benefit amount: The amount of money paid to the individual each month, which is typically a percentage of their pre-disability income.
+* Premiums: The amount of money paid by the individual or employer to purchase and maintain the insurance policy.
+* Riders: Optional add-ons to the policy that provide additional benefits, such as cost-of-living adjustments or waiver of premium.
+
+Some common misconceptions about disability insurance include:
+* That it only covers work-related injuries or illnesses, when in fact it can cover a wide range of disabilities, including those that are not work-related.
+* That it is only necessary for individuals in high-risk jobs, when in fact anyone can become disabled at any time.
+* That it is too expensive, when in fact the cost of premiums can be relatively low compared to the potential benefits.
+* That it is only available through employers, when in fact individual policies are also available for purchase.
+
+For example, consider a 35-year-old accountant who becomes disabled due to a chronic illness. If the accountant has a disability insurance policy, they may be eligible to receive benefits that replace 60 percent of their pre-disability income, allowing them to continue paying their mortgage, car loan, and other living expenses while they are unable to work.
+
+In summary, disability insurance provides financial protection to individuals who become unable to work due to a physical or mental disability, helping them maintain their standard of living and meet their financial obligations.
+
+---
+
+*This is an evergreen reference page. Content is factual and timeless.*

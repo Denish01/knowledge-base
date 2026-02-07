@@ -1,0 +1,42 @@
+---
+title: "What is Examples Of Required Minimum Distribution?"
+slug: examples-of-required-minimum-distribution
+description: "A clear, simple explanation of examples of required minimum distribution - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-06
+---
+
+# What is Examples Of Required Minimum Distribution?
+
+1. INTRODUCTION
+A required minimum distribution (RMD) is the minimum amount that must be withdrawn from a retirement account each year. This rule applies to certain types of accounts, such as traditional IRAs and 401(k)s, once the account owner reaches a certain age. The purpose of RMDs is to ensure that retirement savings are used to support the account owner during their lifetime, rather than being left to accumulate indefinitely.
+
+2. EVERYDAY EXAMPLES
+Consider the following everyday examples of RMDs:
+- John, a 72-year-old retiree, has a traditional IRA with a balance of $100,000. Based on his age and account balance, his RMD for the year is $3,900. He must withdraw at least this amount from his IRA by the end of the year to avoid penalties.
+- Emily, a 75-year-old widow, inherited a traditional 401(k) from her late husband. The account has a balance of $50,000, and her RMD for the year is $2,000. She can choose to withdraw this amount or more, but she cannot leave the money in the account without taking the minimum distribution.
+- David, a 70-year-old small business owner, has a SEP-IRA with a balance of $200,000. His RMD for the year is $8,000, which he must withdraw by the end of the year to comply with the rules.
+- Rachel, a 72-year-old retired teacher, has a traditional IRA with a balance of $150,000. Her RMD for the year is $5,900, which she can use to support her living expenses in retirement.
+
+3. NOTABLE EXAMPLES
+There are also some notable examples of RMDs:
+- The Internal Revenue Service (IRS) provides a worksheet to help account owners calculate their RMDs. For example, if an account owner has a traditional IRA with a balance of $250,000 and is 80 years old, their RMD would be $11,250, based on the IRS's uniform lifetime table.
+- Some retirement accounts, such as Roth IRAs, do not have RMDs during the account owner's lifetime. However, if the account owner inherits a traditional IRA or 401(k), they may be subject to RMDs, even if they are not yet 72 years old.
+- The IRS imposes a 50% penalty on account owners who fail to take their RMDs. For example, if an account owner has an RMD of $5,000 and fails to take it, they may be subject to a penalty of $2,500, in addition to paying income tax on the distribution.
+
+4. EDGE CASES
+There are also some edge cases to consider:
+- If an account owner has a traditional IRA and is still working, they may be able to delay taking RMDs from their employer-sponsored 401(k) plan, but not from their IRA. For example, if John is 75 years old and still working, he may not have to take an RMD from his 401(k) plan, but he must still take an RMD from his traditional IRA.
+- If an account owner has a charitable remainder trust, they may be able to use their RMD to fund the trust and avoid paying income tax on the distribution. For example, if Emily has a charitable remainder trust and an RMD of $10,000, she can use the RMD to fund the trust and avoid paying income tax on the distribution.
+
+5. NON-EXAMPLES
+There are also some things that people often confuse with RMDs, but are not:
+- Voluntary withdrawals from a retirement account are not the same as RMDs. For example, if David withdraws $10,000 from his IRA at age 60, this is a voluntary withdrawal, not an RMD.
+- Loans from a retirement account are not the same as RMDs. For example, if Rachel borrows $5,000 from her 401(k) plan, this is a loan, not an RMD.
+- Contributions to a retirement account are not the same as RMDs. For example, if John contributes $6,000 to his IRA at age 70, this is a contribution, not an RMD.
+
+6. PATTERN
+All valid examples of RMDs have one thing in common: they involve the minimum amount that must be withdrawn from a retirement account each year, based on the account owner's age and account balance. Whether it's a traditional IRA, a 401(k) plan, or another type of retirement account, the RMD rules apply to ensure that retirement savings are used to support the account owner during their lifetime. By understanding how RMDs work, account owners can plan their retirement income and avoid penalties for failing to take their minimum distributions.
+
+---
+
+*This is an evergreen reference page. Content is factual and timeless.*

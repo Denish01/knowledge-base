@@ -1,0 +1,36 @@
+---
+title: "What is Shared Custody?"
+slug: shared-custody
+description: "A clear, simple explanation of shared custody - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-06
+---
+
+# What is Shared Custody?
+
+Shared custody is a child custody arrangement where both parents have legal and physical responsibility for their child, and the child spends time living with each parent.
+
+Shared custody is an arrangement that allows both parents to be involved in their child's life, even if they are no longer living together. This type of arrangement can be beneficial for children, as it allows them to maintain a relationship with both parents and can help to reduce conflict between the parents. In a shared custody arrangement, both parents are responsible for making decisions about their child's care, education, and well-being, and the child typically spends time living with each parent.
+
+There are different types of shared custody arrangements, and the specific details of the arrangement can vary depending on the needs and circumstances of the family. For example, the parents may have joint physical custody, where the child spends an equal amount of time living with each parent, or they may have joint legal custody, where both parents have the right to make decisions about the child's care, but the child may live with one parent most of the time. In some cases, the parents may have a combination of joint physical and legal custody.
+
+The key components of shared custody include:
+* Joint decision-making, where both parents have the right to make decisions about their child's care and well-being
+* Shared physical care, where the child spends time living with each parent
+* Co-parenting, where both parents work together to raise their child and make decisions about their care
+* Communication, where both parents communicate with each other about their child's needs and schedule
+* Flexibility, where both parents are able to adapt to changing circumstances and make adjustments to the custody arrangement as needed
+* Stability, where the custody arrangement provides a stable and predictable environment for the child
+
+Some common misconceptions about shared custody include:
+* That shared custody is always a 50-50 arrangement, where the child spends an equal amount of time living with each parent
+* That shared custody is only possible if the parents have a good relationship and can get along
+* That shared custody is always in the best interests of the child, without considering the individual circumstances of the family
+* That shared custody means that the parents will not have to communicate with each other or make joint decisions about their child's care
+
+A real-world example of shared custody is a situation where a mother and father have a child together, but they are no longer in a romantic relationship. They decide to share custody of their child, with the child spending weekdays living with the mother and weekends living with the father. The parents communicate with each other about their child's schedule and needs, and they make joint decisions about the child's education and extracurricular activities.
+
+Summary: Shared custody is a child custody arrangement where both parents have legal and physical responsibility for their child, and the child spends time living with each parent, allowing both parents to be involved in their child's life and make decisions about their care and well-being.
+
+---
+
+*This is an evergreen reference page. Content is factual and timeless.*

@@ -1,0 +1,38 @@
+---
+title: "What is Dependent Care?"
+slug: dependent-care
+description: "A clear, simple explanation of dependent care - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-06
+---
+
+# What is Dependent Care?
+
+Dependent care refers to the support and assistance provided to individuals who are unable to care for themselves, such as children, adults with disabilities, and elderly persons.
+
+Dependent care is a type of care that involves providing assistance with daily living activities, such as bathing, dressing, and feeding. This type of care can be provided by family members, friends, or professional caregivers, and can take place in the home, in a care facility, or in a community-based setting. The goal of dependent care is to help individuals with disabilities or limitations to live as independently as possible and to maintain their physical and emotional well-being.
+
+Dependent care can take many forms, depending on the needs of the individual. For example, some individuals may require assistance with personal care, such as bathing and dressing, while others may need help with managing their finances or accessing medical care. In some cases, dependent care may involve providing emotional support and companionship, such as listening to the individual's concerns or providing reassurance. Regardless of the specific type of care provided, the goal of dependent care is to promote the individual's overall health and well-being.
+
+The need for dependent care can arise from a variety of circumstances, including disability, illness, or injury. In some cases, individuals may be born with disabilities that require lifelong care and support. In other cases, individuals may experience accidents or illnesses that result in temporary or permanent disabilities. As people age, they may also require dependent care due to declining physical or cognitive abilities. Whatever the reason, dependent care is an essential component of supporting individuals who are unable to care for themselves.
+
+The main principles of dependent care include:
+* Providing assistance with daily living activities, such as bathing, dressing, and feeding
+* Promoting the individual's independence and autonomy, while also ensuring their safety and well-being
+* Respecting the individual's dignity and privacy, and treating them with compassion and respect
+* Providing emotional support and companionship, such as listening to the individual's concerns or providing reassurance
+* Coordinating with other caregivers and healthcare professionals to ensure comprehensive care
+* Advocating for the individual's needs and interests, and ensuring that their rights are respected
+
+Despite its importance, dependent care is often misunderstood. Some common misconceptions about dependent care include:
+* That dependent care is only necessary for elderly persons, when in fact it can be necessary for individuals of all ages
+* That dependent care is only provided by family members, when in fact it can be provided by professional caregivers or friends
+* That dependent care is only necessary for individuals with severe disabilities, when in fact it can be necessary for individuals with a range of needs and abilities
+* That dependent care is a temporary solution, when in fact it can be a long-term or lifelong need
+
+A real-world example of dependent care is a family member who provides care and support to a parent with dementia. The family member may assist with daily living activities, such as bathing and dressing, and also provide emotional support and companionship. The family member may also coordinate with other caregivers and healthcare professionals to ensure that the parent receives comprehensive care and support.
+
+Dependent care is a vital component of supporting individuals who are unable to care for themselves, and involves providing assistance with daily living activities, promoting independence and autonomy, and respecting the individual's dignity and privacy.
+
+---
+
+*This is an evergreen reference page. Content is factual and timeless.*

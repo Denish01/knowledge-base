@@ -1,0 +1,190 @@
+{
+  "domain": "life_obligations",
+  "version": "2.0",
+  "description": "Merged mega-list: structural life obligations + family/support obligations - NO advice, NO jurisdiction-specific",
+
+  "concepts": {
+    "tax_obligations": [
+      "income tax",
+      "tax filing",
+      "tax withholding",
+      "tax deduction",
+      "tax credit",
+      "estimated tax",
+      "tax refund",
+      "tax liability"
+    ],
+    "insurance_obligations": [
+      "health insurance",
+      "auto insurance",
+      "homeowners insurance",
+      "renters insurance",
+      "life insurance",
+      "disability insurance",
+      "insurance premium",
+      "insurance deductible"
+    ],
+    "debt_obligations": [
+      "mortgage payment",
+      "student loan",
+      "credit card debt",
+      "auto loan",
+      "personal loan",
+      "debt repayment",
+      "minimum payment",
+      "loan interest"
+    ],
+    "retirement_obligations": [
+      "retirement savings",
+      "employer match",
+      "retirement contribution",
+      "required minimum distribution",
+      "social security",
+      "pension",
+      "retirement withdrawal"
+    ],
+    "legal_obligations": [
+      "will",
+      "power of attorney",
+      "healthcare directive",
+      "beneficiary designation",
+      "estate planning",
+      "probate",
+      "guardianship"
+    ],
+    "housing_obligations": [
+      "rent payment",
+      "property tax",
+      "home maintenance",
+      "utility bills",
+      "homeowners association fees",
+      "home inspection"
+    ],
+    "family_dependency": [
+      "dependent",
+      "custodial parent",
+      "noncustodial parent",
+      "shared custody",
+      "primary caregiver",
+      "number of dependents",
+      "household size",
+      "cohabitation",
+      "financial responsibility",
+      "parental obligation"
+    ],
+    "child_support": [
+      "child support",
+      "child support obligation",
+      "income shares model",
+      "percentage of income model",
+      "gross income for support",
+      "net income for support",
+      "support adjustment",
+      "custody time adjustment",
+      "child support duration",
+      "support modification",
+      "support deviation",
+      "cost sharing"
+    ],
+    "spousal_support": [
+      "spousal support",
+      "alimony",
+      "temporary support",
+      "long-term support",
+      "income disparity",
+      "standard of living",
+      "spousal support duration",
+      "earning capacity",
+      "self-sufficiency",
+      "rehabilitative support"
+    ],
+    "government_benefits": [
+      "government benefits",
+      "income eligibility",
+      "means testing",
+      "benefit threshold",
+      "benefit phaseout",
+      "household income",
+      "dependent qualification",
+      "benefit reduction",
+      "assistance programs",
+      "public assistance",
+      "benefit estimation",
+      "eligibility criteria"
+    ],
+    "payment_mechanics": [
+      "payment obligation",
+      "payment schedule",
+      "shared expenses",
+      "proportional contribution",
+      "income adjustment",
+      "obligation estimate",
+      "affordability assessment",
+      "financial burden"
+    ],
+    "employment_obligations": [
+      "employment contract",
+      "non-compete agreement",
+      "direct deposit",
+      "pay stub",
+      "benefits enrollment",
+      "open enrollment"
+    ],
+    "family_budget": [
+      "dependent care",
+      "education funding",
+      "family budget"
+    ]
+  },
+
+  "boundary": {
+    "includes": [
+      "structural obligations adults face",
+      "recurring financial responsibilities",
+      "legal document requirements",
+      "insurance coverage types",
+      "debt repayment structures",
+      "tax filing requirements",
+      "family dependency relationships",
+      "support payment structures",
+      "government benefit eligibility",
+      "payment calculation models"
+    ],
+    "excludes": [
+      "specific legal advice",
+      "jurisdiction-specific laws",
+      "court rulings",
+      "enforcement procedures",
+      "penalties or fines",
+      "named statutes",
+      "step-by-step filing guidance",
+      "investment recommendations",
+      "outcome guarantees",
+      "should/must/recommended language"
+    ]
+  },
+
+  "closure_metrics": {
+    "concept_coverage": 0.98,
+    "angle_coverage": 1.0,
+    "required_angles": 6
+  },
+
+  "cross_domain_links": {
+    "finance": [
+      "gross income",
+      "net income",
+      "emergency fund",
+      "retirement savings",
+      "debt repayment"
+    ]
+  },
+
+  "notes": [
+    "Descriptive only - what IS, not what SHOULD BE",
+    "No jurisdiction-specific content",
+    "No advice language",
+    "Structure over strategy",
+    "Estimators only, never guarantees"
+  ]
+}

@@ -640,6 +640,126 @@ TOPIC_CATEGORIES = {
         "annual percentage yield",
         "amortization schedule",
     ],
+    "life_obligations": [
+        # Tax obligations (8)
+        "income tax",
+        "tax filing",
+        "tax withholding",
+        "tax deduction",
+        "tax credit",
+        "estimated tax",
+        "tax refund",
+        "tax liability",
+        # Insurance obligations (8)
+        "health insurance",
+        "auto insurance",
+        "homeowners insurance",
+        "renters insurance",
+        "life insurance",
+        "disability insurance",
+        "insurance premium",
+        "insurance deductible",
+        # Debt obligations (8)
+        "mortgage payment",
+        "student loan",
+        "credit card debt",
+        "auto loan",
+        "personal loan",
+        "debt repayment",
+        "minimum payment",
+        "loan interest",
+        # Retirement obligations (7)
+        "retirement savings",
+        "employer match",
+        "retirement contribution",
+        "required minimum distribution",
+        "social security",
+        "pension",
+        "retirement withdrawal",
+        # Legal obligations (7)
+        "will",
+        "power of attorney",
+        "healthcare directive",
+        "beneficiary designation",
+        "estate planning",
+        "probate",
+        "guardianship",
+        # Housing obligations (6)
+        "rent payment",
+        "property tax",
+        "home maintenance",
+        "utility bills",
+        "homeowners association fees",
+        "home inspection",
+        # Family & Dependency (10)
+        "dependent",
+        "custodial parent",
+        "noncustodial parent",
+        "shared custody",
+        "primary caregiver",
+        "number of dependents",
+        "household size",
+        "cohabitation",
+        "financial responsibility",
+        "parental obligation",
+        # Child Support (12)
+        "child support",
+        "child support obligation",
+        "income shares model",
+        "percentage of income model",
+        "gross income for support",
+        "net income for support",
+        "support adjustment",
+        "custody time adjustment",
+        "child support duration",
+        "support modification",
+        "support deviation",
+        "cost sharing",
+        # Spousal Support (10)
+        "spousal support",
+        "alimony",
+        "temporary support",
+        "long-term support",
+        "income disparity",
+        "standard of living",
+        "spousal support duration",
+        "earning capacity",
+        "self-sufficiency",
+        "rehabilitative support",
+        # Government Benefits (12)
+        "government benefits",
+        "income eligibility",
+        "means testing",
+        "benefit threshold",
+        "benefit phaseout",
+        "household income",
+        "dependent qualification",
+        "benefit reduction",
+        "assistance programs",
+        "public assistance",
+        "benefit estimation",
+        "eligibility criteria",
+        # Payment Mechanics (8)
+        "payment obligation",
+        "payment schedule",
+        "shared expenses",
+        "proportional contribution",
+        "income adjustment",
+        "obligation estimate",
+        "affordability assessment",
+        "financial burden",
+        # Employment obligations (6)
+        "employment contract",
+        "non-compete agreement",
+        "direct deposit",
+        "pay stub",
+        "benefits enrollment",
+        "open enrollment",
+        # Family Budget (3)
+        "dependent care",
+        "education funding",
+        "family budget",
+    ],
     "science": [
         "photosynthesis",
         "cellular respiration",
@@ -946,6 +1066,7 @@ EXPANSION_TO_PROMPT_TYPE = {
 
 # Reverse mapping: angle ID to human-readable topic pattern
 EXPANSION_TO_PATTERN = {
+    # Old angle IDs (for backwards compatibility)
     "definition": "{topic}",
     "how": "how does {topic} work",
     "why": "why {topic} matters",
@@ -958,6 +1079,15 @@ EXPANSION_TO_PATTERN = {
     "used_for": "what {topic} is used for",
     "misconceptions": "common misconceptions about {topic}",
     "beginner": "{topic} for beginners",
+    # New canonical angle IDs (from angle_registry.json)
+    "what-is": "{topic}",
+    "how-it-works": "how does {topic} work",
+    "what-it-depends-on": "what {topic} depends on",
+    "what-affects-it": "what affects {topic}",
+    "types-of": "types of {topic}",
+    "example-of": "examples of {topic}",
+    "common-misconceptions-about": "common misconceptions about {topic}",
+    "vs": "{topic} vs",
 }
 
 # Which angles are optional (not all concepts have these)
@@ -3262,16 +3392,30 @@ if __name__ == "__main__":
 
     elif args.generate_expanded:
         # Generate from expanded topic list
-        log_data = load_generated_log()
-        already_generated = set(log_data.get("generated", []))
+        category = args.category
+        if not category:
+            print("Error: --generate-expanded requires --category")
+            sys.exit(1)
+
+        # Check actual files on disk, not the log (fixes cross-category duplicates)
+        category_dir = OUTPUT_DIR / category
+        log_data = load_generated_log()  # Still used for tracking
 
         # Get all expanded topics
-        all_expanded = get_all_expanded_topics(
-            categories=[args.category] if args.category else None
-        )
+        all_expanded = get_all_expanded_topics(categories=[category])
 
-        # Filter out already generated
-        pending = [t for t in all_expanded if t["topic"] not in already_generated]
+        # Build set of existing files
+        existing_files = set()
+        if category_dir.exists():
+            for f in category_dir.glob("*.json"):
+                existing_files.add(f.stem)
+
+        # Filter out already generated by checking actual files
+        pending = []
+        for t in all_expanded:
+            topic_slug = slugify(t["topic"])
+            if topic_slug not in existing_files:
+                pending.append(t)
 
         if not pending:
             log("All expanded topics already generated!", "SUCCESS")

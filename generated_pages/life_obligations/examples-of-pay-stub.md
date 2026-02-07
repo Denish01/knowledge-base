@@ -1,0 +1,30 @@
+---
+title: "What is Examples Of Pay Stub?"
+slug: examples-of-pay-stub
+description: "A clear, simple explanation of examples of pay stub - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-06
+---
+
+# What is Examples Of Pay Stub?
+
+1. INTRODUCTION
+A pay stub is a document that shows an employee's pay details for a specific period. It includes information such as the employee's name, pay rate, hours worked, deductions, and net pay. Pay stubs are typically provided by employers to their employees with each paycheck. They serve as a record of the employee's earnings and can be useful for tracking income, filing taxes, and verifying employment.
+
+2. EVERYDAY EXAMPLES
+Pay stubs are a common part of many people's lives. For example, John, a full-time office worker, receives a pay stub every two weeks that shows his gross pay of $2,000, minus $400 in taxes and $100 in health insurance premiums, resulting in a net pay of $1,500. Emily, a part-time retail worker, gets a pay stub every week that shows her pay rate of $12 per hour, with 20 hours worked, totaling $240, minus $40 in taxes, resulting in a net pay of $200. Michael, a freelance writer, receives a pay stub from his client at the end of each project, showing his pay rate of $50 per hour, with 10 hours worked, totaling $500, minus $100 in taxes, resulting in a net pay of $400. Sarah, a restaurant server, gets a pay stub every two weeks that shows her pay rate of $8 per hour, with 40 hours worked, totaling $320, plus $200 in tips, minus $80 in taxes, resulting in a net pay of $440.
+
+3. NOTABLE EXAMPLES
+Some well-known companies provide pay stubs to their employees. For instance, a Walmart employee may receive a pay stub that shows their hourly wage, hours worked, and any deductions for benefits or taxes. A McDonald's employee may get a pay stub that shows their pay rate, hours worked, and any deductions for uniform expenses or taxes. A nurse at a hospital may receive a pay stub that shows their salary, hours worked, and any deductions for health insurance premiums or retirement contributions.
+
+4. EDGE CASES
+There are some unusual cases where pay stubs may be provided. For example, a person who participates in a clinical trial may receive a pay stub from the research institution, showing their payment for participating in the study, such as $1,000 for a one-day study, minus $200 in taxes, resulting in a net pay of $800. A person who sells items online through a platform like eBay or Amazon may receive a pay stub from the platform, showing their earnings from sales, such as $500 in sales, minus $100 in fees, resulting in a net pay of $400.
+
+5. NON-EXAMPLES
+Some people may confuse other documents with pay stubs, but they are not the same. For instance, a W-2 form is not a pay stub, although it does show an employee's income and taxes withheld for the year. A receipt for a purchase is not a pay stub, as it only shows the details of a single transaction. A contract or agreement is not a pay stub, as it outlines the terms of employment or a business deal, but does not provide a record of payments made.
+
+6. PATTERN
+All valid examples of pay stubs have certain things in common. They are documents provided by an employer or payer to an employee or payee, showing the details of their pay for a specific period. They include information such as the pay rate, hours worked, gross pay, deductions, and net pay. They are typically provided on a regular basis, such as weekly, biweekly, or monthly, and serve as a record of the employee's earnings. Whether it's a full-time employee, a part-time worker, or a freelancer, pay stubs provide a clear and transparent record of their pay, and are an essential part of managing one's finances and tracking income.
+
+---
+
+*This is an evergreen reference page. Content is factual and timeless.*
