@@ -255,16 +255,18 @@ def check_domain_closure(domain_name):
         if config.get("required", False)
     ]
 
-    # Check structured folder
-    structured_dir = OUTPUT_DIR / f"{domain_name}_structured"
-    if not structured_dir.exists():
+    # Check domain folder (try both with and without _structured suffix for compatibility)
+    domain_dir = OUTPUT_DIR / domain_name
+    if not domain_dir.exists():
+        domain_dir = OUTPUT_DIR / f"{domain_name}_structured"
+    if not domain_dir.exists():
         return {"closed": False, "concepts": 0, "pages": 0, "completion": 0}
 
     total_concepts = 0
     total_pages = 0
     complete_concepts = 0
 
-    for concept_dir in structured_dir.iterdir():
+    for concept_dir in domain_dir.iterdir():
         if not concept_dir.is_dir():
             continue
 
@@ -339,13 +341,161 @@ def update_manifest(domain_name, status_info):
     return True
 
 
-def discover_related_concepts(domain_name):
-    """Discover new domains from existing content (future enhancement)."""
-    # TODO: Scan generated pages for "related_topics" in JSON
-    # TODO: Query Google Trends API for rising topics
-    # TODO: Crawl Wikipedia category trees
-    print(f"Discovery for {domain_name}: Not yet implemented")
-    return []
+def get_all_known_domains():
+    """Get all domains we know about (completed, processing, pending)."""
+    known = set()
+
+    # From pending_domains.json
+    pending = load_json(PENDING_DOMAINS_FILE)
+    if pending:
+        for d in pending.get("queue", []):
+            known.add(d["domain"].lower())
+        for d in pending.get("completed", []):
+            known.add(d.lower())
+
+    # From DOMAIN_MANIFEST.json
+    manifest = load_json(DOMAIN_MANIFEST_FILE)
+    if manifest:
+        for domain in manifest.get("domains", {}).keys():
+            known.add(domain.lower())
+
+    return known
+
+
+def discover_new_domains(count=5):
+    """Use AI to discover new domains that don't exist yet."""
+    client = get_groq_client()
+    if not client:
+        return []
+
+    known_domains = get_all_known_domains()
+    print(f"Known domains ({len(known_domains)}): {', '.join(sorted(known_domains))}")
+
+    prompt = f"""Suggest {count + 5} new knowledge domains for an educational encyclopedia website.
+
+EXISTING DOMAINS (DO NOT SUGGEST THESE OR SYNONYMS):
+{', '.join(sorted(known_domains))}
+
+Requirements for new domains:
+- Single-word or two-word domain names (e.g., "geography", "music-theory", "astronomy")
+- Evergreen educational topics (not trending/temporal)
+- High search volume potential
+- Can be broken into 25-50 distinct concepts
+- No overlap with existing domains
+- No controversial topics
+- No brand-specific content
+- Suitable for a "What is X?" educational format
+
+Output format (JSON array):
+[
+  {{"domain": "domain-slug", "priority": 50, "concepts_estimated": 30, "notes": "Brief description"}},
+  ...
+]
+
+Priority scale: 40-60 (lower priority since auto-discovered)
+Return ONLY the JSON array, no other text."""
+
+    try:
+        response = client.chat.completions.create(
+            model="llama-3.3-70b-versatile",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.7,
+            max_tokens=2000
+        )
+
+        content = response.choices[0].message.content.strip()
+
+        # Extract JSON
+        if "```json" in content:
+            content = content.split("```json")[1].split("```")[0]
+        elif "```" in content:
+            content = content.split("```")[1].split("```")[0]
+
+        suggestions = json.loads(content)
+
+        # Filter out any that somehow match existing domains
+        new_domains = []
+        for s in suggestions:
+            domain_slug = slugify(s["domain"])
+            if domain_slug not in known_domains and domain_slug.replace("-", "_") not in known_domains:
+                s["domain"] = domain_slug
+                new_domains.append(s)
+
+        print(f"Discovered {len(new_domains)} new domains")
+        return new_domains[:count]  # Return only requested count
+
+    except Exception as e:
+        print(f"ERROR discovering domains: {e}")
+        return []
+
+
+def add_domains_to_queue(new_domains):
+    """Add newly discovered domains to the queue."""
+    pending = load_json(PENDING_DOMAINS_FILE)
+    if not pending:
+        pending = {"version": "1.0", "queue": [], "completed": [], "processing": None}
+
+    known = get_all_known_domains()
+    added = 0
+
+    for domain_info in new_domains:
+        domain_slug = domain_info["domain"]
+
+        # Double-check not duplicate
+        if domain_slug in known:
+            print(f"  Skipping duplicate: {domain_slug}")
+            continue
+
+        new_entry = {
+            "domain": domain_slug,
+            "priority": domain_info.get("priority", 45),
+            "source": "auto-discovered",
+            "tier": 4,
+            "concepts_estimated": domain_info.get("concepts_estimated", 25),
+            "discovered_date": datetime.now().strftime("%Y-%m-%d"),
+            "status": "pending",
+            "notes": domain_info.get("notes", "Auto-discovered domain")
+        }
+
+        pending["queue"].append(new_entry)
+        known.add(domain_slug)
+        added += 1
+        print(f"  Added to queue: {domain_slug}")
+
+    if added > 0:
+        pending["last_updated"] = datetime.now().strftime("%Y-%m-%d")
+        save_json(PENDING_DOMAINS_FILE, pending)
+        print(f"Added {added} new domains to queue")
+
+    return added
+
+
+def check_and_refill_queue(min_pending=3, refill_count=5):
+    """Check if queue needs refilling and discover new domains if needed."""
+    pending = load_json(PENDING_DOMAINS_FILE)
+    if not pending:
+        return False
+
+    # Count pending domains
+    queue = pending.get("queue", [])
+    pending_count = sum(1 for d in queue if d.get("status") == "pending")
+
+    print(f"Pending domains in queue: {pending_count}")
+
+    if pending_count >= min_pending:
+        print(f"Queue has enough domains (>= {min_pending}). No refill needed.")
+        return False
+
+    print(f"Queue low (< {min_pending}). Discovering new domains...")
+
+    # Discover new domains
+    new_domains = discover_new_domains(count=refill_count)
+
+    if new_domains:
+        added = add_domains_to_queue(new_domains)
+        return added > 0
+
+    return False
 
 
 def get_queue_status():
@@ -408,7 +558,11 @@ def main():
     parser.add_argument("--update-manifest", type=str, metavar="DOMAIN",
                         help="Update manifest with domain status")
     parser.add_argument("--discover", action="store_true",
-                        help="Run discovery for new domains (future)")
+                        help="Discover and add new domains to queue")
+    parser.add_argument("--discover-count", type=int, default=5,
+                        help="Number of domains to discover (default: 5)")
+    parser.add_argument("--refill-queue", action="store_true",
+                        help="Refill queue if running low (< 3 pending)")
     parser.add_argument("--auto", action="store_true",
                         help="Full auto-expansion cycle")
 
@@ -448,7 +602,14 @@ def main():
             update_manifest(args.update_manifest, status)
 
     elif args.discover:
-        discover_related_concepts("all")
+        new_domains = discover_new_domains(count=args.discover_count)
+        if new_domains:
+            add_domains_to_queue(new_domains)
+        else:
+            print("No new domains discovered")
+
+    elif args.refill_queue:
+        check_and_refill_queue(min_pending=3, refill_count=5)
 
     elif args.auto:
         # Full auto-expansion cycle

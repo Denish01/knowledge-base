@@ -140,12 +140,19 @@ jobs:
         if: steps.pick.outputs.domain != ''
         run: python domain_discovery.py --update-manifest ${{ steps.pick.outputs.domain }}
 
-      # Step 8: Regenerate sitemap
+      # Step 8: Auto-discover new domains if queue is low
+      - name: Refill queue if needed
+        if: steps.pick.outputs.domain != ''
+        run: |
+          echo "Checking if queue needs refilling..."
+          python domain_discovery.py --refill-queue
+
+      # Step 9: Regenerate sitemap
       - name: Generate sitemap
         if: steps.pick.outputs.domain != ''
         run: python generate_sitemap.py
 
-      # Step 9: Commit changes
+      # Step 10: Commit changes
       - name: Commit changes
         if: steps.pick.outputs.domain != ''
         run: |
