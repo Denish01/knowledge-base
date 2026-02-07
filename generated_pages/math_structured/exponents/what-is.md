@@ -1,0 +1,38 @@
+---
+title: "What is Exponents?"
+slug: exponents
+description: "A clear, simple explanation of exponents - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-06
+---
+
+# What is Exponents?
+
+Exponents refer to a mathematical operation that involves raising a number, called the base, to a power, which is indicated by an exponent. 
+
+The concept of exponents is a fundamental idea in mathematics, and it is used to simplify expressions and calculations. In essence, exponents are shorthand for repeated multiplication of the same number. For instance, instead of writing 2 multiplied by itself three times as 2 x 2 x 2, we can use the exponent notation 2^3 to represent the same calculation. This notation is more concise and easier to work with, especially when dealing with large numbers or complex expressions. 
+
+Exponents can also be used to represent very large or very small numbers in a more compact form. For example, the number 1,000,000 can be written as 10^6, which is much easier to read and write. Additionally, exponents are used in various mathematical formulas and equations, such as quadratic equations, polynomial equations, and exponential growth models. Understanding exponents is crucial for solving these types of equations and for working with mathematical models that describe real-world phenomena. 
+
+The rules and properties of exponents are also important to understand. For example, when multiplying two numbers with the same base, we can add the exponents, as in 2^3 x 2^4 = 2^(3+4) = 2^7. Similarly, when dividing two numbers with the same base, we can subtract the exponents, as in 2^7 ÷ 2^3 = 2^(7-3) = 2^4. These rules and properties make it easier to work with exponents and to simplify complex expressions. 
+
+Some key components of exponents include:
+* The base, which is the number being raised to a power
+* The exponent, which is the power to which the base is raised
+* The product of the base and the exponent, which is the result of the exponentiation operation
+* The rules of exponents, such as the product rule and the quotient rule
+* The properties of exponents, such as the commutative property and the associative property
+* The different types of exponents, such as positive exponents, negative exponents, and zero exponents
+
+However, there are some common misconceptions about exponents that can lead to errors and misunderstandings. For example:
+* Some people think that the exponent only applies to the number immediately before it, when in fact it applies to the entire expression inside the parentheses
+* Some people confuse the exponent with the coefficient, which is the number that multiplies the base
+* Some people think that negative exponents are always negative numbers, when in fact they can represent very small positive numbers
+* Some people have trouble understanding the concept of zero exponents, which can represent the multiplicative identity
+
+A real-world example of exponents can be seen in the calculation of compound interest. For instance, if a savings account earns an annual interest rate of 5%, and the interest is compounded annually, the amount of money in the account after 3 years can be calculated using the formula A = P(1 + r)^n, where A is the amount of money, P is the principal amount, r is the interest rate, and n is the number of years. In this example, the exponent n represents the number of times the interest is compounded, and the result is the total amount of money in the account after 3 years.
+
+In summary, exponents are a fundamental mathematical concept that represents repeated multiplication of a number and is used to simplify expressions and calculations, with a set of rules and properties that make it easier to work with and apply in various mathematical formulas and real-world problems.
+
+---
+
+*This is an evergreen reference page. Content is factual and timeless.*

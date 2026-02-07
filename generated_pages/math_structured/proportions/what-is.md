@@ -1,0 +1,38 @@
+---
+title: "What is Proportions?"
+slug: proportions
+description: "A clear, simple explanation of proportions - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-06
+---
+
+# What is Proportions?
+
+Proportions is a mathematical concept that refers to a statement that two ratios are equal, often used to solve problems involving similar objects or quantities.
+
+A proportion is a way of expressing the relationship between two sets of numbers. It is a statement that two ratios are equal, and it can be written in the form "a is to b as c is to d", or a/b = c/d. This concept is used to solve problems involving similar objects or quantities, where the ratio of corresponding parts is the same. For example, if two similar triangles have the same shape but not necessarily the same size, the ratio of their corresponding sides is the same.
+
+Proportions can be used to solve a wide range of problems, from simple calculations to complex mathematical equations. They are often used in geometry, where similar shapes have the same proportions. Proportions can also be used in other areas of mathematics, such as algebra and trigonometry. In addition to mathematics, proportions are used in many real-world applications, including architecture, engineering, and art.
+
+To understand proportions, it is essential to understand the concept of ratios. A ratio is a way of comparing two quantities by dividing one by the other. For example, if a recipe calls for a ratio of two cups of flour to one cup of sugar, this means that for every two cups of flour, one cup of sugar is needed. Ratios can be written in the form a/b, where a is the first quantity and b is the second quantity. Proportions take this concept a step further by stating that two ratios are equal.
+
+The key components of proportions include:
+* Equivalent ratios: two ratios that have the same value
+* Corresponding parts: the parts of two similar objects that have the same ratio
+* Means and extremes: the terms in a proportion, where the means are the two middle terms and the extremes are the two outer terms
+* Cross products: the products of the means and extremes in a proportion, which are equal
+* Similar shapes: shapes that have the same proportions, but not necessarily the same size
+* Scaling factor: the factor by which a shape is enlarged or reduced, while maintaining the same proportions
+
+There are several common misconceptions about proportions. Some people believe that:
+* Proportions only apply to similar shapes, when in fact they can be used to solve problems involving any type of ratio
+* Proportions are only used in mathematics, when in fact they have many real-world applications
+* Proportions are always simple to solve, when in fact they can involve complex calculations and equations
+* Proportions are only used to solve problems involving length and size, when in fact they can be used to solve problems involving any type of quantity
+
+A real-world example of proportions is a blueprint for a building. The blueprint is a scaled-down version of the actual building, and it uses proportions to ensure that the different parts of the building are in the correct ratio to each other. For example, if the blueprint is scaled down to one-tenth of the actual size, the ratio of the width of the door to the width of the room will be the same in both the blueprint and the actual building.
+
+In summary, proportions are a mathematical concept that refers to a statement that two ratios are equal, and they are used to solve problems involving similar objects or quantities by comparing the ratio of corresponding parts.
+
+---
+
+*This is an evergreen reference page. Content is factual and timeless.*
