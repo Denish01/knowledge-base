@@ -371,20 +371,30 @@ def discover_new_domains(count=5):
     known_domains = get_all_known_domains()
     print(f"Known domains ({len(known_domains)}): {', '.join(sorted(known_domains))}")
 
-    prompt = f"""Suggest {count + 5} new knowledge domains for an educational encyclopedia website.
+    prompt = f"""Suggest {count + 5} completely NEW knowledge domains for an educational encyclopedia website.
 
-EXISTING DOMAINS (DO NOT SUGGEST THESE OR SYNONYMS):
+EXISTING DOMAINS - DO NOT SUGGEST THESE OR ANY SYNONYMS/RELATED TERMS:
 {', '.join(sorted(known_domains))}
 
+BANNED similar terms (do not suggest):
+- medicine, medical, healthcare (similar to health)
+- physics, chemistry, biology (similar to science)
+- algebra, geometry, calculus (similar to math)
+- banking, investing, money (similar to finance)
+- legal, court, justice (similar to law)
+- computing, software, programming (similar to technology)
+- diet, food, eating (similar to nutrition)
+- mental-health, therapy (similar to psychology)
+- ecology, climate (similar to environment)
+- commerce, marketing (similar to business)
+
 Requirements for new domains:
-- Single-word or two-word domain names (e.g., "geography", "music-theory", "astronomy")
-- Evergreen educational topics (not trending/temporal)
+- MUST be completely different from existing domains
+- Single-word or two-word names (e.g., "geography", "music-theory", "astronomy", "linguistics", "philosophy", "architecture", "agriculture", "astronomy", "mythology", "sociology", "anthropology", "archaeology", "paleontology", "oceanography", "meteorology", "criminology", "political-science", "communication", "journalism", "photography", "culinary-arts", "fashion", "sports-science", "veterinary", "dentistry", "pharmacology", "engineering", "robotics", "aviation", "maritime", "military-history", "art-history", "music-history", "theater", "dance", "literature", "poetry", "linguistics", "etymology")
+- Evergreen educational topics
 - High search volume potential
 - Can be broken into 25-50 distinct concepts
-- No overlap with existing domains
-- No controversial topics
-- No brand-specific content
-- Suitable for a "What is X?" educational format
+- Suitable for "What is X?" educational format
 
 Output format (JSON array):
 [
@@ -392,7 +402,7 @@ Output format (JSON array):
   ...
 ]
 
-Priority scale: 40-60 (lower priority since auto-discovered)
+Priority scale: 40-60
 Return ONLY the JSON array, no other text."""
 
     try:
@@ -413,13 +423,43 @@ Return ONLY the JSON array, no other text."""
 
         suggestions = json.loads(content)
 
-        # Filter out any that somehow match existing domains
+        # Filter out any that somehow match existing domains or are too similar
+        similar_terms = {
+            "health": ["medicine", "medical", "healthcare", "wellness", "fitness"],
+            "science": ["physics", "chemistry", "biology", "scientific"],
+            "math": ["mathematics", "algebra", "geometry", "calculus", "arithmetic"],
+            "finance": ["banking", "investing", "money", "financial", "accounting"],
+            "law": ["legal", "court", "justice", "judicial", "legislation"],
+            "technology": ["computing", "software", "programming", "tech", "digital", "computer"],
+            "nutrition": ["diet", "food", "dietary", "eating"],
+            "psychology": ["mental-health", "therapy", "psychiatric", "cognitive"],
+            "environment": ["ecology", "climate", "environmental", "green"],
+            "business": ["commerce", "marketing", "corporate", "enterprise"],
+            "economics": ["economy", "economic", "macroeconomics", "microeconomics"],
+        }
+
+        # Build set of all banned terms
+        banned = set(known_domains)
+        for terms in similar_terms.values():
+            banned.update(terms)
+
         new_domains = []
         for s in suggestions:
             domain_slug = slugify(s["domain"])
-            if domain_slug not in known_domains and domain_slug.replace("-", "_") not in known_domains:
+            # Check against banned terms
+            is_banned = domain_slug in banned or domain_slug.replace("-", "_") in banned
+            # Also check if any part of the slug matches banned terms
+            if not is_banned:
+                for part in domain_slug.split("-"):
+                    if part in banned:
+                        is_banned = True
+                        break
+
+            if not is_banned:
                 s["domain"] = domain_slug
                 new_domains.append(s)
+            else:
+                print(f"  Filtered out similar domain: {domain_slug}")
 
         print(f"Discovered {len(new_domains)} new domains")
         return new_domains[:count]  # Return only requested count
