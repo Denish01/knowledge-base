@@ -1,11 +1,11 @@
 ---
-title: "What is Symbiosis Vs?"
+title: "Symbiosis vs"
 slug: symbiosis-vs
 description: "A clear, simple explanation of symbiosis vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Symbiosis Vs?
+# Symbiosis vs
 
 Symbiosis refers to a close and often long-term relationship between different species, in which one or both species benefit from the interaction. 
 

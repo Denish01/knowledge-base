@@ -1,11 +1,11 @@
 ---
-title: "What is Recession?"
+title: "What Is Recession?"
 slug: recession
 description: "A clear, simple explanation of recession - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Recession?
+# What Is Recession?
 
 Recession is a period of economic decline, characterized by reduced economic activity, lower production, and higher unemployment.
 

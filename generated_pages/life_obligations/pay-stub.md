@@ -1,11 +1,11 @@
 ---
-title: "What is Pay Stub?"
+title: "What Is Pay Stub?"
 slug: pay-stub
 description: "A clear, simple explanation of pay stub - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Pay Stub?
+# What Is Pay Stub?
 
 Pay stub is a document that provides a detailed breakdown of an employee's paycheck, including their earnings, deductions, and taxes withheld.
 

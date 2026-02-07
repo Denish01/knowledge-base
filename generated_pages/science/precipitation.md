@@ -1,11 +1,11 @@
 ---
-title: "What is Precipitation?"
+title: "What Is Precipitation?"
 slug: precipitation
 description: "A clear, simple explanation of precipitation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Precipitation?
+# What Is Precipitation?
 
 Precipitation is a process in the Earth's atmosphere that involves the formation and falling of water droplets or ice crystals to the ground.
 

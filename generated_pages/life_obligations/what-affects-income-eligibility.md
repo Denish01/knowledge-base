@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Income Eligibility?"
+title: "What Affects Income Eligibility"
 slug: what-affects-income-eligibility
 description: "A clear, simple explanation of what affects income eligibility - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Income Eligibility?
+# What Affects Income Eligibility
 
 1. INTRODUCTION:
 Income eligibility refers to the process of determining whether an individual or family qualifies for certain government programs, benefits, or services based on their income level. Understanding the factors that affect income eligibility is crucial because it helps individuals and families navigate the complex system of government assistance programs and make informed decisions about their financial situation. By knowing what influences income eligibility, people can better plan their finances, take advantage of available resources, and improve their overall well-being.

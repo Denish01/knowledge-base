@@ -1,11 +1,11 @@
 ---
-title: "What is Market Equilibrium Vs?"
+title: "Market Equilibrium vs"
 slug: market-equilibrium-vs
 description: "A clear, simple explanation of market equilibrium vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Market Equilibrium Vs?
+# Market Equilibrium vs
 
 Market equilibrium vs refers to the balance between the supply of and demand for a particular product or service in a given market, and how it compares to other economic concepts.
 

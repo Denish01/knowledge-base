@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Diversification Work?"
+title: "How Diversification Works"
 slug: how-does-diversification-work
 description: "A clear, simple explanation of how does diversification work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Diversification Work?
+# How Diversification Works
 
 1. QUICK ANSWER: Diversification works by spreading investments across different types of assets to reduce risk, as the poor performance of one investment can be offset by the good performance of another. This is achieved by allocating funds to a variety of investments, such as stocks, bonds, and real estate, to create a portfolio that is less vulnerable to market fluctuations.
 

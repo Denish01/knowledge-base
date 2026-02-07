@@ -1,11 +1,11 @@
 ---
-title: "What is Social Security Vs?"
+title: "Social Security vs"
 slug: social-security-vs
 description: "A clear, simple explanation of social security vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Social Security Vs?
+# Social Security vs
 
 Social security vs other forms of financial support is a comparison of the benefits and drawbacks of social security programs and other types of financial assistance.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Gravity?"
+title: "Types of Gravity"
 slug: types-of-gravity
 description: "A clear, simple explanation of types of gravity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Gravity?
+# Types of Gravity
 
 1. INTRODUCTION:
 The concept of gravity is a fundamental aspect of our understanding of the universe, governing the behavior of objects on Earth and in space. The study of gravity encompasses various types, each with distinct characteristics and effects. Classification of these types is essential, as it enables us to better comprehend the complexities of gravity and its role in shaping our environment. By categorizing the different types of gravity, we can gain a deeper understanding of the forces that govern the motion of objects, from the smallest subatomic particles to the vast expanses of the cosmos. This classification system allows us to identify patterns, relationships, and differences between the various types of gravity, ultimately enriching our knowledge of the natural world.

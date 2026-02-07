@@ -1,11 +1,11 @@
 ---
-title: "What is What Amortization Schedule Depends On?"
+title: "What Amortization Schedule Depends On"
 slug: what-amortization-schedule-depends-on
 description: "A clear, simple explanation of what amortization schedule depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Amortization Schedule Depends On?
+# What Amortization Schedule Depends On
 
 1. INTRODUCTION:
 An amortization schedule is a table that outlines the periodic payments made on a loan, including the amount of interest and principal paid with each payment. Understanding what an amortization schedule depends on is crucial for borrowers to make informed decisions about their loans. The dependencies of an amortization schedule are the foundation upon which the entire repayment process is built, and without them, the schedule would be inaccurate or incomplete.

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Custodial Parent?"
+title: "Example of Custodial Parent"
 slug: examples-of-custodial-parent
 description: "A clear, simple explanation of examples of custodial parent - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Custodial Parent?
+# Example of Custodial Parent
 
 1. INTRODUCTION
 A custodial parent is a parent who has primary physical custody of a child. This means they are responsible for the day-to-day care of the child, including providing a home, food, clothing, and emotional support. Custodial parents can be either mothers or fathers, and in some cases, they may be relatives or guardians.

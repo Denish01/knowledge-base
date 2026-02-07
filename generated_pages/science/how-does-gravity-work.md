@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Gravity Work?"
+title: "How Gravity Works"
 slug: how-does-gravity-work
 description: "A clear, simple explanation of how does gravity work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Gravity Work?
+# How Gravity Works
 
 1. QUICK ANSWER: Gravity is a fundamental force of nature that causes objects with mass to attract each other, with the strength of the attraction depending on the mass of the objects and the distance between them. This force is what keeps planets in orbit around their stars and causes objects to fall towards the ground when dropped.
 

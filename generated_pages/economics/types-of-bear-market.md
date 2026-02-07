@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Bear Market?"
+title: "Types of Bear Market"
 slug: types-of-bear-market
 description: "A clear, simple explanation of types of bear market - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Bear Market?
+# Types of Bear Market
 
 ## INTRODUCTION
 The concept of a bear market refers to a period of time when the overall stock market or a particular sector experiences a decline in value. Understanding the different types of bear markets is essential for investors, as it helps them make informed decisions and develop strategies to mitigate potential losses. Classification of bear markets is crucial, as it allows investors to identify the underlying causes of the market downturn and anticipate the potential duration and impact of the decline. By recognizing the distinct characteristics of each type of bear market, investors can better navigate the complexities of the financial markets and make more effective investment choices.

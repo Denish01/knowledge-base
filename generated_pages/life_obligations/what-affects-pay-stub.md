@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Pay Stub?"
+title: "What Affects Pay Stub"
 slug: what-affects-pay-stub
 description: "A clear, simple explanation of what affects pay stub - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Pay Stub?
+# What Affects Pay Stub
 
 1. INTRODUCTION:
 A pay stub is a document that shows an employee's earnings and deductions for a specific pay period. Understanding the factors that affect a pay stub is important because it helps employees manage their finances, make informed decisions about their income, and ensure they are being paid correctly. Several factors influence the information on a pay stub, and being aware of these influences can help individuals take control of their financial situation.

@@ -1,11 +1,11 @@
 ---
-title: "What is Nitrogen Cycle Vs?"
+title: "Nitrogen Cycle vs"
 slug: nitrogen-cycle-vs
 description: "A clear, simple explanation of nitrogen cycle vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Nitrogen Cycle Vs?
+# Nitrogen Cycle vs
 
 Nitrogen cycle refers to the process by which nitrogen is converted between its various forms, including nitrogen gas, ammonia, nitrite, and nitrate, in the environment.
 

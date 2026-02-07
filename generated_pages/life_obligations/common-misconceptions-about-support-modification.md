@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Support Modification?"
+title: "Common Misconceptions About Support Modification"
 slug: common-misconceptions-about-support-modification
 description: "A clear, simple explanation of common misconceptions about support modification - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Support Modification?
+# Common Misconceptions About Support Modification
 
 1. INTRODUCTION:
 Misconceptions about support modification are common because the process can be complex and emotionally charged. When people are going through a difficult time, such as a divorce or separation, they may not have all the information they need to make informed decisions. Additionally, support modification laws and procedures can vary by location, leading to confusion and misinformation. As a result, people may rely on incomplete or inaccurate information, which can lead to misunderstandings about how support modification works.

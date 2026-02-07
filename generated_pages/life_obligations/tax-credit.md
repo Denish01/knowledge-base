@@ -1,11 +1,11 @@
 ---
-title: "What is Tax Credit?"
+title: "What Is Tax Credit?"
 slug: tax-credit
 description: "A clear, simple explanation of tax credit - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Tax Credit?
+# What Is Tax Credit?
 
 Tax credit is a reduction in the amount of tax an individual or business owes to the government, usually based on certain expenses or investments made during the tax year.
 

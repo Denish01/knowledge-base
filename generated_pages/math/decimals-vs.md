@@ -1,11 +1,11 @@
 ---
-title: "What is Decimals Vs?"
+title: "Decimals vs"
 slug: decimals-vs
 description: "A clear, simple explanation of decimals vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Decimals Vs?
+# Decimals vs
 
 Decimals vs fractions refers to the comparison between two ways of representing part of a whole in mathematics. 
 

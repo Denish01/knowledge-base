@@ -1,11 +1,11 @@
 ---
-title: "What is Income Adjustment?"
+title: "What Is Income Adjustment?"
 slug: income-adjustment
 description: "A clear, simple explanation of income adjustment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Income Adjustment?
+# What Is Income Adjustment?
 
 Income adjustment is a process used to modify an individual's or household's income to account for various factors that affect their purchasing power and standard of living.
 

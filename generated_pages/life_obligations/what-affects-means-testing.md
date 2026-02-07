@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Means Testing?"
+title: "What Affects Means Testing"
 slug: what-affects-means-testing
 description: "A clear, simple explanation of what affects means testing - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Means Testing?
+# What Affects Means Testing
 
 1. INTRODUCTION:
 Means testing is a process used to determine an individual's or family's eligibility for government benefits or financial assistance. It involves evaluating their income, assets, and expenses to assess their ability to pay for certain expenses or services. Understanding the factors that affect means testing is essential, as it can significantly impact the amount of assistance one receives or the costs they incur. By recognizing these influences, individuals can better navigate the system and make informed decisions about their financial situation.

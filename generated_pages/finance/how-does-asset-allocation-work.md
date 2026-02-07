@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Asset Allocation Work?"
+title: "How Asset Allocation Works"
 slug: how-does-asset-allocation-work
 description: "A clear, simple explanation of how does asset allocation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Asset Allocation Work?
+# How Asset Allocation Works
 
 1. QUICK ANSWER: 
 Asset allocation works by dividing an investment portfolio into different types of assets, such as stocks, bonds, and cash, to balance risk and potential returns. This process involves distributing investments across various asset classes to achieve a desired investment outcome.

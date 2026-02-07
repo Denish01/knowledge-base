@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Will Work?"
+title: "How Will Works"
 slug: how-does-will-work
 description: "A clear, simple explanation of how does will work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Will Work?
+# How Will Works
 
 1. QUICK ANSWER: A will is a legal document that outlines how a person's assets and property will be distributed after they pass away, and it works by providing a set of instructions that are carried out by an executor. The core mechanism of a will is based on the principle that the person creating the will, known as the testator, has the right to decide how their assets will be distributed after their death.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Child Support Obligation?"
+title: "Common Misconceptions About Child Support Obligation"
 slug: common-misconceptions-about-child-support-obligation
 description: "A clear, simple explanation of common misconceptions about child support obligation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Child Support Obligation?
+# Common Misconceptions About Child Support Obligation
 
 1. INTRODUCTION:
 Child support obligation is a critical aspect of family law, ensuring that both parents contribute financially to the well-being of their children after a divorce or separation. However, due to the complexity of family law and the emotional nature of these situations, misconceptions about child support obligations are common. These misconceptions can lead to confusion, anxiety, and even legal issues for parents. Understanding the truth behind these myths is essential for navigating the child support system effectively.

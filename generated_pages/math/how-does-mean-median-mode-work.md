@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Mean Median Mode Work?"
+title: "How Mean Median Mode Works"
 slug: how-does-mean-median-mode-work
 description: "A clear, simple explanation of how does mean median mode work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Mean Median Mode Work?
+# How Mean Median Mode Works
 
 1. QUICK ANSWER: The mean, median, and mode are three types of averages that work by using different methods to find the central tendency of a set of numbers. The mechanism of each average is based on how it processes the data to find the middle value, with the mean using all numbers, the median using the middle number, and the mode using the most frequent number.
 

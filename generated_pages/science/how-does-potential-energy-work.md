@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Potential Energy Work?"
+title: "How Potential Energy Works"
 slug: how-does-potential-energy-work
 description: "A clear, simple explanation of how does potential energy work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Potential Energy Work?
+# How Potential Energy Works
 
 1. QUICK ANSWER: Potential energy is the stored energy an object has due to its position or configuration, which can be converted into kinetic energy when the object is released or moved. This energy is a result of the object's ability to do work when its position or configuration changes.
 

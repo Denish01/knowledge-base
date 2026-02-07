@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Eligibility Criteria Work?"
+title: "How Eligibility Criteria Works"
 slug: how-does-eligibility-criteria-work
 description: "A clear, simple explanation of how does eligibility criteria work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Eligibility Criteria Work?
+# How Eligibility Criteria Works
 
 1. QUICK ANSWER: Eligibility criteria work by setting a specific set of requirements that must be met in order for an individual or entity to qualify for a particular program, service, or benefit. This criteria serves as a screening process to determine who is eligible and who is not, based on predefined standards.
 

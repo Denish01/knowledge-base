@@ -1,11 +1,11 @@
 ---
-title: "What is Kinetic Energy?"
+title: "What Is Kinetic Energy?"
 slug: kinetic-energy
 description: "A clear, simple explanation of kinetic energy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Kinetic Energy?
+# What Is Kinetic Energy?
 
 Kinetic energy is the energy an object possesses due to its motion, which can be transferred from one object to another through collisions or other interactions.
 

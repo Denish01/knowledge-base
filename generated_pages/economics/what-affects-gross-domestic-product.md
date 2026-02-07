@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Gross Domestic Product?"
+title: "What Affects Gross Domestic Product"
 slug: what-affects-gross-domestic-product
 description: "A clear, simple explanation of what affects gross domestic product - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Gross Domestic Product?
+# What Affects Gross Domestic Product
 
 1. INTRODUCTION:
 Gross domestic product (GDP) is the total value of goods and services produced within a country's borders. Understanding the factors that affect GDP is crucial because it helps policymakers, businesses, and individuals make informed decisions about investments, resource allocation, and economic development. GDP is a key indicator of a country's economic health, and knowing what influences it can help identify areas for improvement and opportunities for growth.

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Price Elasticity?"
+title: "What Affects Price Elasticity"
 slug: what-affects-price-elasticity
 description: "A clear, simple explanation of what affects price elasticity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Price Elasticity?
+# What Affects Price Elasticity
 
 1. INTRODUCTION
 Price elasticity refers to the measure of how sensitive the quantity demanded of a product is to changes in its price. Understanding the factors that affect price elasticity is crucial for businesses and policymakers to make informed decisions about pricing strategies, production levels, and resource allocation. The ability to predict how consumers will respond to price changes allows companies to maximize revenue and maintain competitiveness. In this explanation, we will explore the key factors that influence price elasticity and how they interact with each other.

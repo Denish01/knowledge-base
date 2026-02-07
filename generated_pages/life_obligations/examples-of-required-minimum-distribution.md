@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Required Minimum Distribution?"
+title: "Example of Required Minimum Distribution"
 slug: examples-of-required-minimum-distribution
 description: "A clear, simple explanation of examples of required minimum distribution - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Required Minimum Distribution?
+# Example of Required Minimum Distribution
 
 1. INTRODUCTION
 A required minimum distribution (RMD) is the minimum amount that must be withdrawn from a retirement account each year. This rule applies to certain types of accounts, such as traditional IRAs and 401(k)s, once the account owner reaches a certain age. The purpose of RMDs is to ensure that retirement savings are used to support the account owner during their lifetime, rather than being left to accumulate indefinitely.

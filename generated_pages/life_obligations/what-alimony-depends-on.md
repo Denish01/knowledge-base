@@ -1,11 +1,11 @@
 ---
-title: "What is What Alimony Depends On?"
+title: "What Alimony Depends On"
 slug: what-alimony-depends-on
 description: "A clear, simple explanation of what alimony depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Alimony Depends On?
+# What Alimony Depends On
 
 1. INTRODUCTION
 Alimony, also known as spousal support, is a payment made by one spouse to the other after a divorce or separation. Understanding what alimony depends on is crucial for individuals going through a divorce, as it can significantly impact their financial well-being. The amount and duration of alimony payments depend on various factors, which are often intertwined and complex. By recognizing these dependencies, individuals can better navigate the process and make informed decisions about their financial future.

@@ -1,11 +1,11 @@
 ---
-title: "What is Emergency Fund?"
+title: "What Is Emergency Fund?"
 slug: emergency-fund
 description: "A clear, simple explanation of emergency fund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Emergency Fund?
+# What Is Emergency Fund?
 
 Emergency fund is a pool of money set aside to cover unexpected expenses or financial shortfalls. 
 

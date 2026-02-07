@@ -1,11 +1,11 @@
 ---
-title: "What is Homeowners Association Fees?"
+title: "What Is Homeowners Association Fees?"
 slug: homeowners-association-fees
 description: "A clear, simple explanation of homeowners association fees - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Homeowners Association Fees?
+# What Is Homeowners Association Fees?
 
 Homeowners association fees refer to the monthly or annual charges paid by homeowners in a development or community to cover the costs of maintaining and improving common areas and providing various services.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Kinetic Energy?"
+title: "What Affects Kinetic Energy"
 slug: what-affects-kinetic-energy
 description: "A clear, simple explanation of what affects kinetic energy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Kinetic Energy?
+# What Affects Kinetic Energy
 
 1. INTRODUCTION:
 Kinetic energy is the energy an object possesses when it is in motion. Understanding the factors that affect kinetic energy is crucial in various fields, including physics, engineering, and sports. By recognizing the influences on kinetic energy, individuals can better comprehend the cause-and-effect relationships between different variables and make informed decisions. The ability to analyze and manipulate these factors can lead to improved designs, enhanced performance, and increased efficiency. In this explanation, we will delve into the main factors that affect kinetic energy and explore their interconnections.

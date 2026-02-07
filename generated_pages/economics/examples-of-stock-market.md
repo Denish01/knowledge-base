@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Stock Market?"
+title: "Example of Stock Market"
 slug: examples-of-stock-market
 description: "A clear, simple explanation of examples of stock market - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Stock Market?
+# Example of Stock Market
 
 1. INTRODUCTION:
 The stock market is a place where people buy and sell parts of companies. These parts are called shares or stocks. When you buy a share of a company, you essentially own a tiny piece of that company. The stock market allows companies to raise money by selling shares to the public, and it provides a platform for people to invest in companies and potentially earn a profit.

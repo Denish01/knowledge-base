@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Fiscal Policy?"
+title: "Types of Fiscal Policy"
 slug: types-of-fiscal-policy
 description: "A clear, simple explanation of types of fiscal policy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Fiscal Policy?
+# Types of Fiscal Policy
 
 ## INTRODUCTION
 Fiscal policy refers to the use of government spending and taxation to influence the overall level of economic activity. The classification of fiscal policy into different types is crucial because it helps in understanding the various tools and strategies that governments can employ to achieve their economic objectives. By categorizing fiscal policy, economists and policymakers can better analyze the effects of different policy interventions and make informed decisions about how to manage the economy. The classification of fiscal policy is also important for understanding the potential trade-offs and limitations of different policy approaches.

@@ -1,11 +1,11 @@
 ---
-title: "What is Shared Custody?"
+title: "What Is Shared Custody?"
 slug: shared-custody
 description: "A clear, simple explanation of shared custody - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Shared Custody?
+# What Is Shared Custody?
 
 Shared custody is a child custody arrangement where both parents have legal and physical responsibility for their child, and the child spends time living with each parent.
 

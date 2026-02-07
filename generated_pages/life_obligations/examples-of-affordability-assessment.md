@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Affordability Assessment?"
+title: "Example of Affordability Assessment"
 slug: examples-of-affordability-assessment
 description: "A clear, simple explanation of examples of affordability assessment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Affordability Assessment?
+# Example of Affordability Assessment
 
 1. INTRODUCTION
 Affordability assessment is the process of evaluating whether someone can afford a particular product, service, or expense. It involves considering the person's income, expenses, and financial obligations to determine if they have enough money to cover the cost of the item or service. This assessment is crucial in making informed decisions about purchases, investments, and financial planning.

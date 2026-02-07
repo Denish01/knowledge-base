@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Obligation Estimate Work?"
+title: "How Obligation Estimate Works"
 slug: how-does-obligation-estimate-work
 description: "A clear, simple explanation of how does obligation estimate work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Obligation Estimate Work?
+# How Obligation Estimate Works
 
 1. QUICK ANSWER: An obligation estimate is a calculation of the total amount a person or organization is expected to pay based on their financial commitments. This calculation takes into account various factors, including income, expenses, debts, and other financial obligations to determine the estimated amount.
 

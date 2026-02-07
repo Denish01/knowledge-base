@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Prime Numbers?"
+title: "Example of Prime Numbers"
 slug: examples-of-prime-numbers
 description: "A clear, simple explanation of examples of prime numbers - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Prime Numbers?
+# Example of Prime Numbers
 
 1. INTRODUCTION:
 A prime number is a whole number greater than 1 that has exactly two distinct factors: 1 and itself. In other words, the only numbers that can divide a prime number evenly are 1 and the prime number itself. For instance, the number 7 is prime because the only numbers that can divide it without leaving a remainder are 1 and 7. Understanding prime numbers is crucial in mathematics and other fields, as they serve as the building blocks for all other numbers.

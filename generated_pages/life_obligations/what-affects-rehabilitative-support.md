@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Rehabilitative Support?"
+title: "What Affects Rehabilitative Support"
 slug: what-affects-rehabilitative-support
 description: "A clear, simple explanation of what affects rehabilitative support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Rehabilitative Support?
+# What Affects Rehabilitative Support
 
 INTRODUCTION
 Rehabilitative support refers to the care and services provided to individuals recovering from illness, injury, or disability. Understanding the factors that affect rehabilitative support is crucial because it can significantly impact the effectiveness of the recovery process. When healthcare professionals and individuals are aware of these influences, they can make informed decisions to optimize support and improve outcomes. The goal of rehabilitative support is to help individuals regain their physical, emotional, and cognitive abilities, and to achieve the highest possible level of independence. By recognizing the factors that affect rehabilitative support, individuals can better navigate the recovery process and achieve their goals.

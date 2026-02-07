@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Assistance Programs?"
+title: "What Affects Assistance Programs"
 slug: what-affects-assistance-programs
 description: "A clear, simple explanation of what affects assistance programs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Assistance Programs?
+# What Affects Assistance Programs
 
 INTRODUCTION
 Assistance programs are designed to provide support to individuals, families, or communities in need. These programs can take many forms, including financial aid, food assistance, healthcare services, and educational support. Understanding the factors that affect assistance programs is crucial because it helps policymakers, administrators, and recipients make informed decisions about how to design, implement, and utilize these programs effectively. By recognizing the influences on assistance programs, individuals can better navigate the system and access the resources they need.

@@ -1,11 +1,11 @@
 ---
-title: "What is Standard Deviation Vs?"
+title: "Standard Deviation vs"
 slug: standard-deviation-vs
 description: "A clear, simple explanation of standard deviation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Standard Deviation Vs?
+# Standard Deviation vs
 
 Standard deviation vs refers to the comparison between the standard deviation and other measures of variability or dispersion in a dataset.
 

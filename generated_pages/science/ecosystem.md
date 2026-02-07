@@ -1,11 +1,11 @@
 ---
-title: "What is Ecosystem?"
+title: "What Is Ecosystem?"
 slug: ecosystem
 description: "A clear, simple explanation of ecosystem - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Ecosystem?
+# What Is Ecosystem?
 
 Ecosystem is a community of living and non-living things that interact with each other in a specific environment.
 

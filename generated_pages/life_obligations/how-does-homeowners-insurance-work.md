@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Homeowners Insurance Work?"
+title: "How Homeowners Insurance Works"
 slug: how-does-homeowners-insurance-work
 description: "A clear, simple explanation of how does homeowners insurance work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Homeowners Insurance Work?
+# How Homeowners Insurance Works
 
 1. QUICK ANSWER: Homeowners insurance works by transferring the risk of damage or loss to a property from the homeowner to an insurance company, in exchange for regular payments called premiums. This transfer of risk provides financial protection to the homeowner in the event of unforeseen circumstances.
 

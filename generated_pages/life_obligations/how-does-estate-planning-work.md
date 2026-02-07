@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Estate Planning Work?"
+title: "How Estate Planning Works"
 slug: how-does-estate-planning-work
 description: "A clear, simple explanation of how does estate planning work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Estate Planning Work?
+# How Estate Planning Works
 
 1. QUICK ANSWER: Estate planning is a process that allows individuals to control and manage the distribution of their assets after they pass away, ensuring that their wishes are carried out and their loved ones are taken care of. This is achieved through the creation of a set of documents and plans that outline how the individual's assets will be distributed and managed.
 

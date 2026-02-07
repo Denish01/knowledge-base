@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Child Support Duration?"
+title: "Types of Child Support Duration"
 slug: types-of-child-support-duration
 description: "A clear, simple explanation of types of child support duration - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Child Support Duration?
+# Types of Child Support Duration
 
 1. INTRODUCTION:
 Child support duration refers to the length of time during which one parent is required to provide financial support to their child or children. The classification of child support duration is essential as it helps determine the period for which the supporting parent must provide financial assistance, which in turn affects the child's well-being and the supporting parent's financial obligations. Understanding the different types of child support duration is crucial for parents, family law attorneys, and judges to ensure that the child's needs are met and that the supporting parent's obligations are fair and reasonable. The classification system helps to provide a clear framework for determining the duration of child support, taking into account factors such as the child's age, education, and emancipation status.

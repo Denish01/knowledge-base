@@ -1,11 +1,11 @@
 ---
-title: "What is Monetary Policy Vs?"
+title: "Monetary Policy vs"
 slug: monetary-policy-vs
 description: "A clear, simple explanation of monetary policy vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Monetary Policy Vs?
+# Monetary Policy vs
 
 Monetary policy is a set of actions taken by a central bank to control the money supply and interest rates in an economy, with the goal of promoting economic growth, stability, and low inflation.
 

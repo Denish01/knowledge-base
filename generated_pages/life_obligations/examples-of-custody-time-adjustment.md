@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Custody Time Adjustment?"
+title: "Example of Custody Time Adjustment"
 slug: examples-of-custody-time-adjustment
 description: "A clear, simple explanation of examples of custody time adjustment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Custody Time Adjustment?
+# Example of Custody Time Adjustment
 
 1. INTRODUCTION
 Custody time adjustment refers to the process of modifying the amount of time a parent or guardian spends with their child, often as a result of a court order or agreement between the parties involved. This adjustment can be made to accommodate changes in the child's needs, the parents' schedules, or other circumstances that may impact the child's well-being. Understanding custody time adjustment is essential for ensuring the best possible outcome for the child.

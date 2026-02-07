@@ -1,11 +1,11 @@
 ---
-title: "What is Probability Vs?"
+title: "Probability vs"
 slug: probability-vs
 description: "A clear, simple explanation of probability vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Probability Vs?
+# Probability vs
 
 Probability vs Statistics is a comparison between two fundamental concepts in mathematics that help us understand and analyze data.
 

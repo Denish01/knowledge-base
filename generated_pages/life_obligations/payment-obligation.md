@@ -1,11 +1,11 @@
 ---
-title: "What is Payment Obligation?"
+title: "What Is Payment Obligation?"
 slug: payment-obligation
 description: "A clear, simple explanation of payment obligation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Payment Obligation?
+# What Is Payment Obligation?
 
 Payment obligation is a contractual agreement between two parties where one party is required to pay a certain amount of money to the other party in exchange for a product or service.
 

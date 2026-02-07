@@ -1,11 +1,11 @@
 ---
-title: "What is Will?"
+title: "What Is Will?"
 slug: will
 description: "A clear, simple explanation of will - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Will?
+# What Is Will?
 
 Will is a mental faculty that enables individuals to make decisions, act intentionally, and shape their own lives through deliberate choices and actions.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Perimeter?"
+title: "Common Misconceptions About Perimeter"
 slug: common-misconceptions-about-perimeter
 description: "A clear, simple explanation of common misconceptions about perimeter - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Perimeter?
+# Common Misconceptions About Perimeter
 
 1. INTRODUCTION:
 Perimeter is a fundamental concept in geometry, referring to the distance around a shape. Despite its simplicity, many people harbor misconceptions about perimeter. These misconceptions often arise from misunderstandings of basic geometric principles or the misapplication of formulas. The prevalence of these misconceptions can be attributed to the complexity of geometric concepts and the potential for confusion when applying formulas to various shapes. Understanding and addressing these misconceptions is crucial for a solid grasp of geometry and its applications.

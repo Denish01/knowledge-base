@@ -1,11 +1,11 @@
 ---
-title: "What is What Household Size Depends On?"
+title: "What Household Size Depends On"
 slug: what-household-size-depends-on
 description: "A clear, simple explanation of what household size depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Household Size Depends On?
+# What Household Size Depends On
 
 1. INTRODUCTION:
 Household size refers to the number of people living together in a single dwelling unit. Understanding the dependencies that determine household size is essential for various purposes, including urban planning, resource allocation, and social services. The size of a household depends on several factors, and recognizing these dependencies is crucial for making informed decisions and providing adequate support to families.

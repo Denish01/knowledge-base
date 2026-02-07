@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Coordinate Plane?"
+title: "What Affects Coordinate Plane"
 slug: what-affects-coordinate-plane
 description: "A clear, simple explanation of what affects coordinate plane - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Coordinate Plane?
+# What Affects Coordinate Plane
 
 1. INTRODUCTION:
 The coordinate plane is a two-dimensional representation of points, lines, and shapes, where each point is defined by an ordered pair of numbers, known as coordinates. Understanding the factors that affect the coordinate plane is essential in various fields, including mathematics, physics, engineering, and geography. Recognizing these influences helps individuals analyze and solve problems, make informed decisions, and accurately interpret data. The coordinate plane's reliability and accuracy depend on the factors that shape its properties and behavior.

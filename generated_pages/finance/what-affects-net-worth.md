@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Net Worth?"
+title: "What Affects Net Worth"
 slug: what-affects-net-worth
 description: "A clear, simple explanation of what affects net worth - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Net Worth?
+# What Affects Net Worth
 
 1. INTRODUCTION:
 Net worth is the total value of an individual's or a family's assets minus their liabilities. Understanding the factors that affect net worth is crucial because it helps individuals make informed financial decisions, set realistic goals, and work towards achieving financial stability. By recognizing the influences on net worth, people can take control of their financial situation and make progress towards their objectives. 

@@ -1,11 +1,11 @@
 ---
-title: "What is Employment Contract?"
+title: "What Is Employment Contract?"
 slug: employment-contract
 description: "A clear, simple explanation of employment contract - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Employment Contract?
+# What Is Employment Contract?
 
 Employment contract is a legally binding agreement between an employer and an employee that outlines the terms and conditions of the employment relationship.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Benefit Phaseout Vs?"
+title: "Benefit Phaseout vs"
 slug: benefit-phaseout-vs
 description: "A clear, simple explanation of benefit phaseout vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Benefit Phaseout Vs?
+# Benefit Phaseout vs
 
 Benefit phaseout is a process by which the amount of benefits received from a government program or other source decreases as a person's income or assets increase.
 

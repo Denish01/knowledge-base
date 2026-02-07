@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Employment Contract?"
+title: "Example of Employment Contract"
 slug: examples-of-employment-contract
 description: "A clear, simple explanation of examples of employment contract - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Employment Contract?
+# Example of Employment Contract
 
 1. INTRODUCTION
 An employment contract is a formal agreement between an employer and an employee that outlines the terms and conditions of the employment relationship. It typically includes details such as job responsibilities, salary, benefits, and the duration of employment. Employment contracts can be written or implied and are used in a variety of contexts, from small businesses to large corporations.

@@ -1,11 +1,11 @@
 ---
-title: "What is Percentages?"
+title: "What Is Percentages?"
 slug: percentages
 description: "A clear, simple explanation of percentages - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Percentages?
+# What Is Percentages?
 
 Percentages is a mathematical concept that refers to a proportion or fraction of a whole as a part of 100.
 

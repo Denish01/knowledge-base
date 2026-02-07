@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Tax Liability?"
+title: "Types of Tax Liability"
 slug: types-of-tax-liability
 description: "A clear, simple explanation of types of tax liability - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Tax Liability?
+# Types of Tax Liability
 
 **INTRODUCTION**
 Types of tax liability refer to the various categories of taxes that individuals and organizations are required to pay to the government. Understanding these categories is essential for managing financial obligations and ensuring compliance with tax laws. Classification of tax liability matters because it helps taxpayers identify the specific taxes they are responsible for paying, the deadlines for payment, and the potential consequences of non-payment. A clear understanding of the different types of tax liability also enables taxpayers to take advantage of available deductions and credits, reducing their overall tax burden.

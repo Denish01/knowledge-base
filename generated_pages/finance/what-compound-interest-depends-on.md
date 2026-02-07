@@ -1,11 +1,11 @@
 ---
-title: "What is What Compound Interest Depends On?"
+title: "What Compound Interest Depends On"
 slug: what-compound-interest-depends-on
 description: "A clear, simple explanation of what compound interest depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Compound Interest Depends On?
+# What Compound Interest Depends On
 
 1. INTRODUCTION
 Compound interest is the process by which interest is earned on both the principal amount and any accrued interest over time. Understanding what compound interest depends on is crucial for individuals to make informed decisions about their financial investments and savings. The dependencies of compound interest are the foundation upon which its calculations and effects are built. Without a clear understanding of these prerequisites, it is difficult to accurately predict and utilize compound interest.

@@ -1,11 +1,11 @@
 ---
-title: "What is Financial Burden?"
+title: "What Is Financial Burden?"
 slug: financial-burden
 description: "A clear, simple explanation of financial burden - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Financial Burden?
+# What Is Financial Burden?
 
 Financial burden is a situation where an individual or organization is unable to meet their financial obligations, resulting in stress and potential long-term consequences.
 

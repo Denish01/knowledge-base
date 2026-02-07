@@ -1,11 +1,11 @@
 ---
-title: "What is Earning Capacity?"
+title: "What Is Earning Capacity?"
 slug: earning-capacity
 description: "A clear, simple explanation of earning capacity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Earning Capacity?
+# What Is Earning Capacity?
 
 Earning capacity is the amount of money an individual can potentially earn in a given period of time, based on their skills, education, experience, and other factors.
 

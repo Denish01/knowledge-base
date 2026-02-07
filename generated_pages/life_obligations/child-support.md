@@ -1,11 +1,11 @@
 ---
-title: "What is Child Support?"
+title: "What Is Child Support?"
 slug: child-support
 description: "A clear, simple explanation of child support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Child Support?
+# What Is Child Support?
 
 Child support is a legal obligation where one parent provides financial assistance to the other parent for the care and well-being of their child or children.
 

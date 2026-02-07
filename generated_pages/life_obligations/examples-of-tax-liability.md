@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Tax Liability?"
+title: "Example of Tax Liability"
 slug: examples-of-tax-liability
 description: "A clear, simple explanation of examples of tax liability - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Tax Liability?
+# Example of Tax Liability
 
 1. INTRODUCTION
 Tax liability refers to the amount of money an individual or organization is required to pay in taxes to the government. It is calculated based on income, assets, and other factors, and is a legal obligation that must be fulfilled. Understanding tax liability is essential for managing personal and business finances, as it can have a significant impact on one's financial situation.

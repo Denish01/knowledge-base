@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Pythagorean Theorem?"
+title: "Common Misconceptions About Pythagorean Theorem"
 slug: common-misconceptions-about-pythagorean-theorem
 description: "A clear, simple explanation of common misconceptions about pythagorean theorem - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Pythagorean Theorem?
+# Common Misconceptions About Pythagorean Theorem
 
 1. INTRODUCTION:
 The Pythagorean theorem is a fundamental concept in geometry that describes the relationship between the lengths of the sides of a right triangle. Despite its simplicity, many people hold misconceptions about the theorem, which can lead to confusion and errors in problem-solving. These misconceptions often arise from misunderstandings of the theorem's definition, its application, or the assumptions that underlie it. By examining these common misconceptions, we can gain a deeper understanding of the theorem and improve our ability to apply it correctly.

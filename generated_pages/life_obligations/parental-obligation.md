@@ -1,11 +1,11 @@
 ---
-title: "What is Parental Obligation?"
+title: "What Is Parental Obligation?"
 slug: parental-obligation
 description: "A clear, simple explanation of parental obligation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Parental Obligation?
+# What Is Parental Obligation?
 
 Parental obligation is the legal and moral responsibility of parents to provide for the physical, emotional, and financial well-being of their children. 
 

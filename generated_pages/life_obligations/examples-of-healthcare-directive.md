@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Healthcare Directive?"
+title: "Example of Healthcare Directive"
 slug: examples-of-healthcare-directive
 description: "A clear, simple explanation of examples of healthcare directive - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Healthcare Directive?
+# Example of Healthcare Directive
 
 1. INTRODUCTION
 A healthcare directive is a document that outlines a person's wishes for their medical treatment in the event that they become unable to make decisions for themselves. It is a way for individuals to ensure that their healthcare preferences are respected, even if they are no longer able to communicate. Healthcare directives can be used in a variety of situations, from routine medical care to end-of-life decisions.

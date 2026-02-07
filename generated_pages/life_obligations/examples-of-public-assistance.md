@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Public Assistance?"
+title: "Example of Public Assistance"
 slug: examples-of-public-assistance
 description: "A clear, simple explanation of examples of public assistance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Public Assistance?
+# Example of Public Assistance
 
 1. INTRODUCTION
 Public assistance refers to programs and services provided by governments to support individuals and families in need. These programs aim to promote economic security, health, and well-being by offering financial assistance, food, shelter, and other essential resources. Public assistance can take many forms, from monetary benefits to in-kind services, and is designed to help people overcome challenges and achieve stability.

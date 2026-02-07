@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Healthcare Directive?"
+title: "Types of Healthcare Directive"
 slug: types-of-healthcare-directive
 description: "A clear, simple explanation of types of healthcare directive - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Healthcare Directive?
+# Types of Healthcare Directive
 
 **INTRODUCTION**
 A healthcare directive is a document that outlines a person's wishes for medical treatment in the event that they become unable to make decisions for themselves. The classification of healthcare directives is important because it helps individuals understand the different types of documents available and choose the one that best suits their needs. By understanding the various types of healthcare directives, individuals can ensure that their medical wishes are respected and that their loved ones are not left with difficult decisions to make. This classification system covers the main categories of healthcare directives, including their definitions, key characteristics, and examples, providing a comprehensive overview of the options available.

@@ -1,11 +1,11 @@
 ---
-title: "What is What Rehabilitative Support Depends On?"
+title: "What Rehabilitative Support Depends On"
 slug: what-rehabilitative-support-depends-on
 description: "A clear, simple explanation of what rehabilitative support depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Rehabilitative Support Depends On?
+# What Rehabilitative Support Depends On
 
 1. INTRODUCTION:
 Rehabilitative support refers to the process of helping individuals recover from injury, illness, or disability. It involves a range of services, including physical therapy, occupational therapy, and counseling. The effectiveness of rehabilitative support depends on several key factors, which serve as the foundation for a successful recovery. Understanding these dependencies is crucial, as they determine the outcome of the rehabilitation process.

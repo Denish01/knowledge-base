@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Liquidity Work?"
+title: "How Liquidity Works"
 slug: how-does-liquidity-work
 description: "A clear, simple explanation of how does liquidity work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Liquidity Work?
+# How Liquidity Works
 
 1. QUICK ANSWER: 
 Liquidity refers to the ability to buy or sell an asset quickly and at a stable price, and it works through a mechanism where buyers and sellers interact in a market, influencing the price of the asset based on the balance between demand and supply. The core of this mechanism involves the continuous matching of buyers and sellers, which determines the liquidity of an asset.

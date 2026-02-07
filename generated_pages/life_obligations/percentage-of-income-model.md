@@ -1,11 +1,11 @@
 ---
-title: "What is Percentage Of Income Model?"
+title: "What Is Percentage Of Income Model?"
 slug: percentage-of-income-model
 description: "A clear, simple explanation of percentage of income model - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Percentage Of Income Model?
+# What Is Percentage Of Income Model?
 
 Percentage of income model is a method of budgeting and financial planning that involves allocating a certain percentage of one's income towards different expenses and savings.
 

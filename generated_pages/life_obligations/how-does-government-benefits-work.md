@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Government Benefits Work?"
+title: "How Government Benefits Works"
 slug: how-does-government-benefits-work
 description: "A clear, simple explanation of how does government benefits work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Government Benefits Work?
+# How Government Benefits Works
 
 1. QUICK ANSWER: Government benefits are financial assistance programs provided to eligible citizens, which work through a system of application, review, and distribution of funds. The core mechanism involves the government allocating funds to various benefit programs, and then individuals applying for and receiving these benefits based on their eligibility.
 

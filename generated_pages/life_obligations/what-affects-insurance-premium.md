@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Insurance Premium?"
+title: "What Affects Insurance Premium"
 slug: what-affects-insurance-premium
 description: "A clear, simple explanation of what affects insurance premium - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Insurance Premium?
+# What Affects Insurance Premium
 
 1. INTRODUCTION
 

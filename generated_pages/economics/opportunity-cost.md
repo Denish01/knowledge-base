@@ -1,11 +1,11 @@
 ---
-title: "What is Opportunity Cost?"
+title: "What Is Opportunity Cost?"
 slug: opportunity-cost
 description: "A clear, simple explanation of opportunity cost - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Opportunity Cost?
+# What Is Opportunity Cost?
 
 Opportunity cost is the value of the next best alternative that is given up when a choice is made.
 

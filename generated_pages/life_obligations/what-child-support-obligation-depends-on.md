@@ -1,11 +1,11 @@
 ---
-title: "What is What Child Support Obligation Depends On?"
+title: "What Child Support Obligation Depends On"
 slug: what-child-support-obligation-depends-on
 description: "A clear, simple explanation of what child support obligation depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Child Support Obligation Depends On?
+# What Child Support Obligation Depends On
 
 1. INTRODUCTION:
 Child support obligation refers to the financial responsibility of a parent to provide for their child's well-being. Understanding what child support obligation depends on is crucial for ensuring that children receive the necessary care and support. The amount and nature of child support obligation are not arbitrary, but rather depend on several key factors. These dependencies are essential to determine a fair and reasonable child support arrangement.

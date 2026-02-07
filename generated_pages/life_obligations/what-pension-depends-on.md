@@ -1,11 +1,11 @@
 ---
-title: "What is What Pension Depends On?"
+title: "What Pension Depends On"
 slug: what-pension-depends-on
 description: "A clear, simple explanation of what pension depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Pension Depends On?
+# What Pension Depends On
 
 1. INTRODUCTION:
 A pension is a type of retirement plan that provides a steady income stream to individuals after they have stopped working. Understanding what a pension depends on is crucial for effective planning and management. The various factors that influence pension can significantly impact the overall benefit and sustainability of the plan. Dependencies are essential prerequisites that determine the foundation and success of a pension.

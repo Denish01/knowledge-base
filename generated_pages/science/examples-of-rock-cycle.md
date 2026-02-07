@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Rock Cycle?"
+title: "Example of Rock Cycle"
 slug: examples-of-rock-cycle
 description: "A clear, simple explanation of examples of rock cycle - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Rock Cycle?
+# Example of Rock Cycle
 
 1. INTRODUCTION
 The rock cycle is the process by which rocks of one kind transform into rocks of another kind. This transformation can occur due to various geological processes such as weathering, erosion, sedimentation, metamorphism, and igneous activity. The rock cycle involves the continuous movement of rocks between the Earth's crust, mantle, and atmosphere, and it plays a crucial role in shaping our planet's surface.

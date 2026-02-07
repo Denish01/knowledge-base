@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Social Security?"
+title: "Example of Social Security"
 slug: examples-of-social-security
 description: "A clear, simple explanation of examples of social security - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Social Security?
+# Example of Social Security
 
 1. INTRODUCTION:
 Social security refers to the measures put in place to ensure the well-being and protection of individuals within a society. It encompasses a wide range of programs and services designed to provide financial assistance, healthcare, and other forms of support to those in need. The primary goal of social security is to promote a sense of safety and stability among citizens, allowing them to live with dignity and pursue their goals without undue hardship.

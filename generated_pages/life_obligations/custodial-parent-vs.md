@@ -1,11 +1,11 @@
 ---
-title: "What is Custodial Parent Vs?"
+title: "Custodial Parent vs"
 slug: custodial-parent-vs
 description: "A clear, simple explanation of custodial parent vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Custodial Parent Vs?
+# Custodial Parent vs
 
 Custodial parent vs non-custodial parent is a comparison between two types of parents with different levels of responsibility and involvement in the care of their children after a divorce or separation.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Means Testing?"
+title: "What Is Means Testing?"
 slug: means-testing
 description: "A clear, simple explanation of means testing - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Means Testing?
+# What Is Means Testing?
 
 Means testing is a method used to determine whether an individual or family is eligible for government assistance or benefits by assessing their financial resources and income.
 

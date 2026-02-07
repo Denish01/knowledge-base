@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Dividend Yield?"
+title: "Types of Dividend Yield"
 slug: types-of-dividend-yield
 description: "A clear, simple explanation of types of dividend yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Dividend Yield?
+# Types of Dividend Yield
 
 ## INTRODUCTION
 Dividend yield is a crucial concept in investing, representing the ratio of annual dividend payments to the stock's current price. Understanding the different types of dividend yield is essential for investors to make informed decisions about their investment portfolios. Classification of dividend yield types matters because it helps investors identify the characteristics of each type, allowing them to assess the potential risks and returns associated with their investments. By categorizing dividend yields, investors can better navigate the complex world of investing and make more effective choices.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Employer Match Work?"
+title: "How Employer Match Works"
 slug: how-does-employer-match-work
 description: "A clear, simple explanation of how does employer match work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Employer Match Work?
+# How Employer Match Works
 
 1. QUICK ANSWER: An employer match is a benefit where an employer contributes a certain amount of money to an employee's retirement account, based on the employee's own contributions. This match is typically a percentage of the employee's contributions, and it is added to the employee's account as a form of additional compensation.
 

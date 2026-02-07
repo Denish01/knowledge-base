@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Health Insurance Work?"
+title: "How Health Insurance Works"
 slug: how-does-health-insurance-work
 description: "A clear, simple explanation of how does health insurance work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Health Insurance Work?
+# How Health Insurance Works
 
 1. QUICK ANSWER: Health insurance works by transferring the risk of medical expenses from an individual to a larger group, where the costs are shared among members. This process involves paying premiums to an insurance company, which then provides financial protection against unexpected medical costs.
 

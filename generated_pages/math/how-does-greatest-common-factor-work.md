@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Greatest Common Factor Work?"
+title: "How Greatest Common Factor Works"
 slug: how-does-greatest-common-factor-work
 description: "A clear, simple explanation of how does greatest common factor work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Greatest Common Factor Work?
+# How Greatest Common Factor Works
 
 1. QUICK ANSWER: The greatest common factor (GCF) of two or more numbers is the largest number that divides each of them without leaving a remainder, and it works by finding the common factors among the numbers and selecting the greatest one. This mechanism involves a series of steps to identify and compare the factors of the given numbers.
 

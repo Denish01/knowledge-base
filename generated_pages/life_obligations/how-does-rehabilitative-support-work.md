@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Rehabilitative Support Work?"
+title: "How Rehabilitative Support Works"
 slug: how-does-rehabilitative-support-work
 description: "A clear, simple explanation of how does rehabilitative support work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Rehabilitative Support Work?
+# How Rehabilitative Support Works
 
 1. QUICK ANSWER: 
 Rehabilitative support works by providing a structured and guided process for individuals to recover from injuries, illnesses, or disabilities, helping them to regain their physical, emotional, and cognitive abilities. This process involves a team of professionals working together to create a personalized plan that addresses the individual's specific needs and goals.

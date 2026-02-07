@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Order Of Operations?"
+title: "Example of Order Of Operations"
 slug: examples-of-order-of-operations
 description: "A clear, simple explanation of examples of order of operations - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Order Of Operations?
+# Example of Order Of Operations
 
 1. INTRODUCTION
 The order of operations is a set of rules that dictates the order in which mathematical operations should be performed when there are multiple operations in an expression. This set of rules is often remembered by the acronym PEMDAS, which stands for Parentheses, Exponents, Multiplication and Division, and Addition and Subtraction. Following the order of operations ensures that mathematical expressions are evaluated consistently and accurately.

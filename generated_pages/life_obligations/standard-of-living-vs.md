@@ -1,11 +1,11 @@
 ---
-title: "What is Standard Of Living Vs?"
+title: "Standard Of Living vs"
 slug: standard-of-living-vs
 description: "A clear, simple explanation of standard of living vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Standard Of Living Vs?
+# Standard Of Living vs
 
 Standard of living refers to the level of wealth, comfort, and access to goods and services that a person or group of people enjoys. 
 

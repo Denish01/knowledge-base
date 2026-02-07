@@ -1,11 +1,11 @@
 ---
-title: "What is What Support Modification Depends On?"
+title: "What Support Modification Depends On"
 slug: what-support-modification-depends-on
 description: "A clear, simple explanation of what support modification depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Support Modification Depends On?
+# What Support Modification Depends On
 
 1. INTRODUCTION:
 Support modification refers to the process of changing or adjusting the level of support provided to an individual, usually in a family law context. Understanding what support modification depends on is crucial, as it helps ensure that the modification process is fair, effective, and in the best interests of all parties involved. The dependencies surrounding support modification are essential prerequisites that must be met in order to initiate and complete the process successfully.

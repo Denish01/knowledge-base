@@ -1,11 +1,11 @@
 ---
-title: "What is Loan Interest?"
+title: "What Is Loan Interest?"
 slug: loan-interest
 description: "A clear, simple explanation of loan interest - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Loan Interest?
+# What Is Loan Interest?
 
 Loan interest is the amount of money a borrower must pay to a lender in addition to the principal amount borrowed, calculated as a percentage of the principal.
 

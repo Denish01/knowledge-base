@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Monetary Policy Work?"
+title: "How Monetary Policy Works"
 slug: how-does-monetary-policy-work
 description: "A clear, simple explanation of how does monetary policy work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Monetary Policy Work?
+# How Monetary Policy Works
 
 1. QUICK ANSWER: Monetary policy works by using various tools to influence the money supply and interest rates in an economy, which in turn affects spending, saving, and overall economic activity. The central bank, which is responsible for implementing monetary policy, adjusts these tools to promote economic growth, stability, and low inflation.
 

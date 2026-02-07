@@ -1,11 +1,11 @@
 ---
-title: "What is Shared Expenses Vs?"
+title: "Shared Expenses vs"
 slug: shared-expenses-vs
 description: "A clear, simple explanation of shared expenses vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Shared Expenses Vs?
+# Shared Expenses vs
 
 Shared expenses vs individual expenses is a concept that refers to the division of costs between multiple people or parties, as opposed to expenses incurred by a single person.
 

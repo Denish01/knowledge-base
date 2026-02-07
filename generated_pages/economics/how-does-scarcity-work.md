@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Scarcity Work?"
+title: "How Scarcity Works"
 slug: how-does-scarcity-work
 description: "A clear, simple explanation of how does scarcity work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Scarcity Work?
+# How Scarcity Works
 
 1. QUICK ANSWER: Scarcity works by limiting the availability of a resource, which then affects the behavior of individuals and groups as they try to acquire it. This limitation triggers a series of economic and psychological responses that influence how resources are valued and allocated.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Market Capitalization Work?"
+title: "How Market Capitalization Works"
 slug: how-does-market-capitalization-work
 description: "A clear, simple explanation of how does market capitalization work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Market Capitalization Work?
+# How Market Capitalization Works
 
 1. QUICK ANSWER: Market capitalization is a measure of a company's total value, calculated by multiplying the total number of outstanding shares by the current market price per share. This calculation provides a snapshot of a company's overall worth at a given time.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Proportional Contribution?"
+title: "Example of Proportional Contribution"
 slug: examples-of-proportional-contribution
 description: "A clear, simple explanation of examples of proportional contribution - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Proportional Contribution?
+# Example of Proportional Contribution
 
 1. INTRODUCTION
 Proportional contribution refers to the idea that the amount of effort, resources, or input provided by an individual or group is directly related to the benefits or outcomes they receive. In other words, those who contribute more receive more, and those who contribute less receive less. This concept is essential in various aspects of life, including business, finance, and social interactions.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Bond Yield Work?"
+title: "How Bond Yield Works"
 slug: how-does-bond-yield-work
 description: "A clear, simple explanation of how does bond yield work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Bond Yield Work?
+# How Bond Yield Works
 
 1. QUICK ANSWER: Bond yield is the return an investor can expect from a bond, calculated as the ratio of the annual interest payment to the bond's current price. This yield reflects the bond's overall value and attractiveness to investors, taking into account the interest paid and the price paid for the bond.
 

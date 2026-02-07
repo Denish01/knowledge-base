@@ -1,11 +1,11 @@
 ---
-title: "What is Meiosis Vs?"
+title: "Meiosis vs"
 slug: meiosis-vs
 description: "A clear, simple explanation of meiosis vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Meiosis Vs?
+# Meiosis vs
 
 Meiosis is a type of cell division that results in the production of gametes, or sex cells, with half the number of chromosomes as the parent cell. 
 

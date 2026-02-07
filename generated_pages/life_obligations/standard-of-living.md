@@ -1,11 +1,11 @@
 ---
-title: "What is Standard Of Living?"
+title: "What Is Standard Of Living?"
 slug: standard-of-living
 description: "A clear, simple explanation of standard of living - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Standard Of Living?
+# What Is Standard Of Living?
 
 Standard of living refers to the level of wealth, comfort, and access to necessities and luxuries that a person or group of people enjoys.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Life Insurance Vs?"
+title: "Life Insurance vs"
 slug: life-insurance-vs
 description: "A clear, simple explanation of life insurance vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Life Insurance Vs?
+# Life Insurance vs
 
 Life insurance vs other forms of insurance refers to the comparison and contrast of life insurance policies with other types of insurance policies, such as health, disability, and long-term care insurance.
 

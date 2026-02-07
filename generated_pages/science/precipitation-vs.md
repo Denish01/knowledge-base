@@ -1,11 +1,11 @@
 ---
-title: "What is Precipitation Vs?"
+title: "Precipitation vs"
 slug: precipitation-vs
 description: "A clear, simple explanation of precipitation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Precipitation Vs?
+# Precipitation vs
 
 Precipitation vs other forms of moisture in the atmosphere refers to the process by which water droplets or ice crystals fall to the ground, distinguishing it from other forms of atmospheric moisture.
 

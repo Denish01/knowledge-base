@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Parental Obligation?"
+title: "Example of Parental Obligation"
 slug: examples-of-parental-obligation
 description: "A clear, simple explanation of examples of parental obligation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Parental Obligation?
+# Example of Parental Obligation
 
 1. INTRODUCTION
 Parental obligation refers to the responsibilities and duties that parents have towards their children. These obligations can range from providing basic needs such as food, shelter, and clothing, to ensuring their children's emotional and psychological well-being. Parental obligation is a fundamental aspect of parenting, and it is essential for the development and growth of children.

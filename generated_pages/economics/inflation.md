@@ -1,11 +1,11 @@
 ---
-title: "What is Inflation?"
+title: "What Is Inflation?"
 slug: inflation
 description: "A clear, simple explanation of inflation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Inflation?
+# What Is Inflation?
 
 Inflation is a sustained increase in the general price level of goods and services in an economy over time, resulting in a decrease in the purchasing power of money.
 

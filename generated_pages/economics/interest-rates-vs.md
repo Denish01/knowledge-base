@@ -1,11 +1,11 @@
 ---
-title: "What is Interest Rates Vs?"
+title: "Interest Rates vs"
 slug: interest-rates-vs
 description: "A clear, simple explanation of interest rates vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Interest Rates Vs?
+# Interest Rates vs
 
 Interest rates vs inflation is a fundamental concept in economics that refers to the relationship between the cost of borrowing money and the rate at which prices for goods and services are rising.
 

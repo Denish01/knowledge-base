@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Bond Yield?"
+title: "Example of Bond Yield"
 slug: examples-of-bond-yield
 description: "A clear, simple explanation of examples of bond yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Bond Yield?
+# Example of Bond Yield
 
 1. INTRODUCTION
 Bond yield refers to the return an investor can expect from a bond, which is essentially a loan made to a borrower, typically a corporation or government entity. The yield is calculated by dividing the annual interest payment by the bond's current price. It's a way to measure the income an investor can expect from a bond investment. Understanding bond yield is crucial for making informed investment decisions.

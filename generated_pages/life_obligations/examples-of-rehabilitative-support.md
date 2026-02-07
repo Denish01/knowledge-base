@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Rehabilitative Support?"
+title: "Example of Rehabilitative Support"
 slug: examples-of-rehabilitative-support
 description: "A clear, simple explanation of examples of rehabilitative support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Rehabilitative Support?
+# Example of Rehabilitative Support
 
 1. INTRODUCTION
 Rehabilitative support refers to the process of helping individuals recover from illness, injury, or disability, with the goal of regaining their physical, emotional, or cognitive abilities. This type of support can be provided by healthcare professionals, family members, or support groups, and can take many forms, including physical therapy, counseling, and vocational training. The key characteristic of rehabilitative support is its focus on empowering individuals to regain their independence and improve their overall quality of life.

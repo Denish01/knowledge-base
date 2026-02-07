@@ -1,11 +1,11 @@
 ---
-title: "What is Carbon Cycle Vs?"
+title: "Carbon Cycle vs"
 slug: carbon-cycle-vs
 description: "A clear, simple explanation of carbon cycle vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Carbon Cycle Vs?
+# Carbon Cycle vs
 
 Carbon cycle refers to the process by which carbon is exchanged between the atmosphere, oceans, land, and living things. 
 

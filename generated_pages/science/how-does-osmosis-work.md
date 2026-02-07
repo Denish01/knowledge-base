@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Osmosis Work?"
+title: "How Osmosis Works"
 slug: how-does-osmosis-work
 description: "A clear, simple explanation of how does osmosis work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Osmosis Work?
+# How Osmosis Works
 
 1. QUICK ANSWER: Osmosis is the movement of water molecules from an area of high concentration to an area of low concentration through a semipermeable membrane, which allows certain molecules to pass through while keeping others out. This process helps to equalize the concentration of solutes on both sides of the membrane.
 

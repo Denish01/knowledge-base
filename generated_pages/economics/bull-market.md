@@ -1,11 +1,11 @@
 ---
-title: "What is Bull Market?"
+title: "What Is Bull Market?"
 slug: bull-market
 description: "A clear, simple explanation of bull market - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Bull Market?
+# What Is Bull Market?
 
 Bull market refers to a prolonged period of time when the stock market is experiencing a significant increase in value, characterized by high investor confidence and strong economic growth.
 

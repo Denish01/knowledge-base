@@ -1,11 +1,11 @@
 ---
-title: "What is Household Income?"
+title: "What Is Household Income?"
 slug: household-income
 description: "A clear, simple explanation of household income - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Household Income?
+# What Is Household Income?
 
 Household income is the total amount of money earned by all members of a household from various sources, including wages, salaries, investments, and other forms of compensation.
 

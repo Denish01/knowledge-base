@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Scarcity?"
+title: "Example of Scarcity"
 slug: examples-of-scarcity
 description: "A clear, simple explanation of examples of scarcity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Scarcity?
+# Example of Scarcity
 
 1. INTRODUCTION
 Scarcity refers to the limited availability of a resource, good, or service. It occurs when the demand for something exceeds its supply, resulting in a shortage. Scarcity can be observed in various aspects of life, from everyday situations to global issues. Understanding scarcity is essential to make informed decisions about how to allocate resources efficiently.

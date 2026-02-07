@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Ecosystem?"
+title: "What Affects Ecosystem"
 slug: what-affects-ecosystem
 description: "A clear, simple explanation of what affects ecosystem - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Ecosystem?
+# What Affects Ecosystem
 
 1. INTRODUCTION
 An ecosystem is a community of living and non-living things that interact with each other in a specific environment. Understanding the factors that affect ecosystems is crucial because it helps us recognize how changes can impact the delicate balance of nature. Ecosystems provide essential services such as air and water purification, soil formation, and climate regulation. By knowing what influences ecosystems, we can better manage and conserve these vital systems.

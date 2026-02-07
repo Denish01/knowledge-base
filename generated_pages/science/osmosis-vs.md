@@ -1,11 +1,11 @@
 ---
-title: "What is Osmosis Vs?"
+title: "Osmosis vs"
 slug: osmosis-vs
 description: "A clear, simple explanation of osmosis vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Osmosis Vs?
+# Osmosis vs
 
 Osmosis is a process by which molecules move from an area of high concentration to an area of low concentration through a semipermeable membrane, resulting in equalization of solute concentrations on both sides of the membrane. 
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Income Eligibility Depends On?"
+title: "What Income Eligibility Depends On"
 slug: what-income-eligibility-depends-on
 description: "A clear, simple explanation of what income eligibility depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Income Eligibility Depends On?
+# What Income Eligibility Depends On
 
 1. INTRODUCTION:
 Income eligibility refers to the process of determining whether an individual or family meets the income requirements to qualify for a particular program, service, or benefit. Understanding the dependencies that affect income eligibility is crucial, as it helps individuals and organizations navigate the complex process of determining eligibility. Dependencies matter because they serve as the foundation for making informed decisions about who qualifies for a particular program or service.

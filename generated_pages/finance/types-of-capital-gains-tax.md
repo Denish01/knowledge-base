@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Capital Gains Tax?"
+title: "Types of Capital Gains Tax"
 slug: types-of-capital-gains-tax
 description: "A clear, simple explanation of types of capital gains tax - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Capital Gains Tax?
+# Types of Capital Gains Tax
 
 ## INTRODUCTION
 Capital gains tax is a type of tax levied on the profit made from the sale of an asset, such as stocks, real estate, or investments. The classification of capital gains tax is essential because it helps individuals and businesses understand the different types of taxes they may be subject to, depending on the type of asset sold, the length of time it was held, and other factors. A comprehensive understanding of the various types of capital gains tax can help taxpayers navigate the complex tax landscape and make informed decisions about their investments. By categorizing capital gains tax, individuals can better comprehend their tax obligations and plan accordingly, which is crucial for financial planning and tax compliance.

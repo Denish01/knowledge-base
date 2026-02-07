@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Credit Score?"
+title: "Example of Credit Score"
 slug: examples-of-credit-score
 description: "A clear, simple explanation of examples of credit score - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Credit Score?
+# Example of Credit Score
 
 1. INTRODUCTION:
 A credit score is a number that represents an individual's or business's creditworthiness, which is their ability to repay debts on time. It is calculated based on information in their credit reports, such as payment history, credit utilization, and length of credit history. Credit scores are used by lenders to determine the risk of lending to a borrower and to set interest rates on loans. Understanding credit scores is essential for making informed financial decisions.

@@ -1,11 +1,11 @@
 ---
-title: "What is Long-Term Support Vs?"
+title: "Long Term Support vs"
 slug: long-term-support-vs
 description: "A clear, simple explanation of long-term support vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Long-Term Support Vs?
+# Long Term Support vs
 
 Long-term support refers to a type of maintenance and assistance provided to individuals or systems over an extended period, ensuring their continued operation, stability, and effectiveness.
 

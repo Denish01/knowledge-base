@@ -1,11 +1,11 @@
 ---
-title: "What is Primary Caregiver?"
+title: "What Is Primary Caregiver?"
 slug: primary-caregiver
 description: "A clear, simple explanation of primary caregiver - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Primary Caregiver?
+# What Is Primary Caregiver?
 
 Primary caregiver is a person who provides the majority of care and support to a dependent individual, such as a child, elderly person, or person with a disability.
 

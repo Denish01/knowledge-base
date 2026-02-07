@@ -1,11 +1,11 @@
 ---
-title: "What is Slope?"
+title: "What Is Slope?"
 slug: slope
 description: "A clear, simple explanation of slope - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Slope?
+# What Is Slope?
 
 Slope is a measure of the steepness or incline of a line, which can be calculated using the ratio of the vertical change to the horizontal change between two points on the line.
 

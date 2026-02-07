@@ -1,11 +1,11 @@
 ---
-title: "What is Friction?"
+title: "What Is Friction?"
 slug: friction
 description: "A clear, simple explanation of friction - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Friction?
+# What Is Friction?
 
 Friction is a force that opposes the motion of two surfaces that are in contact with each other, causing them to resist sliding or moving against one another.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Supply And Demand?"
+title: "Types of Supply And Demand"
 slug: types-of-supply-and-demand
 description: "A clear, simple explanation of types of supply and demand - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Supply And Demand?
+# Types of Supply And Demand
 
 1. INTRODUCTION
 

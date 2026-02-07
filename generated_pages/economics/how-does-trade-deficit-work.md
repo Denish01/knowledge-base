@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Trade Deficit Work?"
+title: "How Trade Deficit Works"
 slug: how-does-trade-deficit-work
 description: "A clear, simple explanation of how does trade deficit work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Trade Deficit Work?
+# How Trade Deficit Works
 
 1. QUICK ANSWER: A trade deficit occurs when a country imports more goods and services than it exports, resulting in a net outflow of money from the country. This happens when the value of a country's imports exceeds the value of its exports.
 

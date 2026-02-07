@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Proportions?"
+title: "Example of Proportions"
 slug: examples-of-proportions
 description: "A clear, simple explanation of examples of proportions - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Proportions?
+# Example of Proportions
 
 1. INTRODUCTION:
 A proportion is a statement that two ratios are equal. It is often written in the form "a is to b as c is to d", which can also be expressed as a/b = c/d. Proportions are used to compare quantities and find unknown values. They are a fundamental concept in mathematics and are used in various aspects of life.

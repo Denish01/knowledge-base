@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Exponents?"
+title: "What Affects Exponents"
 slug: what-affects-exponents
 description: "A clear, simple explanation of what affects exponents - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Exponents?
+# What Affects Exponents
 
 1. INTRODUCTION
 Exponents are a fundamental concept in mathematics, representing the repeated multiplication of a number by itself. Understanding exponents is crucial in various mathematical operations, such as algebra, geometry, and calculus. The value of an exponent is influenced by several factors, and recognizing these factors is essential to working with exponents effectively. The impact of these factors can significantly affect the outcome of mathematical expressions, making it vital to comprehend their cause-and-effect relationships.

@@ -1,11 +1,11 @@
 ---
-title: "What is Cellular Respiration?"
+title: "What Is Cellular Respiration?"
 slug: cellular-respiration
 description: "A clear, simple explanation of cellular respiration - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Cellular Respiration?
+# What Is Cellular Respiration?
 
 Cellular respiration is the process by which cells convert glucose into energy in the form of ATP, which is then used to power various cellular activities.
 

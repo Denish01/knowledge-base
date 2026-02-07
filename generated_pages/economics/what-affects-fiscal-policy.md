@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Fiscal Policy?"
+title: "What Affects Fiscal Policy"
 slug: what-affects-fiscal-policy
 description: "A clear, simple explanation of what affects fiscal policy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Fiscal Policy?
+# What Affects Fiscal Policy
 
 1. INTRODUCTION:
 Fiscal policy refers to the use of government spending and taxation to manage the overall level of economic activity. Understanding the factors that affect fiscal policy is crucial because it helps policymakers make informed decisions that can have significant impacts on the economy and the lives of citizens. The influences on fiscal policy are diverse and interconnected, making it essential to comprehend their cause-and-effect relationships.

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Dependent Qualification?"
+title: "Example of Dependent Qualification"
 slug: examples-of-dependent-qualification
 description: "A clear, simple explanation of examples of dependent qualification - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Dependent Qualification?
+# Example of Dependent Qualification
 
 1. INTRODUCTION
 Dependent qualification refers to a situation where something is true or happens only because something else is true or happens. This means that the occurrence or truth of one event or condition depends on the occurrence or truth of another. To understand this concept better, let's explore various examples across different contexts.

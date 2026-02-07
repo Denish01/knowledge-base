@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Dollar Cost Averaging?"
+title: "Example of Dollar Cost Averaging"
 slug: examples-of-dollar-cost-averaging
 description: "A clear, simple explanation of examples of dollar cost averaging - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Dollar Cost Averaging?
+# Example of Dollar Cost Averaging
 
 1. INTRODUCTION
 Dollar cost averaging is a strategy used to reduce the impact of market volatility when investing. It involves investing a fixed amount of money at regular intervals, regardless of the market's performance. This approach helps to average out the cost of investments over time, as more units are purchased when prices are low and fewer units are purchased when prices are high.

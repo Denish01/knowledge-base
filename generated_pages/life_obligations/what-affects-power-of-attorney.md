@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Power Of Attorney?"
+title: "What Affects Power Of Attorney"
 slug: what-affects-power-of-attorney
 description: "A clear, simple explanation of what affects power of attorney - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Power Of Attorney?
+# What Affects Power Of Attorney
 
 INTRODUCTION
 Power of attorney is a legal document that allows one person to make decisions on behalf of another. Understanding the factors that affect power of attorney is crucial, as it can impact the effectiveness and validity of the document. The power of attorney can be influenced by various factors, and recognizing these influences can help individuals make informed decisions when creating or using a power of attorney. In this explanation, we will explore the key factors that affect power of attorney, their interconnections, and the differences between controllable and uncontrollable factors.

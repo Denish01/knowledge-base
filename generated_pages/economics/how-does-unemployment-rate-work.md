@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Unemployment Rate Work?"
+title: "How Unemployment Rate Works"
 slug: how-does-unemployment-rate-work
 description: "A clear, simple explanation of how does unemployment rate work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Unemployment Rate Work?
+# How Unemployment Rate Works
 
 1. QUICK ANSWER: The unemployment rate is a measure of the number of people who are able and willing to work but are currently without a job, calculated as a percentage of the total labor force. It works by tracking the number of employed and unemployed individuals to determine the percentage of the labor force that is currently unemployed.
 

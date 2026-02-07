@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Pythagorean Theorem?"
+title: "What Affects Pythagorean Theorem"
 slug: what-affects-pythagorean-theorem
 description: "A clear, simple explanation of what affects pythagorean theorem - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Pythagorean Theorem?
+# What Affects Pythagorean Theorem
 
 1. INTRODUCTION
 The Pythagorean theorem is a fundamental concept in geometry that describes the relationship between the lengths of the sides of a right-angled triangle. It states that the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides. Understanding the factors that affect the Pythagorean theorem is crucial in applying it to real-world problems and ensuring accuracy in calculations. The theorem's accuracy and applicability depend on various factors, and recognizing these influences is essential for effective problem-solving.

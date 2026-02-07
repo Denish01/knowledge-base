@@ -1,11 +1,11 @@
 ---
-title: "What is Probability?"
+title: "What Is Probability?"
 slug: probability
 description: "A clear, simple explanation of probability - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Probability?
+# What Is Probability?
 
 Probability is a measure of the likelihood that an event will occur, and it is a fundamental concept in mathematics and statistics.
 

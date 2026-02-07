@@ -1,11 +1,11 @@
 ---
-title: "What is Means Testing Vs?"
+title: "Means Testing vs"
 slug: means-testing-vs
 description: "A clear, simple explanation of means testing vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Means Testing Vs?
+# Means Testing vs
 
 Means testing vs needs assessment is a comparison between two methods used to determine the level of financial assistance or support an individual or family may be eligible to receive from government programs or organizations.
 

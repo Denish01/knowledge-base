@@ -1,11 +1,11 @@
 ---
-title: "What is Dependent Qualification?"
+title: "What Is Dependent Qualification?"
 slug: dependent-qualification
 description: "A clear, simple explanation of dependent qualification - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Dependent Qualification?
+# What Is Dependent Qualification?
 
 Dependent qualification is a term used in logic, mathematics, and computer science to describe a condition or set of conditions that must be met in order for something to be considered true or valid.
 

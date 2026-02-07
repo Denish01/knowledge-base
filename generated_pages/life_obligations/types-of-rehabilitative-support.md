@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Rehabilitative Support?"
+title: "Types of Rehabilitative Support"
 slug: types-of-rehabilitative-support
 description: "A clear, simple explanation of types of rehabilitative support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Rehabilitative Support?
+# Types of Rehabilitative Support
 
 INTRODUCTION:
 Rehabilitative support refers to the various forms of assistance and care provided to individuals recovering from illness, injury, or disability. Classification of rehabilitative support is essential as it helps healthcare professionals, caregivers, and individuals understand the different types of support available, their purposes, and how they can be tailored to meet specific needs. By categorizing rehabilitative support, individuals can receive the most effective and efficient care, leading to better outcomes and improved quality of life. Understanding the different types of rehabilitative support is crucial for creating personalized treatment plans, allocating resources, and promoting overall well-being.

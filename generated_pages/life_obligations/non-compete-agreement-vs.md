@@ -1,11 +1,11 @@
 ---
-title: "What is Non-Compete Agreement Vs?"
+title: "Non Compete Agreement vs"
 slug: non-compete-agreement-vs
 description: "A clear, simple explanation of non-compete agreement vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Non-Compete Agreement Vs?
+# Non Compete Agreement vs
 
 Non-compete agreement vs other contractual agreements refers to a comparison between a non-compete agreement and other types of contractual agreements that restrict an individual's ability to work or start a business in a particular field or industry.
 

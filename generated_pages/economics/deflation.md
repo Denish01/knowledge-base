@@ -1,11 +1,11 @@
 ---
-title: "What is Deflation?"
+title: "What Is Deflation?"
 slug: deflation
 description: "A clear, simple explanation of deflation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Deflation?
+# What Is Deflation?
 
 Deflation is a sustained decrease in the general price level of goods and services in an economy over a period of time. 
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Temporary Support?"
+title: "Example of Temporary Support"
 slug: examples-of-temporary-support
 description: "A clear, simple explanation of examples of temporary support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Temporary Support?
+# Example of Temporary Support
 
 1. INTRODUCTION:
 Temporary support refers to assistance or aid provided for a limited time to help individuals, organizations, or systems overcome difficulties or challenges. This type of support is designed to be short-term, with the goal of enabling the recipient to become self-sufficient or independent once the support is withdrawn. Temporary support can take many forms, including financial, emotional, physical, or logistical assistance.

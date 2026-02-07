@@ -1,11 +1,11 @@
 ---
-title: "What is Risk Tolerance?"
+title: "What Is Risk Tolerance?"
 slug: risk-tolerance
 description: "A clear, simple explanation of risk tolerance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Risk Tolerance?
+# What Is Risk Tolerance?
 
 Risk tolerance is the degree to which an individual or organization is willing to accept uncertainty and potential losses in pursuit of a goal or investment.
 

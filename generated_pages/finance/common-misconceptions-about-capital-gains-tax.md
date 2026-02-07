@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Capital Gains Tax?"
+title: "Common Misconceptions About Capital Gains Tax"
 slug: common-misconceptions-about-capital-gains-tax
 description: "A clear, simple explanation of common misconceptions about capital gains tax - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Capital Gains Tax?
+# Common Misconceptions About Capital Gains Tax
 
 1. INTRODUCTION: 
 Misconceptions about capital gains tax are common due to the complexity of the tax system and the various rules that apply to different types of investments. Capital gains tax is a tax on the profit made from selling an investment, such as stocks, real estate, or other assets. Many people struggle to understand the nuances of capital gains tax, leading to misconceptions and potential errors when filing their taxes. In this article, we will explore some common misconceptions about capital gains tax and provide clarification on the actual rules.

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Interest Rates?"
+title: "Example of Interest Rates"
 slug: examples-of-interest-rates
 description: "A clear, simple explanation of examples of interest rates - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Interest Rates?
+# Example of Interest Rates
 
 1. INTRODUCTION:
 Interest rates are fees charged by lenders for the use of their money. They are a percentage of the total amount borrowed and can be applied to various types of loans, credit, and investments. Interest rates can significantly impact the cost of borrowing and the return on investment, making them a crucial concept to understand in personal finance and economics.

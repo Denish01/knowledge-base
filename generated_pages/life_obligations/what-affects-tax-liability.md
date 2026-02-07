@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Tax Liability?"
+title: "What Affects Tax Liability"
 slug: what-affects-tax-liability
 description: "A clear, simple explanation of what affects tax liability - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Tax Liability?
+# What Affects Tax Liability
 
 1. INTRODUCTION
 

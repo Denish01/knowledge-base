@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Bear Market Work?"
+title: "How Bear Market Works"
 slug: how-does-bear-market-work
 description: "A clear, simple explanation of how does bear market work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Bear Market Work?
+# How Bear Market Works
 
 1. QUICK ANSWER: A bear market is a period of time when the overall value of stocks or investments is falling, causing investors to lose confidence and sell their holdings, which in turn drives prices down further. This cycle of declining prices and decreasing investor confidence is the core mechanism that drives a bear market.
 

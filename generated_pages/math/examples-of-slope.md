@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Slope?"
+title: "Example of Slope"
 slug: examples-of-slope
 description: "A clear, simple explanation of examples of slope - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Slope?
+# Example of Slope
 
 1. INTRODUCTION
 Slope refers to the measure of how steep a line or surface is, calculated as the ratio of the vertical change to the horizontal change. It is often represented mathematically as rise over run. Understanding slope is crucial in various aspects of life, from construction and design to geography and physics. Slope can be observed in numerous contexts, ranging from the mundane to the extraordinary.

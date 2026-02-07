@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Child Support?"
+title: "Example of Child Support"
 slug: examples-of-child-support
 description: "A clear, simple explanation of examples of child support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Child Support?
+# Example of Child Support
 
 1. INTRODUCTION
 Child support refers to the financial assistance provided by one parent to the other for the care and well-being of their child or children, typically in cases where the parents are separated or divorced. This support is intended to cover expenses such as food, clothing, education, and healthcare, ensuring the child's basic needs are met. The amount and terms of child support are usually determined by a court, taking into account factors like the income of both parents and the child's living arrangements.

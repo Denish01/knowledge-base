@@ -1,11 +1,11 @@
 ---
-title: "What is Decomposition Vs?"
+title: "Decomposition vs"
 slug: decomposition-vs
 description: "A clear, simple explanation of decomposition vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Decomposition Vs?
+# Decomposition vs
 
 Decomposition vs refers to the process of comparing and contrasting the breakdown of complex substances into simpler components, often in the context of biology, chemistry, and ecology.
 

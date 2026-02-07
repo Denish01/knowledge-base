@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Percentages?"
+title: "Example of Percentages"
 slug: examples-of-percentages
 description: "A clear, simple explanation of examples of percentages - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Percentages?
+# Example of Percentages
 
 1. INTRODUCTION
 A percentage is a way to express a part of a whole as a fraction of 100. It is often used to describe a proportion or a rate of change. Percentages are commonly used in various aspects of life, including mathematics, science, finance, and everyday applications. Understanding percentages is essential for making informed decisions and solving problems.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Consumer Price Index Work?"
+title: "How Consumer Price Index Works"
 slug: how-does-consumer-price-index-work
 description: "A clear, simple explanation of how does consumer price index work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Consumer Price Index Work?
+# How Consumer Price Index Works
 
 1. QUICK ANSWER: The consumer price index (CPI) works by tracking the average change in prices of a basket of goods and services that households purchase, allowing for the calculation of inflation rates. This is done by regularly collecting data on the prices of these items and comparing them over time to determine the overall change in the cost of living.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Friction Vs?"
+title: "Friction vs"
 slug: friction-vs
 description: "A clear, simple explanation of friction vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Friction Vs?
+# Friction vs
 
 Friction refers to the force that opposes motion between two surfaces that are in contact with each other. 
 

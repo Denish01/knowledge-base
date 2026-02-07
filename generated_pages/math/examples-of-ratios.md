@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Ratios?"
+title: "Example of Ratios"
 slug: examples-of-ratios
 description: "A clear, simple explanation of examples of ratios - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Ratios?
+# Example of Ratios
 
 1. INTRODUCTION
 A ratio is a way to compare two quantities by dividing one by the other. It is often expressed as a fraction, with the first quantity as the numerator and the second quantity as the denominator. Ratios can be used to describe a wide range of phenomena, from the proportions of ingredients in a recipe to the scale of a map. Understanding ratios is essential for solving problems in various fields, including mathematics, science, and engineering.

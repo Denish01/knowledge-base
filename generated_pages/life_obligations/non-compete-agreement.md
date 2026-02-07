@@ -1,11 +1,11 @@
 ---
-title: "What is Non-Compete Agreement?"
+title: "What Is Non Compete Agreement?"
 slug: non-compete-agreement
 description: "A clear, simple explanation of non-compete agreement - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Non-Compete Agreement?
+# What Is Non Compete Agreement?
 
 Non-compete agreement refers to a contract between an employer and an employee where the employee agrees not to work for a competitor or start a similar business after leaving the company.
 

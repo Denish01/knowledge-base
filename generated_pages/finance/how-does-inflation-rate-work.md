@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Inflation Rate Work?"
+title: "How Inflation Rate Works"
 slug: how-does-inflation-rate-work
 description: "A clear, simple explanation of how does inflation rate work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Inflation Rate Work?
+# How Inflation Rate Works
 
 1. QUICK ANSWER: The inflation rate is a measure of how quickly prices for goods and services are rising, and it works by comparing the current price level of a basket of goods and services to the price level of the same basket in a previous period. This comparison is then used to calculate the percentage change in prices, which is the inflation rate.
 

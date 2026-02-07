@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Pension?"
+title: "What Affects Pension"
 slug: what-affects-pension
 description: "A clear, simple explanation of what affects pension - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Pension?
+# What Affects Pension
 
 1. INTRODUCTION:
 A pension is a type of retirement plan that provides a steady income to individuals after they have stopped working. Understanding the factors that affect pension is crucial because it helps individuals and organizations make informed decisions about retirement planning. The amount of pension an individual receives can be influenced by various factors, and being aware of these factors can help maximize retirement benefits.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Perimeter Work?"
+title: "How Perimeter Works"
 slug: how-does-perimeter-work
 description: "A clear, simple explanation of how does perimeter work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Perimeter Work?
+# How Perimeter Works
 
 1. QUICK ANSWER: 
 The perimeter of a shape is the total distance around its outer boundary, calculated by adding up the lengths of all its sides. This process involves understanding the shape's dimensions and applying basic arithmetic operations to determine its perimeter.

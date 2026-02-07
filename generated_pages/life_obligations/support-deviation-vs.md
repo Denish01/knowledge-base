@@ -1,11 +1,11 @@
 ---
-title: "What is Support Deviation Vs?"
+title: "Support Deviation vs"
 slug: support-deviation-vs
 description: "A clear, simple explanation of support deviation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Support Deviation Vs?
+# Support Deviation vs
 
 Support deviation vs refers to the comparison of the actual performance of a system or process to its expected or standard performance, often measured in terms of the degree of variation or difference between the two.
 

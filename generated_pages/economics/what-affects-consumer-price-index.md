@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Consumer Price Index?"
+title: "What Affects Consumer Price Index"
 slug: what-affects-consumer-price-index
 description: "A clear, simple explanation of what affects consumer price index - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Consumer Price Index?
+# What Affects Consumer Price Index
 
 1. INTRODUCTION:
 The Consumer Price Index (CPI) is a statistical measure that tracks the average change in prices of a basket of goods and services consumed by households. Understanding the factors that influence the CPI is crucial for individuals, businesses, and policymakers to make informed decisions about investments, pricing, and economic policies. The CPI is a key indicator of inflation, which can affect the purchasing power of consumers and the overall health of the economy. By recognizing the factors that affect the CPI, individuals can better navigate economic fluctuations and make more informed decisions.

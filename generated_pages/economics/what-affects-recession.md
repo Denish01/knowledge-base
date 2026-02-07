@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Recession?"
+title: "What Affects Recession"
 slug: what-affects-recession
 description: "A clear, simple explanation of what affects recession - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Recession?
+# What Affects Recession
 
 1. INTRODUCTION:
 A recession is a period of economic decline, where a country's economy experiences a decrease in economic activity, resulting in higher unemployment, lower production, and reduced consumer spending. Understanding the factors that affect recession is crucial for governments, businesses, and individuals to make informed decisions and mitigate its impact. By recognizing the causes of recession, it is possible to develop strategies to prevent or minimize its effects, ultimately leading to a more stable and prosperous economy.

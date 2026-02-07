@@ -1,11 +1,11 @@
 ---
-title: "What is Natural Selection?"
+title: "What Is Natural Selection?"
 slug: natural-selection
 description: "A clear, simple explanation of natural selection - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Natural Selection?
+# What Is Natural Selection?
 
 Natural selection is a fundamental concept in biology that refers to the process by which populations of organisms adapt and evolve over time in response to their environment.
 

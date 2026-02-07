@@ -1,11 +1,11 @@
 ---
-title: "What is Spousal Support Duration Vs?"
+title: "Spousal Support Duration vs"
 slug: spousal-support-duration-vs
 description: "A clear, simple explanation of spousal support duration vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Spousal Support Duration Vs?
+# Spousal Support Duration vs
 
 Spousal support duration vs refers to the length of time that one spouse is required to provide financial support to the other spouse after a divorce or separation.
 

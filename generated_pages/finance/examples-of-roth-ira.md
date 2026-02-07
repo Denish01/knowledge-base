@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Roth Ira?"
+title: "Example of Roth Ira"
 slug: examples-of-roth-ira
 description: "A clear, simple explanation of examples of roth ira - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Roth Ira?
+# Example of Roth Ira
 
 1. INTRODUCTION:
 A Roth Individual Retirement Account, commonly referred to as a Roth IRA, is a type of savings account that allows individuals to set aside money for retirement while paying taxes on the contributions upfront. This means that the money contributed to a Roth IRA has already been taxed, and the funds can grow tax-free. In exchange for paying taxes now, the withdrawals from a Roth IRA are tax-free if certain conditions are met, making it an attractive option for retirement savings.

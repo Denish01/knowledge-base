@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Kinetic Energy Work?"
+title: "How Kinetic Energy Works"
 slug: how-does-kinetic-energy-work
 description: "A clear, simple explanation of how does kinetic energy work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Kinetic Energy Work?
+# How Kinetic Energy Works
 
 1. QUICK ANSWER: Kinetic energy is the energy an object possesses when it is in motion, and it works by transferring energy from one object to another through collisions or other interactions. The core mechanism of kinetic energy involves the conversion of potential energy into motion, resulting in the object's ability to do work.
 

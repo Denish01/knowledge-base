@@ -1,11 +1,11 @@
 ---
-title: "What is What Food Web Depends On?"
+title: "What Food Web Depends On"
 slug: what-food-web-depends-on
 description: "A clear, simple explanation of what food web depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Food Web Depends On?
+# What Food Web Depends On
 
 1. INTRODUCTION
 A food web is a complex network of relationships between different species in an ecosystem, where each species plays a role as either a producer, consumer, or decomposer. Understanding what a food web depends on is crucial, as it highlights the prerequisites and foundations necessary for a healthy and balanced ecosystem. The dependencies of a food web are essential to recognize, as they can impact the entire ecosystem's stability and biodiversity.

@@ -1,11 +1,11 @@
 ---
-title: "What is What Dividend Yield Depends On?"
+title: "What Dividend Yield Depends On"
 slug: what-dividend-yield-depends-on
 description: "A clear, simple explanation of what dividend yield depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Dividend Yield Depends On?
+# What Dividend Yield Depends On
 
 1. INTRODUCTION
 Dividend yield is a measure of the ratio of the annual dividend payment of a stock to its current stock price. It is a crucial metric for investors, as it helps them evaluate the potential return on investment from a particular stock. Understanding what dividend yield depends on is essential, as it allows investors to make informed decisions and avoid potential pitfalls. The dependencies of dividend yield are the foundation upon which its calculation and interpretation are built.

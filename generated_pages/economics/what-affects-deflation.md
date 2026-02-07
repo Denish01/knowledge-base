@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Deflation?"
+title: "What Affects Deflation"
 slug: what-affects-deflation
 description: "A clear, simple explanation of what affects deflation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Deflation?
+# What Affects Deflation
 
 1. INTRODUCTION:
 Deflation is a economic phenomenon characterized by a decrease in the general price level of goods and services in an economy. Understanding the factors that affect deflation is crucial because it can have significant implications for economic growth, employment, and overall stability. When deflation occurs, the purchasing power of consumers increases, but it can also lead to reduced spending and investment, as individuals and businesses may delay purchases in anticipation of lower prices in the future. Therefore, identifying the causes of deflation is essential for policymakers and economists to develop effective strategies to mitigate its negative effects.

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Financial Burden?"
+title: "Example of Financial Burden"
 slug: examples-of-financial-burden
 description: "A clear, simple explanation of examples of financial burden - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Financial Burden?
+# Example of Financial Burden
 
 1. INTRODUCTION
 A financial burden refers to a situation where an individual, family, or organization is struggling to manage their financial obligations due to a lack of sufficient funds or resources. This can lead to significant stress, anxiety, and in some cases, severe consequences such as debt, bankruptcy, or even homelessness. Understanding financial burden is crucial as it can affect anyone, regardless of their background or socioeconomic status.

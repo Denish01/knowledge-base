@@ -1,11 +1,11 @@
 ---
-title: "What is Annual Percentage Yield?"
+title: "What Is Annual Percentage Yield?"
 slug: annual-percentage-yield
 description: "A clear, simple explanation of annual percentage yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Annual Percentage Yield?
+# What Is Annual Percentage Yield?
 
 Annual percentage yield is a measure of the total interest earned on a deposit or investment over a year, taking into account the effect of compounding.
 

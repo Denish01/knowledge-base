@@ -1,11 +1,11 @@
 ---
-title: "What is Guardianship Vs?"
+title: "Guardianship vs"
 slug: guardianship-vs
 description: "A clear, simple explanation of guardianship vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Guardianship Vs?
+# Guardianship vs
 
 Guardianship vs Conservatorship is a comparison between two legal arrangements that involve one person being responsible for the care and well-being of another individual, often due to the latter's inability to manage their own affairs.
 

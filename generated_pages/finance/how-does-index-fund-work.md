@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Index Fund Work?"
+title: "How Index Fund Works"
 slug: how-does-index-fund-work
 description: "A clear, simple explanation of how does index fund work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Index Fund Work?
+# How Index Fund Works
 
 1. QUICK ANSWER: An index fund works by pooling money from many investors to buy a representative sample of stocks or bonds in a specific market index, such as the S&P 500, allowing individuals to own a small piece of the entire market. This mechanism provides broad diversification and can help reduce risk by spreading investments across many different assets.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Unemployment Rate Vs?"
+title: "Unemployment Rate vs"
 slug: unemployment-rate-vs
 description: "A clear, simple explanation of unemployment rate vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Unemployment Rate Vs?
+# Unemployment Rate vs
 
 Unemployment rate vs inflation is a comparison between two economic indicators that are often considered together when evaluating the overall health of an economy.
 

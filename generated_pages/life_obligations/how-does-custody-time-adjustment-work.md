@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Custody Time Adjustment Work?"
+title: "How Custody Time Adjustment Works"
 slug: how-does-custody-time-adjustment-work
 description: "A clear, simple explanation of how does custody time adjustment work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Custody Time Adjustment Work?
+# How Custody Time Adjustment Works
 
 1. QUICK ANSWER: Custody time adjustment is a mechanism that allows for the modification of a child custody arrangement based on various factors, such as changes in a parent's work schedule or a child's needs. This adjustment process involves a series of steps that ultimately aim to ensure the best interests of the child are met.
 

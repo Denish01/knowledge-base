@@ -1,11 +1,11 @@
 ---
-title: "What is Absolute Value?"
+title: "What Is Absolute Value?"
 slug: absolute-value
 description: "A clear, simple explanation of absolute value - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Absolute Value?
+# What Is Absolute Value?
 
 Absolute value is a mathematical concept that refers to the distance of a number from zero on the number line, without considering whether the number is positive or negative.
 

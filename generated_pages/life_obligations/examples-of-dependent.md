@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Dependent?"
+title: "Example of Dependent"
 slug: examples-of-dependent
 description: "A clear, simple explanation of examples of dependent - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Dependent?
+# Example of Dependent
 
 1. INTRODUCTION
 A dependent is an individual or entity that relies on someone or something else for support, care, or financial assistance. This relationship can be seen in various contexts, from personal to professional, and across different scales, from small family units to large organizations. Understanding what constitutes a dependent is crucial for making informed decisions in fields such as law, finance, and social services.

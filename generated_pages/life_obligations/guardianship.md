@@ -1,11 +1,11 @@
 ---
-title: "What is Guardianship?"
+title: "What Is Guardianship?"
 slug: guardianship
 description: "A clear, simple explanation of guardianship - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Guardianship?
+# What Is Guardianship?
 
 Guardianship is a legal relationship in which one person, the guardian, is responsible for the care and well-being of another person, often a minor or an adult who is unable to care for themselves.
 

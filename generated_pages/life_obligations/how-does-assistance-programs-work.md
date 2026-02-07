@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Assistance Programs Work?"
+title: "How Assistance Programs Works"
 slug: how-does-assistance-programs-work
 description: "A clear, simple explanation of how does assistance programs work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Assistance Programs Work?
+# How Assistance Programs Works
 
 1. QUICK ANSWER: Assistance programs work by providing support to individuals or families in need, typically through a combination of eligibility screening, application processing, and benefit distribution. The core mechanism involves a series of steps that help identify and assist those who qualify for the program.
 

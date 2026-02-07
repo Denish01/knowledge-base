@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Custodial Parent?"
+title: "What Affects Custodial Parent"
 slug: what-affects-custodial-parent
 description: "A clear, simple explanation of what affects custodial parent - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Custodial Parent?
+# What Affects Custodial Parent
 
 INTRODUCTION
 A custodial parent is a parent who has primary physical and emotional responsibility for a child. Understanding the factors that affect a custodial parent is crucial because it can impact the well-being and development of the child. The role of a custodial parent is complex and influenced by various factors, which can have a significant impact on their ability to provide a stable and nurturing environment for their child. Recognizing these factors can help custodial parents, family members, and professionals provide support and resources to ensure the best possible outcome for the child.

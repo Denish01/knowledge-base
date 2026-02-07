@@ -1,11 +1,11 @@
 ---
-title: "What is Public Assistance?"
+title: "What Is Public Assistance?"
 slug: public-assistance
 description: "A clear, simple explanation of public assistance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Public Assistance?
+# What Is Public Assistance?
 
 Public assistance is a range of government programs and services designed to provide financial and social support to individuals and families in need. 
 

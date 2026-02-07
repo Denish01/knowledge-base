@@ -1,11 +1,11 @@
 ---
-title: "What is Dependent Vs?"
+title: "Dependent vs"
 slug: dependent-vs
 description: "A clear, simple explanation of dependent vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Dependent Vs?
+# Dependent vs
 
 Dependent variables refer to the outcome or result that is being measured or observed in a scientific experiment or study. 
 

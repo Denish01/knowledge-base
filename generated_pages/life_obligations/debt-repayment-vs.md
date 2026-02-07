@@ -1,11 +1,11 @@
 ---
-title: "What is Debt Repayment Vs?"
+title: "Debt Repayment vs"
 slug: debt-repayment-vs
 description: "A clear, simple explanation of debt repayment vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Debt Repayment Vs?
+# Debt Repayment vs
 
 Debt repayment vs debt consolidation is a financial concept that refers to the process of evaluating and choosing between two different methods of managing debt.
 

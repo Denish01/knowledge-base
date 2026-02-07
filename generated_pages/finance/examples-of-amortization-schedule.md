@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Amortization Schedule?"
+title: "Example of Amortization Schedule"
 slug: examples-of-amortization-schedule
 description: "A clear, simple explanation of examples of amortization schedule - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Amortization Schedule?
+# Example of Amortization Schedule
 
 1. INTRODUCTION:
 An amortization schedule is a table that shows how much of each payment on a loan goes towards interest and how much goes towards the principal. It helps borrowers understand how their loan payments are structured and how long it will take to pay off the loan. The schedule typically includes the loan amount, interest rate, payment amount, and the number of payments.

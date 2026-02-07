@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Amortization Schedule Work?"
+title: "How Amortization Schedule Works"
 slug: how-does-amortization-schedule-work
 description: "A clear, simple explanation of how does amortization schedule work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Amortization Schedule Work?
+# How Amortization Schedule Works
 
 1. QUICK ANSWER: 
 An amortization schedule is a table that shows how much of each loan payment goes towards interest and principal, allowing borrowers to see how their debt decreases over time. It works by breaking down each payment into two parts: the interest paid on the outstanding balance and the amount applied to the principal, which reduces the loan balance.

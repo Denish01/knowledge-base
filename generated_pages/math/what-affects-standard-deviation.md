@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Standard Deviation?"
+title: "What Affects Standard Deviation"
 slug: what-affects-standard-deviation
 description: "A clear, simple explanation of what affects standard deviation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Standard Deviation?
+# What Affects Standard Deviation
 
 1. INTRODUCTION
 Standard deviation is a measure of how spread out a set of numbers is from its average value. It gives an idea of how much individual data points deviate from the mean. Understanding what affects standard deviation is important because it helps in interpreting and analyzing data accurately. Many factors can influence the standard deviation of a dataset, and knowing these factors is crucial for making informed decisions in various fields such as science, finance, and social studies.

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Integers?"
+title: "Example of Integers"
 slug: examples-of-integers
 description: "A clear, simple explanation of examples of integers - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Integers?
+# Example of Integers
 
 1. INTRODUCTION
 Integers are whole numbers, either positive, negative, or zero, without a fractional part. They are the basic building blocks of mathematics and are used to represent a wide range of quantities in various fields. Understanding integers is essential for performing mathematical operations, solving problems, and making informed decisions. In this page, we will explore various examples of integers in different contexts to illustrate their application and significance.

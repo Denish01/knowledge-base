@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Income Shares Model Work?"
+title: "How Income Shares Model Works"
 slug: how-does-income-shares-model-work
 description: "A clear, simple explanation of how does income shares model work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Income Shares Model Work?
+# How Income Shares Model Works
 
 1. QUICK ANSWER: The income shares model works by allowing investors to provide funding to a company or individual in exchange for a percentage of their future income. This model enables investors to share in the financial success of the company or individual, while also providing a financial safety net for the recipient of the funding.
 

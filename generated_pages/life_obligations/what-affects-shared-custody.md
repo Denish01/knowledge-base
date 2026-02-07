@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Shared Custody?"
+title: "What Affects Shared Custody"
 slug: what-affects-shared-custody
 description: "A clear, simple explanation of what affects shared custody - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Shared Custody?
+# What Affects Shared Custody
 
 1. INTRODUCTION
 

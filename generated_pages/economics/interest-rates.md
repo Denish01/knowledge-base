@@ -1,11 +1,11 @@
 ---
-title: "What is Interest Rates?"
+title: "What Is Interest Rates?"
 slug: interest-rates
 description: "A clear, simple explanation of interest rates - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Interest Rates?
+# What Is Interest Rates?
 
 Interest rates refer to the percentage at which borrowed money is paid back to the lender, in addition to the original amount borrowed.
 

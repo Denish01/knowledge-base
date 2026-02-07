@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Food Chain?"
+title: "Example of Food Chain"
 slug: examples-of-food-chain
 description: "A clear, simple explanation of examples of food chain - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Food Chain?
+# Example of Food Chain
 
 1. INTRODUCTION
 A food chain is a series of events where one organism is eaten by another, each one serving as a source of food for the next. This concept is fundamental to understanding ecosystems and the flow of energy within them. Food chains can vary greatly in complexity and length, but they all share a common thread: the transfer of energy from one species to another through consumption.

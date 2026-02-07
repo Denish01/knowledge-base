@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Volume?"
+title: "Types of Volume"
 slug: types-of-volume
 description: "A clear, simple explanation of types of volume - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Volume?
+# Types of Volume
 
 1. INTRODUCTION
 

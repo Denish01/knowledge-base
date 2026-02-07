@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Cohabitation?"
+title: "What Affects Cohabitation"
 slug: what-affects-cohabitation
 description: "A clear, simple explanation of what affects cohabitation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Cohabitation?
+# What Affects Cohabitation
 
 1. INTRODUCTION
 Cohabitation refers to the act of living together with a partner or spouse in a shared residence. Understanding the factors that affect cohabitation is crucial because it can have significant impacts on the well-being, stability, and quality of life for all individuals involved. By recognizing the influences on cohabitation, individuals can make informed decisions and take proactive steps to nurture a healthy and fulfilling living arrangement.

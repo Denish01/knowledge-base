@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Spousal Support?"
+title: "Types of Spousal Support"
 slug: types-of-spousal-support
 description: "A clear, simple explanation of types of spousal support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Spousal Support?
+# Types of Spousal Support
 
 1. INTRODUCTION:
 Types of spousal support refer to the various forms of financial assistance that one spouse may be required to provide to the other during or after a divorce or separation. Understanding the different types of spousal support is crucial, as it can significantly impact the financial well-being of both parties involved. Classification of spousal support matters because it helps individuals navigate the complex process of divorce and separation, ensuring that they receive or provide fair and reasonable financial support. By recognizing the distinct categories of spousal support, individuals can better prepare for the financial implications of their situation and make informed decisions about their future.

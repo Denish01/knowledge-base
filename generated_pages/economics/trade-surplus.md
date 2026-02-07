@@ -1,11 +1,11 @@
 ---
-title: "What is Trade Surplus?"
+title: "What Is Trade Surplus?"
 slug: trade-surplus
 description: "A clear, simple explanation of trade surplus - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Trade Surplus?
+# What Is Trade Surplus?
 
 Trade surplus is a situation in which a country exports more goods and services than it imports, resulting in a net inflow of foreign exchange.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Asset Allocation?"
+title: "What Affects Asset Allocation"
 slug: what-affects-asset-allocation
 description: "A clear, simple explanation of what affects asset allocation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Asset Allocation?
+# What Affects Asset Allocation
 
 1. INTRODUCTION:
 Asset allocation refers to the process of dividing investments among different asset classes, such as stocks, bonds, and real estate, to achieve a desired balance of risk and return. Understanding the factors that affect asset allocation is crucial for investors, as it helps them make informed decisions and create a portfolio that meets their financial goals. By recognizing the influences on asset allocation, investors can better navigate the complexities of the investment landscape and adjust their strategies accordingly.

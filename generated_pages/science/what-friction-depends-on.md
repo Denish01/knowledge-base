@@ -1,11 +1,11 @@
 ---
-title: "What is What Friction Depends On?"
+title: "What Friction Depends On"
 slug: what-friction-depends-on
 description: "A clear, simple explanation of what friction depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Friction Depends On?
+# What Friction Depends On
 
 1. INTRODUCTION
 Friction is a force that opposes motion between two surfaces in contact. Understanding what friction depends on is crucial for grasping its role in various physical phenomena and for applying it in engineering, physics, and other fields. The dependencies of friction are fundamental prerequisites that determine its presence, magnitude, and effects. By examining these dependencies, we can better comprehend the underlying mechanisms that govern friction.

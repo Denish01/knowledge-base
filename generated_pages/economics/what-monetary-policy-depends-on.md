@@ -1,11 +1,11 @@
 ---
-title: "What is What Monetary Policy Depends On?"
+title: "What Monetary Policy Depends On"
 slug: what-monetary-policy-depends-on
 description: "A clear, simple explanation of what monetary policy depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Monetary Policy Depends On?
+# What Monetary Policy Depends On
 
 1. INTRODUCTION:
 Monetary policy refers to the actions taken by a central bank to manage the money supply and interest rates in an economy. Understanding what monetary policy depends on is crucial because it helps to identify the prerequisites and foundations necessary for effective policy implementation. Dependencies are the building blocks that enable monetary policy to function as intended. Without these dependencies, monetary policy cannot achieve its objectives, which are to promote economic growth, stability, and low inflation.

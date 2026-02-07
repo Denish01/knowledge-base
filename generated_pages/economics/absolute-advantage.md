@@ -1,11 +1,11 @@
 ---
-title: "What is Absolute Advantage?"
+title: "What Is Absolute Advantage?"
 slug: absolute-advantage
 description: "A clear, simple explanation of absolute advantage - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Absolute Advantage?
+# What Is Absolute Advantage?
 
 Absolute advantage is a concept in economics that refers to a country or individual's ability to produce more of a particular good or service than any other country or individual, using the same amount of resources.
 

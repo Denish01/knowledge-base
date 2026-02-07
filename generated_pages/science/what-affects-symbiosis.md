@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Symbiosis?"
+title: "What Affects Symbiosis"
 slug: what-affects-symbiosis
 description: "A clear, simple explanation of what affects symbiosis - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Symbiosis?
+# What Affects Symbiosis
 
 1. INTRODUCTION
 

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Annual Percentage Yield Work?"
+title: "How Annual Percentage Yield Works"
 slug: how-does-annual-percentage-yield-work
 description: "A clear, simple explanation of how does annual percentage yield work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Annual Percentage Yield Work?
+# How Annual Percentage Yield Works
 
 1. QUICK ANSWER: The annual percentage yield (APY) is a measure of the interest earned on a deposit account over a year, taking into account the effect of compounding interest. It represents the total amount of interest paid on a deposit, including the initial principal and any accrued interest.
 

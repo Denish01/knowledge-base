@@ -1,11 +1,11 @@
 ---
-title: "What is Cost Sharing?"
+title: "What Is Cost Sharing?"
 slug: cost-sharing
 description: "A clear, simple explanation of cost sharing - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Cost Sharing?
+# What Is Cost Sharing?
 
 Cost sharing is a financial arrangement in which two or more parties agree to split the costs of a particular expense or project.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Estate Planning?"
+title: "What Affects Estate Planning"
 slug: what-affects-estate-planning
 description: "A clear, simple explanation of what affects estate planning - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Estate Planning?
+# What Affects Estate Planning
 
 1. INTRODUCTION:
 Estate planning is the process of arranging for the distribution and management of a person's assets after their death or incapacitation. Understanding the factors that affect estate planning is crucial because it helps individuals create a plan that meets their unique needs and goals. By recognizing the influences on estate planning, individuals can make informed decisions and ensure that their wishes are carried out. Effective estate planning can provide peace of mind, protect loved ones, and minimize potential conflicts.

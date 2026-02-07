@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Friction?"
+title: "Types of Friction"
 slug: types-of-friction
 description: "A clear, simple explanation of types of friction - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Friction?
+# Types of Friction
 
 ## INTRODUCTION
 Friction is a fundamental force that opposes motion between two surfaces in contact. Understanding the different types of friction is crucial in various fields, including physics, engineering, and everyday life. Classification of friction is essential as it helps to identify and analyze the unique characteristics of each type, enabling the development of strategies to reduce or increase friction as needed. By categorizing friction, individuals can better comprehend the underlying mechanisms and make informed decisions in design, safety, and problem-solving contexts.

@@ -1,11 +1,11 @@
 ---
-title: "What is Noncustodial Parent Vs?"
+title: "Noncustodial Parent vs"
 slug: noncustodial-parent-vs
 description: "A clear, simple explanation of noncustodial parent vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Noncustodial Parent Vs?
+# Noncustodial Parent vs
 
 Noncustodial parent refers to a parent who does not have primary physical custody of their child, meaning the child does not live with them most of the time. 
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Employer Match?"
+title: "What Affects Employer Match"
 slug: what-affects-employer-match
 description: "A clear, simple explanation of what affects employer match - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Employer Match?
+# What Affects Employer Match
 
 1. INTRODUCTION
 An employer match refers to the amount of money an employer contributes to an employee's retirement account, often based on the employee's own contributions. Understanding the factors that affect employer match is crucial for both employees and employers, as it can significantly impact the overall value of the benefit and the employee's retirement savings. By recognizing these influences, individuals can make informed decisions about their retirement planning and employers can design more effective benefits packages.

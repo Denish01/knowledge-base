@@ -1,11 +1,11 @@
 ---
-title: "What is Ratios?"
+title: "What Is Ratios?"
 slug: ratios
 description: "A clear, simple explanation of ratios - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Ratios?
+# What Is Ratios?
 
 Ratios is a mathematical concept that refers to the comparison of two quantities by division, often expressed as a fraction, proportion, or percentage.
 

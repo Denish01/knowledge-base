@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Unemployment Rate?"
+title: "What Affects Unemployment Rate"
 slug: what-affects-unemployment-rate
 description: "A clear, simple explanation of what affects unemployment rate - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Unemployment Rate?
+# What Affects Unemployment Rate
 
 1. INTRODUCTION:
 The unemployment rate is a measure of the number of people in a workforce who are currently without a job but are actively looking for employment. Understanding what affects the unemployment rate is important because it helps individuals, businesses, and governments make informed decisions about investments, policies, and economic development. By recognizing the factors that influence unemployment, it is possible to identify potential causes of changes in the unemployment rate and take steps to address them.

@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Consumer Price Index?"
+title: "Types of Consumer Price Index"
 slug: types-of-consumer-price-index
 description: "A clear, simple explanation of types of consumer price index - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Consumer Price Index?
+# Types of Consumer Price Index
 
 1. INTRODUCTION:
 The Consumer Price Index (CPI) is a statistical measure that tracks changes in the prices of a basket of goods and services consumed by households. The types of Consumer Price Index cover various aspects of price measurement, including different categories of goods and services, geographic locations, and population groups. Classification of these types is essential to understand the nuances of price movements and their impact on different segments of the economy and society. By categorizing the types of CPI, policymakers, researchers, and businesses can better analyze and respond to changes in prices, inflation, and consumer behavior. This classification system helps to identify patterns, trends, and relationships between different price indices, enabling more informed decision-making.

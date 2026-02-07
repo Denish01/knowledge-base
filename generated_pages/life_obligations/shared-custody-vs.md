@@ -1,11 +1,11 @@
 ---
-title: "What is Shared Custody Vs?"
+title: "Shared Custody vs"
 slug: shared-custody-vs
 description: "A clear, simple explanation of shared custody vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Shared Custody Vs?
+# Shared Custody vs
 
 Shared custody is a child custody arrangement in which both parents have legal and physical responsibility for their children after a divorce or separation. 
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Trade Surplus Vs?"
+title: "Trade Surplus vs"
 slug: trade-surplus-vs
 description: "A clear, simple explanation of trade surplus vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Trade Surplus Vs?
+# Trade Surplus vs
 
 Trade surplus refers to a situation where a country exports more goods and services than it imports, resulting in a positive balance of trade.
 

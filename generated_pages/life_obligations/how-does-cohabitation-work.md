@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Cohabitation Work?"
+title: "How Cohabitation Works"
 slug: how-does-cohabitation-work
 description: "A clear, simple explanation of how does cohabitation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Cohabitation Work?
+# How Cohabitation Works
 
 1. QUICK ANSWER: Cohabitation works through a process where two or more individuals, often in a romantic relationship, decide to live together and share a common living space, leading to a merging of their daily lives and responsibilities. This shared living arrangement involves a combination of emotional, financial, and logistical considerations that require mutual understanding and cooperation.
 

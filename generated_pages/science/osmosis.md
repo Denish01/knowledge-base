@@ -1,11 +1,11 @@
 ---
-title: "What is Osmosis?"
+title: "What Is Osmosis?"
 slug: osmosis
 description: "A clear, simple explanation of osmosis - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Osmosis?
+# What Is Osmosis?
 
 Osmosis is the movement of water molecules from a region of high concentration to a region of low concentration through a selectively permeable membrane, which is a barrier that allows certain molecules to pass through while keeping others out.
 

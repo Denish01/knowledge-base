@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Credit Score?"
+title: "Types of Credit Score"
 slug: types-of-credit-score
 description: "A clear, simple explanation of types of credit score - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Credit Score?
+# Types of Credit Score
 
 ## INTRODUCTION
 The classification of credit scores is a vital aspect of personal finance, as it helps individuals understand their creditworthiness and make informed decisions about borrowing and lending. Credit scores are numerical representations of an individual's credit history, and there are several types of credit scores that serve different purposes. Understanding the various types of credit scores is essential for managing one's financial health, as it enables individuals to identify areas for improvement and take corrective action. The classification of credit scores matters because it provides a framework for evaluating credit risk, facilitating lending decisions, and promoting financial inclusion.

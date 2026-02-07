@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Direct Deposit?"
+title: "What Affects Direct Deposit"
 slug: what-affects-direct-deposit
 description: "A clear, simple explanation of what affects direct deposit - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Direct Deposit?
+# What Affects Direct Deposit
 
 1. INTRODUCTION:
 Direct deposit is a payment method where funds are electronically transferred from a payer to a payee's bank account. Understanding the factors that affect direct deposit is crucial for individuals, businesses, and organizations, as it can impact the speed, accuracy, and security of transactions. Knowing what influences direct deposit can help mitigate potential issues, reduce errors, and ensure timely payments.

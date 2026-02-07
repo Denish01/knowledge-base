@@ -1,11 +1,11 @@
 ---
-title: "What is Property Tax Vs?"
+title: "Property Tax vs"
 slug: property-tax-vs
 description: "A clear, simple explanation of property tax vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Property Tax Vs?
+# Property Tax vs
 
 Property tax vs other types of taxes is a comparison of the various taxes that individuals and businesses pay on their properties and other assets. 
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Income Shares Model?"
+title: "What Is Income Shares Model?"
 slug: income-shares-model
 description: "A clear, simple explanation of income shares model - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Income Shares Model?
+# What Is Income Shares Model?
 
 Income shares model is a financial framework in which an individual or organization receives a percentage of income from a project or investment in exchange for providing funding or support.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Gravity Vs?"
+title: "Gravity vs"
 slug: gravity-vs
 description: "A clear, simple explanation of gravity vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Gravity Vs?
+# Gravity vs
 
 Gravity vs other forces is a comparison of the strength and effects of gravity in relation to other fundamental forces of nature. 
 

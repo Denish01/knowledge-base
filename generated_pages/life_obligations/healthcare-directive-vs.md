@@ -1,11 +1,11 @@
 ---
-title: "What is Healthcare Directive Vs?"
+title: "Healthcare Directive vs"
 slug: healthcare-directive-vs
 description: "A clear, simple explanation of healthcare directive vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Healthcare Directive Vs?
+# Healthcare Directive vs
 
 Healthcare directive refers to a written statement that outlines a person's wishes and preferences for medical treatment in the event that they become unable to make decisions for themselves.
 

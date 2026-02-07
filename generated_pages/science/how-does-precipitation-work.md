@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Precipitation Work?"
+title: "How Precipitation Works"
 slug: how-does-precipitation-work
 description: "A clear, simple explanation of how does precipitation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Precipitation Work?
+# How Precipitation Works
 
 1. QUICK ANSWER: Precipitation works through a process where water evaporates from the Earth's surface, condenses into clouds, and then falls back to the ground as rain, snow, or hail. This process is driven by the continuous cycle of water between the Earth and the atmosphere.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Net Income For Support Vs?"
+title: "Net Income For Support vs"
 slug: net-income-for-support-vs
 description: "A clear, simple explanation of net income for support vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Net Income For Support Vs?
+# Net Income For Support vs
 
 Net income for support refers to the amount of money an individual has available to pay for their living expenses and financial obligations after accounting for all sources of income and deductions.
 

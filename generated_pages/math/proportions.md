@@ -1,11 +1,11 @@
 ---
-title: "What is Proportions?"
+title: "What Is Proportions?"
 slug: proportions
 description: "A clear, simple explanation of proportions - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Proportions?
+# What Is Proportions?
 
 Proportions is a mathematical concept that refers to a statement that two ratios are equal, often used to solve problems involving similar objects or quantities.
 

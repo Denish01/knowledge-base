@@ -1,11 +1,11 @@
 ---
-title: "What is Inflation Rate?"
+title: "What Is Inflation Rate?"
 slug: inflation-rate
 description: "A clear, simple explanation of inflation rate - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Inflation Rate?
+# What Is Inflation Rate?
 
 Inflation rate refers to the percentage change in the average price level of goods and services in an economy over a given period of time.
 

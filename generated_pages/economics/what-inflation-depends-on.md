@@ -1,11 +1,11 @@
 ---
-title: "What is What Inflation Depends On?"
+title: "What Inflation Depends On"
 slug: what-inflation-depends-on
 description: "A clear, simple explanation of what inflation depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Inflation Depends On?
+# What Inflation Depends On
 
 1. INTRODUCTION
 Inflation is a sustained increase in the general price level of goods and services in an economy over time. Understanding what inflation depends on is crucial for individuals, businesses, and policymakers to make informed decisions. The dependencies that drive inflation are fundamental to its existence and impact. By recognizing these prerequisites, it is possible to better comprehend the complexities of inflation and its effects on the economy.

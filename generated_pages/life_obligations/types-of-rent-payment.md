@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Rent Payment?"
+title: "Types of Rent Payment"
 slug: types-of-rent-payment
 description: "A clear, simple explanation of types of rent payment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Rent Payment?
+# Types of Rent Payment
 
 1. INTRODUCTION
 

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Noncustodial Parent Work?"
+title: "How Noncustodial Parent Works"
 slug: how-does-noncustodial-parent-work
 description: "A clear, simple explanation of how does noncustodial parent work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Noncustodial Parent Work?
+# How Noncustodial Parent Works
 
 1. QUICK ANSWER: A noncustodial parent is a parent who does not have primary physical custody of their child, and their role and responsibilities are determined through a court-ordered agreement or settlement. This arrangement outlines the terms of visitation, child support, and other aspects of co-parenting, ensuring the child's well-being and the involvement of both parents.
 

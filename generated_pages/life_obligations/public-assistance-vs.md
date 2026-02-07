@@ -1,11 +1,11 @@
 ---
-title: "What is Public Assistance Vs?"
+title: "Public Assistance vs"
 slug: public-assistance-vs
 description: "A clear, simple explanation of public assistance vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Public Assistance Vs?
+# Public Assistance vs
 
 Public assistance vs private assistance is a comparison between two types of support systems that provide aid to individuals or groups in need. 
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Fractions?"
+title: "Types of Fractions"
 slug: types-of-fractions
 description: "A clear, simple explanation of types of fractions - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Fractions?
+# Types of Fractions
 
 ## INTRODUCTION
 The study of fractions is a fundamental concept in mathematics, and understanding the different types of fractions is essential for building a strong foundation in math. Classification of fractions is crucial as it helps to organize and make sense of the various ways fractions can be represented, making it easier to work with them in different mathematical operations. The classification of fractions covers various categories, each with its unique characteristics, and understanding these categories is vital for solving mathematical problems and applying mathematical concepts in real-world situations. In this article, we will explore the different types of fractions, their definitions, key characteristics, and examples, providing a comprehensive understanding of the classification system.

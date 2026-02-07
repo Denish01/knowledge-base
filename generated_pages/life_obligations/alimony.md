@@ -1,11 +1,11 @@
 ---
-title: "What is Alimony?"
+title: "What Is Alimony?"
 slug: alimony
 description: "A clear, simple explanation of alimony - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Alimony?
+# What Is Alimony?
 
 Alimony is a type of financial support that one spouse provides to the other after a divorce or separation. 
 

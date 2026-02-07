@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Annual Percentage Yield?"
+title: "Example of Annual Percentage Yield"
 slug: examples-of-annual-percentage-yield
 description: "A clear, simple explanation of examples of annual percentage yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Annual Percentage Yield?
+# Example of Annual Percentage Yield
 
 1. INTRODUCTION:
 Annual percentage yield, or APY, is a measure that calculates the total interest earned on an investment or savings account over a year, taking into account the effect of compounding interest. It provides a clear picture of how much an investment can grow in a year, making it easier to compare different investment options. Understanding APY is crucial for making informed decisions about where to put your money.

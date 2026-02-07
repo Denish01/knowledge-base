@@ -1,11 +1,11 @@
 ---
-title: "What is Pay Stub Vs?"
+title: "Pay Stub vs"
 slug: pay-stub-vs
 description: "A clear, simple explanation of pay stub vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Pay Stub Vs?
+# Pay Stub vs
 
 Pay stub vs refers to the comparison between a pay stub and other financial documents that provide information about an individual's income and deductions. 
 

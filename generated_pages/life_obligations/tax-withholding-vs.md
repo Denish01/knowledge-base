@@ -1,11 +1,11 @@
 ---
-title: "What is Tax Withholding Vs?"
+title: "Tax Withholding vs"
 slug: tax-withholding-vs
 description: "A clear, simple explanation of tax withholding vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Tax Withholding Vs?
+# Tax Withholding vs
 
 Tax withholding vs tax liability is a comparison between the amount of taxes deducted from an individual's income and the actual amount of taxes owed to the government.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Scientific Notation?"
+title: "Example of Scientific Notation"
 slug: examples-of-scientific-notation
 description: "A clear, simple explanation of examples of scientific notation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Scientific Notation?
+# Example of Scientific Notation
 
 1. INTRODUCTION:
 Scientific notation is a way of expressing very large or very small numbers in a compact form. It consists of a number between 1 and 10, multiplied by a power of 10. This notation is used to simplify complex calculations and to make it easier to compare and understand very large or very small quantities. For example, the number 4,000,000 can be written in scientific notation as 4 x 10^6.

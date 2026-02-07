@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Child Support Obligation Work?"
+title: "How Child Support Obligation Works"
 slug: how-does-child-support-obligation-work
 description: "A clear, simple explanation of how does child support obligation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Child Support Obligation Work?
+# How Child Support Obligation Works
 
 1. QUICK ANSWER: 
 Child support obligation is a legal requirement where one parent is ordered to pay a certain amount of money to the other parent to help support their child's basic needs, such as food, clothing, and education. This obligation is typically determined by a court and is based on various factors, including the parents' income and the child's living arrangements.

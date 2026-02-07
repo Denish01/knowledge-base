@@ -1,11 +1,11 @@
 ---
-title: "What is Consumer Price Index Vs?"
+title: "Consumer Price Index vs"
 slug: consumer-price-index-vs
 description: "A clear, simple explanation of consumer price index vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Consumer Price Index Vs?
+# Consumer Price Index vs
 
 Consumer price index vs refers to the comparison between the consumer price index, a measure of the average change in prices of a basket of goods and services, and other economic indicators, such as the gross domestic product deflator or the producer price index.
 

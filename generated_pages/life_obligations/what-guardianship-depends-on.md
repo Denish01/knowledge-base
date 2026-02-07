@@ -1,11 +1,11 @@
 ---
-title: "What is What Guardianship Depends On?"
+title: "What Guardianship Depends On"
 slug: what-guardianship-depends-on
 description: "A clear, simple explanation of what guardianship depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Guardianship Depends On?
+# What Guardianship Depends On
 
 1. INTRODUCTION
 Guardianship is a legal relationship where one person, the guardian, is responsible for the care and well-being of another person, often a minor or an individual with disabilities. The establishment and maintenance of guardianship depend on various factors, which are crucial for ensuring the welfare and protection of the individual under guardianship. Understanding these dependencies is essential for navigating the complexities of guardianship and making informed decisions.

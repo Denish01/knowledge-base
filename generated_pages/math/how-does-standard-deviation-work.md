@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Standard Deviation Work?"
+title: "How Standard Deviation Works"
 slug: how-does-standard-deviation-work
 description: "A clear, simple explanation of how does standard deviation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Standard Deviation Work?
+# How Standard Deviation Works
 
 1. QUICK ANSWER: Standard deviation is a measure of how spread out a set of numbers is from its average value, calculated by finding the square root of the average of the squared differences from the mean. This calculation gives a numerical value that represents the amount of variation or dispersion in the data set.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Net Worth?"
+title: "Example of Net Worth"
 slug: examples-of-net-worth
 description: "A clear, simple explanation of examples of net worth - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Net Worth?
+# Example of Net Worth
 
 1. INTRODUCTION
 Net worth is the total value of what you own minus what you owe. It's like a report card for your financial situation. To calculate your net worth, you add up the value of everything you own, such as your house, car, savings, and investments. Then, you subtract the amount you owe on debts like your mortgage, car loan, and credit cards. The result is your net worth.

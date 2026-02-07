@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Credit Card Debt?"
+title: "Example of Credit Card Debt"
 slug: examples-of-credit-card-debt
 description: "A clear, simple explanation of examples of credit card debt - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Credit Card Debt?
+# Example of Credit Card Debt
 
 1. INTRODUCTION
 Credit card debt refers to the amount of money an individual or business owes to a credit card company when they have not paid their balance in full. This type of debt can accumulate interest and fees, making it more challenging to pay off over time. Understanding credit card debt is essential for managing personal finances effectively.

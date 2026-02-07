@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Deflation?"
+title: "Example of Deflation"
 slug: examples-of-deflation
 description: "A clear, simple explanation of examples of deflation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Deflation?
+# Example of Deflation
 
 1. INTRODUCTION:
 Deflation is a economic phenomenon where the general price level of goods and services in an economy decreases over time. This means that the same amount of money can buy more goods and services than it could before. Deflation can have various causes and effects on different aspects of the economy and society.

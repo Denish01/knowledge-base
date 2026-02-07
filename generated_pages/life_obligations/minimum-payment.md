@@ -1,11 +1,11 @@
 ---
-title: "What is Minimum Payment?"
+title: "What Is Minimum Payment?"
 slug: minimum-payment
 description: "A clear, simple explanation of minimum payment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Minimum Payment?
+# What Is Minimum Payment?
 
 Minimum payment is the smallest amount of money that a borrower must pay each month to meet the terms of a loan or credit agreement.
 

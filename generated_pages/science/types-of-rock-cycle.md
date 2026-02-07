@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Rock Cycle?"
+title: "Types of Rock Cycle"
 slug: types-of-rock-cycle
 description: "A clear, simple explanation of types of rock cycle - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Rock Cycle?
+# Types of Rock Cycle
 
 ## INTRODUCTION
 The rock cycle is a fundamental concept in geology that describes the dynamic process of rock formation, transformation, and destruction. Understanding the different types of rock cycle is crucial for comprehending the Earth's geological history, as it helps to explain the varied landscapes and landforms that exist on our planet. Classification of the rock cycle into distinct categories enables geologists to better analyze and interpret the complex processes that shape the Earth's surface, ultimately leading to a deeper understanding of the Earth's internal and external systems. The rock cycle classification system provides a framework for organizing and making sense of the numerous geological processes that occur, making it an essential tool for geologists, researchers, and students alike.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Diffusion Work?"
+title: "How Diffusion Works"
 slug: how-does-diffusion-work
 description: "A clear, simple explanation of how does diffusion work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Diffusion Work?
+# How Diffusion Works
 
 1. QUICK ANSWER: 
 Diffusion is the process by which particles move from an area of higher concentration to an area of lower concentration, resulting in uniform distribution. This movement occurs due to the random motion of particles, which leads to the mixing and spreading of substances.

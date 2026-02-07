@@ -1,11 +1,11 @@
 ---
-title: "What is Price Elasticity?"
+title: "What Is Price Elasticity?"
 slug: price-elasticity
 description: "A clear, simple explanation of price elasticity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Price Elasticity?
+# What Is Price Elasticity?
 
 Price elasticity is a measure of how much the quantity of a product or service that people buy changes in response to a change in its price.
 

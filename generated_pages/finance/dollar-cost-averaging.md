@@ -1,11 +1,11 @@
 ---
-title: "What is Dollar Cost Averaging?"
+title: "What Is Dollar Cost Averaging?"
 slug: dollar-cost-averaging
 description: "A clear, simple explanation of dollar cost averaging - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Dollar Cost Averaging?
+# What Is Dollar Cost Averaging?
 
 Dollar cost averaging is a investment strategy that involves investing a fixed amount of money at regular intervals, regardless of the market's performance.
 

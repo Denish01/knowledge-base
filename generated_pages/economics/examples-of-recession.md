@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Recession?"
+title: "Example of Recession"
 slug: examples-of-recession
 description: "A clear, simple explanation of examples of recession - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Recession?
+# Example of Recession
 
 1. INTRODUCTION
 A recession is a period of economic decline, typically defined as a decline in gross domestic product (GDP) for two or more consecutive quarters. During a recession, economic activity slows down, leading to a decrease in production, employment, and income. This can have far-reaching effects on individuals, businesses, and the overall economy.

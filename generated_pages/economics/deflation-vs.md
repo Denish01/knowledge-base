@@ -1,11 +1,11 @@
 ---
-title: "What is Deflation Vs?"
+title: "Deflation vs"
 slug: deflation-vs
 description: "A clear, simple explanation of deflation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Deflation Vs?
+# Deflation vs
 
 Deflation refers to a sustained decrease in the general price level of goods and services in an economy over time. 
 

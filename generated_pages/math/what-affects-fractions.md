@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Fractions?"
+title: "What Affects Fractions"
 slug: what-affects-fractions
 description: "A clear, simple explanation of what affects fractions - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Fractions?
+# What Affects Fractions
 
 1. INTRODUCTION:
 Fractions are a fundamental concept in mathematics, representing a part of a whole as a ratio of two numbers. Understanding fractions is crucial in various aspects of life, including science, engineering, and everyday problem-solving. The value of a fraction can be influenced by several factors, and recognizing these influences is essential to work with fractions effectively. This understanding helps in predicting how changes in these factors will affect the fraction, enabling better decision-making and problem-solving.

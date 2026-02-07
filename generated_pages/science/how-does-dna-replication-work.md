@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Dna Replication Work?"
+title: "How Dna Replication Works"
 slug: how-does-dna-replication-work
 description: "A clear, simple explanation of how does dna replication work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Dna Replication Work?
+# How Dna Replication Works
 
 1. QUICK ANSWER: 
 DNA replication is the process by which a cell makes an exact copy of its DNA before cell division. This complex process involves unwinding the double helix structure of DNA and synthesizing two new complementary strands, resulting in two identical copies of the original DNA molecule.

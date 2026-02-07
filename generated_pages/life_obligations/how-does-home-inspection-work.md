@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Home Inspection Work?"
+title: "How Home Inspection Works"
 slug: how-does-home-inspection-work
 description: "A clear, simple explanation of how does home inspection work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Home Inspection Work?
+# How Home Inspection Works
 
 1. QUICK ANSWER: A home inspection is a thorough examination of a home's condition, where a trained inspector assesses the property's major systems and components to identify any potential issues or defects. This process helps buyers, sellers, and owners understand the home's overall state and make informed decisions.
 

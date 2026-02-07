@@ -1,11 +1,11 @@
 ---
-title: "What is Health Insurance?"
+title: "What Is Health Insurance?"
 slug: health-insurance
 description: "A clear, simple explanation of health insurance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Health Insurance?
+# What Is Health Insurance?
 
 Health insurance is a type of coverage that helps individuals and families pay for medical expenses, including doctor visits, hospital stays, and other health care services.
 

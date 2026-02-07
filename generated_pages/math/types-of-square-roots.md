@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Square Roots?"
+title: "Types of Square Roots"
 slug: types-of-square-roots
 description: "A clear, simple explanation of types of square roots - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Square Roots?
+# Types of Square Roots
 
 ## INTRODUCTION
 The concept of square roots is a fundamental aspect of mathematics, particularly in algebra and geometry. Classification of square roots is essential as it helps in understanding the different types of roots that can be encountered in various mathematical problems. By categorizing square roots, mathematicians and students can better comprehend the properties and behaviors of each type, facilitating easier identification and solution of equations. This classification system covers the main types of square roots, including their definitions, key characteristics, and examples, providing a comprehensive overview of this mathematical concept.

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Net Income For Support?"
+title: "Example of Net Income For Support"
 slug: examples-of-net-income-for-support
 description: "A clear, simple explanation of examples of net income for support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Net Income For Support?
+# Example of Net Income For Support
 
 1. INTRODUCTION
 Net income for support refers to the amount of money available to an individual or household after all necessary expenses have been deducted from their total income. This amount is crucial for determining the ability to provide financial support, whether for oneself, family members, or dependents. Understanding net income for support is essential in various contexts, including personal finance, law, and social services.

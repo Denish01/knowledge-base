@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Income Disparity?"
+title: "Example of Income Disparity"
 slug: examples-of-income-disparity
 description: "A clear, simple explanation of examples of income disparity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Income Disparity?
+# Example of Income Disparity
 
 1. INTRODUCTION
 Income disparity refers to the difference in income between individuals, groups, or regions. It is a measure of how unevenly income is distributed, often resulting in significant gaps between the rich and the poor. Understanding income disparity is crucial as it affects various aspects of society, including economic growth, social stability, and individual well-being.

@@ -1,11 +1,11 @@
 ---
-title: "What is Disability Insurance?"
+title: "What Is Disability Insurance?"
 slug: disability-insurance
 description: "A clear, simple explanation of disability insurance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Disability Insurance?
+# What Is Disability Insurance?
 
 Disability insurance is a type of insurance that provides financial protection to individuals who become unable to work due to a physical or mental disability.
 

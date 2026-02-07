@@ -1,11 +1,11 @@
 ---
-title: "What is Linear Equations?"
+title: "What Is Linear Equations?"
 slug: linear-equations
 description: "A clear, simple explanation of linear equations - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Linear Equations?
+# What Is Linear Equations?
 
 Linear equations is a mathematical concept that refers to equations in which the highest power of the variable, usually represented by x, is 1.
 

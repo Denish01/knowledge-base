@@ -1,11 +1,11 @@
 ---
-title: "What is Central Bank Vs?"
+title: "Central Bank vs"
 slug: central-bank-vs
 description: "A clear, simple explanation of central bank vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Central Bank Vs?
+# Central Bank vs
 
 Central bank versus other types of banks is a comparison of the roles and responsibilities of central banks and other financial institutions. 
 

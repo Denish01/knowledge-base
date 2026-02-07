@@ -1,11 +1,11 @@
 ---
-title: "What is Bear Market?"
+title: "What Is Bear Market?"
 slug: bear-market
 description: "A clear, simple explanation of bear market - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Bear Market?
+# What Is Bear Market?
 
 Bear market is a period of time when the overall value of stocks or other investments is falling, and investor sentiment is negative.
 

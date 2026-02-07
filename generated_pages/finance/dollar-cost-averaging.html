@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A clear, simple explanation of dollar cost averaging - definition, key concepts, examples, and common misconceptions.">
-    <title>What is Dollar Cost Averaging? - Simple Explanation</title>
+    <title>What Is Dollar Cost Averaging? - Simple Explanation</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -29,113 +29,9 @@
 </head>
 <body>
     <article>
-        <h1>What is Dollar Cost Averaging?</h1>
+        <h1>What Is Dollar Cost Averaging?</h1>
 
         
-<style>
-.calculator {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 24px 0;
-}
-.calculator h3 {
-    margin-top: 0;
-    color: #1a73e8;
-}
-.calc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 16px;
-}
-.calculator label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-}
-.calculator input, .calculator select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.calculator button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.calculator button:hover {
-    background: #1557b0;
-}
-.calc-result {
-    margin-top: 16px;
-    padding: 12px;
-    background: white;
-    border-radius: 4px;
-    border-left: 4px solid #1a73e8;
-}
-.calc-result p {
-    margin: 8px 0;
-}
-.calc-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.tab-btn {
-    background: #e0e0e0;
-    color: #333;
-}
-.tab-btn.active {
-    background: #1a73e8;
-    color: white;
-}
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-</style>
-
-<div class="calculator" id="dca-calc">
-    <h3>Dollar Cost Averaging Calculator</h3>
-    <div class="calc-grid">
-        <label>Monthly Investment ($): <input type="number" id="dca-monthly" value="500" min="0"></label>
-        <label>Investment Period (years): <input type="number" id="dca-years" value="10" min="1" max="50"></label>
-        <label>Expected Annual Return (%): <input type="number" id="dca-return" value="8" min="0" step="0.5"></label>
-    </div>
-    <button onclick="calcDCA()">Calculate</button>
-    <div class="calc-result" id="dca-result"></div>
-</div>
-<script>
-function calcDCA() {
-    const monthly = parseFloat(document.getElementById('dca-monthly').value);
-    const years = parseFloat(document.getElementById('dca-years').value);
-    const annualReturn = parseFloat(document.getElementById('dca-return').value) / 100;
-    const monthlyReturn = annualReturn / 12;
-    const months = years * 12;
-    const totalContributed = monthly * months;
-    const futureValue = monthly * ((Math.pow(1 + monthlyReturn, months) - 1) / monthlyReturn);
-    const earnings = futureValue - totalContributed;
-    document.getElementById('dca-result').innerHTML = `
-        <p><strong>Total Invested:</strong> $${totalContributed.toLocaleString()}</p>
-        <p><strong>Investment Earnings:</strong> $${earnings.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
-        <p><strong>Final Value:</strong> $${futureValue.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
-        <p><em>DCA reduces timing risk by investing consistently over time</em></p>
-    `;
-}
-calcDCA();
-</script>
-
 
         <p>Dollar cost averaging is a investment strategy that involves investing a fixed amount of money at regular intervals, regardless of the market's performance.</p>
 

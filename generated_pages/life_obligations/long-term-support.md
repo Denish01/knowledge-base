@@ -1,11 +1,11 @@
 ---
-title: "What is Long-Term Support?"
+title: "What Is Long Term Support?"
 slug: long-term-support
 description: "A clear, simple explanation of long-term support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Long-Term Support?
+# What Is Long Term Support?
 
 Long-term support is a type of assistance or maintenance provided to individuals or systems over an extended period, often to ensure their continued stability and effectiveness.
 

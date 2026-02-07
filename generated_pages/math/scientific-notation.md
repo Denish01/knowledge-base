@@ -1,11 +1,11 @@
 ---
-title: "What is Scientific Notation?"
+title: "What Is Scientific Notation?"
 slug: scientific-notation
 description: "A clear, simple explanation of scientific notation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Scientific Notation?
+# What Is Scientific Notation?
 
 Scientific notation is a method of expressing very large or very small numbers in a compact and convenient form.
 

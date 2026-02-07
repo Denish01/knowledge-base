@@ -1,11 +1,11 @@
 ---
-title: "What is Income Eligibility Vs?"
+title: "Income Eligibility vs"
 slug: income-eligibility-vs
 description: "A clear, simple explanation of income eligibility vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Income Eligibility Vs?
+# Income Eligibility vs
 
 Income eligibility versus refers to the process of determining whether an individual or family meets the financial requirements to qualify for a particular government program, benefit, or service, often based on their income level in relation to the federal poverty guidelines or other established standards.
 

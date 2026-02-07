@@ -1,11 +1,11 @@
 ---
-title: "What is Credit Card Debt?"
+title: "What Is Credit Card Debt?"
 slug: credit-card-debt
 description: "A clear, simple explanation of credit card debt - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Credit Card Debt?
+# What Is Credit Card Debt?
 
 Credit card debt refers to the amount of money an individual or business owes to a credit card company as a result of purchasing goods or services using a credit card.
 

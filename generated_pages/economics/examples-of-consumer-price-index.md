@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Consumer Price Index?"
+title: "Example of Consumer Price Index"
 slug: examples-of-consumer-price-index
 description: "A clear, simple explanation of examples of consumer price index - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Consumer Price Index?
+# Example of Consumer Price Index
 
 1. INTRODUCTION
 The consumer price index (CPI) is a statistical measure that calculates the average change in prices of a basket of goods and services consumed by households. It is a widely used indicator of inflation, which is the rate at which prices for goods and services are rising. The CPI is typically calculated by government agencies and is used to adjust wages, pensions, and other payments to keep pace with inflation. Understanding the CPI is essential for making informed decisions about personal finance, business, and economic policy.

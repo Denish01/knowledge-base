@@ -1,11 +1,11 @@
 ---
-title: "What is Rock Cycle Vs?"
+title: "Rock Cycle vs"
 slug: rock-cycle-vs
 description: "A clear, simple explanation of rock cycle vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Rock Cycle Vs?
+# Rock Cycle vs
 
 Rock cycle refers to the continuous process by which rocks are formed, transformed, and destroyed, shaping the Earth's geology over time.
 

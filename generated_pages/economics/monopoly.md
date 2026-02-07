@@ -1,11 +1,11 @@
 ---
-title: "What is Monopoly?"
+title: "What Is Monopoly?"
 slug: monopoly
 description: "A clear, simple explanation of monopoly - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Monopoly?
+# What Is Monopoly?
 
 Monopoly is a market structure in which a single company or entity has complete control over the production and distribution of a particular good or service.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Temporary Support?"
+title: "Types of Temporary Support"
 slug: types-of-temporary-support
 description: "A clear, simple explanation of types of temporary support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Temporary Support?
+# Types of Temporary Support
 
 ## INTRODUCTION
 Types of temporary support refer to the various forms of assistance or aid provided to individuals or systems to help them cope with difficulties, challenges, or transitions. Classification of temporary support is crucial as it enables the identification of specific needs, the allocation of resources, and the development of targeted strategies to address these needs. By understanding the different types of temporary support, individuals and organizations can better navigate complex situations, make informed decisions, and provide effective assistance. This classification system is essential for ensuring that temporary support is tailored to the unique requirements of each situation, ultimately leading to more efficient and successful outcomes.

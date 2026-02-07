@@ -1,11 +1,11 @@
 ---
-title: "What is Benefit Phaseout?"
+title: "What Is Benefit Phaseout?"
 slug: benefit-phaseout
 description: "A clear, simple explanation of benefit phaseout - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Benefit Phaseout?
+# What Is Benefit Phaseout?
 
 Benefit phaseout is a process by which the amount of a benefit, such as a tax credit or a government subsidy, decreases as a certain condition, like income level, increases.
 

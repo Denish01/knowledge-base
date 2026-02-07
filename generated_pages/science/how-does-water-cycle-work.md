@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Water Cycle Work?"
+title: "How Water Cycle Works"
 slug: how-does-water-cycle-work
 description: "A clear, simple explanation of how does water cycle work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Water Cycle Work?
+# How Water Cycle Works
 
 1. QUICK ANSWER: The water cycle is the continuous process by which water is circulated between the Earth and the atmosphere, involving the movement of water in three phases: liquid, solid, and gas. This process is driven by the sun's energy, which heats water, causing it to evaporate and eventually return to the Earth as precipitation.
 

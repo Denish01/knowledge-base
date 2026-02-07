@@ -1,11 +1,11 @@
 ---
-title: "What is Gross Domestic Product?"
+title: "What Is Gross Domestic Product?"
 slug: gross-domestic-product
 description: "A clear, simple explanation of gross domestic product - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Gross Domestic Product?
+# What Is Gross Domestic Product?
 
 Gross domestic product is a measure of the total value of goods and services produced within a country's borders over a specific period of time. 
 

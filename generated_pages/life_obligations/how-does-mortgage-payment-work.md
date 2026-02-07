@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Mortgage Payment Work?"
+title: "How Mortgage Payment Works"
 slug: how-does-mortgage-payment-work
 description: "A clear, simple explanation of how does mortgage payment work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Mortgage Payment Work?
+# How Mortgage Payment Works
 
 1. QUICK ANSWER: A mortgage payment works by allowing homeowners to borrow money from a lender to purchase a home, and then repay the loan, plus interest, through regular payments. The payment amount is calculated based on the loan amount, interest rate, and repayment term.
 

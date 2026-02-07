@@ -1,11 +1,11 @@
 ---
-title: "What is Loan Interest Vs?"
+title: "Loan Interest vs"
 slug: loan-interest-vs
 description: "A clear, simple explanation of loan interest vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Loan Interest Vs?
+# Loan Interest vs
 
 Loan interest vs other expenses refers to the comparison of the cost of borrowing money through a loan with other financial expenses or costs.
 

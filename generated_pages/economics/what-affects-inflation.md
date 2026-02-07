@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Inflation?"
+title: "What Affects Inflation"
 slug: what-affects-inflation
 description: "A clear, simple explanation of what affects inflation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Inflation?
+# What Affects Inflation
 
 1. INTRODUCTION:
 Inflation is a measure of how much prices for goods and services are rising over time. Understanding what affects inflation is crucial for individuals, businesses, and governments to make informed decisions about investments, pricing, and economic policies. Inflation can impact the purchasing power of money, savings, and the overall economy. By recognizing the factors that influence inflation, it is possible to anticipate and prepare for changes in the economy.

@@ -1,11 +1,11 @@
 ---
-title: "What is What Healthcare Directive Depends On?"
+title: "What Healthcare Directive Depends On"
 slug: what-healthcare-directive-depends-on
 description: "A clear, simple explanation of what healthcare directive depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Healthcare Directive Depends On?
+# What Healthcare Directive Depends On
 
 1. INTRODUCTION
 A healthcare directive, also known as an advance directive, is a document that outlines a person's wishes for medical treatment in the event they become unable to communicate their decisions. Understanding what a healthcare directive depends on is crucial, as it ensures that the directive is valid, effective, and respected. The dependencies of a healthcare directive are the prerequisites, requirements, and foundations that must be in place for the directive to be considered legitimate and enforceable. In this explanation, we will explore the key dependencies of a healthcare directive and their significance.

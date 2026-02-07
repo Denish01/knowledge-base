@@ -1,11 +1,11 @@
 ---
-title: "What is Food Web?"
+title: "What Is Food Web?"
 slug: food-web
 description: "A clear, simple explanation of food web - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Food Web?
+# What Is Food Web?
 
 Food web refers to the complex network of relationships between different species in an ecosystem, where each species plays a role as either a producer, consumer, or decomposer. 
 

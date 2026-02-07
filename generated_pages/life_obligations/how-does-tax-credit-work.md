@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Tax Credit Work?"
+title: "How Tax Credit Works"
 slug: how-does-tax-credit-work
 description: "A clear, simple explanation of how does tax credit work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Tax Credit Work?
+# How Tax Credit Works
 
 1. QUICK ANSWER: A tax credit is a reduction in the amount of tax owed to the government, which is calculated based on specific expenses or contributions made by an individual or business. This reduction is applied directly to the tax bill, resulting in a lower amount of tax owed.
 

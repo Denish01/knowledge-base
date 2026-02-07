@@ -1,11 +1,11 @@
 ---
-title: "What is Fractions Vs?"
+title: "Fractions vs"
 slug: fractions-vs
 description: "A clear, simple explanation of fractions vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Fractions Vs?
+# Fractions vs
 
 Fractions vs is a comparison of two or more fractions to determine their relative size or equality.
 

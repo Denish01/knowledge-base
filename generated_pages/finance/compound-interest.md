@@ -1,11 +1,11 @@
 ---
-title: "What is Compound Interest?"
+title: "What Is Compound Interest?"
 slug: compound-interest
 description: "A clear, simple explanation of compound interest - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Compound Interest?
+# What Is Compound Interest?
 
 Compound interest is a financial concept that refers to the process of earning interest on both the principal amount and any accrued interest over time.
 

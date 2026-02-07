@@ -1,11 +1,11 @@
 ---
-title: "What is Oligopoly?"
+title: "What Is Oligopoly?"
 slug: oligopoly
 description: "A clear, simple explanation of oligopoly - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Oligopoly?
+# What Is Oligopoly?
 
 Oligopoly is a market structure in which a small number of firms produce and sell a product or service, giving them significant control over the market.
 

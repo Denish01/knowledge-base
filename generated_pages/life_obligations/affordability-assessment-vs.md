@@ -1,11 +1,11 @@
 ---
-title: "What is Affordability Assessment Vs?"
+title: "Affordability Assessment vs"
 slug: affordability-assessment-vs
 description: "A clear, simple explanation of affordability assessment vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Affordability Assessment Vs?
+# Affordability Assessment vs
 
 Affordability assessment refers to the process of evaluating the financial feasibility of a project, product, or service by analyzing its costs and benefits to determine whether it is financially viable and can be sustained over time.
 

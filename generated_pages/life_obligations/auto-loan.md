@@ -1,11 +1,11 @@
 ---
-title: "What is Auto Loan?"
+title: "What Is Auto Loan?"
 slug: auto-loan
 description: "A clear, simple explanation of auto loan - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Auto Loan?
+# What Is Auto Loan?
 
 Auto loan is a type of financing that allows individuals to borrow money from a lender to purchase a vehicle, with the loan being repaid over a specified period of time, typically with interest.
 

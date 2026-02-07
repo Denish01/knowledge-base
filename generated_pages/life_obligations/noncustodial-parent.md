@@ -1,11 +1,11 @@
 ---
-title: "What is Noncustodial Parent?"
+title: "What Is Noncustodial Parent?"
 slug: noncustodial-parent
 description: "A clear, simple explanation of noncustodial parent - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Noncustodial Parent?
+# What Is Noncustodial Parent?
 
 Noncustodial parent is a term used to describe a parent who does not have primary physical custody of their child, meaning the child does not live with them.
 

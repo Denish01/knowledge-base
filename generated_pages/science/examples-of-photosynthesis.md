@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Photosynthesis?"
+title: "Example of Photosynthesis"
 slug: examples-of-photosynthesis
 description: "A clear, simple explanation of examples of photosynthesis - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Photosynthesis?
+# Example of Photosynthesis
 
 1. INTRODUCTION
 Photosynthesis is the process by which plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of organic compounds, such as glucose. This process is essential for life on Earth, as it provides energy and organic compounds for food chains. Photosynthesis occurs in specialized organelles called chloroplasts, which contain pigments such as chlorophyll that absorb light energy.

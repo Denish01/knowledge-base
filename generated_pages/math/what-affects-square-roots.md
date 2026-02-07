@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Square Roots?"
+title: "What Affects Square Roots"
 slug: what-affects-square-roots
 description: "A clear, simple explanation of what affects square roots - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Square Roots?
+# What Affects Square Roots
 
 1. INTRODUCTION:
 A square root of a number is a value that, when multiplied by itself, gives the original number. Understanding what affects square roots is crucial in various mathematical operations, problem-solving, and real-world applications. The value of a square root can be influenced by several factors, and recognizing these factors is essential to work accurately with square roots. In this explanation, we will explore the main factors that affect square roots and their interconnections.

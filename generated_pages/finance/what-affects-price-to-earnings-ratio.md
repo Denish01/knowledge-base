@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Price To Earnings Ratio?"
+title: "What Affects Price To Earnings Ratio"
 slug: what-affects-price-to-earnings-ratio
 description: "A clear, simple explanation of what affects price to earnings ratio - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Price To Earnings Ratio?
+# What Affects Price To Earnings Ratio
 
 INTRODUCTION
 The price to earnings ratio (P/E ratio) is a widely used measure of a company's stock price relative to its earnings per share. It is calculated by dividing the current stock price by the earnings per share. Understanding the factors that affect the P/E ratio is crucial for investors, as it helps them make informed decisions about buying or selling stocks. The P/E ratio is influenced by various factors, and knowing these factors can help investors analyze a company's stock performance and potential for future growth.

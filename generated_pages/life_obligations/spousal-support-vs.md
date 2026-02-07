@@ -1,11 +1,11 @@
 ---
-title: "What is Spousal Support Vs?"
+title: "Spousal Support vs"
 slug: spousal-support-vs
 description: "A clear, simple explanation of spousal support vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Spousal Support Vs?
+# Spousal Support vs
 
 Spousal support vs refers to the comparison and contrast between the different types of financial assistance that one spouse may be required to provide to the other after a divorce or separation.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Mitosis?"
+title: "What Is Mitosis?"
 slug: mitosis
 description: "A clear, simple explanation of mitosis - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Mitosis?
+# What Is Mitosis?
 
 Mitosis is a type of cell division that results in two daughter cells that are genetically identical to the parent cell.
 

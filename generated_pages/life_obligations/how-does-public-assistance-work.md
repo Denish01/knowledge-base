@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Public Assistance Work?"
+title: "How Public Assistance Works"
 slug: how-does-public-assistance-work
 description: "A clear, simple explanation of how does public assistance work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Public Assistance Work?
+# How Public Assistance Works
 
 1. QUICK ANSWER: Public assistance works by providing financial and resource support to individuals and families in need, helping them to meet their basic needs and achieve stability. This support is typically provided through government programs and non-profit organizations, which assess eligibility and distribute resources accordingly.
 

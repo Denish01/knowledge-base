@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Decomposition Work?"
+title: "How Decomposition Works"
 slug: how-does-decomposition-work
 description: "A clear, simple explanation of how does decomposition work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Decomposition Work?
+# How Decomposition Works
 
 1. QUICK ANSWER: Decomposition is the process by which organic substances, such as dead plants and animals, are broken down into simpler components by microorganisms like bacteria and fungi. This process involves a series of chemical reactions that ultimately convert complex molecules into simpler ones, releasing nutrients back into the environment.
 

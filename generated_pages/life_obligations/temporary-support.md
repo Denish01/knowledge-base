@@ -1,11 +1,11 @@
 ---
-title: "What is Temporary Support?"
+title: "What Is Temporary Support?"
 slug: temporary-support
 description: "A clear, simple explanation of temporary support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Temporary Support?
+# What Is Temporary Support?
 
 Temporary support is a type of assistance or aid provided to individuals or systems to help them overcome a difficult period or challenge.
 

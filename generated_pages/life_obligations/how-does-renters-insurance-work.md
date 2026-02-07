@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Renters Insurance Work?"
+title: "How Renters Insurance Works"
 slug: how-does-renters-insurance-work
 description: "A clear, simple explanation of how does renters insurance work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Renters Insurance Work?
+# How Renters Insurance Works
 
 1. QUICK ANSWER: Renters insurance works by providing financial protection to renters in the event of unforeseen circumstances, such as theft or damage to their personal belongings. This protection is achieved through a contract between the renter and the insurance company, where the renter pays a premium in exchange for coverage.
 

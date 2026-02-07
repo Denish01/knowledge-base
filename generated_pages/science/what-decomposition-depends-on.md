@@ -1,11 +1,11 @@
 ---
-title: "What is What Decomposition Depends On?"
+title: "What Decomposition Depends On"
 slug: what-decomposition-depends-on
 description: "A clear, simple explanation of what decomposition depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Decomposition Depends On?
+# What Decomposition Depends On
 
 1. INTRODUCTION:
 Decomposition is the process by which organic substances are broken down into simpler components. This natural process is essential for the cycling of nutrients in ecosystems. Understanding what decomposition depends on is crucial because it highlights the prerequisites and requirements that must be met for decomposition to occur. These dependencies are fundamental to the process, and their absence can significantly impact the rate and efficiency of decomposition.

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Friction?"
+title: "What Affects Friction"
 slug: what-affects-friction
 description: "A clear, simple explanation of what affects friction - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Friction?
+# What Affects Friction
 
 1. INTRODUCTION:
 Friction is a force that opposes motion between two surfaces in contact. Understanding the factors that affect friction is crucial in various aspects of life, from designing safe roads and efficient machines to preventing injuries and improving overall performance. The ability to recognize and manipulate the influences on friction can help individuals and professionals make informed decisions and create innovative solutions. By grasping the causes and effects of friction, one can optimize systems, reduce wear and tear, and enhance safety.

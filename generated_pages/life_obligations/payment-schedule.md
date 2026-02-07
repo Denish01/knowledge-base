@@ -1,11 +1,11 @@
 ---
-title: "What is Payment Schedule?"
+title: "What Is Payment Schedule?"
 slug: payment-schedule
 description: "A clear, simple explanation of payment schedule - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Payment Schedule?
+# What Is Payment Schedule?
 
 Payment schedule is a plan outlining when and how payments will be made for a specific transaction, loan, or agreement.
 

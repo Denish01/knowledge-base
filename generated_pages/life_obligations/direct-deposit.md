@@ -1,11 +1,11 @@
 ---
-title: "What is Direct Deposit?"
+title: "What Is Direct Deposit?"
 slug: direct-deposit
 description: "A clear, simple explanation of direct deposit - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Direct Deposit?
+# What Is Direct Deposit?
 
 Direct deposit is a method of transferring funds electronically from one account to another, typically used for paying employees, government benefits, or other regular payments.
 

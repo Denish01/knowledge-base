@@ -1,11 +1,11 @@
 ---
-title: "What is Amortization Schedule?"
+title: "What Is Amortization Schedule?"
 slug: amortization-schedule
 description: "A clear, simple explanation of amortization schedule - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Amortization Schedule?
+# What Is Amortization Schedule?
 
 Amortization schedule is a table or chart that outlines the periodic payments made on a loan, showing the amount of interest and principal paid over the life of the loan.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Eligibility Criteria?"
+title: "Types of Eligibility Criteria"
 slug: types-of-eligibility-criteria
 description: "A clear, simple explanation of types of eligibility criteria - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Eligibility Criteria?
+# Types of Eligibility Criteria
 
 ## INTRODUCTION
 Eligibility criteria refer to the standards or requirements that must be met in order to qualify for a particular program, service, or opportunity. The classification of eligibility criteria is important because it helps organizations and individuals understand the different types of requirements that must be fulfilled. By categorizing eligibility criteria, it becomes easier to identify the specific conditions that must be met, and to determine whether an individual or group is eligible for a particular program or service. This classification system is essential in various fields, including education, employment, healthcare, and social services, as it enables effective decision-making and ensures that resources are allocated to those who are most in need.

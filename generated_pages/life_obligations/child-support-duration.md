@@ -1,11 +1,11 @@
 ---
-title: "What is Child Support Duration?"
+title: "What Is Child Support Duration?"
 slug: child-support-duration
 description: "A clear, simple explanation of child support duration - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Child Support Duration?
+# What Is Child Support Duration?
 
 Child support duration is the length of time that a non-custodial parent is required to pay child support to the custodial parent for the care and well-being of their child.
 

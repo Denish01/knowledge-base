@@ -1,11 +1,11 @@
 ---
-title: "What is Index Fund?"
+title: "What Is Index Fund?"
 slug: index-fund
 description: "A clear, simple explanation of index fund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Index Fund?
+# What Is Index Fund?
 
 Index fund is a type of investment vehicle that aims to track the performance of a specific stock market index, such as the overall market or a particular sector.
 

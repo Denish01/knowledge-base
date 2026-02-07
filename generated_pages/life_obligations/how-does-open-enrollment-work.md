@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Open Enrollment Work?"
+title: "How Open Enrollment Works"
 slug: how-does-open-enrollment-work
 description: "A clear, simple explanation of how does open enrollment work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Open Enrollment Work?
+# How Open Enrollment Works
 
 1. QUICK ANSWER: Open enrollment is a process that allows individuals and families to select and purchase health insurance plans during a specific period, typically through an online marketplace or directly with an insurance provider. This mechanism enables people to compare and choose from various plans, ensuring they have the coverage they need.
 

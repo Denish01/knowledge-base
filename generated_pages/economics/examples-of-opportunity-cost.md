@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Opportunity Cost?"
+title: "Example of Opportunity Cost"
 slug: examples-of-opportunity-cost
 description: "A clear, simple explanation of examples of opportunity cost - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Opportunity Cost?
+# Example of Opportunity Cost
 
 1. INTRODUCTION
 Opportunity cost refers to the value of the next best alternative that is given up when a choice is made. In other words, it is the benefit that could have been realized if a different option had been chosen. Understanding opportunity cost is essential in making informed decisions, as it helps to evaluate the potential consequences of choosing one option over another.

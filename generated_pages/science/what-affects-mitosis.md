@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Mitosis?"
+title: "What Affects Mitosis"
 slug: what-affects-mitosis
 description: "A clear, simple explanation of what affects mitosis - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Mitosis?
+# What Affects Mitosis
 
 1. INTRODUCTION:
 Mitosis is the process by which a cell divides into two daughter cells, each with the same number of chromosomes as the parent cell. Understanding the factors that affect mitosis is crucial because it plays a vital role in growth, repair, and maintenance of tissues in living organisms. Any disruptions in mitosis can lead to abnormal cell growth, genetic mutations, or even cell death. By recognizing the influences on mitosis, we can better comprehend how cells function and respond to various stimuli.

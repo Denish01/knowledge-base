@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Student Loan?"
+title: "What Affects Student Loan"
 slug: what-affects-student-loan
 description: "A clear, simple explanation of what affects student loan - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Student Loan?
+# What Affects Student Loan
 
 1. INTRODUCTION
 A student loan is a type of financial aid that allows students to borrow money to pay for their education. Understanding the factors that affect student loans is crucial for borrowers, as it can help them make informed decisions about their financial situation. Knowing what influences student loans can also help individuals manage their debt and create a plan for repayment. In this explanation, we will explore the various factors that affect student loans and how they interact with each other.

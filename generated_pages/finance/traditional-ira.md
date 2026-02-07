@@ -1,11 +1,11 @@
 ---
-title: "What is Traditional Ira?"
+title: "What Is Traditional Ira?"
 slug: traditional-ira
 description: "A clear, simple explanation of traditional ira - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Traditional Ira?
+# What Is Traditional Ira?
 
 Traditional IRA is a type of individual retirement account that allows individuals to save money for retirement on a tax-deferred basis.
 

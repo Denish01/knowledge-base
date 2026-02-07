@@ -1,11 +1,11 @@
 ---
-title: "What is What Non-Compete Agreement Depends On?"
+title: "What Non Compete Agreement Depends On"
 slug: what-non-compete-agreement-depends-on
 description: "A clear, simple explanation of what non-compete agreement depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Non-Compete Agreement Depends On?
+# What Non Compete Agreement Depends On
 
 1. INTRODUCTION:
 A non-compete agreement is a contract between an employer and an employee that restricts the employee from working for a competitor or starting a similar business. Understanding what a non-compete agreement depends on is crucial for its effectiveness and enforceability. The dependencies of a non-compete agreement are the foundation upon which it is built, and without them, the agreement may not be valid or enforceable.

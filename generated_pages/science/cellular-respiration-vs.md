@@ -1,11 +1,11 @@
 ---
-title: "What is Cellular Respiration Vs?"
+title: "Cellular Respiration vs"
 slug: cellular-respiration-vs
 description: "A clear, simple explanation of cellular respiration vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Cellular Respiration Vs?
+# Cellular Respiration vs
 
 Cellular respiration is a process by which cells generate energy from the food they consume, converting it into a usable form that can be utilized to perform various cellular functions.
 

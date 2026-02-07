@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Trade Surplus Work?"
+title: "How Trade Surplus Works"
 slug: how-does-trade-surplus-work
 description: "A clear, simple explanation of how does trade surplus work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Trade Surplus Work?
+# How Trade Surplus Works
 
 1. QUICK ANSWER: A trade surplus occurs when a country exports more goods and services than it imports, resulting in a net inflow of foreign currency. This surplus is calculated by subtracting the total value of imports from the total value of exports.
 

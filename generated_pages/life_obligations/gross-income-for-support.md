@@ -1,11 +1,11 @@
 ---
-title: "What is Gross Income For Support?"
+title: "What Is Gross Income For Support?"
 slug: gross-income-for-support
 description: "A clear, simple explanation of gross income for support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Gross Income For Support?
+# What Is Gross Income For Support?
 
 Gross income for support is the total amount of money an individual earns from various sources, used to determine their ability to provide financial support to dependents or others.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Recession Work?"
+title: "How Recession Works"
 slug: how-does-recession-work
 description: "A clear, simple explanation of how does recession work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Recession Work?
+# How Recession Works
 
 1. QUICK ANSWER: A recession is a period of economic decline, typically defined as a decline in gross domestic product (GDP) for two or more consecutive quarters, caused by a combination of factors that lead to reduced spending and production. This decline in economic activity has a ripple effect throughout the economy, impacting various sectors and individuals.
 

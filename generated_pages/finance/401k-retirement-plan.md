@@ -1,11 +1,11 @@
 ---
-title: "What is 401K Retirement Plan?"
+title: "What Is 401K Retirement Plan?"
 slug: 401k-retirement-plan
 description: "A clear, simple explanation of 401k retirement plan - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is 401K Retirement Plan?
+# What Is 401K Retirement Plan?
 
 401k retirement plan refers to a type of savings plan that helps people save money for their retirement. 
 

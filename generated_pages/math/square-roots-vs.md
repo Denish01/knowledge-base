@@ -1,11 +1,11 @@
 ---
-title: "What is Square Roots Vs?"
+title: "Square Roots vs"
 slug: square-roots-vs
 description: "A clear, simple explanation of square roots vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Square Roots Vs?
+# Square Roots vs
 
 Square roots vs refers to the mathematical comparison between the square root of a number and other mathematical operations or values, highlighting the unique properties and applications of square roots in various mathematical contexts.
 

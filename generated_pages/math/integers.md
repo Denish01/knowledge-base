@@ -1,11 +1,11 @@
 ---
-title: "What is Integers?"
+title: "What Is Integers?"
 slug: integers
 description: "A clear, simple explanation of integers - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Integers?
+# What Is Integers?
 
 Integers is a set of whole numbers that includes all positive, negative, and zero numbers, and is a fundamental concept in mathematics.
 

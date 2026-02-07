@@ -1,11 +1,11 @@
 ---
-title: "What is Potential Energy?"
+title: "What Is Potential Energy?"
 slug: potential-energy
 description: "A clear, simple explanation of potential energy - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Potential Energy?
+# What Is Potential Energy?
 
 Potential energy is the stored energy an object has due to its position, configuration, or state, which can be converted into kinetic energy when the object is put into motion.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Mean Median Mode Vs?"
+title: "Mean Median Mode vs"
 slug: mean-median-mode-vs
 description: "A clear, simple explanation of mean median mode vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Mean Median Mode Vs?
+# Mean Median Mode vs
 
 Mean median mode refers to a set of statistical measures that are used to describe the central tendency of a dataset, which is a collection of numbers or values.
 

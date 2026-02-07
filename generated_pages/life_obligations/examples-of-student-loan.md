@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Student Loan?"
+title: "Example of Student Loan"
 slug: examples-of-student-loan
 description: "A clear, simple explanation of examples of student loan - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Student Loan?
+# Example of Student Loan
 
 1. INTRODUCTION:
 A student loan is a type of loan that is specifically designed to help students pay for their education. It is typically offered by the government or private lenders and must be repaid, usually with interest, after the student has completed their education. Student loans can be used to cover a variety of educational expenses, including tuition, fees, room, and board.

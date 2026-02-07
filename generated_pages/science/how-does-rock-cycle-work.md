@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Rock Cycle Work?"
+title: "How Rock Cycle Works"
 slug: how-does-rock-cycle-work
 description: "A clear, simple explanation of how does rock cycle work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Rock Cycle Work?
+# How Rock Cycle Works
 
 1. QUICK ANSWER: The rock cycle is the process by which the Earth's rocks are formed, transformed, and destroyed through a series of geological processes, involving the interaction of heat, pressure, and time. This continuous cycle involves the transformation of one type of rock into another, resulting in the creation of new rocks.
 

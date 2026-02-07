@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Pay Stub?"
+title: "Types of Pay Stub"
 slug: types-of-pay-stub
 description: "A clear, simple explanation of types of pay stub - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Pay Stub?
+# Types of Pay Stub
 
 ## INTRODUCTION
 A pay stub, also known as a paycheck stub, is a document that provides details about an employee's salary, including earnings, deductions, and taxes. Understanding the different types of pay stubs is essential for employees to manage their finances, and for employers to maintain accurate payroll records. Classification of pay stubs matters because it helps to organize and differentiate between various pay periods, payment methods, and employee types. This classification system enables individuals to identify and understand the specific characteristics of each pay stub, ensuring accurate record-keeping and compliance with labor laws.

@@ -2914,6 +2914,7 @@ if __name__ == "__main__":
     # =========================================================================
     elif args.rerender:
         import json
+        import re
         category = args.category
         if not category:
             print("Error: --rerender requires --category")
@@ -2926,7 +2927,18 @@ if __name__ == "__main__":
 
         json_files = list(category_dir.glob("*.json"))
         print(f"Found {len(json_files)} JSON files in {category}")
-        print("Re-rendering HTML files...")
+        print("Re-rendering HTML files with correct titles...")
+
+        # Patterns to detect angle from filename and extract base concept
+        angle_patterns = [
+            (r'^what-(.+)-depends-on$', 'what-it-depends-on', lambda m: m.group(1)),
+            (r'^what-affects-(.+)$', 'what-affects-it', lambda m: m.group(1)),
+            (r'^how-does-(.+)-work$', 'how-it-works', lambda m: m.group(1)),
+            (r'^types-of-(.+)$', 'types-of', lambda m: m.group(1)),
+            (r'^examples-of-(.+)$', 'example-of', lambda m: m.group(1)),
+            (r'^common-misconceptions-about-(.+)$', 'common-misconceptions-about', lambda m: m.group(1)),
+            (r'^(.+)-vs$', 'vs', lambda m: m.group(1)),
+        ]
 
         rerendered = 0
         for json_path in json_files:
@@ -2940,10 +2952,38 @@ if __name__ == "__main__":
                 if not topic or not content:
                     continue
 
-                # Re-generate HTML using updated converter
-                html_content = format_as_html(topic, content)
+                # Detect angle and base concept from filename
+                filename = json_path.stem
+                angle_id = "what-is"  # default
+                base_concept = filename
+
+                for pattern, angle, extractor in angle_patterns:
+                    match = re.match(pattern, filename)
+                    if match:
+                        angle_id = angle
+                        base_concept = extractor(match)
+                        break
+
+                # Get correct title for this angle
+                page_title = get_angle_title(base_concept, angle_id)
+
+                # Re-generate HTML with correct title
+                html_content = format_as_html(topic, content, page_title=page_title)
                 html_path = json_path.with_suffix(".html")
                 html_path.write_text(html_content, encoding="utf-8")
+
+                # Also update markdown
+                md_content = format_as_markdown(topic, content, page_title=page_title)
+                md_path = json_path.with_suffix(".md")
+                md_path.write_text(md_content, encoding="utf-8")
+
+                # Update JSON with angle info
+                data["angle"] = angle_id
+                data["base_concept"] = base_concept
+                data["title"] = page_title
+                with open(json_path, "w", encoding="utf-8") as f:
+                    json.dump(data, f, indent=2, ensure_ascii=False)
+
                 rerendered += 1
 
                 if rerendered % 25 == 0:
@@ -2952,7 +2992,7 @@ if __name__ == "__main__":
             except Exception as e:
                 print(f"  Error with {json_path.name}: {e}")
 
-        print(f"\nRe-rendered {rerendered} HTML files.")
+        print(f"\nRe-rendered {rerendered} HTML files with correct titles.")
 
     # =========================================================================
     # RESTRUCTURE INTO CONCEPT FOLDERS

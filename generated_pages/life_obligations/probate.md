@@ -1,11 +1,11 @@
 ---
-title: "What is Probate?"
+title: "What Is Probate?"
 slug: probate
 description: "A clear, simple explanation of probate - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Probate?
+# What Is Probate?
 
 Probate is a legal process that takes place after someone dies, where the deceased person's assets, or property, are distributed according to their will or the laws of the state in which they lived.
 

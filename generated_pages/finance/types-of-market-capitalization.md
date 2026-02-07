@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Market Capitalization?"
+title: "Types of Market Capitalization"
 slug: types-of-market-capitalization
 description: "A clear, simple explanation of types of market capitalization - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Market Capitalization?
+# Types of Market Capitalization
 
 1. INTRODUCTION:
 Market capitalization refers to the total value of a company's outstanding shares, and it is a crucial factor in understanding the size and scope of a company. The classification of market capitalization is essential in finance as it helps investors, analysts, and researchers to categorize companies based on their size, which can impact their investment decisions, risk tolerance, and expected returns. The types of market capitalization cover a range of company sizes, from small to large, and each category has distinct characteristics that set it apart from the others. Understanding these categories is vital for making informed investment decisions and for analyzing the overall health and performance of a company.

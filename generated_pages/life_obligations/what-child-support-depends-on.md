@@ -1,11 +1,11 @@
 ---
-title: "What is What Child Support Depends On?"
+title: "What Child Support Depends On"
 slug: what-child-support-depends-on
 description: "A clear, simple explanation of what child support depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Child Support Depends On?
+# What Child Support Depends On
 
 1. INTRODUCTION:
 Child support is a financial obligation paid by one parent to the other for the care and well-being of their child. Understanding what child support depends on is crucial for ensuring the child's needs are met and for navigating the complexities of the support process. The various dependencies involved in child support are prerequisites that must be in place for the system to function effectively. These dependencies are the foundation upon which child support is calculated, awarded, and enforced.

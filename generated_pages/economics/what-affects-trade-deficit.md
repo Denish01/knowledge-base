@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Trade Deficit?"
+title: "What Affects Trade Deficit"
 slug: what-affects-trade-deficit
 description: "A clear, simple explanation of what affects trade deficit - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Trade Deficit?
+# What Affects Trade Deficit
 
 1. INTRODUCTION
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Cost Sharing?"
+title: "What Affects Cost Sharing"
 slug: what-affects-cost-sharing
 description: "A clear, simple explanation of what affects cost sharing - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Cost Sharing?
+# What Affects Cost Sharing
 
 1. INTRODUCTION
 Cost sharing refers to the division of expenses between two or more parties, often used in insurance, healthcare, and business partnerships. Understanding the factors that affect cost sharing is crucial, as it can significantly impact the financial burden on individuals or organizations. By recognizing these influences, parties can make informed decisions and negotiate fair agreements. In this explanation, we will explore the key factors that affect cost sharing and their interconnections.

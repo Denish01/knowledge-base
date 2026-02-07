@@ -1,11 +1,11 @@
 ---
-title: "What is Bond Yield?"
+title: "What Is Bond Yield?"
 slug: bond-yield
 description: "A clear, simple explanation of bond yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Bond Yield?
+# What Is Bond Yield?
 
 Bond yield is a measure of the return an investor can expect to earn from a bond, typically expressed as a percentage of the bond's face value.
 

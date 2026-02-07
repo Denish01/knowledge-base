@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Gross Income For Support?"
+title: "Example of Gross Income For Support"
 slug: examples-of-gross-income-for-support
 description: "A clear, simple explanation of examples of gross income for support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Gross Income For Support?
+# Example of Gross Income For Support
 
 1. INTRODUCTION:
 Gross income for support refers to the total amount of money earned by an individual before any deductions or taxes are applied, used to determine the amount of financial support they can provide to others, such as family members or dependents. This calculation is often used in legal and financial contexts to ensure that individuals are contributing fairly to the support of those who rely on them.

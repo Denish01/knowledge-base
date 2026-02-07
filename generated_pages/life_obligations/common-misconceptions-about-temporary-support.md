@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Temporary Support?"
+title: "Common Misconceptions About Temporary Support"
 slug: common-misconceptions-about-temporary-support
 description: "A clear, simple explanation of common misconceptions about temporary support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Temporary Support?
+# Common Misconceptions About Temporary Support
 
 1. INTRODUCTION:
 Temporary support is an essential concept in various fields, including construction, engineering, and social services. Despite its importance, misconceptions about temporary support are common. This is often due to a lack of understanding or misinformation about the purpose and implementation of temporary support systems. These misconceptions can lead to confusion, misapplication, and even safety risks. It is essential to address these misconceptions to ensure that temporary support is used effectively and safely.

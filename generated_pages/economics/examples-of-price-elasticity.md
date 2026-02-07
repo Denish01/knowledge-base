@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Price Elasticity?"
+title: "Example of Price Elasticity"
 slug: examples-of-price-elasticity
 description: "A clear, simple explanation of examples of price elasticity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Price Elasticity?
+# Example of Price Elasticity
 
 1. INTRODUCTION:
 Price elasticity refers to how much the quantity of a product or service that people buy changes when the price of that product or service changes. It is a measure of how sensitive the demand for a product is to changes in its price. Understanding price elasticity is crucial for businesses and consumers alike, as it helps in making informed decisions about pricing and purchasing.

@@ -1,11 +1,11 @@
 ---
-title: "What is Nitrogen Cycle?"
+title: "What Is Nitrogen Cycle?"
 slug: nitrogen-cycle
 description: "A clear, simple explanation of nitrogen cycle - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Nitrogen Cycle?
+# What Is Nitrogen Cycle?
 
 Nitrogen cycle refers to the process by which nitrogen is converted between its various forms in the environment, including the atmosphere, soil, water, and living organisms.
 

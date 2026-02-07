@@ -1,11 +1,11 @@
 ---
-title: "What is Temporary Support Vs?"
+title: "Temporary Support vs"
 slug: temporary-support-vs
 description: "A clear, simple explanation of temporary support vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Temporary Support Vs?
+# Temporary Support vs
 
 Temporary support vs permanent support is a concept that refers to the distinction between two types of assistance or structures used to help individuals or systems achieve stability or recovery.
 

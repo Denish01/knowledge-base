@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Cellular Respiration Work?"
+title: "How Cellular Respiration Works"
 slug: how-does-cellular-respiration-work
 description: "A clear, simple explanation of how does cellular respiration work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Cellular Respiration Work?
+# How Cellular Respiration Works
 
 1. QUICK ANSWER: Cellular respiration is the process by which cells convert glucose into energy in the form of ATP, which is then used to power various cellular functions. This process involves a series of chemical reactions that take place in the cell's mitochondria, where glucose is broken down and energy is released.
 

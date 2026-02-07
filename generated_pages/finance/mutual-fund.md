@@ -1,11 +1,11 @@
 ---
-title: "What is Mutual Fund?"
+title: "What Is Mutual Fund?"
 slug: mutual-fund
 description: "A clear, simple explanation of mutual fund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Mutual Fund?
+# What Is Mutual Fund?
 
 Mutual fund is a type of investment vehicle that pools money from many individuals and institutions to invest in a diversified portfolio of stocks, bonds, and other securities.
 

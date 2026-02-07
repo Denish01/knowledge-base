@@ -1,11 +1,11 @@
 ---
-title: "What is Variables Vs?"
+title: "Variables vs"
 slug: variables-vs
 description: "A clear, simple explanation of variables vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Variables Vs?
+# Variables vs
 
 Variables vs constants is a fundamental concept in mathematics and science that refers to the distinction between quantities that can change or vary and those that remain fixed and unchanging.
 

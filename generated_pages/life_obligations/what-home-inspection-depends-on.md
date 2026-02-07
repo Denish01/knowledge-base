@@ -1,11 +1,11 @@
 ---
-title: "What is What Home Inspection Depends On?"
+title: "What Home Inspection Depends On"
 slug: what-home-inspection-depends-on
 description: "A clear, simple explanation of what home inspection depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Home Inspection Depends On?
+# What Home Inspection Depends On
 
 1. INTRODUCTION:
 A home inspection is a thorough examination of a home's condition, identifying potential issues and defects. It is a crucial step in the home-buying process, providing buyers with valuable information to make informed decisions. The accuracy and effectiveness of a home inspection depend on several key factors. Understanding these dependencies is essential to ensure a comprehensive and reliable inspection.

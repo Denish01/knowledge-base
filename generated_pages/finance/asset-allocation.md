@@ -1,11 +1,11 @@
 ---
-title: "What is Asset Allocation?"
+title: "What Is Asset Allocation?"
 slug: asset-allocation
 description: "A clear, simple explanation of asset allocation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Asset Allocation?
+# What Is Asset Allocation?
 
 Asset allocation is a financial strategy that involves dividing a portfolio of investments among different asset classes to achieve a balance between risk and return.
 

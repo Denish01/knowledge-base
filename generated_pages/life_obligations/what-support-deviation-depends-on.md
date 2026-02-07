@@ -1,11 +1,11 @@
 ---
-title: "What is What Support Deviation Depends On?"
+title: "What Support Deviation Depends On"
 slug: what-support-deviation-depends-on
 description: "A clear, simple explanation of what support deviation depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Support Deviation Depends On?
+# What Support Deviation Depends On
 
 1. INTRODUCTION:
 Support deviation refers to the difference between the expected and actual level of support provided to individuals or systems. Understanding the factors that support deviation depends on is crucial for effective planning, implementation, and evaluation of support systems. The dependencies that influence support deviation are essential prerequisites that must be considered to ensure the provision of adequate support.

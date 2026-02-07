@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Linear Equations?"
+title: "Example of Linear Equations"
 slug: examples-of-linear-equations
 description: "A clear, simple explanation of examples of linear equations - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Linear Equations?
+# Example of Linear Equations
 
 1. INTRODUCTION:
 A linear equation is a mathematical statement that expresses a relationship between two or more variables in a straight line. It typically follows the form of y = mx + b, where m represents the slope of the line and b represents the y-intercept. Linear equations are used to model a wide range of real-world phenomena and are a fundamental concept in mathematics and science.

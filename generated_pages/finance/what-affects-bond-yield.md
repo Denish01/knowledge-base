@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Bond Yield?"
+title: "What Affects Bond Yield"
 slug: what-affects-bond-yield
 description: "A clear, simple explanation of what affects bond yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Bond Yield?
+# What Affects Bond Yield
 
 1. INTRODUCTION
 Bond yield refers to the return an investor can expect from a bond, which is essentially a loan made to a borrower, such as a corporation or government entity. Understanding the factors that affect bond yield is crucial for investors, as it helps them make informed decisions about their investments. Bond yield is influenced by a variety of factors, and recognizing these influences is key to navigating the bond market effectively. By grasping the causes and effects of these factors, investors can better predict changes in bond yield and adjust their investment strategies accordingly.

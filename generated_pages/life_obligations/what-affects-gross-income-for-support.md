@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Gross Income For Support?"
+title: "What Affects Gross Income For Support"
 slug: what-affects-gross-income-for-support
 description: "A clear, simple explanation of what affects gross income for support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Gross Income For Support?
+# What Affects Gross Income For Support
 
 INTRODUCTION
 Gross income for support refers to the total amount of money available to support oneself and dependents, such as children or a spouse. Understanding the factors that affect gross income for support is crucial because it helps individuals and families make informed decisions about their financial resources and plan for their well-being. Gross income for support is used to determine eligibility for various benefits, such as government assistance programs, and to calculate support obligations, like child support or alimony. By recognizing the influences on gross income for support, individuals can better manage their finances and make adjustments to improve their overall financial situation.

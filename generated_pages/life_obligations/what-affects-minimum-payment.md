@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Minimum Payment?"
+title: "What Affects Minimum Payment"
 slug: what-affects-minimum-payment
 description: "A clear, simple explanation of what affects minimum payment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Minimum Payment?
+# What Affects Minimum Payment
 
 1. INTRODUCTION
 Minimum payment refers to the smallest amount of money that a borrower must pay each month to avoid late fees and penalties on a loan or credit account. Understanding the factors that affect minimum payment is crucial because it helps borrowers manage their debt effectively and make informed decisions about their financial obligations. By knowing what influences minimum payment, individuals can better plan their budgets, avoid financial difficulties, and work towards becoming debt-free.

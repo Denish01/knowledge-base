@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Ecosystem?"
+title: "Example of Ecosystem"
 slug: examples-of-ecosystem
 description: "A clear, simple explanation of examples of ecosystem - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Ecosystem?
+# Example of Ecosystem
 
 1. INTRODUCTION
 An ecosystem is a community of living organisms, such as plants, animals, and microbes, that interact with each other and their physical environment. This interaction occurs within a specific area, such as a forest, desert, or ocean, and is characterized by the flow of energy and nutrients between the different components. Ecosystems can vary greatly in size, from a small pond to an entire continent, and can be found in almost every environment on Earth.

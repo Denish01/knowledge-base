@@ -1,11 +1,11 @@
 ---
-title: "What is Scientific Notation Vs?"
+title: "Scientific Notation vs"
 slug: scientific-notation-vs
 description: "A clear, simple explanation of scientific notation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Scientific Notation Vs?
+# Scientific Notation vs
 
 Scientific notation is a method of expressing very large or very small numbers in a more compact and manageable form. 
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Area Of A Circle?"
+title: "What Is Area Of A Circle?"
 slug: area-of-a-circle
 description: "A clear, simple explanation of area of a circle - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Area Of A Circle?
+# What Is Area Of A Circle?
 
 Area of a circle is a mathematical concept that refers to the amount of space inside a circle, which is a closed curve where every point on the curve is the same distance from a fixed point called the center.
 

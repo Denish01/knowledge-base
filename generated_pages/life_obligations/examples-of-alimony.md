@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Alimony?"
+title: "Example of Alimony"
 slug: examples-of-alimony
 description: "A clear, simple explanation of examples of alimony - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Alimony?
+# Example of Alimony
 
 1. INTRODUCTION
 Alimony, also known as spousal support, is a payment made by one spouse to the other after a divorce or separation. Its primary purpose is to provide financial assistance to the spouse who earns less or has a lower standard of living. Alimony can be paid in a lump sum or in regular installments, and its amount and duration are determined by the court based on various factors, including the length of the marriage, the income of both spouses, and their standard of living during the marriage.

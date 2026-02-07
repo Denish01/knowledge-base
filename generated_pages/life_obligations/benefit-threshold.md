@@ -1,11 +1,11 @@
 ---
-title: "What is Benefit Threshold?"
+title: "What Is Benefit Threshold?"
 slug: benefit-threshold
 description: "A clear, simple explanation of benefit threshold - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Benefit Threshold?
+# What Is Benefit Threshold?
 
 Benefit threshold is the minimum amount of benefit or advantage that a person, organization, or society must receive in order to justify a particular action, decision, or investment.
 

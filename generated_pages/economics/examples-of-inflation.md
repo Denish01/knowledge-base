@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Inflation?"
+title: "Example of Inflation"
 slug: examples-of-inflation
 description: "A clear, simple explanation of examples of inflation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Inflation?
+# Example of Inflation
 
 1. INTRODUCTION
 Inflation refers to a sustained increase in the general price level of goods and services in an economy over time. It is a monetary phenomenon that results in a decrease in the purchasing power of money. In simpler terms, as inflation rises, the same amount of money can buy fewer goods and services than it could before. Understanding inflation is crucial because it affects how people save, spend, and invest their money.

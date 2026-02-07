@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Credit Card Debt Work?"
+title: "How Credit Card Debt Works"
 slug: how-does-credit-card-debt-work
 description: "A clear, simple explanation of how does credit card debt work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Credit Card Debt Work?
+# How Credit Card Debt Works
 
 1. QUICK ANSWER: Credit card debt works by allowing individuals to borrow money from a lender to make purchases, with the understanding that the borrowed amount will be repaid, usually with added interest. This process involves a series of steps and components that facilitate the borrowing and repayment of funds.
 

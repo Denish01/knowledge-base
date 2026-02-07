@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Fractions?"
+title: "Example of Fractions"
 slug: examples-of-fractions
 description: "A clear, simple explanation of examples of fractions - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Fractions?
+# Example of Fractions
 
 1. INTRODUCTION:
 A fraction is a mathematical concept used to represent a part of a whole. It consists of a numerator, which tells us how many equal parts we have, and a denominator, which tells us how many parts the whole is divided into. Fractions can be used to describe quantities that are less than one whole, and they are essential in various aspects of life, including cooking, measurement, and finance.

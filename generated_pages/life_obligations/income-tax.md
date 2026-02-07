@@ -1,11 +1,11 @@
 ---
-title: "What is Income Tax?"
+title: "What Is Income Tax?"
 slug: income-tax
 description: "A clear, simple explanation of income tax - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Income Tax?
+# What Is Income Tax?
 
 Income tax is a type of tax that governments impose on individuals and businesses based on their income, which is the money they earn from various sources such as jobs, investments, and business activities.
 

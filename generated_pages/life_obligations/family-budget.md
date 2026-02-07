@@ -1,11 +1,11 @@
 ---
-title: "What is Family Budget?"
+title: "What Is Family Budget?"
 slug: family-budget
 description: "A clear, simple explanation of family budget - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Family Budget?
+# What Is Family Budget?
 
 Family budget is a plan for how a household allocates its income towards various expenses, savings, and debt repayment to achieve financial stability and security.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Roth Ira Work?"
+title: "How Roth Ira Works"
 slug: how-does-roth-ira-work
 description: "A clear, simple explanation of how does roth ira work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Roth Ira Work?
+# How Roth Ira Works
 
 1. QUICK ANSWER: A Roth Individual Retirement Account (Roth IRA) works by allowing individuals to contribute after-tax dollars, which can then grow tax-free and be withdrawn tax-free in retirement. This means that the money contributed to a Roth IRA has already been taxed, so the account holder won't have to pay taxes on the withdrawals.
 

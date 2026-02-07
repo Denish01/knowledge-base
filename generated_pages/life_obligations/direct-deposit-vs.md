@@ -1,11 +1,11 @@
 ---
-title: "What is Direct Deposit Vs?"
+title: "Direct Deposit vs"
 slug: direct-deposit-vs
 description: "A clear, simple explanation of direct deposit vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Direct Deposit Vs?
+# Direct Deposit vs
 
 Direct deposit vs traditional payment methods is a comparison of two different ways of receiving payments, with direct deposit referring to the electronic transfer of funds into a bank account, while traditional payment methods involve physical checks or cash.
 

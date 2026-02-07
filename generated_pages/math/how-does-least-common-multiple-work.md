@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Least Common Multiple Work?"
+title: "How Least Common Multiple Works"
 slug: how-does-least-common-multiple-work
 description: "A clear, simple explanation of how does least common multiple work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Least Common Multiple Work?
+# How Least Common Multiple Works
 
 1. QUICK ANSWER: The least common multiple (LCM) is a mathematical operation that finds the smallest number that is a multiple of two or more numbers. This is achieved by identifying the common multiples of the given numbers and selecting the smallest one.
 

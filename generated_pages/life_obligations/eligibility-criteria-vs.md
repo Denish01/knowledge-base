@@ -1,11 +1,11 @@
 ---
-title: "What is Eligibility Criteria Vs?"
+title: "Eligibility Criteria vs"
 slug: eligibility-criteria-vs
 description: "A clear, simple explanation of eligibility criteria vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Eligibility Criteria Vs?
+# Eligibility Criteria vs
 
 Eligibility criteria refers to the standards or requirements that must be met in order to qualify for something, such as a program, service, or benefit.
 

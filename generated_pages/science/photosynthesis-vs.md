@@ -1,11 +1,11 @@
 ---
-title: "What is Photosynthesis Vs?"
+title: "Photosynthesis vs"
 slug: photosynthesis-vs
 description: "A clear, simple explanation of photosynthesis vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Photosynthesis Vs?
+# Photosynthesis vs
 
 Photosynthesis vs other energy production methods is a comparison of how plants, algae, and some bacteria produce energy from sunlight, water, and carbon dioxide, versus other methods of energy production.
 

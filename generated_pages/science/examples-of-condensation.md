@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Condensation?"
+title: "Example of Condensation"
 slug: examples-of-condensation
 description: "A clear, simple explanation of examples of condensation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Condensation?
+# Example of Condensation
 
 1. INTRODUCTION
 Condensation is the process by which water vapor in the air is changed into liquid water. This occurs when the air, which can hold only a certain amount of water vapor, reaches its dew point, the temperature at which the air becomes saturated with water vapor and can no longer hold any more moisture. At this point, the water vapor in the air condenses into droplets of water. Condensation is an important part of the water cycle and is essential for the formation of clouds, fog, and precipitation.

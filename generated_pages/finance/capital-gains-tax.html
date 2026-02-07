@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A clear, simple explanation of capital gains tax - definition, key concepts, examples, and common misconceptions.">
-    <title>What is Capital Gains Tax? - Simple Explanation</title>
+    <title>What Is Capital Gains Tax? - Simple Explanation</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -29,127 +29,9 @@
 </head>
 <body>
     <article>
-        <h1>What is Capital Gains Tax?</h1>
+        <h1>What Is Capital Gains Tax?</h1>
 
         
-<style>
-.calculator {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 24px 0;
-}
-.calculator h3 {
-    margin-top: 0;
-    color: #1a73e8;
-}
-.calc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 16px;
-}
-.calculator label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-}
-.calculator input, .calculator select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.calculator button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.calculator button:hover {
-    background: #1557b0;
-}
-.calc-result {
-    margin-top: 16px;
-    padding: 12px;
-    background: white;
-    border-radius: 4px;
-    border-left: 4px solid #1a73e8;
-}
-.calc-result p {
-    margin: 8px 0;
-}
-.calc-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.tab-btn {
-    background: #e0e0e0;
-    color: #333;
-}
-.tab-btn.active {
-    background: #1a73e8;
-    color: white;
-}
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-</style>
-
-<div class="calculator" id="capgains-calc">
-    <h3>Capital Gains Tax Estimator</h3>
-    <p><em>Simplified estimate - consult a tax professional for actual advice</em></p>
-    <div class="calc-grid">
-        <label>Purchase Price ($): <input type="number" id="cg-buy" value="10000" min="0"></label>
-        <label>Sale Price ($): <input type="number" id="cg-sell" value="15000" min="0"></label>
-        <label>Holding Period:
-            <select id="cg-term">
-                <option value="short">Short-term (< 1 year)</option>
-                <option value="long" selected>Long-term (> 1 year)</option>
-            </select>
-        </label>
-        <label>Tax Bracket:
-            <select id="cg-bracket">
-                <option value="0">0% (Low income)</option>
-                <option value="15" selected>15% (Most taxpayers)</option>
-                <option value="20">20% (High income)</option>
-            </select>
-        </label>
-    </div>
-    <button onclick="calcCapGains()">Calculate</button>
-    <div class="calc-result" id="capgains-result"></div>
-</div>
-<script>
-function calcCapGains() {
-    const buy = parseFloat(document.getElementById('cg-buy').value);
-    const sell = parseFloat(document.getElementById('cg-sell').value);
-    const term = document.getElementById('cg-term').value;
-    const bracket = parseFloat(document.getElementById('cg-bracket').value) / 100;
-    const gain = sell - buy;
-    const rate = term === 'short' ? 0.22 : bracket; // Short-term uses ordinary income rate (est. 22%)
-    const tax = Math.max(0, gain * rate);
-    const netGain = gain - tax;
-    document.getElementById('capgains-result').innerHTML = `
-        <p><strong>Capital Gain:</strong> $${gain.toLocaleString()}</p>
-        <p><strong>Tax Rate:</strong> ${(rate*100).toFixed(0)}% (${term}-term)</p>
-        <p><strong>Estimated Tax:</strong> $${tax.toFixed(2)}</p>
-        <p><strong>Net Gain After Tax:</strong> $${netGain.toFixed(2)}</p>
-        <p><em>This is an estimate. Actual taxes depend on total income and deductions.</em></p>
-    `;
-}
-calcCapGains();
-</script>
-
 
         <p>Capital gains tax is a type of tax imposed on the profit made from the sale of an asset, such as property, stocks, or investments, that has increased in value over time.</p>
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Disability Insurance?"
+title: "What Affects Disability Insurance"
 slug: what-affects-disability-insurance
 description: "A clear, simple explanation of what affects disability insurance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Disability Insurance?
+# What Affects Disability Insurance
 
 1. INTRODUCTION:
 Disability insurance is a type of insurance that provides financial support to individuals who become unable to work due to illness or injury. Understanding the factors that affect disability insurance is crucial for individuals, employers, and insurance providers to make informed decisions. The influences on disability insurance can impact the cost, coverage, and availability of policies, making it essential to recognize these factors to navigate the complex world of disability insurance.

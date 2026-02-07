@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Pythagorean Theorem?"
+title: "Example of Pythagorean Theorem"
 slug: examples-of-pythagorean-theorem
 description: "A clear, simple explanation of examples of pythagorean theorem - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Pythagorean Theorem?
+# Example of Pythagorean Theorem
 
 1. INTRODUCTION:
 The Pythagorean Theorem is a fundamental concept in geometry that describes the relationship between the lengths of the sides of a right-angled triangle. The theorem states that the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides. This can be expressed as a^2 + b^2 = c^2, where a and b are the lengths of the legs and c is the length of the hypotenuse. Understanding and applying the Pythagorean Theorem is crucial for solving problems involving right-angled triangles in various fields, including architecture, engineering, and physics.

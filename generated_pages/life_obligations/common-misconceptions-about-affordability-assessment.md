@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Affordability Assessment?"
+title: "Common Misconceptions About Affordability Assessment"
 slug: common-misconceptions-about-affordability-assessment
 description: "A clear, simple explanation of common misconceptions about affordability assessment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Affordability Assessment?
+# Common Misconceptions About Affordability Assessment
 
 1. INTRODUCTION:
 Misconceptions about affordability assessment are common because the process of determining whether someone can afford a particular expense, such as a mortgage or a loan, can be complex and involve multiple factors. Many people may not fully understand these factors or how they are used to assess affordability, leading to misconceptions and confusion. Additionally, the terminology and methods used in affordability assessment can be unfamiliar to those who are not financial experts, contributing to the prevalence of misconceptions.

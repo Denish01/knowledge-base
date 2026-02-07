@@ -1,11 +1,11 @@
 ---
-title: "What is What Exponents Depends On?"
+title: "What Exponents Depends On"
 slug: what-exponents-depends-on
 description: "A clear, simple explanation of what exponents depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Exponents Depends On?
+# What Exponents Depends On
 
 1. INTRODUCTION:
 Exponents are a fundamental concept in mathematics that represent repeated multiplication of a number by itself. For example, 2^3 means 2 multiplied by itself 3 times. Understanding the dependencies of exponents is crucial, as it provides a solid foundation for more advanced mathematical concepts. Without a clear grasp of these dependencies, students may struggle to apply exponents in various mathematical operations.

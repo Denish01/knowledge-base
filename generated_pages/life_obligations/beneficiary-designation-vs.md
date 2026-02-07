@@ -1,11 +1,11 @@
 ---
-title: "What is Beneficiary Designation Vs?"
+title: "Beneficiary Designation vs"
 slug: beneficiary-designation-vs
 description: "A clear, simple explanation of beneficiary designation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Beneficiary Designation Vs?
+# Beneficiary Designation vs
 
 Beneficiary designation vs refers to the process of comparing and understanding the differences between various beneficiary designation options, which are used to transfer assets to specific individuals or entities after the owner's death.
 

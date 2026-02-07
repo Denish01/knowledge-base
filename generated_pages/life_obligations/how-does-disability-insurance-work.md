@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Disability Insurance Work?"
+title: "How Disability Insurance Works"
 slug: how-does-disability-insurance-work
 description: "A clear, simple explanation of how does disability insurance work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Disability Insurance Work?
+# How Disability Insurance Works
 
 1. QUICK ANSWER: Disability insurance works by providing financial protection to individuals who become unable to work due to an illness or injury, replacing a portion of their income to help them maintain their standard of living. This type of insurance is designed to help individuals cope with the financial consequences of being unable to work.
 

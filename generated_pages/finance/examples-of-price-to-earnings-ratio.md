@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Price To Earnings Ratio?"
+title: "Example of Price To Earnings Ratio"
 slug: examples-of-price-to-earnings-ratio
 description: "A clear, simple explanation of examples of price to earnings ratio - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Price To Earnings Ratio?
+# Example of Price To Earnings Ratio
 
 1. INTRODUCTION:
 The price to earnings ratio, often referred to as P/E ratio, is a financial metric used to assess the value of a company. It is calculated by dividing the current stock price of the company by its earnings per share. This ratio provides insight into how much investors are willing to pay for each dollar of earnings. Understanding the P/E ratio is essential for investors to make informed decisions about buying or selling stocks.

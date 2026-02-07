@@ -1,11 +1,11 @@
 ---
-title: "What is What Loan Interest Depends On?"
+title: "What Loan Interest Depends On"
 slug: what-loan-interest-depends-on
 description: "A clear, simple explanation of what loan interest depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Loan Interest Depends On?
+# What Loan Interest Depends On
 
 1. INTRODUCTION:
 Loan interest is the amount of money a borrower must pay to a lender in addition to the principal amount borrowed. Understanding what loan interest depends on is crucial for making informed decisions when taking out a loan. Loan interest rates are not arbitrary, but rather depend on several key factors. Recognizing these dependencies helps borrowers anticipate and prepare for the total cost of their loan.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Spousal Support Duration Work?"
+title: "How Spousal Support Duration Works"
 slug: how-does-spousal-support-duration-work
 description: "A clear, simple explanation of how does spousal support duration work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Spousal Support Duration Work?
+# How Spousal Support Duration Works
 
 1. QUICK ANSWER: 
 Spousal support duration is determined by a court's evaluation of various factors, including the length of the marriage, income of both parties, and the ability of the receiving spouse to become self-sufficient. The court's decision on the duration of spousal support is based on a careful consideration of these factors to ensure a fair outcome for both parties.

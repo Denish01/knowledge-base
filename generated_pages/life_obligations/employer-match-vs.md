@@ -1,11 +1,11 @@
 ---
-title: "What is Employer Match Vs?"
+title: "Employer Match vs"
 slug: employer-match-vs
 description: "A clear, simple explanation of employer match vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Employer Match Vs?
+# Employer Match vs
 
 Employer match refers to the amount of money that an employer contributes to an employee's retirement or savings plan, typically based on a percentage of the employee's own contributions.
 

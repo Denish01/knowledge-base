@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Proportions?"
+title: "What Affects Proportions"
 slug: what-affects-proportions
 description: "A clear, simple explanation of what affects proportions - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Proportions?
+# What Affects Proportions
 
 1. INTRODUCTION:
 Proportions refer to the relationship between the size of different parts of an object or system. Understanding the factors that affect proportions is crucial in various fields, including art, architecture, engineering, and biology. When proportions are well-balanced, they can create a sense of harmony and stability. On the other hand, imbalanced proportions can lead to instability and disorder. Therefore, it is essential to understand the factors that influence proportions to achieve desired outcomes.

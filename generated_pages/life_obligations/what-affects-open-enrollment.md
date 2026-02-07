@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Open Enrollment?"
+title: "What Affects Open Enrollment"
 slug: what-affects-open-enrollment
 description: "A clear, simple explanation of what affects open enrollment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Open Enrollment?
+# What Affects Open Enrollment
 
 1. INTRODUCTION:
 Open enrollment refers to a period of time when individuals can enroll in or change their health insurance plans. Understanding the factors that affect open enrollment is crucial for individuals, employers, and insurance providers, as it helps them make informed decisions and prepare for the enrollment process. The influences on open enrollment can impact the number of people who enroll, the types of plans they choose, and the overall cost of healthcare. By recognizing these factors, individuals and organizations can better navigate the open enrollment process and make the most of the available options.

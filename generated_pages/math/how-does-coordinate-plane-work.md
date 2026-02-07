@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Coordinate Plane Work?"
+title: "How Coordinate Plane Works"
 slug: how-does-coordinate-plane-work
 description: "A clear, simple explanation of how does coordinate plane work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Coordinate Plane Work?
+# How Coordinate Plane Works
 
 1. QUICK ANSWER: The coordinate plane is a two-dimensional grid system that works by using two perpendicular lines, called axes, to locate points in a plane. This system allows users to identify and plot points, lines, and shapes using a unique set of coordinates.
 

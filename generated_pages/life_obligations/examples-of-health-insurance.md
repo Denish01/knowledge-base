@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Health Insurance?"
+title: "Example of Health Insurance"
 slug: examples-of-health-insurance
 description: "A clear, simple explanation of examples of health insurance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Health Insurance?
+# Example of Health Insurance
 
 1. INTRODUCTION:
 Health insurance is a type of insurance coverage that pays for medical and surgical expenses incurred by the insured. It is designed to protect individuals and families from financial hardship due to medical bills. Health insurance can be provided by an employer, purchased individually, or obtained through government programs. In general, health insurance works by requiring the insured to pay a premium, either monthly or annually, in exchange for coverage of certain medical expenses.

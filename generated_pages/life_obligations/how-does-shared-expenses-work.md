@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Shared Expenses Work?"
+title: "How Shared Expenses Works"
 slug: how-does-shared-expenses-work
 description: "A clear, simple explanation of how does shared expenses work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Shared Expenses Work?
+# How Shared Expenses Works
 
 1. QUICK ANSWER: Shared expenses work by dividing costs among multiple individuals or parties, allowing them to split the financial burden of a particular expense. This mechanism involves a process of tracking, calculating, and distributing expenses to ensure a fair and transparent allocation of costs.
 

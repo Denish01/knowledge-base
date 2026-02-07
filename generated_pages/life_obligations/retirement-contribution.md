@@ -1,11 +1,11 @@
 ---
-title: "What is Retirement Contribution?"
+title: "What Is Retirement Contribution?"
 slug: retirement-contribution
 description: "A clear, simple explanation of retirement contribution - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Retirement Contribution?
+# What Is Retirement Contribution?
 
 Retirement contribution refers to the amount of money an individual sets aside, usually on a regular basis, to support their financial well-being during their retirement years.
 

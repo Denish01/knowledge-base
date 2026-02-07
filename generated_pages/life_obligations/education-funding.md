@@ -1,11 +1,11 @@
 ---
-title: "What is Education Funding?"
+title: "What Is Education Funding?"
 slug: education-funding
 description: "A clear, simple explanation of education funding - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Education Funding?
+# What Is Education Funding?
 
 Education funding is the process of providing financial resources to support the operation of educational institutions and programs.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Power Of Attorney Depends On?"
+title: "What Power Of Attorney Depends On"
 slug: what-power-of-attorney-depends-on
 description: "A clear, simple explanation of what power of attorney depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Power Of Attorney Depends On?
+# What Power Of Attorney Depends On
 
 1. INTRODUCTION:
 A power of attorney is a legal document that allows one person to act on behalf of another in financial, medical, or other matters. The effectiveness and validity of a power of attorney depend on several key factors. Understanding these dependencies is crucial to ensure that the document serves its intended purpose and protects the interests of the person granting the power.

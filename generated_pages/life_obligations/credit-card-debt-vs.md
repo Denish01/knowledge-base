@@ -1,11 +1,11 @@
 ---
-title: "What is Credit Card Debt Vs?"
+title: "Credit Card Debt vs"
 slug: credit-card-debt-vs
 description: "A clear, simple explanation of credit card debt vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Credit Card Debt Vs?
+# Credit Card Debt vs
 
 Credit card debt vs other types of debt is a comparison of the financial obligations incurred through credit card use and other forms of borrowing. 
 

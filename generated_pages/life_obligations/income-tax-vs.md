@@ -1,11 +1,11 @@
 ---
-title: "What is Income Tax Vs?"
+title: "Income Tax vs"
 slug: income-tax-vs
 description: "A clear, simple explanation of income tax vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Income Tax Vs?
+# Income Tax vs
 
 Income tax vs refers to the comparison of income tax with other forms of taxation, highlighting the differences and similarities between them.
 

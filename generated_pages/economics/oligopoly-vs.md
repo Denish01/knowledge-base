@@ -1,11 +1,11 @@
 ---
-title: "What is Oligopoly Vs?"
+title: "Oligopoly vs"
 slug: oligopoly-vs
 description: "A clear, simple explanation of oligopoly vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Oligopoly Vs?
+# Oligopoly vs
 
 Oligopoly vs monopoly refers to a comparison between two types of market structures in which a small number of firms or a single firm dominate the market, respectively.
 

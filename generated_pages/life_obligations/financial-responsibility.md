@@ -1,11 +1,11 @@
 ---
-title: "What is Financial Responsibility?"
+title: "What Is Financial Responsibility?"
 slug: financial-responsibility
 description: "A clear, simple explanation of financial responsibility - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Financial Responsibility?
+# What Is Financial Responsibility?
 
 Financial responsibility is the ability to manage one's finances effectively, making informed decisions about earning, saving, spending, and investing money.
 

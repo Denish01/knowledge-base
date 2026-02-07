@@ -1,11 +1,11 @@
 ---
-title: "What is Meiosis?"
+title: "What Is Meiosis?"
 slug: meiosis
 description: "A clear, simple explanation of meiosis - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Meiosis?
+# What Is Meiosis?
 
 Meiosis is a type of cell division that occurs in reproductive cells, resulting in the production of gametes, or sex cells, with half the number of chromosomes as the parent cell.
 

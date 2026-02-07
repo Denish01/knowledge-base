@@ -1,11 +1,11 @@
 ---
-title: "What is Perimeter Vs?"
+title: "Perimeter vs"
 slug: perimeter-vs
 description: "A clear, simple explanation of perimeter vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Perimeter Vs?
+# Perimeter vs
 
 Perimeter refers to the distance around a shape or a figure, which is calculated by adding up the lengths of all its sides. 
 

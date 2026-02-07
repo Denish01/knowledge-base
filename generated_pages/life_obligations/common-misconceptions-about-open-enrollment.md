@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Open Enrollment?"
+title: "Common Misconceptions About Open Enrollment"
 slug: common-misconceptions-about-open-enrollment
 description: "A clear, simple explanation of common misconceptions about open enrollment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Open Enrollment?
+# Common Misconceptions About Open Enrollment
 
 1. INTRODUCTION:
 Open enrollment is a critical period for individuals and families to select or change their health insurance plans. However, due to the complexity of the process and the abundance of information available, many people hold misconceptions about open enrollment. These misconceptions can lead to confusion, missed deadlines, and potentially inadequate coverage. It is essential to understand the facts about open enrollment to make informed decisions about health insurance.

@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Slope?"
+title: "What Affects Slope"
 slug: what-affects-slope
 description: "A clear, simple explanation of what affects slope - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Slope?
+# What Affects Slope
 
 1. INTRODUCTION:
 Slope refers to the inclination or steepness of a surface, often measured as an angle or a ratio of vertical to horizontal distance. Understanding the factors that affect slope is crucial in various fields such as geography, engineering, and environmental science. Slope influences the movement of water, soil, and objects, and can impact the stability and safety of structures and ecosystems. By recognizing the causes and effects of slope, individuals can make informed decisions and take necessary actions to mitigate potential risks and consequences.

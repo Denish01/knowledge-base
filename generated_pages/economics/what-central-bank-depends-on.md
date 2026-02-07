@@ -1,11 +1,11 @@
 ---
-title: "What is What Central Bank Depends On?"
+title: "What Central Bank Depends On"
 slug: what-central-bank-depends-on
 description: "A clear, simple explanation of what central bank depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Central Bank Depends On?
+# What Central Bank Depends On
 
 1. INTRODUCTION:
 A central bank is an institution that manages a country's monetary policy, regulates its financial system, and maintains financial stability. Understanding what a central bank depends on is crucial because it highlights the prerequisites necessary for it to function effectively. These dependencies are fundamental to the central bank's ability to achieve its objectives and ensure the stability of the economy.

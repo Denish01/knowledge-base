@@ -1,11 +1,11 @@
 ---
-title: "What is Coordinate Plane?"
+title: "What Is Coordinate Plane?"
 slug: coordinate-plane
 description: "A clear, simple explanation of coordinate plane - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Coordinate Plane?
+# What Is Coordinate Plane?
 
 Coordinate plane is a fundamental concept in mathematics that refers to a two-dimensional representation of points, lines, and shapes using a grid system with x and y axes.
 

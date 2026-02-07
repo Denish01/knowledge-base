@@ -1,11 +1,11 @@
 ---
-title: "What is Slope Vs?"
+title: "Slope vs"
 slug: slope-vs
 description: "A clear, simple explanation of slope vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Slope Vs?
+# Slope vs
 
 Slope refers to the measure of how steep a line or surface is, and it is a fundamental concept in mathematics, particularly in geometry and trigonometry.
 

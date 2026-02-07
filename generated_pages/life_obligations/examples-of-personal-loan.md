@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Personal Loan?"
+title: "Example of Personal Loan"
 slug: examples-of-personal-loan
 description: "A clear, simple explanation of examples of personal loan - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Personal Loan?
+# Example of Personal Loan
 
 1. INTRODUCTION:
 A personal loan is a type of loan that individuals can borrow from banks, credit unions, or other financial institutions to cover various expenses. It is typically an unsecured loan, meaning that it does not require collateral, and the borrower is expected to repay the loan with interest over a set period of time. Personal loans can be used for a wide range of purposes, from consolidating debt to financing large purchases.

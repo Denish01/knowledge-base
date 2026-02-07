@@ -1,11 +1,11 @@
 ---
-title: "What is Estate Planning?"
+title: "What Is Estate Planning?"
 slug: estate-planning
 description: "A clear, simple explanation of estate planning - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Estate Planning?
+# What Is Estate Planning?
 
 Estate planning is the process of arranging for the distribution and management of a person's assets after their death or incapacitation. 
 

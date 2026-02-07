@@ -1,11 +1,11 @@
 ---
-title: "What is Rehabilitative Support?"
+title: "What Is Rehabilitative Support?"
 slug: rehabilitative-support
 description: "A clear, simple explanation of rehabilitative support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Rehabilitative Support?
+# What Is Rehabilitative Support?
 
 Rehabilitative support is a type of assistance provided to individuals who have experienced illness, injury, or disability, with the goal of helping them recover and regain their physical, emotional, and social abilities.
 

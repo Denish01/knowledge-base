@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Inflation Work?"
+title: "How Inflation Works"
 slug: how-does-inflation-work
 description: "A clear, simple explanation of how does inflation work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Inflation Work?
+# How Inflation Works
 
 1. QUICK ANSWER: Inflation is a process where the general price level of goods and services in an economy increases over time, reducing the purchasing power of money. This occurs when the amount of money in circulation exceeds the amount of goods and services available, causing businesses to raise their prices.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Direct Deposit Work?"
+title: "How Direct Deposit Works"
 slug: how-does-direct-deposit-work
 description: "A clear, simple explanation of how does direct deposit work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Direct Deposit Work?
+# How Direct Deposit Works
 
 1. QUICK ANSWER: Direct deposit is a payment method that allows funds to be transferred electronically from a payer's account to a payee's account, eliminating the need for physical checks or cash. This process involves a network of financial institutions and automated systems to facilitate the transfer of funds.
 

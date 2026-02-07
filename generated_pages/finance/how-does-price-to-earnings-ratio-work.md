@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Price To Earnings Ratio Work?"
+title: "How Price To Earnings Ratio Works"
 slug: how-does-price-to-earnings-ratio-work
 description: "A clear, simple explanation of how does price to earnings ratio work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Price To Earnings Ratio Work?
+# How Price To Earnings Ratio Works
 
 1. QUICK ANSWER: 
 The price to earnings ratio, also known as the P/E ratio, is a calculation that helps investors understand how much they are paying for each dollar of a company's earnings. It works by dividing the current stock price by the company's earnings per share, providing a snapshot of the company's valuation.

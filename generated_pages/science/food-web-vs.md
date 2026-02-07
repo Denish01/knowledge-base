@@ -1,11 +1,11 @@
 ---
-title: "What is Food Web Vs?"
+title: "Food Web vs"
 slug: food-web-vs
 description: "A clear, simple explanation of food web vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Food Web Vs?
+# Food Web vs
 
 Food web vs food chain is a comparison between two related concepts in ecology that describe the flow of energy and nutrients through an ecosystem. 
 

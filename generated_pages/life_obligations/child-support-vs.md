@@ -1,11 +1,11 @@
 ---
-title: "What is Child Support Vs?"
+title: "Child Support vs"
 slug: child-support-vs
 description: "A clear, simple explanation of child support vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Child Support Vs?
+# Child Support vs
 
 Child support vs refers to the comparison and contrast of child support with other forms of financial assistance or arrangements that are made for the benefit of children when their parents are no longer together.
 

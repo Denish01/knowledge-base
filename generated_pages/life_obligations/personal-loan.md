@@ -1,11 +1,11 @@
 ---
-title: "What is Personal Loan?"
+title: "What Is Personal Loan?"
 slug: personal-loan
 description: "A clear, simple explanation of personal loan - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Personal Loan?
+# What Is Personal Loan?
 
 Personal loan is a type of credit that allows individuals to borrow money from a lender for personal use, with the promise to repay the amount, usually with interest.
 

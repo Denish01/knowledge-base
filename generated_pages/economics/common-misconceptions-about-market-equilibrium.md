@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Market Equilibrium?"
+title: "Common Misconceptions About Market Equilibrium"
 slug: common-misconceptions-about-market-equilibrium
 description: "A clear, simple explanation of common misconceptions about market equilibrium - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Market Equilibrium?
+# Common Misconceptions About Market Equilibrium
 
 1. INTRODUCTION: Why misconceptions about market equilibrium are common
 

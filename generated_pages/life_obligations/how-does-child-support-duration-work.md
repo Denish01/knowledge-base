@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Child Support Duration Work?"
+title: "How Child Support Duration Works"
 slug: how-does-child-support-duration-work
 description: "A clear, simple explanation of how does child support duration work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Child Support Duration Work?
+# How Child Support Duration Works
 
 1. QUICK ANSWER: Child support duration is determined by a court's assessment of the child's needs and the parents' financial situations, resulting in a payment schedule that typically lasts until the child reaches a certain age or becomes self-sufficient. The duration of child support is based on factors such as the child's age, the parents' income, and the state's child support laws.
 

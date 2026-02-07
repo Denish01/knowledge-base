@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Interest Rates?"
+title: "What Affects Interest Rates"
 slug: what-affects-interest-rates
 description: "A clear, simple explanation of what affects interest rates - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Interest Rates?
+# What Affects Interest Rates
 
 1. INTRODUCTION:
 Interest rates are the costs of borrowing money, expressed as a percentage of the amount borrowed. Understanding what affects interest rates is essential because it helps individuals and businesses make informed decisions about borrowing, investing, and managing debt. Changes in interest rates can have significant impacts on personal finances, economic growth, and overall financial stability. By recognizing the factors that influence interest rates, individuals can better navigate the financial landscape and make wise decisions.

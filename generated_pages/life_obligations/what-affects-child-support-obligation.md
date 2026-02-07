@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Child Support Obligation?"
+title: "What Affects Child Support Obligation"
 slug: what-affects-child-support-obligation
 description: "A clear, simple explanation of what affects child support obligation - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Child Support Obligation?
+# What Affects Child Support Obligation
 
 INTRODUCTION
 Child support obligation refers to the financial responsibility of one parent to provide for the well-being of their child after a divorce or separation. Understanding the factors that affect child support obligation is crucial for parents, as it helps them navigate the complex process of determining and fulfilling their financial duties. The amount of child support owed can significantly impact a family's financial situation, making it essential to recognize the influences that shape this obligation.

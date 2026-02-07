@@ -1,11 +1,11 @@
 ---
-title: "What is What Probate Depends On?"
+title: "What Probate Depends On"
 slug: what-probate-depends-on
 description: "A clear, simple explanation of what probate depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Probate Depends On?
+# What Probate Depends On
 
 1. INTRODUCTION:
 Probate is the legal process of managing and distributing a person's estate after their death. It involves verifying the validity of their will, paying off debts, and transferring assets to beneficiaries. Understanding what probate depends on is crucial for a smooth and efficient process. The dependencies of probate are the prerequisites, requirements, and foundations that must be in place for the process to proceed. These dependencies determine the legality, validity, and success of probate, making it essential to understand their roles and importance.

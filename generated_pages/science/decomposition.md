@@ -1,11 +1,11 @@
 ---
-title: "What is Decomposition?"
+title: "What Is Decomposition?"
 slug: decomposition
 description: "A clear, simple explanation of decomposition - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Decomposition?
+# What Is Decomposition?
 
 Decomposition is the process by which organic substances, such as plants and animals, break down into simpler components, releasing nutrients back into the environment. 
 

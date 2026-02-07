@@ -1,11 +1,11 @@
 ---
-title: "What is Roth Ira?"
+title: "What Is Roth Ira?"
 slug: roth-ira
 description: "A clear, simple explanation of roth ira - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Roth Ira?
+# What Is Roth Ira?
 
 Roth IRA is a type of individual retirement account that allows individuals to save for retirement with after-tax dollars, providing tax-free growth and withdrawals in retirement.
 

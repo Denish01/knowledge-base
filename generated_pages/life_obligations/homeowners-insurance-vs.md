@@ -1,11 +1,11 @@
 ---
-title: "What is Homeowners Insurance Vs?"
+title: "Homeowners Insurance vs"
 slug: homeowners-insurance-vs
 description: "A clear, simple explanation of homeowners insurance vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Homeowners Insurance Vs?
+# Homeowners Insurance vs
 
 Homeowners insurance vs refers to a comparison of different types of insurance policies that provide financial protection for homeowners against various risks and damages to their properties. 
 

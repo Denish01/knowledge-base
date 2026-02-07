@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Exchange Traded Fund?"
+title: "What Affects Exchange Traded Fund"
 slug: what-affects-exchange-traded-fund
 description: "A clear, simple explanation of what affects exchange traded fund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Exchange Traded Fund?
+# What Affects Exchange Traded Fund
 
 1. INTRODUCTION:
 An exchange traded fund (ETF) is a type of investment that combines the benefits of individual stocks and mutual funds. It is a fund that holds a basket of assets, such as stocks, bonds, or commodities, and is traded on a stock exchange like individual stocks. Understanding the factors that affect ETFs is crucial for investors, as it helps them make informed decisions and manage their investments effectively. The performance and value of an ETF can be influenced by various factors, and recognizing these influences is essential for achieving investment goals.

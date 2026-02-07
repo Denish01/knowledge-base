@@ -1,11 +1,11 @@
 ---
-title: "What is What Spousal Support Duration Depends On?"
+title: "What Spousal Support Duration Depends On"
 slug: what-spousal-support-duration-depends-on
 description: "A clear, simple explanation of what spousal support duration depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Spousal Support Duration Depends On?
+# What Spousal Support Duration Depends On
 
 1. INTRODUCTION:
 Spousal support duration refers to the length of time one spouse is required to provide financial support to the other after a divorce or separation. Understanding the factors that determine spousal support duration is crucial, as it directly affects the financial well-being of both parties involved. The duration of spousal support depends on various prerequisites and requirements, which must be met to ensure a fair and reasonable outcome.

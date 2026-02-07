@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Natural Selection?"
+title: "Example of Natural Selection"
 slug: examples-of-natural-selection
 description: "A clear, simple explanation of examples of natural selection - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Natural Selection?
+# Example of Natural Selection
 
 1. INTRODUCTION
 Natural selection is a fundamental concept in biology that describes the process by which populations of living organisms adapt and evolve over time. It occurs when individuals with certain traits or characteristics are better suited to their environment and therefore more likely to survive and reproduce, passing those traits on to their offspring. This leads to the accumulation of adaptations that enable the population to better fit its environment.

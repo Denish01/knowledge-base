@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Open Enrollment?"
+title: "Example of Open Enrollment"
 slug: examples-of-open-enrollment
 description: "A clear, simple explanation of examples of open enrollment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Open Enrollment?
+# Example of Open Enrollment
 
 1. INTRODUCTION
 Open enrollment refers to a period during which individuals can enroll in a particular program, service, or institution without the usual restrictions or requirements. This concept is applied in various contexts, including education, healthcare, and employment. Understanding open enrollment is essential to take advantage of opportunities that may not be available at other times.

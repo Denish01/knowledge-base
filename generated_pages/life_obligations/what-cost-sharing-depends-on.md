@@ -1,11 +1,11 @@
 ---
-title: "What is What Cost Sharing Depends On?"
+title: "What Cost Sharing Depends On"
 slug: what-cost-sharing-depends-on
 description: "A clear, simple explanation of what cost sharing depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Cost Sharing Depends On?
+# What Cost Sharing Depends On
 
 1. INTRODUCTION:
 Cost sharing refers to the process of dividing and allocating costs among individuals, groups, or organizations. Understanding what cost sharing depends on is crucial for effective implementation and to avoid potential pitfalls. The dependencies that underlie cost sharing are essential prerequisites, requirements, and foundations that must be in place for the process to work smoothly. Without a clear understanding of these dependencies, cost sharing arrangements can be misleading, inefficient, or even unfair.

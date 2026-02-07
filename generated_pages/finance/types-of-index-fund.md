@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Index Fund?"
+title: "Types of Index Fund"
 slug: types-of-index-fund
 description: "A clear, simple explanation of types of index fund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Index Fund?
+# Types of Index Fund
 
 ## INTRODUCTION
 Index funds are a type of investment vehicle that allows individuals to diversify their portfolios by tracking a specific market index, such as the S&P 500. The classification of index funds is important because it helps investors understand the different types of funds available and choose the ones that best align with their investment goals and risk tolerance. By categorizing index funds, investors can make more informed decisions and create a well-diversified portfolio. The classification of index funds covers various aspects, including the type of assets tracked, the geographic region, and the investment style. Understanding these categories is essential for investors to navigate the complex world of index funds and make informed investment decisions.

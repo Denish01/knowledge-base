@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Financial Burden?"
+title: "What Affects Financial Burden"
 slug: what-affects-financial-burden
 description: "A clear, simple explanation of what affects financial burden - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Financial Burden?
+# What Affects Financial Burden
 
 1. INTRODUCTION
 Financial burden refers to the weight of financial obligations, such as debt, expenses, and other monetary responsibilities, that an individual or household must bear. Understanding the factors that affect financial burden is crucial because it allows individuals to make informed decisions about their financial situation and take steps to manage or reduce their financial obligations. By recognizing the causes of financial burden, individuals can better navigate their financial lives and work towards achieving financial stability.

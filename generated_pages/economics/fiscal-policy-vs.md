@@ -1,11 +1,11 @@
 ---
-title: "What is Fiscal Policy Vs?"
+title: "Fiscal Policy vs"
 slug: fiscal-policy-vs
 description: "A clear, simple explanation of fiscal policy vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Fiscal Policy Vs?
+# Fiscal Policy vs
 
 Fiscal policy is a set of government actions that aim to manage the economy by adjusting government spending and taxation.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Central Bank?"
+title: "Example of Central Bank"
 slug: examples-of-central-bank
 description: "A clear, simple explanation of examples of central bank - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Central Bank?
+# Example of Central Bank
 
 1. INTRODUCTION
 A central bank is an institution that manages a country's or region's monetary policy. It is responsible for overseeing the money supply, setting interest rates, and maintaining the stability of the financial system. Central banks play a crucial role in the economy, and their actions can have far-reaching effects on individuals, businesses, and governments.

@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Long-Term Support?"
+title: "Types of Long Term Support"
 slug: types-of-long-term-support
 description: "A clear, simple explanation of types of long-term support - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Long-Term Support?
+# Types of Long Term Support
 
 1. INTRODUCTION:
 Types of long-term support refer to the various forms of assistance provided to individuals who require ongoing care due to disabilities, illnesses, or age-related conditions. Classification of long-term support is crucial as it enables caregivers, healthcare professionals, and policymakers to understand the different needs of individuals and provide tailored support. By categorizing long-term support, it becomes possible to develop effective strategies, allocate resources, and ensure that individuals receive the necessary care to maintain their quality of life. Understanding the various types of long-term support is essential for creating a comprehensive care system that addresses the diverse requirements of individuals with long-term needs.

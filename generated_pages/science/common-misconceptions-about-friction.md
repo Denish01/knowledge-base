@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Friction?"
+title: "Common Misconceptions About Friction"
 slug: common-misconceptions-about-friction
 description: "A clear, simple explanation of common misconceptions about friction - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Friction?
+# Common Misconceptions About Friction
 
 1. INTRODUCTION: 
 Friction is a fundamental concept in physics that plays a crucial role in our daily lives. However, misconceptions about friction are common due to the complexity of the subject and the way it is often explained. Many people have a limited understanding of friction, which can lead to incorrect assumptions and misunderstandings. This is partly because friction is an invisible force that cannot be seen, making it difficult for people to fully comprehend. Additionally, the way friction is discussed in everyday conversations can sometimes be misleading or oversimplified, contributing to the spread of misconceptions. By understanding the common misconceptions about friction, we can gain a clearer understanding of this important concept.

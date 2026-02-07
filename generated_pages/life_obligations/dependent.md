@@ -1,11 +1,11 @@
 ---
-title: "What is Dependent?"
+title: "What Is Dependent?"
 slug: dependent
 description: "A clear, simple explanation of dependent - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Dependent?
+# What Is Dependent?
 
 Dependent is a term that refers to a person or thing that relies on something or someone else for support, existence, or identity.
 

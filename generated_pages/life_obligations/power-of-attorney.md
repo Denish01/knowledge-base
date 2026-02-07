@@ -1,11 +1,11 @@
 ---
-title: "What is Power Of Attorney?"
+title: "What Is Power Of Attorney?"
 slug: power-of-attorney
 description: "A clear, simple explanation of power of attorney - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Power Of Attorney?
+# What Is Power Of Attorney?
 
 Power of attorney is a legal document that allows one person to act on behalf of another person in financial, medical, or other matters.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Household Size?"
+title: "Example of Household Size"
 slug: examples-of-household-size
 description: "A clear, simple explanation of examples of household size - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Household Size?
+# Example of Household Size
 
 1. INTRODUCTION:
 Household size refers to the number of people living together in a single dwelling unit. This can include families, roommates, or any other group of individuals who share a common living space. Understanding household size is important for various purposes, including census data collection, urban planning, and social services provision.

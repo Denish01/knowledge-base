@@ -1,11 +1,11 @@
 ---
-title: "What is Payment Obligation Vs?"
+title: "Payment Obligation vs"
 slug: payment-obligation-vs
 description: "A clear, simple explanation of payment obligation vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Payment Obligation Vs?
+# Payment Obligation vs
 
 Payment obligation refers to a responsibility or duty to pay a certain amount of money to another party, usually as a result of a contractual agreement or a financial transaction.
 

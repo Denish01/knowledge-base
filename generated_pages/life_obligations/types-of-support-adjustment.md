@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Support Adjustment?"
+title: "Types of Support Adjustment"
 slug: types-of-support-adjustment
 description: "A clear, simple explanation of types of support adjustment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Support Adjustment?
+# Types of Support Adjustment
 
 ## INTRODUCTION
 Types of support adjustment refer to the various methods and techniques used to modify or adjust support systems, such as foundations, beams, and columns, to ensure stability and safety in structures. Classification of support adjustments is crucial as it helps engineers, architects, and builders to identify the most suitable method for a specific project, taking into account factors such as load-bearing capacity, material properties, and environmental conditions. By understanding the different types of support adjustments, professionals can make informed decisions to ensure the integrity and durability of buildings, bridges, and other structures.

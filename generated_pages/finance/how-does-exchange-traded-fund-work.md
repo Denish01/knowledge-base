@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Exchange Traded Fund Work?"
+title: "How Exchange Traded Fund Works"
 slug: how-does-exchange-traded-fund-work
 description: "A clear, simple explanation of how does exchange traded fund work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Exchange Traded Fund Work?
+# How Exchange Traded Fund Works
 
 1. QUICK ANSWER: An exchange-traded fund (ETF) works by allowing investors to buy and sell a basket of securities, such as stocks or bonds, through a single trade on an exchange, similar to buying individual stocks. This mechanism enables investors to gain exposure to a diversified portfolio of assets while benefiting from the convenience and flexibility of trading on an exchange.
 

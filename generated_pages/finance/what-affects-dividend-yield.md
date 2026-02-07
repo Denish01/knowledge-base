@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Dividend Yield?"
+title: "What Affects Dividend Yield"
 slug: what-affects-dividend-yield
 description: "A clear, simple explanation of what affects dividend yield - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Dividend Yield?
+# What Affects Dividend Yield
 
 INTRODUCTION
 Dividend yield is a measure of the return on investment for a stock, calculated by dividing the annual dividend payment by the stock's current price. Understanding the factors that affect dividend yield is crucial for investors, as it helps them make informed decisions about their investments. Changes in dividend yield can significantly impact the attractiveness of a stock, and being aware of the influences on dividend yield can help investors navigate the stock market more effectively. By recognizing the causes of fluctuations in dividend yield, investors can better manage their portfolios and achieve their investment goals.

@@ -1,11 +1,11 @@
 ---
-title: "What is What Bond Yield Depends On?"
+title: "What Bond Yield Depends On"
 slug: what-bond-yield-depends-on
 description: "A clear, simple explanation of what bond yield depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Bond Yield Depends On?
+# What Bond Yield Depends On
 
 1. INTRODUCTION
 Bond yield is the return an investor can expect to earn from a bond, calculated as the ratio of the annual interest payment to the bond's current market price. Understanding what bond yield depends on is essential for investors to make informed decisions and for issuers to set competitive interest rates. The dependencies that affect bond yield are critical because they determine the overall value and attractiveness of a bond. Without a clear understanding of these dependencies, investors may misjudge the potential return on their investment, and issuers may struggle to attract buyers.

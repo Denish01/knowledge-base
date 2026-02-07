@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Amortization Schedule?"
+title: "What Affects Amortization Schedule"
 slug: what-affects-amortization-schedule
 description: "A clear, simple explanation of what affects amortization schedule - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Amortization Schedule?
+# What Affects Amortization Schedule
 
 INTRODUCTION
 An amortization schedule is a table that outlines the periodic payments on a loan, showing the amount of interest and principal paid with each payment. Understanding the factors that affect an amortization schedule is crucial for borrowers, as it helps them make informed decisions about their loan and manage their debt effectively. By recognizing the influences on an amortization schedule, individuals can better plan their finances and avoid potential pitfalls. In this explanation, we will explore the key factors that impact an amortization schedule and their cause-and-effect relationships.

@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Gross Income For Support Work?"
+title: "How Gross Income For Support Works"
 slug: how-does-gross-income-for-support-work
 description: "A clear, simple explanation of how does gross income for support work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Gross Income For Support Work?
+# How Gross Income For Support Works
 
 1. QUICK ANSWER: Gross income for support is a calculation used to determine the amount of financial support one party must pay to another, typically in cases of divorce or separation, and it is based on the income of the parties involved before taxes and other deductions. The calculation takes into account the total income earned by each party to fairly distribute financial responsibilities.
 

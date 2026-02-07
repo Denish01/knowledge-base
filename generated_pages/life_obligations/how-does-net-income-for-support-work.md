@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Net Income For Support Work?"
+title: "How Net Income For Support Works"
 slug: how-does-net-income-for-support-work
 description: "A clear, simple explanation of how does net income for support work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Net Income For Support Work?
+# How Net Income For Support Works
 
 1. QUICK ANSWER: Net income for support is calculated by taking an individual's total income and subtracting their necessary expenses, resulting in the amount available for supporting dependents. This calculation is crucial in determining the amount of financial support that can be provided to others.
 

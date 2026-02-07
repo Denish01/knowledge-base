@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Gravity?"
+title: "Example of Gravity"
 slug: examples-of-gravity
 description: "A clear, simple explanation of examples of gravity - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Gravity?
+# Example of Gravity
 
 1. INTRODUCTION
 Gravity is a fundamental force of nature that attracts two objects with mass towards each other. It is what keeps us on the ground and what makes things fall. The strength of gravity depends on the mass of the objects and the distance between them. Understanding gravity is crucial for understanding how the universe works, from the smallest objects to the entire cosmos.

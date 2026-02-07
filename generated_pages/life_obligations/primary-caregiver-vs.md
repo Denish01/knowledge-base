@@ -1,11 +1,11 @@
 ---
-title: "What is Primary Caregiver Vs?"
+title: "Primary Caregiver vs"
 slug: primary-caregiver-vs
 description: "A clear, simple explanation of primary caregiver vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Primary Caregiver Vs?
+# Primary Caregiver vs
 
 Primary caregiver refers to the person who takes on the main responsibility of caring for a child, elderly person, or individual with a disability, providing them with daily support and necessities.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Price Elasticity Vs?"
+title: "Price Elasticity vs"
 slug: price-elasticity-vs
 description: "A clear, simple explanation of price elasticity vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Price Elasticity Vs?
+# Price Elasticity vs
 
 Price elasticity vs refers to the comparison of how responsive the quantity demanded of a good or service is to changes in its price, and how this responsiveness compares to other factors that can affect demand, such as changes in income or the prices of related goods.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is What Pythagorean Theorem Depends On?"
+title: "What Pythagorean Theorem Depends On"
 slug: what-pythagorean-theorem-depends-on
 description: "A clear, simple explanation of what pythagorean theorem depends on - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Pythagorean Theorem Depends On?
+# What Pythagorean Theorem Depends On
 
 1. INTRODUCTION:
 The Pythagorean theorem is a fundamental concept in geometry that describes the relationship between the lengths of the sides of a right-angled triangle. It states that the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides. Understanding what the Pythagorean theorem depends on is crucial for its application and derivation. The dependencies of the Pythagorean theorem highlight the prerequisites and requirements necessary for its validity and usefulness. Without these dependencies, the theorem cannot be applied accurately, and its results may be misleading.

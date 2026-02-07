@@ -1,11 +1,11 @@
 ---
-title: "What is Common Misconceptions About Index Fund?"
+title: "Common Misconceptions About Index Fund"
 slug: common-misconceptions-about-index-fund
 description: "A clear, simple explanation of common misconceptions about index fund - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Common Misconceptions About Index Fund?
+# Common Misconceptions About Index Fund
 
 1. INTRODUCTION:
 Index funds are a popular investment option, but they are often misunderstood. This is partly because the concept of index funds can be complex, and the large amount of information available can be overwhelming. As a result, misconceptions about index funds are common, and it's essential to separate fact from fiction to make informed investment decisions. In this article, we will explore common misconceptions about index funds and provide accurate information to help investors understand the truth.

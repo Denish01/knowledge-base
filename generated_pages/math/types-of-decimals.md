@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Decimals?"
+title: "Types of Decimals"
 slug: types-of-decimals
 description: "A clear, simple explanation of types of decimals - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Decimals?
+# Types of Decimals
 
 ## INTRODUCTION
 The classification of decimals is a fundamental concept in mathematics, as it enables students to understand and work with different types of decimal numbers. Decimals are a way of representing fractions in a more readable and manageable form, and they are used extensively in various mathematical operations, such as addition, subtraction, multiplication, and division. The classification of decimals is essential because it helps students to identify and distinguish between different types of decimal numbers, which is crucial for performing mathematical operations accurately. By understanding the different types of decimals, students can develop a deeper understanding of mathematical concepts and apply them to solve real-world problems.

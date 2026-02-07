@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Property Tax Work?"
+title: "How Property Tax Works"
 slug: how-does-property-tax-work
 description: "A clear, simple explanation of how does property tax work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Property Tax Work?
+# How Property Tax Works
 
 1. QUICK ANSWER: Property tax works by having local governments assess the value of properties within their jurisdiction and then calculate a tax amount based on that value. This tax is typically paid by the property owner and is used to fund local services and infrastructure.
 

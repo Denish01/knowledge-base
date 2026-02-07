@@ -1,11 +1,11 @@
 ---
-title: "What is Probate Vs?"
+title: "Probate vs"
 slug: probate-vs
 description: "A clear, simple explanation of probate vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Probate Vs?
+# Probate vs
 
 Probate vs non-probate assets refers to the distinction between properties and assets that are subject to the probate process and those that are not. 
 

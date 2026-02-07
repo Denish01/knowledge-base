@@ -1,11 +1,11 @@
 ---
-title: "What is How Does Child Support Work?"
+title: "How Child Support Works"
 slug: how-does-child-support-work
 description: "A clear, simple explanation of how does child support work - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is How Does Child Support Work?
+# How Child Support Works
 
 1. QUICK ANSWER: Child support is a legal mechanism that ensures one parent provides financial assistance to the other parent for the care and well-being of their child. This process involves a series of steps and calculations to determine the amount of support to be paid.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Home Maintenance?"
+title: "What Is Home Maintenance?"
 slug: home-maintenance
 description: "A clear, simple explanation of home maintenance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Home Maintenance?
+# What Is Home Maintenance?
 
 Home maintenance is the process of taking care of and preserving the condition of a residential building to ensure it remains safe, functional, and comfortable for its occupants.
 

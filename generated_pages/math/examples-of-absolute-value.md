@@ -1,11 +1,11 @@
 ---
-title: "What is Examples Of Absolute Value?"
+title: "Example of Absolute Value"
 slug: examples-of-absolute-value
 description: "A clear, simple explanation of examples of absolute value - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Examples Of Absolute Value?
+# Example of Absolute Value
 
 1. INTRODUCTION
 Absolute value refers to the distance of a number from zero on the number line, without considering whether it is positive or negative. It is a fundamental concept in mathematics, essential for understanding various mathematical operations and real-world applications. The absolute value of a number is denoted by two vertical lines, for example, |x|, and it is always non-negative.

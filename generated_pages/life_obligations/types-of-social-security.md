@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Social Security?"
+title: "Types of Social Security"
 slug: types-of-social-security
 description: "A clear, simple explanation of types of social security - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Social Security?
+# Types of Social Security
 
 1. INTRODUCTION:
 Social security is a vital component of a country's welfare system, providing financial protection to its citizens in times of need. The classification of social security into different types is essential as it helps individuals understand the various benefits and programs available to them. A comprehensive understanding of these categories enables citizens to navigate the system effectively and access the support they require. The classification of social security covers various aspects, including the type of benefit, the eligibility criteria, and the level of support provided. By recognizing the different types of social security, individuals can better appreciate the complexity and scope of the system, ultimately leading to more informed decision-making and improved overall well-being.

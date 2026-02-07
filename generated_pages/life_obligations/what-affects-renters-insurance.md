@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Renters Insurance?"
+title: "What Affects Renters Insurance"
 slug: what-affects-renters-insurance
 description: "A clear, simple explanation of what affects renters insurance - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Renters Insurance?
+# What Affects Renters Insurance
 
 1. INTRODUCTION:
 Renters insurance is a type of insurance that protects individuals who rent their homes from financial losses due to damage or theft of their personal belongings. Understanding the factors that affect renters insurance is crucial for renters to make informed decisions about their coverage and premiums. The cost and coverage of renters insurance can vary significantly depending on several factors, making it essential to comprehend these influences to ensure adequate protection and affordable rates.

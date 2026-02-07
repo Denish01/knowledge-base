@@ -1,11 +1,11 @@
 ---
-title: "What is Custodial Parent?"
+title: "What Is Custodial Parent?"
 slug: custodial-parent
 description: "A clear, simple explanation of custodial parent - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Custodial Parent?
+# What Is Custodial Parent?
 
 Custodial parent is a term used to describe the parent who has primary physical and emotional care of a child after a divorce or separation.
 

@@ -1,11 +1,11 @@
 ---
-title: "What is Child Support Duration Vs?"
+title: "Child Support Duration vs"
 slug: child-support-duration-vs
 description: "A clear, simple explanation of child support duration vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Child Support Duration Vs?
+# Child Support Duration vs
 
 Child support duration refers to the length of time during which one parent is legally required to provide financial support to their child or children after a divorce or separation.
 

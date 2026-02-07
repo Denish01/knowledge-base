@@ -1,11 +1,11 @@
 ---
-title: "What is Power Of Attorney Vs?"
+title: "Power Of Attorney vs"
 slug: power-of-attorney-vs
 description: "A clear, simple explanation of power of attorney vs - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Power Of Attorney Vs?
+# Power Of Attorney vs
 
 Power of attorney is a legal document that gives someone the authority to act on another person's behalf in financial, medical, or other matters.
 

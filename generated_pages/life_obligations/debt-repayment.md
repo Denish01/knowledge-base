@@ -1,11 +1,11 @@
 ---
-title: "What is Debt Repayment?"
+title: "What Is Debt Repayment?"
 slug: debt-repayment
 description: "A clear, simple explanation of debt repayment - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Debt Repayment?
+# What Is Debt Repayment?
 
 Debt repayment is the process of paying back money that was borrowed from a lender, typically with interest added to the original amount.
 

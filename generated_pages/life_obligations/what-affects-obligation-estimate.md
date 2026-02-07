@@ -1,11 +1,11 @@
 ---
-title: "What is What Affects Obligation Estimate?"
+title: "What Affects Obligation Estimate"
 slug: what-affects-obligation-estimate
 description: "A clear, simple explanation of what affects obligation estimate - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is What Affects Obligation Estimate?
+# What Affects Obligation Estimate
 
 1. INTRODUCTION
 

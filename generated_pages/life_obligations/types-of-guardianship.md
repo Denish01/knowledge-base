@@ -1,11 +1,11 @@
 ---
-title: "What is Types Of Guardianship?"
+title: "Types of Guardianship"
 slug: types-of-guardianship
 description: "A clear, simple explanation of types of guardianship - definition, key concepts, examples, and common misconceptions."
 date: 2026-02-06
 ---
 
-# What is Types Of Guardianship?
+# Types of Guardianship
 
 ## INTRODUCTION
 Types of guardianship refer to the various forms of guardianship arrangements that can be established to care for the well-being and interests of individuals, often minors or adults with disabilities, who are unable to care for themselves. Classification of guardianship types matters because it helps to understand the different roles, responsibilities, and powers associated with each type, ensuring that the best interests of the individual are protected. By categorizing guardianship types, individuals can make informed decisions about the care and well-being of their loved ones, and courts can determine the most suitable arrangement for each unique situation.
