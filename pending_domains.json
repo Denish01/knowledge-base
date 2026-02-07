@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "description": "Domain queue for self-expanding knowledge system",
-  "last_updated": "2026-02-06",
+  "last_updated": "2026-02-07",
   "queue": [
     {
       "domain": "economics",
@@ -21,7 +21,7 @@
       "tier": 2,
       "concepts_estimated": 40,
       "discovered_date": "2026-02-06",
-      "status": "pending",
+      "status": "processing",
       "notes": "High search volume potential"
     },
     {
@@ -83,9 +83,59 @@
       "discovered_date": "2026-02-06",
       "status": "pending",
       "notes": "Health adjacent"
+    },
+    {
+      "domain": "cartography",
+      "priority": 55,
+      "source": "auto-discovered",
+      "tier": 4,
+      "concepts_estimated": 35,
+      "discovered_date": "2026-02-07",
+      "status": "pending",
+      "notes": "Study of map-making and geographical representation"
+    },
+    {
+      "domain": "ethnomusicology",
+      "priority": 50,
+      "source": "auto-discovered",
+      "tier": 4,
+      "concepts_estimated": 30,
+      "discovered_date": "2026-02-07",
+      "status": "pending",
+      "notes": "Study of music in different cultures"
+    },
+    {
+      "domain": "herpetology",
+      "priority": 45,
+      "source": "auto-discovered",
+      "tier": 4,
+      "concepts_estimated": 25,
+      "discovered_date": "2026-02-07",
+      "status": "pending",
+      "notes": "Study of reptiles and amphibians"
+    },
+    {
+      "domain": "numismatics",
+      "priority": 50,
+      "source": "auto-discovered",
+      "tier": 4,
+      "concepts_estimated": 30,
+      "discovered_date": "2026-02-07",
+      "status": "pending",
+      "notes": "Study of coins and currency"
+    },
+    {
+      "domain": "ornithology",
+      "priority": 55,
+      "source": "auto-discovered",
+      "tier": 4,
+      "concepts_estimated": 35,
+      "discovered_date": "2026-02-07",
+      "status": "pending",
+      "notes": "Study of birds and their behavior"
     }
   ],
-  "processing": null,
+  "processing": "health",
   "completed": [
     "finance",
     "life_obligations",

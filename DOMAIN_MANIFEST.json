@@ -75,11 +75,11 @@
       "closure_date": "2026-02-07"
     },
     "health": {
-      "status": "QUEUED",
+      "status": "IN_PROGRESS",
       "priority": 88,
-      "concepts": 40,
+      "concepts": 0,
       "pages": 0,
-      "canonical_file": null,
+      "canonical_file": "canonical_concepts_health.json",
       "notes": "High search volume potential - Tier 2"
     },
     "psychology": {
@@ -102,7 +102,7 @@
   "totals": {
     "domains_closed": 5,
     "domains_queued": 3,
-    "total_concepts": 305,
+    "total_concepts": 265,
     "total_pages": 1615
   },
   "angle_registry": {

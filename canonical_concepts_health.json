@@ -1,0 +1,181 @@
+{
+  "domain": "health",
+  "generated_date": "2026-02-07",
+  "total_concepts": 41,
+  "subcategories": {
+    "body_systems": [
+      {
+        "concept": "circulatory-system",
+        "title": "Circulatory System"
+      },
+      {
+        "concept": "nervous-system",
+        "title": "Nervous System"
+      },
+      {
+        "concept": "respiratory-system",
+        "title": "Respiratory System"
+      },
+      {
+        "concept": "digestive-system",
+        "title": "Digestive System"
+      },
+      {
+        "concept": "endocrine-system",
+        "title": "Endocrine System"
+      }
+    ],
+    "conditions": [
+      {
+        "concept": "hypertension",
+        "title": "Hypertension"
+      },
+      {
+        "concept": "diabetes",
+        "title": "Diabetes"
+      },
+      {
+        "concept": "arthritis",
+        "title": "Arthritis"
+      },
+      {
+        "concept": "infectious-diseases",
+        "title": "Infectious Diseases"
+      },
+      {
+        "concept": "chronic-pain",
+        "title": "Chronic Pain"
+      },
+      {
+        "concept": "mental-illness",
+        "title": "Mental Illness"
+      },
+      {
+        "concept": "substance-abuse",
+        "title": "Substance Abuse"
+      }
+    ],
+    "prevention": [
+      {
+        "concept": "vaccination",
+        "title": "Vaccination"
+      },
+      {
+        "concept": "quarantine",
+        "title": "Quarantine"
+      },
+      {
+        "concept": "sanitation",
+        "title": "Sanitation"
+      },
+      {
+        "concept": "hygiene",
+        "title": "Hygiene"
+      },
+      {
+        "concept": "disease-prevention",
+        "title": "Disease Prevention"
+      }
+    ],
+    "wellness": [
+      {
+        "concept": "nutrition",
+        "title": "Nutrition"
+      },
+      {
+        "concept": "exercise",
+        "title": "Exercise"
+      },
+      {
+        "concept": "stress-management",
+        "title": "Stress Management"
+      },
+      {
+        "concept": "sleep-hygiene",
+        "title": "Sleep Hygiene"
+      },
+      {
+        "concept": "mental-health",
+        "title": "Mental Health"
+      },
+      {
+        "concept": "health-education",
+        "title": "Health Education"
+      },
+      {
+        "concept": "health-promotion",
+        "title": "Health Promotion"
+      }
+    ],
+    "medical_terms": [
+      {
+        "concept": "cardiology",
+        "title": "Cardiology"
+      },
+      {
+        "concept": "oncology",
+        "title": "Oncology"
+      },
+      {
+        "concept": "neurology",
+        "title": "Neurology"
+      },
+      {
+        "concept": "gastroenterology",
+        "title": "Gastroenterology"
+      },
+      {
+        "concept": "immunology",
+        "title": "Immunology"
+      },
+      {
+        "concept": "epidemiology",
+        "title": "Epidemiology"
+      },
+      {
+        "concept": "pathology",
+        "title": "Pathology"
+      },
+      {
+        "concept": "pharmacology",
+        "title": "Pharmacology"
+      },
+      {
+        "concept": "toxicology",
+        "title": "Toxicology"
+      },
+      {
+        "concept": "orthopedics",
+        "title": "Orthopedics"
+      },
+      {
+        "concept": "dermatology",
+        "title": "Dermatology"
+      },
+      {
+        "concept": "otolaryngology",
+        "title": "Otolaryngology"
+      },
+      {
+        "concept": "urology",
+        "title": "Urology"
+      },
+      {
+        "concept": "obstetrics",
+        "title": "Obstetrics"
+      },
+      {
+        "concept": "gynecology",
+        "title": "Gynecology"
+      },
+      {
+        "concept": "pediatrics",
+        "title": "Pediatrics"
+      },
+      {
+        "concept": "gerontology",
+        "title": "Gerontology"
+      }
+    ]
+  }
+}
