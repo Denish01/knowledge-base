@@ -35,6 +35,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Pull latest changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Knowledge Factory Bot"
+          git pull origin main --rebase
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -137,11 +145,6 @@ jobs:
         if: steps.pick.outputs.domain != ''
         run: |
           DOMAIN=${{ steps.pick.outputs.domain }}
-          git config --local user.email "action@github.com"
-          git config --local user.name "Knowledge Factory Bot"
-
-          # Pull latest changes first to avoid conflicts
-          git pull --rebase || true
 
           git add .
 
@@ -153,8 +156,12 @@ jobs:
 
           git diff --staged --quiet || git commit -m "$MSG"
 
-          # Retry push with pull if needed
-          git push || (git pull --rebase && git push)
+          # Push with retry logic
+          for i in 1 2 3; do
+            git push && break
+            echo "Push failed, pulling and retrying..."
+            git pull --rebase
+          done
 
   deploy:
     needs: expand
