@@ -17,10 +17,19 @@ def get_all_pages():
     """Crawl all structured folders and collect page URLs."""
     pages = []
 
-    # Find all *_structured directories
-    for structured_dir in OUTPUT_DIR.glob("*_structured"):
-        # Keep full folder name for URL (includes _structured)
-        domain_folder = structured_dir.name
+    # Find all domain directories (concept-folder structure)
+    # Skip deprecated folders and special files
+    skip_folders = {"index.html", "robots.txt", "CNAME"}
+    for domain_dir in OUTPUT_DIR.iterdir():
+        if not domain_dir.is_dir():
+            continue
+        if domain_dir.name.endswith("_deprecated"):
+            continue
+        if domain_dir.name in skip_folders:
+            continue
+
+        domain_folder = domain_dir.name
+        structured_dir = domain_dir
 
         # Each concept folder
         for concept_dir in structured_dir.iterdir():
@@ -110,8 +119,8 @@ def generate_index_page(pages_by_domain):
 """
 
     for domain_folder, concepts in pages_by_domain.items():
-        # Display name without _structured suffix
-        domain_title = domain_folder.replace("_structured", "").replace("_", " ").title()
+        # Display name (clean up underscores)
+        domain_title = domain_folder.replace("_", " ").title()
         html += f"\n    <h2>{domain_title}</h2>\n"
         html += f"    <p class='domain-stats'>{len(concepts)} concepts</p>\n"
         html += "    <div class='concept-grid'>\n"
