@@ -1,0 +1,30 @@
+---
+title: "What is Examples Of Gravity?"
+slug: examples-of-gravity
+description: "A clear, simple explanation of examples of gravity - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-06
+---
+
+# What is Examples Of Gravity?
+
+1. INTRODUCTION
+Gravity is a fundamental force of nature that attracts two objects with mass towards each other. It is what keeps us on the ground and what makes things fall. The strength of gravity depends on the mass of the objects and the distance between them. Understanding gravity is crucial for understanding how the universe works, from the smallest objects to the entire cosmos.
+
+2. EVERYDAY EXAMPLES
+Gravity is at work in many aspects of our daily lives. For instance, when you drop a pencil, gravity pulls it towards the ground, making it fall. Similarly, when you are standing on a slope, gravity is pulling you down the slope, which is why you might feel like you are being pulled downwards. The water in a sink also flows downwards due to gravity, which is why it swirls down the drain. Furthermore, when you are on a roller coaster, gravity is what keeps you in your seat as the coaster moves along its track, especially during sharp turns and steep drops.
+
+3. NOTABLE EXAMPLES
+Some well-known examples of gravity include the orbit of the Moon around the Earth. The Moon's mass is attracted to the Earth's mass, which keeps it in orbit. Another example is the way planets orbit around stars. For example, the planet Jupiter orbits around the Sun due to the gravitational force between the two. The tides in the ocean are also a notable example of gravity, where the Moon's gravity pulls on the water in the ocean, causing it to bulge out in two areas: one on the side of the Earth facing the Moon and the other on the opposite side.
+
+4. EDGE CASES
+Gravity can also be observed in extreme environments, such as on the surface of other planets. For example, on Mars, the gravity is only about one-third of the gravity on Earth, which is why astronauts would weigh less if they were to visit the planet. Another edge case is the gravity inside a black hole, where the gravitational force is so strong that not even light can escape once it gets too close.
+
+5. NON-EXAMPLES
+Some things that people often confuse for gravity but are not include magnetism and buoyancy. Magnetism is a force that attracts certain metals, but it is not the same as gravity. Buoyancy, on the other hand, is the upward force exerted by a fluid on an object that is partially or fully submerged in it. While buoyancy can counteract gravity, it is a separate force. Additionally, air resistance is often mistaken for a lack of gravity, but it is actually a force that opposes the motion of an object through the air.
+
+6. PATTERN
+All valid examples of gravity have one thing in common: they involve the attraction between two objects with mass. Whether it is a pencil falling towards the ground, the Moon orbiting the Earth, or a planet orbiting a star, gravity is always at work, pulling objects towards each other. The strength of the gravitational force may vary depending on the mass of the objects and the distance between them, but the fundamental principle remains the same. By recognizing this pattern, we can better understand how gravity shapes our world and the universe around us.
+
+---
+
+*This is an evergreen reference page. Content is factual and timeless.*

@@ -1,0 +1,36 @@
+---
+title: "What is Meiosis?"
+slug: meiosis
+description: "A clear, simple explanation of meiosis - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-06
+---
+
+# What is Meiosis?
+
+Meiosis is a type of cell division that occurs in reproductive cells, resulting in the production of gametes, or sex cells, with half the number of chromosomes as the parent cell.
+
+Meiosis is essential for sexual reproduction, as it allows for the mixing of genetic material from two parents to create a unique offspring. This process involves the replication of DNA, followed by two successive cell divisions, known as meiosis I and meiosis II. During meiosis I, homologous chromosomes, or pairs of chromosomes with the same genes, separate from each other. This separation is critical, as it allows for the shuffling of genetic material and increases genetic diversity. Meiosis II is similar to a normal cell division, where sister chromatids, or identical copies of DNA, separate from each other.
+
+The outcome of meiosis is the production of four non-identical daughter cells, each with half the number of chromosomes as the parent cell. This reduction in chromosome number is crucial, as it ensures that when fertilization occurs, the resulting zygote has the correct number of chromosomes. If meiosis did not occur, the number of chromosomes in the offspring would double with each generation, leading to abnormalities and potentially harmful consequences. Meiosis also allows for genetic variation, as the shuffling of genetic material during this process creates new combinations of genes.
+
+Meiosis involves the interaction of multiple cellular components, and understanding these components is essential to grasping the process as a whole. Some key components of meiosis include:
+* Homologous chromosomes: pairs of chromosomes with the same genes that separate from each other during meiosis I
+* Sister chromatids: identical copies of DNA that separate from each other during meiosis II
+* Crossing over: the exchange of genetic material between homologous chromosomes, increasing genetic diversity
+* Independent assortment: the random distribution of chromosomes during meiosis, resulting in unique combinations of genes
+* Prophase: the stage of meiosis where chromosomes condense and become visible
+* Metaphase: the stage of meiosis where chromosomes line up at the center of the cell, preparing for separation
+
+Despite its importance, meiosis is often misunderstood. Some common misconceptions about meiosis include:
+* That meiosis is the same as mitosis, or regular cell division: meiosis involves two successive cell divisions and results in cells with half the number of chromosomes
+* That meiosis only occurs in animals: meiosis occurs in all organisms that reproduce sexually, including plants and fungi
+* That meiosis is a random process: while meiosis does involve random events, such as crossing over and independent assortment, it is a highly regulated and controlled process
+* That meiosis only produces two daughter cells: meiosis produces four non-identical daughter cells, each with half the number of chromosomes as the parent cell
+
+A real-world example of meiosis can be seen in the production of human gametes. In humans, meiosis occurs in the reproductive cells, or gametes, resulting in the production of sperm and egg cells. Each sperm or egg cell has 23 chromosomes, half the number of chromosomes as a normal human cell. When fertilization occurs, the sperm and egg cells combine, resulting in a zygote with 46 chromosomes, the correct number for a human cell.
+
+In summary, meiosis is a specialized type of cell division that occurs in reproductive cells, resulting in the production of gametes with half the number of chromosomes as the parent cell, and is essential for sexual reproduction and genetic diversity.
+
+---
+
+*This is an evergreen reference page. Content is factual and timeless.*
