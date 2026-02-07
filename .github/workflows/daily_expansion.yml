@@ -139,6 +139,10 @@ jobs:
           DOMAIN=${{ steps.pick.outputs.domain }}
           git config --local user.email "action@github.com"
           git config --local user.name "Knowledge Factory Bot"
+
+          # Pull latest changes first to avoid conflicts
+          git pull --rebase || true
+
           git add .
 
           if [ "${{ steps.check.outputs.closed }}" == "true" ]; then
@@ -148,7 +152,9 @@ jobs:
           fi
 
           git diff --staged --quiet || git commit -m "$MSG"
-          git push
+
+          # Retry push with pull if needed
+          git push || (git pull --rebase && git push)
 
   deploy:
     needs: expand
