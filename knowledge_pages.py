@@ -1090,6 +1090,24 @@ EXPANSION_TO_PATTERN = {
     "vs": "{topic} vs",
 }
 
+# Canonical title patterns per angle (for H1 and page title)
+ANGLE_TO_TITLE = {
+    "what-is": "What Is {Topic}?",
+    "how-it-works": "How {Topic} Works",
+    "what-it-depends-on": "What {Topic} Depends On",
+    "what-affects-it": "What Affects {Topic}",
+    "types-of": "Types of {Topic}",
+    "example-of": "Example of {Topic}",
+    "common-misconceptions-about": "Common Misconceptions About {Topic}",
+    "vs": "{Topic} vs",
+}
+
+
+def get_angle_title(concept, angle_id):
+    """Get the canonical title for a concept+angle pair."""
+    pattern = ANGLE_TO_TITLE.get(angle_id, "What Is {Topic}?")
+    return pattern.replace("{Topic}", concept.replace("-", " ").title())
+
 # Which angles are optional (not all concepts have these)
 OPTIONAL_ANGLES = {"parts", "stages", "types"}
 
@@ -2143,18 +2161,22 @@ def slugify(text):
     return slug
 
 
-def format_as_markdown(topic, content):
+def format_as_markdown(topic, content, page_title=None):
     """Format content as Markdown."""
     slug = slugify(topic)
 
+    # Use provided title or fall back to topic-based title
+    if page_title is None:
+        page_title = f"What is {topic.title()}?"
+
     md = f"""---
-title: "What is {topic.title()}?"
+title: "{page_title}"
 slug: {slug}
 description: "A clear, simple explanation of {topic} - definition, key concepts, examples, and common misconceptions."
 date: {datetime.now().strftime("%Y-%m-%d")}
 ---
 
-# What is {topic.title()}?
+# {page_title}
 
 {content}
 
@@ -2301,10 +2323,12 @@ def markdown_to_html(content):
     return '\n'.join(html_lines)
 
 
-def format_as_html(topic, content):
+def format_as_html(topic, content, page_title=None):
     """Format content as standalone HTML with embedded calculator if applicable."""
     slug = slugify(topic)
-    page_title = get_page_title(topic)
+    # Use provided title or fall back to auto-detected title
+    if page_title is None:
+        page_title = get_page_title(topic)
     page_type = detect_page_type(topic)
 
     # Convert markdown content to HTML
@@ -2378,14 +2402,20 @@ def format_as_html(topic, content):
     return html
 
 
-def format_as_json(topic, content, category="general"):
+def format_as_json(topic, content, category="general", angle_id="what-is", base_concept=None):
     """Format as structured JSON for API/licensing."""
     slug = slugify(topic)
+    concept = base_concept or topic
+
+    # Use angle-aware title
+    title = get_angle_title(concept, angle_id)
 
     data = {
         "slug": slug,
         "topic": topic,
-        "title": f"What is {topic.title()}?",
+        "base_concept": concept,
+        "angle": angle_id,
+        "title": title,
         "category": category,
         "content": content,
         "meta_description": f"A clear, simple explanation of {topic} - definition, key concepts, examples, and common misconceptions.",
@@ -2400,20 +2430,26 @@ def format_as_json(topic, content, category="general"):
 # MAIN GENERATION FUNCTION
 # =============================================================================
 
-def generate_knowledge_page(topic, category="general", output_formats=None):
+def generate_knowledge_page(topic, category="general", output_formats=None, angle_id="what-is", base_concept=None):
     """
     Generate a complete knowledge page for a topic.
 
     Args:
-        topic: The topic to explain
+        topic: The topic to explain (can be full phrase like "what affects compound interest")
         category: Topic category for organization
         output_formats: List of formats to output (markdown, html, json)
+        angle_id: The canonical angle ID (what-is, how-it-works, etc.)
+        base_concept: The base concept name (e.g., "compound interest")
 
     Returns:
         Dict with paths to generated files
     """
     if output_formats is None:
         output_formats = ["markdown", "html", "json"]
+
+    # Use topic as base_concept if not provided
+    if base_concept is None:
+        base_concept = topic
 
     log(f"Generating page for: {topic}")
 
@@ -2433,22 +2469,25 @@ def generate_knowledge_page(topic, category="general", output_formats=None):
     category_dir = OUTPUT_DIR / category
     category_dir.mkdir(exist_ok=True)
 
+    # Get the correct title for this angle
+    page_title = get_angle_title(base_concept, angle_id)
+
     if "markdown" in output_formats:
-        md_content = format_as_markdown(topic, content)
+        md_content = format_as_markdown(topic, content, page_title=page_title)
         md_path = category_dir / f"{slug}.md"
         md_path.write_text(md_content, encoding="utf-8")
         results["files"]["markdown"] = str(md_path)
         log(f"  Saved: {md_path.name}")
 
     if "html" in output_formats:
-        html_content = format_as_html(topic, content)
+        html_content = format_as_html(topic, content, page_title=page_title)
         html_path = category_dir / f"{slug}.html"
         html_path.write_text(html_content, encoding="utf-8")
         results["files"]["html"] = str(html_path)
         log(f"  Saved: {html_path.name}")
 
     if "json" in output_formats:
-        json_content = format_as_json(topic, content, category)
+        json_content = format_as_json(topic, content, category, angle_id=angle_id, base_concept=base_concept)
         json_path = category_dir / f"{slug}.json"
         json_path.write_text(json_content, encoding="utf-8")
         results["files"]["json"] = str(json_path)
@@ -3431,13 +3470,19 @@ if __name__ == "__main__":
                 topic = topic_info["topic"]
                 cat = topic_info["category"]
                 angle = topic_info["angle"]
+                base_topic = topic_info.get("base_topic", topic)
 
                 print(f"\n[{i}/{len(to_generate)}] {topic}")
                 print(f"  Category: {cat}, Angle: {angle}")
                 print("-" * 40)
 
                 try:
-                    result = generate_knowledge_page(topic, category=cat)
+                    result = generate_knowledge_page(
+                        topic,
+                        category=cat,
+                        angle_id=angle,
+                        base_concept=base_topic
+                    )
                     results.append(result)
                     log_data["generated"].append(topic)
                     save_generated_log(log_data)
