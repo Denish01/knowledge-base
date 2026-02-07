@@ -314,9 +314,10 @@ Rules:
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Knowledge page generator | ✅ Complete | 1,015 pages generated |
-| Domain closure system | ✅ Complete | 2 domains closed |
+| Knowledge page generator | ✅ Complete | 1,415 pages generated |
+| Domain closure system | ✅ Complete | 4 domains closed |
 | Sitemap generator | ✅ Complete | Auto-generates sitemap.xml |
+| Self-expansion engine | 🔄 Documented | See `SELF_EXPANSION.md` |
 | Infographic generator | ✅ Ready | Gemini + Stable Horde |
 | Printable PDF generator | ❌ Pending | Future |
 | JSON data exporter | ✅ Ready | Generated with each page |
@@ -328,10 +329,14 @@ Rules:
 |--------|----------|-------|--------|
 | Finance | 25 | 175 | ✅ CLOSED |
 | Life Obligations | 105 | 840 | ✅ CLOSED |
-| Science | 25 | 0 | 🔄 PENDING |
-| Math | 25 | 0 | 📋 PLANNED |
+| Science | 25 | 200 | ✅ CLOSED |
+| Math | 25 | 200 | ✅ CLOSED |
+| Economics | 30 | 0 | 📋 QUEUED |
+| Health | 40 | 0 | 📋 QUEUED |
+| Psychology | 25 | 0 | 📋 QUEUED |
+| Technology | 35 | 0 | 📋 QUEUED |
 
-**Total: 1,015 pages across 2 closed domains**
+**Total: 1,415 pages across 4 closed domains**
 
 See `DOMAIN_MANIFEST.json` for full roadmap.
 
@@ -354,19 +359,28 @@ asset-generator/
 ├── calculators.py            # Embedded calculator library
 ├── generate_sitemap.py       # Sitemap and index generator
 ├── DOMAIN_MANIFEST.json      # Master domain tracker and roadmap
+├── SELF_EXPANSION.md         # Self-expanding system architecture
 ├── angle_registry.json       # Frozen 8-angle registry
 ├── canonical_concepts_*.json # Domain boundary definitions
-├── sitemap.xml               # Generated sitemap (1,015 pages)
+├── sitemap.xml               # Generated sitemap (1,415 pages)
 ├── generated_pages/
 │   ├── index.html            # Homepage with navigation
 │   ├── robots.txt            # Crawler instructions
 │   ├── finance_structured/   # 25 concepts, 175 pages (CLOSED)
 │   ├── life_obligations_structured/  # 105 concepts, 840 pages (CLOSED)
+│   ├── science_structured/   # 25 concepts, 200 pages (CLOSED)
+│   ├── math_structured/      # 25 concepts, 200 pages (CLOSED)
 │   └── {domain}_deprecated/  # Quarantined non-canonical pages
 ├── pipeline.py               # Image orchestrator
 ├── design_generator.py       # AI image generation
 ├── educational_content.py    # Infographic topics
-└── README.md                 # This file
+├── # PENDING (Self-Expansion)
+├── domain_discovery.py       # Discovery engine (TO BUILD)
+├── pending_domains.json      # Domain queue (TO BUILD)
+├── expansion_rules.json      # Safety rails (TO BUILD)
+├── domain_tree.json          # Pre-seeded tiers (TO BUILD)
+└── .github/workflows/
+    └── daily_expansion.yml   # Automation (TO BUILD)
 ```
 
 ---
@@ -379,28 +393,36 @@ asset-generator/
 - [x] Gemini SDK integration
 - [x] Knowledge page generator (text)
 - [x] JSON data exporter
-- [x] Close finance domain (25 concepts)
-- [x] Close life_obligations domain (105 concepts)
+- [x] Close finance domain (175 pages)
+- [x] Close life_obligations domain (840 pages)
+- [x] Close science domain (200 pages)
+- [x] Close math domain (200 pages)
 - [x] Sitemap generator
 - [x] Index page generator
 
-### Phase 2: Expansion (Current)
-- [ ] Close science domain (25 concepts)
-- [ ] Close math domain (25 concepts)
+### Phase 2: Self-Expansion (Current)
+- [x] Document self-expansion architecture (`SELF_EXPANSION.md`)
+- [ ] Build `domain_discovery.py` - Discovery engine
+- [ ] Create `pending_domains.json` - Domain queue
+- [ ] Create `expansion_rules.json` - Safety rails
+- [ ] Create `domain_tree.json` - Pre-seeded tiers
+- [ ] Create `.github/workflows/daily_expansion.yml` - Automation
 - [ ] Deploy to Cloudflare Pages
 - [ ] Submit sitemap to Google Search Console
+
+### Phase 3: Scale
+- [ ] Auto-close economics domain
+- [ ] Auto-close health domain
+- [ ] Auto-close psychology domain
+- [ ] Auto-close technology domain
 - [ ] Add Pagefind search
-
-### Phase 3: Distribution
 - [ ] Configure ad network (Ezoic)
-- [ ] Set up internal cross-linking
-- [ ] Add more domains (economics, health)
 
-### Phase 4: Scale
-- [ ] Automate with GitHub Actions
-- [ ] Build comparison page generator
+### Phase 4: Synthesis
+- [ ] Cross-domain linking
+- [ ] Concept graph visualization
 - [ ] API exposure for licensing
-- [ ] Cross-domain synthesis
+- [ ] Dataset licensing (B2B)
 
 ---
 
@@ -476,6 +498,6 @@ REDBUBBLE_PASSWORD = ""
 
 ---
 
-*Last updated: 2026-02-05*
+*Last updated: 2026-02-06*
 
 *This is infrastructure, not a hack. Build once, wait for cash.*

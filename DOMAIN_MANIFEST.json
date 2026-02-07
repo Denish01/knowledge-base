@@ -41,11 +41,11 @@
       ]
     },
     "science": {
-      "status": "PENDING",
+      "status": "CLOSED",
       "concepts": 25,
-      "pages": 0,
-      "target_pages": 150,
-      "canonical_file": null,
+      "pages": 200,
+      "closure_date": "2026-02-06",
+      "canonical_file": "canonical_concepts_science.json",
       "subcategories": [
         "biology",
         "chemistry",
@@ -54,11 +54,11 @@
       ]
     },
     "math": {
-      "status": "PLANNED",
+      "status": "CLOSED",
       "concepts": 25,
-      "pages": 0,
-      "target_pages": 150,
-      "canonical_file": null,
+      "pages": 200,
+      "closure_date": "2026-02-06",
+      "canonical_file": "canonical_concepts_math.json",
       "subcategories": [
         "arithmetic",
         "algebra",
@@ -67,27 +67,44 @@
       ]
     },
     "economics": {
-      "status": "PLANNED",
-      "concepts": 0,
+      "status": "QUEUED",
+      "priority": 92,
+      "concepts": 30,
       "pages": 0,
       "canonical_file": null,
-      "notes": "Natural extension of finance"
+      "notes": "Natural extension of finance - Tier 2"
     },
     "health": {
-      "status": "PLANNED",
-      "concepts": 0,
+      "status": "QUEUED",
+      "priority": 88,
+      "concepts": 40,
       "pages": 0,
       "canonical_file": null,
-      "notes": "High search volume potential"
+      "notes": "High search volume potential - Tier 2"
+    },
+    "psychology": {
+      "status": "QUEUED",
+      "priority": 75,
+      "concepts": 25,
+      "pages": 0,
+      "canonical_file": null,
+      "notes": "Life-adjacent - Tier 2"
+    },
+    "technology": {
+      "status": "QUEUED",
+      "priority": 70,
+      "concepts": 35,
+      "pages": 0,
+      "canonical_file": null,
+      "notes": "Evergreen tech fundamentals - Tier 2"
     }
   },
 
   "totals": {
-    "domains_closed": 2,
-    "domains_pending": 1,
-    "domains_planned": 3,
-    "total_concepts": 155,
-    "total_pages": 1015
+    "domains_closed": 4,
+    "domains_queued": 4,
+    "total_concepts": 180,
+    "total_pages": 1415
   },
 
   "angle_registry": {
@@ -121,30 +138,35 @@
       "items": [
         "Build generation pipeline",
         "Create angle registry",
-        "Close finance domain",
-        "Close life_obligations domain",
+        "Close finance domain (175 pages)",
+        "Close life_obligations domain (840 pages)",
+        "Close science domain (200 pages)",
+        "Close math domain (200 pages)",
         "Add sitemap generator"
       ]
     },
     "phase_2": {
-      "name": "Expansion",
+      "name": "Self-Expansion",
       "status": "IN_PROGRESS",
       "items": [
-        "Close science domain",
-        "Close math domain",
-        "Add internal cross-linking",
-        "Deploy to hosting"
+        "Build domain_discovery.py",
+        "Create pending_domains.json",
+        "Create expansion_rules.json",
+        "Create domain_tree.json",
+        "Build daily_expansion.yml workflow",
+        "Deploy to Cloudflare Pages"
       ]
     },
     "phase_3": {
       "name": "Scale",
       "status": "PLANNED",
       "items": [
-        "Add economics domain",
-        "Add health domain",
-        "GitHub Actions automation",
+        "Auto-close economics domain",
+        "Auto-close health domain",
+        "Auto-close psychology domain",
+        "Auto-close technology domain",
         "Search integration (Pagefind)",
-        "Monetization (Ezoic)"
+        "Monetization (Ezoic/AdSense)"
       ]
     },
     "phase_4": {
@@ -153,8 +175,8 @@
       "items": [
         "Cross-domain linking",
         "Concept graph visualization",
-        "API exposure",
-        "Dataset licensing"
+        "API exposure for licensing",
+        "Dataset licensing (B2B)"
       ]
     }
   },
