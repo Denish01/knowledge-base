@@ -1,0 +1,169 @@
+{
+  "version": "1.0",
+  "description": "Master manifest for Universal Knowledge Index - tracks all domains, status, and roadmap",
+  "last_updated": "2026-02-06",
+
+  "domains": {
+    "finance": {
+      "status": "CLOSED",
+      "concepts": 25,
+      "pages": 175,
+      "closure_date": "2026-02-06",
+      "canonical_file": "canonical_concepts_finance.json",
+      "subcategories": [
+        "investments",
+        "retirement",
+        "taxes",
+        "banking",
+        "metrics"
+      ]
+    },
+    "life_obligations": {
+      "status": "CLOSED",
+      "concepts": 105,
+      "pages": 840,
+      "closure_date": "2026-02-06",
+      "canonical_file": "canonical_concepts_life_obligations.json",
+      "subcategories": [
+        "tax_obligations",
+        "insurance_obligations",
+        "debt_obligations",
+        "retirement_obligations",
+        "legal_obligations",
+        "housing_obligations",
+        "family_dependency",
+        "child_support",
+        "spousal_support",
+        "government_benefits",
+        "payment_mechanics",
+        "employment_obligations",
+        "family_budget"
+      ]
+    },
+    "science": {
+      "status": "PENDING",
+      "concepts": 25,
+      "pages": 0,
+      "target_pages": 150,
+      "canonical_file": null,
+      "subcategories": [
+        "biology",
+        "chemistry",
+        "physics",
+        "earth_science"
+      ]
+    },
+    "math": {
+      "status": "PLANNED",
+      "concepts": 25,
+      "pages": 0,
+      "target_pages": 150,
+      "canonical_file": null,
+      "subcategories": [
+        "arithmetic",
+        "algebra",
+        "geometry",
+        "statistics"
+      ]
+    },
+    "economics": {
+      "status": "PLANNED",
+      "concepts": 0,
+      "pages": 0,
+      "canonical_file": null,
+      "notes": "Natural extension of finance"
+    },
+    "health": {
+      "status": "PLANNED",
+      "concepts": 0,
+      "pages": 0,
+      "canonical_file": null,
+      "notes": "High search volume potential"
+    }
+  },
+
+  "totals": {
+    "domains_closed": 2,
+    "domains_pending": 1,
+    "domains_planned": 3,
+    "total_concepts": 155,
+    "total_pages": 1015
+  },
+
+  "angle_registry": {
+    "file": "angle_registry.json",
+    "required_angles": 6,
+    "optional_angles": 2,
+    "angles": [
+      "what-is",
+      "how-it-works",
+      "what-it-depends-on",
+      "what-affects-it",
+      "example-of",
+      "common-misconceptions-about",
+      "types-of",
+      "vs"
+    ]
+  },
+
+  "deployment": {
+    "sitemap": "sitemap.xml",
+    "index": "generated_pages/index.html",
+    "robots": "generated_pages/robots.txt",
+    "base_url": "https://your-domain.com",
+    "hosting": "pending"
+  },
+
+  "roadmap": {
+    "phase_1": {
+      "name": "Foundation",
+      "status": "COMPLETE",
+      "items": [
+        "Build generation pipeline",
+        "Create angle registry",
+        "Close finance domain",
+        "Close life_obligations domain",
+        "Add sitemap generator"
+      ]
+    },
+    "phase_2": {
+      "name": "Expansion",
+      "status": "IN_PROGRESS",
+      "items": [
+        "Close science domain",
+        "Close math domain",
+        "Add internal cross-linking",
+        "Deploy to hosting"
+      ]
+    },
+    "phase_3": {
+      "name": "Scale",
+      "status": "PLANNED",
+      "items": [
+        "Add economics domain",
+        "Add health domain",
+        "GitHub Actions automation",
+        "Search integration (Pagefind)",
+        "Monetization (Ezoic)"
+      ]
+    },
+    "phase_4": {
+      "name": "Synthesis",
+      "status": "PLANNED",
+      "items": [
+        "Cross-domain linking",
+        "Concept graph visualization",
+        "API exposure",
+        "Dataset licensing"
+      ]
+    }
+  },
+
+  "commands": {
+    "generate": "python knowledge_pages.py --generate-expanded --category {domain} --count N",
+    "check_status": "python knowledge_pages.py --closure-report --category {domain}",
+    "restructure": "python knowledge_pages.py --restructure --category {domain}",
+    "sitemap": "python generate_sitemap.py",
+    "concept_check": "python knowledge_pages.py --concept-status \"{concept}\" --category {domain}"
+  }
+}

@@ -314,11 +314,26 @@ Rules:
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Knowledge page generator | ❌ Pending | Next to build |
+| Knowledge page generator | ✅ Complete | 1,015 pages generated |
+| Domain closure system | ✅ Complete | 2 domains closed |
+| Sitemap generator | ✅ Complete | Auto-generates sitemap.xml |
 | Infographic generator | ✅ Ready | Gemini + Stable Horde |
 | Printable PDF generator | ❌ Pending | Future |
-| JSON data exporter | ❌ Pending | Future |
+| JSON data exporter | ✅ Ready | Generated with each page |
 | POD designs (micro-niche) | ✅ Ready | Bonus revenue stream |
+
+### Domain Closure Status
+
+| Domain | Concepts | Pages | Status |
+|--------|----------|-------|--------|
+| Finance | 25 | 175 | ✅ CLOSED |
+| Life Obligations | 105 | 840 | ✅ CLOSED |
+| Science | 25 | 0 | 🔄 PENDING |
+| Math | 25 | 0 | 📋 PLANNED |
+
+**Total: 1,015 pages across 2 closed domains**
+
+See `DOMAIN_MANIFEST.json` for full roadmap.
 
 ### AI Providers
 
@@ -335,17 +350,22 @@ Rules:
 ```
 asset-generator/
 ├── config.py                 # API keys, settings
-├── pipeline.py               # Main orchestrator
-├── trend_scanner.py          # Topic generation
+├── knowledge_pages.py        # Main page generator (closure system)
+├── calculators.py            # Embedded calculator library
+├── generate_sitemap.py       # Sitemap and index generator
+├── DOMAIN_MANIFEST.json      # Master domain tracker and roadmap
+├── angle_registry.json       # Frozen 8-angle registry
+├── canonical_concepts_*.json # Domain boundary definitions
+├── sitemap.xml               # Generated sitemap (1,015 pages)
+├── generated_pages/
+│   ├── index.html            # Homepage with navigation
+│   ├── robots.txt            # Crawler instructions
+│   ├── finance_structured/   # 25 concepts, 175 pages (CLOSED)
+│   ├── life_obligations_structured/  # 105 concepts, 840 pages (CLOSED)
+│   └── {domain}_deprecated/  # Quarantined non-canonical pages
+├── pipeline.py               # Image orchestrator
 ├── design_generator.py       # AI image generation
 ├── educational_content.py    # Infographic topics
-├── micro_niches.py           # POD design topics
-├── knowledge_pages.py        # [TO BUILD] Text page generator
-├── printable_utils.py        # [TO BUILD] PDF generator
-├── data_exporter.py          # [TO BUILD] JSON exporter
-├── generated_designs/        # Image outputs
-├── generated_pages/          # [TO BUILD] Text outputs
-├── generated_pdfs/           # [TO BUILD] PDF outputs
 └── README.md                 # This file
 ```
 
@@ -353,30 +373,34 @@ asset-generator/
 
 ## Next Steps (Priority Order)
 
-### Phase 1: Foundation (Current)
+### Phase 1: Foundation ✅ COMPLETE
 - [x] Infographic generation working
 - [x] Multi-language support (EN/ES/FR)
 - [x] Gemini SDK integration
-- [ ] Get Gemini Pro account
-- [ ] Configure platform credentials
+- [x] Knowledge page generator (text)
+- [x] JSON data exporter
+- [x] Close finance domain (25 concepts)
+- [x] Close life_obligations domain (105 concepts)
+- [x] Sitemap generator
+- [x] Index page generator
 
-### Phase 2: Expand Formats
-- [ ] Build knowledge page generator (text)
-- [ ] Build printable PDF generator
-- [ ] Build JSON data exporter
-- [ ] Create topic database (500+ topics)
+### Phase 2: Expansion (Current)
+- [ ] Close science domain (25 concepts)
+- [ ] Close math domain (25 concepts)
+- [ ] Deploy to Cloudflare Pages
+- [ ] Submit sitemap to Google Search Console
+- [ ] Add Pagefind search
 
 ### Phase 3: Distribution
-- [ ] Set up static site for SEO pages
-- [ ] Configure ad network
-- [ ] List PDFs on marketplaces
-- [ ] Set up API for licensing
+- [ ] Configure ad network (Ezoic)
+- [ ] Set up internal cross-linking
+- [ ] Add more domains (economics, health)
 
 ### Phase 4: Scale
 - [ ] Automate with GitHub Actions
-- [ ] Add more topic categories
 - [ ] Build comparison page generator
-- [ ] Create calculator templates
+- [ ] API exposure for licensing
+- [ ] Cross-domain synthesis
 
 ---
 
