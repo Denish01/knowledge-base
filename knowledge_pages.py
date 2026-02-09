@@ -1308,7 +1308,10 @@ Now analyze: "{topic}"
 """
 
     try:
-        if GENAI_AVAILABLE:
+        # Use same provider priority as main generation (Groq first)
+        if GROQ_API_KEY and OPENAI_SDK_AVAILABLE:
+            response = generate_with_groq(prompt)
+        elif GENAI_AVAILABLE and GOOGLE_API_KEY:
             response = generate_with_gemini_prompt(prompt)
         else:
             response = generate_with_requests_prompt(prompt)
