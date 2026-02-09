@@ -1004,6 +1004,43 @@ TOPIC_CATEGORIES = {
 
 
 # =============================================================================
+# AUTO-LOAD CANONICAL CONCEPTS (Bridge self-expansion → page generation)
+# =============================================================================
+# Load topics from canonical_concepts_*.json for domains not hardcoded above.
+# This allows domain_discovery.py to create new domains that knowledge_pages.py
+# can immediately generate pages for.
+
+def _load_canonical_concepts_into_categories():
+    """Load canonical concept files and add missing domains to TOPIC_CATEGORIES."""
+    import glob as glob_module
+    pattern = str(BASE_DIR / "canonical_concepts_*.json")
+    for filepath in glob_module.glob(pattern):
+        path = Path(filepath)
+        # Extract domain name: canonical_concepts_health.json -> health
+        domain = path.stem.replace("canonical_concepts_", "")
+        if domain in TOPIC_CATEGORIES:
+            continue  # Already hardcoded, skip
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            # Flatten all subcategory concepts into a single list
+            topics = []
+            for subcategory, concepts in data.get("subcategories", {}).items():
+                for concept in concepts:
+                    # Use title (human-readable) and convert to lowercase
+                    title = concept.get("title", concept.get("concept", ""))
+                    if title:
+                        topics.append(title.lower())
+            if topics:
+                TOPIC_CATEGORIES[domain] = topics
+                log(f"Loaded {len(topics)} concepts for '{domain}' from {path.name}")
+        except Exception as e:
+            log(f"Failed to load {path.name}: {e}", "ERROR")
+
+_load_canonical_concepts_into_categories()
+
+
+# =============================================================================
 # CANONICAL EXPANSION ENGINE (Upgrade 1)
 # =============================================================================
 # Turn one topic into 12 pages covering every canonical angle
