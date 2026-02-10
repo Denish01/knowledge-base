@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "description": "Master manifest for Universal Knowledge Index - tracks all domains, status, and roadmap",
-  "last_updated": "2026-02-09",
+  "last_updated": "2026-02-10",
   "domains": {
     "finance": {
       "status": "CLOSED",
