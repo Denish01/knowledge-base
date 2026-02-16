@@ -18,7 +18,9 @@
       "WebFetch(domain:360library.com)",
       "Bash(gh run list:*)",
       "Bash(timeout:*)",
-      "Bash(powershell:*)"
+      "Bash(powershell:*)",
+      "Bash(robocopy:*)",
+      "Bash(xcopy \"E:\\\\Projects\\\\Blog template\\\\asset-generator\" \"E:\\\\Projects\\\\Page-Generator-Site\"\" /E /I /H /Y)"
     ]
   }
 }

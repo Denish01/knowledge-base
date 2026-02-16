@@ -7,43 +7,86 @@ import os
 from pathlib import Path
 from datetime import datetime
 from urllib.parse import quote
+from templates import (
+    DOMAIN_META, SHARED_CSS, HOMEPAGE_CSS,
+    generate_header_html, generate_footer_html,
+)
 
 # Configuration
 BASE_URL = "https://360library.com"
 OUTPUT_DIR = Path(__file__).parent / "generated_pages"
 SITEMAP_PATH = Path(__file__).parent / "generated_pages" / "sitemap.xml"
 
+def _parse_flat_filename(stem):
+    """Parse a flat-structure filename into (concept, angle_id).
+
+    Health domain uses flat files like:
+        arthritis.html              -> ('arthritis', 'what-is')
+        arthritis-vs.html           -> ('arthritis', 'vs')
+        common-misconceptions-about-arthritis.html -> ('arthritis', 'common-misconceptions-about')
+        examples-of-arthritis.html  -> ('arthritis', 'example-of')
+        types-of-arthritis.html     -> ('arthritis', 'types-of')
+        how-does-arthritis-work.html -> ('arthritis', 'how-it-works')
+        what-affects-arthritis.html -> ('arthritis', 'what-affects-it')
+        what-arthritis-depends-on.html -> ('arthritis', 'what-it-depends-on')
+    """
+    # Angle prefixes (order matters — longest first to avoid partial matches)
+    if stem.startswith("common-misconceptions-about-"):
+        return stem[len("common-misconceptions-about-"):], "common-misconceptions-about"
+    if stem.startswith("examples-of-"):
+        return stem[len("examples-of-"):], "example-of"
+    if stem.startswith("types-of-"):
+        return stem[len("types-of-"):], "types-of"
+    if stem.startswith("what-affects-"):
+        return stem[len("what-affects-"):], "what-affects-it"
+
+    # "how-does-{concept}-work"
+    if stem.startswith("how-does-") and stem.endswith("-work"):
+        return stem[len("how-does-"):-len("-work")], "how-it-works"
+
+    # "what-{concept}-depends-on"
+    if stem.startswith("what-") and stem.endswith("-depends-on"):
+        return stem[len("what-"):-len("-depends-on")], "what-it-depends-on"
+
+    # "{concept}-vs"
+    if stem.endswith("-vs"):
+        return stem[:-3], "vs"
+
+    # Plain "{concept}" = what-is
+    return stem, "what-is"
+
+
 def get_all_pages():
-    """Crawl all structured folders and collect page URLs."""
+    """Crawl all domain folders and collect page URLs.
+
+    Handles two directory layouts:
+      - Structured: domain/concept/angle.html  (economics, finance, etc.)
+      - Flat:       domain/filename.html        (health)
+    """
     pages = []
 
-    # Find all domain directories (concept-folder structure)
-    # Skip deprecated folders and special files
-    skip_folders = {"index.html", "robots.txt", "CNAME"}
-    for domain_dir in OUTPUT_DIR.iterdir():
+    skip_names = {"index.html", "robots.txt", "CNAME"}
+    for domain_dir in sorted(OUTPUT_DIR.iterdir()):
         if not domain_dir.is_dir():
             continue
         if domain_dir.name.endswith("_deprecated"):
             continue
-        if domain_dir.name in skip_folders:
+        if domain_dir.name in skip_names:
             continue
 
         domain_folder = domain_dir.name
-        structured_dir = domain_dir
+        has_concept_dirs = any(d.is_dir() for d in domain_dir.iterdir())
 
-        # Each concept folder
-        for concept_dir in structured_dir.iterdir():
-            if concept_dir.is_dir():
+        if has_concept_dirs:
+            # --- Structured layout: domain/concept/angle.html ---
+            for concept_dir in sorted(domain_dir.iterdir()):
+                if not concept_dir.is_dir():
+                    continue
                 concept = concept_dir.name
 
-                # Each angle file
                 for html_file in concept_dir.glob("*.html"):
                     angle = html_file.stem
-
-                    # Build URL path - matches actual folder structure
                     url_path = f"/{domain_folder}/{concept}/{angle}"
-
-                    # Get last modified time
                     mtime = datetime.fromtimestamp(html_file.stat().st_mtime)
                     lastmod = mtime.strftime("%Y-%m-%d")
 
@@ -53,6 +96,26 @@ def get_all_pages():
                         "priority": get_priority(angle),
                         "changefreq": "monthly"
                     })
+        else:
+            # --- Flat layout: domain/filename.html ---
+            for html_file in sorted(domain_dir.glob("*.html")):
+                stem = html_file.stem
+                concept, angle = _parse_flat_filename(stem)
+                # URL uses the actual filename so the server can resolve it
+                url_path = f"/{domain_folder}/{stem}"
+                mtime = datetime.fromtimestamp(html_file.stat().st_mtime)
+                lastmod = mtime.strftime("%Y-%m-%d")
+
+                pages.append({
+                    "url": url_path,
+                    "lastmod": lastmod,
+                    "priority": get_priority(angle),
+                    "changefreq": "monthly",
+                    # Extra fields for flat pages so main() can group them
+                    "_flat": True,
+                    "_concept": concept,
+                    "_angle": angle,
+                })
 
     return pages
 
@@ -93,51 +156,129 @@ def generate_sitemap(pages, base_url):
     return "\n".join(xml_lines)
 
 
-def generate_index_page(pages_by_domain):
-    """Generate a simple index.html for navigation."""
-    html = """<!DOCTYPE html>
+def _flat_angle_to_filename(concept, angle):
+    """Convert (concept, angle_id) back to the flat filename stem.
+
+    Inverse of _parse_flat_filename().
+    """
+    mapping = {
+        "what-is": concept,
+        "vs": f"{concept}-vs",
+        "common-misconceptions-about": f"common-misconceptions-about-{concept}",
+        "example-of": f"examples-of-{concept}",
+        "types-of": f"types-of-{concept}",
+        "how-it-works": f"how-does-{concept}-work",
+        "what-affects-it": f"what-affects-{concept}",
+        "what-it-depends-on": f"what-{concept}-depends-on",
+    }
+    return mapping.get(angle, f"{concept}-{angle}")
+
+
+def generate_index_page(pages_by_domain, flat_domains=None):
+    """Generate the redesigned index.html homepage."""
+    if flat_domains is None:
+        flat_domains = set()
+
+    # Count totals
+    total_pages = sum(
+        len(angles) for concepts in pages_by_domain.values() for angles in concepts.values()
+    )
+    total_concepts = sum(len(concepts) for concepts in pages_by_domain.values())
+    total_domains = len(pages_by_domain)
+
+    # Build domain cards
+    domain_cards = ""
+    for slug, concepts in pages_by_domain.items():
+        meta = DOMAIN_META.get(slug, {"name": slug.replace("_", " ").title(), "color": "#6B7280", "icon": "📄", "description": ""})
+        concept_count = len(concepts)
+        page_count = sum(len(a) for a in concepts.values())
+        domain_cards += f"""      <div class="domain-card" style="--domain-color:{meta['color']}">
+        <div class="domain-card-icon">{meta['icon']}</div>
+        <h3>{meta['name']}</h3>
+        <div class="card-meta">{concept_count} concepts &middot; {page_count} pages</div>
+        <p>{meta['description']}</p>
+        <a href="#{slug}" class="explore-link">Explore {meta['name']} &rarr;</a>
+      </div>
+"""
+
+    # Build concept grids per domain
+    concept_sections = ""
+    for slug, concepts in pages_by_domain.items():
+        meta = DOMAIN_META.get(slug, {"name": slug.replace("_", " ").title(), "color": "#6B7280", "icon": "📄"})
+        concept_count = len(concepts)
+        is_flat = slug in flat_domains
+
+        cards = ""
+        for concept, angles in sorted(concepts.items()):
+            concept_title = concept.replace("-", " ").title()
+            angle_tags = ""
+            for angle in sorted(angles):
+                from templates import ANGLE_DISPLAY
+                angle_display = ANGLE_DISPLAY.get(angle, angle.replace("-", " ").title())
+                if is_flat:
+                    filename = _flat_angle_to_filename(concept, angle)
+                    angle_tags += f'          <a href="/{slug}/{filename}.html" class="angle-link">{angle_display}</a>\n'
+                else:
+                    angle_tags += f'          <a href="/{slug}/{concept}/{angle}.html" class="angle-link">{angle_display}</a>\n'
+            # "What Is" link for the concept heading
+            if is_flat:
+                main_href = f"/{slug}/{concept}.html"
+            else:
+                main_href = f"/{slug}/{concept}/what-is.html"
+            cards += f"""      <div class="concept-card">
+        <h3><a href="{main_href}">{concept_title}</a></h3>
+        <div class="angle-links">
+{angle_tags}        </div>
+      </div>
+"""
+
+        concept_sections += f"""    <div class="domain-section" id="{slug}">
+      <div class="domain-section-header">
+        <h2>{meta['icon']} {meta['name']}</h2>
+        <span class="badge" style="background:{meta['color']}">{concept_count} concepts</span>
+      </div>
+      <div class="concept-grid">
+{cards}      </div>
+    </div>
+"""
+
+    header = generate_header_html()
+    footer = generate_footer_html()
+
+    html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knowledge Base Index</title>
+    <meta name="description" content="360Library — free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles.">
+    <title>360Library — Learn Any Concept, Simply Explained</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; }
-        h1 { color: #1a1a1a; }
-        h2 { color: #2a2a2a; margin-top: 40px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .domain-stats { color: #666; font-size: 14px; }
-        .concept-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; margin-top: 20px; }
-        .concept-card { background: #f8f9fa; border-radius: 8px; padding: 16px; }
-        .concept-card h3 { margin: 0 0 8px 0; font-size: 16px; }
-        .concept-card a { color: #1a73e8; text-decoration: none; font-size: 13px; display: block; margin: 4px 0; }
-        .concept-card a:hover { text-decoration: underline; }
+{SHARED_CSS}
+{HOMEPAGE_CSS}
     </style>
 </head>
 <body>
-    <h1>Knowledge Base</h1>
-    <p>A structured knowledge index covering finance and life obligations.</p>
-"""
+{header}
 
-    for domain_folder, concepts in pages_by_domain.items():
-        # Display name (clean up underscores)
-        domain_title = domain_folder.replace("_", " ").title()
-        html += f"\n    <h2>{domain_title}</h2>\n"
-        html += f"    <p class='domain-stats'>{len(concepts)} concepts</p>\n"
-        html += "    <div class='concept-grid'>\n"
+<section class="hero">
+    <h1>Learn Any Concept, Simply Explained</h1>
+    <p>A free encyclopedic reference covering six knowledge domains. Every concept explored from multiple angles so you truly understand it.</p>
+    <div class="hero-stats">
+        <div class="hero-stat"><span class="num">{total_pages:,}</span><span class="label">Pages</span></div>
+        <div class="hero-stat"><span class="num">{total_concepts:,}</span><span class="label">Concepts</span></div>
+        <div class="hero-stat"><span class="num">{total_domains}</span><span class="label">Domains</span></div>
+    </div>
+</section>
 
-        for concept, angles in sorted(concepts.items()):
-            concept_title = concept.replace("-", " ").title()
-            html += f"      <div class='concept-card'>\n"
-            html += f"        <h3>{concept_title}</h3>\n"
-            for angle in sorted(angles):
-                angle_display = angle.replace("-", " ").title()
-                # Use full domain_folder path to match actual folder structure
-                html += f"        <a href='/{domain_folder}/{concept}/{angle}.html'>{angle_display}</a>\n"
-            html += "      </div>\n"
+<section class="domain-cards-section">
+    <div class="domain-cards-grid">
+{domain_cards}    </div>
+</section>
 
-        html += "    </div>\n"
+<section class="concepts-section">
+{concept_sections}</section>
 
-    html += """
+{footer}
 </body>
 </html>"""
 
@@ -158,18 +299,29 @@ def main():
 
     # Organize by domain and concept for index
     pages_by_domain = {}
+    flat_domains = set()
     for page in pages:
-        parts = page["url"].strip("/").split("/")
-        if len(parts) >= 3:
+        if page.get("_flat"):
+            # Flat-layout page — use pre-parsed concept/angle
+            domain = page["url"].strip("/").split("/")[0]
+            concept = page["_concept"]
+            angle = page["_angle"]
+            flat_domains.add(domain)
+        else:
+            # Structured-layout page — parse from URL
+            parts = page["url"].strip("/").split("/")
+            if len(parts) < 3:
+                continue
             domain, concept, angle = parts[0], parts[1], parts[2]
-            if domain not in pages_by_domain:
-                pages_by_domain[domain] = {}
-            if concept not in pages_by_domain[domain]:
-                pages_by_domain[domain][concept] = []
-            pages_by_domain[domain][concept].append(angle)
+
+        if domain not in pages_by_domain:
+            pages_by_domain[domain] = {}
+        if concept not in pages_by_domain[domain]:
+            pages_by_domain[domain][concept] = []
+        pages_by_domain[domain][concept].append(angle)
 
     # Generate index page
-    index_html = generate_index_page(pages_by_domain)
+    index_html = generate_index_page(pages_by_domain, flat_domains=flat_domains)
     index_path = OUTPUT_DIR / "index.html"
     index_path.write_text(index_html, encoding="utf-8")
     print(f"Index page written to: {index_path}")

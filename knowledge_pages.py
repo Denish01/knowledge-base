@@ -2363,8 +2363,15 @@ def markdown_to_html(content):
     return '\n'.join(html_lines)
 
 
-def format_as_html(topic, content, page_title=None):
+def format_as_html(topic, content, page_title=None, domain_slug=None,
+                   concept_slug=None, angle_id=None, all_angles=None):
     """Format content as standalone HTML with embedded calculator if applicable."""
+    from templates import (
+        SHARED_CSS, ARTICLE_CSS,
+        generate_header_html, generate_footer_html,
+        generate_breadcrumb_html, generate_sidebar_html,
+    )
+
     slug = slugify(topic)
     # Use provided title or fall back to auto-detected title
     if page_title is None:
@@ -2399,43 +2406,49 @@ def format_as_html(topic, content, page_title=None):
     else:
         meta_desc = f"A clear, simple explanation of {topic} - definition, key concepts, examples, and common misconceptions."
 
+    # Build layout components
+    header_html = generate_header_html(active_domain=domain_slug)
+    footer_html = generate_footer_html()
+
+    breadcrumb_html = ""
+    sidebar_html = ""
+    if domain_slug and concept_slug and angle_id:
+        breadcrumb_html = generate_breadcrumb_html(domain_slug, concept_slug, angle_id)
+    if domain_slug and concept_slug and angle_id and all_angles:
+        sidebar_html = generate_sidebar_html(domain_slug, concept_slug, angle_id, all_angles)
+
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{meta_desc}">
-    <title>{page_title} - Simple Explanation</title>
+    <title>{page_title} - 360Library</title>
     <style>
-        body {{
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }}
-        h1 {{ color: #1a1a1a; }}
-        h2 {{ color: #2a2a2a; margin-top: 32px; }}
-        ul {{ padding-left: 20px; }}
-        li {{ margin-bottom: 8px; }}
-        p {{ margin-bottom: 16px; }}
-        .example {{ background: #f5f5f5; padding: 16px; border-radius: 8px; margin: 16px 0; }}
-        h3 {{ color: #3a3a3a; margin-top: 24px; }}
-        table {{ border-collapse: collapse; width: 100%; margin: 20px 0; }}
-        th, td {{ border: 1px solid #ddd; padding: 12px; text-align: left; }}
-        th {{ background: #f5f5f5; font-weight: 600; }}
-        tr:nth-child(even) {{ background: #fafafa; }}
+{SHARED_CSS}
+{ARTICLE_CSS}
     </style>
 </head>
 <body>
-    <article>
-        <h1>{page_title}</h1>
+{header_html}
 
-        {calculator_html}
+{breadcrumb_html}
 
-        {html_content}
-    </article>
+<div class="article-wrapper">
+    <main class="article-main">
+        <article>
+            <h1>{page_title}</h1>
+
+            {calculator_html}
+
+            {html_content}
+        </article>
+    </main>
+
+    {sidebar_html}
+</div>
+
+{footer_html}
 </body>
 </html>
 """
@@ -2520,7 +2533,23 @@ def generate_knowledge_page(topic, category="general", output_formats=None, angl
         log(f"  Saved: {md_path.name}")
 
     if "html" in output_formats:
-        html_content = format_as_html(topic, content, page_title=page_title)
+        # Determine all sibling angles for the sidebar
+        concept_dir = category_dir
+        sibling_angles = []
+        if concept_dir.exists():
+            sibling_angles = [f.stem for f in concept_dir.glob("*.html") if f.stem != slug]
+        if angle_id and angle_id not in sibling_angles:
+            sibling_angles.append(angle_id)
+        # Derive domain_slug and concept_slug from category path
+        domain_slug = category.split("/")[0] if "/" in category else category
+        concept_slug_for_template = category.split("/")[1] if "/" in category else (base_concept.replace(" ", "-").lower() if base_concept else slug)
+        html_content = format_as_html(
+            topic, content, page_title=page_title,
+            domain_slug=domain_slug,
+            concept_slug=concept_slug_for_template,
+            angle_id=angle_id,
+            all_angles=sibling_angles,
+        )
         html_path = category_dir / f"{slug}.html"
         html_path.write_text(html_content, encoding="utf-8")
         results["files"]["html"] = str(html_path)
