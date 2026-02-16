@@ -309,6 +309,9 @@ def main():
             if len(parts) < 3:
                 continue
             domain, concept, angle = parts[0], parts[1], parts[2]
+            # Strip .html extension since we add it back when building links
+            if angle.endswith(".html"):
+                angle = angle[:-5]
 
         if domain not in pages_by_domain:
             pages_by_domain[domain] = {}
