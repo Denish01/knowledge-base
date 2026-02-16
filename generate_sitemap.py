@@ -86,7 +86,7 @@ def get_all_pages():
 
                 for html_file in concept_dir.glob("*.html"):
                     angle = html_file.stem
-                    url_path = f"/{domain_folder}/{concept}/{angle}"
+                    url_path = f"/{domain_folder}/{concept}/{angle}.html"
                     mtime = datetime.fromtimestamp(html_file.stat().st_mtime)
                     lastmod = mtime.strftime("%Y-%m-%d")
 
@@ -102,7 +102,7 @@ def get_all_pages():
                 stem = html_file.stem
                 concept, angle = _parse_flat_filename(stem)
                 # URL uses the actual filename so the server can resolve it
-                url_path = f"/{domain_folder}/{stem}"
+                url_path = f"/{domain_folder}/{stem}.html"
                 mtime = datetime.fromtimestamp(html_file.stat().st_mtime)
                 lastmod = mtime.strftime("%Y-%m-%d")
 
@@ -137,9 +137,16 @@ def get_priority(angle):
 
 def generate_sitemap(pages, base_url):
     """Generate sitemap.xml content."""
+    today = datetime.now().strftime("%Y-%m-%d")
     xml_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        '  <url>',
+        f'    <loc>{base_url}/</loc>',
+        f'    <lastmod>{today}</lastmod>',
+        '    <changefreq>daily</changefreq>',
+        '    <priority>1.0</priority>',
+        '  </url>',
     ]
 
     for page in pages:
@@ -251,6 +258,7 @@ def generate_index_page(pages_by_domain, flat_domains=None):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="360Library — free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles.">
+    <link rel="canonical" href="https://360library.com/">
     <title>360Library — Learn Any Concept, Simply Explained</title>
     <style>
 {SHARED_CSS}

@@ -2364,7 +2364,8 @@ def markdown_to_html(content):
 
 
 def format_as_html(topic, content, page_title=None, domain_slug=None,
-                   concept_slug=None, angle_id=None, all_angles=None):
+                   concept_slug=None, angle_id=None, all_angles=None,
+                   canonical_path=None):
     """Format content as standalone HTML with embedded calculator if applicable."""
     from templates import (
         SHARED_CSS, ARTICLE_CSS,
@@ -2406,6 +2407,10 @@ def format_as_html(topic, content, page_title=None, domain_slug=None,
     else:
         meta_desc = f"A clear, simple explanation of {topic} - definition, key concepts, examples, and common misconceptions."
 
+    # Build canonical path
+    if canonical_path is None and domain_slug and concept_slug and angle_id:
+        canonical_path = f"{domain_slug}/{concept_slug}/{angle_id}.html"
+
     # Build layout components
     header_html = generate_header_html(active_domain=domain_slug)
     footer_html = generate_footer_html()
@@ -2423,6 +2428,7 @@ def format_as_html(topic, content, page_title=None, domain_slug=None,
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{meta_desc}">
+    <link rel="canonical" href="https://360library.com/{canonical_path}">
     <title>{page_title} - 360Library</title>
     <style>
 {SHARED_CSS}

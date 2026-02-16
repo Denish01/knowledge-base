@@ -71,7 +71,8 @@ def extract_title_from_md(md_path):
 
 
 def render_article_html(page_title, meta_desc, html_content, calculator_html,
-                        domain_slug, concept_slug, angle_id, all_angles):
+                        domain_slug, concept_slug, angle_id, all_angles,
+                        canonical_path=None):
     """Render a full article page with the new design."""
     header = generate_header_html(active_domain=domain_slug)
     footer = generate_footer_html()
@@ -83,12 +84,16 @@ def render_article_html(page_title, meta_desc, html_content, calculator_html,
     if domain_slug and concept_slug and angle_id and all_angles:
         sidebar = generate_sidebar_html(domain_slug, concept_slug, angle_id, all_angles)
 
+    canonical_tag = ""
+    if canonical_path:
+        canonical_tag = f'\n    <link rel="canonical" href="https://360library.com/{canonical_path}">'
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{meta_desc}">
+    <meta name="description" content="{meta_desc}">{canonical_tag}
     <title>{page_title} - 360Library</title>
     <style>
 {SHARED_CSS}
@@ -176,9 +181,11 @@ def process_structured_domains():
                     meta_desc = get_meta_desc(topic, page_title)
 
                     # Render new HTML
+                    canonical = f"{domain_slug}/{concept_slug}/{angle_id}.html"
                     new_html = render_article_html(
                         page_title, meta_desc, html_content, calculator_html,
                         domain_slug, concept_slug, angle_id, all_angles,
+                        canonical_path=canonical,
                     )
 
                     # Write back
@@ -257,9 +264,12 @@ def process_flat_domains():
                     calculator_html = get_calculator_html(topic) or ""
                     meta_desc = get_meta_desc(topic, page_title)
 
+                    # For flat domains, canonical uses the actual filename
+                    canonical = f"{domain_slug}/{html_file.stem}.html"
                     new_html = render_article_html(
                         page_title, meta_desc, html_content, calculator_html,
                         domain_slug, concept, angle_id, all_angles,
+                        canonical_path=canonical,
                     )
 
                     html_file.write_text(new_html, encoding="utf-8")
