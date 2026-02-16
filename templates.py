@@ -478,7 +478,7 @@ def generate_header_html(active_domain=None):
     for slug, meta in DOMAIN_META.items():
         active_cls = ' class="active"' if slug == active_domain else ""
         display = meta["name"]
-        nav_items += f'        <li><a href="/{slug}/"{active_cls}>{display}</a></li>\n'
+        nav_items += f'        <li><a href="/#{slug}"{active_cls}>{display}</a></li>\n'
 
     return f"""<input type="checkbox" id="mobile-menu-state" aria-hidden="true">
 <header class="site-header">
@@ -495,7 +495,7 @@ def generate_footer_html():
     """Generate 3-column dark footer."""
     domain_links = ""
     for slug, meta in DOMAIN_META.items():
-        domain_links += f'            <a href="/{slug}/">{meta["name"]}</a>\n'
+        domain_links += f'            <a href="/#{slug}">{meta["name"]}</a>\n'
 
     return f"""<footer class="site-footer">
     <div class="footer-inner">
@@ -559,6 +559,6 @@ def generate_sidebar_html(domain_slug, concept_slug, current_angle, all_angles):
         <h3>{concept_display}</h3>
         <ul class="angle-nav">
 {links}        </ul>
-        <a href="/{domain_slug}/" class="back-link">&larr; All {domain_name} concepts</a>
+        <a href="/#{domain_slug}" class="back-link">&larr; All {domain_name} concepts</a>
     </div>
 </aside>"""
