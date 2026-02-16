@@ -2259,106 +2259,203 @@ def get_page_title(topic):
 
 
 def markdown_to_html(content):
-    """Convert markdown content to HTML."""
+    """Convert markdown/tag content to HTML.
+    Handles both markdown (##, *, |) and structured tags
+    ([FACTBOX], [CALLOUT], [SECTION], [TABLE], [RATING])."""
     import re
+
+    def bold(text):
+        return re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
 
     lines = content.strip().split('\n')
     html_lines = []
     in_list = False
+    in_ol = False
     in_table = False
+    in_factbox = False
+    in_callout = False
     table_header_done = False
+
+    def close_list():
+        nonlocal in_list, in_ol
+        if in_list:
+            html_lines.append('</ul>')
+            in_list = False
+        if in_ol:
+            html_lines.append('</ol>')
+            in_ol = False
 
     for line in lines:
         stripped = line.strip()
 
-        # Skip empty lines but close any open lists
+        # Skip empty lines (close open lists but not other blocks)
         if not stripped:
-            if in_list:
-                html_lines.append('</ul>')
-                in_list = False
-            if in_table:
-                html_lines.append('</tbody></table>')
-                in_table = False
-                table_header_done = False
-            html_lines.append('')
+            if not in_table and not in_factbox and not in_callout:
+                close_list()
             continue
 
-        # Headers
-        if stripped.startswith('## '):
-            if in_list:
-                html_lines.append('</ul>')
-                in_list = False
-            html_lines.append(f'<h2>{stripped[3:]}</h2>')
+        # ── [FACTBOX] / [/FACTBOX] ──
+        if stripped == '[FACTBOX]':
+            close_list()
+            in_factbox = True
+            html_lines.append('<div class="factbox"><h3>Quick Facts</h3>')
             continue
-        elif stripped.startswith('### '):
-            if in_list:
-                html_lines.append('</ul>')
-                in_list = False
-            html_lines.append(f'<h3>{stripped[4:]}</h3>')
+        if stripped == '[/FACTBOX]':
+            in_factbox = False
+            html_lines.append('</div>')
+            continue
+        if in_factbox:
+            if ':' in stripped:
+                key, _, val = stripped.partition(':')
+                html_lines.append(f'<div class="fact-row"><span class="fact-key">{bold(key.strip())}</span><span class="fact-val">{bold(val.strip())}</span></div>')
             continue
 
-        # Table rows
+        # ── [CALLOUT] / [/CALLOUT] ──
+        if stripped == '[CALLOUT]':
+            close_list()
+            in_callout = True
+            html_lines.append('<div class="callout">')
+            continue
+        if stripped == '[/CALLOUT]':
+            in_callout = False
+            html_lines.append('</div>')
+            continue
+        # Inline callout: [CALLOUT] text [/CALLOUT]
+        callout_inline = re.match(r'^\[CALLOUT\]\s*(.+?)\s*\[/CALLOUT\]$', stripped)
+        if callout_inline:
+            close_list()
+            html_lines.append(f'<div class="callout"><p>{bold(callout_inline.group(1))}</p></div>')
+            continue
+        if in_callout:
+            if stripped.startswith('Misconception:') or stripped.startswith('Reality:'):
+                key, _, val = stripped.partition(':')
+                css_class = 'misconception' if key.strip() == 'Misconception' else 'reality'
+                html_lines.append(f'<p class="{css_class}"><strong>{key.strip()}:</strong> {bold(val.strip())}</p>')
+            else:
+                html_lines.append(f'<p>{bold(stripped)}</p>')
+            continue
+
+        # ── [SECTION] Name [/SECTION] ──
+        section_match = re.match(r'^\[SECTION\]\s*(.+?)\s*\[/SECTION\]$', stripped)
+        if section_match:
+            close_list()
+            html_lines.append(f'<h2>{bold(section_match.group(1))}</h2>')
+            continue
+
+        # ── [TABLE] / [/TABLE] ──
+        if stripped == '[TABLE]':
+            close_list()
+            in_table = True
+            table_header_done = False
+            html_lines.append('<div class="table-wrapper"><table>')
+            continue
+        if stripped == '[/TABLE]':
+            if table_header_done:
+                html_lines.append('</tbody>')
+            html_lines.append('</table></div>')
+            in_table = False
+            table_header_done = False
+            continue
+
+        # ── [RATING] label: X/5 ──
+        rating_match = re.match(r'^\[RATING\]\s*(.+?):\s*(\d)/5', stripped)
+        if rating_match:
+            close_list()
+            label = rating_match.group(1)
+            score = int(rating_match.group(2))
+            filled = '●' * score + '○' * (5 - score)
+            html_lines.append(f'<div class="rating"><span class="rating-label">{bold(label)}</span><span class="rating-dots">{filled}</span><span class="rating-score">{score}/5</span></div>')
+            continue
+
+        # ── Table rows (pipe-delimited, inside [TABLE] or bare) ──
         if stripped.startswith('|') and stripped.endswith('|'):
-            # Skip separator rows like | --- | --- | --- |
             if re.match(r'^[\|\s\-:]+$', stripped):
                 continue
-
-            cells = [cell.strip() for cell in stripped.split('|')[1:-1]]
-
+            cells = [c.strip() for c in stripped.strip('|').split('|')]
             if not in_table:
-                html_lines.append('<table class="comparison-table"><thead><tr>')
-                for cell in cells:
-                    cell_html = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', cell)
-                    html_lines.append(f'<th>{cell_html}</th>')
-                html_lines.append('</tr></thead><tbody>')
+                close_list()
                 in_table = True
+                table_header_done = False
+                html_lines.append('<div class="table-wrapper"><table>')
+            if not table_header_done:
+                html_lines.append('<thead><tr>' + ''.join(f'<th>{bold(c)}</th>' for c in cells) + '</tr></thead><tbody>')
                 table_header_done = True
             else:
-                html_lines.append('<tr>')
-                for cell in cells:
-                    cell_html = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', cell)
-                    html_lines.append(f'<td>{cell_html}</td>')
-                html_lines.append('</tr>')
+                html_lines.append('<tr>' + ''.join(f'<td>{bold(c)}</td>' for c in cells) + '</tr>')
             continue
 
-        # Close table if we hit non-table content
+        # Close bare table if non-table line
         if in_table and not stripped.startswith('|'):
-            html_lines.append('</tbody></table>')
+            if table_header_done:
+                html_lines.append('</tbody>')
+            html_lines.append('</table></div>')
             in_table = False
             table_header_done = False
 
-        # List items (*, -, •)
-        if stripped.startswith('* ') or stripped.startswith('- ') or stripped.startswith('• '):
+        # ── Markdown headers ──
+        if stripped.startswith('## '):
+            close_list()
+            html_lines.append(f'<h2>{bold(stripped[3:])}</h2>')
+            continue
+        if stripped.startswith('### '):
+            close_list()
+            html_lines.append(f'<h3>{bold(stripped[4:])}</h3>')
+            continue
+
+        # ── Bold subheader: **Label:** (standalone) ──
+        bold_header = re.match(r'^\*\*(.+?)\*\*:?\s*$', stripped)
+        if bold_header:
+            close_list()
+            html_lines.append(f'<h3>{bold_header.group(1)}</h3>')
+            continue
+
+        # ── Bold label with inline content: **Label:** text ──
+        bold_inline = re.match(r'^\*\*(.+?)\*\*:\s+(.+)', stripped)
+        if bold_inline:
+            close_list()
+            html_lines.append(f'<p><strong>{bold_inline.group(1)}:</strong> {bold(bold_inline.group(2))}</p>')
+            continue
+
+        # ── Bullet points ──
+        if re.match(r'^[-*•]\s+', stripped):
             if not in_list:
+                close_list()
                 html_lines.append('<ul>')
                 in_list = True
-            item_text = stripped[2:].strip()
-            # Convert bold markdown
-            item_text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', item_text)
-            html_lines.append(f'  <li>{item_text}</li>')
+            item = re.sub(r'^[-*•]\s+', '', stripped)
+            html_lines.append(f'<li>{bold(item)}</li>')
             continue
 
-        # Close list if we hit non-list content
-        if in_list and not (stripped.startswith('* ') or stripped.startswith('- ') or stripped.startswith('• ') or stripped.startswith('  ')):
-            html_lines.append('</ul>')
-            in_list = False
-
-        # Indented continuation of list item
-        if in_list and stripped.startswith('  '):
-            # This is a continuation, append to previous line
+        # ── Numbered list ──
+        ol_match = re.match(r'^(\d+)\.\s+(.+)', stripped)
+        if ol_match:
+            if not in_ol:
+                close_list()
+                html_lines.append('<ol>')
+                in_ol = True
+            html_lines.append(f'<li>{bold(ol_match.group(2))}</li>')
             continue
 
-        # Regular paragraph
-        para_text = stripped
-        # Convert bold markdown
-        para_text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', para_text)
-        html_lines.append(f'<p>{para_text}</p>')
+        # ── Close list for non-list content ──
+        close_list()
+
+        # ── Indented continuation (skip) ──
+        if line.startswith('  ') and not stripped.startswith('<'):
+            continue
+
+        # ── Regular paragraph ──
+        html_lines.append(f'<p>{bold(stripped)}</p>')
 
     # Close any open tags
-    if in_list:
-        html_lines.append('</ul>')
+    close_list()
     if in_table:
-        html_lines.append('</tbody></table>')
+        if table_header_done:
+            html_lines.append('</tbody>')
+        html_lines.append('</table></div>')
+    if in_factbox:
+        html_lines.append('</div>')
+    if in_callout:
+        html_lines.append('</div>')
 
     return '\n'.join(html_lines)
 
@@ -2368,7 +2465,7 @@ def format_as_html(topic, content, page_title=None, domain_slug=None,
                    canonical_path=None, all_concepts=None):
     """Format content as standalone HTML with embedded calculator if applicable."""
     from templates import (
-        SHARED_CSS, ARTICLE_CSS, RELATED_CSS,
+        SHARED_CSS, ARTICLE_CSS, RELATED_CSS, DOMAIN_META,
         generate_header_html, generate_footer_html,
         generate_breadcrumb_html, generate_sidebar_html,
         generate_article_jsonld, generate_og_tags,
@@ -2453,7 +2550,7 @@ def format_as_html(topic, content, page_title=None, domain_slug=None,
 
 {breadcrumb_html}
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: {DOMAIN_META.get(domain_slug, {}).get('color', '#1B4D8E')}">
     <main class="article-main">
         <article>
             <h1>{page_title}</h1>

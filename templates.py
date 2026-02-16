@@ -385,7 +385,7 @@ ARTICLE_CSS = """
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -418,11 +418,12 @@ ARTICLE_CSS = """
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -433,6 +434,28 @@ ARTICLE_CSS = """
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -544,6 +567,7 @@ def generate_footer_html():
             <a href="/privacy.html">Privacy Policy</a>
             <a href="/terms.html">Terms of Use</a>
             <a href="/sitemap.xml">Sitemap</a>
+            <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
     <div class="footer-bottom">
@@ -637,6 +661,11 @@ def generate_article_jsonld(page_title, meta_desc, canonical_url,
             "@type": "Organization",
             "name": "360Library",
             "url": "https://360library.com",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "mrgovernment02@gmail.com",
+                "contactType": "customer support",
+            },
         },
         "mainEntityOfPage": {"@type": "WebPage", "@id": full_url},
         "about": {
@@ -668,6 +697,11 @@ def generate_homepage_jsonld(total_pages, total_concepts, total_domains):
             "@type": "Organization",
             "name": "360Library",
             "url": "https://360library.com",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "mrgovernment02@gmail.com",
+                "contactType": "customer support",
+            },
         },
     }
     return f'<script type="application/ld+json">{_json.dumps(website, ensure_ascii=False)}</script>'
