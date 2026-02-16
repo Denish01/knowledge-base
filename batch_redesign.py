@@ -289,19 +289,29 @@ def _parse_flat_filename(stem):
     """Parse a flat-structure filename into (concept, angle).
 
     Examples:
-        'arthritis' -> ('arthritis', 'what-is')
-        'arthritis-vs' -> ('arthritis', 'vs')
+        'arthritis'                             -> ('arthritis', 'what-is')
+        'arthritis-vs'                          -> ('arthritis', 'vs')
         'common-misconceptions-about-arthritis' -> ('arthritis', 'common-misconceptions-about')
-        'what-affects-arthritis' -> ('arthritis', 'what-affects-it')
+        'examples-of-arthritis'                 -> ('arthritis', 'example-of')
+        'types-of-arthritis'                    -> ('arthritis', 'types-of')
+        'how-does-arthritis-work'               -> ('arthritis', 'how-it-works')
+        'what-affects-arthritis'                -> ('arthritis', 'what-affects-it')
+        'what-arthritis-depends-on'             -> ('arthritis', 'what-it-depends-on')
     """
-    # Check for angle prefixes
+    # "how-does-{concept}-work"
+    if stem.startswith("how-does-") and stem.endswith("-work"):
+        return stem[len("how-does-"):-len("-work")], "how-it-works"
+
+    # "what-{concept}-depends-on"
+    if stem.startswith("what-") and stem.endswith("-depends-on"):
+        return stem[len("what-"):-len("-depends-on")], "what-it-depends-on"
+
+    # Simple prefix patterns (longest prefix first to avoid false matches)
     angle_prefixes = [
         ("common-misconceptions-about-", "common-misconceptions-about"),
-        ("example-of-", "example-of"),
+        ("examples-of-", "example-of"),
         ("types-of-", "types-of"),
-        ("how-", "how-it-works"),
         ("what-affects-", "what-affects-it"),
-        ("what-it-depends-on-", "what-it-depends-on"),
     ]
 
     for prefix, angle in angle_prefixes:
@@ -310,7 +320,7 @@ def _parse_flat_filename(stem):
             if concept:
                 return concept, angle
 
-    # Check for angle suffixes
+    # "{concept}-vs"
     if stem.endswith("-vs"):
         return stem[:-3], "vs"
 
