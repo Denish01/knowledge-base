@@ -8,8 +8,9 @@ from pathlib import Path
 from datetime import datetime
 from urllib.parse import quote
 from templates import (
-    DOMAIN_META, SHARED_CSS, HOMEPAGE_CSS,
+    DOMAIN_META, SHARED_CSS, HOMEPAGE_CSS, FLAT_DOMAINS,
     generate_header_html, generate_footer_html,
+    flat_angle_to_filename,
 )
 
 # Configuration
@@ -164,21 +165,8 @@ def generate_sitemap(pages, base_url):
 
 
 def _flat_angle_to_filename(concept, angle):
-    """Convert (concept, angle_id) back to the flat filename stem.
-
-    Inverse of _parse_flat_filename().
-    """
-    mapping = {
-        "what-is": concept,
-        "vs": f"{concept}-vs",
-        "common-misconceptions-about": f"common-misconceptions-about-{concept}",
-        "example-of": f"examples-of-{concept}",
-        "types-of": f"types-of-{concept}",
-        "how-it-works": f"how-does-{concept}-work",
-        "what-affects-it": f"what-affects-{concept}",
-        "what-it-depends-on": f"what-{concept}-depends-on",
-    }
-    return mapping.get(angle, f"{concept}-{angle}")
+    """Alias for shared flat_angle_to_filename."""
+    return flat_angle_to_filename(concept, angle)
 
 
 def generate_index_page(pages_by_domain, flat_domains=None):

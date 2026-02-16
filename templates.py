@@ -46,6 +46,38 @@ DOMAIN_META = {
     },
 }
 
+# Domains that use flat file layout (files directly in domain folder, not in concept subdirs)
+FLAT_DOMAINS = {"health"}
+
+
+def flat_angle_to_filename(concept, angle):
+    """Convert (concept, angle_id) to the flat filename stem.
+
+    E.g. ('oncology', 'types-of') -> 'types-of-oncology'
+         ('oncology', 'what-is') -> 'oncology'
+         ('oncology', 'vs') -> 'oncology-vs'
+    """
+    mapping = {
+        "what-is": concept,
+        "vs": f"{concept}-vs",
+        "common-misconceptions-about": f"common-misconceptions-about-{concept}",
+        "example-of": f"examples-of-{concept}",
+        "types-of": f"types-of-{concept}",
+        "how-it-works": f"how-does-{concept}-work",
+        "what-affects-it": f"what-affects-{concept}",
+        "what-it-depends-on": f"what-{concept}-depends-on",
+    }
+    return mapping.get(angle, f"{concept}-{angle}")
+
+
+def angle_url(domain_slug, concept_slug, angle):
+    """Build the correct URL for an angle page, handling flat vs structured domains."""
+    if domain_slug in FLAT_DOMAINS:
+        filename = flat_angle_to_filename(concept_slug, angle)
+        return f"/{domain_slug}/{filename}.html"
+    return f"/{domain_slug}/{concept_slug}/{angle}.html"
+
+
 ANGLE_DISPLAY = {
     "what-is": "What Is",
     "how-it-works": "How It Works",
@@ -524,9 +556,10 @@ def generate_breadcrumb_html(domain_slug, concept_slug, angle_id):
     domain_name = DOMAIN_META.get(domain_slug, {}).get("name", domain_slug.replace("_", " ").title())
     concept_display = concept_slug.replace("-", " ").title()
     angle_display = ANGLE_DISPLAY.get(angle_id, angle_id.replace("-", " ").title())
+    concept_href = angle_url(domain_slug, concept_slug, "what-is")
 
     return f"""<nav class="breadcrumbs" aria-label="Breadcrumb">
-    <a href="/">Home</a><span>&rsaquo;</span><a href="/{domain_slug}/">{domain_name}</a><span>&rsaquo;</span><a href="/{domain_slug}/{concept_slug}/what-is.html">{concept_display}</a><span>&rsaquo;</span>{angle_display}
+    <a href="/">Home</a><span>&rsaquo;</span><a href="/#{domain_slug}">{domain_name}</a><span>&rsaquo;</span><a href="{concept_href}">{concept_display}</a><span>&rsaquo;</span>{angle_display}
 </nav>"""
 
 
@@ -552,7 +585,8 @@ def generate_sidebar_html(domain_slug, concept_slug, current_angle, all_angles):
     for angle in ordered:
         display = ANGLE_DISPLAY.get(angle, angle.replace("-", " ").title())
         active_cls = ' class="active"' if angle == current_angle else ""
-        links += f'            <li><a href="/{domain_slug}/{concept_slug}/{angle}.html"{active_cls}>{display}</a></li>\n'
+        href = angle_url(domain_slug, concept_slug, angle)
+        links += f'            <li><a href="{href}"{active_cls}>{display}</a></li>\n'
 
     return f"""<aside class="article-sidebar">
     <div class="sidebar-card">
