@@ -11,6 +11,7 @@ from templates import (
     DOMAIN_META, SHARED_CSS, HOMEPAGE_CSS, FLAT_DOMAINS,
     generate_header_html, generate_footer_html,
     flat_angle_to_filename,
+    generate_homepage_jsonld, generate_og_tags,
 )
 
 # Configuration
@@ -239,15 +240,20 @@ def generate_index_page(pages_by_domain, flat_domains=None):
 
     header = generate_header_html()
     footer = generate_footer_html()
+    homepage_desc = "360Library — free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles."
+    jsonld = generate_homepage_jsonld(total_pages, total_concepts, total_domains)
+    og_tags = generate_og_tags("360Library — Learn Any Concept, Simply Explained", homepage_desc, "https://360library.com/", og_type="website")
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="360Library — free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles.">
+    <meta name="description" content="{homepage_desc}">
     <link rel="canonical" href="https://360library.com/">
+    {og_tags}
     <title>360Library — Learn Any Concept, Simply Explained</title>
+    {jsonld}
     <style>
 {SHARED_CSS}
 {HOMEPAGE_CSS}

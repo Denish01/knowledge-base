@@ -19,9 +19,11 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from knowledge_pages import markdown_to_html, get_calculator_html, get_page_title, slugify
 from templates import (
-    SHARED_CSS, ARTICLE_CSS, ANGLE_DISPLAY,
+    SHARED_CSS, ARTICLE_CSS, RELATED_CSS, ANGLE_DISPLAY,
     generate_header_html, generate_footer_html,
     generate_breadcrumb_html, generate_sidebar_html,
+    generate_article_jsonld, generate_og_tags,
+    generate_related_concepts_html,
 )
 
 OUTPUT_DIR = Path(__file__).parent / "generated_pages"
@@ -72,17 +74,25 @@ def extract_title_from_md(md_path):
 
 def render_article_html(page_title, meta_desc, html_content, calculator_html,
                         domain_slug, concept_slug, angle_id, all_angles,
-                        canonical_path=None):
+                        canonical_path=None, all_concepts=None):
     """Render a full article page with the new design."""
     header = generate_header_html(active_domain=domain_slug)
     footer = generate_footer_html()
 
     breadcrumb = ""
     sidebar = ""
+    jsonld = ""
+    og_tags = ""
+    related = ""
     if domain_slug and concept_slug and angle_id:
         breadcrumb = generate_breadcrumb_html(domain_slug, concept_slug, angle_id)
+        jsonld = generate_article_jsonld(page_title, meta_desc, canonical_path or "", domain_slug, concept_slug, angle_id)
     if domain_slug and concept_slug and angle_id and all_angles:
         sidebar = generate_sidebar_html(domain_slug, concept_slug, angle_id, all_angles)
+    if canonical_path:
+        og_tags = generate_og_tags(page_title, meta_desc, canonical_path)
+    if domain_slug and concept_slug and all_concepts:
+        related = generate_related_concepts_html(domain_slug, concept_slug, all_concepts)
 
     canonical_tag = ""
     if canonical_path:
@@ -94,11 +104,14 @@ def render_article_html(page_title, meta_desc, html_content, calculator_html,
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{meta_desc}">{canonical_tag}
+    {og_tags}
     <title>{page_title} - 360Library</title>
     <style>
 {SHARED_CSS}
 {ARTICLE_CSS}
+{RELATED_CSS}
     </style>
+    {jsonld}
 </head>
 <body>
 {header}
@@ -113,6 +126,8 @@ def render_article_html(page_title, meta_desc, html_content, calculator_html,
             {calculator_html}
 
             {html_content}
+
+            {related}
         </article>
     </main>
 
@@ -146,11 +161,14 @@ def process_structured_domains():
         domain_slug = domain_dir.name
 
         # Check if this is a structured domain (has concept subdirectories)
-        concept_dirs = [d for d in domain_dir.iterdir() if d.is_dir()]
+        concept_dirs = sorted([d for d in domain_dir.iterdir() if d.is_dir()])
         if not concept_dirs:
             continue  # Skip flat domains, handled separately
 
-        for concept_dir in sorted(concept_dirs):
+        # Collect all concept slugs for cross-linking
+        all_concepts = [d.name for d in concept_dirs]
+
+        for concept_dir in concept_dirs:
             concept_slug = concept_dir.name
 
             # Collect all angle stems for this concept
@@ -186,6 +204,7 @@ def process_structured_domains():
                         page_title, meta_desc, html_content, calculator_html,
                         domain_slug, concept_slug, angle_id, all_angles,
                         canonical_path=canonical,
+                        all_concepts=all_concepts,
                     )
 
                     # Write back
@@ -247,6 +266,9 @@ def process_flat_domains():
                 concept_map[concept] = {}
             concept_map[concept][angle] = html_file
 
+        # Collect all concept slugs for cross-linking
+        all_concepts = sorted(concept_map.keys())
+
         # Now re-render each file with its concept group
         for concept, angle_files in sorted(concept_map.items()):
             all_angles = list(angle_files.keys())
@@ -270,6 +292,7 @@ def process_flat_domains():
                         page_title, meta_desc, html_content, calculator_html,
                         domain_slug, concept, angle_id, all_angles,
                         canonical_path=canonical,
+                        all_concepts=all_concepts,
                     )
 
                     html_file.write_text(new_html, encoding="utf-8")

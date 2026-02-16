@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A clear, simple explanation of mental health - definition, key concepts, examples, and common misconceptions.">
+    <link rel="canonical" href="https://360library.com/health/mental-health/vs.html">
+    <meta property="og:title" content="Mental Health Compared">
+    <meta property="og:description" content="A clear, simple explanation of mental health - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:url" content="https://360library.com/health/mental-health/vs.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="360Library">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mental Health Compared">
+    <meta name="twitter:description" content="A clear, simple explanation of mental health - definition, key concepts, examples, and common misconceptions.">
+    <title>Mental Health Compared - 360Library</title>
+    <style>
+
+/* === Reset & Base === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #1F2937;
+    background: #FAFBFC;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: #1B4D8E; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* === Header === */
+.site-header {
+    background: #1B4D8E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 60px;
+}
+.site-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+.site-logo:hover { text-decoration: none; opacity: 0.9; }
+.site-logo span { color: #D97706; }
+
+/* Domain nav */
+.domain-nav { display: flex; gap: 4px; list-style: none; }
+.domain-nav a {
+    color: rgba(255,255,255,0.85);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.domain-nav a:hover { background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; }
+.domain-nav a.active { background: rgba(255,255,255,0.2); color: #fff; }
+
+/* Mobile hamburger (pure CSS) */
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.menu-toggle span, .menu-toggle span::before, .menu-toggle span::after {
+    display: block; width: 22px; height: 2px; background: #fff; position: relative; transition: 0.3s;
+}
+.menu-toggle span::before, .menu-toggle span::after { content: ''; position: absolute; left: 0; }
+.menu-toggle span::before { top: -7px; }
+.menu-toggle span::after { top: 7px; }
+#mobile-menu-state { display: none; }
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .domain-nav {
+        display: none; flex-direction: column; position: absolute;
+        top: 60px; left: 0; right: 0; background: #1B4D8E;
+        padding: 12px; gap: 2px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .domain-nav a { padding: 12px 16px; border-radius: 8px; }
+    #mobile-menu-state:checked ~ .header-inner .domain-nav { display: flex; }
+}
+
+/* === Footer === */
+.site-footer {
+    background: #111827;
+    color: #9CA3AF;
+    margin-top: 80px;
+    padding: 48px 24px 32px;
+}
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+.footer-brand .site-logo { font-size: 18px; display: inline-block; margin-bottom: 12px; }
+.footer-brand p { font-size: 14px; line-height: 1.6; max-width: 320px; }
+.footer-col h4 { color: #fff; font-size: 14px; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+.footer-col a { display: block; color: #9CA3AF; font-size: 14px; padding: 4px 0; transition: color 0.2s; text-decoration: none; }
+.footer-col a:hover { color: #fff; text-decoration: none; }
+.footer-bottom {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid #374151;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* === Breadcrumbs === */
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #6B7280;
+}
+.breadcrumbs a { color: #1B4D8E; }
+.breadcrumbs span { margin: 0 8px; color: #D1D5DB; }
+
+
+/* === Article Layout === */
+.article-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Main content */
+.article-main { min-width: 0; }
+.article-main article {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+}
+.article-main h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 24px;
+    line-height: 1.3;
+}
+.article-main h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #E8F0FE;
+}
+.article-main h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #374151;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+.article-main p {
+    margin-bottom: 16px;
+    color: #374151;
+}
+.article-main ul {
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+.article-main li {
+    margin-bottom: 8px;
+    color: #374151;
+}
+.article-main table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.article-main th, .article-main td {
+    border: 1px solid #E5E7EB;
+    padding: 12px 16px;
+    text-align: left;
+}
+.article-main th {
+    background: #F9FAFB;
+    font-weight: 600;
+    color: #1F2937;
+}
+.article-main tr:nth-child(even) { background: #F9FAFB; }
+
+/* Calculator styles (preserve existing) */
+.article-main .calculator,
+.article-main .calc-container {
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 24px;
+    margin: 24px 0;
+}
+
+/* === Sidebar === */
+.article-sidebar {
+    position: sticky;
+    top: 76px;
+}
+.sidebar-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+}
+.sidebar-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #E8F0FE;
+}
+.sidebar-card .angle-nav { list-style: none; }
+.sidebar-card .angle-nav li { margin-bottom: 4px; }
+.sidebar-card .angle-nav a {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4B5563;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+}
+.sidebar-card .angle-nav a:hover {
+    background: #F3F4F6;
+    color: #1B4D8E;
+    text-decoration: none;
+}
+.sidebar-card .angle-nav a.active {
+    background: #E8F0FE;
+    color: #1B4D8E;
+    font-weight: 600;
+}
+
+/* Back to domain link */
+.sidebar-card .back-link {
+    display: block;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #E5E7EB;
+    font-size: 13px;
+    color: #6B7280;
+}
+.sidebar-card .back-link:hover { color: #1B4D8E; text-decoration: none; }
+
+@media (max-width: 900px) {
+    .article-wrapper {
+        grid-template-columns: 1fr;
+        padding: 16px 16px 0;
+    }
+    .article-sidebar {
+        position: static;
+        order: -1;
+    }
+    .article-main article { padding: 24px; }
+    .article-main h1 { font-size: 24px; }
+}
+
+
+/* === Related Concepts === */
+.related-concepts {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid #E8F0FE;
+}
+.related-concepts h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+}
+.related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.related-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #F3F4F6;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1B4D8E;
+    font-weight: 500;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+.related-link:hover {
+    background: #E8F0FE;
+    text-decoration: none;
+}
+
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Mental Health", "item": "https://360library.com/health/mental-health/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Comparison"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Mental Health Compared", "description": "A clear, simple explanation of mental health - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/mental-health/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/mental-health/vs.html"}, "about": {"@type": "Thing", "name": "Mental Health"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+</head>
+<body>
+<input type="checkbox" id="mobile-menu-state" aria-hidden="true">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/" class="site-logo">360 <span>Library</span></a>
+        <label for="mobile-menu-state" class="menu-toggle" aria-label="Toggle menu"><span></span></label>
+        <ul class="domain-nav">
+        <li><a href="/#economics">Economics</a></li>
+        <li><a href="/#finance">Finance</a></li>
+        <li><a href="/#health" class="active">Health</a></li>
+        <li><a href="/#life_obligations">Life Obligations</a></li>
+        <li><a href="/#math">Math</a></li>
+        <li><a href="/#science">Science</a></li>
+        </ul>
+    </div>
+</header>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/mental-health/what-is.html">Mental Health</a><span>&rsaquo;</span>Comparison
+</nav>
+
+<div class="article-wrapper">
+    <main class="article-main">
+        <article>
+            <h1>Mental Health Compared</h1>
+
+            
+
+            <p>Mental health is a broad term that refers to the overall well-being of an individual's emotional, psychological, and social state.</p>
+
+<p>Understanding mental health is essential to maintaining a healthy and balanced life. It encompasses various aspects, including emotional, psychological, and social well-being. Mental health affects how people think, feel, and behave, and it can influence their relationships, daily activities, and overall quality of life. A person's mental health can be influenced by a combination of genetic, environmental, and social factors, and it can change over time due to various experiences and circumstances.</p>
+
+<p>Mental health is not just the absence of mental illness, but rather a state of well-being where an individual can cope with the stresses of life, work productively, and contribute to their community. It is a dynamic state that requires effort and attention to maintain, and it can be influenced by various factors such as lifestyle, relationships, and life experiences. Maintaining good mental health is crucial for overall health and well-being, as it can affect physical health, relationships, and daily functioning.</p>
+
+<p>Good mental health is essential for individuals to reach their full potential, and it can be achieved through a combination of self-care, social support, and professional help when needed. Self-care activities such as exercise, meditation, and spending time in nature can help reduce stress and promote relaxation. Social support from family, friends, and community can also play a crucial role in maintaining good mental health, as it can provide a sense of belonging and connection. Professional help from mental health professionals, such as therapists and counselors, can also provide individuals with the tools and support they need to manage their mental health.</p>
+
+<p>The key components of mental health include:</p>
+<ul>
+  <li>Emotional well-being, which refers to the ability to recognize and manage emotions in a healthy way</li>
+  <li>Psychological well-being, which refers to the ability to think, learn, and problem-solve effectively</li>
+  <li>Social well-being, which refers to the ability to form and maintain healthy relationships with others</li>
+  <li>Resilience, which refers to the ability to cope with stress and adversity</li>
+  <li>Self-awareness, which refers to the ability to recognize and understand one's own thoughts, feelings, and behaviors</li>
+  <li>Coping skills, which refer to the strategies and techniques used to manage stress and difficult emotions</li>
+</ul>
+
+<p>However, there are common misconceptions about mental health that can be misleading and stigmatizing. Some of these misconceptions include:</p>
+<ul>
+  <li>The idea that mental illness is a sign of weakness, when in fact it is a medical condition that requires treatment and support</li>
+  <li>The notion that people with mental illness are violent or unpredictable, when in fact the vast majority of people with mental illness are not violent and are more likely to be victims of crime than perpetrators</li>
+  <li>The belief that mental health problems are rare, when in fact they are common and can affect anyone, regardless of age, background, or socioeconomic status</li>
+  <li>The idea that mental health problems can be overcome through willpower alone, when in fact professional help and support are often necessary to manage and recover from mental health conditions</li>
+</ul>
+
+<p>A real-world example of the importance of mental health can be seen in the life of a student who is struggling to balance academic responsibilities with personal relationships and extracurricular activities. As the student becomes increasingly overwhelmed and stressed, they may begin to experience anxiety, depression, or other mental health concerns. By recognizing the importance of mental health and seeking support from friends, family, or mental health professionals, the student can develop healthy coping strategies and learn to manage their stress and emotions in a positive way.</p>
+
+<p>In summary, mental health refers to the overall well-being of an individual's emotional, psychological, and social state, and it is essential for maintaining a healthy and balanced life.</p>
+
+            <div class="related-concepts">
+    <h3>Related Concepts</h3>
+    <div class="related-grid">
+        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
+        <a href="/health/immunology/what-is.html" class="related-link">Immunology</a>
+        <a href="/health/infectious-diseases/what-is.html" class="related-link">Infectious Diseases</a>
+        <a href="/health/mental-illness/what-is.html" class="related-link">Mental Illness</a>
+        <a href="/health/nervous-system/what-is.html" class="related-link">Nervous System</a>
+        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
+    </div>
+</div>
+        </article>
+    </main>
+
+    <aside class="article-sidebar">
+    <div class="sidebar-card">
+        <h3>Mental Health</h3>
+        <ul class="angle-nav">
+            <li><a href="/health/mental-health/what-is.html">What Is</a></li>
+            <li><a href="/health/mental-health/how-it-works.html">How It Works</a></li>
+            <li><a href="/health/mental-health/example-of.html">Example</a></li>
+            <li><a href="/health/mental-health/types-of.html">Types</a></li>
+            <li><a href="/health/mental-health/common-misconceptions-about.html">Misconceptions</a></li>
+            <li><a href="/health/mental-health/what-affects-it.html">What Affects It</a></li>
+            <li><a href="/health/mental-health/what-it-depends-on.html">What It Depends On</a></li>
+            <li><a href="/health/mental-health/vs.html" class="active">Comparison</a></li>
+        </ul>
+        <a href="/#health" class="back-link">&larr; All Health concepts</a>
+    </div>
+</aside>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="/" class="site-logo">360 <span>Library</span></a>
+            <p>Free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Domains</h4>
+            <a href="/#economics">Economics</a>
+            <a href="/#finance">Finance</a>
+            <a href="/#health">Health</a>
+            <a href="/#life_obligations">Life Obligations</a>
+            <a href="/#math">Math</a>
+            <a href="/#science">Science</a>
+        </div>
+        <div class="footer-col">
+            <h4>Info</h4>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Use</a>
+            <a href="/sitemap.xml">Sitemap</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 360Library.com &mdash; All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

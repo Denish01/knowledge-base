@@ -2365,12 +2365,14 @@ def markdown_to_html(content):
 
 def format_as_html(topic, content, page_title=None, domain_slug=None,
                    concept_slug=None, angle_id=None, all_angles=None,
-                   canonical_path=None):
+                   canonical_path=None, all_concepts=None):
     """Format content as standalone HTML with embedded calculator if applicable."""
     from templates import (
-        SHARED_CSS, ARTICLE_CSS,
+        SHARED_CSS, ARTICLE_CSS, RELATED_CSS,
         generate_header_html, generate_footer_html,
         generate_breadcrumb_html, generate_sidebar_html,
+        generate_article_jsonld, generate_og_tags,
+        generate_related_concepts_html,
     )
 
     slug = slugify(topic)
@@ -2417,10 +2419,18 @@ def format_as_html(topic, content, page_title=None, domain_slug=None,
 
     breadcrumb_html = ""
     sidebar_html = ""
+    jsonld_html = ""
+    og_html = ""
+    related_html = ""
     if domain_slug and concept_slug and angle_id:
         breadcrumb_html = generate_breadcrumb_html(domain_slug, concept_slug, angle_id)
+        jsonld_html = generate_article_jsonld(page_title, meta_desc, canonical_path or "", domain_slug, concept_slug, angle_id)
     if domain_slug and concept_slug and angle_id and all_angles:
         sidebar_html = generate_sidebar_html(domain_slug, concept_slug, angle_id, all_angles)
+    if canonical_path:
+        og_html = generate_og_tags(page_title, meta_desc, canonical_path)
+    if domain_slug and concept_slug and all_concepts:
+        related_html = generate_related_concepts_html(domain_slug, concept_slug, all_concepts)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -2429,11 +2439,14 @@ def format_as_html(topic, content, page_title=None, domain_slug=None,
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{meta_desc}">
     <link rel="canonical" href="https://360library.com/{canonical_path}">
+    {og_html}
     <title>{page_title} - 360Library</title>
     <style>
 {SHARED_CSS}
 {ARTICLE_CSS}
+{RELATED_CSS}
     </style>
+    {jsonld_html}
 </head>
 <body>
 {header_html}
@@ -2448,6 +2461,8 @@ def format_as_html(topic, content, page_title=None, domain_slug=None,
             {calculator_html}
 
             {html_content}
+
+            {related_html}
         </article>
     </main>
 

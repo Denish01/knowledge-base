@@ -47,7 +47,8 @@ DOMAIN_META = {
 }
 
 # Domains that use flat file layout (files directly in domain folder, not in concept subdirs)
-FLAT_DOMAINS = {"health"}
+# (Currently none — health was migrated to subdirectories)
+FLAT_DOMAINS = set()
 
 
 def flat_angle_to_filename(concept, angle):
@@ -596,3 +597,177 @@ def generate_sidebar_html(domain_slug, concept_slug, current_angle, all_angles):
         <a href="/#{domain_slug}" class="back-link">&larr; All {domain_name} concepts</a>
     </div>
 </aside>"""
+
+
+# =============================================================================
+# JSON-LD STRUCTURED DATA
+# =============================================================================
+
+import json as _json
+
+def generate_article_jsonld(page_title, meta_desc, canonical_url,
+                            domain_slug, concept_slug, angle_id):
+    """Generate JSON-LD for Article + BreadcrumbList schema."""
+    domain_name = DOMAIN_META.get(domain_slug, {}).get("name", domain_slug.replace("_", " ").title())
+    concept_display = concept_slug.replace("-", " ").title()
+    angle_display = ANGLE_DISPLAY.get(angle_id, angle_id.replace("-", " ").title())
+    full_url = f"https://360library.com/{canonical_url}" if not canonical_url.startswith("http") else canonical_url
+
+    # Breadcrumb concept link
+    concept_url = f"https://360library.com{angle_url(domain_slug, concept_slug, 'what-is')}"
+
+    breadcrumb = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"},
+            {"@type": "ListItem", "position": 2, "name": domain_name, "item": f"https://360library.com/#{domain_slug}"},
+            {"@type": "ListItem", "position": 3, "name": concept_display, "item": concept_url},
+            {"@type": "ListItem", "position": 4, "name": angle_display},
+        ]
+    }
+
+    article = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": page_title,
+        "description": meta_desc,
+        "url": full_url,
+        "publisher": {
+            "@type": "Organization",
+            "name": "360Library",
+            "url": "https://360library.com",
+        },
+        "mainEntityOfPage": {"@type": "WebPage", "@id": full_url},
+        "about": {
+            "@type": "Thing",
+            "name": concept_display,
+        },
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "360Library",
+            "url": "https://360library.com",
+        },
+    }
+
+    bc_json = _json.dumps(breadcrumb, ensure_ascii=False)
+    art_json = _json.dumps(article, ensure_ascii=False)
+
+    return f'<script type="application/ld+json">{bc_json}</script>\n<script type="application/ld+json">{art_json}</script>'
+
+
+def generate_homepage_jsonld(total_pages, total_concepts, total_domains):
+    """Generate JSON-LD for WebSite schema on homepage."""
+    website = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "360Library",
+        "url": "https://360library.com",
+        "description": "Free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "360Library",
+            "url": "https://360library.com",
+        },
+    }
+    return f'<script type="application/ld+json">{_json.dumps(website, ensure_ascii=False)}</script>'
+
+
+# =============================================================================
+# OPEN GRAPH / SOCIAL META TAGS
+# =============================================================================
+
+def generate_og_tags(page_title, meta_desc, canonical_url, og_type="article"):
+    """Generate Open Graph and Twitter Card meta tags."""
+    full_url = f"https://360library.com/{canonical_url}" if not canonical_url.startswith("http") else canonical_url
+
+    return f"""<meta property="og:title" content="{page_title}">
+    <meta property="og:description" content="{meta_desc}">
+    <meta property="og:url" content="{full_url}">
+    <meta property="og:type" content="{og_type}">
+    <meta property="og:site_name" content="360Library">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{page_title}">
+    <meta name="twitter:description" content="{meta_desc}">"""
+
+
+# =============================================================================
+# RELATED CONCEPTS
+# =============================================================================
+
+def generate_related_concepts_html(domain_slug, concept_slug, all_concepts, max_related=6):
+    """Generate a 'Related Concepts' section linking to other concepts in the same domain."""
+    if not all_concepts or len(all_concepts) <= 1:
+        return ""
+
+    # Pick concepts adjacent alphabetically + some spread
+    sorted_concepts = sorted(all_concepts)
+    if concept_slug not in sorted_concepts:
+        return ""
+
+    idx = sorted_concepts.index(concept_slug)
+    total = len(sorted_concepts)
+
+    # Pick neighbors: 2 before, 2 after, plus 2 spread evenly
+    candidates = set()
+    for offset in [-2, -1, 1, 2]:
+        ci = (idx + offset) % total
+        if sorted_concepts[ci] != concept_slug:
+            candidates.add(sorted_concepts[ci])
+    # Add some spread
+    for spread in [total // 4, total // 2, 3 * total // 4]:
+        ci = spread % total
+        if sorted_concepts[ci] != concept_slug:
+            candidates.add(sorted_concepts[ci])
+
+    related = sorted(candidates)[:max_related]
+    if not related:
+        return ""
+
+    links = ""
+    for rc in related:
+        display = rc.replace("-", " ").title()
+        href = angle_url(domain_slug, rc, "what-is")
+        links += f'        <a href="{href}" class="related-link">{display}</a>\n'
+
+    return f"""<div class="related-concepts">
+    <h3>Related Concepts</h3>
+    <div class="related-grid">
+{links}    </div>
+</div>"""
+
+
+RELATED_CSS = """
+/* === Related Concepts === */
+.related-concepts {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid #E8F0FE;
+}
+.related-concepts h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+}
+.related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.related-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #F3F4F6;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1B4D8E;
+    font-weight: 500;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+.related-link:hover {
+    background: #E8F0FE;
+    text-decoration: none;
+}
+"""
