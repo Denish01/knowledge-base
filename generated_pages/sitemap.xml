@@ -7,6 +7,18 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://360library.com/privacy.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://360library.com/terms.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://360library.com/economics/absolute-advantage/common-misconceptions-about.html</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>

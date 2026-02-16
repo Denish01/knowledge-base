@@ -151,6 +151,15 @@ def generate_sitemap(pages, base_url):
         '  </url>',
     ]
 
+    # Add legal/static pages
+    for static_page in ["/privacy.html", "/terms.html"]:
+        xml_lines.append("  <url>")
+        xml_lines.append(f"    <loc>{base_url}{static_page}</loc>")
+        xml_lines.append(f"    <lastmod>{today}</lastmod>")
+        xml_lines.append("    <changefreq>yearly</changefreq>")
+        xml_lines.append("    <priority>0.3</priority>")
+        xml_lines.append("  </url>")
+
     for page in pages:
         full_url = base_url.rstrip("/") + quote(page["url"])
         xml_lines.append("  <url>")
