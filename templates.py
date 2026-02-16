@@ -522,6 +522,28 @@ ARTICLE_CSS = """
     .article-main article { padding: 24px; }
     .article-main h1 { font-size: 24px; }
 }
+
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
 """
 
 # =============================================================================
@@ -570,6 +592,9 @@ def generate_footer_html():
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>
@@ -729,32 +754,55 @@ def generate_og_tags(page_title, meta_desc, canonical_url, og_type="article"):
 # RELATED CONCEPTS
 # =============================================================================
 
-def generate_related_concepts_html(domain_slug, concept_slug, all_concepts, max_related=6):
+def generate_related_concepts_html(domain_slug, concept_slug, all_concepts, max_related=6, concept_categories=None):
     """Generate a 'Related Concepts' section linking to other concepts in the same domain."""
     if not all_concepts or len(all_concepts) <= 1:
         return ""
 
-    # Pick concepts adjacent alphabetically + some spread
-    sorted_concepts = sorted(all_concepts)
-    if concept_slug not in sorted_concepts:
-        return ""
+    # Try semantic linking from subcategories first
+    related = []
+    if concept_categories:
+        # Find which subcategory this concept belongs to
+        my_subcategory = None
+        my_siblings = []
+        for subcat, concepts_list in concept_categories.items():
+            slugged = [c.lower().replace(" ", "-") for c in concepts_list]
+            if concept_slug in slugged:
+                my_subcategory = subcat
+                my_siblings = [c.lower().replace(" ", "-") for c in concepts_list if c.lower().replace(" ", "-") != concept_slug]
+                break
+        if my_siblings:
+            # Prefer siblings, limit to max_related
+            related = sorted(my_siblings)[:max_related]
 
-    idx = sorted_concepts.index(concept_slug)
-    total = len(sorted_concepts)
+    # Fall back to alphabetical neighbor algorithm if not enough semantic matches
+    if len(related) < max_related:
+        # Pick concepts adjacent alphabetically + some spread
+        sorted_concepts = sorted(all_concepts)
+        if concept_slug not in sorted_concepts:
+            if not related:
+                return ""
+        else:
+            idx = sorted_concepts.index(concept_slug)
+            total = len(sorted_concepts)
 
-    # Pick neighbors: 2 before, 2 after, plus 2 spread evenly
-    candidates = set()
-    for offset in [-2, -1, 1, 2]:
-        ci = (idx + offset) % total
-        if sorted_concepts[ci] != concept_slug:
-            candidates.add(sorted_concepts[ci])
-    # Add some spread
-    for spread in [total // 4, total // 2, 3 * total // 4]:
-        ci = spread % total
-        if sorted_concepts[ci] != concept_slug:
-            candidates.add(sorted_concepts[ci])
+            # Pick neighbors: 2 before, 2 after, plus 2 spread evenly
+            candidates = set()
+            for offset in [-2, -1, 1, 2]:
+                ci = (idx + offset) % total
+                if sorted_concepts[ci] != concept_slug:
+                    candidates.add(sorted_concepts[ci])
+            # Add some spread
+            for spread in [total // 4, total // 2, 3 * total // 4]:
+                ci = spread % total
+                if sorted_concepts[ci] != concept_slug:
+                    candidates.add(sorted_concepts[ci])
 
-    related = sorted(candidates)[:max_related]
+            # Filter out already-selected related items
+            candidates = candidates - set(related)
+            remaining = max_related - len(related)
+            related.extend(sorted(candidates)[:remaining])
+
     if not related:
         return ""
 

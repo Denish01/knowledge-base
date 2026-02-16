@@ -327,6 +327,7 @@ Structure (follow exactly):
 6. SUMMARY: One sentence that captures the essence
 
 Constraints:
+- Start with a direct one-sentence answer before any sections
 - 600-800 words total
 - Plain language, no jargon without explanation
 - No emojis
@@ -361,6 +362,7 @@ Structure (follow exactly):
 6. SUMMARY: One sentence capturing the core difference
 
 Constraints:
+- Start with a direct one-sentence answer before any sections
 - 600-800 words total
 - Balanced treatment (no bias toward either option)
 - No emojis
@@ -393,6 +395,7 @@ Structure (follow exactly):
 5. SUMMARY: One sentence capturing the classification system
 
 Constraints:
+- Start with a direct one-sentence answer before any sections
 - 600-900 words total
 - Clear hierarchy and organization
 - No emojis
@@ -422,6 +425,7 @@ Structure (follow exactly):
 6. SUMMARY: One sentence capturing the essential mechanism
 
 Constraints:
+- Start with a direct one-sentence answer before any sections
 - 500-700 words total
 - Process-focused language (first, then, next, finally)
 - No emojis
@@ -447,6 +451,7 @@ Structure (follow exactly):
 6. SUMMARY: One sentence on the essential importance
 
 Constraints:
+- Start with a direct one-sentence answer before any sections
 - 400-600 words total
 - Benefit-focused language
 - No emojis
@@ -472,6 +477,7 @@ Structure (follow exactly):
 6. PATTERN: What do all valid examples have in common?
 
 Constraints:
+- Start with a direct one-sentence answer before any sections
 - 500-700 words total
 - Concrete and specific (names, numbers, scenarios)
 - No emojis
@@ -498,6 +504,7 @@ Structure (follow exactly):
 4. SUMMARY: The one thing to remember to avoid confusion
 
 Constraints:
+- Start with a direct one-sentence answer before any sections
 - 500-700 words total
 - "Myth vs Reality" format
 - No emojis
@@ -523,6 +530,7 @@ Structure (follow exactly):
 6. NEXT STEPS: What to learn after mastering the basics
 
 Constraints:
+- Start with a direct one-sentence answer before any sections
 - 400-600 words total
 - Short sentences, simple words
 - No emojis
@@ -550,6 +558,7 @@ Structure (follow exactly):
 5. SUMMARY: The most important factors to understand
 
 Constraints:
+- Start with a direct one-sentence answer before any sections
 - 500-700 words total
 - Clear cause-effect language
 - No emojis
@@ -577,6 +586,7 @@ Structure (follow exactly):
 5. SUMMARY: The essential foundation for {topic}
 
 Constraints:
+- Start with a direct one-sentence answer before any sections
 - 400-600 words total
 - Prerequisite-focused language
 - No emojis
@@ -602,6 +612,7 @@ Structure (follow exactly):
 6. SUMMARY: The core purpose of {topic}
 
 Constraints:
+- Start with a direct one-sentence answer before any sections
 - 500-700 words total
 - Application-focused language
 - No emojis
@@ -2258,6 +2269,84 @@ def get_page_title(topic):
         return f"What is {topic.title()}?"
 
 
+def generate_toc_html(content):
+    """Generate a table of contents from h2 headings in raw content.
+    Extracts headings from ## markdown and [SECTION] tags.
+    Returns empty string if fewer than 2 headings found."""
+    import re
+    headings = []
+    for line in content.strip().split('\n'):
+        stripped = line.strip()
+        # Markdown h2
+        if stripped.startswith('## '):
+            heading_text = stripped[3:].strip()
+            headings.append(heading_text)
+        # [SECTION] tag
+        section_match = re.match(r'^\[SECTION\]\s*(.+?)\s*\[/SECTION\]$', stripped)
+        if section_match:
+            headings.append(section_match.group(1))
+
+    if len(headings) < 2:
+        return ""
+
+    items = ""
+    for h in headings:
+        slug = slugify(h)
+        # Strip bold markers for display
+        display = re.sub(r'\*\*(.+?)\*\*', r'\1', h)
+        items += f'        <li><a href="#{slug}">{display}</a></li>\n'
+
+    return f"""<nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+{items}    </ol>
+</nav>"""
+
+
+def generate_angle_crossref_html(concept_slug, angle_id, domain_slug):
+    """Generate a 'See Also' box with links to related angles for the same concept."""
+    # Map each angle to its most relevant siblings
+    angle_relations = {
+        "what-is": ["how-it-works", "types-of", "example-of"],
+        "how-it-works": ["what-is", "what-affects-it", "example-of"],
+        "types-of": ["what-is", "example-of", "common-misconceptions-about"],
+        "example-of": ["what-is", "types-of", "how-it-works"],
+        "common-misconceptions-about": ["what-is", "how-it-works", "example-of"],
+        "what-affects-it": ["how-it-works", "what-it-depends-on", "what-is"],
+        "what-it-depends-on": ["what-affects-it", "how-it-works", "what-is"],
+        "vs": ["what-is", "types-of", "how-it-works"],
+    }
+
+    from templates import ANGLE_DISPLAY, angle_url
+
+    related_angles = angle_relations.get(angle_id, [])
+    if not related_angles:
+        return ""
+
+    # Check which angle files actually exist
+    existing = []
+    for ra in related_angles:
+        angle_file = OUTPUT_DIR / f"{domain_slug}_structured" / concept_slug / f"{ra}.json"
+        if angle_file.exists():
+            display = ANGLE_DISPLAY.get(ra, ra.replace("-", " ").title())
+            href = angle_url(domain_slug, concept_slug, ra)
+            existing.append((display, href))
+
+    if not existing:
+        return ""
+
+    items = ""
+    for display, href in existing:
+        items += f'            <li><a href="{href}">{display}</a></li>\n'
+
+    concept_display = concept_slug.replace("-", " ").title()
+    return f"""<div class="see-also">
+    <h3>See Also: {concept_display}</h3>
+    <ul>
+{items}    </ul>
+</div>"""
+
+
 def markdown_to_html(content):
     """Convert markdown/tag content to HTML.
     Handles both markdown (##, *, |) and structured tags
@@ -2339,7 +2428,7 @@ def markdown_to_html(content):
         section_match = re.match(r'^\[SECTION\]\s*(.+?)\s*\[/SECTION\]$', stripped)
         if section_match:
             close_list()
-            html_lines.append(f'<h2>{bold(section_match.group(1))}</h2>')
+            html_lines.append(f'<h2 id="{slugify(section_match.group(1))}">{bold(section_match.group(1))}</h2>')
             continue
 
         # ── [TABLE] / [/TABLE] ──
@@ -2395,7 +2484,7 @@ def markdown_to_html(content):
         # ── Markdown headers ──
         if stripped.startswith('## '):
             close_list()
-            html_lines.append(f'<h2>{bold(stripped[3:])}</h2>')
+            html_lines.append(f'<h2 id="{slugify(stripped[3:])}">{bold(stripped[3:])}</h2>')
             continue
         if stripped.startswith('### '):
             close_list()
@@ -2481,10 +2570,15 @@ def format_as_html(topic, content, page_title=None, domain_slug=None,
     # Convert markdown content to HTML
     html_content = markdown_to_html(content)
 
+    # Generate TOC
+    toc_html = generate_toc_html(content)
+
     # Get calculator if applicable
     calculator_html = get_calculator_html(topic) or ""
     if calculator_html:
         log(f"  Adding calculator for: {topic}", "SUCCESS")
+        # Wrap calculator in callout box if present
+        calculator_html = f'<div class="calculator-callout"><div class="calculator-callout-header">Calculator</div><div class="calculator-callout-body">{calculator_html}</div></div>'
 
     # Generate meta description based on page type
     base_topic = extract_base_topic(topic)
@@ -2526,8 +2620,18 @@ def format_as_html(topic, content, page_title=None, domain_slug=None,
         sidebar_html = generate_sidebar_html(domain_slug, concept_slug, angle_id, all_angles)
     if canonical_path:
         og_html = generate_og_tags(page_title, meta_desc, canonical_path)
+    crossref_html = ""
+    if domain_slug and concept_slug and angle_id:
+        crossref_html = generate_angle_crossref_html(concept_slug, angle_id, domain_slug)
+
+    # Load concept categories for semantic related linking
+    concept_categories = None
+    if domain_slug:
+        canonical_data = load_canonical_concepts(domain_slug)
+        if canonical_data:
+            concept_categories = canonical_data.get("concepts", {})
     if domain_slug and concept_slug and all_concepts:
-        related_html = generate_related_concepts_html(domain_slug, concept_slug, all_concepts)
+        related_html = generate_related_concepts_html(domain_slug, concept_slug, all_concepts, concept_categories=concept_categories)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -2554,10 +2658,15 @@ def format_as_html(topic, content, page_title=None, domain_slug=None,
     <main class="article-main">
         <article>
             <h1>{page_title}</h1>
+            <div class="article-meta">Last updated: {datetime.now().strftime("%B %Y")}</div>
+
+            {toc_html}
 
             {calculator_html}
 
             {html_content}
+
+            {crossref_html}
 
             {related_html}
         </article>
@@ -2978,6 +3087,100 @@ def run_self_propagating(count=10, auto_publish_enabled=False):
 
 
 # =============================================================================
+# REBUILD PIPELINE
+# =============================================================================
+
+def rebuild_all_html():
+    """Re-render all HTML pages from stored JSON data.
+    Applies new template features (TOC, cross-refs, meta, calculator callout)
+    without regenerating content from AI.
+    """
+    from templates import DOMAIN_META
+
+    json_files = list(OUTPUT_DIR.rglob("*.json"))
+    log(f"Found {len(json_files)} JSON files to rebuild")
+
+    rebuilt = 0
+    errors = 0
+
+    for json_file in json_files:
+        if json_file.name in ("index.json", "manifest.json"):
+            continue
+
+        try:
+            data = json.loads(json_file.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError) as e:
+            log(f"  Skip {json_file}: {e}", "WARN")
+            errors += 1
+            continue
+
+        content = data.get("content", "")
+        if not content:
+            continue
+
+        topic = data.get("topic", data.get("base_concept", ""))
+        category = data.get("category", "general")
+        angle_id = data.get("angle", "what-is")
+        base_concept = data.get("base_concept", topic)
+
+        # Determine domain slug from path
+        rel = json_file.relative_to(OUTPUT_DIR)
+        parts = rel.parts
+        domain_slug = None
+        concept_slug = None
+
+        # Check if structured folder: domain_structured/concept/angle.json
+        if len(parts) >= 3 and parts[0].endswith("_structured"):
+            domain_slug = parts[0].replace("_structured", "")
+            concept_slug = parts[1]
+        elif len(parts) >= 2:
+            # Try category as domain
+            domain_slug = parts[0] if parts[0] in DOMAIN_META else None
+            concept_slug = slugify(base_concept)
+
+        # Get list of all angles for this concept
+        all_angles = set()
+        if domain_slug and concept_slug:
+            concept_dir = json_file.parent
+            for f in concept_dir.glob("*.json"):
+                all_angles.add(f.stem)
+
+        # Get all concepts for this domain
+        all_concepts = []
+        if domain_slug:
+            domain_dir = OUTPUT_DIR / f"{domain_slug}_structured"
+            if domain_dir.exists():
+                all_concepts = [d.name for d in domain_dir.iterdir() if d.is_dir()]
+
+        # Build canonical path
+        canonical_path = None
+        if domain_slug and concept_slug and angle_id:
+            canonical_path = f"{domain_slug}/{concept_slug}/{angle_id}.html"
+
+        page_title = data.get("title", get_page_title(topic))
+
+        html = format_as_html(
+            topic=topic,
+            content=content,
+            page_title=page_title,
+            domain_slug=domain_slug,
+            concept_slug=concept_slug,
+            angle_id=angle_id,
+            all_angles=all_angles if all_angles else None,
+            canonical_path=canonical_path,
+            all_concepts=all_concepts if all_concepts else None,
+        )
+
+        # Write HTML alongside JSON
+        html_file = json_file.with_suffix(".html")
+        html_file.write_text(html, encoding="utf-8")
+        rebuilt += 1
+
+    log(f"Rebuilt {rebuilt} HTML pages ({errors} errors)", "SUCCESS")
+    return rebuilt
+
+
+# =============================================================================
 # CLI
 # =============================================================================
 
@@ -3023,6 +3226,7 @@ if __name__ == "__main__":
     parser.add_argument("--rerender", action="store_true", help="Re-render HTML from existing JSON files (fixes markdown conversion)")
     parser.add_argument("--restructure", action="store_true", help="Restructure into concept folders with canonical angle names")
     parser.add_argument("--dry-run", action="store_true", help="Show what restructure would do without making changes")
+    parser.add_argument("--rebuild-html", action="store_true", help="Rebuild all HTML from JSON with new template features (TOC, cross-refs, meta)")
 
     # Closure tracking (per-concept completion)
     parser.add_argument("--closure-report", action="store_true", help="Show per-concept completion status (uses strict 8-angle registry)")
@@ -3098,6 +3302,11 @@ if __name__ == "__main__":
 
     # =========================================================================
     # MAINTENANCE - Re-render HTML from JSON
+    # =========================================================================
+    elif args.rebuild_html:
+        count = rebuild_all_html()
+        print(f"\nRebuilt {count} HTML pages with new template features.")
+
     # =========================================================================
     elif args.rerender:
         import json
