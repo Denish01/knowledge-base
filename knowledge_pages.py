@@ -356,7 +356,7 @@ One precise sentence: "{{topic}} is/refers to..." with the originator's name and
 ## Common Misconceptions
 3-4 items. Format each as: **Myth:** X — **Fact:** Y (with a specific citation or counterexample that disproves it).
 
-## Real-World Example
+## In Practice
 One concrete scenario with specific country/company names, dollar amounts, or measurements. No hypothetical "Country A vs Country B."
 
 Constraints:
@@ -427,7 +427,7 @@ Constraints:
 - No emojis
 - Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
-- Every category must include a concrete, named real-world example."""
+- Every category must include a concrete, named example."""
 
 
 # =============================================================================
@@ -469,7 +469,7 @@ Topic: Why {topic} matters
 {banned_phrases}
 
 Structure (use ## for each section heading):
-## Real-World Impact
+## Measurable Impact
 3-4 specific consequences with named industries, dollar amounts, or population numbers affected. Each must answer "what measurably changes?"
 
 ## What Happens Without It
