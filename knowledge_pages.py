@@ -3208,13 +3208,18 @@ def regenerate_all_content(domain=None, count=None, delay=2):
 
     angles = registry.get("angles", {})
 
-    # Find all structured concept folders
+    # Find all concept folders (domain/concept/angle.json)
+    from templates import DOMAIN_META
+    domain_slugs = list(DOMAIN_META.keys())
+
     targets = []
-    for structured_dir in sorted(OUTPUT_DIR.glob("*_structured")):
-        d_slug = structured_dir.name.replace("_structured", "")
+    for d_slug in sorted(domain_slugs):
         if domain and d_slug != domain:
             continue
-        for concept_dir in sorted(structured_dir.iterdir()):
+        domain_dir = OUTPUT_DIR / d_slug
+        if not domain_dir.exists():
+            continue
+        for concept_dir in sorted(domain_dir.iterdir()):
             if not concept_dir.is_dir():
                 continue
             concept_slug = concept_dir.name
@@ -3254,8 +3259,8 @@ def regenerate_all_content(domain=None, count=None, delay=2):
             log(f"  Generated {word_count} words", "SUCCESS")
 
             # Get all sibling concepts for related linking
-            structured_dir = OUTPUT_DIR / f"{d_slug}_structured"
-            all_concepts = [d.name for d in structured_dir.iterdir() if d.is_dir()] if structured_dir.exists() else []
+            domain_dir = OUTPUT_DIR / d_slug
+            all_concepts = [d.name for d in domain_dir.iterdir() if d.is_dir()] if domain_dir.exists() else []
             all_angles = [f.stem for f in json_file.parent.glob("*.json")]
 
             page_title = get_angle_title(concept_name, angle_id)
