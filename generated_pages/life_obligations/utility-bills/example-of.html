@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of utility bills - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Clear examples of utility bills from everyday life. Concrete illustrations to help you understand the concept.">
     <link rel="canonical" href="https://360library.com/life_obligations/utility-bills/example-of.html">
     <meta property="og:title" content="Example of Utility Bills">
-    <meta property="og:description" content="A clear, simple explanation of utility bills - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Clear examples of utility bills from everyday life. Concrete illustrations to help you understand the concept.">
     <meta property="og:url" content="https://360library.com/life_obligations/utility-bills/example-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Example of Utility Bills">
-    <meta name="twitter:description" content="A clear, simple explanation of utility bills - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Clear examples of utility bills from everyday life. Concrete illustrations to help you understand the concept.">
     <title>Example of Utility Bills - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Utility Bills", "item": "https://360library.com/life_obligations/utility-bills/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Example"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Example of Utility Bills", "description": "A clear, simple explanation of utility bills - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/utility-bills/example-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/utility-bills/example-of.html"}, "about": {"@type": "Thing", "name": "Utility Bills"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Example of Utility Bills", "description": "Clear examples of utility bills from everyday life. Concrete illustrations to help you understand the concept.", "url": "https://360library.com/life_obligations/utility-bills/example-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/utility-bills/example-of.html"}, "about": {"@type": "Thing", "name": "Utility Bills"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,42 +388,44 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/utility-bills/what-is.html">Utility Bills</a><span>&rsaquo;</span>Example
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Example of Utility Bills</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION</p>
+            
+
+            <ol>
+<li>INTRODUCTION</li>
+</ol>
 <p>Utility bills are invoices sent to consumers by service providers for the use of essential services such as electricity, gas, water, and sewage. These bills are typically calculated based on the amount of the service used by the consumer during a specific period. Understanding utility bills is important for managing household expenses and making informed decisions about energy consumption.</p>
-
-<p>2. EVERYDAY EXAMPLES</p>
+<ol>
+<li>EVERYDAY EXAMPLES</li>
+</ol>
 <p>Examples of utility bills are common in daily life. For instance, the electricity bill sent to the Johnson family every month for their three-bedroom house is a utility bill. The bill details the amount of electricity used in kilowatt-hours and the total cost, which is $150 for the current month. Another example is the water bill received by the Rodriguez family, which includes the cost of water supply and sewage services, amounting to $75 per month. Additionally, the gas bill sent to the Lee family for their heating system is a utility bill, totaling $200 for the winter season. The internet service provider also sends a utility bill to the Patel family, charging $100 per month for their broadband connection.</p>
-
-<p>3. NOTABLE EXAMPLES</p>
+<ol>
+<li>NOTABLE EXAMPLES</li>
+</ol>
 <p>Some notable examples of utility bills include the electricity bill for a large commercial building like the Empire State Building, which can exceed $100,000 per month. Another example is the water bill for a public swimming pool, such as the one in New York City's Central Park, which can be around $5,000 per month. The gas bill for a university campus like Harvard University can also be a significant utility bill, totaling around $50,000 per month.</p>
-
-<p>4. EDGE CASES</p>
+<ol>
+<li>EDGE CASES</li>
+</ol>
 <p>An unusual example of a utility bill is the electricity bill for a rural farm that uses solar panels and a wind turbine to generate its own electricity. In this case, the utility bill may be negative, as the farm is producing more electricity than it consumes, and the excess is sold back to the grid. Another example is the utility bill for a recreational vehicle park, which may include charges for electricity, water, and sewage services for each individual RV site.</p>
-
-<p>5. NON-EXAMPLES</p>
+<ol>
+<li>NON-EXAMPLES</li>
+</ol>
 <p>Some things that people often confuse for utility bills but are not include credit card statements, which are invoices for purchases made using a credit card. Another example is a property tax bill, which is a tax levied on real estate ownership. A cable TV bill is also not a utility bill, as it is a subscription service for entertainment rather than an essential service like electricity or water.</p>
-
-<p>6. PATTERN</p>
+<ol>
+<li>PATTERN</li>
+</ol>
 <p>All valid examples of utility bills have one thing in common: they are invoices for essential services that are consumed by the customer. These services include electricity, gas, water, sewage, and sometimes internet and telephone services. The key characteristic of a utility bill is that it is based on the actual usage of the service, and the customer is charged according to the amount of service consumed. Whether it is a small household or a large commercial building, the principle of utility billing remains the same: the customer pays for the services they use, and the provider sends a bill to collect payment for those services. This pattern applies to all the examples mentioned above, from the Johnson family's electricity bill to the Empire State Building's utility bill, and it is what defines a utility bill as a distinct type of invoice.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/affordability-assessment/what-is.html" class="related-link">Affordability Assessment</a>
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/tax-withholding/what-is.html" class="related-link">Tax Withholding</a>
-        <a href="/life_obligations/temporary-support/what-is.html" class="related-link">Temporary Support</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -423,6 +470,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

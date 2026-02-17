@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of probability - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Clear examples of probability from everyday life. Concrete illustrations to help you understand the concept.">
     <link rel="canonical" href="https://360library.com/math/probability/example-of.html">
     <meta property="og:title" content="Example of Probability">
-    <meta property="og:description" content="A clear, simple explanation of probability - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Clear examples of probability from everyday life. Concrete illustrations to help you understand the concept.">
     <meta property="og:url" content="https://360library.com/math/probability/example-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Example of Probability">
-    <meta name="twitter:description" content="A clear, simple explanation of probability - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Clear examples of probability from everyday life. Concrete illustrations to help you understand the concept.">
     <title>Example of Probability - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://360library.com/#math"}, {"@type": "ListItem", "position": 3, "name": "Probability", "item": "https://360library.com/math/probability/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Example"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Example of Probability", "description": "A clear, simple explanation of probability - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/probability/example-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/probability/example-of.html"}, "about": {"@type": "Thing", "name": "Probability"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Example of Probability", "description": "Clear examples of probability from everyday life. Concrete illustrations to help you understand the concept.", "url": "https://360library.com/math/probability/example-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/probability/example-of.html"}, "about": {"@type": "Thing", "name": "Probability"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,143 +388,44 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/probability/what-is.html">Probability</a><span>&rsaquo;</span>Example
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>Example of Probability</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
-<style>
-.calculator {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 24px 0;
-}
-.calculator h3 {
-    margin-top: 0;
-    color: #1a73e8;
-}
-.calc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 16px;
-}
-.calculator label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-}
-.calculator input, .calculator select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.calculator button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.calculator button:hover {
-    background: #1557b0;
-}
-.calc-result {
-    margin-top: 16px;
-    padding: 12px;
-    background: white;
-    border-radius: 4px;
-    border-left: 4px solid #1a73e8;
-}
-.calc-result p {
-    margin: 8px 0;
-}
-.calc-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.tab-btn {
-    background: #e0e0e0;
-    color: #333;
-}
-.tab-btn.active {
-    background: #1a73e8;
-    color: white;
-}
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-</style>
 
-<div class="calculator" id="prob-calc">
-    <h3>Basic Probability Calculator</h3>
-    <div class="calc-grid">
-        <label>Favorable Outcomes: <input type="number" id="prob-favorable" value="3" min="0"></label>
-        <label>Total Possible Outcomes: <input type="number" id="prob-total" value="10" min="1"></label>
-    </div>
-    <button onclick="calculateProbability()">Calculate</button>
-    <div class="calc-result" id="prob-result"></div>
-</div>
-<script>
-function calculateProbability() {
-    const favorable = parseInt(document.getElementById('prob-favorable').value);
-    const total = parseInt(document.getElementById('prob-total').value);
+            
 
-    const prob = favorable / total;
-    const pct = prob * 100;
-    const odds = favorable + ':' + (total - favorable);
-
-    document.getElementById('prob-result').innerHTML = `
-        <p><strong>Probability:</strong> ${prob.toFixed(4)} (${pct.toFixed(2)}%)</p>
-        <p><strong>Odds in favor:</strong> ${odds}</p>
-        <p><strong>Odds against:</strong> ${(total-favorable)}:${favorable}</p>
-    `;
-}
-calculateProbability();
-</script>
-
-
-            <p>1. INTRODUCTION</p>
+            <ol>
+<li>INTRODUCTION</li>
+</ol>
 <p>Probability is a measure of the likelihood that an event will occur. It is a number between 0 and 1 that represents the chance or probability of an event happening. A probability of 0 means the event is impossible, while a probability of 1 means the event is certain. Understanding probability is important in many areas of life, from making decisions to predicting outcomes.</p>
-
-<p>2. EVERYDAY EXAMPLES</p>
+<ol>
+<li>EVERYDAY EXAMPLES</li>
+</ol>
 <p>Probability is all around us and is used in everyday life. For example, when flipping a coin, there is a 50 percent probability of getting heads and a 50 percent probability of getting tails. Another example is drawing a card from a deck of 52 cards. If you are looking for a specific card, such as the ace of spades, the probability of drawing it is 1 in 52, or approximately 0.019. When rolling a die, there is a 1 in 6 probability of rolling any particular number, such as 3 or 6. Additionally, the probability of it raining on any given day can be determined by looking at historical weather data for that area.</p>
-
-<p>3. NOTABLE EXAMPLES</p>
+<ol>
+<li>NOTABLE EXAMPLES</li>
+</ol>
 <p>Some well-known examples of probability include the concept of a "gambler's fallacy." This is the idea that if a coin has come up heads several times in a row, it is more likely to come up tails on the next flip. However, the probability of getting heads or tails on any given flip is still 50 percent. Another example is the Monty Hall problem, where a contestant on a game show is presented with three doors, behind one of which is a prize. The contestant chooses a door, but before it is opened, the host opens one of the other two doors, which does not have the prize. The probability of the prize being behind the contestant's original choice is 1 in 3, while the probability of it being behind the other unopened door is 2 in 3.</p>
-
-<p>4. EDGE CASES</p>
+<ol>
+<li>EDGE CASES</li>
+</ol>
 <p>One unusual example of probability is the concept of the "birthday problem." This is the probability that at least two people in a group of randomly selected people will share the same birthday. While it may seem like a low probability, the actual probability is surprisingly high. For a group of just 23 people, the probability is greater than 50 percent. Another example is the probability of winning a lottery jackpot. While the probability is extremely low, often in the range of 1 in 10 million or lower, it is still a valid example of probability.</p>
-
-<p>5. NON-EXAMPLES</p>
+<ol>
+<li>NON-EXAMPLES</li>
+</ol>
 <p>Some things that people often confuse with probability are certainty and possibility. Certainty is not the same as probability, as it implies a 100 percent chance of an event occurring. For example, the sun rising in the east is a certainty, not a probability. Possibility is also different from probability, as it implies that an event can occur, but does not provide a measure of the likelihood. For example, it is possible to win a game of chess, but the probability of winning depends on various factors, such as the skill level of the players.</p>
-
-<p>6. PATTERN</p>
+<ol>
+<li>PATTERN</li>
+</ol>
 <p>All valid examples of probability have one thing in common: they are based on a clear understanding of the possible outcomes and the likelihood of each outcome occurring. Whether it is flipping a coin, rolling a die, or predicting the weather, probability is about assigning a numerical value to the chance of an event happening. By understanding probability, we can make informed decisions and better predict the outcomes of various events. This common thread runs through all examples of probability, from everyday life to unusual edge cases, and is what makes probability such a powerful and useful tool in many areas of life.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/perimeter/what-is.html" class="related-link">Perimeter</a>
-        <a href="/math/prime-numbers/what-is.html" class="related-link">Prime Numbers</a>
-        <a href="/math/proportions/what-is.html" class="related-link">Proportions</a>
-        <a href="/math/pythagorean-theorem/what-is.html" class="related-link">Pythagorean Theorem</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -524,6 +470,9 @@ calculateProbability();
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

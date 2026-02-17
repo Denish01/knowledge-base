@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of assistance programs - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of assistance programs - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/assistance-programs/types-of.html">
     <meta property="og:title" content="Types of Assistance Programs">
-    <meta property="og:description" content="A clear, simple explanation of assistance programs - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of assistance programs - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/assistance-programs/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Assistance Programs">
-    <meta name="twitter:description" content="A clear, simple explanation of assistance programs - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of assistance programs - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Assistance Programs - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Assistance Programs", "item": "https://360library.com/life_obligations/assistance-programs/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Assistance Programs", "description": "A clear, simple explanation of assistance programs - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/assistance-programs/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/assistance-programs/types-of.html"}, "about": {"@type": "Thing", "name": "Assistance Programs"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Assistance Programs", "description": "A clear, simple explanation of types of assistance programs - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/assistance-programs/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/assistance-programs/types-of.html"}, "about": {"@type": "Thing", "name": "Assistance Programs"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,106 +388,88 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/assistance-programs/what-is.html">Assistance Programs</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Assistance Programs</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>Assistance programs are designed to provide support to individuals, families, or communities in need. These programs can be categorized into different types based on their purpose, target audience, and level of support. Understanding the various types of assistance programs is essential to ensure that individuals receive the right kind of help when they need it. Classification of assistance programs matters because it enables policymakers, social workers, and individuals to identify the most suitable programs for specific needs, allocate resources effectively, and evaluate the impact of these programs. By categorizing assistance programs, it becomes easier to navigate the complex landscape of support services and make informed decisions about which programs to utilize or support.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the main categories of assistance programs:</p>
-<p>1. <strong>Financial Assistance Programs</strong></p>
+<ol>
+<li><strong>Financial Assistance Programs</strong></li>
+</ol>
 <ul>
-  <li>Definition: Financial assistance programs provide monetary support to individuals or families to help them meet basic needs such as food, shelter, and healthcare. These programs can be in the form of grants, loans, or subsidies.</li>
-  <li>Key Characteristics: Financial assistance programs are often means-tested, requiring applicants to demonstrate financial need. They may also have specific eligibility criteria, such as income limits or family size.</li>
-  <li>Example: Medicaid is a financial assistance program that provides health insurance coverage to low-income individuals and families.</li>
+<li>Definition: Financial assistance programs provide monetary support to individuals or families to help them meet basic needs such as food, shelter, and healthcare. These programs can be in the form of grants, loans, or subsidies.</li>
+<li>Key Characteristics: Financial assistance programs are often means-tested, requiring applicants to demonstrate financial need. They may also have specific eligibility criteria, such as income limits or family size.</li>
+<li>Example: Medicaid is a financial assistance program that provides health insurance coverage to low-income individuals and families.</li>
 </ul>
-<p>2. <strong>Food Assistance Programs</strong></p>
+<ol>
+<li><strong>Food Assistance Programs</strong></li>
+</ol>
 <ul>
-  <li>Definition: Food assistance programs aim to reduce hunger and improve nutrition by providing access to food for individuals and families in need. These programs can include food banks, meal delivery services, and nutrition education.</li>
-  <li>Key Characteristics: Food assistance programs often rely on donations, volunteers, and partnerships with local food retailers. They may also have eligibility criteria, such as income limits or family size.</li>
-  <li>Example: The Supplemental Nutrition Assistance Program (SNAP) is a food assistance program that provides eligible individuals and families with funds to purchase food.</li>
+<li>Definition: Food assistance programs aim to reduce hunger and improve nutrition by providing access to food for individuals and families in need. These programs can include food banks, meal delivery services, and nutrition education.</li>
+<li>Key Characteristics: Food assistance programs often rely on donations, volunteers, and partnerships with local food retailers. They may also have eligibility criteria, such as income limits or family size.</li>
+<li>Example: The Supplemental Nutrition Assistance Program (SNAP) is a food assistance program that provides eligible individuals and families with funds to purchase food.</li>
 </ul>
-<p>3. <strong>Housing Assistance Programs</strong></p>
+<ol>
+<li><strong>Housing Assistance Programs</strong></li>
+</ol>
 <ul>
-  <li>Definition: Housing assistance programs provide support to individuals and families who are struggling to afford safe and stable housing. These programs can include rental subsidies, homeownership assistance, and emergency shelter services.</li>
-  <li>Key Characteristics: Housing assistance programs often have strict eligibility criteria, such as income limits, family size, and disability status. They may also require applicants to participate in counseling or education programs.</li>
-  <li>Example: The Section 8 Housing Choice Voucher Program is a housing assistance program that provides eligible individuals and families with rental subsidies to help them afford decent and safe housing.</li>
+<li>Definition: Housing assistance programs provide support to individuals and families who are struggling to afford safe and stable housing. These programs can include rental subsidies, homeownership assistance, and emergency shelter services.</li>
+<li>Key Characteristics: Housing assistance programs often have strict eligibility criteria, such as income limits, family size, and disability status. They may also require applicants to participate in counseling or education programs.</li>
+<li>Example: The Section 8 Housing Choice Voucher Program is a housing assistance program that provides eligible individuals and families with rental subsidies to help them afford decent and safe housing.</li>
 </ul>
-<p>4. <strong>Health Assistance Programs</strong></p>
+<ol>
+<li><strong>Health Assistance Programs</strong></li>
+</ol>
 <ul>
-  <li>Definition: Health assistance programs provide access to medical care, health insurance, and health education to individuals and families who may not otherwise be able to afford these services. These programs can include Medicaid, the Children's Health Insurance Program (CHIP), and community health clinics.</li>
-  <li>Key Characteristics: Health assistance programs often have eligibility criteria, such as income limits, family size, and disability status. They may also require applicants to participate in health education programs or counseling services.</li>
-  <li>Example: The Children's Health Insurance Program (CHIP) is a health assistance program that provides low-cost health insurance coverage to eligible children and teens.</li>
+<li>Definition: Health assistance programs provide access to medical care, health insurance, and health education to individuals and families who may not otherwise be able to afford these services. These programs can include Medicaid, the Children's Health Insurance Program (CHIP), and community health clinics.</li>
+<li>Key Characteristics: Health assistance programs often have eligibility criteria, such as income limits, family size, and disability status. They may also require applicants to participate in health education programs or counseling services.</li>
+<li>Example: The Children's Health Insurance Program (CHIP) is a health assistance program that provides low-cost health insurance coverage to eligible children and teens.</li>
 </ul>
-<p>5. <strong>Education Assistance Programs</strong></p>
+<ol>
+<li><strong>Education Assistance Programs</strong></li>
+</ol>
 <ul>
-  <li>Definition: Education assistance programs provide support to individuals who are pursuing higher education or vocational training. These programs can include scholarships, grants, loans, and work-study programs.</li>
-  <li>Key Characteristics: Education assistance programs often have eligibility criteria, such as academic performance, financial need, and field of study. They may also require applicants to participate in counseling or mentoring programs.</li>
-  <li>Example: The Pell Grant Program is an education assistance program that provides need-based grants to eligible undergraduate students.</li>
+<li>Definition: Education assistance programs provide support to individuals who are pursuing higher education or vocational training. These programs can include scholarships, grants, loans, and work-study programs.</li>
+<li>Key Characteristics: Education assistance programs often have eligibility criteria, such as academic performance, financial need, and field of study. They may also require applicants to participate in counseling or mentoring programs.</li>
+<li>Example: The Pell Grant Program is an education assistance program that provides need-based grants to eligible undergraduate students.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
 <p>The following table summarizes the main differences between the categories of assistance programs:</p>
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Purpose</th>
-<th>Eligibility</th>
-<th>Services</th>
-</tr></thead><tbody>
-<tr>
-<td>Financial Assistance</td>
-<td>Provide monetary support</td>
-<td>Means-tested, income limits</td>
-<td>Grants, loans, subsidies</td>
-</tr>
-<tr>
-<td>Food Assistance</td>
-<td>Reduce hunger, improve nutrition</td>
-<td>Income limits, family size</td>
-<td>Food banks, meal delivery, nutrition education</td>
-</tr>
-<tr>
-<td>Housing Assistance</td>
-<td>Provide safe and stable housing</td>
-<td>Income limits, family size, disability status</td>
-<td>Rental subsidies, homeownership assistance, emergency shelter</td>
-</tr>
-<tr>
-<td>Health Assistance</td>
-<td>Provide access to medical care and health insurance</td>
-<td>Income limits, family size, disability status</td>
-<td>Medicaid, CHIP, community health clinics</td>
-</tr>
-<tr>
-<td>Education Assistance</td>
-<td>Support higher education and vocational training</td>
-<td>Academic performance, financial need, field of study</td>
-<td>Scholarships, grants, loans, work-study programs</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Purpose</th><th>Eligibility</th><th>Services</th></tr></thead><tbody>
+<tr><td>Financial Assistance</td><td>Provide monetary support</td><td>Means-tested, income limits</td><td>Grants, loans, subsidies</td></tr>
+<tr><td>Food Assistance</td><td>Reduce hunger, improve nutrition</td><td>Income limits, family size</td><td>Food banks, meal delivery, nutrition education</td></tr>
+<tr><td>Housing Assistance</td><td>Provide safe and stable housing</td><td>Income limits, family size, disability status</td><td>Rental subsidies, homeownership assistance, emergency shelter</td></tr>
+<tr><td>Health Assistance</td><td>Provide access to medical care and health insurance</td><td>Income limits, family size, disability status</td><td>Medicaid, CHIP, community health clinics</td></tr>
+<tr><td>Education Assistance</td><td>Support higher education and vocational training</td><td>Academic performance, financial need, field of study</td><td>Scholarships, grants, loans, work-study programs</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The categories of assistance programs are interconnected and can be complementary. For example, an individual who receives financial assistance through a government program may also be eligible for food assistance or housing assistance. Similarly, an individual who receives health assistance through Medicaid may also be eligible for education assistance through a vocational training program. Understanding how these categories relate to each other is essential to providing comprehensive support services to individuals and families in need.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system for assistance programs includes financial assistance, food assistance, housing assistance, health assistance, and education assistance, each with its own unique characteristics, eligibility criteria, and services, which work together to provide a comprehensive support system for individuals and families in need.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/affordability-assessment/what-is.html" class="related-link">Affordability Assessment</a>
-        <a href="/life_obligations/alimony/what-is.html" class="related-link">Alimony</a>
-        <a href="/life_obligations/auto-insurance/what-is.html" class="related-link">Auto Insurance</a>
-        <a href="/life_obligations/auto-loan/what-is.html" class="related-link">Auto Loan</a>
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -487,6 +514,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

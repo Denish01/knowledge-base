@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/gynecology/what-is.html">Gynecology</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>What Is Gynecology?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Gynecology is the branch of medicine that deals with the health of the female reproductive system, including the diagnosis, treatment, and prevention of disorders and diseases that affect women's reproductive health.</p>
-
 <p>The female reproductive system is a complex and vital part of the human body, and gynecology is the medical specialty that focuses on maintaining and restoring the health of this system. Gynecologists are medical doctors who have received specialized training in the diagnosis and treatment of conditions that affect the female reproductive system, including the uterus, ovaries, fallopian tubes, and vagina. These conditions can range from common problems such as menstrual cramps and yeast infections to more serious issues such as cervical cancer and infertility.</p>
-
 <p>Gynecology is not just about treating illnesses, but also about preventing them and promoting overall health and wellness. Gynecologists provide routine check-ups and screenings, such as Pap tests and pelvic exams, to help detect potential problems early on. They also provide guidance on birth control, menstruation, and menopause, and offer treatment for a range of conditions, including endometriosis, polycystic ovary syndrome (PCOS), and vaginal infections. In addition, gynecologists often work with other healthcare professionals, such as obstetricians and urologists, to provide comprehensive care for women's health.</p>
-
 <p>The field of gynecology is constantly evolving, with new research and technologies being developed to improve the diagnosis and treatment of female reproductive health conditions. However, the core principles of gynecology remain the same: to provide high-quality, patient-centered care that addresses the unique needs and concerns of women. Whether a woman is seeking routine care, treatment for a specific condition, or simply guidance on maintaining her reproductive health, gynecology is an essential part of her overall healthcare.</p>
-
 <p>Key components of gynecology include:</p>
 <ul>
-  <li>The reproductive organs, including the uterus, ovaries, fallopian tubes, and vagina</li>
-  <li>The menstrual cycle, including the physical and hormonal changes that occur during each phase</li>
-  <li>Fertility and infertility, including the diagnosis and treatment of conditions that affect a woman's ability to become pregnant</li>
-  <li>Pregnancy and childbirth, including prenatal care, labor and delivery, and postpartum care</li>
-  <li>Menopause and perimenopause, including the physical and emotional changes that occur during this stage of life</li>
-  <li>Reproductive health screenings, including Pap tests, pelvic exams, and breast exams</li>
+<li>The reproductive organs, including the uterus, ovaries, fallopian tubes, and vagina</li>
+<li>The menstrual cycle, including the physical and hormonal changes that occur during each phase</li>
+<li>Fertility and infertility, including the diagnosis and treatment of conditions that affect a woman's ability to become pregnant</li>
+<li>Pregnancy and childbirth, including prenatal care, labor and delivery, and postpartum care</li>
+<li>Menopause and perimenopause, including the physical and emotional changes that occur during this stage of life</li>
+<li>Reproductive health screenings, including Pap tests, pelvic exams, and breast exams</li>
 </ul>
-
 <p>Despite its importance, there are many common misconceptions about gynecology. Some of these include:</p>
 <ul>
-  <li>The idea that gynecology is only for women who are pregnant or trying to become pregnant, when in fact gynecologists provide care for women of all ages and backgrounds</li>
-  <li>The notion that gynecological exams are painful or embarrassing, when in fact they are a routine and essential part of maintaining reproductive health</li>
-  <li>The belief that gynecology only deals with reproductive health, when in fact it also addresses a range of other health issues, including urinary tract infections and pelvic pain</li>
-  <li>The assumption that gynecologists only provide care for women, when in fact they may also work with transgender and non-binary individuals who require reproductive health care</li>
+<li>The idea that gynecology is only for women who are pregnant or trying to become pregnant, when in fact gynecologists provide care for women of all ages and backgrounds</li>
+<li>The notion that gynecological exams are painful or embarrassing, when in fact they are a routine and essential part of maintaining reproductive health</li>
+<li>The belief that gynecology only deals with reproductive health, when in fact it also addresses a range of other health issues, including urinary tract infections and pelvic pain</li>
+<li>The assumption that gynecologists only provide care for women, when in fact they may also work with transgender and non-binary individuals who require reproductive health care</li>
 </ul>
-
 <p>A real-world example of gynecology in action is a woman who visits her gynecologist for a routine check-up and discovers that she has a yeast infection. The gynecologist diagnoses the infection and prescribes a course of treatment, which the woman takes as directed. As a result, the infection is cleared up, and the woman is able to maintain her reproductive health and prevent future complications.</p>
-
 <p>In summary, gynecology is a vital branch of medicine that focuses on maintaining and restoring the health of the female reproductive system, and it plays a critical role in promoting overall health and wellness for women of all ages and backgrounds.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/gastroenterology/what-is.html" class="related-link">Gastroenterology</a>
-        <a href="/health/gerontology/what-is.html" class="related-link">Gerontology</a>
-        <a href="/health/health-education/what-is.html" class="related-link">Health Education</a>
-        <a href="/health/health-promotion/what-is.html" class="related-link">Health Promotion</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

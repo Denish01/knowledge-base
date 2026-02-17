@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of absolute value - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of absolute value - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/math/absolute-value/types-of.html">
     <meta property="og:title" content="Types of Absolute Value">
-    <meta property="og:description" content="A clear, simple explanation of absolute value - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of absolute value - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/math/absolute-value/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Absolute Value">
-    <meta name="twitter:description" content="A clear, simple explanation of absolute value - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of absolute value - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Absolute Value - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://360library.com/#math"}, {"@type": "ListItem", "position": 3, "name": "Absolute Value", "item": "https://360library.com/math/absolute-value/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Absolute Value", "description": "A clear, simple explanation of absolute value - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/absolute-value/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/absolute-value/types-of.html"}, "about": {"@type": "Thing", "name": "Absolute Value"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Absolute Value", "description": "A clear, simple explanation of types of absolute value - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/absolute-value/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/absolute-value/types-of.html"}, "about": {"@type": "Thing", "name": "Absolute Value"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,82 +388,53 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/absolute-value/what-is.html">Absolute Value</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>Types of Absolute Value</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>The concept of absolute value is a fundamental idea in mathematics, referring to the distance of a number from zero on the number line, without considering direction. The classification of types of absolute value is essential as it helps in understanding the various ways absolute value can be applied and interpreted in different mathematical contexts. This classification matters because it enables mathematicians and students to identify, analyze, and solve problems involving absolute values more efficiently. By categorizing types of absolute value, we can better comprehend the nuances of this concept and its applications across various mathematical disciplines.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the primary types of absolute value, each with distinct characteristics and applications:</p>
 <ul>
-  <li><strong>Algebraic Absolute Value</strong>: This refers to the absolute value of algebraic expressions, including variables and constants. Key characteristics include the use of algebraic properties to simplify expressions and the consideration of both positive and negative solutions. For example, the absolute value of the expression \(|2x - 3|\) involves solving for \(x\) in equations where this expression is equal to a constant.</li>
-  <li><strong>Geometric Absolute Value</strong>: Geometric absolute value pertains to the distance between points or objects in a geometric space, such as on a line, in a plane, or in three-dimensional space. Key characteristics involve the application of geometric principles to determine distances and positions. A simple example is finding the distance between two points \((x_1, y_1)\) and \((x_2, y_2)\) in a plane using the formula \(\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\).</li>
-  <li><strong>Numerical Absolute Value</strong>: This type deals with the absolute value of numbers, focusing on real numbers and their distances from zero. Key characteristics include understanding that the absolute value of a number is always non-negative and that it represents the magnitude of the number. For instance, the absolute value of \(-5\) is \(5\), because \(-5\) is \(5\) units away from zero on the number line.</li>
-  <li><strong>Vector Absolute Value</strong>: In the context of vectors, absolute value refers to the magnitude or length of a vector, disregarding its direction. Key characteristics involve the use of vector operations and properties to calculate magnitudes. A simple example is finding the magnitude of a vector \(\vec{a} = (a_1, a_2)\) in a two-dimensional space, given by \(|\vec{a}| = \sqrt{a_1^2 + a_2^2}\).</li>
+<li><strong>Algebraic Absolute Value</strong>: This refers to the absolute value of algebraic expressions, including variables and constants. Key characteristics include the use of algebraic properties to simplify expressions and the consideration of both positive and negative solutions. For example, the absolute value of the expression \(|2x - 3|\) involves solving for \(x\) in equations where this expression is equal to a constant.</li>
+<li><strong>Geometric Absolute Value</strong>: Geometric absolute value pertains to the distance between points or objects in a geometric space, such as on a line, in a plane, or in three-dimensional space. Key characteristics involve the application of geometric principles to determine distances and positions. A simple example is finding the distance between two points \((x_1, y_1)\) and \((x_2, y_2)\) in a plane using the formula \(\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\).</li>
+<li><strong>Numerical Absolute Value</strong>: This type deals with the absolute value of numbers, focusing on real numbers and their distances from zero. Key characteristics include understanding that the absolute value of a number is always non-negative and that it represents the magnitude of the number. For instance, the absolute value of \(-5\) is \(5\), because \(-5\) is \(5\) units away from zero on the number line.</li>
+<li><strong>Vector Absolute Value</strong>: In the context of vectors, absolute value refers to the magnitude or length of a vector, disregarding its direction. Key characteristics involve the use of vector operations and properties to calculate magnitudes. A simple example is finding the magnitude of a vector \(\vec{a} = (a_1, a_2)\) in a two-dimensional space, given by \(|\vec{a}| = \sqrt{a_1^2 + a_2^2}\).</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
 <p>The following table summarizes the main differences between the types of absolute value:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Algebraic</td>
-<td>Absolute value of algebraic expressions</td>
-<td>Involves variables, considers both positive and negative solutions</td>
-<td>\(</td>
-<td>2x - 3</td>
-<td>\)</td>
-</tr>
-<tr>
-<td>Geometric</td>
-<td>Distance between points or objects in space</td>
-<td>Applies geometric principles, determines distances and positions</td>
-<td>Distance between \((x_1, y_1)\) and \((x_2, y_2)\)</td>
-</tr>
-<tr>
-<td>Numerical</td>
-<td>Absolute value of numbers</td>
-<td>Always non-negative, represents magnitude</td>
-<td>\(</td>
-<td>-5</td>
-<td>= 5\)</td>
-</tr>
-<tr>
-<td>Vector</td>
-<td>Magnitude of vectors</td>
-<td>Involves vector operations, calculates magnitude</td>
-<td>\(</td>
-<td>\vec{a}</td>
-<td>= \sqrt{a_1^2 + a_2^2}\)</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Algebraic</td><td>Absolute value of algebraic expressions</td><td>Involves variables, considers both positive and negative solutions</td><td>\(</td><td>2x - 3</td><td>\)</td></tr>
+<tr><td>Geometric</td><td>Distance between points or objects in space</td><td>Applies geometric principles, determines distances and positions</td><td>Distance between \((x_1, y_1)\) and \((x_2, y_2)\)</td></tr>
+<tr><td>Numerical</td><td>Absolute value of numbers</td><td>Always non-negative, represents magnitude</td><td>\(</td><td>-5</td><td>= 5\)</td></tr>
+<tr><td>Vector</td><td>Magnitude of vectors</td><td>Involves vector operations, calculates magnitude</td><td>\(</td><td>\vec{a}</td><td>= \sqrt{a_1^2 + a_2^2}\)</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different types of absolute value are interconnected through their shared concept of measuring distance or magnitude. Algebraic absolute value can be applied to solve equations that involve geometric or numerical absolute values. Geometric absolute value is essential in understanding spatial relationships and can be extended to vector absolute value when dealing with quantities that have both magnitude and direction. Numerical absolute value provides the foundation for all other types, as it defines the basic concept of distance from zero. Understanding how these categories relate to each other enhances the comprehension of absolute value as a whole and facilitates solving problems that span across these categories.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of absolute value encompasses algebraic, geometric, numerical, and vector types, each with distinct definitions, characteristics, and applications that together form a comprehensive understanding of the concept of absolute value.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/area-of-a-circle/what-is.html" class="related-link">Area Of A Circle</a>
-        <a href="/math/coordinate-plane/what-is.html" class="related-link">Coordinate Plane</a>
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/ratios/what-is.html" class="related-link">Ratios</a>
-        <a href="/math/variables/what-is.html" class="related-link">Variables</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -463,6 +479,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

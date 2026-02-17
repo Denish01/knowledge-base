@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of amortization schedule - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of amortization schedule - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/finance/amortization-schedule/types-of.html">
     <meta property="og:title" content="Types of Amortization Schedule">
-    <meta property="og:description" content="A clear, simple explanation of amortization schedule - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of amortization schedule - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/finance/amortization-schedule/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Amortization Schedule">
-    <meta name="twitter:description" content="A clear, simple explanation of amortization schedule - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of amortization schedule - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Amortization Schedule - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Finance", "item": "https://360library.com/#finance"}, {"@type": "ListItem", "position": 3, "name": "Amortization Schedule", "item": "https://360library.com/finance/amortization-schedule/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Amortization Schedule", "description": "A clear, simple explanation of amortization schedule - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/finance/amortization-schedule/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/finance/amortization-schedule/types-of.html"}, "about": {"@type": "Thing", "name": "Amortization Schedule"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Amortization Schedule", "description": "A clear, simple explanation of types of amortization schedule - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/finance/amortization-schedule/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/finance/amortization-schedule/types-of.html"}, "about": {"@type": "Thing", "name": "Amortization Schedule"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,106 +388,88 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#finance">Finance</a><span>&rsaquo;</span><a href="/finance/amortization-schedule/what-is.html">Amortization Schedule</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #1B4D8E">
     <main class="article-main">
         <article>
             <h1>Types of Amortization Schedule</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>Amortization schedules are essential tools used to calculate and organize the repayment of loans, such as mortgages, car loans, and personal loans. The classification of amortization schedules is crucial because it helps individuals and organizations understand the different methods used to repay debts over time. By categorizing amortization schedules, borrowers can better comprehend their loan terms, including the total amount paid, interest rates, and payment periods. This understanding enables them to make informed decisions about their financial obligations and plan accordingly. The types of amortization schedules cover various repayment methods, including fixed-rate, variable-rate, and interest-only loans, among others.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the primary types of amortization schedules:</p>
-<p>1. <strong>Fixed-Rate Amortization Schedule</strong></p>
+<ol>
+<li><strong>Fixed-Rate Amortization Schedule</strong></li>
+</ol>
 <ul>
-  <li>Definition: A fixed-rate amortization schedule is a repayment plan where the interest rate remains constant throughout the loan term. This type of schedule is commonly used for mortgages and car loans.</li>
-  <li>Key characteristics: Fixed interest rate, equal monthly payments, and a set repayment period.</li>
-  <li>Example: A $200,000 mortgage with a 30-year term and a fixed interest rate of 4% will have a fixed monthly payment of $955.</li>
+<li>Definition: A fixed-rate amortization schedule is a repayment plan where the interest rate remains constant throughout the loan term. This type of schedule is commonly used for mortgages and car loans.</li>
+<li>Key characteristics: Fixed interest rate, equal monthly payments, and a set repayment period.</li>
+<li>Example: A $200,000 mortgage with a 30-year term and a fixed interest rate of 4% will have a fixed monthly payment of $955.</li>
 </ul>
-<p>2. <strong>Variable-Rate Amortization Schedule</strong></p>
+<ol>
+<li><strong>Variable-Rate Amortization Schedule</strong></li>
+</ol>
 <ul>
-  <li>Definition: A variable-rate amortization schedule is a repayment plan where the interest rate can fluctuate over time, affecting the monthly payments. This type of schedule is often used for credit cards and personal loans.</li>
-  <li>Key characteristics: Adjustable interest rate, changing monthly payments, and a variable repayment period.</li>
-  <li>Example: A $10,000 personal loan with a variable interest rate that starts at 6% and can increase to 8% will have a higher monthly payment if the interest rate rises.</li>
+<li>Definition: A variable-rate amortization schedule is a repayment plan where the interest rate can fluctuate over time, affecting the monthly payments. This type of schedule is often used for credit cards and personal loans.</li>
+<li>Key characteristics: Adjustable interest rate, changing monthly payments, and a variable repayment period.</li>
+<li>Example: A $10,000 personal loan with a variable interest rate that starts at 6% and can increase to 8% will have a higher monthly payment if the interest rate rises.</li>
 </ul>
-<p>3. <strong>Interest-Only Amortization Schedule</strong></p>
+<ol>
+<li><strong>Interest-Only Amortization Schedule</strong></li>
+</ol>
 <ul>
-  <li>Definition: An interest-only amortization schedule is a repayment plan where the borrower only pays the interest on the loan for a set period, followed by a balloon payment or a new repayment schedule.</li>
-  <li>Key characteristics: Initial interest-only payments, followed by a large payment or a new schedule.</li>
-  <li>Example: A $50,000 interest-only loan with a 5-year term and a 5% interest rate will require monthly payments of $208 for the first 5 years, followed by a balloon payment of $50,000.</li>
+<li>Definition: An interest-only amortization schedule is a repayment plan where the borrower only pays the interest on the loan for a set period, followed by a balloon payment or a new repayment schedule.</li>
+<li>Key characteristics: Initial interest-only payments, followed by a large payment or a new schedule.</li>
+<li>Example: A $50,000 interest-only loan with a 5-year term and a 5% interest rate will require monthly payments of $208 for the first 5 years, followed by a balloon payment of $50,000.</li>
 </ul>
-<p>4. <strong>Balloon Amortization Schedule</strong></p>
+<ol>
+<li><strong>Balloon Amortization Schedule</strong></li>
+</ol>
 <ul>
-  <li>Definition: A balloon amortization schedule is a repayment plan where the borrower makes smaller payments for a set period, followed by a large balloon payment.</li>
-  <li>Key characteristics: Lower initial payments, followed by a large final payment.</li>
-  <li>Example: A $20,000 car loan with a 5-year term and a balloon payment of $10,000 will require monthly payments of $200 for the first 5 years, followed by a final payment of $10,000.</li>
+<li>Definition: A balloon amortization schedule is a repayment plan where the borrower makes smaller payments for a set period, followed by a large balloon payment.</li>
+<li>Key characteristics: Lower initial payments, followed by a large final payment.</li>
+<li>Example: A $20,000 car loan with a 5-year term and a balloon payment of $10,000 will require monthly payments of $200 for the first 5 years, followed by a final payment of $10,000.</li>
 </ul>
-<p>5. <strong>Graduated Amortization Schedule</strong></p>
+<ol>
+<li><strong>Graduated Amortization Schedule</strong></li>
+</ol>
 <ul>
-  <li>Definition: A graduated amortization schedule is a repayment plan where the borrower makes smaller payments initially, which increase over time.</li>
-  <li>Key characteristics: Increasing monthly payments, often used for student loans or mortgages.</li>
-  <li>Example: A $30,000 student loan with a 10-year term and a graduated repayment schedule will require initial monthly payments of $50, increasing to $100 over the repayment period.</li>
+<li>Definition: A graduated amortization schedule is a repayment plan where the borrower makes smaller payments initially, which increase over time.</li>
+<li>Key characteristics: Increasing monthly payments, often used for student loans or mortgages.</li>
+<li>Example: A $30,000 student loan with a 10-year term and a graduated repayment schedule will require initial monthly payments of $50, increasing to $100 over the repayment period.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
 <p>The following table summarizes the key differences between the main categories of amortization schedules:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type</th>
-<th>Interest Rate</th>
-<th>Monthly Payments</th>
-<th>Repayment Period</th>
-</tr></thead><tbody>
-<tr>
-<td>Fixed-Rate</td>
-<td>Fixed</td>
-<td>Equal</td>
-<td>Set</td>
-</tr>
-<tr>
-<td>Variable-Rate</td>
-<td>Adjustable</td>
-<td>Changing</td>
-<td>Variable</td>
-</tr>
-<tr>
-<td>Interest-Only</td>
-<td>Fixed or Variable</td>
-<td>Interest-only initially</td>
-<td>Initial period, followed by a balloon payment or new schedule</td>
-</tr>
-<tr>
-<td>Balloon</td>
-<td>Fixed or Variable</td>
-<td>Lower initially</td>
-<td>Set, followed by a large final payment</td>
-</tr>
-<tr>
-<td>Graduated</td>
-<td>Fixed or Variable</td>
-<td>Increasing</td>
-<td>Set, with increasing payments</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type</th><th>Interest Rate</th><th>Monthly Payments</th><th>Repayment Period</th></tr></thead><tbody>
+<tr><td>Fixed-Rate</td><td>Fixed</td><td>Equal</td><td>Set</td></tr>
+<tr><td>Variable-Rate</td><td>Adjustable</td><td>Changing</td><td>Variable</td></tr>
+<tr><td>Interest-Only</td><td>Fixed or Variable</td><td>Interest-only initially</td><td>Initial period, followed by a balloon payment or new schedule</td></tr>
+<tr><td>Balloon</td><td>Fixed or Variable</td><td>Lower initially</td><td>Set, followed by a large final payment</td></tr>
+<tr><td>Graduated</td><td>Fixed or Variable</td><td>Increasing</td><td>Set, with increasing payments</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different types of amortization schedules are connected in that they all provide a framework for repaying debts over time. However, they differ in their interest rates, payment structures, and repayment periods. Understanding the characteristics of each type of amortization schedule enables borrowers to choose the most suitable option for their financial situation and goals. For instance, a fixed-rate amortization schedule may be ideal for individuals who value predictability and stability, while a variable-rate schedule may be more suitable for those who can adapt to changing interest rates.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of amortization schedules encompasses various types, including fixed-rate, variable-rate, interest-only, balloon, and graduated schedules, each with distinct characteristics and applications, providing a comprehensive framework for understanding and managing debt repayment.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/finance/401k-retirement-plan/what-is.html" class="related-link">401K Retirement Plan</a>
-        <a href="/finance/annual-percentage-rate/what-is.html" class="related-link">Annual Percentage Rate</a>
-        <a href="/finance/annual-percentage-yield/what-is.html" class="related-link">Annual Percentage Yield</a>
-        <a href="/finance/capital-gains-tax/what-is.html" class="related-link">Capital Gains Tax</a>
-        <a href="/finance/emergency-fund/what-is.html" class="related-link">Emergency Fund</a>
-        <a href="/finance/mortgage-amortization/what-is.html" class="related-link">Mortgage Amortization</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -486,6 +513,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

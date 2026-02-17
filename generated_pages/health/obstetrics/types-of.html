@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of obstetrics - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of obstetrics - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/obstetrics/types-of.html">
     <meta property="og:title" content="Types of Obstetrics">
-    <meta property="og:description" content="A clear, simple explanation of obstetrics - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of obstetrics - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/obstetrics/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Obstetrics">
-    <meta name="twitter:description" content="A clear, simple explanation of obstetrics - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of obstetrics - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Obstetrics - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Obstetrics", "item": "https://360library.com/health/obstetrics/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Obstetrics", "description": "A clear, simple explanation of obstetrics - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/obstetrics/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/obstetrics/types-of.html"}, "about": {"@type": "Thing", "name": "Obstetrics"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Obstetrics", "description": "A clear, simple explanation of types of obstetrics - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/obstetrics/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/obstetrics/types-of.html"}, "about": {"@type": "Thing", "name": "Obstetrics"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,96 +388,69 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/obstetrics/what-is.html">Obstetrics</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Types of Obstetrics</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>Obstetrics is the branch of medicine that deals with the care of women during pregnancy, childbirth, and the postpartum period. The classification of obstetrics into different types is essential because it helps healthcare providers understand the various aspects of pregnancy and childbirth, allowing them to provide specialized care tailored to each patient's needs. By categorizing obstetrics into different types, healthcare providers can better manage the unique challenges and complexities that arise during pregnancy and childbirth, ultimately leading to improved health outcomes for mothers and babies. Understanding the different types of obstetrics is crucial for healthcare providers, as it enables them to develop effective treatment plans, anticipate potential complications, and provide high-quality care to their patients.</p>
-
-<p>2. MAIN CATEGORIES:</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <ul>
-  <li><strong>Prenatal Obstetrics</strong></li>
-  <li>Definition: Prenatal obstetrics refers to the care provided to women during pregnancy, before the onset of labor. This type of obstetrics focuses on monitoring the health of the mother and the fetus, detecting any potential complications, and providing guidance on pregnancy-related issues.</li>
-  <li>Key characteristics: Regular check-ups, ultrasounds, blood tests, and health education are all key components of prenatal obstetrics.</li>
-  <li>Example: A woman who is 20 weeks pregnant may visit her obstetrician for a routine check-up, which includes a fetal ultrasound to monitor the baby's growth and development.</li>
-  <li><strong>Intrapartum Obstetrics</strong></li>
-  <li>Definition: Intrapartum obstetrics refers to the care provided to women during labor and delivery. This type of obstetrics focuses on managing the labor process, monitoring the mother's and baby's health, and ensuring a safe delivery.</li>
-  <li>Key characteristics: Intrapartum obstetrics involves close monitoring of the mother's and baby's vital signs, administration of pain relief, and assistance with the delivery process.</li>
-  <li>Example: A woman in labor may receive intrapartum care, which includes continuous fetal monitoring, administration of oxygen, and assistance with pushing during the delivery process.</li>
-  <li><strong>Postpartum Obstetrics</strong></li>
-  <li>Definition: Postpartum obstetrics refers to the care provided to women after childbirth, typically during the first few weeks after delivery. This type of obstetrics focuses on monitoring the mother's recovery, providing guidance on newborn care, and addressing any postpartum complications.</li>
-  <li>Key characteristics: Postpartum obstetrics involves monitoring the mother's physical and emotional recovery, providing breastfeeding support, and addressing any concerns or complications that may arise after delivery.</li>
-  <li>Example: A new mother may receive postpartum care, which includes a follow-up appointment with her obstetrician to check on her recovery, discuss breastfeeding, and address any concerns about her baby's health.</li>
-  <li><strong>High-Risk Obstetrics</strong></li>
-  <li>Definition: High-risk obstetrics refers to the care provided to women who have pre-existing medical conditions or pregnancy-related complications that increase the risk of adverse outcomes. This type of obstetrics focuses on closely monitoring the mother's and baby's health, managing potential complications, and developing a plan for a safe delivery.</li>
-  <li>Key characteristics: High-risk obstetrics involves close collaboration with a multidisciplinary team of healthcare providers, including obstetricians, maternal-fetal medicine specialists, and other specialists.</li>
-  <li>Example: A woman with a history of pregnancy-induced hypertension may receive high-risk obstetric care, which includes regular blood pressure checks, ultrasounds, and close monitoring of her baby's growth and development.</li>
-  <li><strong>Reproductive Endocrinology and Infertility</strong></li>
-  <li>Definition: Reproductive endocrinology and infertility refers to the care provided to women who experience difficulties conceiving or have hormonal imbalances that affect their reproductive health. This type of obstetrics focuses on diagnosing and treating hormonal imbalances, providing fertility treatments, and addressing other reproductive health issues.</li>
-  <li>Key characteristics: Reproductive endocrinology and infertility involves a range of diagnostic tests, including hormone level checks, ultrasound, and other imaging studies, as well as fertility treatments such as in vitro fertilization (IVF).</li>
-  <li>Example: A woman who is having trouble conceiving may see a reproductive endocrinologist, who may order hormone level checks, perform a pelvic exam, and discuss fertility treatment options.</li>
+<li><strong>Prenatal Obstetrics</strong></li>
+<li>Definition: Prenatal obstetrics refers to the care provided to women during pregnancy, before the onset of labor. This type of obstetrics focuses on monitoring the health of the mother and the fetus, detecting any potential complications, and providing guidance on pregnancy-related issues.</li>
+<li>Key characteristics: Regular check-ups, ultrasounds, blood tests, and health education are all key components of prenatal obstetrics.</li>
+<li>Example: A woman who is 20 weeks pregnant may visit her obstetrician for a routine check-up, which includes a fetal ultrasound to monitor the baby's growth and development.</li>
+<li><strong>Intrapartum Obstetrics</strong></li>
+<li>Definition: Intrapartum obstetrics refers to the care provided to women during labor and delivery. This type of obstetrics focuses on managing the labor process, monitoring the mother's and baby's health, and ensuring a safe delivery.</li>
+<li>Key characteristics: Intrapartum obstetrics involves close monitoring of the mother's and baby's vital signs, administration of pain relief, and assistance with the delivery process.</li>
+<li>Example: A woman in labor may receive intrapartum care, which includes continuous fetal monitoring, administration of oxygen, and assistance with pushing during the delivery process.</li>
+<li><strong>Postpartum Obstetrics</strong></li>
+<li>Definition: Postpartum obstetrics refers to the care provided to women after childbirth, typically during the first few weeks after delivery. This type of obstetrics focuses on monitoring the mother's recovery, providing guidance on newborn care, and addressing any postpartum complications.</li>
+<li>Key characteristics: Postpartum obstetrics involves monitoring the mother's physical and emotional recovery, providing breastfeeding support, and addressing any concerns or complications that may arise after delivery.</li>
+<li>Example: A new mother may receive postpartum care, which includes a follow-up appointment with her obstetrician to check on her recovery, discuss breastfeeding, and address any concerns about her baby's health.</li>
+<li><strong>High-Risk Obstetrics</strong></li>
+<li>Definition: High-risk obstetrics refers to the care provided to women who have pre-existing medical conditions or pregnancy-related complications that increase the risk of adverse outcomes. This type of obstetrics focuses on closely monitoring the mother's and baby's health, managing potential complications, and developing a plan for a safe delivery.</li>
+<li>Key characteristics: High-risk obstetrics involves close collaboration with a multidisciplinary team of healthcare providers, including obstetricians, maternal-fetal medicine specialists, and other specialists.</li>
+<li>Example: A woman with a history of pregnancy-induced hypertension may receive high-risk obstetric care, which includes regular blood pressure checks, ultrasounds, and close monitoring of her baby's growth and development.</li>
+<li><strong>Reproductive Endocrinology and Infertility</strong></li>
+<li>Definition: Reproductive endocrinology and infertility refers to the care provided to women who experience difficulties conceiving or have hormonal imbalances that affect their reproductive health. This type of obstetrics focuses on diagnosing and treating hormonal imbalances, providing fertility treatments, and addressing other reproductive health issues.</li>
+<li>Key characteristics: Reproductive endocrinology and infertility involves a range of diagnostic tests, including hormone level checks, ultrasound, and other imaging studies, as well as fertility treatments such as in vitro fertilization (IVF).</li>
+<li>Example: A woman who is having trouble conceiving may see a reproductive endocrinologist, who may order hormone level checks, perform a pelvic exam, and discuss fertility treatment options.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Obstetrics</th>
-<th>Focus</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Prenatal</td>
-<td>Care during pregnancy</td>
-<td>Regular check-ups, ultrasounds, blood tests</td>
-<td>Routine check-up at 20 weeks</td>
-</tr>
-<tr>
-<td>Intrapartum</td>
-<td>Care during labor and delivery</td>
-<td>Close monitoring, pain relief, assistance with delivery</td>
-<td>Continuous fetal monitoring during labor</td>
-</tr>
-<tr>
-<td>Postpartum</td>
-<td>Care after childbirth</td>
-<td>Monitoring recovery, breastfeeding support, addressing complications</td>
-<td>Follow-up appointment after delivery</td>
-</tr>
-<tr>
-<td>High-Risk</td>
-<td>Care for women with pre-existing conditions or complications</td>
-<td>Close monitoring, collaboration with specialists</td>
-<td>Regular blood pressure checks for pregnancy-induced hypertension</td>
-</tr>
-<tr>
-<td>Reproductive Endocrinology and Infertility</td>
-<td>Care for women with hormonal imbalances or fertility issues</td>
-<td>Diagnostic tests, fertility treatments</td>
-<td>Hormone level checks and IVF</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Obstetrics</th><th>Focus</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Prenatal</td><td>Care during pregnancy</td><td>Regular check-ups, ultrasounds, blood tests</td><td>Routine check-up at 20 weeks</td></tr>
+<tr><td>Intrapartum</td><td>Care during labor and delivery</td><td>Close monitoring, pain relief, assistance with delivery</td><td>Continuous fetal monitoring during labor</td></tr>
+<tr><td>Postpartum</td><td>Care after childbirth</td><td>Monitoring recovery, breastfeeding support, addressing complications</td><td>Follow-up appointment after delivery</td></tr>
+<tr><td>High-Risk</td><td>Care for women with pre-existing conditions or complications</td><td>Close monitoring, collaboration with specialists</td><td>Regular blood pressure checks for pregnancy-induced hypertension</td></tr>
+<tr><td>Reproductive Endocrinology and Infertility</td><td>Care for women with hormonal imbalances or fertility issues</td><td>Diagnostic tests, fertility treatments</td><td>Hormone level checks and IVF</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different types of obstetrics are interconnected and often overlap. For example, a woman who receives prenatal care may also require intrapartum care during labor and delivery, and postpartum care after giving birth. High-risk obstetrics may involve collaboration with reproductive endocrinology and infertility specialists to manage underlying conditions that affect pregnancy. Understanding the connections between these different types of obstetrics is essential for healthcare providers to provide comprehensive and coordinated care to their patients.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system of obstetrics encompasses various types, including prenatal, intrapartum, postpartum, high-risk, and reproductive endocrinology and infertility, each with distinct characteristics and focuses that work together to provide comprehensive care to women throughout their reproductive journey.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/neurology/what-is.html" class="related-link">Neurology</a>
-        <a href="/health/nutrition/what-is.html" class="related-link">Nutrition</a>
-        <a href="/health/oncology/what-is.html" class="related-link">Oncology</a>
-        <a href="/health/orthopedics/what-is.html" class="related-link">Orthopedics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -477,6 +495,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

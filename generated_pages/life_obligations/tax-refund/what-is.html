@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/tax-refund/what-is.html">Tax Refund</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Tax Refund?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Tax refund is a payment made by a government to a taxpayer when the taxpayer has paid more taxes than they owe.</p>
-
 <p>When a person earns income, they are required to pay taxes on that income. The amount of taxes they pay is typically determined by their income level and the tax laws in their country or region. However, sometimes a person may pay more taxes than they actually owe, often because their employer withholds too much tax from their paycheck or because they are eligible for tax credits that reduce their tax liability. In these cases, the government will refund the excess amount to the taxpayer.</p>
-
 <p>The process of receiving a tax refund usually involves filing a tax return, which is a document that reports a person's income and tax payments to the government. The tax return will show whether the person has overpaid their taxes and is eligible for a refund. If a refund is due, the government will typically send the refund to the taxpayer by mail or deposit it directly into their bank account. Tax refunds can be a significant source of cash for individuals and families, and many people rely on them to help pay bills or cover expenses.</p>
-
 <p>Tax refunds can also be affected by a person's tax filing status, such as single, married, or head of household. Additionally, tax refunds may be subject to offset, which means that the government can use the refund to pay other debts the taxpayer owes, such as back taxes or child support. It is essential for taxpayers to understand their tax obligations and to file their tax returns accurately to ensure they receive the correct refund amount.</p>
-
 <p>Key components of tax refunds include:</p>
 <ul>
-  <li>Tax withholding, which is the amount of taxes taken out of a person's paycheck</li>
-  <li>Tax credits, which are amounts that can be subtracted from a person's tax liability</li>
-  <li>Tax deductions, which are expenses that can be subtracted from a person's income to reduce their tax liability</li>
-  <li>Filing status, which determines the tax rates and credits a person is eligible for</li>
-  <li>Tax returns, which are the documents used to report income and tax payments to the government</li>
-  <li>Refund offset, which is the process of using a tax refund to pay other debts owed to the government</li>
+<li>Tax withholding, which is the amount of taxes taken out of a person's paycheck</li>
+<li>Tax credits, which are amounts that can be subtracted from a person's tax liability</li>
+<li>Tax deductions, which are expenses that can be subtracted from a person's income to reduce their tax liability</li>
+<li>Filing status, which determines the tax rates and credits a person is eligible for</li>
+<li>Tax returns, which are the documents used to report income and tax payments to the government</li>
+<li>Refund offset, which is the process of using a tax refund to pay other debts owed to the government</li>
 </ul>
-
 <p>Some common misconceptions about tax refunds include:</p>
 <ul>
-  <li>That a tax refund is a bonus or free money from the government, when in fact it is simply a return of excess taxes paid</li>
-  <li>That a person must have filed their tax return by a certain deadline to be eligible for a refund, when in fact a person can file their tax return at any time and still receive a refund if they are eligible</li>
-  <li>That a tax refund can only be received by mail, when in fact many governments offer direct deposit as a faster and more convenient option</li>
-  <li>That a tax refund is not subject to any fees or charges, when in fact some tax preparation services may charge a fee to prepare and file a tax return</li>
+<li>That a tax refund is a bonus or free money from the government, when in fact it is simply a return of excess taxes paid</li>
+<li>That a person must have filed their tax return by a certain deadline to be eligible for a refund, when in fact a person can file their tax return at any time and still receive a refund if they are eligible</li>
+<li>That a tax refund can only be received by mail, when in fact many governments offer direct deposit as a faster and more convenient option</li>
+<li>That a tax refund is not subject to any fees or charges, when in fact some tax preparation services may charge a fee to prepare and file a tax return</li>
 </ul>
-
 <p>For example, suppose a person earns $30,000 per year and has $3,000 withheld from their paycheck for taxes. However, when they file their tax return, they realize they are eligible for a $1,000 tax credit that reduces their tax liability to $2,000. In this case, the government would refund the excess $1,000 to the taxpayer, since they have overpaid their taxes.</p>
-
 <p>In summary, a tax refund is a payment made by a government to a taxpayer when the taxpayer has paid more taxes than they owe, and it is an important part of the tax system that helps ensure individuals and families receive the correct amount of taxes they have paid.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/tax-filing/what-is.html" class="related-link">Tax Filing</a>
-        <a href="/life_obligations/tax-liability/what-is.html" class="related-link">Tax Liability</a>
-        <a href="/life_obligations/tax-withholding/what-is.html" class="related-link">Tax Withholding</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

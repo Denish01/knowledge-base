@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of power of attorney - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of power of attorney - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/power-of-attorney/types-of.html">
     <meta property="og:title" content="Types of Power Of Attorney">
-    <meta property="og:description" content="A clear, simple explanation of power of attorney - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of power of attorney - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/power-of-attorney/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Power Of Attorney">
-    <meta name="twitter:description" content="A clear, simple explanation of power of attorney - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of power of attorney - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Power Of Attorney - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Power Of Attorney", "item": "https://360library.com/life_obligations/power-of-attorney/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Power Of Attorney", "description": "A clear, simple explanation of power of attorney - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/power-of-attorney/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/power-of-attorney/types-of.html"}, "about": {"@type": "Thing", "name": "Power Of Attorney"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Power Of Attorney", "description": "A clear, simple explanation of types of power of attorney - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/power-of-attorney/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/power-of-attorney/types-of.html"}, "about": {"@type": "Thing", "name": "Power Of Attorney"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,89 +388,57 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/power-of-attorney/what-is.html">Power Of Attorney</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Power Of Attorney</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
-<p>Types of power of attorney refer to the different ways in which an individual can grant authority to another person or entity to act on their behalf in various matters, such as financial, medical, or personal decisions. Classification of power of attorney is crucial as it helps individuals understand the specific scope and limitations of the authority they are granting, ensuring that their interests are protected and their wishes are respected. By understanding the different types of power of attorney, individuals can make informed decisions about which type to use in different situations, and professionals, such as lawyers and financial advisors, can provide guidance and support to their clients.</p>
+            
 
-<p>2. MAIN CATEGORIES:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
+<p>Types of power of attorney refer to the different ways in which an individual can grant authority to another person or entity to act on their behalf in various matters, such as financial, medical, or personal decisions. Classification of power of attorney is crucial as it helps individuals understand the specific scope and limitations of the authority they are granting, ensuring that their interests are protected and their wishes are respected. By understanding the different types of power of attorney, individuals can make informed decisions about which type to use in different situations, and professionals, such as lawyers and financial advisors, can provide guidance and support to their clients.</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <p>There are several main categories of power of attorney, each with its own unique characteristics and purposes. These include:</p>
 <ul>
-  <li><strong>General Power of Attorney</strong>: A general power of attorney grants broad authority to the agent to act on behalf of the principal in a wide range of matters, including financial, business, and personal decisions. Key characteristics include the agent's ability to act in all matters, except those specifically excluded by the principal. For example, a person may grant a general power of attorney to a trusted friend or family member to manage their financial affairs while they are away on an extended trip.</li>
-  <li><strong>Special Power of Attorney</strong>: A special power of attorney, also known as a limited power of attorney, grants authority to the agent to act on behalf of the principal in a specific matter or set of matters. Key characteristics include the agent's limited authority and the specific scope of the power granted. For example, a person may grant a special power of attorney to a real estate agent to sell their property.</li>
-  <li><strong>Durable Power of Attorney</strong>: A durable power of attorney remains in effect even if the principal becomes incapacitated or unable to make decisions. Key characteristics include the agent's continued authority to act on behalf of the principal, even in the event of incapacitation. For example, a person may grant a durable power of attorney to a trusted family member to manage their financial affairs in the event they become unable to do so themselves.</li>
-  <li><strong>Springing Power of Attorney</strong>: A springing power of attorney becomes effective only upon the occurrence of a specific event, such as the principal's incapacitation. Key characteristics include the agent's authority to act on behalf of the principal only after the specified event has occurred. For example, a person may grant a springing power of attorney to a trusted friend or family member to manage their financial affairs in the event they become incapacitated.</li>
-  <li><strong>Medical Power of Attorney</strong>: A medical power of attorney, also known as an advance directive, grants authority to the agent to make medical decisions on behalf of the principal. Key characteristics include the agent's authority to act in matters related to the principal's health and medical care. For example, a person may grant a medical power of attorney to a trusted family member to make medical decisions on their behalf if they become unable to do so themselves.</li>
-  <li><strong>Financial Power of Attorney</strong>: A financial power of attorney grants authority to the agent to manage the principal's financial affairs, including banking, investments, and tax matters. Key characteristics include the agent's authority to act in matters related to the principal's financial affairs. For example, a person may grant a financial power of attorney to a trusted friend or family member to manage their financial affairs while they are away on an extended trip.</li>
+<li><strong>General Power of Attorney</strong>: A general power of attorney grants broad authority to the agent to act on behalf of the principal in a wide range of matters, including financial, business, and personal decisions. Key characteristics include the agent's ability to act in all matters, except those specifically excluded by the principal. For example, a person may grant a general power of attorney to a trusted friend or family member to manage their financial affairs while they are away on an extended trip.</li>
+<li><strong>Special Power of Attorney</strong>: A special power of attorney, also known as a limited power of attorney, grants authority to the agent to act on behalf of the principal in a specific matter or set of matters. Key characteristics include the agent's limited authority and the specific scope of the power granted. For example, a person may grant a special power of attorney to a real estate agent to sell their property.</li>
+<li><strong>Durable Power of Attorney</strong>: A durable power of attorney remains in effect even if the principal becomes incapacitated or unable to make decisions. Key characteristics include the agent's continued authority to act on behalf of the principal, even in the event of incapacitation. For example, a person may grant a durable power of attorney to a trusted family member to manage their financial affairs in the event they become unable to do so themselves.</li>
+<li><strong>Springing Power of Attorney</strong>: A springing power of attorney becomes effective only upon the occurrence of a specific event, such as the principal's incapacitation. Key characteristics include the agent's authority to act on behalf of the principal only after the specified event has occurred. For example, a person may grant a springing power of attorney to a trusted friend or family member to manage their financial affairs in the event they become incapacitated.</li>
+<li><strong>Medical Power of Attorney</strong>: A medical power of attorney, also known as an advance directive, grants authority to the agent to make medical decisions on behalf of the principal. Key characteristics include the agent's authority to act in matters related to the principal's health and medical care. For example, a person may grant a medical power of attorney to a trusted family member to make medical decisions on their behalf if they become unable to do so themselves.</li>
+<li><strong>Financial Power of Attorney</strong>: A financial power of attorney grants authority to the agent to manage the principal's financial affairs, including banking, investments, and tax matters. Key characteristics include the agent's authority to act in matters related to the principal's financial affairs. For example, a person may grant a financial power of attorney to a trusted friend or family member to manage their financial affairs while they are away on an extended trip.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Power of Attorney</th>
-<th>Scope of Authority</th>
-<th>Effective Date</th>
-<th>Key Characteristics</th>
-</tr></thead><tbody>
-<tr>
-<td>General Power of Attorney</td>
-<td>Broad authority</td>
-<td>Immediate</td>
-<td>Agent's ability to act in all matters</td>
-</tr>
-<tr>
-<td>Special Power of Attorney</td>
-<td>Limited authority</td>
-<td>Immediate</td>
-<td>Agent's limited authority and specific scope</td>
-</tr>
-<tr>
-<td>Durable Power of Attorney</td>
-<td>Broad authority</td>
-<td>Immediate</td>
-<td>Agent's continued authority in the event of incapacitation</td>
-</tr>
-<tr>
-<td>Springing Power of Attorney</td>
-<td>Limited authority</td>
-<td>Upon occurrence of specific event</td>
-<td>Agent's authority to act only after specified event</td>
-</tr>
-<tr>
-<td>Medical Power of Attorney</td>
-<td>Medical decisions</td>
-<td>Immediate</td>
-<td>Agent's authority to act in matters related to principal's health and medical care</td>
-</tr>
-<tr>
-<td>Financial Power of Attorney</td>
-<td>Financial matters</td>
-<td>Immediate</td>
-<td>Agent's authority to act in matters related to principal's financial affairs</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Power of Attorney</th><th>Scope of Authority</th><th>Effective Date</th><th>Key Characteristics</th></tr></thead><tbody>
+<tr><td>General Power of Attorney</td><td>Broad authority</td><td>Immediate</td><td>Agent's ability to act in all matters</td></tr>
+<tr><td>Special Power of Attorney</td><td>Limited authority</td><td>Immediate</td><td>Agent's limited authority and specific scope</td></tr>
+<tr><td>Durable Power of Attorney</td><td>Broad authority</td><td>Immediate</td><td>Agent's continued authority in the event of incapacitation</td></tr>
+<tr><td>Springing Power of Attorney</td><td>Limited authority</td><td>Upon occurrence of specific event</td><td>Agent's authority to act only after specified event</td></tr>
+<tr><td>Medical Power of Attorney</td><td>Medical decisions</td><td>Immediate</td><td>Agent's authority to act in matters related to principal's health and medical care</td></tr>
+<tr><td>Financial Power of Attorney</td><td>Financial matters</td><td>Immediate</td><td>Agent's authority to act in matters related to principal's financial affairs</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different types of power of attorney are connected in that they all grant authority to an agent to act on behalf of the principal, but they differ in terms of the scope and limitations of that authority. For example, a general power of attorney grants broad authority, while a special power of attorney grants limited authority. A durable power of attorney remains in effect even if the principal becomes incapacitated, while a springing power of attorney becomes effective only upon the occurrence of a specific event. Understanding how these different types of power of attorney relate to one another can help individuals make informed decisions about which type to use in different situations.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system of power of attorney includes general, special, durable, springing, medical, and financial powers of attorney, each with its own unique characteristics and purposes, allowing individuals to grant authority to agents to act on their behalf in a variety of matters, with varying scopes and limitations.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/percentage-of-income-model/what-is.html" class="related-link">Percentage Of Income Model</a>
-        <a href="/life_obligations/personal-loan/what-is.html" class="related-link">Personal Loan</a>
-        <a href="/life_obligations/primary-caregiver/what-is.html" class="related-link">Primary Caregiver</a>
-        <a href="/life_obligations/probate/what-is.html" class="related-link">Probate</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -470,6 +483,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

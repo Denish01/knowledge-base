@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of support modification - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of what affects support modification - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/support-modification/what-affects-it.html">
     <meta property="og:title" content="What Affects Support Modification">
-    <meta property="og:description" content="A clear, simple explanation of support modification - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of what affects support modification - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/support-modification/what-affects-it.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="What Affects Support Modification">
-    <meta name="twitter:description" content="A clear, simple explanation of support modification - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of what affects support modification - definition, key concepts, examples, and common misconceptions.">
     <title>What Affects Support Modification - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Support Modification", "item": "https://360library.com/life_obligations/support-modification/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "What Affects It"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Affects Support Modification", "description": "A clear, simple explanation of support modification - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/support-modification/what-affects-it.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/support-modification/what-affects-it.html"}, "about": {"@type": "Thing", "name": "Support Modification"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Affects Support Modification", "description": "A clear, simple explanation of what affects support modification - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/support-modification/what-affects-it.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/support-modification/what-affects-it.html"}, "about": {"@type": "Thing", "name": "Support Modification"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,48 +388,49 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/support-modification/what-is.html">Support Modification</a><span>&rsaquo;</span>What Affects It
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Affects Support Modification</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
-<p>Support modification refers to the process of changing or adjusting the amount of financial support, such as child support or alimony, that one party is required to pay to another. Understanding the factors that affect support modification is crucial because it can have a significant impact on the financial well-being of all parties involved. By recognizing the influences that shape support modification, individuals can better navigate the process and make informed decisions about their financial futures. The factors that affect support modification are complex and multifaceted, and understanding their cause-and-effect relationships is essential for achieving a fair and sustainable support arrangement.</p>
+            
 
-<p>2. MAIN FACTORS:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
+<p>Support modification refers to the process of changing or adjusting the amount of financial support, such as child support or alimony, that one party is required to pay to another. Understanding the factors that affect support modification is crucial because it can have a significant impact on the financial well-being of all parties involved. By recognizing the influences that shape support modification, individuals can better navigate the process and make informed decisions about their financial futures. The factors that affect support modification are complex and multifaceted, and understanding their cause-and-effect relationships is essential for achieving a fair and sustainable support arrangement.</p>
+<ol>
+<li>MAIN FACTORS:</li>
+</ol>
 <p>Several key factors influence support modification, including:</p>
 <ul>
-  <li><strong>Income Change</strong>: A significant change in income, either an increase or decrease, can affect support modification. If one party's income increases, they may be required to pay more support, while a decrease in income may lead to a reduction in support payments. The effect of income change on support modification is variable, as it depends on the specific circumstances of the case.</li>
-  <li><strong>Employment Status</strong>: A change in employment status, such as job loss or retirement, can influence support modification. If one party becomes unemployed, they may be unable to pay the same level of support, while a new job or career advancement may increase their ability to pay. The effect of employment status on support modification is variable, as it depends on the individual's circumstances.</li>
-  <li><strong>Custody Arrangements</strong>: Changes in custody arrangements, such as a shift from joint custody to sole custody, can impact support modification. The effect of custody arrangements on support modification is variable, as it depends on the specific circumstances of the case and the laws of the jurisdiction.</li>
-  <li><strong>Financial Need</strong>: The financial need of the recipient, such as a change in living expenses or medical needs, can affect support modification. If the recipient's financial need increases, they may be eligible for an increase in support, while a decrease in financial need may lead to a reduction in support. The effect of financial need on support modification is positive, as it ensures that the recipient's basic needs are met.</li>
-  <li><strong>Tax Laws</strong>: Changes in tax laws, such as tax reform or changes in tax deductions, can influence support modification. Tax laws can affect the amount of support that is taxable or deductible, which can impact the overall cost of support. The effect of tax laws on support modification is variable, as it depends on the specific tax laws and regulations in effect.</li>
-  <li><strong>Court Discretion</strong>: The discretion of the court or judge presiding over the support modification case can also play a role. The court may consider various factors, such as the parties' financial situations, earning capacities, and living expenses, when making a decision about support modification. The effect of court discretion on support modification is variable, as it depends on the specific circumstances of the case and the laws of the jurisdiction.</li>
-  <li><strong>Support Guidelines</strong>: The support guidelines in effect in the jurisdiction can also influence support modification. These guidelines provide a framework for determining the amount of support that should be paid, and changes to these guidelines can impact support modification. The effect of support guidelines on support modification is positive, as it provides a clear and consistent framework for determining support amounts.</li>
+<li><strong>Income Change</strong>: A significant change in income, either an increase or decrease, can affect support modification. If one party's income increases, they may be required to pay more support, while a decrease in income may lead to a reduction in support payments. The effect of income change on support modification is variable, as it depends on the specific circumstances of the case.</li>
+<li><strong>Employment Status</strong>: A change in employment status, such as job loss or retirement, can influence support modification. If one party becomes unemployed, they may be unable to pay the same level of support, while a new job or career advancement may increase their ability to pay. The effect of employment status on support modification is variable, as it depends on the individual's circumstances.</li>
+<li><strong>Custody Arrangements</strong>: Changes in custody arrangements, such as a shift from joint custody to sole custody, can impact support modification. The effect of custody arrangements on support modification is variable, as it depends on the specific circumstances of the case and the laws of the jurisdiction.</li>
+<li><strong>Financial Need</strong>: The financial need of the recipient, such as a change in living expenses or medical needs, can affect support modification. If the recipient's financial need increases, they may be eligible for an increase in support, while a decrease in financial need may lead to a reduction in support. The effect of financial need on support modification is positive, as it ensures that the recipient's basic needs are met.</li>
+<li><strong>Tax Laws</strong>: Changes in tax laws, such as tax reform or changes in tax deductions, can influence support modification. Tax laws can affect the amount of support that is taxable or deductible, which can impact the overall cost of support. The effect of tax laws on support modification is variable, as it depends on the specific tax laws and regulations in effect.</li>
+<li><strong>Court Discretion</strong>: The discretion of the court or judge presiding over the support modification case can also play a role. The court may consider various factors, such as the parties' financial situations, earning capacities, and living expenses, when making a decision about support modification. The effect of court discretion on support modification is variable, as it depends on the specific circumstances of the case and the laws of the jurisdiction.</li>
+<li><strong>Support Guidelines</strong>: The support guidelines in effect in the jurisdiction can also influence support modification. These guidelines provide a framework for determining the amount of support that should be paid, and changes to these guidelines can impact support modification. The effect of support guidelines on support modification is positive, as it provides a clear and consistent framework for determining support amounts.</li>
 </ul>
-
-<p>3. INTERCONNECTIONS:</p>
+<ol>
+<li>INTERCONNECTIONS:</li>
+</ol>
 <p>The factors that affect support modification are interconnected and can influence one another. For example, a change in income may lead to a change in employment status, which can in turn affect custody arrangements. Similarly, changes in tax laws can impact the financial need of the recipient, which can influence the amount of support that is paid. Understanding these interconnections is crucial for navigating the support modification process and achieving a fair and sustainable support arrangement.</p>
-
-<p>4. CONTROLLABLE VS UNCONTROLLABLE:</p>
+<ol>
+<li>CONTROLLABLE VS UNCONTROLLABLE:</li>
+</ol>
 <p>While some factors that affect support modification are controllable, such as income change or employment status, others are uncontrollable, such as tax laws or court discretion. Individuals can take steps to manage their income, employment status, and financial need, but they may have limited control over external factors such as tax laws or court decisions. Recognizing the difference between controllable and uncontrollable factors can help individuals focus their efforts on managing the factors that they can control.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The most important factors to understand when it comes to support modification are income change, employment status, custody arrangements, financial need, tax laws, court discretion, and support guidelines. These factors can have a significant impact on the support modification process and can influence one another in complex ways. By recognizing the cause-and-effect relationships between these factors, individuals can better navigate the support modification process and achieve a fair and sustainable support arrangement. Understanding the interconnections between these factors and recognizing the difference between controllable and uncontrollable factors can help individuals make informed decisions about their financial futures and achieve a positive outcome in the support modification process.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/support-adjustment/what-is.html" class="related-link">Support Adjustment</a>
-        <a href="/life_obligations/support-deviation/what-is.html" class="related-link">Support Deviation</a>
-        <a href="/life_obligations/tax-credit/what-is.html" class="related-link">Tax Credit</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -429,6 +475,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

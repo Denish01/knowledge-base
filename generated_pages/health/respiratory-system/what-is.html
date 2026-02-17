@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/respiratory-system/what-is.html">Respiratory System</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>What Is Respiratory System?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Respiratory system is a complex network of organs and tissues that work together to bring oxygen into the body and remove carbon dioxide.</p>
-
 <p>The respiratory system is essential for the survival of humans and many other living organisms. It is responsible for exchanging gases with the environment, specifically taking in oxygen and expelling carbon dioxide. This process is necessary for the body's cells to function properly, as oxygen is required for the production of energy and carbon dioxide is a waste product that must be removed. The respiratory system is closely linked to the circulatory system, which transports oxygen and nutrients to the body's cells and removes waste products.</p>
-
 <p>The respiratory system begins with the nose and mouth, where air is inhaled and then passes through the throat and into the lungs. The lungs are the primary organs of the respiratory system, and they are responsible for exchanging oxygen and carbon dioxide through the process of respiration. The lungs are made up of tiny air sacs called alveoli, where the exchange of gases takes place. The respiratory system also includes the trachea, bronchi, and diaphragm, which work together to facilitate the movement of air in and out of the lungs.</p>
-
 <p>The process of respiration is controlled by the brain, which sends signals to the diaphragm and other muscles to contract and relax. This contraction and relaxation of the muscles allows the lungs to expand and fill with air, and then to deflate and expel air. The respiratory system is also influenced by factors such as altitude, air pressure, and the concentration of oxygen in the air. For example, at high altitudes, the air pressure is lower, which can make it more difficult for the body to obtain enough oxygen.</p>
-
 <p>Key components of the respiratory system include:</p>
 <ul>
-  <li>Lungs: the primary organs of respiration, where the exchange of oxygen and carbon dioxide takes place</li>
-  <li>Trachea: the tube that carries air from the throat to the lungs</li>
-  <li>Bronchi: the airways that branch off from the trachea and lead to the lungs</li>
-  <li>Diaphragm: the muscle that separates the chest cavity from the abdominal cavity and helps to expand and contract the lungs</li>
-  <li>Alveoli: the tiny air sacs in the lungs where the exchange of gases takes place</li>
-  <li>Nose and mouth: the entry points for air into the respiratory system</li>
+<li>Lungs: the primary organs of respiration, where the exchange of oxygen and carbon dioxide takes place</li>
+<li>Trachea: the tube that carries air from the throat to the lungs</li>
+<li>Bronchi: the airways that branch off from the trachea and lead to the lungs</li>
+<li>Diaphragm: the muscle that separates the chest cavity from the abdominal cavity and helps to expand and contract the lungs</li>
+<li>Alveoli: the tiny air sacs in the lungs where the exchange of gases takes place</li>
+<li>Nose and mouth: the entry points for air into the respiratory system</li>
 </ul>
-
 <p>Despite its importance, there are many common misconceptions about the respiratory system. Some of these misconceptions include:</p>
 <ul>
-  <li>That the lungs are the only organs involved in respiration, when in fact the entire respiratory system works together to facilitate the exchange of gases</li>
-  <li>That breathing is a completely automatic process, when in fact the brain plays a crucial role in controlling the rate and depth of breathing</li>
-  <li>That the respiratory system is only responsible for exchanging oxygen and carbon dioxide, when in fact it also helps to regulate the body's pH balance and remove other waste products</li>
-  <li>That the lungs are able to expand and fill with air on their own, when in fact the diaphragm and other muscles play a crucial role in facilitating this process</li>
+<li>That the lungs are the only organs involved in respiration, when in fact the entire respiratory system works together to facilitate the exchange of gases</li>
+<li>That breathing is a completely automatic process, when in fact the brain plays a crucial role in controlling the rate and depth of breathing</li>
+<li>That the respiratory system is only responsible for exchanging oxygen and carbon dioxide, when in fact it also helps to regulate the body's pH balance and remove other waste products</li>
+<li>That the lungs are able to expand and fill with air on their own, when in fact the diaphragm and other muscles play a crucial role in facilitating this process</li>
 </ul>
-
 <p>A real-world example of the importance of the respiratory system can be seen in the case of a person who is swimming underwater. In this situation, the person must hold their breath in order to prevent water from entering the lungs. However, the body's need for oxygen does not stop, and the respiratory system must continue to work to exchange gases and provide the body with the oxygen it needs. This can be achieved through the use of scuba gear, which provides a supply of oxygen for the diver to breathe.</p>
-
 <p>In summary, the respiratory system is a complex and essential network of organs and tissues that work together to bring oxygen into the body and remove carbon dioxide, and its proper functioning is crucial for the survival of humans and many other living organisms.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-        <a href="/health/pharmacology/what-is.html" class="related-link">Pharmacology</a>
-        <a href="/health/quarantine/what-is.html" class="related-link">Quarantine</a>
-        <a href="/health/sanitation/what-is.html" class="related-link">Sanitation</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

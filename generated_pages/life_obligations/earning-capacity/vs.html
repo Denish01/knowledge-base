@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of earning capacity - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of earning capacity vs - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/earning-capacity/vs.html">
     <meta property="og:title" content="Earning Capacity Compared">
-    <meta property="og:description" content="A clear, simple explanation of earning capacity - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of earning capacity vs - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/earning-capacity/vs.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Earning Capacity Compared">
-    <meta name="twitter:description" content="A clear, simple explanation of earning capacity - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of earning capacity vs - definition, key concepts, examples, and common misconceptions.">
     <title>Earning Capacity Compared - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Earning Capacity", "item": "https://360library.com/life_obligations/earning-capacity/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Comparison"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Earning Capacity Compared", "description": "A clear, simple explanation of earning capacity - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/earning-capacity/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/earning-capacity/vs.html"}, "about": {"@type": "Thing", "name": "Earning Capacity"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Earning Capacity Compared", "description": "A clear, simple explanation of earning capacity vs - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/earning-capacity/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/earning-capacity/vs.html"}, "about": {"@type": "Thing", "name": "Earning Capacity"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,53 +388,41 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/earning-capacity/what-is.html">Earning Capacity</a><span>&rsaquo;</span>Comparison
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Earning Capacity Compared</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Earning capacity vs refers to the comparison between an individual's potential earnings and their actual earnings, often used to assess financial losses or damages in various contexts, such as personal injury or employment law.</p>
-
 <p>The concept of earning capacity is based on the idea that every person has a certain level of potential earnings, which can be affected by factors such as education, skills, experience, and occupation. Earning capacity is not the same as actual earnings, as it takes into account the potential for future earnings and career advancement. For instance, a person may be earning a lower salary than their potential due to various reasons such as lack of experience, limited job opportunities, or personal circumstances.</p>
-
 <p>In many cases, earning capacity is used to determine the extent of financial losses or damages that an individual has suffered as a result of an injury, illness, or other circumstances that have impacted their ability to work. This can involve assessing the person's potential earnings before and after the incident, as well as their actual earnings during that time. The difference between the potential earnings and actual earnings can be used to calculate the financial losses or damages.</p>
-
 <p>To accurately assess earning capacity, it is essential to consider various factors that can influence an individual's potential earnings. This includes their education, work experience, skills, and occupation, as well as any limitations or restrictions that may affect their ability to work. By analyzing these factors, it is possible to estimate an individual's potential earnings and compare them to their actual earnings, allowing for a more comprehensive understanding of their financial situation.</p>
-
 <p>The key components of earning capacity vs include:</p>
 <ul>
-  <li>The individual's education and qualifications, which can impact their potential earnings</li>
-  <li>Work experience and skills, which can also influence earning potential</li>
-  <li>Occupation and industry, as different fields may offer varying levels of pay and opportunities for advancement</li>
-  <li>Any limitations or restrictions that may affect the individual's ability to work, such as a disability or health condition</li>
-  <li>The local job market and economic conditions, which can impact the availability of job opportunities and the level of pay</li>
+<li>The individual's education and qualifications, which can impact their potential earnings</li>
+<li>Work experience and skills, which can also influence earning potential</li>
+<li>Occupation and industry, as different fields may offer varying levels of pay and opportunities for advancement</li>
+<li>Any limitations or restrictions that may affect the individual's ability to work, such as a disability or health condition</li>
+<li>The local job market and economic conditions, which can impact the availability of job opportunities and the level of pay</li>
 </ul>
-
 <p>However, there are common misconceptions about earning capacity vs, including:</p>
 <ul>
-  <li>The assumption that earning capacity is the same as actual earnings, which can lead to inaccurate assessments of financial losses or damages</li>
-  <li>The failure to consider the impact of external factors, such as the local job market and economic conditions, on an individual's earning potential</li>
-  <li>The belief that earning capacity is fixed and cannot change over time, when in fact it can be influenced by various factors such as education, experience, and changes in the job market</li>
-  <li>The idea that earning capacity is only relevant in cases of personal injury or employment law, when in fact it can be applied in various contexts, such as financial planning and career development</li>
+<li>The assumption that earning capacity is the same as actual earnings, which can lead to inaccurate assessments of financial losses or damages</li>
+<li>The failure to consider the impact of external factors, such as the local job market and economic conditions, on an individual's earning potential</li>
+<li>The belief that earning capacity is fixed and cannot change over time, when in fact it can be influenced by various factors such as education, experience, and changes in the job market</li>
+<li>The idea that earning capacity is only relevant in cases of personal injury or employment law, when in fact it can be applied in various contexts, such as financial planning and career development</li>
 </ul>
-
 <p>A real-world example of earning capacity vs is a person who has a degree in engineering but is working as a teacher due to personal circumstances. In this case, their actual earnings may be lower than their potential earnings as an engineer, and the difference between the two can be used to calculate their financial losses or damages. For instance, if the person's potential earnings as an engineer are $80,000 per year, but they are only earning $50,000 per year as a teacher, the difference of $30,000 per year can be used to assess their financial losses.</p>
-
 <p>In summary, earning capacity vs refers to the comparison between an individual's potential earnings and their actual earnings, taking into account various factors such as education, experience, and occupation, to assess financial losses or damages in different contexts.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/direct-deposit/what-is.html" class="related-link">Direct Deposit</a>
-        <a href="/life_obligations/disability-insurance/what-is.html" class="related-link">Disability Insurance</a>
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/eligibility-criteria/what-is.html" class="related-link">Eligibility Criteria</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -434,6 +467,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

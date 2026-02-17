@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of oncology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Learn how oncology works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <link rel="canonical" href="https://360library.com/health/oncology/how-it-works.html">
     <meta property="og:title" content="How Oncology Works">
-    <meta property="og:description" content="A clear, simple explanation of oncology - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Learn how oncology works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <meta property="og:url" content="https://360library.com/health/oncology/how-it-works.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How Oncology Works">
-    <meta name="twitter:description" content="A clear, simple explanation of oncology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Learn how oncology works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <title>How Oncology Works - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Oncology", "item": "https://360library.com/health/oncology/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "How It Works"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Oncology Works", "description": "A clear, simple explanation of oncology - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/oncology/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/oncology/how-it-works.html"}, "about": {"@type": "Thing", "name": "Oncology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Oncology Works", "description": "Learn how oncology works with this step-by-step explanation. Simple guide to the process and mechanism.", "url": "https://360library.com/health/oncology/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/oncology/how-it-works.html"}, "about": {"@type": "Thing", "name": "Oncology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,47 +388,46 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/oncology/what-is.html">Oncology</a><span>&rsaquo;</span>How It Works
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>How Oncology Works</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. QUICK ANSWER: Oncology, the study and treatment of cancer, works by identifying and targeting the specific cells that have become cancerous, then using various methods to stop their growth and spread. This process involves a combination of medical tests, treatments, and therapies that help to eliminate the cancer cells and prevent them from coming back.</p>
+            
 
-<p>2. STEP-BY-STEP PROCESS:</p>
+            <ol>
+<li>QUICK ANSWER: Oncology, the study and treatment of cancer, works by identifying and targeting the specific cells that have become cancerous, then using various methods to stop their growth and spread. This process involves a combination of medical tests, treatments, and therapies that help to eliminate the cancer cells and prevent them from coming back.</li>
+</ol>
+<ol>
+<li>STEP-BY-STEP PROCESS:</li>
+</ol>
 <p>First, a patient typically undergoes a series of medical tests, such as imaging scans and biopsies, to determine if they have cancer and what type it is. Then, a team of healthcare professionals, including oncologists and other specialists, review the test results to develop a personalized treatment plan. Next, the patient may undergo one or more treatments, such as surgery, chemotherapy, or radiation therapy, to target the cancer cells. After that, the patient is closely monitored to see how their body is responding to the treatment, and adjustments are made as needed. Finally, the patient may need to undergo additional treatments or therapies to prevent the cancer from coming back.</p>
-
-<p>3. KEY COMPONENTS:</p>
+<ol>
+<li>KEY COMPONENTS:</li>
+</ol>
 <p>The key components involved in oncology include cancer cells, which are the abnormal cells that have become cancerous, and the immune system, which is the body's natural defense against disease. Other important components include medical tests, such as imaging scans and biopsies, which help to diagnose and monitor the cancer, and treatments, such as surgery, chemotherapy, and radiation therapy, which are used to target and eliminate the cancer cells. Additionally, healthcare professionals, including oncologists, nurses, and other specialists, play a crucial role in developing and implementing treatment plans.</p>
-
-<p>4. VISUAL ANALOGY:</p>
+<ol>
+<li>VISUAL ANALOGY:</li>
+</ol>
 <p>A simple analogy for understanding how oncology works is to think of the body as a garden, and cancer cells as weeds that are growing out of control. Just as a gardener might use various methods, such as pulling, cutting, or using herbicides, to eliminate the weeds and prevent them from coming back, oncologists use various treatments and therapies to target and eliminate the cancer cells and prevent them from spreading.</p>
-
-<p>5. COMMON QUESTIONS:</p>
+<ol>
+<li>COMMON QUESTIONS:</li>
+</ol>
 <p>But what about cases where the cancer is too advanced to be treated with surgery or other therapies? In these cases, oncologists may focus on palliative care, which is aimed at relieving symptoms and improving the patient's quality of life. But what about the side effects of cancer treatments, such as hair loss or nausea? Oncologists and other healthcare professionals work to minimize these side effects and provide support to patients as they undergo treatment. But what about new or experimental treatments, such as immunotherapy or gene therapy? These treatments are being researched and developed to provide new options for patients with cancer.</p>
-
-<p>6. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>Oncology works by identifying and targeting cancer cells, then using various medical tests, treatments, and therapies to stop their growth and spread, with the ultimate goal of eliminating the cancer and preventing it from coming back.</p>
-
 <p>In the process of treating cancer, it is cause and effect that dictates the methods used. For instance, when cancer cells grow and spread, they can cause a range of symptoms, from pain and fatigue to organ damage and other complications. The treatments used in oncology, such as surgery, chemotherapy, and radiation therapy, are designed to target and eliminate the cancer cells, which in turn helps to alleviate symptoms and prevent further complications. By understanding the causes of cancer and the effects of different treatments, oncologists can develop effective treatment plans that help patients to achieve the best possible outcomes.</p>
-
 <p>The steps involved in oncology are interconnected, with each one building on the previous one to provide a comprehensive approach to treating cancer. First, diagnosis is critical, as it helps to identify the type and stage of cancer, which in turn determines the most effective treatment plan. Then, treatment is administered, which may involve one or more therapies, such as surgery, chemotherapy, or radiation therapy. Next, the patient is monitored to see how their body is responding to the treatment, and adjustments are made as needed. Finally, the patient may need to undergo additional treatments or therapies to prevent the cancer from coming back, which helps to ensure that the cancer is fully eliminated and does not recur.</p>
-
 <p>Overall, oncology is a complex and multifaceted field that involves a range of medical tests, treatments, and therapies, all of which are designed to help patients with cancer to achieve the best possible outcomes. By understanding how oncology works, patients and their loved ones can better navigate the treatment process and make informed decisions about their care.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/nutrition/what-is.html" class="related-link">Nutrition</a>
-        <a href="/health/obstetrics/what-is.html" class="related-link">Obstetrics</a>
-        <a href="/health/orthopedics/what-is.html" class="related-link">Orthopedics</a>
-        <a href="/health/otolaryngology/what-is.html" class="related-link">Otolaryngology</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -428,6 +472,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

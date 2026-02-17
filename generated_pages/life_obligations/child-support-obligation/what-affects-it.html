@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of child support obligation - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of what affects child support obligation - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/child-support-obligation/what-affects-it.html">
     <meta property="og:title" content="What Affects Child Support Obligation">
-    <meta property="og:description" content="A clear, simple explanation of child support obligation - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of what affects child support obligation - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/child-support-obligation/what-affects-it.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="What Affects Child Support Obligation">
-    <meta name="twitter:description" content="A clear, simple explanation of child support obligation - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of what affects child support obligation - definition, key concepts, examples, and common misconceptions.">
     <title>What Affects Child Support Obligation - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Child Support Obligation", "item": "https://360library.com/life_obligations/child-support-obligation/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "What Affects It"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Affects Child Support Obligation", "description": "A clear, simple explanation of child support obligation - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/child-support-obligation/what-affects-it.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/child-support-obligation/what-affects-it.html"}, "about": {"@type": "Thing", "name": "Child Support Obligation"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Affects Child Support Obligation", "description": "A clear, simple explanation of what affects child support obligation - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/child-support-obligation/what-affects-it.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/child-support-obligation/what-affects-it.html"}, "about": {"@type": "Thing", "name": "Child Support Obligation"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,46 +388,39 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/child-support-obligation/what-is.html">Child Support Obligation</a><span>&rsaquo;</span>What Affects It
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Affects Child Support Obligation</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>INTRODUCTION</p>
 <p>Child support obligation refers to the financial responsibility of one parent to provide for the well-being of their child after a divorce or separation. Understanding the factors that affect child support obligation is crucial for parents, as it helps them navigate the complex process of determining and fulfilling their financial duties. The amount of child support owed can significantly impact a family's financial situation, making it essential to recognize the influences that shape this obligation.</p>
-
 <p>MAIN FACTORS</p>
 <p>The following factors affect child support obligation:</p>
-<p>1. Income of Both Parents: The income of both parents influences child support obligation by determining the amount of financial resources available to support the child. A higher income generally results in a higher child support obligation. The effect of this factor is positive, as increased income can lead to a greater ability to provide for the child.</p>
-<p>2. Custody Arrangement: The custody arrangement, including the amount of time each parent spends with the child, affects child support obligation by altering the financial responsibilities of each parent. A parent with primary custody may receive more child support, while a parent with joint custody may have a reduced obligation. The effect of this factor is variable, as it depends on the specific custody arrangement.</p>
-<p>3. Number of Children: The number of children requiring support influences child support obligation by increasing the overall financial needs of the family. More children means a higher child support obligation. The effect of this factor is positive, as the needs of the children are directly related to the number of children.</p>
-<p>4. Expenses and Needs of the Child: The expenses and needs of the child, including education, healthcare, and extracurricular activities, affect child support obligation by determining the amount of financial resources required to support the child's well-being. Higher expenses and needs result in a higher child support obligation. The effect of this factor is positive, as the goal is to provide for the child's needs.</p>
-<p>5. Debts and Financial Obligations of the Parents: The debts and financial obligations of the parents, such as mortgage payments, credit card debt, and other financial responsibilities, influence child support obligation by affecting the parents' ability to pay. Significant debts and financial obligations can reduce a parent's ability to fulfill their child support obligation. The effect of this factor is negative, as debts and financial obligations can limit the amount of financial resources available for child support.</p>
-<p>6. Employment Status and Job Stability: The employment status and job stability of the parents affect child support obligation by determining the reliability of their income. Unstable employment or job loss can reduce a parent's ability to pay child support. The effect of this factor is variable, as it depends on the specific employment situation.</p>
-<p>7. Location and Cost of Living: The location and cost of living, including the cost of housing, food, and other necessities, influence child support obligation by affecting the amount of financial resources required to support the child's standard of living. A higher cost of living results in a higher child support obligation. The effect of this factor is positive, as the goal is to maintain the child's standard of living.</p>
-
+<ol>
+<li>Income of Both Parents: The income of both parents influences child support obligation by determining the amount of financial resources available to support the child. A higher income generally results in a higher child support obligation. The effect of this factor is positive, as increased income can lead to a greater ability to provide for the child.</li>
+<li>Custody Arrangement: The custody arrangement, including the amount of time each parent spends with the child, affects child support obligation by altering the financial responsibilities of each parent. A parent with primary custody may receive more child support, while a parent with joint custody may have a reduced obligation. The effect of this factor is variable, as it depends on the specific custody arrangement.</li>
+<li>Number of Children: The number of children requiring support influences child support obligation by increasing the overall financial needs of the family. More children means a higher child support obligation. The effect of this factor is positive, as the needs of the children are directly related to the number of children.</li>
+<li>Expenses and Needs of the Child: The expenses and needs of the child, including education, healthcare, and extracurricular activities, affect child support obligation by determining the amount of financial resources required to support the child's well-being. Higher expenses and needs result in a higher child support obligation. The effect of this factor is positive, as the goal is to provide for the child's needs.</li>
+<li>Debts and Financial Obligations of the Parents: The debts and financial obligations of the parents, such as mortgage payments, credit card debt, and other financial responsibilities, influence child support obligation by affecting the parents' ability to pay. Significant debts and financial obligations can reduce a parent's ability to fulfill their child support obligation. The effect of this factor is negative, as debts and financial obligations can limit the amount of financial resources available for child support.</li>
+<li>Employment Status and Job Stability: The employment status and job stability of the parents affect child support obligation by determining the reliability of their income. Unstable employment or job loss can reduce a parent's ability to pay child support. The effect of this factor is variable, as it depends on the specific employment situation.</li>
+<li>Location and Cost of Living: The location and cost of living, including the cost of housing, food, and other necessities, influence child support obligation by affecting the amount of financial resources required to support the child's standard of living. A higher cost of living results in a higher child support obligation. The effect of this factor is positive, as the goal is to maintain the child's standard of living.</li>
+</ol>
 <p>INTERCONNECTIONS</p>
 <p>These factors are interconnected, as changes in one factor can affect others. For example, a change in income can impact the custody arrangement, as a parent's ability to provide financial support may influence their custody rights. Similarly, the expenses and needs of the child can be affected by the location and cost of living, as a higher cost of living may require more financial resources to support the child's needs.</p>
-
 <p>CONTROLLABLE VS UNCONTROLLABLE</p>
 <p>Some factors that affect child support obligation can be managed, such as income, expenses, and debts, while others, like the number of children and location, are generally beyond the control of the parents. Understanding which factors can be controlled allows parents to make informed decisions about their financial situation and child support obligation.</p>
-
 <p>SUMMARY</p>
 <p>The most important factors to understand when it comes to child support obligation are the income of both parents, custody arrangement, number of children, expenses and needs of the child, and location and cost of living. These factors have a direct impact on the amount of child support owed and can be influenced by changes in the parents' financial situation and the child's needs. By recognizing the causes and effects of these factors, parents can better navigate the complex process of determining and fulfilling their child support obligations.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/child-support/what-is.html" class="related-link">Child Support</a>
-        <a href="/life_obligations/child-support-duration/what-is.html" class="related-link">Child Support Duration</a>
-        <a href="/life_obligations/cohabitation/what-is.html" class="related-link">Cohabitation</a>
-        <a href="/life_obligations/cost-sharing/what-is.html" class="related-link">Cost Sharing</a>
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -427,6 +465,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

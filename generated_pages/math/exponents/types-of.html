@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of exponents - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of exponents - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/math/exponents/types-of.html">
     <meta property="og:title" content="Types of Exponents">
-    <meta property="og:description" content="A clear, simple explanation of exponents - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of exponents - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/math/exponents/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Exponents">
-    <meta name="twitter:description" content="A clear, simple explanation of exponents - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of exponents - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Exponents - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://360library.com/#math"}, {"@type": "ListItem", "position": 3, "name": "Exponents", "item": "https://360library.com/math/exponents/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Exponents", "description": "A clear, simple explanation of exponents - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/exponents/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/exponents/types-of.html"}, "about": {"@type": "Thing", "name": "Exponents"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Exponents", "description": "A clear, simple explanation of types of exponents - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/exponents/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/exponents/types-of.html"}, "about": {"@type": "Thing", "name": "Exponents"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,97 +388,69 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/exponents/what-is.html">Exponents</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>Types of Exponents</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>The concept of exponents is a fundamental aspect of mathematics, used to denote repeated multiplication of a number by itself. Understanding the various types of exponents is crucial for simplifying complex mathematical expressions and solving equations. Classification of exponents into different categories helps in recognizing patterns and applying appropriate mathematical operations, making it easier to work with numbers and algebraic expressions. This classification system enables individuals to identify and manipulate exponents effectively, which is essential for problem-solving in mathematics and other fields.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the primary types of exponents, each with distinct characteristics and applications:</p>
 <ul>
-  <li><strong>Zero Exponents</strong></li>
-  <li>Definition: A zero exponent indicates that the base number is raised to the power of zero, resulting in a value of 1. This rule applies to any non-zero number.</li>
-  <li>Key characteristics: Any number raised to the power of zero equals 1, except for zero itself, which is undefined.</li>
-  <li>Example: $5^0 = 1$</li>
-  <li><strong>Positive Exponents</strong></li>
-  <li>Definition: Positive exponents represent repeated multiplication of the base number by itself, with the exponent indicating the number of times the base is multiplied.</li>
-  <li>Key characteristics: The result of a positive exponent is always greater than the base number itself, except when the base is 1 or less than 1.</li>
-  <li>Example: $2^3 = 2 \times 2 \times 2 = 8$</li>
-  <li><strong>Negative Exponents</strong></li>
-  <li>Definition: Negative exponents indicate the reciprocal of the base number raised to the positive exponent, representing repeated division by the base number.</li>
-  <li>Key characteristics: A negative exponent can be rewritten as a positive exponent by taking the reciprocal of the base, and the result is always less than 1 when the base is greater than 1.</li>
-  <li>Example: $2^{-3} = \frac{1}{2^3} = \frac{1}{8}$</li>
-  <li><strong>Rational Exponents</strong></li>
-  <li>Definition: Rational exponents, also known as fractional exponents, represent a combination of roots and powers, allowing for more complex operations such as finding roots and solving equations.</li>
-  <li>Key characteristics: Rational exponents can be used to simplify expressions involving radicals and fractional powers, providing a more concise and manageable form.</li>
-  <li>Example: $4^{\frac{1}{2}} = \sqrt{4} = 2$</li>
-  <li><strong>Irrational Exponents</strong></li>
-  <li>Definition: Irrational exponents involve non-repeating, non-terminating decimal numbers as the exponent, often resulting in transcendental numbers.</li>
-  <li>Key characteristics: Irrational exponents are used in advanced mathematical calculations, particularly in calculus and mathematical analysis, to describe complex relationships between variables.</li>
-  <li>Example: $e^{\pi}$, where $e$ and $\pi$ are both irrational numbers.</li>
+<li><strong>Zero Exponents</strong></li>
+<li>Definition: A zero exponent indicates that the base number is raised to the power of zero, resulting in a value of 1. This rule applies to any non-zero number.</li>
+<li>Key characteristics: Any number raised to the power of zero equals 1, except for zero itself, which is undefined.</li>
+<li>Example: $5^0 = 1$</li>
+<li><strong>Positive Exponents</strong></li>
+<li>Definition: Positive exponents represent repeated multiplication of the base number by itself, with the exponent indicating the number of times the base is multiplied.</li>
+<li>Key characteristics: The result of a positive exponent is always greater than the base number itself, except when the base is 1 or less than 1.</li>
+<li>Example: $2^3 = 2 \times 2 \times 2 = 8$</li>
+<li><strong>Negative Exponents</strong></li>
+<li>Definition: Negative exponents indicate the reciprocal of the base number raised to the positive exponent, representing repeated division by the base number.</li>
+<li>Key characteristics: A negative exponent can be rewritten as a positive exponent by taking the reciprocal of the base, and the result is always less than 1 when the base is greater than 1.</li>
+<li>Example: $2^{-3} = \frac{1}{2^3} = \frac{1}{8}$</li>
+<li><strong>Rational Exponents</strong></li>
+<li>Definition: Rational exponents, also known as fractional exponents, represent a combination of roots and powers, allowing for more complex operations such as finding roots and solving equations.</li>
+<li>Key characteristics: Rational exponents can be used to simplify expressions involving radicals and fractional powers, providing a more concise and manageable form.</li>
+<li>Example: $4^{\frac{1}{2}} = \sqrt{4} = 2$</li>
+<li><strong>Irrational Exponents</strong></li>
+<li>Definition: Irrational exponents involve non-repeating, non-terminating decimal numbers as the exponent, often resulting in transcendental numbers.</li>
+<li>Key characteristics: Irrational exponents are used in advanced mathematical calculations, particularly in calculus and mathematical analysis, to describe complex relationships between variables.</li>
+<li>Example: $e^{\pi}$, where $e$ and $\pi$ are both irrational numbers.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
-<table class="comparison-table"><thead><tr>
-<th>Type of Exponent</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Zero Exponents</td>
-<td>Base raised to the power of zero</td>
-<td>Always equals 1 (except for zero)</td>
-<td>$5^0 = 1$</td>
-</tr>
-<tr>
-<td>Positive Exponents</td>
-<td>Repeated multiplication by the base</td>
-<td>Result is greater than the base (except for 1 or less)</td>
-<td>$2^3 = 8$</td>
-</tr>
-<tr>
-<td>Negative Exponents</td>
-<td>Reciprocal of the base raised to the positive exponent</td>
-<td>Result is less than 1 (when base is greater than 1)</td>
-<td>$2^{-3} = \frac{1}{8}$</td>
-</tr>
-<tr>
-<td>Rational Exponents</td>
-<td>Combination of roots and powers</td>
-<td>Simplifies expressions with radicals and fractional powers</td>
-<td>$4^{\frac{1}{2}} = 2$</td>
-</tr>
-<tr>
-<td>Irrational Exponents</td>
-<td>Non-repeating, non-terminating decimal as the exponent</td>
-<td>Used in advanced calculations, resulting in transcendental numbers</td>
-<td>$e^{\pi}$</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Exponent</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Zero Exponents</td><td>Base raised to the power of zero</td><td>Always equals 1 (except for zero)</td><td>$5^0 = 1$</td></tr>
+<tr><td>Positive Exponents</td><td>Repeated multiplication by the base</td><td>Result is greater than the base (except for 1 or less)</td><td>$2^3 = 8$</td></tr>
+<tr><td>Negative Exponents</td><td>Reciprocal of the base raised to the positive exponent</td><td>Result is less than 1 (when base is greater than 1)</td><td>$2^{-3} = \frac{1}{8}$</td></tr>
+<tr><td>Rational Exponents</td><td>Combination of roots and powers</td><td>Simplifies expressions with radicals and fractional powers</td><td>$4^{\frac{1}{2}} = 2$</td></tr>
+<tr><td>Irrational Exponents</td><td>Non-repeating, non-terminating decimal as the exponent</td><td>Used in advanced calculations, resulting in transcendental numbers</td><td>$e^{\pi}$</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different types of exponents are interconnected, as they can be transformed into one another through algebraic manipulation. For example, a negative exponent can be expressed as a positive exponent by taking the reciprocal of the base. Similarly, rational exponents can be used to simplify expressions involving radicals and fractional powers, which can then be evaluated using positive or negative exponents. Understanding these relationships is essential for working with exponents and solving mathematical problems.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of exponents includes zero, positive, negative, rational, and irrational exponents, each with unique characteristics and applications, providing a comprehensive framework for understanding and working with mathematical expressions involving repeated multiplication and division.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/coordinate-plane/what-is.html" class="related-link">Coordinate Plane</a>
-        <a href="/math/decimals/what-is.html" class="related-link">Decimals</a>
-        <a href="/math/fractions/what-is.html" class="related-link">Fractions</a>
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/ratios/what-is.html" class="related-link">Ratios</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -478,6 +495,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

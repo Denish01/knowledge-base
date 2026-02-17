@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of condensation - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of condensation - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/science/condensation/types-of.html">
     <meta property="og:title" content="Types of Condensation">
-    <meta property="og:description" content="A clear, simple explanation of condensation - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of condensation - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/science/condensation/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Condensation">
-    <meta name="twitter:description" content="A clear, simple explanation of condensation - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of condensation - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Condensation - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Science", "item": "https://360library.com/#science"}, {"@type": "ListItem", "position": 3, "name": "Condensation", "item": "https://360library.com/science/condensation/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Condensation", "description": "A clear, simple explanation of condensation - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/condensation/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/condensation/types-of.html"}, "about": {"@type": "Thing", "name": "Condensation"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Condensation", "description": "A clear, simple explanation of types of condensation - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/condensation/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/condensation/types-of.html"}, "about": {"@type": "Thing", "name": "Condensation"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,105 +388,87 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#science">Science</a><span>&rsaquo;</span><a href="/science/condensation/what-is.html">Condensation</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #0891B2">
     <main class="article-main">
         <article>
             <h1>Types of Condensation</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>Condensation is a fundamental process in the water cycle, where water vapor in the air is transformed into liquid water. The classification of condensation is essential to understand the various ways in which this process occurs, as it has significant implications for weather patterns, climate, and environmental systems. By categorizing condensation, we can better comprehend the underlying mechanisms and factors that influence the formation of liquid water from water vapor. This classification system covers the different types of condensation, their characteristics, and examples, providing a comprehensive understanding of this vital process.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the primary types of condensation:</p>
-<p>1. <strong>Surface Condensation</strong></p>
+<ol>
+<li><strong>Surface Condensation</strong></li>
+</ol>
 <ul>
-  <li>Definition: Surface condensation occurs when water vapor in the air comes into contact with a surface that is cooler than the dew point, causing the vapor to condense into liquid water. This type of condensation is commonly observed on surfaces such as windows, mirrors, and roofs.</li>
-  <li>Key characteristics: Cooler surface temperature, high humidity, and presence of nucleation sites.</li>
-  <li>Example: Breath fogging up a mirror on a cold morning.</li>
+<li>Definition: Surface condensation occurs when water vapor in the air comes into contact with a surface that is cooler than the dew point, causing the vapor to condense into liquid water. This type of condensation is commonly observed on surfaces such as windows, mirrors, and roofs.</li>
+<li>Key characteristics: Cooler surface temperature, high humidity, and presence of nucleation sites.</li>
+<li>Example: Breath fogging up a mirror on a cold morning.</li>
 </ul>
-<p>2. <strong>Nucleation Condensation</strong></p>
+<ol>
+<li><strong>Nucleation Condensation</strong></li>
+</ol>
 <ul>
-  <li>Definition: Nucleation condensation takes place when water vapor in the air condenses onto tiny particles or nuclei, such as dust, salt, or pollutants, forming droplets. This process is crucial for the formation of clouds and precipitation.</li>
-  <li>Key characteristics: Presence of nucleation sites, high humidity, and sufficient water vapor.</li>
-  <li>Example: Cloud formation around mountain peaks or over oceans.</li>
+<li>Definition: Nucleation condensation takes place when water vapor in the air condenses onto tiny particles or nuclei, such as dust, salt, or pollutants, forming droplets. This process is crucial for the formation of clouds and precipitation.</li>
+<li>Key characteristics: Presence of nucleation sites, high humidity, and sufficient water vapor.</li>
+<li>Example: Cloud formation around mountain peaks or over oceans.</li>
 </ul>
-<p>3. <strong>Evaporative Condensation</strong></p>
+<ol>
+<li><strong>Evaporative Condensation</strong></li>
+</ol>
 <ul>
-  <li>Definition: Evaporative condensation occurs when water vapor in the air is cooled from below, typically through the evaporation of water from a surface, causing the vapor to condense into liquid water. This type of condensation is often seen in areas with high evaporation rates, such as near bodies of water or in arid regions.</li>
-  <li>Key characteristics: High evaporation rate, cooler air, and presence of moisture.</li>
-  <li>Example: Fog formation over a lake or ocean on a warm day.</li>
+<li>Definition: Evaporative condensation occurs when water vapor in the air is cooled from below, typically through the evaporation of water from a surface, causing the vapor to condense into liquid water. This type of condensation is often seen in areas with high evaporation rates, such as near bodies of water or in arid regions.</li>
+<li>Key characteristics: High evaporation rate, cooler air, and presence of moisture.</li>
+<li>Example: Fog formation over a lake or ocean on a warm day.</li>
 </ul>
-<p>4. <strong>Adiabatic Condensation</strong></p>
+<ol>
+<li><strong>Adiabatic Condensation</strong></li>
+</ol>
 <ul>
-  <li>Definition: Adiabatic condensation occurs when air is cooled as it rises, causing the water vapor to condense into liquid water, forming clouds or precipitation. This type of condensation is commonly associated with weather patterns such as fronts or low-pressure systems.</li>
-  <li>Key characteristics: Rising air, cooling, and presence of moisture.</li>
-  <li>Example: Cloud formation along a weather front or over a mountain range.</li>
+<li>Definition: Adiabatic condensation occurs when air is cooled as it rises, causing the water vapor to condense into liquid water, forming clouds or precipitation. This type of condensation is commonly associated with weather patterns such as fronts or low-pressure systems.</li>
+<li>Key characteristics: Rising air, cooling, and presence of moisture.</li>
+<li>Example: Cloud formation along a weather front or over a mountain range.</li>
 </ul>
-<p>5. <strong>Deposition Condensation</strong></p>
+<ol>
+<li><strong>Deposition Condensation</strong></li>
+</ol>
 <ul>
-  <li>Definition: Deposition condensation is the process by which water vapor in the air is directly converted into ice or frost, without going through the liquid phase. This type of condensation is typically observed in cold environments, such as polar regions or at high elevations.</li>
-  <li>Key characteristics: Low temperatures, high humidity, and presence of nucleation sites.</li>
-  <li>Example: Frost formation on a car windshield or the growth of ice crystals on a leaf.</li>
+<li>Definition: Deposition condensation is the process by which water vapor in the air is directly converted into ice or frost, without going through the liquid phase. This type of condensation is typically observed in cold environments, such as polar regions or at high elevations.</li>
+<li>Key characteristics: Low temperatures, high humidity, and presence of nucleation sites.</li>
+<li>Example: Frost formation on a car windshield or the growth of ice crystals on a leaf.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
-<table class="comparison-table"><thead><tr>
-<th>Type of Condensation</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Surface Condensation</td>
-<td>Condensation on a surface</td>
-<td>Cooler surface, high humidity, nucleation sites</td>
-<td>Breath fogging up a mirror</td>
-</tr>
-<tr>
-<td>Nucleation Condensation</td>
-<td>Condensation onto particles</td>
-<td>Presence of nucleation sites, high humidity, water vapor</td>
-<td>Cloud formation around mountain peaks</td>
-</tr>
-<tr>
-<td>Evaporative Condensation</td>
-<td>Condensation through evaporation</td>
-<td>High evaporation rate, cooler air, moisture</td>
-<td>Fog formation over a lake</td>
-</tr>
-<tr>
-<td>Adiabatic Condensation</td>
-<td>Condensation through air rising</td>
-<td>Rising air, cooling, moisture</td>
-<td>Cloud formation along a weather front</td>
-</tr>
-<tr>
-<td>Deposition Condensation</td>
-<td>Direct conversion to ice or frost</td>
-<td>Low temperatures, high humidity, nucleation sites</td>
-<td>Frost formation on a car windshield</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Condensation</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Surface Condensation</td><td>Condensation on a surface</td><td>Cooler surface, high humidity, nucleation sites</td><td>Breath fogging up a mirror</td></tr>
+<tr><td>Nucleation Condensation</td><td>Condensation onto particles</td><td>Presence of nucleation sites, high humidity, water vapor</td><td>Cloud formation around mountain peaks</td></tr>
+<tr><td>Evaporative Condensation</td><td>Condensation through evaporation</td><td>High evaporation rate, cooler air, moisture</td><td>Fog formation over a lake</td></tr>
+<tr><td>Adiabatic Condensation</td><td>Condensation through air rising</td><td>Rising air, cooling, moisture</td><td>Cloud formation along a weather front</td></tr>
+<tr><td>Deposition Condensation</td><td>Direct conversion to ice or frost</td><td>Low temperatures, high humidity, nucleation sites</td><td>Frost formation on a car windshield</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different types of condensation are interconnected and can occur simultaneously or in sequence. For example, nucleation condensation can lead to the formation of clouds, which can then produce precipitation through adiabatic condensation. Surface condensation can occur on the ground or on surfaces, while evaporative condensation can contribute to the formation of fog or clouds. Deposition condensation is a unique process that occurs in cold environments, where water vapor is directly converted into ice or frost. Understanding the relationships between these types of condensation is essential to comprehend the complex processes that govern the water cycle and weather patterns.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of condensation encompasses various types, including surface condensation, nucleation condensation, evaporative condensation, adiabatic condensation, and deposition condensation, each with distinct characteristics and examples that highlight their significance in the water cycle and environmental systems.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/science/carbon-cycle/what-is.html" class="related-link">Carbon Cycle</a>
-        <a href="/science/cellular-respiration/what-is.html" class="related-link">Cellular Respiration</a>
-        <a href="/science/decomposition/what-is.html" class="related-link">Decomposition</a>
-        <a href="/science/diffusion/what-is.html" class="related-link">Diffusion</a>
-        <a href="/science/dna-replication/what-is.html" class="related-link">Dna Replication</a>
-        <a href="/science/gravity/what-is.html" class="related-link">Gravity</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -486,6 +513,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/sleep-hygiene/what-is.html">Sleep Hygiene</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>What Is Sleep Hygiene?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Sleep hygiene is a set of practices and habits that help promote better quality sleep and overall health.</p>
-
 <p>Sleep is an essential part of our daily lives, and getting enough rest is crucial for physical and mental well-being. During sleep, our bodies repair and rejuvenate themselves, and our brains process and consolidate memories. Good sleep hygiene is important because it can help improve the quality of sleep, leading to better health outcomes, increased energy levels, and enhanced cognitive function. Poor sleep hygiene, on the other hand, can lead to sleep disorders, fatigue, and other health problems.</p>
-
 <p>Establishing good sleep hygiene requires a combination of environmental, behavioral, and lifestyle changes. This can include creating a sleep-conducive environment, such as keeping the bedroom quiet, dark, and cool, and investing in a comfortable mattress and pillows. It also involves developing healthy sleep habits, like going to bed and waking up at the same time every day, including weekends, and avoiding stimulating activities before bedtime. Additionally, lifestyle changes, such as regular exercise and a balanced diet, can also promote better sleep.</p>
-
 <p>Developing good sleep hygiene is a long-term process that requires commitment and patience. It involves identifying and changing habits and behaviors that interfere with sleep, such as consuming caffeine and electronics before bedtime, and replacing them with healthier alternatives. It also requires creating a relaxing bedtime routine, such as reading a book or taking a warm bath, to signal to the body that it is time to sleep. By making these changes, individuals can improve the quality of their sleep and wake up feeling rested and refreshed.</p>
-
 <p>Some key components of sleep hygiene include:</p>
 <ul>
-  <li>Establishing a consistent sleep schedule and bedtime routine</li>
-  <li>Creating a sleep-conducive environment, such as keeping the bedroom quiet, dark, and cool</li>
-  <li>Avoiding stimulating activities and electronics before bedtime</li>
-  <li>Avoiding caffeine, nicotine, and heavy meals close to bedtime</li>
-  <li>Getting regular exercise, but not before bedtime</li>
-  <li>Managing stress and anxiety through relaxation techniques, such as deep breathing or meditation</li>
+<li>Establishing a consistent sleep schedule and bedtime routine</li>
+<li>Creating a sleep-conducive environment, such as keeping the bedroom quiet, dark, and cool</li>
+<li>Avoiding stimulating activities and electronics before bedtime</li>
+<li>Avoiding caffeine, nicotine, and heavy meals close to bedtime</li>
+<li>Getting regular exercise, but not before bedtime</li>
+<li>Managing stress and anxiety through relaxation techniques, such as deep breathing or meditation</li>
 </ul>
-
 <p>Despite its importance, there are many common misconceptions about sleep hygiene. Some people believe that:</p>
 <ul>
-  <li>Sleeping in on weekends can make up for lost sleep during the week</li>
-  <li>Watching TV or scrolling through phones before bed can help them relax</li>
-  <li>Eating a heavy meal before bed can help them sleep better</li>
-  <li>Taking naps during the day can interfere with nighttime sleep</li>
+<li>Sleeping in on weekends can make up for lost sleep during the week</li>
+<li>Watching TV or scrolling through phones before bed can help them relax</li>
+<li>Eating a heavy meal before bed can help them sleep better</li>
+<li>Taking naps during the day can interfere with nighttime sleep</li>
 </ul>
-
 <p>A real-world example of good sleep hygiene is a person who goes to bed at 10 PM every night, including weekends, and wakes up at 6 AM to start their day. They create a relaxing bedtime routine by reading a book for 30 minutes before bed, and they avoid using their phone or computer during this time. They also keep their bedroom cool, quiet, and dark, and they exercise regularly, but not before bedtime. By following these habits, this person is able to get a good night's sleep and wake up feeling rested and refreshed.</p>
-
 <p>In summary, sleep hygiene refers to a set of practices and habits that help promote better quality sleep and overall health by establishing a consistent sleep schedule, creating a sleep-conducive environment, and avoiding stimulating activities before bedtime.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-        <a href="/health/respiratory-system/what-is.html" class="related-link">Respiratory System</a>
-        <a href="/health/sanitation/what-is.html" class="related-link">Sanitation</a>
-        <a href="/health/stress-management/what-is.html" class="related-link">Stress Management</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

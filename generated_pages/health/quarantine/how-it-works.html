@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of quarantine - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Learn how quarantine works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <link rel="canonical" href="https://360library.com/health/quarantine/how-it-works.html">
     <meta property="og:title" content="How Quarantine Works">
-    <meta property="og:description" content="A clear, simple explanation of quarantine - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Learn how quarantine works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <meta property="og:url" content="https://360library.com/health/quarantine/how-it-works.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How Quarantine Works">
-    <meta name="twitter:description" content="A clear, simple explanation of quarantine - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Learn how quarantine works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <title>How Quarantine Works - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Quarantine", "item": "https://360library.com/health/quarantine/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "How It Works"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Quarantine Works", "description": "A clear, simple explanation of quarantine - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/quarantine/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/quarantine/how-it-works.html"}, "about": {"@type": "Thing", "name": "Quarantine"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Quarantine Works", "description": "Learn how quarantine works with this step-by-step explanation. Simple guide to the process and mechanism.", "url": "https://360library.com/health/quarantine/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/quarantine/how-it-works.html"}, "about": {"@type": "Thing", "name": "Quarantine"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,42 +388,44 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/quarantine/what-is.html">Quarantine</a><span>&rsaquo;</span>How It Works
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>How Quarantine Works</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. QUICK ANSWER:</p>
+            
+
+            <ol>
+<li>QUICK ANSWER:</li>
+</ol>
 <p>Quarantine works by separating individuals who have been exposed to a contagious disease from the rest of the population to prevent the spread of the disease. This separation is typically enforced for a period of time to ensure that the individual does not develop symptoms and infect others.</p>
-
-<p>2. STEP-BY-STEP PROCESS:</p>
+<ol>
+<li>STEP-BY-STEP PROCESS:</li>
+</ol>
 <p>First, individuals who have been exposed to a contagious disease are identified and isolated from the rest of the population. Then, these individuals are monitored for symptoms of the disease, and their health is tracked regularly. Next, the isolated individuals are provided with necessary care and support, such as food, water, and medical attention, to ensure their well-being during the quarantine period. After that, the individuals are tested for the disease, and if they test positive, they are provided with treatment and continued care. Finally, if the individuals do not develop symptoms or test positive for the disease after the quarantine period, they are released from isolation and allowed to rejoin the general population.</p>
-
-<p>3. KEY COMPONENTS:</p>
+<ol>
+<li>KEY COMPONENTS:</li>
+</ol>
 <p>The key components involved in the quarantine process include the individual being quarantined, healthcare workers, and public health officials. The individual being quarantined plays a crucial role in following the guidelines and instructions provided by healthcare workers and public health officials. Healthcare workers are responsible for monitoring the individual's health, providing medical care, and testing for the disease. Public health officials are responsible for enforcing the quarantine, tracking the individual's movements, and ensuring that the quarantine is effective in preventing the spread of the disease. Other key components include quarantine facilities, such as homes or designated buildings, where the individual is isolated, and communication systems, such as phones or video conferencing tools, which enable healthcare workers and public health officials to stay in touch with the individual.</p>
-
-<p>4. VISUAL ANALOGY:</p>
+<ol>
+<li>VISUAL ANALOGY:</li>
+</ol>
 <p>A simple analogy that makes the quarantine mechanism intuitive is to think of it as a "firebreak" in a forest. Just as a firebreak is a cleared area that prevents a fire from spreading from one part of the forest to another, quarantine is a way to create a "health break" that prevents a contagious disease from spreading from one person to another. By isolating individuals who have been exposed to the disease, quarantine creates a barrier that prevents the disease from spreading to the rest of the population.</p>
-
-<p>5. COMMON QUESTIONS:</p>
+<ol>
+<li>COMMON QUESTIONS:</li>
+</ol>
 <p>But what about individuals who are not showing symptoms, can they still be quarantined? Yes, individuals who have been exposed to a contagious disease can be quarantined even if they are not showing symptoms, as they may still be able to transmit the disease to others. But what about the impact of quarantine on mental health, how can it be mitigated? The impact of quarantine on mental health can be mitigated by providing individuals with access to mental health support, such as counseling or therapy, and by enabling them to stay in touch with friends and family through communication systems. But what about the effectiveness of quarantine in preventing the spread of disease, how is it measured? The effectiveness of quarantine is measured by tracking the number of cases of the disease in the population and comparing it to the number of cases in areas where quarantine is not in place. But what about the role of technology in quarantine, how is it used? Technology, such as video conferencing tools and mobile apps, is used to monitor individuals in quarantine, provide them with medical care, and track their movements.</p>
-
-<p>6. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>Quarantine works by separating individuals who have been exposed to a contagious disease from the rest of the population, monitoring their health, and providing them with necessary care and support, in order to prevent the spread of the disease and protect the health of the general population.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-        <a href="/health/pharmacology/what-is.html" class="related-link">Pharmacology</a>
-        <a href="/health/respiratory-system/what-is.html" class="related-link">Respiratory System</a>
-        <a href="/health/sanitation/what-is.html" class="related-link">Sanitation</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -423,6 +470,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

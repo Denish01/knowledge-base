@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/family-budget/what-is.html">Family Budget</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Family Budget?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Family budget is a plan for how a household allocates its income towards various expenses, savings, and debt repayment to achieve financial stability and security.</p>
-
 <p>A family budget is essential for managing the financial resources of a household. It helps individuals and families understand where their money is going and make informed decisions about how to use their income. By creating a budget, families can identify areas where they can cut back on unnecessary expenses and allocate more funds towards important goals, such as saving for education, retirement, or buying a home. A budget also helps families prepare for unexpected expenses, such as car repairs or medical bills, and avoid debt.</p>
-
 <p>Creating a budget involves tracking income and expenses, categorizing expenses into different groups, and setting financial goals. It requires a thorough understanding of the household's financial situation, including income, expenses, debts, and assets. A budget can be simple or complex, depending on the household's financial situation and goals. Some families may use a simple budget that allocates 50% of their income towards necessary expenses, such as rent and utilities, 30% towards discretionary spending, and 20% towards saving and debt repayment.</p>
-
 <p>A budget can be adjusted and revised as the household's financial situation changes. For example, if a family member loses their job, the budget may need to be revised to reflect the reduced income. Similarly, if a family receives an inheritance or a tax refund, they may want to adjust their budget to allocate the extra funds towards their goals. Regularly reviewing and updating the budget helps families stay on track and achieve their financial goals.</p>
-
 <p>The key components of a family budget include:</p>
 <ul>
-  <li>Income: the total amount of money earned by the household</li>
-  <li>Fixed expenses: regular expenses that remain the same each month, such as rent and utilities</li>
-  <li>Variable expenses: expenses that change from month to month, such as groceries and entertainment</li>
-  <li>Savings: funds set aside for short-term and long-term goals</li>
-  <li>Debt repayment: payments made towards outstanding debts, such as credit cards and loans</li>
-  <li>Emergency fund: a cushion of savings to cover unexpected expenses and financial setbacks</li>
+<li>Income: the total amount of money earned by the household</li>
+<li>Fixed expenses: regular expenses that remain the same each month, such as rent and utilities</li>
+<li>Variable expenses: expenses that change from month to month, such as groceries and entertainment</li>
+<li>Savings: funds set aside for short-term and long-term goals</li>
+<li>Debt repayment: payments made towards outstanding debts, such as credit cards and loans</li>
+<li>Emergency fund: a cushion of savings to cover unexpected expenses and financial setbacks</li>
 </ul>
-
 <p>Some common misconceptions about family budgets include:</p>
 <ul>
-  <li>That budgets are only for people who are struggling financially</li>
-  <li>That creating a budget is a one-time task, rather than an ongoing process</li>
-  <li>That budgets are too restrictive and limit freedom to make financial choices</li>
-  <li>That budgets are only necessary for large or complex households, and not for small or simple households</li>
+<li>That budgets are only for people who are struggling financially</li>
+<li>That creating a budget is a one-time task, rather than an ongoing process</li>
+<li>That budgets are too restrictive and limit freedom to make financial choices</li>
+<li>That budgets are only necessary for large or complex households, and not for small or simple households</li>
 </ul>
-
 <p>A real-world example of a family budget is a household with two working parents and two children. The parents earn a combined income of $6,000 per month and have the following expenses: $2,000 for rent, $1,000 for utilities and groceries, $500 for transportation, and $1,000 for savings and debt repayment. They also set aside $1,000 per month for entertainment, vacations, and unexpected expenses. By tracking their income and expenses, this household can see where their money is going and make adjustments to achieve their financial goals.</p>
-
 <p>In summary, a family budget is a plan for managing a household's financial resources to achieve financial stability and security by allocating income towards various expenses, savings, and debt repayment.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/estate-planning/what-is.html" class="related-link">Estate Planning</a>
-        <a href="/life_obligations/estimated-tax/what-is.html" class="related-link">Estimated Tax</a>
-        <a href="/life_obligations/financial-burden/what-is.html" class="related-link">Financial Burden</a>
-        <a href="/life_obligations/financial-responsibility/what-is.html" class="related-link">Financial Responsibility</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

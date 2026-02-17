@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of mental illness - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Learn how mental illness works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <link rel="canonical" href="https://360library.com/health/mental-illness/how-it-works.html">
     <meta property="og:title" content="How Mental Illness Works">
-    <meta property="og:description" content="A clear, simple explanation of mental illness - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Learn how mental illness works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <meta property="og:url" content="https://360library.com/health/mental-illness/how-it-works.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How Mental Illness Works">
-    <meta name="twitter:description" content="A clear, simple explanation of mental illness - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Learn how mental illness works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <title>How Mental Illness Works - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Mental Illness", "item": "https://360library.com/health/mental-illness/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "How It Works"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Mental Illness Works", "description": "A clear, simple explanation of mental illness - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/mental-illness/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/mental-illness/how-it-works.html"}, "about": {"@type": "Thing", "name": "Mental Illness"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Mental Illness Works", "description": "Learn how mental illness works with this step-by-step explanation. Simple guide to the process and mechanism.", "url": "https://360library.com/health/mental-illness/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/mental-illness/how-it-works.html"}, "about": {"@type": "Thing", "name": "Mental Illness"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,51 +388,49 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/mental-illness/what-is.html">Mental Illness</a><span>&rsaquo;</span>How It Works
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>How Mental Illness Works</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. QUICK ANSWER: Mental illness is a complex condition that arises from a combination of genetic, environmental, and psychological factors, affecting the way the brain processes information and regulates emotions. This intricate process involves a series of steps that ultimately impact an individual's thoughts, feelings, and behaviors.</p>
+            
 
-<p>2. STEP-BY-STEP PROCESS:</p>
+            <ol>
+<li>QUICK ANSWER: Mental illness is a complex condition that arises from a combination of genetic, environmental, and psychological factors, affecting the way the brain processes information and regulates emotions. This intricate process involves a series of steps that ultimately impact an individual's thoughts, feelings, and behaviors.</li>
+</ol>
+<ol>
+<li>STEP-BY-STEP PROCESS:</li>
+</ol>
 <p>First, genetic predisposition and environmental factors, such as trauma or stress, can affect the development and function of the brain. Then, these factors can alter the balance of neurotransmitters, which are chemicals that transmit signals between brain cells. Next, this imbalance can disrupt normal brain function, leading to changes in mood, perception, and behavior. As a result, an individual may experience symptoms such as anxiety, depression, or hallucinations. Finally, if left untreated, mental illness can lead to significant impairment in daily life, relationships, and overall well-being.</p>
-
 <p>The process can also involve a feedback loop, where the individual's thoughts and behaviors reinforce the underlying imbalance, making it more challenging to recover. For instance, an individual with depression may experience negative thoughts, which can lead to social withdrawal, further exacerbating feelings of isolation and depression. Understanding this process is crucial for developing effective treatment plans and coping strategies.</p>
-
 <p>Additionally, mental illness can affect different aspects of an individual's life, including their physical health, relationships, and daily functioning. For example, an individual with anxiety may experience physical symptoms such as rapid heartbeat and tremors, while also struggling with social interactions and daily tasks.</p>
-
-<p>3. KEY COMPONENTS:</p>
+<ol>
+<li>KEY COMPONENTS:</li>
+</ol>
 <p>The key components involved in mental illness include the brain, neurotransmitters, hormones, and the environment. The brain, comprising various regions and systems, plays a central role in processing information and regulating emotions. Neurotransmitters, such as serotonin and dopamine, facilitate communication between brain cells and are essential for maintaining a healthy balance. Hormones, like cortisol and adrenaline, also contribute to the development and progression of mental illness. The environment, including social and cultural factors, can either exacerbate or mitigate the risk of developing a mental health condition.</p>
-
 <p>Other key components include the individual's genetic makeup, lifestyle, and access to resources and support. For instance, a person with a family history of mental illness may be more susceptible to developing a condition, while a person with a strong support network and healthy lifestyle habits may be better equipped to cope with stress and adversity.</p>
-
-<p>4. VISUAL ANALOGY:</p>
+<ol>
+<li>VISUAL ANALOGY:</li>
+</ol>
 <p>A simple analogy to understand mental illness is to compare the brain to a complex orchestra. Just as an orchestra requires each musician to play their instrument in harmony to produce beautiful music, the brain relies on the harmonious interaction of various components, including neurotransmitters, hormones, and brain regions, to function properly. When one or more of these components are out of balance, the entire system can become disrupted, leading to mental illness. Just as a skilled conductor can help the orchestra regain harmony, treatment and therapy can help restore balance to the brain and alleviate symptoms.</p>
-
-<p>5. COMMON QUESTIONS:</p>
+<ol>
+<li>COMMON QUESTIONS:</li>
+</ol>
 <p>But what about people who seem to have a perfect life, yet still develop mental illness? The answer lies in the complex interplay between genetic, environmental, and psychological factors, which can affect anyone, regardless of their circumstances.</p>
 <p>But how can mental illness be treated if it's not just a matter of "snapping out of it"? Treatment typically involves a combination of therapy, medication, and lifestyle changes, which can help restore balance to the brain and alleviate symptoms.</p>
 <p>But what role does stress play in the development of mental illness? Stress can trigger or exacerbate mental health conditions by disrupting the balance of neurotransmitters and hormones, making it more challenging for the brain to function properly.</p>
 <p>But can mental illness be prevented? While some risk factors, such as genetic predisposition, cannot be eliminated, a healthy lifestyle, social support, and stress management techniques can help reduce the likelihood of developing a mental health condition.</p>
-
-<p>6. SUMMARY: Mental illness is a complex condition that arises from the interplay of genetic, environmental, and psychological factors, affecting the brain's ability to process information and regulate emotions, and can be understood by examining the step-by-step process, key components, and visual analogies that illustrate its mechanism.</p>
-
+<ol>
+<li>SUMMARY: Mental illness is a complex condition that arises from the interplay of genetic, environmental, and psychological factors, affecting the brain's ability to process information and regulate emotions, and can be understood by examining the step-by-step process, key components, and visual analogies that illustrate its mechanism.</li>
+</ol>
 <p>In addition to understanding the mechanism of mental illness, it is essential to recognize the importance of seeking help and support. Mental health professionals, such as therapists and psychiatrists, can provide individuals with the tools and resources they need to manage their symptoms and improve their overall well-being. By acknowledging the complexity of mental illness and the various factors that contribute to its development, we can work towards creating a more supportive and inclusive environment for individuals affected by these conditions.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/infectious-diseases/what-is.html" class="related-link">Infectious Diseases</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/nervous-system/what-is.html" class="related-link">Nervous System</a>
-        <a href="/health/neurology/what-is.html" class="related-link">Neurology</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -432,6 +475,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

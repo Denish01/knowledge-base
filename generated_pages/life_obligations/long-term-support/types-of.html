@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of long term support - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of long-term support - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/long-term-support/types-of.html">
     <meta property="og:title" content="Types of Long Term Support">
-    <meta property="og:description" content="A clear, simple explanation of long term support - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of long-term support - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/long-term-support/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Long Term Support">
-    <meta name="twitter:description" content="A clear, simple explanation of long term support - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of long-term support - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Long Term Support - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Long Term Support", "item": "https://360library.com/life_obligations/long-term-support/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Long Term Support", "description": "A clear, simple explanation of long term support - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/long-term-support/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/long-term-support/types-of.html"}, "about": {"@type": "Thing", "name": "Long Term Support"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Long Term Support", "description": "A clear, simple explanation of types of long-term support - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/long-term-support/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/long-term-support/types-of.html"}, "about": {"@type": "Thing", "name": "Long Term Support"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,83 +388,56 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/long-term-support/what-is.html">Long Term Support</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Long Term Support</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
-<p>Types of long-term support refer to the various forms of assistance provided to individuals who require ongoing care due to disabilities, illnesses, or age-related conditions. Classification of long-term support is crucial as it enables caregivers, healthcare professionals, and policymakers to understand the different needs of individuals and provide tailored support. By categorizing long-term support, it becomes possible to develop effective strategies, allocate resources, and ensure that individuals receive the necessary care to maintain their quality of life. Understanding the various types of long-term support is essential for creating a comprehensive care system that addresses the diverse requirements of individuals with long-term needs.</p>
+            
 
-<p>2. MAIN CATEGORIES:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
+<p>Types of long-term support refer to the various forms of assistance provided to individuals who require ongoing care due to disabilities, illnesses, or age-related conditions. Classification of long-term support is crucial as it enables caregivers, healthcare professionals, and policymakers to understand the different needs of individuals and provide tailored support. By categorizing long-term support, it becomes possible to develop effective strategies, allocate resources, and ensure that individuals receive the necessary care to maintain their quality of life. Understanding the various types of long-term support is essential for creating a comprehensive care system that addresses the diverse requirements of individuals with long-term needs.</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <p>The main categories of long-term support include:</p>
 <ul>
-  <li><strong>Residential Care</strong>: Residential care refers to the provision of 24-hour support and care to individuals in a communal living setting, such as nursing homes, assisted living facilities, or group homes. Key characteristics of residential care include round-the-clock supervision, assistance with daily activities, and access to medical care. For example, an individual with dementia may receive residential care in a specialized facility that provides memory care and support with daily tasks.</li>
-  <li><strong>Home Care</strong>: Home care involves providing support and care to individuals in their own homes, which can include assistance with daily activities, meal preparation, and medication management. Key characteristics of home care include one-on-one support, flexibility in care schedules, and the ability to receive care in a familiar environment. For instance, an individual with a physical disability may receive home care to assist with bathing, dressing, and managing daily tasks.</li>
-  <li><strong>Day Care</strong>: Day care provides support and care to individuals during the day, typically in a community-based setting, which can include social activities, meals, and access to medical care. Key characteristics of day care include socialization opportunities, structured activities, and the ability to receive care while family members are at work. For example, an individual with Alzheimer's disease may attend a day care program that offers cognitive stimulation, exercise classes, and social interaction.</li>
-  <li><strong>Respite Care</strong>: Respite care provides temporary relief to caregivers, offering short-term support and care to individuals, which can include overnight stays, day programs, or in-home care. Key characteristics of respite care include temporary support, flexibility in care schedules, and the ability to provide caregivers with a break. For instance, a caregiver may use respite care to take a vacation or attend to personal matters while knowing that their loved one is receiving necessary care.</li>
-  <li><strong>Palliative Care</strong>: Palliative care focuses on providing relief from the symptoms, pain, and stress of a serious illness, with the goal of improving the individual's quality of life. Key characteristics of palliative care include symptom management, emotional support, and the ability to receive care in various settings, including homes, hospitals, or hospices. For example, an individual with a terminal illness may receive palliative care to manage pain, nausea, and shortness of breath, while also receiving emotional support and counseling.</li>
+<li><strong>Residential Care</strong>: Residential care refers to the provision of 24-hour support and care to individuals in a communal living setting, such as nursing homes, assisted living facilities, or group homes. Key characteristics of residential care include round-the-clock supervision, assistance with daily activities, and access to medical care. For example, an individual with dementia may receive residential care in a specialized facility that provides memory care and support with daily tasks.</li>
+<li><strong>Home Care</strong>: Home care involves providing support and care to individuals in their own homes, which can include assistance with daily activities, meal preparation, and medication management. Key characteristics of home care include one-on-one support, flexibility in care schedules, and the ability to receive care in a familiar environment. For instance, an individual with a physical disability may receive home care to assist with bathing, dressing, and managing daily tasks.</li>
+<li><strong>Day Care</strong>: Day care provides support and care to individuals during the day, typically in a community-based setting, which can include social activities, meals, and access to medical care. Key characteristics of day care include socialization opportunities, structured activities, and the ability to receive care while family members are at work. For example, an individual with Alzheimer's disease may attend a day care program that offers cognitive stimulation, exercise classes, and social interaction.</li>
+<li><strong>Respite Care</strong>: Respite care provides temporary relief to caregivers, offering short-term support and care to individuals, which can include overnight stays, day programs, or in-home care. Key characteristics of respite care include temporary support, flexibility in care schedules, and the ability to provide caregivers with a break. For instance, a caregiver may use respite care to take a vacation or attend to personal matters while knowing that their loved one is receiving necessary care.</li>
+<li><strong>Palliative Care</strong>: Palliative care focuses on providing relief from the symptoms, pain, and stress of a serious illness, with the goal of improving the individual's quality of life. Key characteristics of palliative care include symptom management, emotional support, and the ability to receive care in various settings, including homes, hospitals, or hospices. For example, an individual with a terminal illness may receive palliative care to manage pain, nausea, and shortness of breath, while also receiving emotional support and counseling.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
 <p>The following table summarizes the differences between the main categories of long-term support:</p>
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Setting</th>
-<th>Level of Care</th>
-<th>Duration</th>
-</tr></thead><tbody>
-<tr>
-<td>Residential Care</td>
-<td>Communal living</td>
-<td>24-hour supervision</td>
-<td>Long-term</td>
-</tr>
-<tr>
-<td>Home Care</td>
-<td>Individual's home</td>
-<td>One-on-one support</td>
-<td>Flexible</td>
-</tr>
-<tr>
-<td>Day Care</td>
-<td>Community-based</td>
-<td>Social activities and medical care</td>
-<td>Daytime only</td>
-</tr>
-<tr>
-<td>Respite Care</td>
-<td>Various settings</td>
-<td>Temporary support</td>
-<td>Short-term</td>
-</tr>
-<tr>
-<td>Palliative Care</td>
-<td>Various settings</td>
-<td>Symptom management and emotional support</td>
-<td>Variable</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Setting</th><th>Level of Care</th><th>Duration</th></tr></thead><tbody>
+<tr><td>Residential Care</td><td>Communal living</td><td>24-hour supervision</td><td>Long-term</td></tr>
+<tr><td>Home Care</td><td>Individual's home</td><td>One-on-one support</td><td>Flexible</td></tr>
+<tr><td>Day Care</td><td>Community-based</td><td>Social activities and medical care</td><td>Daytime only</td></tr>
+<tr><td>Respite Care</td><td>Various settings</td><td>Temporary support</td><td>Short-term</td></tr>
+<tr><td>Palliative Care</td><td>Various settings</td><td>Symptom management and emotional support</td><td>Variable</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The categories of long-term support are interconnected, as individuals may require different types of care at various stages of their lives or as their needs change. For example, an individual may receive home care after being discharged from a hospital, then transition to residential care if their needs become more complex. Additionally, individuals may receive palliative care in conjunction with other types of long-term support, such as residential care or home care. Understanding the relationships between these categories is essential for providing seamless and comprehensive care.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system for types of long-term support encompasses a range of categories, including residential care, home care, day care, respite care, and palliative care, each with distinct characteristics and purposes, which together provide a framework for understanding and addressing the diverse needs of individuals requiring ongoing care and support.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/life-insurance/what-is.html" class="related-link">Life Insurance</a>
-        <a href="/life_obligations/loan-interest/what-is.html" class="related-link">Loan Interest</a>
-        <a href="/life_obligations/means-testing/what-is.html" class="related-link">Means Testing</a>
-        <a href="/life_obligations/minimum-payment/what-is.html" class="related-link">Minimum Payment</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -464,6 +482,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

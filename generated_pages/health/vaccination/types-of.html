@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of vaccination - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of vaccination - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/vaccination/types-of.html">
     <meta property="og:title" content="Types of Vaccination">
-    <meta property="og:description" content="A clear, simple explanation of vaccination - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of vaccination - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/vaccination/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Vaccination">
-    <meta name="twitter:description" content="A clear, simple explanation of vaccination - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of vaccination - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Vaccination - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Vaccination", "item": "https://360library.com/health/vaccination/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Vaccination", "description": "A clear, simple explanation of vaccination - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/vaccination/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/vaccination/types-of.html"}, "about": {"@type": "Thing", "name": "Vaccination"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Vaccination", "description": "A clear, simple explanation of types of vaccination - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/vaccination/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/vaccination/types-of.html"}, "about": {"@type": "Thing", "name": "Vaccination"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,96 +388,59 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/vaccination/what-is.html">Vaccination</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Types of Vaccination</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
-<p>Vaccination is a crucial aspect of preventive healthcare, and understanding the different types of vaccination is essential for making informed decisions about immunization. The classification of vaccinations covers various methods, components, and purposes, which helps in determining the most suitable vaccine for a particular disease or population. Classification matters because it enables healthcare professionals and individuals to navigate the complex landscape of vaccination options, ensuring that the right vaccine is administered to the right person at the right time. By categorizing vaccinations, we can better comprehend their mechanisms, benefits, and limitations, ultimately leading to more effective disease prevention and control.</p>
+            
 
-<p>2. MAIN CATEGORIES:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
+<p>Vaccination is a crucial aspect of preventive healthcare, and understanding the different types of vaccination is essential for making informed decisions about immunization. The classification of vaccinations covers various methods, components, and purposes, which helps in determining the most suitable vaccine for a particular disease or population. Classification matters because it enables healthcare professionals and individuals to navigate the complex landscape of vaccination options, ensuring that the right vaccine is administered to the right person at the right time. By categorizing vaccinations, we can better comprehend their mechanisms, benefits, and limitations, ultimately leading to more effective disease prevention and control.</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <p>The main categories of vaccination include:</p>
 <ul>
-  <li><strong>Inactivated Vaccines</strong>: Inactivated vaccines contain killed or inactivated pathogens, which cannot cause the disease but still stimulate an immune response. Key characteristics include the use of killed or inactivated microorganisms, and they are often used for diseases such as influenza and hepatitis A. A simple example of an inactivated vaccine is the flu shot.</li>
-  <li><strong>Live, Attenuated Vaccines</strong>: Live, attenuated vaccines contain weakened or attenuated pathogens, which can cause a mild infection but still provide immunity. Key characteristics include the use of live, attenuated microorganisms, and they are often used for diseases such as measles and mumps. A simple example of a live, attenuated vaccine is the MMR vaccine.</li>
-  <li><strong>Subunit Vaccines</strong>: Subunit vaccines contain only specific components of a pathogen, such as proteins or sugars, rather than the entire microorganism. Key characteristics include the use of specific components, and they are often used for diseases such as hepatitis B and Haemophilus influenzae type b. A simple example of a subunit vaccine is the hepatitis B vaccine.</li>
-  <li><strong>Conjugate Vaccines</strong>: Conjugate vaccines combine a weakened pathogen with a carrier protein to enhance immune response. Key characteristics include the use of a carrier protein, and they are often used for diseases such as pneumococcal and meningococcal. A simple example of a conjugate vaccine is the pneumococcal conjugate vaccine.</li>
-  <li><strong>Toxoid Vaccines</strong>: Toxoid vaccines contain inactivated toxins, which stimulate an immune response against the toxin rather than the pathogen itself. Key characteristics include the use of inactivated toxins, and they are often used for diseases such as diphtheria and tetanus. A simple example of a toxoid vaccine is the DTaP vaccine.</li>
-  <li><strong>mRNA Vaccines</strong>: mRNA vaccines use a piece of genetic material called messenger RNA to instruct cells to produce a specific protein, which stimulates an immune response. Key characteristics include the use of messenger RNA, and they are often used for diseases such as COVID-19. A simple example of an mRNA vaccine is the Pfizer-BioNTech COVID-19 vaccine.</li>
-  <li><strong>Vector Vaccines</strong>: Vector vaccines use a harmless virus or bacterium to deliver genetic material from a pathogen, which stimulates an immune response. Key characteristics include the use of a vector, and they are often used for diseases such as Ebola and HIV. A simple example of a vector vaccine is the Ebola vaccine.</li>
+<li><strong>Inactivated Vaccines</strong>: Inactivated vaccines contain killed or inactivated pathogens, which cannot cause the disease but still stimulate an immune response. Key characteristics include the use of killed or inactivated microorganisms, and they are often used for diseases such as influenza and hepatitis A. A simple example of an inactivated vaccine is the flu shot.</li>
+<li><strong>Live, Attenuated Vaccines</strong>: Live, attenuated vaccines contain weakened or attenuated pathogens, which can cause a mild infection but still provide immunity. Key characteristics include the use of live, attenuated microorganisms, and they are often used for diseases such as measles and mumps. A simple example of a live, attenuated vaccine is the MMR vaccine.</li>
+<li><strong>Subunit Vaccines</strong>: Subunit vaccines contain only specific components of a pathogen, such as proteins or sugars, rather than the entire microorganism. Key characteristics include the use of specific components, and they are often used for diseases such as hepatitis B and Haemophilus influenzae type b. A simple example of a subunit vaccine is the hepatitis B vaccine.</li>
+<li><strong>Conjugate Vaccines</strong>: Conjugate vaccines combine a weakened pathogen with a carrier protein to enhance immune response. Key characteristics include the use of a carrier protein, and they are often used for diseases such as pneumococcal and meningococcal. A simple example of a conjugate vaccine is the pneumococcal conjugate vaccine.</li>
+<li><strong>Toxoid Vaccines</strong>: Toxoid vaccines contain inactivated toxins, which stimulate an immune response against the toxin rather than the pathogen itself. Key characteristics include the use of inactivated toxins, and they are often used for diseases such as diphtheria and tetanus. A simple example of a toxoid vaccine is the DTaP vaccine.</li>
+<li><strong>mRNA Vaccines</strong>: mRNA vaccines use a piece of genetic material called messenger RNA to instruct cells to produce a specific protein, which stimulates an immune response. Key characteristics include the use of messenger RNA, and they are often used for diseases such as COVID-19. A simple example of an mRNA vaccine is the Pfizer-BioNTech COVID-19 vaccine.</li>
+<li><strong>Vector Vaccines</strong>: Vector vaccines use a harmless virus or bacterium to deliver genetic material from a pathogen, which stimulates an immune response. Key characteristics include the use of a vector, and they are often used for diseases such as Ebola and HIV. A simple example of a vector vaccine is the Ebola vaccine.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Vaccine Type</th>
-<th>Description</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Inactivated</td>
-<td>Killed or inactivated pathogens</td>
-<td>Use of killed or inactivated microorganisms</td>
-<td>Flu shot</td>
-</tr>
-<tr>
-<td>Live, Attenuated</td>
-<td>Weakened or attenuated pathogens</td>
-<td>Use of live, attenuated microorganisms</td>
-<td>MMR vaccine</td>
-</tr>
-<tr>
-<td>Subunit</td>
-<td>Specific components of a pathogen</td>
-<td>Use of specific components</td>
-<td>Hepatitis B vaccine</td>
-</tr>
-<tr>
-<td>Conjugate</td>
-<td>Combination of a weakened pathogen and a carrier protein</td>
-<td>Use of a carrier protein</td>
-<td>Pneumococcal conjugate vaccine</td>
-</tr>
-<tr>
-<td>Toxoid</td>
-<td>Inactivated toxins</td>
-<td>Use of inactivated toxins</td>
-<td>DTaP vaccine</td>
-</tr>
-<tr>
-<td>mRNA</td>
-<td>Use of messenger RNA to instruct cells to produce a protein</td>
-<td>Use of messenger RNA</td>
-<td>Pfizer-BioNTech COVID-19 vaccine</td>
-</tr>
-<tr>
-<td>Vector</td>
-<td>Use of a harmless virus or bacterium to deliver genetic material</td>
-<td>Use of a vector</td>
-<td>Ebola vaccine</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Vaccine Type</th><th>Description</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Inactivated</td><td>Killed or inactivated pathogens</td><td>Use of killed or inactivated microorganisms</td><td>Flu shot</td></tr>
+<tr><td>Live, Attenuated</td><td>Weakened or attenuated pathogens</td><td>Use of live, attenuated microorganisms</td><td>MMR vaccine</td></tr>
+<tr><td>Subunit</td><td>Specific components of a pathogen</td><td>Use of specific components</td><td>Hepatitis B vaccine</td></tr>
+<tr><td>Conjugate</td><td>Combination of a weakened pathogen and a carrier protein</td><td>Use of a carrier protein</td><td>Pneumococcal conjugate vaccine</td></tr>
+<tr><td>Toxoid</td><td>Inactivated toxins</td><td>Use of inactivated toxins</td><td>DTaP vaccine</td></tr>
+<tr><td>mRNA</td><td>Use of messenger RNA to instruct cells to produce a protein</td><td>Use of messenger RNA</td><td>Pfizer-BioNTech COVID-19 vaccine</td></tr>
+<tr><td>Vector</td><td>Use of a harmless virus or bacterium to deliver genetic material</td><td>Use of a vector</td><td>Ebola vaccine</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different types of vaccination are connected in that they all aim to stimulate an immune response and provide protection against infectious diseases. However, they differ in their composition, mechanism of action, and application. Inactivated vaccines, live, attenuated vaccines, and subunit vaccines are often used for diseases where the pathogen is well understood, while conjugate vaccines and toxoid vaccines are used for diseases where the pathogen is more complex. mRNA vaccines and vector vaccines are newer technologies that offer promising approaches to vaccine development. Understanding the relationships between these categories can help healthcare professionals and individuals make informed decisions about vaccination.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system of vaccination encompasses various types, including inactivated, live, attenuated, subunit, conjugate, toxoid, mRNA, and vector vaccines, each with distinct characteristics and applications, which together provide a comprehensive framework for understanding and addressing the complex landscape of infectious diseases.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/arthritis/what-is.html" class="related-link">Arthritis</a>
-        <a href="/health/cardiology/what-is.html" class="related-link">Cardiology</a>
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-        <a href="/health/toxicology/what-is.html" class="related-link">Toxicology</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -477,6 +485,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

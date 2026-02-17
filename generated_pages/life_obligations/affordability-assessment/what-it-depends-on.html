@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of affordability assessment - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of what affordability assessment depends on - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/affordability-assessment/what-it-depends-on.html">
     <meta property="og:title" content="What Affordability Assessment Depends On">
-    <meta property="og:description" content="A clear, simple explanation of affordability assessment - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of what affordability assessment depends on - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/affordability-assessment/what-it-depends-on.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="What Affordability Assessment Depends On">
-    <meta name="twitter:description" content="A clear, simple explanation of affordability assessment - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of what affordability assessment depends on - definition, key concepts, examples, and common misconceptions.">
     <title>What Affordability Assessment Depends On - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Affordability Assessment", "item": "https://360library.com/life_obligations/affordability-assessment/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "What It Depends On"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Affordability Assessment Depends On", "description": "A clear, simple explanation of affordability assessment - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/affordability-assessment/what-it-depends-on.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/affordability-assessment/what-it-depends-on.html"}, "about": {"@type": "Thing", "name": "Affordability Assessment"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Affordability Assessment Depends On", "description": "A clear, simple explanation of what affordability assessment depends on - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/affordability-assessment/what-it-depends-on.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/affordability-assessment/what-it-depends-on.html"}, "about": {"@type": "Thing", "name": "Affordability Assessment"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,67 +388,64 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/affordability-assessment/what-is.html">Affordability Assessment</a><span>&rsaquo;</span>What It Depends On
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Affordability Assessment Depends On</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
-<p>Affordability assessment is the process of evaluating whether an individual or organization can afford a particular product, service, or investment. It involves analyzing various factors to determine the feasibility of a purchase or expenditure. Understanding what affordability assessment depends on is crucial, as it helps identify the prerequisites and requirements necessary for making informed decisions. The accuracy and reliability of an affordability assessment rely heavily on the presence of certain key dependencies.</p>
+            
 
-<p>2. KEY DEPENDENCIES:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
+<p>Affordability assessment is the process of evaluating whether an individual or organization can afford a particular product, service, or investment. It involves analyzing various factors to determine the feasibility of a purchase or expenditure. Understanding what affordability assessment depends on is crucial, as it helps identify the prerequisites and requirements necessary for making informed decisions. The accuracy and reliability of an affordability assessment rely heavily on the presence of certain key dependencies.</p>
+<ol>
+<li>KEY DEPENDENCIES:</li>
+</ol>
 <ul>
-  <li>The dependency: Accurate income information</li>
+<li>The dependency: Accurate income information</li>
 </ul>
 <p>Why it's necessary: Income is a critical factor in determining affordability, as it directly affects an individual's or organization's ability to pay for a product or service.</p>
 <p>What happens without it: Without accurate income information, the assessment may not accurately reflect the individual's or organization's financial situation, leading to potentially incorrect conclusions.</p>
-
 <ul>
-  <li>The dependency: Expense data</li>
+<li>The dependency: Expense data</li>
 </ul>
 <p>Why it's necessary: Expense data is essential in understanding an individual's or organization's financial obligations and commitments, which in turn affects their ability to afford a particular product or service.</p>
 <p>What happens without it: Without expense data, the assessment may not account for all financial obligations, resulting in an incomplete picture of affordability.</p>
-
 <ul>
-  <li>The dependency: Credit history</li>
+<li>The dependency: Credit history</li>
 </ul>
 <p>Why it's necessary: Credit history provides insight into an individual's or organization's creditworthiness and ability to manage debt, which is a critical factor in determining affordability.</p>
 <p>What happens without it: Without credit history, the assessment may not accurately reflect the individual's or organization's creditworthiness, potentially leading to incorrect conclusions about their ability to afford a product or service.</p>
-
 <ul>
-  <li>The dependency: Debt obligations</li>
+<li>The dependency: Debt obligations</li>
 </ul>
 <p>Why it's necessary: Debt obligations, such as loans or mortgages, directly affect an individual's or organization's ability to afford a particular product or service.</p>
 <p>What happens without it: Without considering debt obligations, the assessment may overestimate the individual's or organization's ability to afford a product or service, potentially leading to financial difficulties.</p>
-
 <ul>
-  <li>The dependency: Financial goals</li>
+<li>The dependency: Financial goals</li>
 </ul>
 <p>Why it's necessary: Financial goals, such as saving for retirement or a down payment on a house, can impact an individual's or organization's ability to afford a particular product or service.</p>
 <p>What happens without it: Without considering financial goals, the assessment may not accurately reflect the individual's or organization's priorities and financial situation, potentially leading to incorrect conclusions about affordability.</p>
-
-<p>3. ORDER OF IMPORTANCE:</p>
+<ol>
+<li>ORDER OF IMPORTANCE:</li>
+</ol>
 <p>While all dependencies are crucial, accurate income information and expense data are the most critical factors in an affordability assessment. These two dependencies provide the foundation for understanding an individual's or organization's financial situation and ability to afford a product or service. Credit history, debt obligations, and financial goals are also essential, but they build upon the foundation established by income and expense data.</p>
-
-<p>4. COMMON GAPS:</p>
+<ol>
+<li>COMMON GAPS:</li>
+</ol>
 <p>People often overlook or assume certain dependencies, such as credit history or financial goals, when conducting an affordability assessment. This can lead to incomplete or inaccurate assessments, potentially resulting in poor financial decisions. It is essential to consider all key dependencies to ensure a comprehensive and reliable affordability assessment.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The essential foundation for affordability assessment consists of accurate income information, expense data, credit history, debt obligations, and financial goals. These key dependencies are necessary to ensure a comprehensive and reliable assessment of an individual's or organization's ability to afford a particular product or service. By understanding and considering these prerequisites, individuals and organizations can make informed decisions and avoid potential financial difficulties. A thorough affordability assessment requires careful consideration of these dependencies to provide an accurate picture of financial situation and affordability.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/alimony/what-is.html" class="related-link">Alimony</a>
-        <a href="/life_obligations/assistance-programs/what-is.html" class="related-link">Assistance Programs</a>
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/utility-bills/what-is.html" class="related-link">Utility Bills</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -448,6 +490,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

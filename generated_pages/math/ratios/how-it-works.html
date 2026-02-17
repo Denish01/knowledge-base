@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of ratios - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Learn how ratios works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <link rel="canonical" href="https://360library.com/math/ratios/how-it-works.html">
     <meta property="og:title" content="How Ratios Works">
-    <meta property="og:description" content="A clear, simple explanation of ratios - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Learn how ratios works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <meta property="og:url" content="https://360library.com/math/ratios/how-it-works.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How Ratios Works">
-    <meta name="twitter:description" content="A clear, simple explanation of ratios - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Learn how ratios works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <title>How Ratios Works - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://360library.com/#math"}, {"@type": "ListItem", "position": 3, "name": "Ratios", "item": "https://360library.com/math/ratios/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "How It Works"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Ratios Works", "description": "A clear, simple explanation of ratios - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/ratios/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/ratios/how-it-works.html"}, "about": {"@type": "Thing", "name": "Ratios"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Ratios Works", "description": "Learn how ratios works with this step-by-step explanation. Simple guide to the process and mechanism.", "url": "https://360library.com/math/ratios/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/ratios/how-it-works.html"}, "about": {"@type": "Thing", "name": "Ratios"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,47 +388,49 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/ratios/what-is.html">Ratios</a><span>&rsaquo;</span>How It Works
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>How Ratios Works</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. QUICK ANSWER:</p>
+            
+
+            <ol>
+<li>QUICK ANSWER:</li>
+</ol>
 <p>A ratio is a way to compare two quantities by dividing one by the other, and it works by establishing a relationship between the two quantities that can be used to make predictions or calculations. This comparison can be expressed as a fraction, decimal, or percentage, and it provides a clear understanding of how the two quantities are related.</p>
-
-<p>2. STEP-BY-STEP PROCESS:</p>
+<ol>
+<li>STEP-BY-STEP PROCESS:</li>
+</ol>
 <p>First, two quantities are identified and measured, and then they are compared by dividing one by the other. Next, the result of this division is expressed as a fraction, decimal, or percentage, depending on the context and the desired level of precision. Then, this ratio can be used to make predictions or calculations, such as determining how many of one quantity is needed to achieve a certain proportion with the other quantity. After that, the ratio can be simplified or converted to a different form, such as converting a fraction to a decimal or percentage. Finally, the ratio can be used to solve problems or make decisions, such as determining the amount of ingredients needed for a recipe or the proportion of a budget to allocate to a particular expense.</p>
-
-<p>3. KEY COMPONENTS:</p>
+<ol>
+<li>KEY COMPONENTS:</li>
+</ol>
 <p>The key components involved in ratios are the two quantities being compared, the operation of division, and the resulting expression of the ratio as a fraction, decimal, or percentage. The two quantities can be anything that can be measured, such as lengths, weights, or volumes, and they can be expressed in different units. The operation of division is the core mechanism that allows the comparison of the two quantities, and the resulting expression of the ratio provides a clear understanding of their relationship. The fraction, decimal, or percentage form of the ratio provides a way to communicate and work with the ratio in different contexts.</p>
-
-<p>4. VISUAL ANALOGY:</p>
+<ol>
+<li>VISUAL ANALOGY:</li>
+</ol>
 <p>A simple analogy that makes ratios intuitive is a recipe for making cookies. Imagine that a recipe calls for a ratio of two cups of flour to one cup of sugar. This ratio can be expressed as a fraction (2/1), decimal (2.0), or percentage (200%). Just as the ratio of flour to sugar is crucial for making cookies, ratios are used in many real-world applications to compare and relate different quantities. This analogy illustrates how ratios can be used to make predictions and calculations, such as determining how much flour and sugar are needed to make a certain number of cookies.</p>
-
-<p>5. COMMON QUESTIONS:</p>
+<ol>
+<li>COMMON QUESTIONS:</li>
+</ol>
 <p>But what about equivalent ratios, are they the same as equal ratios?</p>
 <p>Equivalent ratios are ratios that have the same value, but may be expressed in different forms, such as 1/2 and 2/4.</p>
 <p>But how do you simplify a ratio, is it always necessary to simplify?</p>
 <p>Simplifying a ratio involves finding the simplest form of the fraction, such as reducing 2/4 to 1/2.</p>
 <p>But can ratios be used to compare more than two quantities, or are they limited to just two?</p>
 <p>Ratios can be used to compare more than two quantities, such as a recipe that calls for a ratio of flour, sugar, and eggs.</p>
-
-<p>6. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>A ratio works by establishing a relationship between two quantities through division, and this relationship can be expressed as a fraction, decimal, or percentage, providing a clear understanding of how the two quantities are related and allowing for predictions and calculations to be made.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/proportions/what-is.html" class="related-link">Proportions</a>
-        <a href="/math/pythagorean-theorem/what-is.html" class="related-link">Pythagorean Theorem</a>
-        <a href="/math/scientific-notation/what-is.html" class="related-link">Scientific Notation</a>
-        <a href="/math/slope/what-is.html" class="related-link">Slope</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -428,6 +475,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

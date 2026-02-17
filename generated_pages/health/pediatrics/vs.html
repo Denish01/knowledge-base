@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of pediatrics - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of pediatrics vs - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/pediatrics/vs.html">
     <meta property="og:title" content="Pediatrics Compared">
-    <meta property="og:description" content="A clear, simple explanation of pediatrics - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of pediatrics vs - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/pediatrics/vs.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Pediatrics Compared">
-    <meta name="twitter:description" content="A clear, simple explanation of pediatrics - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of pediatrics vs - definition, key concepts, examples, and common misconceptions.">
     <title>Pediatrics Compared - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Pediatrics", "item": "https://360library.com/health/pediatrics/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Comparison"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Pediatrics Compared", "description": "A clear, simple explanation of pediatrics - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/pediatrics/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/pediatrics/vs.html"}, "about": {"@type": "Thing", "name": "Pediatrics"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Pediatrics Compared", "description": "A clear, simple explanation of pediatrics vs - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/pediatrics/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/pediatrics/vs.html"}, "about": {"@type": "Thing", "name": "Pediatrics"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/pediatrics/what-is.html">Pediatrics</a><span>&rsaquo;</span>Comparison
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Pediatrics Compared</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Pediatrics is a branch of medicine that deals with the health and medical care of infants, children, and adolescents from birth to the age of 18.</p>
-
 <p>The field of pediatrics is unique because it requires an understanding of the physical, emotional, and psychological development of children at different stages of growth. Pediatricians must be able to diagnose and treat a wide range of health problems, from minor illnesses like colds and ear infections to more serious conditions like diabetes and cancer. They must also be able to communicate effectively with children and their families, taking into account the child's age, developmental level, and individual needs.</p>
-
 <p>Pediatric care involves a team of healthcare professionals, including pediatricians, nurses, and other specialists, who work together to provide comprehensive care to children. This care may involve routine check-ups and vaccinations, as well as treatment for acute illnesses and injuries. Pediatricians must also be able to recognize and respond to signs of abuse or neglect, and work with families to provide support and resources for children with special needs.</p>
-
 <p>In addition to providing medical care, pediatricians also play an important role in promoting healthy lifestyles and preventing illnesses. They may provide guidance on nutrition, exercise, and safety, and work with families to develop healthy habits and routines. By providing early intervention and prevention, pediatricians can help children develop into healthy and well-adjusted adults.</p>
-
 <p>The key components of pediatrics include:</p>
 <ul>
-  <li>Preventive care, such as routine check-ups and vaccinations, to help prevent illnesses and promote healthy development</li>
-  <li>Diagnosis and treatment of acute and chronic illnesses, such as infections, injuries, and diseases</li>
-  <li>Management of developmental and behavioral problems, such as autism and attention deficit hyperactivity disorder</li>
-  <li>Provision of emotional and psychological support to children and their families</li>
-  <li>Collaboration with other healthcare professionals, such as specialists and therapists, to provide comprehensive care</li>
-  <li>Education and guidance on healthy lifestyles and disease prevention</li>
+<li>Preventive care, such as routine check-ups and vaccinations, to help prevent illnesses and promote healthy development</li>
+<li>Diagnosis and treatment of acute and chronic illnesses, such as infections, injuries, and diseases</li>
+<li>Management of developmental and behavioral problems, such as autism and attention deficit hyperactivity disorder</li>
+<li>Provision of emotional and psychological support to children and their families</li>
+<li>Collaboration with other healthcare professionals, such as specialists and therapists, to provide comprehensive care</li>
+<li>Education and guidance on healthy lifestyles and disease prevention</li>
 </ul>
-
 <p>Despite its importance, there are several common misconceptions about pediatrics. Some of these include:</p>
 <ul>
-  <li>The idea that pediatricians only treat minor illnesses and injuries, when in fact they provide comprehensive care for a wide range of health problems</li>
-  <li>The notion that children are simply "small adults" and can be treated with the same medications and therapies as adults, when in fact children have unique physiological and developmental needs</li>
-  <li>The belief that pediatric care is only necessary for young children, when in fact adolescents and teenagers have unique health needs that require specialized care</li>
-  <li>The idea that pediatricians are only responsible for providing medical care, when in fact they play a critical role in promoting healthy lifestyles and preventing illnesses</li>
+<li>The idea that pediatricians only treat minor illnesses and injuries, when in fact they provide comprehensive care for a wide range of health problems</li>
+<li>The notion that children are simply "small adults" and can be treated with the same medications and therapies as adults, when in fact children have unique physiological and developmental needs</li>
+<li>The belief that pediatric care is only necessary for young children, when in fact adolescents and teenagers have unique health needs that require specialized care</li>
+<li>The idea that pediatricians are only responsible for providing medical care, when in fact they play a critical role in promoting healthy lifestyles and preventing illnesses</li>
 </ul>
-
 <p>A real-world example of pediatrics in action is a pediatrician who works with a family to develop a treatment plan for a child with asthma. The pediatrician may prescribe medication to help manage the child's symptoms, provide guidance on how to avoid triggers, and work with the family to develop a plan for emergency situations. By providing comprehensive and supportive care, the pediatrician can help the child manage their condition and improve their overall health and well-being.</p>
-
 <p>In summary, pediatrics is a branch of medicine that provides comprehensive and supportive care to infants, children, and adolescents, addressing their unique physical, emotional, and psychological needs and promoting healthy development and well-being.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/otolaryngology/what-is.html" class="related-link">Otolaryngology</a>
-        <a href="/health/pathology/what-is.html" class="related-link">Pathology</a>
-        <a href="/health/pharmacology/what-is.html" class="related-link">Pharmacology</a>
-        <a href="/health/quarantine/what-is.html" class="related-link">Quarantine</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

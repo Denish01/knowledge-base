@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/rent-payment/what-is.html">Rent Payment</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Rent Payment?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Rent payment is the process by which a tenant pays a landlord for the use of a property, typically on a monthly basis.</p>
-
 <p>Rent payment is an essential aspect of the landlord-tenant relationship. When a tenant signs a lease agreement, they commit to making regular payments to the landlord in exchange for the right to occupy the property. The lease agreement outlines the terms of the rental, including the amount of rent, the payment due date, and the length of the lease. The tenant is responsible for making timely payments, and failure to do so can result in penalties, such as late fees, and even eviction.</p>
-
 <p>The rent payment process typically involves the tenant submitting payment to the landlord on or before the due date. The payment can be made in various forms, such as cash, check, or electronic transfer. It is essential for tenants to keep a record of their payments, as this can help resolve any disputes that may arise. Landlords also have a responsibility to provide tenants with a receipt or other proof of payment, which can serve as documentation of the transaction.</p>
-
 <p>In addition to the monthly rent, tenants may also be responsible for paying other expenses, such as utilities, parking fees, or pet deposits. These additional costs can vary depending on the property and the terms of the lease agreement. Tenants should carefully review their lease agreement to understand their financial obligations and ensure they can afford the total cost of renting the property.</p>
-
 <p>The key components of rent payment include:</p>
 <ul>
-  <li>The lease agreement, which outlines the terms of the rental, including the amount of rent and the payment due date</li>
-  <li>The payment method, which can include cash, check, or electronic transfer</li>
-  <li>The payment schedule, which specifies the frequency and due date of payments</li>
-  <li>The late fee policy, which outlines the penalties for late payments</li>
-  <li>The security deposit, which is a refundable deposit that tenants pay to cover any damages to the property</li>
-  <li>The notice period, which is the amount of time a tenant must provide before terminating the lease agreement</li>
+<li>The lease agreement, which outlines the terms of the rental, including the amount of rent and the payment due date</li>
+<li>The payment method, which can include cash, check, or electronic transfer</li>
+<li>The payment schedule, which specifies the frequency and due date of payments</li>
+<li>The late fee policy, which outlines the penalties for late payments</li>
+<li>The security deposit, which is a refundable deposit that tenants pay to cover any damages to the property</li>
+<li>The notice period, which is the amount of time a tenant must provide before terminating the lease agreement</li>
 </ul>
-
 <p>Common misconceptions about rent payment include:</p>
 <ul>
-  <li>That tenants can withhold rent payments if they are unhappy with the property or the landlord</li>
-  <li>That landlords can increase the rent at any time, without notice</li>
-  <li>That tenants are not responsible for paying for damages to the property, as long as they have a security deposit</li>
-  <li>That the lease agreement is not a binding contract, and tenants can terminate it at any time</li>
+<li>That tenants can withhold rent payments if they are unhappy with the property or the landlord</li>
+<li>That landlords can increase the rent at any time, without notice</li>
+<li>That tenants are not responsible for paying for damages to the property, as long as they have a security deposit</li>
+<li>That the lease agreement is not a binding contract, and tenants can terminate it at any time</li>
 </ul>
-
 <p>For example, consider a tenant who signs a lease agreement for a one-year rental of an apartment. The lease agreement specifies that the rent is $1,000 per month, due on the first day of each month. The tenant is responsible for making timely payments, and if they fail to do so, they may be charged a late fee of $50. If the tenant terminates the lease agreement after six months, they may be required to provide 30 days' notice and pay a penalty for early termination.</p>
-
 <p>In summary, rent payment is a critical aspect of the landlord-tenant relationship, involving the timely payment of rent and other expenses in exchange for the use of a property, as outlined in a lease agreement.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/public-assistance/what-is.html" class="related-link">Public Assistance</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/renters-insurance/what-is.html" class="related-link">Renters Insurance</a>
-        <a href="/life_obligations/required-minimum-distribution/what-is.html" class="related-link">Required Minimum Distribution</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/otolaryngology/what-is.html">Otolaryngology</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>What Is Otolaryngology?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Otolaryngology is the branch of medicine that deals with the diagnosis, treatment, and management of disorders and diseases related to the ear, nose, and throat.</p>
-
 <p>The ear, nose, and throat are closely connected and work together to help us hear, speak, and breathe. Otolaryngology is a complex field that requires a deep understanding of the anatomy and function of these organs. Otolaryngologists, also known as ear, nose, and throat (ENT) doctors, are medical professionals who specialize in the care and treatment of patients with ear, nose, and throat problems. They use a variety of techniques, including surgery, medications, and other therapies, to treat a wide range of conditions, from common problems like ear infections and sinusitis to more complex issues like hearing loss and cancer.</p>
-
 <p>The ear is a delicate and intricate organ that plays a crucial role in our ability to hear and maintain balance. It is made up of three main parts: the outer ear, the middle ear, and the inner ear. The outer ear collects sound waves and directs them into the ear canal, where they are amplified by the eardrum and transmitted to the middle ear. The middle ear contains three small bones that transmit sound vibrations to the inner ear, where they are converted into electrical signals that are sent to the brain. The nose and throat are also important parts of the otolaryngology system, as they help to filter the air we breathe, warm and humidify it, and remove dust and other particles.</p>
-
 <p>The throat, or pharynx, is a muscular tube that carries food and air from the mouth and nose to the esophagus and lungs. It is a critical part of the digestive and respiratory systems, and problems with the throat can have a significant impact on our overall health and well-being. Otolaryngologists often work with other medical professionals, such as audiologists and speech-language pathologists, to provide comprehensive care to patients with ear, nose, and throat problems.</p>
-
 <p>Key components of otolaryngology include:</p>
 <ul>
-  <li>The anatomy of the ear, nose, and throat, including the outer ear, middle ear, inner ear, nasal cavity, and pharynx</li>
-  <li>The physiology of hearing and balance, including the role of the eardrum, ossicles, and vestibular system</li>
-  <li>The diagnosis and treatment of ear, nose, and throat disorders, including infections, injuries, and cancers</li>
-  <li>The use of surgical and non-surgical techniques to treat ear, nose, and throat problems, including endoscopy, microscopy, and radiation therapy</li>
-  <li>The importance of preventive care, including regular check-ups and screenings to detect ear, nose, and throat problems early</li>
-  <li>The role of otolaryngologists in providing care to patients with complex or chronic ear, nose, and throat conditions, including those with hearing loss, tinnitus, or swallowing disorders</li>
+<li>The anatomy of the ear, nose, and throat, including the outer ear, middle ear, inner ear, nasal cavity, and pharynx</li>
+<li>The physiology of hearing and balance, including the role of the eardrum, ossicles, and vestibular system</li>
+<li>The diagnosis and treatment of ear, nose, and throat disorders, including infections, injuries, and cancers</li>
+<li>The use of surgical and non-surgical techniques to treat ear, nose, and throat problems, including endoscopy, microscopy, and radiation therapy</li>
+<li>The importance of preventive care, including regular check-ups and screenings to detect ear, nose, and throat problems early</li>
+<li>The role of otolaryngologists in providing care to patients with complex or chronic ear, nose, and throat conditions, including those with hearing loss, tinnitus, or swallowing disorders</li>
 </ul>
-
 <p>Despite its importance, otolaryngology is often misunderstood, and many people have misconceptions about the field. Some common misconceptions include:</p>
 <ul>
-  <li>The idea that ear, nose, and throat problems are always minor or trivial, when in fact they can have a significant impact on our quality of life</li>
-  <li>The belief that ear, nose, and throat surgery is always painful or risky, when in fact many procedures are minimally invasive and have a high success rate</li>
-  <li>The notion that only older adults are affected by ear, nose, and throat problems, when in fact people of all ages can be affected</li>
-  <li>The idea that ear, nose, and throat problems are always caused by infection or disease, when in fact they can also be caused by injury, genetics, or environmental factors</li>
+<li>The idea that ear, nose, and throat problems are always minor or trivial, when in fact they can have a significant impact on our quality of life</li>
+<li>The belief that ear, nose, and throat surgery is always painful or risky, when in fact many procedures are minimally invasive and have a high success rate</li>
+<li>The notion that only older adults are affected by ear, nose, and throat problems, when in fact people of all ages can be affected</li>
+<li>The idea that ear, nose, and throat problems are always caused by infection or disease, when in fact they can also be caused by injury, genetics, or environmental factors</li>
 </ul>
-
 <p>A real-world example of otolaryngology in action is the treatment of a child with recurrent ear infections. The child may be seen by an otolaryngologist who will examine their ears and throat, take a medical history, and perform tests to determine the cause of the infections. The otolaryngologist may then recommend a treatment plan that includes antibiotics, ear tubes, or other interventions to help the child recover from the infection and prevent future problems.</p>
-
 <p>In summary, otolaryngology is a vital branch of medicine that deals with the diagnosis, treatment, and management of disorders and diseases related to the ear, nose, and throat, and plays a critical role in maintaining our overall health and well-being.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/oncology/what-is.html" class="related-link">Oncology</a>
-        <a href="/health/orthopedics/what-is.html" class="related-link">Orthopedics</a>
-        <a href="/health/pathology/what-is.html" class="related-link">Pathology</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of mental health - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of what mental health depends on - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/mental-health/what-it-depends-on.html">
     <meta property="og:title" content="What Mental Health Depends On">
-    <meta property="og:description" content="A clear, simple explanation of mental health - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of what mental health depends on - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/mental-health/what-it-depends-on.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="What Mental Health Depends On">
-    <meta name="twitter:description" content="A clear, simple explanation of mental health - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of what mental health depends on - definition, key concepts, examples, and common misconceptions.">
     <title>What Mental Health Depends On - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Mental Health", "item": "https://360library.com/health/mental-health/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "What It Depends On"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Mental Health Depends On", "description": "A clear, simple explanation of mental health - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/mental-health/what-it-depends-on.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/mental-health/what-it-depends-on.html"}, "about": {"@type": "Thing", "name": "Mental Health"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Mental Health Depends On", "description": "A clear, simple explanation of what mental health depends on - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/mental-health/what-it-depends-on.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/mental-health/what-it-depends-on.html"}, "about": {"@type": "Thing", "name": "Mental Health"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,46 +388,47 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/mental-health/what-is.html">Mental Health</a><span>&rsaquo;</span>What It Depends On
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>What Mental Health Depends On</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
-<p>Mental health refers to the overall well-being of an individual's emotional, psychological, and social state. It is essential to recognize that mental health does not exist in isolation, but rather depends on various factors. Understanding these dependencies is crucial, as they provide the foundation upon which good mental health is built. By acknowledging what mental health depends on, individuals can take proactive steps to maintain and improve their mental well-being.</p>
+            
 
-<p>2. KEY DEPENDENCIES:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
+<p>Mental health refers to the overall well-being of an individual's emotional, psychological, and social state. It is essential to recognize that mental health does not exist in isolation, but rather depends on various factors. Understanding these dependencies is crucial, as they provide the foundation upon which good mental health is built. By acknowledging what mental health depends on, individuals can take proactive steps to maintain and improve their mental well-being.</p>
+<ol>
+<li>KEY DEPENDENCIES:</li>
+</ol>
 <p>Several key factors contribute to mental health, including:</p>
 <ul>
-  <li>A stable and supportive social network: This is necessary because human connection and a sense of belonging are vital for emotional well-being. Without a supportive social network, individuals may experience feelings of loneliness, isolation, and disconnection, which can negatively impact mental health.</li>
-  <li>A healthy lifestyle, including regular exercise and balanced nutrition: This is necessary because physical health has a direct impact on mental health. A healthy lifestyle helps to regulate mood, reduce stress, and increase energy levels. Without a healthy lifestyle, individuals may be more prone to mental health issues such as anxiety and depression.</li>
-  <li>Access to quality sleep and relaxation techniques: This is necessary because adequate sleep and relaxation are essential for emotional regulation and stress management. Without sufficient sleep and relaxation, individuals may experience increased anxiety, mood disturbances, and decreased cognitive function.</li>
-  <li>A safe and stable living environment: This is necessary because a sense of security and stability is essential for emotional well-being. Without a safe and stable living environment, individuals may experience increased stress, anxiety, and feelings of vulnerability.</li>
-  <li>Effective coping mechanisms and stress management techniques: This is necessary because the ability to manage stress and cope with adversity is crucial for maintaining good mental health. Without effective coping mechanisms, individuals may be more prone to mental health issues such as anxiety, depression, and burnout.</li>
+<li>A stable and supportive social network: This is necessary because human connection and a sense of belonging are vital for emotional well-being. Without a supportive social network, individuals may experience feelings of loneliness, isolation, and disconnection, which can negatively impact mental health.</li>
+<li>A healthy lifestyle, including regular exercise and balanced nutrition: This is necessary because physical health has a direct impact on mental health. A healthy lifestyle helps to regulate mood, reduce stress, and increase energy levels. Without a healthy lifestyle, individuals may be more prone to mental health issues such as anxiety and depression.</li>
+<li>Access to quality sleep and relaxation techniques: This is necessary because adequate sleep and relaxation are essential for emotional regulation and stress management. Without sufficient sleep and relaxation, individuals may experience increased anxiety, mood disturbances, and decreased cognitive function.</li>
+<li>A safe and stable living environment: This is necessary because a sense of security and stability is essential for emotional well-being. Without a safe and stable living environment, individuals may experience increased stress, anxiety, and feelings of vulnerability.</li>
+<li>Effective coping mechanisms and stress management techniques: This is necessary because the ability to manage stress and cope with adversity is crucial for maintaining good mental health. Without effective coping mechanisms, individuals may be more prone to mental health issues such as anxiety, depression, and burnout.</li>
 </ul>
-
-<p>3. ORDER OF IMPORTANCE:</p>
+<ol>
+<li>ORDER OF IMPORTANCE:</li>
+</ol>
 <p>While all of these dependencies are crucial, some may be more critical than others. A stable and supportive social network, for example, may be more essential for individuals who have experienced trauma or significant life changes. A healthy lifestyle, including regular exercise and balanced nutrition, may be more critical for individuals who are prone to mental health issues such as depression and anxiety. Ultimately, the order of importance will vary depending on the individual's unique circumstances and needs.</p>
-
-<p>4. COMMON GAPS:</p>
+<ol>
+<li>COMMON GAPS:</li>
+</ol>
 <p>One common gap in maintaining good mental health is the assumption that it can be achieved through individual effort alone. Many people overlook the importance of social support, community connection, and environmental factors in maintaining mental well-being. Additionally, some individuals may assume that mental health is solely the result of genetic predisposition or personal weakness, rather than recognizing the complex interplay of factors that contribute to mental health.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>In summary, mental health depends on a foundation of key dependencies, including a stable and supportive social network, a healthy lifestyle, access to quality sleep and relaxation techniques, a safe and stable living environment, and effective coping mechanisms and stress management techniques. By recognizing and addressing these dependencies, individuals can take proactive steps to maintain and improve their mental well-being. A comprehensive understanding of these prerequisites is essential for building a strong foundation for mental health, and for promoting overall emotional, psychological, and social well-being.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/immunology/what-is.html" class="related-link">Immunology</a>
-        <a href="/health/infectious-diseases/what-is.html" class="related-link">Infectious Diseases</a>
-        <a href="/health/mental-illness/what-is.html" class="related-link">Mental Illness</a>
-        <a href="/health/nervous-system/what-is.html" class="related-link">Nervous System</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -427,6 +473,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

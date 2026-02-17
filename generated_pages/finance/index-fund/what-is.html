@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#finance">Finance</a><span>&rsaquo;</span><a href="/finance/index-fund/what-is.html">Index Fund</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #1B4D8E">
     <main class="article-main">
         <article>
             <h1>What Is Index Fund?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Index fund is a type of investment vehicle that aims to track the performance of a specific stock market index, such as the overall market or a particular sector.</p>
-
 <p>An index fund works by pooling money from many investors to buy a representative sample of the securities in the target index. This allows individual investors to gain exposure to a broad range of assets, which can help to spread risk and potentially increase returns over the long term. Index funds are often designed to be a low-cost and efficient way to invest in the stock market, as they do not require the active management of a portfolio manager trying to pick individual winners.</p>
-
 <p>The idea behind an index fund is to provide broad diversification and to track the performance of the underlying index, rather than trying to beat it. This approach is based on the idea that it is difficult to consistently pick individual stocks or sectors that will outperform the market as a whole. By tracking the market index, an index fund can provide investors with a simple and effective way to invest in the stock market, without the need for extensive research or expertise.</p>
-
 <p>Index funds can be structured in different ways, including as mutual funds, exchange-traded funds, or other types of investment vehicles. They can also track different types of indexes, such as a broad market index, a sector-specific index, or a bond index. The key characteristic of an index fund is that it seeks to replicate the performance of the underlying index, rather than trying to actively manage the portfolio to achieve higher returns.</p>
-
 <p>The main principles of an index fund can be summarized as follows:</p>
 <ul>
-  <li>The fund tracks a specific stock market index, such as the overall market or a particular sector</li>
-  <li>The fund holds a representative sample of the securities in the target index</li>
-  <li>The fund is designed to provide broad diversification and to minimize risk</li>
-  <li>The fund is typically a low-cost investment option, as it does not require active management</li>
-  <li>The fund is often designed to be a long-term investment, as it seeks to track the performance of the underlying index over time</li>
-  <li>The fund can be structured in different ways, including as a mutual fund or an exchange-traded fund</li>
+<li>The fund tracks a specific stock market index, such as the overall market or a particular sector</li>
+<li>The fund holds a representative sample of the securities in the target index</li>
+<li>The fund is designed to provide broad diversification and to minimize risk</li>
+<li>The fund is typically a low-cost investment option, as it does not require active management</li>
+<li>The fund is often designed to be a long-term investment, as it seeks to track the performance of the underlying index over time</li>
+<li>The fund can be structured in different ways, including as a mutual fund or an exchange-traded fund</li>
 </ul>
-
 <p>Some common misconceptions about index funds include:</p>
 <ul>
-  <li>That they are only suitable for experienced investors, when in fact they can be a good option for investors of all levels</li>
-  <li>That they are only available for investing in the stock market, when in fact they can also be used to invest in bonds or other types of assets</li>
-  <li>That they are a type of actively managed fund, when in fact they are designed to track the performance of the underlying index</li>
-  <li>That they are a high-risk investment, when in fact they can provide broad diversification and help to minimize risk</li>
+<li>That they are only suitable for experienced investors, when in fact they can be a good option for investors of all levels</li>
+<li>That they are only available for investing in the stock market, when in fact they can also be used to invest in bonds or other types of assets</li>
+<li>That they are a type of actively managed fund, when in fact they are designed to track the performance of the underlying index</li>
+<li>That they are a high-risk investment, when in fact they can provide broad diversification and help to minimize risk</li>
 </ul>
-
 <p>A real-world example of an index fund is a fund that tracks the performance of a broad market index, such as a total stock market index. For example, an investor might invest in a fund that tracks the performance of the entire stock market, holding a representative sample of stocks from all sectors and industries. This would provide the investor with broad diversification and exposure to the overall market, without the need for extensive research or expertise.</p>
-
 <p>In summary, an index fund is a type of investment vehicle that seeks to track the performance of a specific stock market index, providing broad diversification and a low-cost way to invest in the stock market.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/finance/capital-gains-tax/what-is.html" class="related-link">Capital Gains Tax</a>
-        <a href="/finance/emergency-fund/what-is.html" class="related-link">Emergency Fund</a>
-        <a href="/finance/exchange-traded-fund/what-is.html" class="related-link">Exchange Traded Fund</a>
-        <a href="/finance/inflation-rate/what-is.html" class="related-link">Inflation Rate</a>
-        <a href="/finance/liquidity/what-is.html" class="related-link">Liquidity</a>
-        <a href="/finance/mortgage-amortization/what-is.html" class="related-link">Mortgage Amortization</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -434,6 +467,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

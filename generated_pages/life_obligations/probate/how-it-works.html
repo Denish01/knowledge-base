@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of probate - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Learn how probate works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <link rel="canonical" href="https://360library.com/life_obligations/probate/how-it-works.html">
     <meta property="og:title" content="How Probate Works">
-    <meta property="og:description" content="A clear, simple explanation of probate - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Learn how probate works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <meta property="og:url" content="https://360library.com/life_obligations/probate/how-it-works.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How Probate Works">
-    <meta name="twitter:description" content="A clear, simple explanation of probate - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Learn how probate works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <title>How Probate Works - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Probate", "item": "https://360library.com/life_obligations/probate/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "How It Works"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Probate Works", "description": "A clear, simple explanation of probate - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/probate/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/probate/how-it-works.html"}, "about": {"@type": "Thing", "name": "Probate"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Probate Works", "description": "Learn how probate works with this step-by-step explanation. Simple guide to the process and mechanism.", "url": "https://360library.com/life_obligations/probate/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/probate/how-it-works.html"}, "about": {"@type": "Thing", "name": "Probate"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,42 +388,44 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/probate/what-is.html">Probate</a><span>&rsaquo;</span>How It Works
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>How Probate Works</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. QUICK ANSWER:</p>
+            
+
+            <ol>
+<li>QUICK ANSWER:</li>
+</ol>
 <p>Probate is a legal process that takes place after someone's death, where a court oversees the distribution of their assets, known as their estate, to the rightful heirs. This process ensures that the deceased person's wishes, as outlined in their will, are carried out and their debts are paid.</p>
-
-<p>2. STEP-BY-STEP PROCESS:</p>
+<ol>
+<li>STEP-BY-STEP PROCESS:</li>
+</ol>
 <p>First, when a person dies, their estate is frozen, meaning that no assets can be transferred or sold until the probate process is complete. Then, a petition is filed with the probate court, usually by the executor named in the will, to open the probate case. Next, the court will issue an order appointing the executor, who is then responsible for gathering and inventorying all of the deceased person's assets. After that, the executor will use these assets to pay off any debts that the deceased person had, such as outstanding bills, taxes, or funeral expenses. The executor will also notify all potential heirs and creditors of the probate case, allowing them to make claims on the estate. Finally, once all debts have been paid and all claims have been settled, the executor will distribute the remaining assets to the heirs according to the deceased person's will or, if there is no will, according to the laws of the state.</p>
-
-<p>3. KEY COMPONENTS:</p>
+<ol>
+<li>KEY COMPONENTS:</li>
+</ol>
 <p>Several key components are involved in the probate process. The probate court is the central authority that oversees the entire process, ensuring that everything is done fairly and according to the law. The executor, or personal representative, is the person responsible for managing the estate and carrying out the instructions in the will. The heirs are the people who will inherit the assets of the estate, and they may include spouses, children, siblings, or other relatives. Creditors are also an important part of the process, as they have the right to make claims on the estate to satisfy any outstanding debts. The will itself is also a crucial component, as it outlines the deceased person's wishes for how their assets should be distributed.</p>
-
-<p>4. VISUAL ANALOGY:</p>
+<ol>
+<li>VISUAL ANALOGY:</li>
+</ol>
 <p>The probate process can be thought of as a road trip, where the executor is the driver, the probate court is the traffic cop, and the heirs and creditors are the passengers. Just as a road trip requires careful planning, navigation, and adherence to traffic laws, the probate process requires careful management of the estate, adherence to the law, and consideration of the rights of all parties involved.</p>
-
-<p>5. COMMON QUESTIONS:</p>
+<ol>
+<li>COMMON QUESTIONS:</li>
+</ol>
 <p>But what about cases where there is no will? In such cases, the probate court will typically follow the laws of the state to determine how the estate should be distributed. What happens if the executor is unable or unwilling to carry out their duties? In such cases, the probate court may appoint a new executor or take other actions to ensure that the estate is managed properly. Can the probate process be avoided? In some cases, yes, by using certain legal instruments such as trusts, which can allow assets to pass directly to heirs without going through probate. How long does the probate process typically take? The length of time it takes to complete the probate process can vary widely, depending on the complexity of the estate and the efficiency of the probate court.</p>
-
-<p>6. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The probate process is a court-supervised mechanism that ensures the fair and lawful distribution of a deceased person's assets to their rightful heirs, while also paying off any debts and satisfying the claims of creditors.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/power-of-attorney/what-is.html" class="related-link">Power Of Attorney</a>
-        <a href="/life_obligations/primary-caregiver/what-is.html" class="related-link">Primary Caregiver</a>
-        <a href="/life_obligations/property-tax/what-is.html" class="related-link">Property Tax</a>
-        <a href="/life_obligations/proportional-contribution/what-is.html" class="related-link">Proportional Contribution</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -423,6 +470,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

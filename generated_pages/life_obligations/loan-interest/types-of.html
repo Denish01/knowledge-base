@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of loan interest - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of loan interest - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/loan-interest/types-of.html">
     <meta property="og:title" content="Types of Loan Interest">
-    <meta property="og:description" content="A clear, simple explanation of loan interest - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of loan interest - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/loan-interest/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Loan Interest">
-    <meta name="twitter:description" content="A clear, simple explanation of loan interest - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of loan interest - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Loan Interest - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Loan Interest", "item": "https://360library.com/life_obligations/loan-interest/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Loan Interest", "description": "A clear, simple explanation of loan interest - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/loan-interest/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/loan-interest/types-of.html"}, "about": {"@type": "Thing", "name": "Loan Interest"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Loan Interest", "description": "A clear, simple explanation of types of loan interest - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/loan-interest/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/loan-interest/types-of.html"}, "about": {"@type": "Thing", "name": "Loan Interest"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,88 +388,56 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/loan-interest/what-is.html">Loan Interest</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Loan Interest</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>Types of loan interest refer to the various methods by which lenders calculate and charge interest on borrowed amounts. Understanding the different types of loan interest is crucial for borrowers to make informed decisions about their loan options, as it can significantly impact the total cost of the loan. Classification of loan interest is essential to help borrowers navigate the complexities of loan agreements and to ensure they are aware of their financial obligations. By categorizing loan interest, individuals can better comprehend the terms and conditions of their loans, making it easier to manage their debt and plan their finances effectively.</p>
-
-<p>2. MAIN CATEGORIES:</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <ul>
-  <li><strong>Simple Interest</strong>: Simple interest is a type of loan interest where the interest is calculated only on the principal amount borrowed. Key characteristics include a fixed interest rate and interest accrual over time. For example, if an individual borrows $1,000 at a 5% simple interest rate, they will owe $50 in interest after one year, bringing the total amount owed to $1,050.</li>
-  <li><strong>Compound Interest</strong>: Compound interest is a type of loan interest where the interest is calculated on both the principal amount and any accrued interest. Key characteristics include interest accrual on both principal and interest, and a higher total interest paid over time. For example, if an individual borrows $1,000 at a 5% compound interest rate, they will owe $50 in interest after the first year, but in the second year, they will owe interest on the new principal balance of $1,050, resulting in a higher total interest paid.</li>
-  <li><strong>Amortized Interest</strong>: Amortized interest is a type of loan interest where the interest is calculated and paid in installments over the life of the loan. Key characteristics include a fixed payment schedule and a decreasing principal balance over time. For example, a mortgage loan with amortized interest may require monthly payments that cover both interest and principal, with the interest portion decreasing as the principal balance decreases.</li>
-  <li><strong>Fixed-Rate Interest</strong>: Fixed-rate interest is a type of loan interest where the interest rate remains the same over the life of the loan. Key characteristics include a constant interest rate and predictable monthly payments. For example, a personal loan with a fixed interest rate of 6% will have the same interest rate for the entire loan term, making it easier for the borrower to budget and plan their payments.</li>
-  <li><strong>Variable-Rate Interest</strong>: Variable-rate interest is a type of loan interest where the interest rate can change over the life of the loan. Key characteristics include an adjustable interest rate and potentially changing monthly payments. For example, a credit card with a variable interest rate may have a lower introductory rate that increases after a certain period, resulting in higher interest charges and monthly payments.</li>
-  <li><strong>Prime Interest</strong>: Prime interest is a type of loan interest where the interest rate is based on the lender's prime rate, which is the rate at which the lender lends to its most creditworthy customers. Key characteristics include a rate that is often lower than other types of interest and is typically reserved for borrowers with excellent credit. For example, a business loan with a prime interest rate may have a lower interest rate than other types of loans, but may require a strong credit history and a solid business plan.</li>
+<li><strong>Simple Interest</strong>: Simple interest is a type of loan interest where the interest is calculated only on the principal amount borrowed. Key characteristics include a fixed interest rate and interest accrual over time. For example, if an individual borrows $1,000 at a 5% simple interest rate, they will owe $50 in interest after one year, bringing the total amount owed to $1,050.</li>
+<li><strong>Compound Interest</strong>: Compound interest is a type of loan interest where the interest is calculated on both the principal amount and any accrued interest. Key characteristics include interest accrual on both principal and interest, and a higher total interest paid over time. For example, if an individual borrows $1,000 at a 5% compound interest rate, they will owe $50 in interest after the first year, but in the second year, they will owe interest on the new principal balance of $1,050, resulting in a higher total interest paid.</li>
+<li><strong>Amortized Interest</strong>: Amortized interest is a type of loan interest where the interest is calculated and paid in installments over the life of the loan. Key characteristics include a fixed payment schedule and a decreasing principal balance over time. For example, a mortgage loan with amortized interest may require monthly payments that cover both interest and principal, with the interest portion decreasing as the principal balance decreases.</li>
+<li><strong>Fixed-Rate Interest</strong>: Fixed-rate interest is a type of loan interest where the interest rate remains the same over the life of the loan. Key characteristics include a constant interest rate and predictable monthly payments. For example, a personal loan with a fixed interest rate of 6% will have the same interest rate for the entire loan term, making it easier for the borrower to budget and plan their payments.</li>
+<li><strong>Variable-Rate Interest</strong>: Variable-rate interest is a type of loan interest where the interest rate can change over the life of the loan. Key characteristics include an adjustable interest rate and potentially changing monthly payments. For example, a credit card with a variable interest rate may have a lower introductory rate that increases after a certain period, resulting in higher interest charges and monthly payments.</li>
+<li><strong>Prime Interest</strong>: Prime interest is a type of loan interest where the interest rate is based on the lender's prime rate, which is the rate at which the lender lends to its most creditworthy customers. Key characteristics include a rate that is often lower than other types of interest and is typically reserved for borrowers with excellent credit. For example, a business loan with a prime interest rate may have a lower interest rate than other types of loans, but may require a strong credit history and a solid business plan.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Interest</th>
-<th>Calculation</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Simple Interest</td>
-<td>Interest on principal only</td>
-<td>Fixed interest rate, interest accrual over time</td>
-<td>$1,000 at 5% = $50 interest after 1 year</td>
-</tr>
-<tr>
-<td>Compound Interest</td>
-<td>Interest on principal and accrued interest</td>
-<td>Interest accrual on both principal and interest, higher total interest</td>
-<td>$1,000 at 5% = $50 interest after 1 year, $52.50 after 2 years</td>
-</tr>
-<tr>
-<td>Amortized Interest</td>
-<td>Interest and principal paid in installments</td>
-<td>Fixed payment schedule, decreasing principal balance</td>
-<td>Mortgage loan with monthly payments</td>
-</tr>
-<tr>
-<td>Fixed-Rate Interest</td>
-<td>Constant interest rate</td>
-<td>Predictable monthly payments, constant interest rate</td>
-<td>Personal loan with 6% fixed interest rate</td>
-</tr>
-<tr>
-<td>Variable-Rate Interest</td>
-<td>Adjustable interest rate</td>
-<td>Potentially changing monthly payments, adjustable interest rate</td>
-<td>Credit card with variable interest rate</td>
-</tr>
-<tr>
-<td>Prime Interest</td>
-<td>Based on lender's prime rate</td>
-<td>Lower interest rate, reserved for creditworthy borrowers</td>
-<td>Business loan with prime interest rate</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Interest</th><th>Calculation</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Simple Interest</td><td>Interest on principal only</td><td>Fixed interest rate, interest accrual over time</td><td>$1,000 at 5% = $50 interest after 1 year</td></tr>
+<tr><td>Compound Interest</td><td>Interest on principal and accrued interest</td><td>Interest accrual on both principal and interest, higher total interest</td><td>$1,000 at 5% = $50 interest after 1 year, $52.50 after 2 years</td></tr>
+<tr><td>Amortized Interest</td><td>Interest and principal paid in installments</td><td>Fixed payment schedule, decreasing principal balance</td><td>Mortgage loan with monthly payments</td></tr>
+<tr><td>Fixed-Rate Interest</td><td>Constant interest rate</td><td>Predictable monthly payments, constant interest rate</td><td>Personal loan with 6% fixed interest rate</td></tr>
+<tr><td>Variable-Rate Interest</td><td>Adjustable interest rate</td><td>Potentially changing monthly payments, adjustable interest rate</td><td>Credit card with variable interest rate</td></tr>
+<tr><td>Prime Interest</td><td>Based on lender's prime rate</td><td>Lower interest rate, reserved for creditworthy borrowers</td><td>Business loan with prime interest rate</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different types of loan interest are connected in that they all relate to the calculation and charging of interest on borrowed amounts. However, they differ in their calculation methods, key characteristics, and examples. Simple and compound interest are related in that they both calculate interest on the principal amount, but compound interest also takes into account accrued interest. Amortized interest is related to fixed-rate and variable-rate interest, as it can be used with either type of interest rate. Fixed-rate and variable-rate interest are related in that they both describe the interest rate, but differ in that fixed-rate interest remains constant, while variable-rate interest can change. Prime interest is related to fixed-rate and variable-rate interest, as it is often used as a benchmark for setting interest rates.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system for types of loan interest includes simple interest, compound interest, amortized interest, fixed-rate interest, variable-rate interest, and prime interest, each with its own unique characteristics and calculation methods.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/life-insurance/what-is.html" class="related-link">Life Insurance</a>
-        <a href="/life_obligations/long-term-support/what-is.html" class="related-link">Long Term Support</a>
-        <a href="/life_obligations/means-testing/what-is.html" class="related-link">Means Testing</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -469,6 +482,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

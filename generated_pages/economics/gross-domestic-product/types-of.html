@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of gross domestic product - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of gross domestic product - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/economics/gross-domestic-product/types-of.html">
     <meta property="og:title" content="Types of Gross Domestic Product">
-    <meta property="og:description" content="A clear, simple explanation of gross domestic product - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of gross domestic product - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/economics/gross-domestic-product/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Gross Domestic Product">
-    <meta name="twitter:description" content="A clear, simple explanation of gross domestic product - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of gross domestic product - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Gross Domestic Product - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Economics", "item": "https://360library.com/#economics"}, {"@type": "ListItem", "position": 3, "name": "Gross Domestic Product", "item": "https://360library.com/economics/gross-domestic-product/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Gross Domestic Product", "description": "A clear, simple explanation of gross domestic product - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/economics/gross-domestic-product/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/economics/gross-domestic-product/types-of.html"}, "about": {"@type": "Thing", "name": "Gross Domestic Product"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Gross Domestic Product", "description": "A clear, simple explanation of types of gross domestic product - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/economics/gross-domestic-product/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/economics/gross-domestic-product/types-of.html"}, "about": {"@type": "Thing", "name": "Gross Domestic Product"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,107 +388,88 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#economics">Economics</a><span>&rsaquo;</span><a href="/economics/gross-domestic-product/what-is.html">Gross Domestic Product</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #059669">
     <main class="article-main">
         <article>
             <h1>Types of Gross Domestic Product</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>The concept of Gross Domestic Product (GDP) is a crucial indicator of a country's economic performance, and it can be categorized into different types to provide a more nuanced understanding of economic activity. Classification of GDP is essential because it helps policymakers, economists, and businesses to analyze and compare economic data, make informed decisions, and develop effective strategies. By categorizing GDP, it becomes possible to identify areas of strength and weakness, track changes in economic conditions, and evaluate the impact of policies and events on the economy. Understanding the different types of GDP is vital for anyone interested in economics, finance, or business, as it provides a framework for analyzing and interpreting economic data.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the main categories of GDP:</p>
-<p>1. <strong>Nominal GDP</strong></p>
+<ol>
+<li><strong>Nominal GDP</strong></li>
+</ol>
 <ul>
-  <li>Definition: Nominal GDP is the total value of all final goods and services produced within a country's borders, valued at current prices. It does not account for inflation or changes in prices over time.</li>
-  <li>Key characteristics: Includes all final goods and services, valued at current prices, and does not adjust for inflation.</li>
-  <li>Example: If a country produces 100 units of a product at $10 each, the nominal GDP would be $1000.</li>
+<li>Definition: Nominal GDP is the total value of all final goods and services produced within a country's borders, valued at current prices. It does not account for inflation or changes in prices over time.</li>
+<li>Key characteristics: Includes all final goods and services, valued at current prices, and does not adjust for inflation.</li>
+<li>Example: If a country produces 100 units of a product at $10 each, the nominal GDP would be $1000.</li>
 </ul>
-<p>2. <strong>Real GDP</strong></p>
+<ol>
+<li><strong>Real GDP</strong></li>
+</ol>
 <ul>
-  <li>Definition: Real GDP is the total value of all final goods and services produced within a country's borders, adjusted for inflation. It provides a more accurate picture of economic growth by removing the effects of price changes.</li>
-  <li>Key characteristics: Adjusted for inflation, provides a more accurate picture of economic growth, and is often used to compare economic performance over time.</li>
-  <li>Example: If a country's nominal GDP is $1000, but prices have increased by 10% due to inflation, the real GDP would be $909 (adjusted for inflation).</li>
+<li>Definition: Real GDP is the total value of all final goods and services produced within a country's borders, adjusted for inflation. It provides a more accurate picture of economic growth by removing the effects of price changes.</li>
+<li>Key characteristics: Adjusted for inflation, provides a more accurate picture of economic growth, and is often used to compare economic performance over time.</li>
+<li>Example: If a country's nominal GDP is $1000, but prices have increased by 10% due to inflation, the real GDP would be $909 (adjusted for inflation).</li>
 </ul>
-<p>3. <strong>GDP at Factor Cost</strong></p>
+<ol>
+<li><strong>GDP at Factor Cost</strong></li>
+</ol>
 <ul>
-  <li>Definition: GDP at factor cost is the total value of all final goods and services produced within a country's borders, minus indirect taxes and plus subsidies. It provides a more detailed picture of the economy by accounting for taxes and subsidies.</li>
-  <li>Key characteristics: Accounts for indirect taxes and subsidies, provides a more detailed picture of the economy, and is often used to analyze the impact of government policies.</li>
-  <li>Example: If a country's GDP at market prices is $1000, but indirect taxes are $100 and subsidies are $50, the GDP at factor cost would be $950.</li>
+<li>Definition: GDP at factor cost is the total value of all final goods and services produced within a country's borders, minus indirect taxes and plus subsidies. It provides a more detailed picture of the economy by accounting for taxes and subsidies.</li>
+<li>Key characteristics: Accounts for indirect taxes and subsidies, provides a more detailed picture of the economy, and is often used to analyze the impact of government policies.</li>
+<li>Example: If a country's GDP at market prices is $1000, but indirect taxes are $100 and subsidies are $50, the GDP at factor cost would be $950.</li>
 </ul>
-<p>4. <strong>GDP at Market Prices</strong></p>
+<ol>
+<li><strong>GDP at Market Prices</strong></li>
+</ol>
 <ul>
-  <li>Definition: GDP at market prices is the total value of all final goods and services produced within a country's borders, including indirect taxes and excluding subsidies. It provides a more comprehensive picture of the economy by including all market transactions.</li>
-  <li>Key characteristics: Includes indirect taxes, excludes subsidies, and provides a more comprehensive picture of the economy.</li>
-  <li>Example: If a country's GDP at factor cost is $950, but indirect taxes are $100, the GDP at market prices would be $1050.</li>
+<li>Definition: GDP at market prices is the total value of all final goods and services produced within a country's borders, including indirect taxes and excluding subsidies. It provides a more comprehensive picture of the economy by including all market transactions.</li>
+<li>Key characteristics: Includes indirect taxes, excludes subsidies, and provides a more comprehensive picture of the economy.</li>
+<li>Example: If a country's GDP at factor cost is $950, but indirect taxes are $100, the GDP at market prices would be $1050.</li>
 </ul>
-<p>5. <strong>Gross National Product (GNP)</strong></p>
+<ol>
+<li><strong>Gross National Product (GNP)</strong></li>
+</ol>
 <ul>
-  <li>Definition: GNP is the total value of all final goods and services produced by a country's citizens, regardless of where they are produced. It provides a more accurate picture of a country's economic output by accounting for international trade and investment.</li>
-  <li>Key characteristics: Includes income earned by citizens abroad, excludes income earned by foreigners within the country, and provides a more accurate picture of a country's economic output.</li>
-  <li>Example: If a country's citizens earn $1000 abroad, but foreigners within the country earn $500, the GNP would be $1500 (including income earned by citizens abroad).</li>
+<li>Definition: GNP is the total value of all final goods and services produced by a country's citizens, regardless of where they are produced. It provides a more accurate picture of a country's economic output by accounting for international trade and investment.</li>
+<li>Key characteristics: Includes income earned by citizens abroad, excludes income earned by foreigners within the country, and provides a more accurate picture of a country's economic output.</li>
+<li>Example: If a country's citizens earn $1000 abroad, but foreigners within the country earn $500, the GNP would be $1500 (including income earned by citizens abroad).</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
 <p>The following table summarizes the differences between the main categories of GDP:</p>
-
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Nominal GDP</td>
-<td>Total value of goods and services at current prices</td>
-<td>Includes all final goods and services, valued at current prices</td>
-<td>$1000</td>
-</tr>
-<tr>
-<td>Real GDP</td>
-<td>Total value of goods and services adjusted for inflation</td>
-<td>Adjusted for inflation, provides a more accurate picture of economic growth</td>
-<td>$909</td>
-</tr>
-<tr>
-<td>GDP at Factor Cost</td>
-<td>Total value of goods and services minus indirect taxes and plus subsidies</td>
-<td>Accounts for indirect taxes and subsidies, provides a more detailed picture of the economy</td>
-<td>$950</td>
-</tr>
-<tr>
-<td>GDP at Market Prices</td>
-<td>Total value of goods and services including indirect taxes and excluding subsidies</td>
-<td>Includes indirect taxes, excludes subsidies, provides a more comprehensive picture of the economy</td>
-<td>$1050</td>
-</tr>
-<tr>
-<td>GNP</td>
-<td>Total value of goods and services produced by a country's citizens</td>
-<td>Includes income earned by citizens abroad, excludes income earned by foreigners within the country</td>
-<td>$1500</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Nominal GDP</td><td>Total value of goods and services at current prices</td><td>Includes all final goods and services, valued at current prices</td><td>$1000</td></tr>
+<tr><td>Real GDP</td><td>Total value of goods and services adjusted for inflation</td><td>Adjusted for inflation, provides a more accurate picture of economic growth</td><td>$909</td></tr>
+<tr><td>GDP at Factor Cost</td><td>Total value of goods and services minus indirect taxes and plus subsidies</td><td>Accounts for indirect taxes and subsidies, provides a more detailed picture of the economy</td><td>$950</td></tr>
+<tr><td>GDP at Market Prices</td><td>Total value of goods and services including indirect taxes and excluding subsidies</td><td>Includes indirect taxes, excludes subsidies, provides a more comprehensive picture of the economy</td><td>$1050</td></tr>
+<tr><td>GNP</td><td>Total value of goods and services produced by a country's citizens</td><td>Includes income earned by citizens abroad, excludes income earned by foreigners within the country</td><td>$1500</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different categories of GDP are interconnected and provide a more comprehensive picture of the economy when used together. Nominal GDP provides a basic understanding of economic activity, while real GDP adjusts for inflation to provide a more accurate picture of economic growth. GDP at factor cost and GDP at market prices provide more detailed information about the economy by accounting for taxes and subsidies. GNP provides a more accurate picture of a country's economic output by accounting for international trade and investment. By understanding the relationships between these categories, policymakers and economists can develop more effective strategies and make informed decisions.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of Gross Domestic Product includes nominal GDP, real GDP, GDP at factor cost, GDP at market prices, and Gross National Product, each providing a unique perspective on economic activity and growth.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/economics/deflation/what-is.html" class="related-link">Deflation</a>
-        <a href="/economics/fiscal-policy/what-is.html" class="related-link">Fiscal Policy</a>
-        <a href="/economics/inflation/what-is.html" class="related-link">Inflation</a>
-        <a href="/economics/interest-rates/what-is.html" class="related-link">Interest Rates</a>
-        <a href="/economics/monetary-policy/what-is.html" class="related-link">Monetary Policy</a>
-        <a href="/economics/recession/what-is.html" class="related-link">Recession</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -488,6 +514,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

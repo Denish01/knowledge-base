@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of standard deviation - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Common misconceptions about standard deviation debunked. Learn what people get wrong and the real facts.">
     <link rel="canonical" href="https://360library.com/math/standard-deviation/common-misconceptions-about.html">
     <meta property="og:title" content="Common Misconceptions About Standard Deviation">
-    <meta property="og:description" content="A clear, simple explanation of standard deviation - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Common misconceptions about standard deviation debunked. Learn what people get wrong and the real facts.">
     <meta property="og:url" content="https://360library.com/math/standard-deviation/common-misconceptions-about.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Common Misconceptions About Standard Deviation">
-    <meta name="twitter:description" content="A clear, simple explanation of standard deviation - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Common misconceptions about standard deviation debunked. Learn what people get wrong and the real facts.">
     <title>Common Misconceptions About Standard Deviation - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://360library.com/#math"}, {"@type": "ListItem", "position": 3, "name": "Standard Deviation", "item": "https://360library.com/math/standard-deviation/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Misconceptions"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Common Misconceptions About Standard Deviation", "description": "A clear, simple explanation of standard deviation - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/standard-deviation/common-misconceptions-about.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/standard-deviation/common-misconceptions-about.html"}, "about": {"@type": "Thing", "name": "Standard Deviation"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Common Misconceptions About Standard Deviation", "description": "Common misconceptions about standard deviation debunked. Learn what people get wrong and the real facts.", "url": "https://360library.com/math/standard-deviation/common-misconceptions-about.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/standard-deviation/common-misconceptions-about.html"}, "about": {"@type": "Thing", "name": "Standard Deviation"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,178 +388,65 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/standard-deviation/what-is.html">Standard Deviation</a><span>&rsaquo;</span>Misconceptions
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>Common Misconceptions About Standard Deviation</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
-<style>
-.calculator {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 24px 0;
-}
-.calculator h3 {
-    margin-top: 0;
-    color: #1a73e8;
-}
-.calc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 16px;
-}
-.calculator label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-}
-.calculator input, .calculator select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.calculator button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.calculator button:hover {
-    background: #1557b0;
-}
-.calc-result {
-    margin-top: 16px;
-    padding: 12px;
-    background: white;
-    border-radius: 4px;
-    border-left: 4px solid #1a73e8;
-}
-.calc-result p {
-    margin: 8px 0;
-}
-.calc-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.tab-btn {
-    background: #e0e0e0;
-    color: #333;
-}
-.tab-btn.active {
-    background: #1a73e8;
-    color: white;
-}
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-</style>
 
-<div class="calculator" id="stddev-calc">
-    <h3>Standard Deviation Calculator</h3>
-    <label>Enter numbers (comma-separated):
-        <input type="text" id="stddev-input" value="10, 12, 23, 23, 16, 23, 21, 16" style="width:100%">
-    </label>
-    <button onclick="calculateStdDev()">Calculate</button>
-    <div class="calc-result" id="stddev-result"></div>
-</div>
-<script>
-function calculateStdDev() {
-    const input = document.getElementById('stddev-input').value;
-    const nums = input.split(',').map(n => parseFloat(n.trim())).filter(n => !isNaN(n));
+            
 
-    if (nums.length < 2) {
-        document.getElementById('stddev-result').innerHTML = '<p>Enter at least 2 numbers</p>';
-        return;
-    }
-
-    const mean = nums.reduce((a,b) => a+b, 0) / nums.length;
-    const squaredDiffs = nums.map(n => Math.pow(n - mean, 2));
-    const variance = squaredDiffs.reduce((a,b) => a+b, 0) / nums.length;
-    const stdDev = Math.sqrt(variance);
-    const sampleStdDev = Math.sqrt(squaredDiffs.reduce((a,b) => a+b, 0) / (nums.length - 1));
-
-    document.getElementById('stddev-result').innerHTML = `
-        <p><strong>Mean:</strong> ${mean.toFixed(4)}</p>
-        <p><strong>Variance:</strong> ${variance.toFixed(4)}</p>
-        <p><strong>Std Deviation (Population):</strong> ${stdDev.toFixed(4)}</p>
-        <p><strong>Std Deviation (Sample):</strong> ${sampleStdDev.toFixed(4)}</p>
-    `;
-}
-calculateStdDev();
-</script>
-
-
-            <p>1. INTRODUCTION:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>Standard deviation is a statistical concept used to measure the amount of variation or dispersion in a set of values. It is a fundamental idea in mathematics, science, and engineering. However, misconceptions about standard deviation are common due to its abstract nature and the complexity of statistical concepts. These misconceptions can lead to incorrect interpretations and applications of data, resulting in flawed conclusions. Understanding the correct concepts and avoiding common mistakes is crucial for accurate data analysis and decision-making.</p>
-
-<p>2. MISCONCEPTION LIST:</p>
+<ol>
+<li>MISCONCEPTION LIST:</li>
+</ol>
 <ul>
-  <li>Myth: Standard deviation measures the average value of a dataset.</li>
+<li>Myth: Standard deviation measures the average value of a dataset.</li>
 </ul>
 <p>Reality: Standard deviation measures the spread or dispersion of a dataset from its mean value.</p>
 <p>Why people believe this: The term "standard" can be misleading, leading people to think it refers to an average or normal value, rather than a measure of variation.</p>
-
 <ul>
-  <li>Myth: A high standard deviation always indicates a large dataset.</li>
+<li>Myth: A high standard deviation always indicates a large dataset.</li>
 </ul>
 <p>Reality: Standard deviation is a measure of the spread of the data, not the size of the dataset.</p>
 <p>Why people believe this: The idea that more data points would naturally lead to a greater spread is intuitive, but standard deviation is calculated based on the differences of individual data points from the mean, not the number of data points.</p>
-
 <ul>
-  <li>Myth: Standard deviation is only used in statistics and mathematics.</li>
+<li>Myth: Standard deviation is only used in statistics and mathematics.</li>
 </ul>
 <p>Reality: Standard deviation has applications in various fields, including finance, engineering, and social sciences.</p>
 <p>Why people believe this: The technical nature of standard deviation might lead people to think it is confined to mathematical and statistical contexts, overlooking its broader utility in understanding variability in different disciplines.</p>
-
 <ul>
-  <li>Myth: A low standard deviation means the data is accurate.</li>
+<li>Myth: A low standard deviation means the data is accurate.</li>
 </ul>
 <p>Reality: A low standard deviation indicates that the data points are close to the mean value, but it does not necessarily imply accuracy.</p>
 <p>Why people believe this: The assumption that consistency (low standard deviation) equals accuracy is a common mistake, as accuracy refers to how close the data is to the true value, not how spread out it is.</p>
-
 <ul>
-  <li>Myth: Standard deviation can never be zero.</li>
+<li>Myth: Standard deviation can never be zero.</li>
 </ul>
 <p>Reality: Standard deviation can be zero in a hypothetical scenario where all data points have the same value.</p>
 <p>Why people believe this: The idea that real-world data always contains some level of variation leads to the misconception that standard deviation must always be greater than zero, forgetting about the theoretical possibility of no variation.</p>
-
 <ul>
-  <li>Myth: Standard deviation is the same as variance.</li>
+<li>Myth: Standard deviation is the same as variance.</li>
 </ul>
 <p>Reality: Standard deviation is the square root of variance.</p>
 <p>Why people believe this: The close relationship between standard deviation and variance, with standard deviation being the square root of variance, can lead to confusion and a failure to distinguish between these two related but distinct measures of dispersion.</p>
-
-<p>3. HOW TO REMEMBER:</p>
+<ol>
+<li>HOW TO REMEMBER:</li>
+</ol>
 <p>To avoid these misconceptions, it's helpful to remember that standard deviation is a measure of spread, not a measure of central tendency or dataset size. Visualizing data through plots and understanding the formula for calculating standard deviation can also help clarify its meaning. Additionally, recognizing the distinction between accuracy and precision, where standard deviation relates to precision, can prevent common mistakes. Practicing with different datasets and scenarios can further solidify the correct understanding of standard deviation.</p>
-
-<p>4. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The one thing to remember to avoid confusion about standard deviation is that it measures the spread or dispersion of data from its mean value, not the average value, dataset size, or accuracy of the data. By understanding this core concept and being aware of common misconceptions, individuals can correctly interpret and apply standard deviation in various contexts, leading to more accurate data analysis and decision-making.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/ratios/what-is.html" class="related-link">Ratios</a>
-        <a href="/math/slope/what-is.html" class="related-link">Slope</a>
-        <a href="/math/square-roots/what-is.html" class="related-link">Square Roots</a>
-        <a href="/math/variables/what-is.html" class="related-link">Variables</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -559,6 +491,9 @@ calculateStdDev();
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/disease-prevention/what-is.html">Disease Prevention</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>What Is Disease Prevention?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Disease prevention is the practice of taking steps to avoid the onset of diseases and to reduce the risk of their development.</p>
-
 <p>Disease prevention is a crucial aspect of maintaining good health. It involves a combination of strategies that help to prevent the occurrence of diseases, reduce their severity, and minimize their impact on individuals and communities. This can be achieved through a range of measures, including lifestyle changes, environmental modifications, and medical interventions. By preventing diseases, individuals can reduce their risk of illness, disability, and death, and improve their overall quality of life.</p>
-
 <p>One of the key aspects of disease prevention is understanding the causes of diseases. Many diseases are caused by a combination of genetic, environmental, and lifestyle factors. For example, a person may be genetically predisposed to a certain disease, but their lifestyle choices, such as diet and exercise, can influence their risk of developing the disease. By understanding these factors, individuals can take steps to reduce their risk of disease. Additionally, disease prevention often involves a proactive approach, where individuals take steps to prevent diseases before they occur, rather than waiting for symptoms to appear and then seeking treatment.</p>
-
 <p>Disease prevention also involves a range of strategies that can be implemented at different levels, including individual, community, and societal levels. At the individual level, people can make lifestyle changes, such as eating a healthy diet, exercising regularly, and avoiding tobacco and excessive alcohol consumption. At the community level, initiatives can be implemented to promote healthy behaviors, such as education programs, screening services, and community-based interventions. At the societal level, policies and laws can be put in place to promote health and prevent disease, such as regulations on food labeling, tobacco control, and environmental protection.</p>
-
 <p>The key components of disease prevention include:</p>
 <ul>
-  <li>Health education, which involves providing people with the knowledge and skills they need to make informed decisions about their health</li>
-  <li>Risk factor modification, which involves reducing or eliminating factors that increase the risk of disease, such as high blood pressure, high cholesterol, and obesity</li>
-  <li>Immunization, which involves the use of vaccines to prevent infectious diseases</li>
-  <li>Screening and early detection, which involves the use of tests and examinations to identify diseases in their early stages, when they are more treatable</li>
-  <li>Environmental modifications, which involves making changes to the environment to reduce the risk of disease, such as improving air and water quality</li>
-  <li>Policy and legislative initiatives, which involves the development and implementation of policies and laws to promote health and prevent disease</li>
+<li>Health education, which involves providing people with the knowledge and skills they need to make informed decisions about their health</li>
+<li>Risk factor modification, which involves reducing or eliminating factors that increase the risk of disease, such as high blood pressure, high cholesterol, and obesity</li>
+<li>Immunization, which involves the use of vaccines to prevent infectious diseases</li>
+<li>Screening and early detection, which involves the use of tests and examinations to identify diseases in their early stages, when they are more treatable</li>
+<li>Environmental modifications, which involves making changes to the environment to reduce the risk of disease, such as improving air and water quality</li>
+<li>Policy and legislative initiatives, which involves the development and implementation of policies and laws to promote health and prevent disease</li>
 </ul>
-
 <p>However, there are also some common misconceptions about disease prevention. These include:</p>
 <ul>
-  <li>The belief that disease prevention is only the responsibility of individuals, when in fact it requires a collective effort from individuals, communities, and societies</li>
-  <li>The idea that disease prevention is only about avoiding disease, when in fact it is also about promoting health and well-being</li>
-  <li>The assumption that disease prevention is a one-time event, when in fact it is an ongoing process that requires continuous effort and commitment</li>
-  <li>The notion that disease prevention is only relevant for people who are at high risk of disease, when in fact it is relevant for everyone, regardless of their risk factors</li>
+<li>The belief that disease prevention is only the responsibility of individuals, when in fact it requires a collective effort from individuals, communities, and societies</li>
+<li>The idea that disease prevention is only about avoiding disease, when in fact it is also about promoting health and well-being</li>
+<li>The assumption that disease prevention is a one-time event, when in fact it is an ongoing process that requires continuous effort and commitment</li>
+<li>The notion that disease prevention is only relevant for people who are at high risk of disease, when in fact it is relevant for everyone, regardless of their risk factors</li>
 </ul>
-
 <p>A real-world example of disease prevention is the implementation of a comprehensive tobacco control program in a community. This program might include public education campaigns, smoking cessation services, and policies to restrict tobacco sales and advertising. By reducing tobacco use, the program can help to prevent tobacco-related diseases, such as lung cancer, heart disease, and chronic obstructive pulmonary disease.</p>
-
 <p>In summary, disease prevention is a multifaceted practice that involves taking steps to avoid the onset of diseases and to reduce the risk of their development, through a combination of lifestyle changes, environmental modifications, and medical interventions.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/diabetes/what-is.html" class="related-link">Diabetes</a>
-        <a href="/health/digestive-system/what-is.html" class="related-link">Digestive System</a>
-        <a href="/health/endocrine-system/what-is.html" class="related-link">Endocrine System</a>
-        <a href="/health/epidemiology/what-is.html" class="related-link">Epidemiology</a>
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

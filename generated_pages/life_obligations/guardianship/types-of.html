@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of guardianship - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of guardianship - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/guardianship/types-of.html">
     <meta property="og:title" content="Types of Guardianship">
-    <meta property="og:description" content="A clear, simple explanation of guardianship - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of guardianship - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/guardianship/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Guardianship">
-    <meta name="twitter:description" content="A clear, simple explanation of guardianship - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of guardianship - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Guardianship - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Guardianship", "item": "https://360library.com/life_obligations/guardianship/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Guardianship", "description": "A clear, simple explanation of guardianship - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/guardianship/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/guardianship/types-of.html"}, "about": {"@type": "Thing", "name": "Guardianship"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Guardianship", "description": "A clear, simple explanation of types of guardianship - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/guardianship/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/guardianship/types-of.html"}, "about": {"@type": "Thing", "name": "Guardianship"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,105 +388,87 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/guardianship/what-is.html">Guardianship</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Guardianship</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>Types of guardianship refer to the various forms of guardianship arrangements that can be established to care for the well-being and interests of individuals, often minors or adults with disabilities, who are unable to care for themselves. Classification of guardianship types matters because it helps to understand the different roles, responsibilities, and powers associated with each type, ensuring that the best interests of the individual are protected. By categorizing guardianship types, individuals can make informed decisions about the care and well-being of their loved ones, and courts can determine the most suitable arrangement for each unique situation.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the main categories of guardianship:</p>
-<p>1. <strong>Full Guardianship</strong></p>
+<ol>
+<li><strong>Full Guardianship</strong></li>
+</ol>
 <ul>
-  <li>Definition: Full guardianship is a type of guardianship where the guardian has complete control over the individual's personal and financial affairs. This includes making decisions about their daily life, healthcare, and financial management.</li>
-  <li>Key characteristics: The guardian has the authority to make all decisions on behalf of the individual, including those related to their daily care, medical treatment, and financial management.</li>
-  <li>Example: A grandparent may be granted full guardianship of their grandchild after the parents' death, giving them complete responsibility for the child's care and well-being.</li>
+<li>Definition: Full guardianship is a type of guardianship where the guardian has complete control over the individual's personal and financial affairs. This includes making decisions about their daily life, healthcare, and financial management.</li>
+<li>Key characteristics: The guardian has the authority to make all decisions on behalf of the individual, including those related to their daily care, medical treatment, and financial management.</li>
+<li>Example: A grandparent may be granted full guardianship of their grandchild after the parents' death, giving them complete responsibility for the child's care and well-being.</li>
 </ul>
-<p>2. <strong>Limited Guardianship</strong></p>
+<ol>
+<li><strong>Limited Guardianship</strong></li>
+</ol>
 <ul>
-  <li>Definition: Limited guardianship is a type of guardianship where the guardian has restricted authority to make decisions on behalf of the individual, often limited to specific areas such as healthcare or financial management.</li>
-  <li>Key characteristics: The guardian's powers are limited to specific areas, and the individual may retain some decision-making capacity.</li>
-  <li>Example: A court may grant limited guardianship to a family member to manage the financial affairs of an individual with disabilities, while the individual retains control over their daily life and healthcare decisions.</li>
+<li>Definition: Limited guardianship is a type of guardianship where the guardian has restricted authority to make decisions on behalf of the individual, often limited to specific areas such as healthcare or financial management.</li>
+<li>Key characteristics: The guardian's powers are limited to specific areas, and the individual may retain some decision-making capacity.</li>
+<li>Example: A court may grant limited guardianship to a family member to manage the financial affairs of an individual with disabilities, while the individual retains control over their daily life and healthcare decisions.</li>
 </ul>
-<p>3. <strong>Temporary Guardianship</strong></p>
+<ol>
+<li><strong>Temporary Guardianship</strong></li>
+</ol>
 <ul>
-  <li>Definition: Temporary guardianship is a type of guardianship that is established for a short period, often in emergency situations or until a permanent arrangement can be made.</li>
-  <li>Key characteristics: The guardianship is short-term, and the guardian's powers are usually limited to addressing immediate needs and ensuring the individual's safety.</li>
-  <li>Example: A temporary guardian may be appointed to care for a child whose parents are temporarily unable to do so due to illness or incarceration.</li>
+<li>Definition: Temporary guardianship is a type of guardianship that is established for a short period, often in emergency situations or until a permanent arrangement can be made.</li>
+<li>Key characteristics: The guardianship is short-term, and the guardian's powers are usually limited to addressing immediate needs and ensuring the individual's safety.</li>
+<li>Example: A temporary guardian may be appointed to care for a child whose parents are temporarily unable to do so due to illness or incarceration.</li>
 </ul>
-<p>4. <strong>Co-Guardianship</strong></p>
+<ol>
+<li><strong>Co-Guardianship</strong></li>
+</ol>
 <ul>
-  <li>Definition: Co-guardianship is a type of guardianship where two or more individuals share the responsibilities and powers of guardianship.</li>
-  <li>Key characteristics: Co-guardians must work together to make decisions and may have joint or separate powers, depending on the arrangement.</li>
-  <li>Example: Two parents may be granted co-guardianship of their child, sharing decision-making responsibilities and authority.</li>
+<li>Definition: Co-guardianship is a type of guardianship where two or more individuals share the responsibilities and powers of guardianship.</li>
+<li>Key characteristics: Co-guardians must work together to make decisions and may have joint or separate powers, depending on the arrangement.</li>
+<li>Example: Two parents may be granted co-guardianship of their child, sharing decision-making responsibilities and authority.</li>
 </ul>
-<p>5. <strong>Public Guardianship</strong></p>
+<ol>
+<li><strong>Public Guardianship</strong></li>
+</ol>
 <ul>
-  <li>Definition: Public guardianship is a type of guardianship where a government agency or public official is appointed as the guardian, often for individuals who have no family or friends able to care for them.</li>
-  <li>Key characteristics: The public guardian has the authority to make decisions on behalf of the individual, and the arrangement is often subject to court oversight.</li>
-  <li>Example: A public guardian may be appointed to care for an elderly individual with no living relatives or friends, managing their daily care and financial affairs.</li>
+<li>Definition: Public guardianship is a type of guardianship where a government agency or public official is appointed as the guardian, often for individuals who have no family or friends able to care for them.</li>
+<li>Key characteristics: The public guardian has the authority to make decisions on behalf of the individual, and the arrangement is often subject to court oversight.</li>
+<li>Example: A public guardian may be appointed to care for an elderly individual with no living relatives or friends, managing their daily care and financial affairs.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
-<table class="comparison-table"><thead><tr>
-<th>Type of Guardianship</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Full Guardianship</td>
-<td>Complete control over personal and financial affairs</td>
-<td>Complete decision-making authority</td>
-<td>Grandparent caring for grandchild</td>
-</tr>
-<tr>
-<td>Limited Guardianship</td>
-<td>Restricted authority to make decisions</td>
-<td>Limited powers, individual retains some decision-making capacity</td>
-<td>Family member managing financial affairs</td>
-</tr>
-<tr>
-<td>Temporary Guardianship</td>
-<td>Short-term arrangement</td>
-<td>Limited powers, short-term duration</td>
-<td>Temporary care for a child</td>
-</tr>
-<tr>
-<td>Co-Guardianship</td>
-<td>Shared responsibilities and powers</td>
-<td>Joint or separate decision-making authority</td>
-<td>Two parents sharing decision-making</td>
-</tr>
-<tr>
-<td>Public Guardianship</td>
-<td>Government agency or public official as guardian</td>
-<td>Authority to make decisions, subject to court oversight</td>
-<td>Public guardian caring for elderly individual</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Guardianship</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Full Guardianship</td><td>Complete control over personal and financial affairs</td><td>Complete decision-making authority</td><td>Grandparent caring for grandchild</td></tr>
+<tr><td>Limited Guardianship</td><td>Restricted authority to make decisions</td><td>Limited powers, individual retains some decision-making capacity</td><td>Family member managing financial affairs</td></tr>
+<tr><td>Temporary Guardianship</td><td>Short-term arrangement</td><td>Limited powers, short-term duration</td><td>Temporary care for a child</td></tr>
+<tr><td>Co-Guardianship</td><td>Shared responsibilities and powers</td><td>Joint or separate decision-making authority</td><td>Two parents sharing decision-making</td></tr>
+<tr><td>Public Guardianship</td><td>Government agency or public official as guardian</td><td>Authority to make decisions, subject to court oversight</td><td>Public guardian caring for elderly individual</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different types of guardianship are connected in that they all aim to provide care and protection for individuals who are unable to care for themselves. However, they differ in terms of the level of authority granted to the guardian, the duration of the arrangement, and the individuals involved. Understanding these differences is essential to determining the most suitable type of guardianship for each unique situation.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of types of guardianship includes full, limited, temporary, co-guardianship, and public guardianship, each with distinct characteristics and purposes, providing a framework for understanding the various arrangements that can be established to care for the well-being and interests of individuals in need.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/government-benefits/what-is.html" class="related-link">Government Benefits</a>
-        <a href="/life_obligations/gross-income-for-support/what-is.html" class="related-link">Gross Income For Support</a>
-        <a href="/life_obligations/health-insurance/what-is.html" class="related-link">Health Insurance</a>
-        <a href="/life_obligations/healthcare-directive/what-is.html" class="related-link">Healthcare Directive</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -486,6 +513,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

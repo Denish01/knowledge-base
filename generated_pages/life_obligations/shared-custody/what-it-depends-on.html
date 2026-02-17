@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of shared custody - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of what shared custody depends on - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/shared-custody/what-it-depends-on.html">
     <meta property="og:title" content="What Shared Custody Depends On">
-    <meta property="og:description" content="A clear, simple explanation of shared custody - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of what shared custody depends on - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/shared-custody/what-it-depends-on.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="What Shared Custody Depends On">
-    <meta name="twitter:description" content="A clear, simple explanation of shared custody - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of what shared custody depends on - definition, key concepts, examples, and common misconceptions.">
     <title>What Shared Custody Depends On - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Shared Custody", "item": "https://360library.com/life_obligations/shared-custody/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "What It Depends On"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Shared Custody Depends On", "description": "A clear, simple explanation of shared custody - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/shared-custody/what-it-depends-on.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/shared-custody/what-it-depends-on.html"}, "about": {"@type": "Thing", "name": "Shared Custody"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Shared Custody Depends On", "description": "A clear, simple explanation of what shared custody depends on - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/shared-custody/what-it-depends-on.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/shared-custody/what-it-depends-on.html"}, "about": {"@type": "Thing", "name": "Shared Custody"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,63 +388,54 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/shared-custody/what-is.html">Shared Custody</a><span>&rsaquo;</span>What It Depends On
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Shared Custody Depends On</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>Shared custody refers to a child custody arrangement where both parents have significant involvement in the child's life, often with joint decision-making and shared physical custody. Understanding what shared custody depends on is crucial for parents, guardians, and caregivers to navigate the complexities of co-parenting. The dependencies that underlie shared custody arrangements are essential for creating a stable and supportive environment for the child. By recognizing these prerequisites, parents can better prepare themselves for the challenges and responsibilities that come with shared custody.</p>
-
-<p>2. KEY DEPENDENCIES:</p>
+<ol>
+<li>KEY DEPENDENCIES:</li>
+</ol>
 <ul>
-  <li>The dependency: Effective communication between parents</li>
+<li>The dependency: Effective communication between parents</li>
 </ul>
-<p>Why it's necessary: Open and honest communication is vital for making joint decisions, coordinating schedules, and addressing conflicts that may arise. It helps to prevent misunderstandings and ensures that both parents are on the same page.</p>
-<p>What happens without it: Without effective communication, co-parenting can become difficult, leading to conflicts, misunderstandings, and a lack of cooperation, which can negatively impact the child.</p>
 <ul>
-  <li>The dependency: A stable and consistent co-parenting plan</li>
+<li>The dependency: A stable and consistent co-parenting plan</li>
 </ul>
-<p>Why it's necessary: A well-defined co-parenting plan provides a framework for decision-making, visitation schedules, and financial responsibilities, helping to minimize disputes and ensure the child's needs are met.</p>
-<p>What happens without it: Without a stable plan, co-parenting can become chaotic, leading to confusion, stress, and potential harm to the child's well-being.</p>
 <ul>
-  <li>The dependency: Respectful and cooperative relationships between parents</li>
+<li>The dependency: Respectful and cooperative relationships between parents</li>
 </ul>
-<p>Why it's necessary: A respectful and cooperative relationship between parents helps to create a positive and supportive environment for the child, allowing for effective co-parenting and minimizing conflict.</p>
-<p>What happens without it: Without respect and cooperation, co-parenting can become adversarial, leading to increased conflict, stress, and potential harm to the child.</p>
 <ul>
-  <li>The dependency: Ability to prioritize the child's needs</li>
+<li>The dependency: Ability to prioritize the child's needs</li>
 </ul>
-<p>Why it's necessary: Prioritizing the child's needs is essential for ensuring their physical, emotional, and psychological well-being. It helps parents make decisions that are in the best interest of the child.</p>
-<p>What happens without it: Without prioritizing the child's needs, parents may make decisions that are driven by their own interests, potentially harming the child's well-being.</p>
 <ul>
-  <li>The dependency: Flexible and adaptable parenting styles</li>
+<li>The dependency: Flexible and adaptable parenting styles</li>
 </ul>
-<p>Why it's necessary: Flexible and adaptable parenting styles allow parents to respond to changing circumstances, such as changes in the child's needs or unexpected events, and to adjust their co-parenting approach as needed.</p>
-<p>What happens without it: Without flexibility and adaptability, co-parenting can become rigid and inflexible, leading to increased conflict and stress.</p>
-
-<p>3. ORDER OF IMPORTANCE:</p>
+<ol>
+<li>ORDER OF IMPORTANCE:</li>
+</ol>
 <p>While all dependencies are crucial, effective communication and a stable co-parenting plan are the most critical. These two dependencies provide the foundation for successful co-parenting, allowing parents to navigate conflicts, make joint decisions, and prioritize the child's needs. Respectful and cooperative relationships, prioritizing the child's needs, and flexible parenting styles are also essential, but they build upon the foundation established by effective communication and a stable plan.</p>
-
-<p>4. COMMON GAPS:</p>
+<ol>
+<li>COMMON GAPS:</li>
+</ol>
 <p>Many people overlook the importance of establishing a stable co-parenting plan, assuming that they can "wing it" or make decisions as they go. Others may underestimate the need for effective communication, assuming that they can resolve conflicts as they arise. Additionally, some parents may struggle to prioritize the child's needs, particularly in situations where their own interests or emotions are involved.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The essential foundation for shared custody is built upon several key dependencies, including effective communication, a stable co-parenting plan, respectful and cooperative relationships, prioritizing the child's needs, and flexible parenting styles. By recognizing and addressing these prerequisites, parents can create a supportive and stable environment for their child, navigate the challenges of co-parenting, and ensure the child's physical, emotional, and psychological well-being.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/retirement-withdrawal/what-is.html" class="related-link">Retirement Withdrawal</a>
-        <a href="/life_obligations/self-sufficiency/what-is.html" class="related-link">Self Sufficiency</a>
-        <a href="/life_obligations/shared-expenses/what-is.html" class="related-link">Shared Expenses</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -444,6 +480,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

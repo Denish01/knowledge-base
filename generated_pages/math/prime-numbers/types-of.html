@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of prime numbers - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of prime numbers - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/math/prime-numbers/types-of.html">
     <meta property="og:title" content="Types of Prime Numbers">
-    <meta property="og:description" content="A clear, simple explanation of prime numbers - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of prime numbers - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/math/prime-numbers/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Prime Numbers">
-    <meta name="twitter:description" content="A clear, simple explanation of prime numbers - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of prime numbers - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Prime Numbers - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://360library.com/#math"}, {"@type": "ListItem", "position": 3, "name": "Prime Numbers", "item": "https://360library.com/math/prime-numbers/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Prime Numbers", "description": "A clear, simple explanation of prime numbers - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/prime-numbers/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/prime-numbers/types-of.html"}, "about": {"@type": "Thing", "name": "Prime Numbers"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Prime Numbers", "description": "A clear, simple explanation of types of prime numbers - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/prime-numbers/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/prime-numbers/types-of.html"}, "about": {"@type": "Thing", "name": "Prime Numbers"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,109 +388,79 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/prime-numbers/what-is.html">Prime Numbers</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>Types of Prime Numbers</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>The study of prime numbers is a fundamental aspect of number theory, and understanding the different types of prime numbers is essential for various mathematical applications. Prime numbers are positive integers greater than 1 that have no divisors other than 1 and themselves. Classifying prime numbers into distinct categories helps to identify their unique properties and behaviors, which is crucial for problems in cryptography, coding theory, and other areas of mathematics. This classification system enables mathematicians to analyze and work with prime numbers more effectively, leading to a deeper understanding of their role in number theory and its applications.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the primary types of prime numbers, each with its distinct characteristics and examples:</p>
 <ul>
-  <li><strong>Twin Primes</strong></li>
-  <li>Definition: Twin primes are pairs of prime numbers that differ by 2, such as 3 and 5, or 11 and 13. This phenomenon is observed when two prime numbers are consecutive odd integers.</li>
-  <li>Key Characteristics: The difference between twin primes is always 2, and they are both odd numbers.</li>
-  <li>Simple Example: 3 and 5 are twin primes because they are both prime and differ by 2.</li>
-  <li><strong>Mersenne Primes</strong></li>
-  <li>Definition: Mersenne primes are prime numbers that can be written in the form M_n = 2^n - 1, where n is also a prime number. These primes are named after the French mathematician Marin Mersenne, who studied them in the early 17th century.</li>
-  <li>Key Characteristics: Mersenne primes are a specific subset of prime numbers that follow a particular formula based on powers of 2.</li>
-  <li>Simple Example: The number 7 is a Mersenne prime because it can be expressed as 2^3 - 1.</li>
-  <li><strong>Fermat Primes</strong></li>
-  <li>Definition: Fermat primes are prime numbers of the form F_n = 2^(2^n) + 1, where n is a non-negative integer. They are named after Pierre de Fermat, who incorrectly believed that all numbers of this form were prime.</li>
-  <li>Key Characteristics: Fermat primes are a specific type of prime number that follows a formula based on powers of 2.</li>
-  <li>Simple Example: The number 5 is a Fermat prime because it can be expressed as 2^(2^2) + 1.</li>
-  <li><strong>Safe Primes</strong></li>
-  <li>Definition: Safe primes are prime numbers of the form 2p + 1, where p is also a prime. They are used in cryptographic applications due to their unique properties.</li>
-  <li>Key Characteristics: Safe primes are a type of prime number used in cryptography, particularly in key exchange protocols.</li>
-  <li>Simple Example: The number 11 is a safe prime because it is of the form 2p + 1, where p = 5 is also prime.</li>
-  <li><strong>Sophie Germain Primes</strong></li>
-  <li>Definition: Sophie Germain primes are prime numbers p such that 2p + 1 is also prime. They are named after the French mathematician Sophie Germain, who studied these primes in the context of Fermat's Last Theorem.</li>
-  <li>Key Characteristics: Sophie Germain primes have the property that both the prime number itself and the number obtained by doubling it and adding 1 are prime.</li>
-  <li>Simple Example: The number 5 is a Sophie Germain prime because 2*5 + 1 = 11 is also prime.</li>
-  <li><strong>Euclid Primes</strong></li>
-  <li>Definition: Euclid primes, also known as Euclid's primes, are prime numbers that can be generated using Euclid's proof of the infinitude of primes. They are formed by adding 1 to the product of the first n primes and then showing that this number is either prime or has a prime factor not among the first n primes.</li>
-  <li>Key Characteristics: Euclid primes are related to Euclid's proof that there are infinitely many primes.</li>
-  <li>Simple Example: The first few Euclid primes can be found by applying Euclid's method, starting with the product of the first few primes plus one.</li>
-  <li><strong>Carmichael Primes</strong></li>
-  <li>Definition: Carmichael primes are composite numbers that pass the Fermat primality test, meaning that they are pseudo-primes. However, in the context of prime number classification, we discuss the properties related to these numbers to understand how they differ from actual primes.</li>
-  <li>Key Characteristics: Carmichael numbers are composite but exhibit properties similar to those of prime numbers under certain tests.</li>
-  <li>Simple Example: The number 561 is a Carmichael number because it is composite but passes the Fermat primality test for certain bases.</li>
+<li><strong>Twin Primes</strong></li>
+<li>Definition: Twin primes are pairs of prime numbers that differ by 2, such as 3 and 5, or 11 and 13. This phenomenon is observed when two prime numbers are consecutive odd integers.</li>
+<li>Key Characteristics: The difference between twin primes is always 2, and they are both odd numbers.</li>
+<li>Simple Example: 3 and 5 are twin primes because they are both prime and differ by 2.</li>
+<li><strong>Mersenne Primes</strong></li>
+<li>Definition: Mersenne primes are prime numbers that can be written in the form M_n = 2^n - 1, where n is also a prime number. These primes are named after the French mathematician Marin Mersenne, who studied them in the early 17th century.</li>
+<li>Key Characteristics: Mersenne primes are a specific subset of prime numbers that follow a particular formula based on powers of 2.</li>
+<li>Simple Example: The number 7 is a Mersenne prime because it can be expressed as 2^3 - 1.</li>
+<li><strong>Fermat Primes</strong></li>
+<li>Definition: Fermat primes are prime numbers of the form F_n = 2^(2^n) + 1, where n is a non-negative integer. They are named after Pierre de Fermat, who incorrectly believed that all numbers of this form were prime.</li>
+<li>Key Characteristics: Fermat primes are a specific type of prime number that follows a formula based on powers of 2.</li>
+<li>Simple Example: The number 5 is a Fermat prime because it can be expressed as 2^(2^2) + 1.</li>
+<li><strong>Safe Primes</strong></li>
+<li>Definition: Safe primes are prime numbers of the form 2p + 1, where p is also a prime. They are used in cryptographic applications due to their unique properties.</li>
+<li>Key Characteristics: Safe primes are a type of prime number used in cryptography, particularly in key exchange protocols.</li>
+<li>Simple Example: The number 11 is a safe prime because it is of the form 2p + 1, where p = 5 is also prime.</li>
+<li><strong>Sophie Germain Primes</strong></li>
+<li>Definition: Sophie Germain primes are prime numbers p such that 2p + 1 is also prime. They are named after the French mathematician Sophie Germain, who studied these primes in the context of Fermat's Last Theorem.</li>
+<li>Key Characteristics: Sophie Germain primes have the property that both the prime number itself and the number obtained by doubling it and adding 1 are prime.</li>
+<li>Simple Example: The number 5 is a Sophie Germain prime because 2*5 + 1 = 11 is also prime.</li>
+<li><strong>Euclid Primes</strong></li>
+<li>Definition: Euclid primes, also known as Euclid's primes, are prime numbers that can be generated using Euclid's proof of the infinitude of primes. They are formed by adding 1 to the product of the first n primes and then showing that this number is either prime or has a prime factor not among the first n primes.</li>
+<li>Key Characteristics: Euclid primes are related to Euclid's proof that there are infinitely many primes.</li>
+<li>Simple Example: The first few Euclid primes can be found by applying Euclid's method, starting with the product of the first few primes plus one.</li>
+<li><strong>Carmichael Primes</strong></li>
+<li>Definition: Carmichael primes are composite numbers that pass the Fermat primality test, meaning that they are pseudo-primes. However, in the context of prime number classification, we discuss the properties related to these numbers to understand how they differ from actual primes.</li>
+<li>Key Characteristics: Carmichael numbers are composite but exhibit properties similar to those of prime numbers under certain tests.</li>
+<li>Simple Example: The number 561 is a Carmichael number because it is composite but passes the Fermat primality test for certain bases.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
-<table class="comparison-table"><thead><tr>
-<th>Type of Prime</th>
-<th>Definition</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Twin Primes</td>
-<td>Pairs of primes differing by 2</td>
-<td>3, 5</td>
-</tr>
-<tr>
-<td>Mersenne Primes</td>
-<td>Primes of the form 2^n - 1</td>
-<td>7</td>
-</tr>
-<tr>
-<td>Fermat Primes</td>
-<td>Primes of the form 2^(2^n) + 1</td>
-<td>5</td>
-</tr>
-<tr>
-<td>Safe Primes</td>
-<td>Primes of the form 2p + 1, where p is prime</td>
-<td>11</td>
-</tr>
-<tr>
-<td>Sophie Germain Primes</td>
-<td>Primes p such that 2p + 1 is also prime</td>
-<td>5</td>
-</tr>
-<tr>
-<td>Euclid Primes</td>
-<td>Primes generated by Euclid's method</td>
-<td>Variable</td>
-</tr>
-<tr>
-<td>Carmichael Primes</td>
-<td>Composite numbers passing the Fermat primality test</td>
-<td>561</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Prime</th><th>Definition</th><th>Example</th></tr></thead><tbody>
+<tr><td>Twin Primes</td><td>Pairs of primes differing by 2</td><td>3, 5</td></tr>
+<tr><td>Mersenne Primes</td><td>Primes of the form 2^n - 1</td><td>7</td></tr>
+<tr><td>Fermat Primes</td><td>Primes of the form 2^(2^n) + 1</td><td>5</td></tr>
+<tr><td>Safe Primes</td><td>Primes of the form 2p + 1, where p is prime</td><td>11</td></tr>
+<tr><td>Sophie Germain Primes</td><td>Primes p such that 2p + 1 is also prime</td><td>5</td></tr>
+<tr><td>Euclid Primes</td><td>Primes generated by Euclid's method</td><td>Variable</td></tr>
+<tr><td>Carmichael Primes</td><td>Composite numbers passing the Fermat primality test</td><td>561</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>These categories of prime numbers are interconnected through their unique properties and the mathematical principles that govern them. For instance, Mersenne primes and Fermat primes are both defined by specific formulas involving powers of 2, but they serve different purposes in number theory. Twin primes and Sophie Germain primes are related to the distribution of prime numbers and have implications for cryptographic applications. The study of these different types of prime numbers contributes to a broader understanding of number theory and its applications in mathematics and computer science.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of prime numbers encompasses various types, including twin primes, Mersenne primes, Fermat primes, safe primes, Sophie Germain primes, Euclid primes, and Carmichael numbers, each with distinct definitions, characteristics, and examples that contribute to the rich and complex field of number theory.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/perimeter/what-is.html" class="related-link">Perimeter</a>
-        <a href="/math/probability/what-is.html" class="related-link">Probability</a>
-        <a href="/math/proportions/what-is.html" class="related-link">Proportions</a>
-        <a href="/math/ratios/what-is.html" class="related-link">Ratios</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -490,6 +505,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

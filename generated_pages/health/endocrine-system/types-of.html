@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of endocrine system - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of endocrine system - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/endocrine-system/types-of.html">
     <meta property="og:title" content="Types of Endocrine System">
-    <meta property="og:description" content="A clear, simple explanation of endocrine system - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of endocrine system - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/endocrine-system/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Endocrine System">
-    <meta name="twitter:description" content="A clear, simple explanation of endocrine system - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of endocrine system - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Endocrine System - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Endocrine System", "item": "https://360library.com/health/endocrine-system/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Endocrine System", "description": "A clear, simple explanation of endocrine system - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/endocrine-system/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/endocrine-system/types-of.html"}, "about": {"@type": "Thing", "name": "Endocrine System"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Endocrine System", "description": "A clear, simple explanation of types of endocrine system - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/endocrine-system/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/endocrine-system/types-of.html"}, "about": {"@type": "Thing", "name": "Endocrine System"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,126 +388,84 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/endocrine-system/what-is.html">Endocrine System</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Types of Endocrine System</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>The endocrine system is a complex network of glands and organs that produce and regulate hormones in the body. Classification of the endocrine system is crucial as it helps to understand the different types of glands and organs, their functions, and how they interact with each other. The classification of the endocrine system covers various types of glands and organs, including pituitary gland, thyroid gland, adrenal glands, pancreas, and others. Understanding these different types is essential for comprehending how the endocrine system functions as a whole and how it regulates various bodily processes. By categorizing the endocrine system, we can better appreciate the intricate relationships between the different glands and organs and how they work together to maintain overall health.</p>
-
-<p>2. MAIN CATEGORIES:</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <ul>
-  <li><strong>Pituitary Gland</strong></li>
-  <li>Definition: The pituitary gland is a small gland located at the base of the brain that regulates the function of other endocrine glands. It produces hormones that stimulate or inhibit the production of hormones in other glands.</li>
-  <li>Key characteristics: The pituitary gland is often referred to as the "master gland" because of its role in regulating the function of other endocrine glands. It produces several hormones, including growth hormone, thyroid-stimulating hormone, and adrenocorticotropic hormone.</li>
-  <li>Example: The pituitary gland produces growth hormone, which stimulates the growth and development of bones and other tissues.</li>
-  <li><strong>Thyroid Gland</strong></li>
-  <li>Definition: The thyroid gland is a butterfly-shaped gland located in the neck that produces hormones that regulate metabolism. It produces two main hormones, thyroxine (T4) and triiodothyronine (T3), which play a crucial role in regulating the body's metabolic rate.</li>
-  <li>Key characteristics: The thyroid gland is responsible for regulating the body's metabolic rate, and its hormones play a crucial role in growth and development. It also produces calcitonin, a hormone that helps regulate calcium levels in the blood.</li>
-  <li>Example: The thyroid gland produces thyroxine, which helps regulate the body's metabolic rate, influencing how the body uses energy.</li>
-  <li><strong>Adrenal Glands</strong></li>
-  <li>Definition: The adrenal glands are two small glands located on top of the kidneys that produce hormones that regulate stress response, blood pressure, and electrolyte balance. They produce several hormones, including adrenaline (epinephrine), aldosterone, and cortisol.</li>
-  <li>Key characteristics: The adrenal glands are responsible for producing hormones that help the body respond to stress, regulate blood pressure, and maintain electrolyte balance. They also produce androgens, such as testosterone and estrogen.</li>
-  <li>Example: The adrenal glands produce adrenaline, which helps the body respond to stress by increasing heart rate and blood pressure.</li>
-  <li><strong>Pancreas</strong></li>
-  <li>Definition: The pancreas is a gland located behind the stomach that produces hormones that regulate blood sugar levels. It produces two main hormones, insulin and glucagon, which play a crucial role in glucose metabolism.</li>
-  <li>Key characteristics: The pancreas is responsible for regulating blood sugar levels, and its hormones play a crucial role in glucose metabolism. It also produces digestive enzymes that help break down food in the intestine.</li>
-  <li>Example: The pancreas produces insulin, which helps regulate blood sugar levels by facilitating the uptake of glucose by cells.</li>
-  <li><strong>Ovaries (Female)</strong></li>
-  <li>Definition: The ovaries are two glands located in the female reproductive system that produce hormones that regulate female reproductive functions. They produce two main hormones, estrogen and progesterone, which play a crucial role in the menstrual cycle and pregnancy.</li>
-  <li>Key characteristics: The ovaries are responsible for producing hormones that regulate female reproductive functions, including the menstrual cycle and pregnancy. They also produce eggs that are released during ovulation.</li>
-  <li>Example: The ovaries produce estrogen, which helps regulate the menstrual cycle and maintain female reproductive health.</li>
-  <li><strong>Testes (Male)</strong></li>
-  <li>Definition: The testes are two glands located in the male reproductive system that produce hormones that regulate male reproductive functions. They produce two main hormones, testosterone and inhibin, which play a crucial role in sperm production and male reproductive health.</li>
-  <li>Key characteristics: The testes are responsible for producing hormones that regulate male reproductive functions, including sperm production and fertility. They also produce sperm that are released during ejaculation.</li>
-  <li>Example: The testes produce testosterone, which helps regulate sperm production and maintain male reproductive health.</li>
-  <li><strong>Hypothalamus</strong></li>
-  <li>Definition: The hypothalamus is a region of the brain that regulates the function of the pituitary gland and other endocrine glands. It produces hormones that stimulate or inhibit the production of hormones in other glands.</li>
-  <li>Key characteristics: The hypothalamus is responsible for regulating the function of the pituitary gland and other endocrine glands, and its hormones play a crucial role in maintaining homeostasis. It also regulates body temperature, hunger, and thirst.</li>
-  <li>Example: The hypothalamus produces hormones that stimulate the production of hormones in the pituitary gland, which in turn regulates the function of other endocrine glands.</li>
-  <li><strong>Pineal Gland</strong></li>
-  <li>Definition: The pineal gland is a small gland located in the brain that produces hormones that regulate sleep-wake cycles. It produces melatonin, a hormone that helps regulate the body's circadian rhythms.</li>
-  <li>Key characteristics: The pineal gland is responsible for regulating sleep-wake cycles, and its hormone melatonin plays a crucial role in maintaining the body's circadian rhythms. It also produces other hormones that help regulate reproductive functions.</li>
-  <li>Example: The pineal gland produces melatonin, which helps regulate the body's sleep-wake cycle and maintain circadian rhythms.</li>
+<li><strong>Pituitary Gland</strong></li>
+<li>Definition: The pituitary gland is a small gland located at the base of the brain that regulates the function of other endocrine glands. It produces hormones that stimulate or inhibit the production of hormones in other glands.</li>
+<li>Key characteristics: The pituitary gland is often referred to as the "master gland" because of its role in regulating the function of other endocrine glands. It produces several hormones, including growth hormone, thyroid-stimulating hormone, and adrenocorticotropic hormone.</li>
+<li>Example: The pituitary gland produces growth hormone, which stimulates the growth and development of bones and other tissues.</li>
+<li><strong>Thyroid Gland</strong></li>
+<li>Definition: The thyroid gland is a butterfly-shaped gland located in the neck that produces hormones that regulate metabolism. It produces two main hormones, thyroxine (T4) and triiodothyronine (T3), which play a crucial role in regulating the body's metabolic rate.</li>
+<li>Key characteristics: The thyroid gland is responsible for regulating the body's metabolic rate, and its hormones play a crucial role in growth and development. It also produces calcitonin, a hormone that helps regulate calcium levels in the blood.</li>
+<li>Example: The thyroid gland produces thyroxine, which helps regulate the body's metabolic rate, influencing how the body uses energy.</li>
+<li><strong>Adrenal Glands</strong></li>
+<li>Definition: The adrenal glands are two small glands located on top of the kidneys that produce hormones that regulate stress response, blood pressure, and electrolyte balance. They produce several hormones, including adrenaline (epinephrine), aldosterone, and cortisol.</li>
+<li>Key characteristics: The adrenal glands are responsible for producing hormones that help the body respond to stress, regulate blood pressure, and maintain electrolyte balance. They also produce androgens, such as testosterone and estrogen.</li>
+<li>Example: The adrenal glands produce adrenaline, which helps the body respond to stress by increasing heart rate and blood pressure.</li>
+<li><strong>Pancreas</strong></li>
+<li>Definition: The pancreas is a gland located behind the stomach that produces hormones that regulate blood sugar levels. It produces two main hormones, insulin and glucagon, which play a crucial role in glucose metabolism.</li>
+<li>Key characteristics: The pancreas is responsible for regulating blood sugar levels, and its hormones play a crucial role in glucose metabolism. It also produces digestive enzymes that help break down food in the intestine.</li>
+<li>Example: The pancreas produces insulin, which helps regulate blood sugar levels by facilitating the uptake of glucose by cells.</li>
+<li><strong>Ovaries (Female)</strong></li>
+<li>Definition: The ovaries are two glands located in the female reproductive system that produce hormones that regulate female reproductive functions. They produce two main hormones, estrogen and progesterone, which play a crucial role in the menstrual cycle and pregnancy.</li>
+<li>Key characteristics: The ovaries are responsible for producing hormones that regulate female reproductive functions, including the menstrual cycle and pregnancy. They also produce eggs that are released during ovulation.</li>
+<li>Example: The ovaries produce estrogen, which helps regulate the menstrual cycle and maintain female reproductive health.</li>
+<li><strong>Testes (Male)</strong></li>
+<li>Definition: The testes are two glands located in the male reproductive system that produce hormones that regulate male reproductive functions. They produce two main hormones, testosterone and inhibin, which play a crucial role in sperm production and male reproductive health.</li>
+<li>Key characteristics: The testes are responsible for producing hormones that regulate male reproductive functions, including sperm production and fertility. They also produce sperm that are released during ejaculation.</li>
+<li>Example: The testes produce testosterone, which helps regulate sperm production and maintain male reproductive health.</li>
+<li><strong>Hypothalamus</strong></li>
+<li>Definition: The hypothalamus is a region of the brain that regulates the function of the pituitary gland and other endocrine glands. It produces hormones that stimulate or inhibit the production of hormones in other glands.</li>
+<li>Key characteristics: The hypothalamus is responsible for regulating the function of the pituitary gland and other endocrine glands, and its hormones play a crucial role in maintaining homeostasis. It also regulates body temperature, hunger, and thirst.</li>
+<li>Example: The hypothalamus produces hormones that stimulate the production of hormones in the pituitary gland, which in turn regulates the function of other endocrine glands.</li>
+<li><strong>Pineal Gland</strong></li>
+<li>Definition: The pineal gland is a small gland located in the brain that produces hormones that regulate sleep-wake cycles. It produces melatonin, a hormone that helps regulate the body's circadian rhythms.</li>
+<li>Key characteristics: The pineal gland is responsible for regulating sleep-wake cycles, and its hormone melatonin plays a crucial role in maintaining the body's circadian rhythms. It also produces other hormones that help regulate reproductive functions.</li>
+<li>Example: The pineal gland produces melatonin, which helps regulate the body's sleep-wake cycle and maintain circadian rhythms.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Gland/Organ</th>
-<th>Location</th>
-<th>Hormones Produced</th>
-<th>Function</th>
-</tr></thead><tbody>
-<tr>
-<td>Pituitary Gland</td>
-<td>Base of the brain</td>
-<td>Growth hormone, thyroid-stimulating hormone, adrenocorticotropic hormone</td>
-<td>Regulates function of other endocrine glands</td>
-</tr>
-<tr>
-<td>Thyroid Gland</td>
-<td>Neck</td>
-<td>Thyroxine (T4), triiodothyronine (T3)</td>
-<td>Regulates metabolism</td>
-</tr>
-<tr>
-<td>Adrenal Glands</td>
-<td>On top of the kidneys</td>
-<td>Adrenaline (epinephrine), aldosterone, cortisol</td>
-<td>Regulates stress response, blood pressure, and electrolyte balance</td>
-</tr>
-<tr>
-<td>Pancreas</td>
-<td>Behind the stomach</td>
-<td>Insulin, glucagon</td>
-<td>Regulates blood sugar levels</td>
-</tr>
-<tr>
-<td>Ovaries (Female)</td>
-<td>Female reproductive system</td>
-<td>Estrogen, progesterone</td>
-<td>Regulates female reproductive functions</td>
-</tr>
-<tr>
-<td>Testes (Male)</td>
-<td>Male reproductive system</td>
-<td>Testosterone, inhibin</td>
-<td>Regulates male reproductive functions</td>
-</tr>
-<tr>
-<td>Hypothalamus</td>
-<td>Region of the brain</td>
-<td>Hormones that stimulate or inhibit hormone production</td>
-<td>Regulates function of pituitary gland and other endocrine glands</td>
-</tr>
-<tr>
-<td>Pineal Gland</td>
-<td>Brain</td>
-<td>Melatonin</td>
-<td>Regulates sleep-wake cycles</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Gland/Organ</th><th>Location</th><th>Hormones Produced</th><th>Function</th></tr></thead><tbody>
+<tr><td>Pituitary Gland</td><td>Base of the brain</td><td>Growth hormone, thyroid-stimulating hormone, adrenocorticotropic hormone</td><td>Regulates function of other endocrine glands</td></tr>
+<tr><td>Thyroid Gland</td><td>Neck</td><td>Thyroxine (T4), triiodothyronine (T3)</td><td>Regulates metabolism</td></tr>
+<tr><td>Adrenal Glands</td><td>On top of the kidneys</td><td>Adrenaline (epinephrine), aldosterone, cortisol</td><td>Regulates stress response, blood pressure, and electrolyte balance</td></tr>
+<tr><td>Pancreas</td><td>Behind the stomach</td><td>Insulin, glucagon</td><td>Regulates blood sugar levels</td></tr>
+<tr><td>Ovaries (Female)</td><td>Female reproductive system</td><td>Estrogen, progesterone</td><td>Regulates female reproductive functions</td></tr>
+<tr><td>Testes (Male)</td><td>Male reproductive system</td><td>Testosterone, inhibin</td><td>Regulates male reproductive functions</td></tr>
+<tr><td>Hypothalamus</td><td>Region of the brain</td><td>Hormones that stimulate or inhibit hormone production</td><td>Regulates function of pituitary gland and other endocrine glands</td></tr>
+<tr><td>Pineal Gland</td><td>Brain</td><td>Melatonin</td><td>Regulates sleep-wake cycles</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different glands and organs of the endocrine system are connected through a complex network of hormones and feedback mechanisms. The pituitary gland, often referred to as the "master gland," regulates the function of other endocrine glands by producing hormones that stimulate or inhibit hormone production. The hypothalamus, in turn, regulates the function of the pituitary gland, and the pineal gland regulates sleep-wake cycles. The thyroid gland, adrenal glands, pancreas, ovaries, and testes all produce hormones that regulate various bodily functions, and their functions are interconnected through feedback mechanisms. For example, the thyroid gland produces hormones that regulate metabolism, which in turn affects the production of hormones by other glands. Understanding how these glands and organs relate to each other is essential for comprehending how the endocrine system functions as a whole.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification of the endocrine system includes various glands and organs, such as the pituitary gland, thyroid gland, adrenal glands, pancreas, ovaries, testes, hypothalamus, and pineal gland, each with distinct functions and characteristics that work together to maintain overall health and regulate various bodily processes.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/digestive-system/what-is.html" class="related-link">Digestive System</a>
-        <a href="/health/disease-prevention/what-is.html" class="related-link">Disease Prevention</a>
-        <a href="/health/epidemiology/what-is.html" class="related-link">Epidemiology</a>
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -507,6 +510,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

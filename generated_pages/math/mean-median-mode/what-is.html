@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,12 +388,15 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/mean-median-mode/what-is.html">Mean Median Mode</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>What Is Mean Median Mode?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
+
+            <div class="calculator-callout"><div class="calculator-callout-header">Calculator</div><div class="calculator-callout-body">
 <style>
 .calculator {
     background: #f8f9fa;
@@ -468,49 +516,34 @@ function calculateStats() {
 }
 calculateStats();
 </script>
-
+</div></div>
 
             <p>Mean median mode is a collection of statistical measures used to describe the central tendency of a set of data, which is essential in understanding and analyzing numerical information.</p>
-
 <p>The concept of mean median mode is based on the idea that a set of data can be described using a single value that represents the middle or typical value of the data. This is important because it allows us to summarize and compare large datasets in a meaningful way. The mean, median, and mode are three different ways to calculate this central value, each with its own strengths and weaknesses. The mean is the average of the data, calculated by adding up all the values and dividing by the number of values. The median is the middle value of the data when it is arranged in order, and the mode is the value that appears most frequently in the data.</p>
-
 <p>Understanding the mean median mode is crucial in many areas of study, including mathematics, science, and social sciences. It is used to analyze and interpret data, make predictions, and identify patterns. For example, in a study of the heights of a group of people, the mean height might be 175 centimeters, the median height might be 173 centimeters, and the mode might be 170 centimeters. Each of these values provides a different perspective on the data, and together they provide a more complete understanding of the characteristics of the group.</p>
-
 <p>In addition to its uses in research and analysis, the concept of mean median mode is also important in everyday life. It is used in decision-making, problem-solving, and critical thinking. For instance, when considering a new business venture, understanding the mean median mode of customer spending habits can help entrepreneurs make informed decisions about pricing and marketing. Similarly, in education, teachers use the mean median mode to understand student performance and identify areas where students may need additional support.</p>
-
 <p>The key components of mean median mode include:</p>
 <ul>
-  <li>The mean, which is the average of the data, calculated by adding up all the values and dividing by the number of values</li>
-  <li>The median, which is the middle value of the data when it is arranged in order</li>
-  <li>The mode, which is the value that appears most frequently in the data</li>
-  <li>The range of the data, which is the difference between the highest and lowest values</li>
-  <li>The distribution of the data, which refers to the way the values are spread out</li>
-  <li>The shape of the data, which can be symmetric or skewed, and can affect the interpretation of the mean median mode</li>
+<li>The mean, which is the average of the data, calculated by adding up all the values and dividing by the number of values</li>
+<li>The median, which is the middle value of the data when it is arranged in order</li>
+<li>The mode, which is the value that appears most frequently in the data</li>
+<li>The range of the data, which is the difference between the highest and lowest values</li>
+<li>The distribution of the data, which refers to the way the values are spread out</li>
+<li>The shape of the data, which can be symmetric or skewed, and can affect the interpretation of the mean median mode</li>
 </ul>
-
 <p>Despite its importance, the concept of mean median mode is often misunderstood. Some common misconceptions include:</p>
 <ul>
-  <li>Believing that the mean is always the best measure of central tendency, when in fact it can be affected by extreme values</li>
-  <li>Thinking that the median is only used when the data is not normally distributed, when in fact it can be used with any type of data</li>
-  <li>Assuming that the mode is only useful when the data is categorical, when in fact it can be used with numerical data as well</li>
-  <li>Confusing the mean median mode with other statistical measures, such as the range or the standard deviation</li>
+<li>Believing that the mean is always the best measure of central tendency, when in fact it can be affected by extreme values</li>
+<li>Thinking that the median is only used when the data is not normally distributed, when in fact it can be used with any type of data</li>
+<li>Assuming that the mode is only useful when the data is categorical, when in fact it can be used with numerical data as well</li>
+<li>Confusing the mean median mode with other statistical measures, such as the range or the standard deviation</li>
 </ul>
-
 <p>A real-world example of the mean median mode can be seen in a study of the prices of houses in a particular neighborhood. Suppose the prices of 10 houses are $200,000, $250,000, $300,000, $350,000, $400,000, $450,000, $500,000, $550,000, $600,000, and $1,000,000. The mean price would be $420,000, the median price would be $400,000, and the mode would be $400,000, since it is the most frequent price. This example illustrates how the mean median mode can be used to understand and describe a set of data.</p>
-
 <p>In summary, mean median mode refers to a collection of statistical measures used to describe the central tendency of a set of data, including the mean, median, and mode, which provide a more complete understanding of the characteristics of the data.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/least-common-multiple/what-is.html" class="related-link">Least Common Multiple</a>
-        <a href="/math/linear-equations/what-is.html" class="related-link">Linear Equations</a>
-        <a href="/math/order-of-operations/what-is.html" class="related-link">Order Of Operations</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/ratios/what-is.html" class="related-link">Ratios</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -555,6 +588,9 @@ calculateStats();
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/open-enrollment/what-is.html">Open Enrollment</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Open Enrollment?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Open enrollment is a period of time during which individuals can enroll in or change their health insurance plans, often with certain limitations and requirements.</p>
-
 <p>Open enrollment allows people to sign up for health insurance or make changes to their existing plans without having to provide evidence of good health or wait for a specific qualification period. This is typically the case for group health plans, such as those offered by employers, as well as individual plans purchased directly from an insurance company. The purpose of open enrollment is to provide individuals with a fair opportunity to obtain or modify their health insurance coverage, regardless of their health status or pre-existing conditions.</p>
-
 <p>During open enrollment, individuals can usually choose from a range of health insurance plans, each with its own set of benefits, deductibles, and premiums. The specific details of the plans, including the costs and coverage levels, are typically disclosed by the insurance company or the plan administrator. In some cases, open enrollment may be limited to certain groups, such as employees of a particular company or members of a specific organization.</p>
-
 <p>In addition to the basic concept of open enrollment, there are also special enrollment periods that may be available to individuals who experience certain life events, such as the birth or adoption of a child, marriage, or the loss of other health coverage. These special enrollment periods provide an opportunity for individuals to enroll in or change their health insurance plans outside of the regular open enrollment period.</p>
-
 <p>The key components of open enrollment include:</p>
 <ul>
-  <li>Eligibility requirements, which determine who is allowed to participate in open enrollment</li>
-  <li>Plan options, which include the different health insurance plans available for selection</li>
-  <li>Enrollment periods, which specify the time frame during which individuals can enroll or make changes to their plans</li>
-  <li>Premium costs, which are the amounts that individuals must pay for their health insurance coverage</li>
-  <li>Benefit levels, which determine the types and amounts of health care services that are covered by the plan</li>
-  <li>Administrative requirements, which include the paperwork and other tasks that must be completed to enroll in or change a plan</li>
+<li>Eligibility requirements, which determine who is allowed to participate in open enrollment</li>
+<li>Plan options, which include the different health insurance plans available for selection</li>
+<li>Enrollment periods, which specify the time frame during which individuals can enroll or make changes to their plans</li>
+<li>Premium costs, which are the amounts that individuals must pay for their health insurance coverage</li>
+<li>Benefit levels, which determine the types and amounts of health care services that are covered by the plan</li>
+<li>Administrative requirements, which include the paperwork and other tasks that must be completed to enroll in or change a plan</li>
 </ul>
-
 <p>Some common misconceptions about open enrollment include:</p>
 <ul>
-  <li>The idea that open enrollment is available at any time, when in fact it is typically limited to a specific period</li>
-  <li>The belief that all health insurance plans are available during open enrollment, when in fact some plans may be limited to certain groups or have specific eligibility requirements</li>
-  <li>The assumption that open enrollment only applies to new plan enrollments, when in fact it also allows individuals to make changes to their existing plans</li>
-  <li>The notion that open enrollment is the only time when individuals can enroll in or change their health insurance plans, when in fact special enrollment periods may also be available</li>
+<li>The idea that open enrollment is available at any time, when in fact it is typically limited to a specific period</li>
+<li>The belief that all health insurance plans are available during open enrollment, when in fact some plans may be limited to certain groups or have specific eligibility requirements</li>
+<li>The assumption that open enrollment only applies to new plan enrollments, when in fact it also allows individuals to make changes to their existing plans</li>
+<li>The notion that open enrollment is the only time when individuals can enroll in or change their health insurance plans, when in fact special enrollment periods may also be available</li>
 </ul>
-
 <p>A real-world example of open enrollment is an employee of a company who wants to add their new spouse to their health insurance plan. During the company's open enrollment period, the employee can submit the necessary paperwork and premium payments to add their spouse to the plan, without having to provide evidence of the spouse's good health or wait for a specific qualification period.</p>
-
 <p>In summary, open enrollment is a period of time during which individuals can enroll in or change their health insurance plans, with the goal of providing fair and equal access to health insurance coverage for all eligible participants.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/number-of-dependents/what-is.html" class="related-link">Number Of Dependents</a>
-        <a href="/life_obligations/obligation-estimate/what-is.html" class="related-link">Obligation Estimate</a>
-        <a href="/life_obligations/parental-obligation/what-is.html" class="related-link">Parental Obligation</a>
-        <a href="/life_obligations/pay-stub/what-is.html" class="related-link">Pay Stub</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

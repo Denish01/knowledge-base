@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,56 +388,43 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/noncustodial-parent/what-is.html">Noncustodial Parent</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Noncustodial Parent?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Noncustodial parent is a term used to describe a parent who does not have primary physical custody of their child, meaning the child does not live with them.</p>
-
 <p>A noncustodial parent is typically involved in their child's life, but they do not have the same level of daily responsibility as the custodial parent. This can be due to a variety of reasons, such as a court order or a mutual agreement between the parents. The noncustodial parent may still be involved in making important decisions about their child's life, such as education and healthcare, and may also be responsible for providing financial support.</p>
-
 <p>The relationship between a noncustodial parent and their child can be complex and may involve a range of emotions, including sadness, guilt, and frustration. However, many noncustodial parents are able to maintain a strong and loving relationship with their child, despite not living with them. This can involve regular visits, phone calls, and other forms of communication, as well as participation in important events and activities in the child's life.</p>
-
 <p>In some cases, the noncustodial parent may not be able to see their child as often as they would like, due to factors such as distance or conflict with the custodial parent. However, it is generally recognized that it is in the best interests of the child to have a relationship with both parents, and courts and other authorities often work to facilitate this. The noncustodial parent may also be required to pay child support, which is a payment made to the custodial parent to help cover the costs of caring for the child.</p>
-
 <p>The concept of a noncustodial parent is often associated with divorce or separation, but it can also apply to other situations, such as when a child is born to unmarried parents or when a parent is unable to care for their child due to illness or other circumstances. Regardless of the circumstances, the noncustodial parent plays an important role in the life of their child, and it is generally recognized that both parents should be involved in their child's upbringing to the extent possible.</p>
-
 <p>Key components of the concept of a noncustodial parent include:</p>
 <ul>
-  <li>Physical custody: the noncustodial parent does not have primary physical custody of the child</li>
-  <li>Visitation: the noncustodial parent may have the right to regular visits with the child</li>
-  <li>Child support: the noncustodial parent may be required to pay financial support to the custodial parent</li>
-  <li>Decision-making: the noncustodial parent may still be involved in making important decisions about the child's life</li>
-  <li>Communication: the noncustodial parent may maintain regular communication with the child through phone calls, letters, or other means</li>
-  <li>Parental rights: the noncustodial parent has the right to participate in their child's life and make decisions about their care and upbringing</li>
+<li>Physical custody: the noncustodial parent does not have primary physical custody of the child</li>
+<li>Visitation: the noncustodial parent may have the right to regular visits with the child</li>
+<li>Child support: the noncustodial parent may be required to pay financial support to the custodial parent</li>
+<li>Decision-making: the noncustodial parent may still be involved in making important decisions about the child's life</li>
+<li>Communication: the noncustodial parent may maintain regular communication with the child through phone calls, letters, or other means</li>
+<li>Parental rights: the noncustodial parent has the right to participate in their child's life and make decisions about their care and upbringing</li>
 </ul>
-
 <p>Common misconceptions about noncustodial parents include:</p>
 <ul>
-  <li>That they are not interested in their child's life or well-being</li>
-  <li>That they are not responsible for providing financial support</li>
-  <li>That they have no rights or role in their child's upbringing</li>
-  <li>That they are automatically denied visitation or other forms of contact with the child</li>
+<li>That they are not interested in their child's life or well-being</li>
+<li>That they are not responsible for providing financial support</li>
+<li>That they have no rights or role in their child's upbringing</li>
+<li>That they are automatically denied visitation or other forms of contact with the child</li>
 </ul>
-
 <p>A real-world example of a noncustodial parent is a father who lives in a different city from his child and the child's mother. The father may see his child every other weekend and during school breaks, and may also participate in important events such as birthdays and holidays. He may also be required to pay child support to the mother to help cover the costs of caring for the child.</p>
-
 <p>In summary, a noncustodial parent is a parent who does not have primary physical custody of their child, but who may still be involved in their child's life and have important responsibilities and rights as a parent.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/net-income-for-support/what-is.html" class="related-link">Net Income For Support</a>
-        <a href="/life_obligations/non-compete-agreement/what-is.html" class="related-link">Non Compete Agreement</a>
-        <a href="/life_obligations/number-of-dependents/what-is.html" class="related-link">Number Of Dependents</a>
-        <a href="/life_obligations/obligation-estimate/what-is.html" class="related-link">Obligation Estimate</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -437,6 +469,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

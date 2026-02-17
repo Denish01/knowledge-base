@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of epidemiology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Learn how epidemiology works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <link rel="canonical" href="https://360library.com/health/epidemiology/how-it-works.html">
     <meta property="og:title" content="How Epidemiology Works">
-    <meta property="og:description" content="A clear, simple explanation of epidemiology - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Learn how epidemiology works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <meta property="og:url" content="https://360library.com/health/epidemiology/how-it-works.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How Epidemiology Works">
-    <meta name="twitter:description" content="A clear, simple explanation of epidemiology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Learn how epidemiology works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <title>How Epidemiology Works - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Epidemiology", "item": "https://360library.com/health/epidemiology/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "How It Works"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Epidemiology Works", "description": "A clear, simple explanation of epidemiology - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/epidemiology/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/epidemiology/how-it-works.html"}, "about": {"@type": "Thing", "name": "Epidemiology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Epidemiology Works", "description": "Learn how epidemiology works with this step-by-step explanation. Simple guide to the process and mechanism.", "url": "https://360library.com/health/epidemiology/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/epidemiology/how-it-works.html"}, "about": {"@type": "Thing", "name": "Epidemiology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,36 +388,38 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/epidemiology/what-is.html">Epidemiology</a><span>&rsaquo;</span>How It Works
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>How Epidemiology Works</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. QUICK ANSWER: Epidemiology works by studying the distribution and determinants of health-related events, diseases, or health-related characteristics among populations, in order to understand the causes and effects of these events. This is achieved through a systematic process of data collection, analysis, and interpretation, which ultimately informs public health decisions and policies.</p>
+            
 
-<p>2. STEP-BY-STEP PROCESS: The epidemiology process involves several key steps. First, epidemiologists identify a health problem or issue that requires investigation, such as an outbreak of a disease. Then, they develop a research question or hypothesis to guide their investigation, which may involve reviewing existing data or collecting new data through surveys, interviews, or laboratory tests. Next, they analyze the data to identify patterns, trends, and correlations, and to determine the risk factors and causes of the health problem. After that, they interpret the results, taking into account the study's limitations and potential biases, and draw conclusions about the underlying causes of the health issue. Finally, they communicate their findings to policymakers, healthcare professionals, and the public, and provide recommendations for preventing or controlling the health problem.</p>
+            <ol>
+<li>QUICK ANSWER: Epidemiology works by studying the distribution and determinants of health-related events, diseases, or health-related characteristics among populations, in order to understand the causes and effects of these events. This is achieved through a systematic process of data collection, analysis, and interpretation, which ultimately informs public health decisions and policies.</li>
+</ol>
+<ol>
+<li>STEP-BY-STEP PROCESS: The epidemiology process involves several key steps. First, epidemiologists identify a health problem or issue that requires investigation, such as an outbreak of a disease. Then, they develop a research question or hypothesis to guide their investigation, which may involve reviewing existing data or collecting new data through surveys, interviews, or laboratory tests. Next, they analyze the data to identify patterns, trends, and correlations, and to determine the risk factors and causes of the health problem. After that, they interpret the results, taking into account the study's limitations and potential biases, and draw conclusions about the underlying causes of the health issue. Finally, they communicate their findings to policymakers, healthcare professionals, and the public, and provide recommendations for preventing or controlling the health problem.</li>
+</ol>
+<ol>
+<li>KEY COMPONENTS: The key components of epidemiology include the population being studied, the health problem or issue being investigated, and the data collection and analysis methods used. The population may be defined by factors such as age, sex, geographic location, or occupation, and is typically selected to be representative of the larger population of interest. The health problem or issue may be a disease, injury, or risk factor, and is often measured using indicators such as incidence, prevalence, or mortality rates. The data collection methods may include surveys, interviews, laboratory tests, or reviews of existing records, and the analysis methods may involve statistical techniques such as regression, correlation, or hypothesis testing. Other key components of epidemiology include the study design, which may be observational or experimental, and the sampling method, which may involve random selection or stratification.</li>
+</ol>
+<ol>
+<li>VISUAL ANALOGY: A simple analogy for epidemiology is that of a detective investigating a crime. Just as a detective collects clues, analyzes evidence, and pieces together the events surrounding a crime, an epidemiologist collects data, analyzes patterns, and reconstructs the chain of events leading to a health problem. The detective's goal is to identify the perpetrator and motive, while the epidemiologist's goal is to identify the causes and risk factors underlying a health issue.</li>
+</ol>
+<ol>
+<li>COMMON QUESTIONS: But what about the role of chance and random error in epidemiology? Epidemiologists use statistical methods to account for chance and random error, and to determine whether their findings are likely to be due to chance or to a real underlying cause. But what about the potential for bias and confounding in epidemiologic studies? Epidemiologists use various techniques, such as matching, stratification, and adjustment, to control for potential biases and confounders. But what about the importance of collaboration and communication in epidemiology? Epidemiologists often work in teams with other healthcare professionals, policymakers, and community leaders to design and implement studies, interpret results, and develop recommendations for public health action. But what about the ethical considerations in epidemiology? Epidemiologists must ensure that their studies are conducted in an ethical and responsible manner, with respect for the rights and dignity of the individuals and communities being studied.</li>
+</ol>
+<ol>
+<li>SUMMARY: Epidemiology works by systematically collecting and analyzing data to understand the causes and effects of health-related events, diseases, or health-related characteristics among populations, and using this knowledge to inform public health decisions and policies.</li>
+</ol>
 
-<p>3. KEY COMPONENTS: The key components of epidemiology include the population being studied, the health problem or issue being investigated, and the data collection and analysis methods used. The population may be defined by factors such as age, sex, geographic location, or occupation, and is typically selected to be representative of the larger population of interest. The health problem or issue may be a disease, injury, or risk factor, and is often measured using indicators such as incidence, prevalence, or mortality rates. The data collection methods may include surveys, interviews, laboratory tests, or reviews of existing records, and the analysis methods may involve statistical techniques such as regression, correlation, or hypothesis testing. Other key components of epidemiology include the study design, which may be observational or experimental, and the sampling method, which may involve random selection or stratification.</p>
+            
 
-<p>4. VISUAL ANALOGY: A simple analogy for epidemiology is that of a detective investigating a crime. Just as a detective collects clues, analyzes evidence, and pieces together the events surrounding a crime, an epidemiologist collects data, analyzes patterns, and reconstructs the chain of events leading to a health problem. The detective's goal is to identify the perpetrator and motive, while the epidemiologist's goal is to identify the causes and risk factors underlying a health issue.</p>
-
-<p>5. COMMON QUESTIONS: But what about the role of chance and random error in epidemiology? Epidemiologists use statistical methods to account for chance and random error, and to determine whether their findings are likely to be due to chance or to a real underlying cause. But what about the potential for bias and confounding in epidemiologic studies? Epidemiologists use various techniques, such as matching, stratification, and adjustment, to control for potential biases and confounders. But what about the importance of collaboration and communication in epidemiology? Epidemiologists often work in teams with other healthcare professionals, policymakers, and community leaders to design and implement studies, interpret results, and develop recommendations for public health action. But what about the ethical considerations in epidemiology? Epidemiologists must ensure that their studies are conducted in an ethical and responsible manner, with respect for the rights and dignity of the individuals and communities being studied.</p>
-
-<p>6. SUMMARY: Epidemiology works by systematically collecting and analyzing data to understand the causes and effects of health-related events, diseases, or health-related characteristics among populations, and using this knowledge to inform public health decisions and policies.</p>
-
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/disease-prevention/what-is.html" class="related-link">Disease Prevention</a>
-        <a href="/health/endocrine-system/what-is.html" class="related-link">Endocrine System</a>
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/gastroenterology/what-is.html" class="related-link">Gastroenterology</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
         </article>
     </main>
 
@@ -417,6 +464,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

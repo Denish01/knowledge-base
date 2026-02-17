@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of beneficiary designation - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of beneficiary designation - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/beneficiary-designation/types-of.html">
     <meta property="og:title" content="Types of Beneficiary Designation">
-    <meta property="og:description" content="A clear, simple explanation of beneficiary designation - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of beneficiary designation - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/beneficiary-designation/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Beneficiary Designation">
-    <meta name="twitter:description" content="A clear, simple explanation of beneficiary designation - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of beneficiary designation - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Beneficiary Designation - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Beneficiary Designation", "item": "https://360library.com/life_obligations/beneficiary-designation/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Beneficiary Designation", "description": "A clear, simple explanation of beneficiary designation - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/beneficiary-designation/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/beneficiary-designation/types-of.html"}, "about": {"@type": "Thing", "name": "Beneficiary Designation"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Beneficiary Designation", "description": "A clear, simple explanation of types of beneficiary designation - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/beneficiary-designation/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/beneficiary-designation/types-of.html"}, "about": {"@type": "Thing", "name": "Beneficiary Designation"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,95 +388,68 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/beneficiary-designation/what-is.html">Beneficiary Designation</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Beneficiary Designation</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>INTRODUCTION</p>
 <p>Beneficiary designation refers to the process of naming individuals or entities to receive benefits, such as life insurance proceeds, retirement accounts, or trust assets, upon the death of the account owner. Classifying beneficiary designations is essential because it helps individuals understand their options and make informed decisions about how their assets will be distributed after their passing. A clear understanding of the different types of beneficiary designations can also help avoid potential disputes or misunderstandings among beneficiaries. By categorizing beneficiary designations, individuals can better navigate the complex process of estate planning and ensure that their wishes are carried out.</p>
-
 <p>MAIN CATEGORIES</p>
-<p>1. <strong>Primary Beneficiary</strong></p>
+<ol>
+<li><strong>Primary Beneficiary</strong></li>
+</ol>
 <ul>
-  <li>Definition: A primary beneficiary is the first individual or entity designated to receive benefits upon the death of the account owner. The primary beneficiary is typically the person who will receive the majority of the benefits.</li>
-  <li>Key characteristics: The primary beneficiary is usually the spouse, child, or other close relative of the account owner. They are entitled to receive the benefits unless they predecease the account owner or decline the benefits.</li>
-  <li>Example: John names his wife, Jane, as the primary beneficiary of his life insurance policy. If John passes away, Jane will receive the life insurance proceeds.</li>
+<li>Definition: A primary beneficiary is the first individual or entity designated to receive benefits upon the death of the account owner. The primary beneficiary is typically the person who will receive the majority of the benefits.</li>
+<li>Key characteristics: The primary beneficiary is usually the spouse, child, or other close relative of the account owner. They are entitled to receive the benefits unless they predecease the account owner or decline the benefits.</li>
+<li>Example: John names his wife, Jane, as the primary beneficiary of his life insurance policy. If John passes away, Jane will receive the life insurance proceeds.</li>
 </ul>
-
-<p>2. <strong>Contingent Beneficiary</strong></p>
+<ol>
+<li><strong>Contingent Beneficiary</strong></li>
+</ol>
 <ul>
-  <li>Definition: A contingent beneficiary, also known as a secondary beneficiary, is an individual or entity designated to receive benefits if the primary beneficiary predeceases the account owner or declines the benefits. The contingent beneficiary is a backup or alternative beneficiary.</li>
-  <li>Key characteristics: The contingent beneficiary is usually a secondary relative, friend, or charity. They are only entitled to receive benefits if the primary beneficiary is unable to receive them.</li>
-  <li>Example: John names his wife, Jane, as the primary beneficiary and his child, Jack, as the contingent beneficiary of his life insurance policy. If John passes away and Jane has predeceased him, Jack will receive the life insurance proceeds.</li>
+<li>Definition: A contingent beneficiary, also known as a secondary beneficiary, is an individual or entity designated to receive benefits if the primary beneficiary predeceases the account owner or declines the benefits. The contingent beneficiary is a backup or alternative beneficiary.</li>
+<li>Key characteristics: The contingent beneficiary is usually a secondary relative, friend, or charity. They are only entitled to receive benefits if the primary beneficiary is unable to receive them.</li>
+<li>Example: John names his wife, Jane, as the primary beneficiary and his child, Jack, as the contingent beneficiary of his life insurance policy. If John passes away and Jane has predeceased him, Jack will receive the life insurance proceeds.</li>
 </ul>
-
-<p>3. <strong>Revocable Beneficiary</strong></p>
+<ol>
+<li><strong>Revocable Beneficiary</strong></li>
+</ol>
 <ul>
-  <li>Definition: A revocable beneficiary is an individual or entity designated to receive benefits, but the account owner retains the right to change or revoke the beneficiary designation at any time. The account owner can modify the beneficiary designation without the consent of the beneficiary.</li>
-  <li>Key characteristics: The account owner has complete control over the beneficiary designation and can change it as often as desired. The beneficiary has no vested rights to the benefits.</li>
-  <li>Example: John names his wife, Jane, as the revocable beneficiary of his retirement account. John can change the beneficiary designation to his child, Jack, at any time without Jane's consent.</li>
+<li>Definition: A revocable beneficiary is an individual or entity designated to receive benefits, but the account owner retains the right to change or revoke the beneficiary designation at any time. The account owner can modify the beneficiary designation without the consent of the beneficiary.</li>
+<li>Key characteristics: The account owner has complete control over the beneficiary designation and can change it as often as desired. The beneficiary has no vested rights to the benefits.</li>
+<li>Example: John names his wife, Jane, as the revocable beneficiary of his retirement account. John can change the beneficiary designation to his child, Jack, at any time without Jane's consent.</li>
 </ul>
-
-<p>4. <strong>Irrevocable Beneficiary</strong></p>
+<ol>
+<li><strong>Irrevocable Beneficiary</strong></li>
+</ol>
 <ul>
-  <li>Definition: An irrevocable beneficiary is an individual or entity designated to receive benefits, and the account owner cannot change or revoke the beneficiary designation without the consent of the beneficiary. The beneficiary has vested rights to the benefits.</li>
-  <li>Key characteristics: The account owner is limited in their ability to modify the beneficiary designation. The beneficiary has a guaranteed right to receive the benefits.</li>
-  <li>Example: John names his wife, Jane, as the irrevocable beneficiary of his trust. John cannot change the beneficiary designation without Jane's consent.</li>
+<li>Definition: An irrevocable beneficiary is an individual or entity designated to receive benefits, and the account owner cannot change or revoke the beneficiary designation without the consent of the beneficiary. The beneficiary has vested rights to the benefits.</li>
+<li>Key characteristics: The account owner is limited in their ability to modify the beneficiary designation. The beneficiary has a guaranteed right to receive the benefits.</li>
+<li>Example: John names his wife, Jane, as the irrevocable beneficiary of his trust. John cannot change the beneficiary designation without Jane's consent.</li>
 </ul>
-
 <p>COMPARISON TABLE</p>
-<table class="comparison-table"><thead><tr>
-<th>Beneficiary Type</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Primary Beneficiary</td>
-<td>First individual to receive benefits</td>
-<td>Usually spouse or close relative</td>
-<td>John names his wife, Jane, as primary beneficiary</td>
-</tr>
-<tr>
-<td>Contingent Beneficiary</td>
-<td>Backup beneficiary if primary beneficiary predeceases account owner</td>
-<td>Usually secondary relative or friend</td>
-<td>John names his child, Jack, as contingent beneficiary</td>
-</tr>
-<tr>
-<td>Revocable Beneficiary</td>
-<td>Account owner retains right to change beneficiary designation</td>
-<td>Account owner has complete control</td>
-<td>John names his wife, Jane, as revocable beneficiary</td>
-</tr>
-<tr>
-<td>Irrevocable Beneficiary</td>
-<td>Beneficiary has vested rights to benefits</td>
-<td>Account owner limited in modifying beneficiary designation</td>
-<td>John names his wife, Jane, as irrevocable beneficiary</td>
-</tr>
-</tbody></table>
-
+<div class="table-wrapper"><table>
+<thead><tr><th>Beneficiary Type</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Primary Beneficiary</td><td>First individual to receive benefits</td><td>Usually spouse or close relative</td><td>John names his wife, Jane, as primary beneficiary</td></tr>
+<tr><td>Contingent Beneficiary</td><td>Backup beneficiary if primary beneficiary predeceases account owner</td><td>Usually secondary relative or friend</td><td>John names his child, Jack, as contingent beneficiary</td></tr>
+<tr><td>Revocable Beneficiary</td><td>Account owner retains right to change beneficiary designation</td><td>Account owner has complete control</td><td>John names his wife, Jane, as revocable beneficiary</td></tr>
+<tr><td>Irrevocable Beneficiary</td><td>Beneficiary has vested rights to benefits</td><td>Account owner limited in modifying beneficiary designation</td><td>John names his wife, Jane, as irrevocable beneficiary</td></tr>
+</tbody>
+</table></div>
 <p>HOW THEY RELATE</p>
 <p>The different types of beneficiary designations are interconnected and can be used in various combinations to achieve the account owner's estate planning goals. For example, an account owner may name a primary beneficiary and a contingent beneficiary to ensure that their assets are distributed according to their wishes. The account owner may also designate a revocable beneficiary to retain control over the beneficiary designation, while an irrevocable beneficiary designation can provide certainty and security for the beneficiary.</p>
-
 <p>SUMMARY</p>
 <p>The classification system of beneficiary designations includes primary, contingent, revocable, and irrevocable beneficiaries, each with distinct characteristics and purposes that help individuals navigate the complex process of estate planning and ensure that their assets are distributed according to their wishes.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/auto-insurance/what-is.html" class="related-link">Auto Insurance</a>
-        <a href="/life_obligations/auto-loan/what-is.html" class="related-link">Auto Loan</a>
-        <a href="/life_obligations/benefit-estimation/what-is.html" class="related-link">Benefit Estimation</a>
-        <a href="/life_obligations/benefit-phaseout/what-is.html" class="related-link">Benefit Phaseout</a>
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -476,6 +494,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

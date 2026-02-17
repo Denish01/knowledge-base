@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/rehabilitative-support/what-is.html">Rehabilitative Support</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Rehabilitative Support?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Rehabilitative support is a type of assistance provided to individuals who have experienced illness, injury, or disability, with the goal of helping them recover and regain their physical, emotional, and social abilities.</p>
-
 <p>Rehabilitative support is a process that involves a team of professionals working together to help individuals achieve their goals and improve their overall quality of life. This team may include physical therapists, occupational therapists, speech therapists, psychologists, and social workers, among others. The type and level of support provided will depend on the individual's specific needs and circumstances. For example, someone who has suffered a stroke may require physical therapy to regain mobility and strength, while someone with a mental health condition may require counseling and therapy to manage their symptoms.</p>
-
 <p>The goal of rehabilitative support is to help individuals regain their independence and participate fully in their daily lives. This may involve learning new skills or strategies to compensate for any limitations or disabilities. It may also involve making changes to the individual's environment, such as installing handrails or modifying their home to make it more accessible. The rehabilitative support process is often tailored to the individual's unique needs and goals, and may involve a combination of different therapies and interventions.</p>
-
 <p>Rehabilitative support can be provided in a variety of settings, including hospitals, clinics, and community-based programs. It may also involve working with family members and caregivers to provide them with the support and training they need to help the individual. The rehabilitative support process is often ongoing, with the goal of helping the individual to continue making progress and achieving their goals over time.</p>
-
 <p>The key components of rehabilitative support include:</p>
 <ul>
-  <li>Assessment and evaluation to identify the individual's strengths and needs</li>
-  <li>Goal setting and planning to develop a personalized plan for rehabilitation</li>
-  <li>Therapy and intervention to help the individual achieve their goals</li>
-  <li>Education and training to teach the individual new skills and strategies</li>
-  <li>Support and counseling to help the individual cope with any emotional or psychological challenges</li>
-  <li>Ongoing monitoring and evaluation to assess the individual's progress and make any necessary adjustments to their plan</li>
+<li>Assessment and evaluation to identify the individual's strengths and needs</li>
+<li>Goal setting and planning to develop a personalized plan for rehabilitation</li>
+<li>Therapy and intervention to help the individual achieve their goals</li>
+<li>Education and training to teach the individual new skills and strategies</li>
+<li>Support and counseling to help the individual cope with any emotional or psychological challenges</li>
+<li>Ongoing monitoring and evaluation to assess the individual's progress and make any necessary adjustments to their plan</li>
 </ul>
-
 <p>Despite its importance, there are several common misconceptions about rehabilitative support. These include:</p>
 <ul>
-  <li>The idea that rehabilitative support is only necessary for individuals with physical disabilities, when in fact it can be beneficial for individuals with a wide range of needs and conditions</li>
-  <li>The assumption that rehabilitative support is only provided in hospitals or clinical settings, when in fact it can be provided in a variety of settings and communities</li>
-  <li>The belief that rehabilitative support is only necessary for a short period of time, when in fact it may be an ongoing process that requires long-term commitment and support</li>
-  <li>The notion that rehabilitative support is only focused on physical recovery, when in fact it may also involve addressing emotional, social, and psychological needs</li>
+<li>The idea that rehabilitative support is only necessary for individuals with physical disabilities, when in fact it can be beneficial for individuals with a wide range of needs and conditions</li>
+<li>The assumption that rehabilitative support is only provided in hospitals or clinical settings, when in fact it can be provided in a variety of settings and communities</li>
+<li>The belief that rehabilitative support is only necessary for a short period of time, when in fact it may be an ongoing process that requires long-term commitment and support</li>
+<li>The notion that rehabilitative support is only focused on physical recovery, when in fact it may also involve addressing emotional, social, and psychological needs</li>
 </ul>
-
 <p>A real-world example of rehabilitative support in action is a person who has suffered a spinal cord injury and is working with a team of professionals to regain their mobility and independence. This may involve physical therapy to help them learn to walk again, occupational therapy to help them learn new ways of performing daily tasks, and counseling to help them cope with any emotional or psychological challenges they may be facing. With the support of their team, the individual is able to make progress and achieve their goals, and eventually returns to their community and resumes their daily activities.</p>
-
 <p>Rehabilitative support is a comprehensive and individualized process that helps individuals recover and regain their physical, emotional, and social abilities after illness, injury, or disability.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/proportional-contribution/what-is.html" class="related-link">Proportional Contribution</a>
-        <a href="/life_obligations/public-assistance/what-is.html" class="related-link">Public Assistance</a>
-        <a href="/life_obligations/rent-payment/what-is.html" class="related-link">Rent Payment</a>
-        <a href="/life_obligations/renters-insurance/what-is.html" class="related-link">Renters Insurance</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

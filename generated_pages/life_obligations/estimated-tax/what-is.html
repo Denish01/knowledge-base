@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/estimated-tax/what-is.html">Estimated Tax</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Estimated Tax?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Estimated tax is a method of paying taxes on income that is not subject to withholding, such as self-employment income, interest, dividends, and capital gains.</p>
-
 <p>Estimated tax is a way for individuals to pay taxes on income that is not subject to withholding. When you work for an employer, your employer typically withholds taxes from your paycheck and sends them to the government on your behalf. However, if you have income that is not subject to withholding, such as income from self-employment, investments, or rent, you are responsible for paying taxes on that income throughout the year. This is where estimated tax comes in. Estimated tax allows you to make quarterly payments to the government to cover your tax liability on this type of income.</p>
-
 <p>The purpose of estimated tax is to ensure that you are paying your fair share of taxes throughout the year, rather than all at once when you file your tax return. This helps to avoid a large tax bill when you file your return, as well as potential penalties and interest. To make estimated tax payments, you will need to estimate your tax liability for the year, based on your expected income and expenses. You can use a variety of methods to make estimated tax payments, including online payments, phone payments, and mailing in a check with a payment voucher.</p>
-
 <p>It's worth noting that estimated tax is not just for self-employed individuals. Anyone who has income that is not subject to withholding may need to make estimated tax payments. This can include investors, landlords, and individuals who receive income from a variety of sources. Estimated tax can be a complex topic, but it's an important one to understand if you have income that is not subject to withholding.</p>
-
 <p>The key components of estimated tax include:</p>
 <ul>
-  <li>Taxable income: This includes income from self-employment, investments, and other sources that are not subject to withholding.</li>
-  <li>Estimated tax payments: These are quarterly payments made to the government to cover your tax liability throughout the year.</li>
-  <li>Payment due dates: Estimated tax payments are due on a quarterly basis, with due dates typically falling on April 15th, June 15th, September 15th, and January 15th of the following year.</li>
-  <li>Annualized income installment method: This method allows you to annualize your income, taking into account fluctuations in income throughout the year.</li>
-  <li>Safe harbor rule: This rule allows you to avoid penalties for underpayment of estimated tax if you meet certain requirements, such as paying either 90% of your current year's tax liability or 100% of your prior year's tax liability.</li>
-  <li>Underpayment penalties: These are penalties imposed on individuals who fail to make sufficient estimated tax payments throughout the year.</li>
+<li>Taxable income: This includes income from self-employment, investments, and other sources that are not subject to withholding.</li>
+<li>Estimated tax payments: These are quarterly payments made to the government to cover your tax liability throughout the year.</li>
+<li>Payment due dates: Estimated tax payments are due on a quarterly basis, with due dates typically falling on April 15th, June 15th, September 15th, and January 15th of the following year.</li>
+<li>Annualized income installment method: This method allows you to annualize your income, taking into account fluctuations in income throughout the year.</li>
+<li>Safe harbor rule: This rule allows you to avoid penalties for underpayment of estimated tax if you meet certain requirements, such as paying either 90% of your current year's tax liability or 100% of your prior year's tax liability.</li>
+<li>Underpayment penalties: These are penalties imposed on individuals who fail to make sufficient estimated tax payments throughout the year.</li>
 </ul>
-
 <p>There are several common misconceptions about estimated tax, including:</p>
 <ul>
-  <li>That estimated tax is only for self-employed individuals, when in fact it applies to anyone with income that is not subject to withholding.</li>
-  <li>That estimated tax payments are only made annually, when in fact they are typically made on a quarterly basis.</li>
-  <li>That estimated tax is a way to avoid paying taxes, when in fact it's a way to ensure that you are paying your fair share of taxes throughout the year.</li>
-  <li>That estimated tax is optional, when in fact it's a requirement for individuals with income that is not subject to withholding.</li>
+<li>That estimated tax is only for self-employed individuals, when in fact it applies to anyone with income that is not subject to withholding.</li>
+<li>That estimated tax payments are only made annually, when in fact they are typically made on a quarterly basis.</li>
+<li>That estimated tax is a way to avoid paying taxes, when in fact it's a way to ensure that you are paying your fair share of taxes throughout the year.</li>
+<li>That estimated tax is optional, when in fact it's a requirement for individuals with income that is not subject to withholding.</li>
 </ul>
-
 <p>For example, let's say you are a freelance writer who earns $50,000 per year from your writing business. You also earn $10,000 per year in interest from investments. Since your writing income is not subject to withholding, you will need to make estimated tax payments throughout the year to cover your tax liability. You can use Form 1040-ES to make estimated tax payments, and you will need to estimate your tax liability based on your expected income and expenses.</p>
-
 <p>In summary, estimated tax is a method of paying taxes on income that is not subject to withholding, such as self-employment income, interest, dividends, and capital gains, by making quarterly payments to the government to cover your tax liability throughout the year.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/employment-contract/what-is.html" class="related-link">Employment Contract</a>
-        <a href="/life_obligations/estate-planning/what-is.html" class="related-link">Estate Planning</a>
-        <a href="/life_obligations/family-budget/what-is.html" class="related-link">Family Budget</a>
-        <a href="/life_obligations/financial-burden/what-is.html" class="related-link">Financial Burden</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

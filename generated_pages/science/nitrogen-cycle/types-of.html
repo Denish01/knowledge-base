@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of nitrogen cycle - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of nitrogen cycle - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/science/nitrogen-cycle/types-of.html">
     <meta property="og:title" content="Types of Nitrogen Cycle">
-    <meta property="og:description" content="A clear, simple explanation of nitrogen cycle - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of nitrogen cycle - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/science/nitrogen-cycle/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Nitrogen Cycle">
-    <meta name="twitter:description" content="A clear, simple explanation of nitrogen cycle - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of nitrogen cycle - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Nitrogen Cycle - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Science", "item": "https://360library.com/#science"}, {"@type": "ListItem", "position": 3, "name": "Nitrogen Cycle", "item": "https://360library.com/science/nitrogen-cycle/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Nitrogen Cycle", "description": "A clear, simple explanation of nitrogen cycle - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/nitrogen-cycle/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/nitrogen-cycle/types-of.html"}, "about": {"@type": "Thing", "name": "Nitrogen Cycle"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Nitrogen Cycle", "description": "A clear, simple explanation of types of nitrogen cycle - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/nitrogen-cycle/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/nitrogen-cycle/types-of.html"}, "about": {"@type": "Thing", "name": "Nitrogen Cycle"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,89 +388,56 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#science">Science</a><span>&rsaquo;</span><a href="/science/nitrogen-cycle/what-is.html">Nitrogen Cycle</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #0891B2">
     <main class="article-main">
         <article>
             <h1>Types of Nitrogen Cycle</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION</p>
-<p>The nitrogen cycle is a complex process that involves the conversion of nitrogen between its various forms in the environment. Understanding the different types of nitrogen cycles is crucial because it helps us appreciate the importance of nitrogen in ecosystems and its impact on the environment. Classification of nitrogen cycles matters because it allows us to identify and analyze the various stages and processes involved, which is essential for managing nitrogen resources, predicting environmental changes, and maintaining ecological balance. By recognizing the different types of nitrogen cycles, we can better comprehend the intricate relationships between living organisms, the atmosphere, and the Earth's ecosystems.</p>
+            
 
-<p>2. MAIN CATEGORIES</p>
+            <ol>
+<li>INTRODUCTION</li>
+</ol>
+<p>The nitrogen cycle is a complex process that involves the conversion of nitrogen between its various forms in the environment. Understanding the different types of nitrogen cycles is crucial because it helps us appreciate the importance of nitrogen in ecosystems and its impact on the environment. Classification of nitrogen cycles matters because it allows us to identify and analyze the various stages and processes involved, which is essential for managing nitrogen resources, predicting environmental changes, and maintaining ecological balance. By recognizing the different types of nitrogen cycles, we can better comprehend the intricate relationships between living organisms, the atmosphere, and the Earth's ecosystems.</p>
+<ol>
+<li>MAIN CATEGORIES</li>
+</ol>
 <p>The nitrogen cycle can be categorized into several types, each representing a distinct stage or process in the conversion of nitrogen. The main categories are:</p>
 <ul>
-  <li><strong>Nitrogen Fixation</strong>: Nitrogen fixation is the process by which nitrogen is converted from its atmospheric form (N2) into a form that can be used by living organisms, such as ammonia (NH3) or nitrate (NO3-). Key characteristics include the involvement of microorganisms like bacteria and cyanobacteria, and the use of enzymes to break the strong triple bond in N2. A simple example is the symbiotic relationship between legume plants and rhizobia bacteria, where the bacteria fix nitrogen in the soil, making it available to the plant.</li>
-  <li><strong>Ammonification</strong>: Ammonification is the process by which organic nitrogen is converted into ammonia (NH3) through the decomposition of dead plants and animals. Key characteristics include the involvement of decomposer microorganisms like bacteria and fungi, and the release of ammonia into the soil or water. A simple example is the decomposition of a dead fish, where bacteria break down the fish's tissues, releasing ammonia into the surrounding water.</li>
-  <li><strong>Nitrification</strong>: Nitrification is the process by which ammonia (NH3) is converted into nitrite (NO2-) and then nitrate (NO3-) through the action of microorganisms like bacteria. Key characteristics include the involvement of nitrifying bacteria, and the production of nitrate as a final product. A simple example is the conversion of ammonia in soil into nitrate, which is then taken up by plant roots.</li>
-  <li><strong>Denitrification</strong>: Denitrification is the process by which nitrate (NO3-) is converted back into nitrogen gas (N2) through the action of microorganisms like bacteria. Key characteristics include the involvement of denitrifying bacteria, and the release of nitrogen gas into the atmosphere. A simple example is the conversion of nitrate in soil into nitrogen gas, which is then released into the atmosphere.</li>
-  <li><strong>Assimilation</strong>: Assimilation is the process by which living organisms, such as plants and animals, take up nitrogen from the environment and incorporate it into their biomass. Key characteristics include the uptake of nitrogen compounds like ammonia, nitrate, or amino acids, and the incorporation of nitrogen into organic molecules like proteins and nucleic acids. A simple example is the uptake of nitrate by a plant root, which is then used to synthesize amino acids and proteins.</li>
+<li><strong>Nitrogen Fixation</strong>: Nitrogen fixation is the process by which nitrogen is converted from its atmospheric form (N2) into a form that can be used by living organisms, such as ammonia (NH3) or nitrate (NO3-). Key characteristics include the involvement of microorganisms like bacteria and cyanobacteria, and the use of enzymes to break the strong triple bond in N2. A simple example is the symbiotic relationship between legume plants and rhizobia bacteria, where the bacteria fix nitrogen in the soil, making it available to the plant.</li>
+<li><strong>Ammonification</strong>: Ammonification is the process by which organic nitrogen is converted into ammonia (NH3) through the decomposition of dead plants and animals. Key characteristics include the involvement of decomposer microorganisms like bacteria and fungi, and the release of ammonia into the soil or water. A simple example is the decomposition of a dead fish, where bacteria break down the fish's tissues, releasing ammonia into the surrounding water.</li>
+<li><strong>Nitrification</strong>: Nitrification is the process by which ammonia (NH3) is converted into nitrite (NO2-) and then nitrate (NO3-) through the action of microorganisms like bacteria. Key characteristics include the involvement of nitrifying bacteria, and the production of nitrate as a final product. A simple example is the conversion of ammonia in soil into nitrate, which is then taken up by plant roots.</li>
+<li><strong>Denitrification</strong>: Denitrification is the process by which nitrate (NO3-) is converted back into nitrogen gas (N2) through the action of microorganisms like bacteria. Key characteristics include the involvement of denitrifying bacteria, and the release of nitrogen gas into the atmosphere. A simple example is the conversion of nitrate in soil into nitrogen gas, which is then released into the atmosphere.</li>
+<li><strong>Assimilation</strong>: Assimilation is the process by which living organisms, such as plants and animals, take up nitrogen from the environment and incorporate it into their biomass. Key characteristics include the uptake of nitrogen compounds like ammonia, nitrate, or amino acids, and the incorporation of nitrogen into organic molecules like proteins and nucleic acids. A simple example is the uptake of nitrate by a plant root, which is then used to synthesize amino acids and proteins.</li>
 </ul>
-
-<p>3. COMPARISON TABLE</p>
+<ol>
+<li>COMPARISON TABLE</li>
+</ol>
 <p>The following table summarizes the main differences between the categories of nitrogen cycles:</p>
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Process</th>
-<th>Input</th>
-<th>Output</th>
-<th>Key Microorganisms</th>
-</tr></thead><tbody>
-<tr>
-<td>Nitrogen Fixation</td>
-<td>Conversion of N2 to NH3 or NO3-</td>
-<td>N2</td>
-<td>NH3 or NO3-</td>
-<td>Bacteria, Cyanobacteria</td>
-</tr>
-<tr>
-<td>Ammonification</td>
-<td>Conversion of organic N to NH3</td>
-<td>Organic N</td>
-<td>NH3</td>
-<td>Decomposer bacteria, Fungi</td>
-</tr>
-<tr>
-<td>Nitrification</td>
-<td>Conversion of NH3 to NO2- to NO3-</td>
-<td>NH3</td>
-<td>NO3-</td>
-<td>Nitrifying bacteria</td>
-</tr>
-<tr>
-<td>Denitrification</td>
-<td>Conversion of NO3- to N2</td>
-<td>NO3-</td>
-<td>N2</td>
-<td>Denitrifying bacteria</td>
-</tr>
-<tr>
-<td>Assimilation</td>
-<td>Uptake of N by living organisms</td>
-<td>NH3, NO3-, amino acids</td>
-<td>Organic N</td>
-<td>Various microorganisms</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE</p>
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Process</th><th>Input</th><th>Output</th><th>Key Microorganisms</th></tr></thead><tbody>
+<tr><td>Nitrogen Fixation</td><td>Conversion of N2 to NH3 or NO3-</td><td>N2</td><td>NH3 or NO3-</td><td>Bacteria, Cyanobacteria</td></tr>
+<tr><td>Ammonification</td><td>Conversion of organic N to NH3</td><td>Organic N</td><td>NH3</td><td>Decomposer bacteria, Fungi</td></tr>
+<tr><td>Nitrification</td><td>Conversion of NH3 to NO2- to NO3-</td><td>NH3</td><td>NO3-</td><td>Nitrifying bacteria</td></tr>
+<tr><td>Denitrification</td><td>Conversion of NO3- to N2</td><td>NO3-</td><td>N2</td><td>Denitrifying bacteria</td></tr>
+<tr><td>Assimilation</td><td>Uptake of N by living organisms</td><td>NH3, NO3-, amino acids</td><td>Organic N</td><td>Various microorganisms</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE</li>
+</ol>
 <p>The categories of nitrogen cycles are interconnected and interdependent. Nitrogen fixation provides the initial input of nitrogen into the ecosystem, which is then converted into ammonia through ammonification. Ammonia is then converted into nitrate through nitrification, which can be taken up by plants and animals through assimilation. Denitrification, on the other hand, converts nitrate back into nitrogen gas, which is released into the atmosphere, completing the cycle. Understanding how these categories relate to each other is essential for managing nitrogen resources and maintaining ecological balance.</p>
-
-<p>5. SUMMARY</p>
+<ol>
+<li>SUMMARY</li>
+</ol>
 <p>The nitrogen cycle can be classified into several types, including nitrogen fixation, ammonification, nitrification, denitrification, and assimilation, each representing a distinct stage or process in the conversion of nitrogen between its various forms in the environment.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/science/dna-replication/what-is.html" class="related-link">Dna Replication</a>
-        <a href="/science/gravity/what-is.html" class="related-link">Gravity</a>
-        <a href="/science/mitosis/what-is.html" class="related-link">Mitosis</a>
-        <a href="/science/natural-selection/what-is.html" class="related-link">Natural Selection</a>
-        <a href="/science/osmosis/what-is.html" class="related-link">Osmosis</a>
-        <a href="/science/photosynthesis/what-is.html" class="related-link">Photosynthesis</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -470,6 +482,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

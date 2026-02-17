@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of market equilibrium - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of market equilibrium - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/economics/market-equilibrium/types-of.html">
     <meta property="og:title" content="Types of Market Equilibrium">
-    <meta property="og:description" content="A clear, simple explanation of market equilibrium - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of market equilibrium - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/economics/market-equilibrium/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Market Equilibrium">
-    <meta name="twitter:description" content="A clear, simple explanation of market equilibrium - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of market equilibrium - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Market Equilibrium - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Economics", "item": "https://360library.com/#economics"}, {"@type": "ListItem", "position": 3, "name": "Market Equilibrium", "item": "https://360library.com/economics/market-equilibrium/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Market Equilibrium", "description": "A clear, simple explanation of market equilibrium - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/economics/market-equilibrium/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/economics/market-equilibrium/types-of.html"}, "about": {"@type": "Thing", "name": "Market Equilibrium"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Market Equilibrium", "description": "A clear, simple explanation of types of market equilibrium - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/economics/market-equilibrium/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/economics/market-equilibrium/types-of.html"}, "about": {"@type": "Thing", "name": "Market Equilibrium"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,92 +388,57 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#economics">Economics</a><span>&rsaquo;</span><a href="/economics/market-equilibrium/what-is.html">Market Equilibrium</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #059669">
     <main class="article-main">
         <article>
             <h1>Types of Market Equilibrium</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>The concept of market equilibrium is a crucial aspect of economics, as it refers to the state where the supply and demand for a particular product or service are balanced. Understanding the types of market equilibrium is essential for analyzing and predicting market behavior, as well as making informed decisions in business and economics. Classification of market equilibrium is important because it allows us to identify and distinguish between different market scenarios, each with its unique characteristics and implications. By recognizing the various types of market equilibrium, we can better comprehend the complex interactions between market forces and make more accurate predictions about market outcomes.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>There are several types of market equilibrium, each with its distinct features and examples. The main categories are:</p>
-
 <ul>
-  <li><strong>Partial Equilibrium</strong>: Partial equilibrium refers to a state where the supply and demand for a specific product or service are balanced, without considering the overall market or economy. Key characteristics include a focus on a single market, assumption of fixed prices and incomes, and no externalities. For example, the market for apples may be in partial equilibrium if the quantity of apples supplied equals the quantity demanded, regardless of the overall state of the economy.</li>
-  <li><strong>General Equilibrium</strong>: General equilibrium, on the other hand, considers the entire market or economy, taking into account the interactions and interdependencies between different markets and sectors. Key characteristics include a comprehensive approach, consideration of multiple markets and sectors, and allowance for externalities. For instance, a general equilibrium analysis of the agricultural sector would examine the relationships between the markets for apples, wheat, and other crops, as well as the impact of external factors like weather and government policies.</li>
-  <li><strong>Static Equilibrium</strong>: Static equilibrium refers to a state where the market is in a stable balance, with no changes in supply or demand. Key characteristics include a fixed point in time, no changes in market conditions, and a stable market outcome. For example, a static equilibrium may occur in a market where the quantity of a product supplied equals the quantity demanded, with no expected changes in market conditions.</li>
-  <li><strong>Dynamic Equilibrium</strong>: Dynamic equilibrium, in contrast, acknowledges that market conditions are constantly changing, and the equilibrium state is not fixed. Key characteristics include a consideration of time, changing market conditions, and a moving equilibrium state. For instance, a dynamic equilibrium may occur in a market where the quantity of a product supplied and demanded are constantly adjusting to changes in consumer preferences, technology, and other factors.</li>
-  <li><strong>Stable Equilibrium</strong>: Stable equilibrium refers to a state where the market tends to return to its equilibrium state after a disturbance or shock. Key characteristics include a tendency to return to equilibrium, resistance to changes, and a stable market outcome. For example, a stable equilibrium may occur in a market where a temporary increase in demand is met with an increase in supply, and the market then returns to its original equilibrium state.</li>
-  <li><strong>Unstable Equilibrium</strong>: Unstable equilibrium, on the other hand, refers to a state where the market does not tend to return to its equilibrium state after a disturbance or shock. Key characteristics include a tendency to move away from equilibrium, sensitivity to changes, and an unstable market outcome. For instance, an unstable equilibrium may occur in a market where a small increase in demand leads to a large increase in price, causing the market to move further away from its equilibrium state.</li>
+<li><strong>Partial Equilibrium</strong>: Partial equilibrium refers to a state where the supply and demand for a specific product or service are balanced, without considering the overall market or economy. Key characteristics include a focus on a single market, assumption of fixed prices and incomes, and no externalities. For example, the market for apples may be in partial equilibrium if the quantity of apples supplied equals the quantity demanded, regardless of the overall state of the economy.</li>
+<li><strong>General Equilibrium</strong>: General equilibrium, on the other hand, considers the entire market or economy, taking into account the interactions and interdependencies between different markets and sectors. Key characteristics include a comprehensive approach, consideration of multiple markets and sectors, and allowance for externalities. For instance, a general equilibrium analysis of the agricultural sector would examine the relationships between the markets for apples, wheat, and other crops, as well as the impact of external factors like weather and government policies.</li>
+<li><strong>Static Equilibrium</strong>: Static equilibrium refers to a state where the market is in a stable balance, with no changes in supply or demand. Key characteristics include a fixed point in time, no changes in market conditions, and a stable market outcome. For example, a static equilibrium may occur in a market where the quantity of a product supplied equals the quantity demanded, with no expected changes in market conditions.</li>
+<li><strong>Dynamic Equilibrium</strong>: Dynamic equilibrium, in contrast, acknowledges that market conditions are constantly changing, and the equilibrium state is not fixed. Key characteristics include a consideration of time, changing market conditions, and a moving equilibrium state. For instance, a dynamic equilibrium may occur in a market where the quantity of a product supplied and demanded are constantly adjusting to changes in consumer preferences, technology, and other factors.</li>
+<li><strong>Stable Equilibrium</strong>: Stable equilibrium refers to a state where the market tends to return to its equilibrium state after a disturbance or shock. Key characteristics include a tendency to return to equilibrium, resistance to changes, and a stable market outcome. For example, a stable equilibrium may occur in a market where a temporary increase in demand is met with an increase in supply, and the market then returns to its original equilibrium state.</li>
+<li><strong>Unstable Equilibrium</strong>: Unstable equilibrium, on the other hand, refers to a state where the market does not tend to return to its equilibrium state after a disturbance or shock. Key characteristics include a tendency to move away from equilibrium, sensitivity to changes, and an unstable market outcome. For instance, an unstable equilibrium may occur in a market where a small increase in demand leads to a large increase in price, causing the market to move further away from its equilibrium state.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
 <p>The following table summarizes the main differences between the types of market equilibrium:</p>
-
-<table class="comparison-table"><thead><tr>
-<th>Type of Equilibrium</th>
-<th>Focus</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Partial Equilibrium</td>
-<td>Single market</td>
-<td>Fixed prices and incomes, no externalities</td>
-<td>Apple market</td>
-</tr>
-<tr>
-<td>General Equilibrium</td>
-<td>Entire market or economy</td>
-<td>Comprehensive approach, multiple markets and sectors, externalities</td>
-<td>Agricultural sector</td>
-</tr>
-<tr>
-<td>Static Equilibrium</td>
-<td>Fixed point in time</td>
-<td>No changes in market conditions, stable market outcome</td>
-<td>Fixed supply and demand</td>
-</tr>
-<tr>
-<td>Dynamic Equilibrium</td>
-<td>Consideration of time</td>
-<td>Changing market conditions, moving equilibrium state</td>
-<td>Adjusting supply and demand</td>
-</tr>
-<tr>
-<td>Stable Equilibrium</td>
-<td>Tendency to return to equilibrium</td>
-<td>Resistance to changes, stable market outcome</td>
-<td>Temporary increase in demand</td>
-</tr>
-<tr>
-<td>Unstable Equilibrium</td>
-<td>Tendency to move away from equilibrium</td>
-<td>Sensitivity to changes, unstable market outcome</td>
-<td>Small increase in demand leads to large price increase</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Equilibrium</th><th>Focus</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Partial Equilibrium</td><td>Single market</td><td>Fixed prices and incomes, no externalities</td><td>Apple market</td></tr>
+<tr><td>General Equilibrium</td><td>Entire market or economy</td><td>Comprehensive approach, multiple markets and sectors, externalities</td><td>Agricultural sector</td></tr>
+<tr><td>Static Equilibrium</td><td>Fixed point in time</td><td>No changes in market conditions, stable market outcome</td><td>Fixed supply and demand</td></tr>
+<tr><td>Dynamic Equilibrium</td><td>Consideration of time</td><td>Changing market conditions, moving equilibrium state</td><td>Adjusting supply and demand</td></tr>
+<tr><td>Stable Equilibrium</td><td>Tendency to return to equilibrium</td><td>Resistance to changes, stable market outcome</td><td>Temporary increase in demand</td></tr>
+<tr><td>Unstable Equilibrium</td><td>Tendency to move away from equilibrium</td><td>Sensitivity to changes, unstable market outcome</td><td>Small increase in demand leads to large price increase</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different types of market equilibrium are interconnected and can be used to analyze and understand various market scenarios. For example, a partial equilibrium analysis can be used to examine a specific market, while a general equilibrium analysis can provide a more comprehensive understanding of the overall market or economy. The concepts of static and dynamic equilibrium can be applied to both partial and general equilibrium analyses, depending on whether the market conditions are fixed or changing. Additionally, the stability of an equilibrium state can be examined using the concepts of stable and unstable equilibrium.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of market equilibrium includes various types, such as partial, general, static, dynamic, stable, and unstable equilibrium, each with its unique characteristics and applications, providing a comprehensive framework for analyzing and understanding market behavior.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/economics/deflation/what-is.html" class="related-link">Deflation</a>
-        <a href="/economics/inflation/what-is.html" class="related-link">Inflation</a>
-        <a href="/economics/interest-rates/what-is.html" class="related-link">Interest Rates</a>
-        <a href="/economics/monetary-policy/what-is.html" class="related-link">Monetary Policy</a>
-        <a href="/economics/monopoly/what-is.html" class="related-link">Monopoly</a>
-        <a href="/economics/recession/what-is.html" class="related-link">Recession</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -473,6 +483,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

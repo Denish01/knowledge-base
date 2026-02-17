@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of perfect competition - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of perfect competition - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/economics/perfect-competition/types-of.html">
     <meta property="og:title" content="Types of Perfect Competition">
-    <meta property="og:description" content="A clear, simple explanation of perfect competition - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of perfect competition - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/economics/perfect-competition/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Perfect Competition">
-    <meta name="twitter:description" content="A clear, simple explanation of perfect competition - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of perfect competition - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Perfect Competition - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Economics", "item": "https://360library.com/#economics"}, {"@type": "ListItem", "position": 3, "name": "Perfect Competition", "item": "https://360library.com/economics/perfect-competition/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Perfect Competition", "description": "A clear, simple explanation of perfect competition - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/economics/perfect-competition/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/economics/perfect-competition/types-of.html"}, "about": {"@type": "Thing", "name": "Perfect Competition"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Perfect Competition", "description": "A clear, simple explanation of types of perfect competition - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/economics/perfect-competition/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/economics/perfect-competition/types-of.html"}, "about": {"@type": "Thing", "name": "Perfect Competition"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,98 +388,78 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#economics">Economics</a><span>&rsaquo;</span><a href="/economics/perfect-competition/what-is.html">Perfect Competition</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #059669">
     <main class="article-main">
         <article>
             <h1>Types of Perfect Competition</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>Types of perfect competition refer to the various forms that perfect competition can take in a market economy. Perfect competition is a market structure in which a large number of firms produce a homogeneous product, and no single firm has the power to influence the market price. Classification of perfect competition into different types is important because it helps to understand the characteristics of each type and how they differ from one another. This classification also enables economists and business leaders to analyze the pros and cons of each type and make informed decisions. By understanding the different types of perfect competition, individuals can better comprehend how markets work and how firms can operate effectively within them.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the main types of perfect competition:</p>
-<p>1. <strong>Pure Perfect Competition</strong></p>
+<ol>
+<li><strong>Pure Perfect Competition</strong></li>
+</ol>
 <ul>
-  <li>Brief definition: Pure perfect competition is a market structure in which a large number of firms produce a homogeneous product, and no single firm has the power to influence the market price. This type of competition is characterized by the absence of any barriers to entry or exit.</li>
-  <li>Key characteristics: Many firms, homogeneous product, free entry and exit, and no price control.</li>
-  <li>Simple example: The market for wheat is an example of pure perfect competition, where many farmers produce wheat and no single farmer can influence the market price.</li>
+<li>Brief definition: Pure perfect competition is a market structure in which a large number of firms produce a homogeneous product, and no single firm has the power to influence the market price. This type of competition is characterized by the absence of any barriers to entry or exit.</li>
+<li>Key characteristics: Many firms, homogeneous product, free entry and exit, and no price control.</li>
+<li>Simple example: The market for wheat is an example of pure perfect competition, where many farmers produce wheat and no single farmer can influence the market price.</li>
 </ul>
-<p>2. <strong>Monopolistic Competition</strong></p>
+<ol>
+<li><strong>Monopolistic Competition</strong></li>
+</ol>
 <ul>
-  <li>Brief definition: Monopolistic competition is a market structure in which many firms produce differentiated products, and each firm has some degree of price-setting power. This type of competition is characterized by the presence of many firms and the absence of any significant barriers to entry or exit.</li>
-  <li>Key characteristics: Many firms, differentiated products, free entry and exit, and some price control.</li>
-  <li>Simple example: The market for restaurants is an example of monopolistic competition, where many restaurants produce differentiated products (e.g., Italian, Chinese, Mexican food) and each restaurant has some degree of price-setting power.</li>
+<li>Brief definition: Monopolistic competition is a market structure in which many firms produce differentiated products, and each firm has some degree of price-setting power. This type of competition is characterized by the presence of many firms and the absence of any significant barriers to entry or exit.</li>
+<li>Key characteristics: Many firms, differentiated products, free entry and exit, and some price control.</li>
+<li>Simple example: The market for restaurants is an example of monopolistic competition, where many restaurants produce differentiated products (e.g., Italian, Chinese, Mexican food) and each restaurant has some degree of price-setting power.</li>
 </ul>
-<p>3. <strong>Oligopoly</strong></p>
+<ol>
+<li><strong>Oligopoly</strong></li>
+</ol>
 <ul>
-  <li>Brief definition: Oligopoly is a market structure in which a small number of firms produce a homogeneous or differentiated product, and each firm has significant price-setting power. This type of competition is characterized by the presence of a few large firms and the absence of any significant barriers to entry or exit.</li>
-  <li>Key characteristics: Few firms, homogeneous or differentiated product, significant price control, and barriers to entry.</li>
-  <li>Simple example: The market for automobiles is an example of oligopoly, where a small number of firms (e.g., General Motors, Ford, Toyota) produce differentiated products and each firm has significant price-setting power.</li>
+<li>Brief definition: Oligopoly is a market structure in which a small number of firms produce a homogeneous or differentiated product, and each firm has significant price-setting power. This type of competition is characterized by the presence of a few large firms and the absence of any significant barriers to entry or exit.</li>
+<li>Key characteristics: Few firms, homogeneous or differentiated product, significant price control, and barriers to entry.</li>
+<li>Simple example: The market for automobiles is an example of oligopoly, where a small number of firms (e.g., General Motors, Ford, Toyota) produce differentiated products and each firm has significant price-setting power.</li>
 </ul>
-<p>4. <strong>Monopsony</strong></p>
+<ol>
+<li><strong>Monopsony</strong></li>
+</ol>
 <ul>
-  <li>Brief definition: Monopsony is a market structure in which a single buyer purchases a homogeneous product from many sellers, and the buyer has significant price-setting power. This type of competition is characterized by the presence of a single buyer and the absence of any significant barriers to entry or exit.</li>
-  <li>Key characteristics: Single buyer, many sellers, homogeneous product, and significant price control.</li>
-  <li>Simple example: The market for labor is an example of monopsony, where a single firm (e.g., a large corporation) purchases labor from many workers and has significant price-setting power (i.e., sets the wage rate).</li>
+<li>Brief definition: Monopsony is a market structure in which a single buyer purchases a homogeneous product from many sellers, and the buyer has significant price-setting power. This type of competition is characterized by the presence of a single buyer and the absence of any significant barriers to entry or exit.</li>
+<li>Key characteristics: Single buyer, many sellers, homogeneous product, and significant price control.</li>
+<li>Simple example: The market for labor is an example of monopsony, where a single firm (e.g., a large corporation) purchases labor from many workers and has significant price-setting power (i.e., sets the wage rate).</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
-<table class="comparison-table"><thead><tr>
-<th>Type of Competition</th>
-<th>Number of Firms</th>
-<th>Product Differentiation</th>
-<th>Price Control</th>
-<th>Barriers to Entry/Exit</th>
-</tr></thead><tbody>
-<tr>
-<td>Pure Perfect Competition</td>
-<td>Many</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Monopolistic Competition</td>
-<td>Many</td>
-<td>Yes</td>
-<td>Some</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Oligopoly</td>
-<td>Few</td>
-<td>Yes/No</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Monopsony</td>
-<td>Single buyer, many sellers</td>
-<td>No</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Competition</th><th>Number of Firms</th><th>Product Differentiation</th><th>Price Control</th><th>Barriers to Entry/Exit</th></tr></thead><tbody>
+<tr><td>Pure Perfect Competition</td><td>Many</td><td>No</td><td>No</td><td>No</td></tr>
+<tr><td>Monopolistic Competition</td><td>Many</td><td>Yes</td><td>Some</td><td>No</td></tr>
+<tr><td>Oligopoly</td><td>Few</td><td>Yes/No</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Monopsony</td><td>Single buyer, many sellers</td><td>No</td><td>Yes</td><td>No</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different types of perfect competition are interconnected and can be seen as existing on a continuum. Pure perfect competition is the most competitive market structure, while monopsony is the least competitive. Monopolistic competition and oligopoly fall somewhere in between, with the former being more competitive than the latter. The key factors that distinguish these types of competition are the number of firms, product differentiation, and price control. Understanding how these factors interact and influence market outcomes is essential for analyzing the different types of perfect competition.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of perfect competition encompasses various types, including pure perfect competition, monopolistic competition, oligopoly, and monopsony, each with distinct characteristics that set them apart from one another.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/economics/deflation/what-is.html" class="related-link">Deflation</a>
-        <a href="/economics/monetary-policy/what-is.html" class="related-link">Monetary Policy</a>
-        <a href="/economics/oligopoly/what-is.html" class="related-link">Oligopoly</a>
-        <a href="/economics/opportunity-cost/what-is.html" class="related-link">Opportunity Cost</a>
-        <a href="/economics/price-elasticity/what-is.html" class="related-link">Price Elasticity</a>
-        <a href="/economics/recession/what-is.html" class="related-link">Recession</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -479,6 +504,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

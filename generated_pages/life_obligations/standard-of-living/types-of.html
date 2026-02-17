@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of standard of living - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of standard of living - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/standard-of-living/types-of.html">
     <meta property="og:title" content="Types of Standard Of Living">
-    <meta property="og:description" content="A clear, simple explanation of standard of living - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of standard of living - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/standard-of-living/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Standard Of Living">
-    <meta name="twitter:description" content="A clear, simple explanation of standard of living - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of standard of living - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Standard Of Living - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Standard Of Living", "item": "https://360library.com/life_obligations/standard-of-living/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Standard Of Living", "description": "A clear, simple explanation of standard of living - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/standard-of-living/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/standard-of-living/types-of.html"}, "about": {"@type": "Thing", "name": "Standard Of Living"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Standard Of Living", "description": "A clear, simple explanation of types of standard of living - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/standard-of-living/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/standard-of-living/types-of.html"}, "about": {"@type": "Thing", "name": "Standard Of Living"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,102 +388,58 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/standard-of-living/what-is.html">Standard Of Living</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Standard Of Living</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION</p>
+            
 
+            <ol>
+<li>INTRODUCTION</li>
+</ol>
 <p>The standard of living refers to the level of wealth, comfort, and access to necessities and luxuries that individuals or groups experience. Classification of standard of living is important because it helps to understand the social and economic conditions of different populations, identify areas of need, and develop policies to improve overall well-being. By categorizing standard of living, researchers and policymakers can better comprehend the complexities of social and economic systems, and work towards creating a more equitable and sustainable environment for all. The types of standard of living encompass various aspects, including economic, social, and environmental factors, which are essential in determining the quality of life for individuals and communities.</p>
-
-<p>2. MAIN CATEGORIES</p>
-
+<ol>
+<li>MAIN CATEGORIES</li>
+</ol>
 <p>The following are the main categories of standard of living:</p>
 <ul>
-  <li><strong>Lower Class</strong>: The lower class refers to individuals or households that struggle to meet their basic needs, such as food, shelter, and healthcare. Key characteristics include limited access to education, employment opportunities, and social services. For example, a family living in a poverty-stricken area with limited access to healthcare and education would be considered lower class.</li>
-  <li><strong>Working Class</strong>: The working class comprises individuals or households that have a stable income, but struggle to make ends meet due to limited financial resources. Key characteristics include stable employment, limited savings, and access to basic necessities. For instance, a single parent working multiple jobs to provide for their family, but still struggling to pay bills, would be considered working class.</li>
-  <li><strong>Middle Class</strong>: The middle class refers to individuals or households that have a comfortable income, access to education and healthcare, and a decent standard of living. Key characteristics include stable employment, moderate savings, and access to luxuries such as travel and entertainment. For example, a family with two working parents, a stable income, and access to quality education and healthcare would be considered middle class.</li>
-  <li><strong>Upper Class</strong>: The upper class comprises individuals or households that have a high income, significant wealth, and access to exclusive luxuries and opportunities. Key characteristics include high-level employment, significant savings, and access to elite education and social networks. For instance, a family with a high-income earner, significant investments, and access to exclusive social clubs and events would be considered upper class.</li>
-  <li><strong>Poverty</strong>: Poverty refers to a state of extreme economic hardship, where individuals or households lack access to basic necessities such as food, shelter, and healthcare. Key characteristics include limited or no income, lack of access to education and social services, and poor living conditions. For example, a family living on the streets, relying on charity and government assistance to survive, would be considered poverty-stricken.</li>
-  <li><strong>Affluence</strong>: Affluence refers to a state of high economic comfort, where individuals or households have access to luxuries and opportunities beyond their basic needs. Key characteristics include high income, significant wealth, and access to exclusive luxuries and social networks. For instance, a family with a high-income earner, significant investments, and access to exclusive travel and entertainment would be considered affluent.</li>
+<li><strong>Lower Class</strong>: The lower class refers to individuals or households that struggle to meet their basic needs, such as food, shelter, and healthcare. Key characteristics include limited access to education, employment opportunities, and social services. For example, a family living in a poverty-stricken area with limited access to healthcare and education would be considered lower class.</li>
+<li><strong>Working Class</strong>: The working class comprises individuals or households that have a stable income, but struggle to make ends meet due to limited financial resources. Key characteristics include stable employment, limited savings, and access to basic necessities. For instance, a single parent working multiple jobs to provide for their family, but still struggling to pay bills, would be considered working class.</li>
+<li><strong>Middle Class</strong>: The middle class refers to individuals or households that have a comfortable income, access to education and healthcare, and a decent standard of living. Key characteristics include stable employment, moderate savings, and access to luxuries such as travel and entertainment. For example, a family with two working parents, a stable income, and access to quality education and healthcare would be considered middle class.</li>
+<li><strong>Upper Class</strong>: The upper class comprises individuals or households that have a high income, significant wealth, and access to exclusive luxuries and opportunities. Key characteristics include high-level employment, significant savings, and access to elite education and social networks. For instance, a family with a high-income earner, significant investments, and access to exclusive social clubs and events would be considered upper class.</li>
+<li><strong>Poverty</strong>: Poverty refers to a state of extreme economic hardship, where individuals or households lack access to basic necessities such as food, shelter, and healthcare. Key characteristics include limited or no income, lack of access to education and social services, and poor living conditions. For example, a family living on the streets, relying on charity and government assistance to survive, would be considered poverty-stricken.</li>
+<li><strong>Affluence</strong>: Affluence refers to a state of high economic comfort, where individuals or households have access to luxuries and opportunities beyond their basic needs. Key characteristics include high income, significant wealth, and access to exclusive luxuries and social networks. For instance, a family with a high-income earner, significant investments, and access to exclusive travel and entertainment would be considered affluent.</li>
 </ul>
-
-<p>3. COMPARISON TABLE</p>
-
+<ol>
+<li>COMPARISON TABLE</li>
+</ol>
 <p>The following table summarizes the main differences between the categories of standard of living:</p>
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Income Level</th>
-<th>Access to Education</th>
-<th>Access to Healthcare</th>
-<th>Living Conditions</th>
-</tr></thead><tbody>
-<tr>
-<td>Lower Class</td>
-<td>Limited</td>
-<td>Limited</td>
-<td>Limited</td>
-<td>Poor</td>
-</tr>
-<tr>
-<td>Working Class</td>
-<td>Moderate</td>
-<td>Moderate</td>
-<td>Moderate</td>
-<td>Fair</td>
-</tr>
-<tr>
-<td>Middle Class</td>
-<td>Comfortable</td>
-<td>Good</td>
-<td>Good</td>
-<td>Good</td>
-</tr>
-<tr>
-<td>Upper Class</td>
-<td>High</td>
-<td>Excellent</td>
-<td>Excellent</td>
-<td>Excellent</td>
-</tr>
-<tr>
-<td>Poverty</td>
-<td>Extremely Limited</td>
-<td>Extremely Limited</td>
-<td>Extremely Limited</td>
-<td>Extremely Poor</td>
-</tr>
-<tr>
-<td>Affluence</td>
-<td>Very High</td>
-<td>Excellent</td>
-<td>Excellent</td>
-<td>Luxurious</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE</p>
-
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Income Level</th><th>Access to Education</th><th>Access to Healthcare</th><th>Living Conditions</th></tr></thead><tbody>
+<tr><td>Lower Class</td><td>Limited</td><td>Limited</td><td>Limited</td><td>Poor</td></tr>
+<tr><td>Working Class</td><td>Moderate</td><td>Moderate</td><td>Moderate</td><td>Fair</td></tr>
+<tr><td>Middle Class</td><td>Comfortable</td><td>Good</td><td>Good</td><td>Good</td></tr>
+<tr><td>Upper Class</td><td>High</td><td>Excellent</td><td>Excellent</td><td>Excellent</td></tr>
+<tr><td>Poverty</td><td>Extremely Limited</td><td>Extremely Limited</td><td>Extremely Limited</td><td>Extremely Poor</td></tr>
+<tr><td>Affluence</td><td>Very High</td><td>Excellent</td><td>Excellent</td><td>Luxurious</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE</li>
+</ol>
 <p>The categories of standard of living are interconnected and can influence one another. For example, individuals or households that experience poverty may struggle to access education and employment opportunities, making it difficult to improve their standard of living. On the other hand, those who are affluent may have greater access to exclusive social networks and opportunities, which can further exacerbate economic and social inequalities. Understanding how these categories relate to one another is essential in developing effective policies and interventions to address social and economic disparities.</p>
-
-<p>5. SUMMARY</p>
-
+<ol>
+<li>SUMMARY</li>
+</ol>
 <p>The classification system of standard of living encompasses various categories, including lower class, working class, middle class, upper class, poverty, and affluence, which are distinguished by factors such as income level, access to education and healthcare, and living conditions.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/spousal-support/what-is.html" class="related-link">Spousal Support</a>
-        <a href="/life_obligations/spousal-support-duration/what-is.html" class="related-link">Spousal Support Duration</a>
-        <a href="/life_obligations/student-loan/what-is.html" class="related-link">Student Loan</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -483,6 +484,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

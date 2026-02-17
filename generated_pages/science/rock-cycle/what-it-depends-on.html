@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of rock cycle - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of what rock cycle depends on - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/science/rock-cycle/what-it-depends-on.html">
     <meta property="og:title" content="What Rock Cycle Depends On">
-    <meta property="og:description" content="A clear, simple explanation of rock cycle - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of what rock cycle depends on - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/science/rock-cycle/what-it-depends-on.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="What Rock Cycle Depends On">
-    <meta name="twitter:description" content="A clear, simple explanation of rock cycle - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of what rock cycle depends on - definition, key concepts, examples, and common misconceptions.">
     <title>What Rock Cycle Depends On - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Science", "item": "https://360library.com/#science"}, {"@type": "ListItem", "position": 3, "name": "Rock Cycle", "item": "https://360library.com/science/rock-cycle/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "What It Depends On"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Rock Cycle Depends On", "description": "A clear, simple explanation of rock cycle - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/rock-cycle/what-it-depends-on.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/rock-cycle/what-it-depends-on.html"}, "about": {"@type": "Thing", "name": "Rock Cycle"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Rock Cycle Depends On", "description": "A clear, simple explanation of what rock cycle depends on - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/rock-cycle/what-it-depends-on.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/rock-cycle/what-it-depends-on.html"}, "about": {"@type": "Thing", "name": "Rock Cycle"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,46 +388,47 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#science">Science</a><span>&rsaquo;</span><a href="/science/rock-cycle/what-is.html">Rock Cycle</a><span>&rsaquo;</span>What It Depends On
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #0891B2">
     <main class="article-main">
         <article>
             <h1>What Rock Cycle Depends On</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION</p>
-<p>The rock cycle is the process by which rocks are formed, transformed, and destroyed. It is a fundamental concept in geology that helps us understand the Earth's composition and the processes that shape our planet. The rock cycle depends on several key factors, and understanding these dependencies is crucial for grasping the underlying mechanisms that drive this process. The dependencies that govern the rock cycle are essential prerequisites that must be present for the process to occur, and they have a significant impact on our understanding of the Earth's geology.</p>
+            
 
-<p>2. KEY DEPENDENCIES</p>
+            <ol>
+<li>INTRODUCTION</li>
+</ol>
+<p>The rock cycle is the process by which rocks are formed, transformed, and destroyed. It is a fundamental concept in geology that helps us understand the Earth's composition and the processes that shape our planet. The rock cycle depends on several key factors, and understanding these dependencies is crucial for grasping the underlying mechanisms that drive this process. The dependencies that govern the rock cycle are essential prerequisites that must be present for the process to occur, and they have a significant impact on our understanding of the Earth's geology.</p>
+<ol>
+<li>KEY DEPENDENCIES</li>
+</ol>
 <p>The rock cycle depends on several key factors, including:</p>
 <ul>
-  <li><strong>Plate Tectonics</strong>: Plate tectonics is the movement of the Earth's lithosphere, which is the outermost solid layer of the planet. This movement is necessary for the rock cycle because it provides the forces that drive the transformation of rocks from one type to another. Without plate tectonics, the rock cycle would not be able to occur, and the Earth's geology would be vastly different. The absence of plate tectonics would mean that rocks would not be subjected to the high pressures and temperatures needed to transform them into different types.</li>
-  <li><strong>Temperature and Pressure</strong>: Temperature and pressure are critical factors that control the rock cycle. Different temperatures and pressures are required for the formation of different types of rocks, and changes in these conditions can cause rocks to transform from one type to another. Without the right temperature and pressure conditions, the rock cycle would not be able to proceed, and rocks would not be able to form or transform. For example, the formation of igneous rocks requires high temperatures, while the formation of sedimentary rocks requires low temperatures and pressures.</li>
-  <li><strong>Water and Chemical Reactions</strong>: Water and chemical reactions play a crucial role in the rock cycle. Water is involved in the formation of sedimentary rocks, and chemical reactions are necessary for the transformation of rocks from one type to another. Without water and chemical reactions, the rock cycle would be severely limited, and many types of rocks would not be able to form. Chemical reactions, such as those involving acids and bases, are essential for the breakdown and transformation of rocks.</li>
-  <li><strong>Time and Erosion</strong>: Time and erosion are also essential dependencies of the rock cycle. The rock cycle is a slow process that occurs over thousands or millions of years, and erosion is necessary for the formation of sedimentary rocks. Without sufficient time and erosion, the rock cycle would not be able to proceed, and the Earth's geology would be very different. Erosion helps to break down rocks into sediments, which can then be compressed and cemented to form new rocks.</li>
-  <li><strong>Earth's Internal Heat</strong>: The Earth's internal heat is another critical dependency of the rock cycle. This heat is necessary for the formation of igneous rocks and for the transformation of rocks from one type to another. Without the Earth's internal heat, the rock cycle would not be able to occur, and the Earth's geology would be vastly different. The Earth's internal heat helps to drive the processes that shape the planet's surface, including the rock cycle.</li>
+<li><strong>Plate Tectonics</strong>: Plate tectonics is the movement of the Earth's lithosphere, which is the outermost solid layer of the planet. This movement is necessary for the rock cycle because it provides the forces that drive the transformation of rocks from one type to another. Without plate tectonics, the rock cycle would not be able to occur, and the Earth's geology would be vastly different. The absence of plate tectonics would mean that rocks would not be subjected to the high pressures and temperatures needed to transform them into different types.</li>
+<li><strong>Temperature and Pressure</strong>: Temperature and pressure are critical factors that control the rock cycle. Different temperatures and pressures are required for the formation of different types of rocks, and changes in these conditions can cause rocks to transform from one type to another. Without the right temperature and pressure conditions, the rock cycle would not be able to proceed, and rocks would not be able to form or transform. For example, the formation of igneous rocks requires high temperatures, while the formation of sedimentary rocks requires low temperatures and pressures.</li>
+<li><strong>Water and Chemical Reactions</strong>: Water and chemical reactions play a crucial role in the rock cycle. Water is involved in the formation of sedimentary rocks, and chemical reactions are necessary for the transformation of rocks from one type to another. Without water and chemical reactions, the rock cycle would be severely limited, and many types of rocks would not be able to form. Chemical reactions, such as those involving acids and bases, are essential for the breakdown and transformation of rocks.</li>
+<li><strong>Time and Erosion</strong>: Time and erosion are also essential dependencies of the rock cycle. The rock cycle is a slow process that occurs over thousands or millions of years, and erosion is necessary for the formation of sedimentary rocks. Without sufficient time and erosion, the rock cycle would not be able to proceed, and the Earth's geology would be very different. Erosion helps to break down rocks into sediments, which can then be compressed and cemented to form new rocks.</li>
+<li><strong>Earth's Internal Heat</strong>: The Earth's internal heat is another critical dependency of the rock cycle. This heat is necessary for the formation of igneous rocks and for the transformation of rocks from one type to another. Without the Earth's internal heat, the rock cycle would not be able to occur, and the Earth's geology would be vastly different. The Earth's internal heat helps to drive the processes that shape the planet's surface, including the rock cycle.</li>
 </ul>
-
-<p>3. ORDER OF IMPORTANCE</p>
+<ol>
+<li>ORDER OF IMPORTANCE</li>
+</ol>
 <p>While all the dependencies mentioned above are critical for the rock cycle, some are more important than others. Plate tectonics and the Earth's internal heat are probably the most critical dependencies, as they provide the driving forces for the rock cycle. Temperature and pressure are also essential, as they control the formation and transformation of rocks. Water and chemical reactions, as well as time and erosion, are also necessary, but they may be slightly less critical than the other dependencies.</p>
-
-<p>4. COMMON GAPS</p>
+<ol>
+<li>COMMON GAPS</li>
+</ol>
 <p>One common gap in people's understanding of the rock cycle is the assumption that it is a simple and straightforward process. However, the rock cycle is complex and involves many different factors and dependencies. Another common gap is the failure to recognize the importance of the Earth's internal heat and plate tectonics in driving the rock cycle. Additionally, some people may overlook the role of water and chemical reactions in the rock cycle, or assume that time and erosion are not essential components of the process.</p>
-
-<p>5. SUMMARY</p>
+<ol>
+<li>SUMMARY</li>
+</ol>
 <p>In summary, the rock cycle depends on several key factors, including plate tectonics, temperature and pressure, water and chemical reactions, time and erosion, and the Earth's internal heat. These dependencies are essential prerequisites that must be present for the rock cycle to occur, and they have a significant impact on our understanding of the Earth's geology. By recognizing the importance of these dependencies, we can gain a deeper understanding of the rock cycle and the processes that shape our planet. The rock cycle is a complex process that involves many different factors, and understanding its dependencies is crucial for grasping the underlying mechanisms that drive this process.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/science/dna-replication/what-is.html" class="related-link">Dna Replication</a>
-        <a href="/science/gravity/what-is.html" class="related-link">Gravity</a>
-        <a href="/science/osmosis/what-is.html" class="related-link">Osmosis</a>
-        <a href="/science/potential-energy/what-is.html" class="related-link">Potential Energy</a>
-        <a href="/science/precipitation/what-is.html" class="related-link">Precipitation</a>
-        <a href="/science/symbiosis/what-is.html" class="related-link">Symbiosis</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -427,6 +473,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

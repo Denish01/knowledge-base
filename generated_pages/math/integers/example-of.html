@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of integers - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Clear examples of integers from everyday life. Concrete illustrations to help you understand the concept.">
     <link rel="canonical" href="https://360library.com/math/integers/example-of.html">
     <meta property="og:title" content="Example of Integers">
-    <meta property="og:description" content="A clear, simple explanation of integers - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Clear examples of integers from everyday life. Concrete illustrations to help you understand the concept.">
     <meta property="og:url" content="https://360library.com/math/integers/example-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Example of Integers">
-    <meta name="twitter:description" content="A clear, simple explanation of integers - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Clear examples of integers from everyday life. Concrete illustrations to help you understand the concept.">
     <title>Example of Integers - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://360library.com/#math"}, {"@type": "ListItem", "position": 3, "name": "Integers", "item": "https://360library.com/math/integers/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Example"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Example of Integers", "description": "A clear, simple explanation of integers - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/integers/example-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/integers/example-of.html"}, "about": {"@type": "Thing", "name": "Integers"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Example of Integers", "description": "Clear examples of integers from everyday life. Concrete illustrations to help you understand the concept.", "url": "https://360library.com/math/integers/example-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/integers/example-of.html"}, "about": {"@type": "Thing", "name": "Integers"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,46 +388,46 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/integers/what-is.html">Integers</a><span>&rsaquo;</span>Example
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>Example of Integers</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION</p>
+            
+
+            <ol>
+<li>INTRODUCTION</li>
+</ol>
 <p>Integers are whole numbers, either positive, negative, or zero, without a fractional part. They are the basic building blocks of mathematics and are used to represent a wide range of quantities in various fields. Understanding integers is essential for performing mathematical operations, solving problems, and making informed decisions. In this page, we will explore various examples of integers in different contexts to illustrate their application and significance.</p>
-
-<p>2. EVERYDAY EXAMPLES</p>
+<ol>
+<li>EVERYDAY EXAMPLES</li>
+</ol>
 <p>Integers are used in everyday life to represent quantities, measurements, and counts. For instance, a person may have $25 in their wallet, which is an integer representing the amount of money they possess. The number of students in a class, such as 30, is also an integer. A recipe may require 15 minutes of cooking time, which is another example of an integer. Additionally, the number of floors in a building, like 20, is an integer that represents the total count of floors.</p>
-
 <p>In another scenario, a person may be 10 feet away from a landmark, which is an integer representing the distance. The number of pages in a book, such as 250, is also an integer. These examples demonstrate how integers are used to represent various quantities and measurements in daily life. Furthermore, integers are used in sports to keep track of scores, such as a basketball team winning by 12 points or a tennis player winning a game by 6 points.</p>
-
-<p>3. NOTABLE EXAMPLES</p>
+<ol>
+<li>NOTABLE EXAMPLES</li>
+</ol>
 <p>Integers have numerous applications in science, history, and culture. The number of planets in our solar system, 8, is a well-known integer. The number of notes in a musical octave, 12, is another example of an integer. In history, the number of apostles, 12, is a significant integer that represents the closest followers of Jesus Christ. The number of months in a year, 12, is also an integer that has been used for centuries to keep track of time.</p>
-
 <p>In science, integers are used to represent the number of protons in an atom, such as the 6 protons in a carbon atom. The number of sides of a polygon, such as a hexagon with 6 sides, is also an integer. These examples illustrate the significance of integers in various fields and how they are used to represent important quantities and concepts.</p>
-
-<p>4. EDGE CASES</p>
+<ol>
+<li>EDGE CASES</li>
+</ol>
 <p>Some integers may seem unusual or surprising, but they still qualify as valid examples. For instance, the number of sides of a polygon with a single side, 1, is an integer. Although it may seem counterintuitive, a polygon with one side is still a valid geometric shape, and the number 1 represents the count of its sides. Another example is the number of dimensions in a point, 0, which is also an integer. A point has no dimensions, but the number 0 represents the count of its dimensions.</p>
-
-<p>5. NON-EXAMPLES</p>
+<ol>
+<li>NON-EXAMPLES</li>
+</ol>
 <p>Some quantities may seem like integers but do not qualify as such. For example, the number of raindrops in a storm is not an integer because it is a continuous quantity that cannot be precisely counted. The number of grains of sand on a beach is also not an integer for the same reason. Additionally, the number of seconds in a minute, 60.0, is not an integer when expressed as a decimal, but the number 60 itself is an integer.</p>
-
-<p>6. PATTERN</p>
+<ol>
+<li>PATTERN</li>
+</ol>
 <p>Despite the diversity of examples, all valid integers share a common characteristic: they are whole numbers without a fractional part. Whether it is a small number like 5 or a large number like 1000, integers are always whole and never contain a fraction. This property makes integers a fundamental concept in mathematics, allowing us to perform arithmetic operations, compare quantities, and solve problems with precision and accuracy. By recognizing the pattern of whole numbers without fractions, we can identify integers in various contexts and apply mathematical principles to solve problems and make informed decisions. Integer values can be positive, negative, or zero, but they always follow the same pattern of being whole numbers. This understanding of integers is essential for building a strong foundation in mathematics and applying mathematical concepts to real-world problems.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/fractions/what-is.html" class="related-link">Fractions</a>
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/least-common-multiple/what-is.html" class="related-link">Least Common Multiple</a>
-        <a href="/math/linear-equations/what-is.html" class="related-link">Linear Equations</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/ratios/what-is.html" class="related-link">Ratios</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -427,6 +472,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

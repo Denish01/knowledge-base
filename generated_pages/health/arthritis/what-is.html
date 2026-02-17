@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/arthritis/what-is.html">Arthritis</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>What Is Arthritis?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Arthritis is a general term that refers to a group of conditions that cause inflammation and pain in the joints and surrounding tissues.</p>
-
 <p>Arthritis is a common health issue that affects people of all ages. It occurs when the joints, which are the points where two or more bones meet, become inflamed or damaged. This inflammation can cause pain, stiffness, and limited mobility in the affected joints. In some cases, arthritis can also affect other parts of the body, such as the skin, eyes, and internal organs.</p>
-
 <p>The symptoms of arthritis can vary depending on the type and severity of the condition. Some common symptoms include joint pain, swelling, and stiffness, as well as reduced range of motion and flexibility. In some cases, arthritis can also cause fatigue, fever, and a general feeling of being unwell. There are many different types of arthritis, each with its own unique set of symptoms and characteristics.</p>
-
 <p>The causes of arthritis are not always fully understood, but they can include a combination of genetic, environmental, and lifestyle factors. For example, some types of arthritis may be caused by an autoimmune response, in which the body's immune system mistakenly attacks healthy tissues. Other types of arthritis may be caused by wear and tear on the joints over time, or by infections or injuries.</p>
-
 <p>Key components of arthritis include:</p>
 <ul>
-  <li>Joint inflammation, which is the primary symptom of arthritis</li>
-  <li>Cartilage damage, which can occur when the joints become inflamed or damaged</li>
-  <li>Joint deformity, which can occur when the joints become severely damaged or deformed</li>
-  <li>Limited mobility, which can make it difficult to perform everyday activities</li>
-  <li>Chronic pain, which can have a significant impact on quality of life</li>
-  <li>Systemic symptoms, such as fatigue and fever, which can occur in some types of arthritis</li>
+<li>Joint inflammation, which is the primary symptom of arthritis</li>
+<li>Cartilage damage, which can occur when the joints become inflamed or damaged</li>
+<li>Joint deformity, which can occur when the joints become severely damaged or deformed</li>
+<li>Limited mobility, which can make it difficult to perform everyday activities</li>
+<li>Chronic pain, which can have a significant impact on quality of life</li>
+<li>Systemic symptoms, such as fatigue and fever, which can occur in some types of arthritis</li>
 </ul>
-
 <p>Common misconceptions about arthritis include:</p>
 <ul>
-  <li>That it only affects older people, when in fact it can affect people of all ages</li>
-  <li>That it is a single disease, when in fact it is a group of related conditions</li>
-  <li>That it is always caused by wear and tear on the joints, when in fact it can be caused by a variety of factors</li>
-  <li>That it is always debilitating, when in fact many people with arthritis are able to manage their symptoms and maintain an active lifestyle</li>
+<li>That it only affects older people, when in fact it can affect people of all ages</li>
+<li>That it is a single disease, when in fact it is a group of related conditions</li>
+<li>That it is always caused by wear and tear on the joints, when in fact it can be caused by a variety of factors</li>
+<li>That it is always debilitating, when in fact many people with arthritis are able to manage their symptoms and maintain an active lifestyle</li>
 </ul>
-
 <p>A real-world example of arthritis is a person who develops osteoarthritis in their hands after years of typing on a computer keyboard. Over time, the joints in their hands become inflamed and painful, making it difficult to perform everyday activities such as cooking or writing. With proper treatment and self-care, however, this person is able to manage their symptoms and maintain their independence.</p>
-
 <p>In summary, arthritis is a complex and multifaceted condition that can have a significant impact on a person's quality of life, but with proper understanding and management, it is possible to reduce its effects and maintain a healthy and active lifestyle.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/cardiology/what-is.html" class="related-link">Cardiology</a>
-        <a href="/health/chronic-pain/what-is.html" class="related-link">Chronic Pain</a>
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-        <a href="/health/urology/what-is.html" class="related-link">Urology</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

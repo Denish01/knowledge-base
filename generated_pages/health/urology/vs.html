@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of urology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of urology vs - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/urology/vs.html">
     <meta property="og:title" content="Urology Compared">
-    <meta property="og:description" content="A clear, simple explanation of urology - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of urology vs - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/urology/vs.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Urology Compared">
-    <meta name="twitter:description" content="A clear, simple explanation of urology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of urology vs - definition, key concepts, examples, and common misconceptions.">
     <title>Urology Compared - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Urology", "item": "https://360library.com/health/urology/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Comparison"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Urology Compared", "description": "A clear, simple explanation of urology - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/urology/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/urology/vs.html"}, "about": {"@type": "Thing", "name": "Urology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Urology Compared", "description": "A clear, simple explanation of urology vs - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/urology/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/urology/vs.html"}, "about": {"@type": "Thing", "name": "Urology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/urology/what-is.html">Urology</a><span>&rsaquo;</span>Comparison
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Urology Compared</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Urology is a branch of medicine that focuses on the diagnosis, treatment, and management of disorders and diseases related to the urinary tract and male reproductive system.</p>
-
 <p>The urinary tract is a system that produces, stores, and eliminates urine from the body. It consists of the kidneys, ureters, bladder, and urethra. Urology is a complex field that requires a deep understanding of the anatomy and physiology of the urinary tract, as well as the various diseases and conditions that can affect it. Urologists are medical doctors who specialize in the treatment of urinary tract and male reproductive system disorders, and they use a range of diagnostic tools and techniques to identify and manage these conditions.</p>
-
 <p>Urologists treat a wide range of conditions, including kidney stones, bladder infections, and prostate problems. They also perform surgical procedures, such as kidney transplants and vasectomies. In addition to treating specific diseases and disorders, urologists also provide preventive care and education to help patients maintain good urinary tract health. This can include advice on diet and lifestyle, as well as guidance on how to prevent common urinary tract problems, such as kidney stones and urinary tract infections.</p>
-
 <p>The field of urology is constantly evolving, with new technologies and treatments being developed all the time. However, the fundamental principles of urology remain the same, and urologists must have a strong foundation in the anatomy, physiology, and pathology of the urinary tract in order to provide effective care to their patients. Urologists work in a variety of settings, including hospitals, clinics, and private practices, and they often collaborate with other healthcare professionals, such as primary care physicians and radiologists, to provide comprehensive care to their patients.</p>
-
 <p>Key components of urology include:</p>
 <ul>
-  <li>The kidneys, which filter waste and excess fluids from the blood and produce urine</li>
-  <li>The ureters, which carry urine from the kidneys to the bladder</li>
-  <li>The bladder, which stores urine until it is eliminated from the body</li>
-  <li>The urethra, which carries urine out of the body</li>
-  <li>The prostate gland, which produces fluids that make up semen</li>
-  <li>The male reproductive system, which includes the testes, epididymis, and vas deferens</li>
+<li>The kidneys, which filter waste and excess fluids from the blood and produce urine</li>
+<li>The ureters, which carry urine from the kidneys to the bladder</li>
+<li>The bladder, which stores urine until it is eliminated from the body</li>
+<li>The urethra, which carries urine out of the body</li>
+<li>The prostate gland, which produces fluids that make up semen</li>
+<li>The male reproductive system, which includes the testes, epididymis, and vas deferens</li>
 </ul>
-
 <p>Common misconceptions about urology include:</p>
 <ul>
-  <li>That urology only deals with male health issues, when in fact urologists also treat female urinary tract problems</li>
-  <li>That urinary tract infections are only caused by poor hygiene, when in fact they can be caused by a range of factors, including bacterial infections and underlying medical conditions</li>
-  <li>That kidney stones are only caused by dehydration, when in fact they can be caused by a range of factors, including diet, genetics, and underlying medical conditions</li>
-  <li>That prostate problems only affect older men, when in fact they can affect men of all ages</li>
+<li>That urology only deals with male health issues, when in fact urologists also treat female urinary tract problems</li>
+<li>That urinary tract infections are only caused by poor hygiene, when in fact they can be caused by a range of factors, including bacterial infections and underlying medical conditions</li>
+<li>That kidney stones are only caused by dehydration, when in fact they can be caused by a range of factors, including diet, genetics, and underlying medical conditions</li>
+<li>That prostate problems only affect older men, when in fact they can affect men of all ages</li>
 </ul>
-
 <p>A real-world example of urology in action is a patient who experiences recurring kidney stones. The patient may see a urologist, who will use diagnostic tests such as imaging studies and blood work to determine the cause of the kidney stones. The urologist may then recommend lifestyle changes, such as increasing fluid intake and avoiding certain foods, to help prevent future kidney stones. In some cases, the urologist may also recommend surgical procedures, such as lithotripsy, to break up and remove the kidney stones.</p>
-
 <p>Urology is a vital branch of medicine that plays a critical role in maintaining the health and well-being of individuals by providing diagnosis, treatment, and management of disorders and diseases related to the urinary tract and male reproductive system.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/arthritis/what-is.html" class="related-link">Arthritis</a>
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-        <a href="/health/substance-abuse/what-is.html" class="related-link">Substance Abuse</a>
-        <a href="/health/toxicology/what-is.html" class="related-link">Toxicology</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

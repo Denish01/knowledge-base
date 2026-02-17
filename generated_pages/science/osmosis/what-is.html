@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#science">Science</a><span>&rsaquo;</span><a href="/science/osmosis/what-is.html">Osmosis</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #0891B2">
     <main class="article-main">
         <article>
             <h1>What Is Osmosis?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Osmosis is the movement of water molecules from a region of high concentration to a region of low concentration through a selectively permeable membrane, which is a barrier that allows certain molecules to pass through while keeping others out.</p>
-
 <p>Osmosis is an essential process that occurs in living organisms, helping to regulate the balance of fluids and nutrients within cells. It is a type of diffusion, which is the movement of particles from an area of high concentration to an area of low concentration. In the case of osmosis, the particles are water molecules, and the movement is driven by the concentration gradient, or the difference in concentration of water molecules on either side of the membrane. This process is crucial for maintaining proper cell function and overall health.</p>
-
 <p>The selectively permeable membrane plays a critical role in osmosis, as it controls the movement of water molecules and other substances in and out of the cell. The membrane is semi-permeable, meaning it allows certain molecules to pass through while keeping others out. This is important because it helps to regulate the balance of fluids and nutrients within the cell, and it also helps to maintain the proper concentration of waste products. In addition, the membrane helps to protect the cell from external factors, such as changes in temperature or pH, that could disrupt normal cell function.</p>
-
 <p>The process of osmosis is also influenced by the concentration of solutes, or dissolved substances, within the cell. When a cell is placed in a solution with a high concentration of solutes, water molecules will flow out of the cell, causing it to shrink. This is known as hypertonic solution. On the other hand, when a cell is placed in a solution with a low concentration of solutes, water molecules will flow into the cell, causing it to swell. This is known as hypotonic solution. Isotonic solution, where the concentration of solutes is equal to that of the cell, will not cause any significant change in the cell.</p>
-
 <p>Key components of osmosis include:</p>
 <ul>
-  <li>Selectively permeable membrane: a barrier that allows certain molecules to pass through while keeping others out</li>
-  <li>Concentration gradient: the difference in concentration of water molecules on either side of the membrane</li>
-  <li>Solutes: dissolved substances that can affect the movement of water molecules</li>
-  <li>Hypertonic solution: a solution with a high concentration of solutes that causes water molecules to flow out of the cell</li>
-  <li>Hypotonic solution: a solution with a low concentration of solutes that causes water molecules to flow into the cell</li>
-  <li>Isotonic solution: a solution with a concentration of solutes equal to that of the cell, which will not cause any significant change in the cell</li>
+<li>Selectively permeable membrane: a barrier that allows certain molecules to pass through while keeping others out</li>
+<li>Concentration gradient: the difference in concentration of water molecules on either side of the membrane</li>
+<li>Solutes: dissolved substances that can affect the movement of water molecules</li>
+<li>Hypertonic solution: a solution with a high concentration of solutes that causes water molecules to flow out of the cell</li>
+<li>Hypotonic solution: a solution with a low concentration of solutes that causes water molecules to flow into the cell</li>
+<li>Isotonic solution: a solution with a concentration of solutes equal to that of the cell, which will not cause any significant change in the cell</li>
 </ul>
-
 <p>There are several common misconceptions about osmosis, including:</p>
 <ul>
-  <li>The idea that osmosis only occurs in living organisms, when in fact it can occur in any system with a selectively permeable membrane</li>
-  <li>The notion that osmosis is a rapid process, when in fact it can occur slowly over time</li>
-  <li>The belief that osmosis is only important for maintaining proper cell function, when in fact it also plays a critical role in regulating the balance of fluids and nutrients within the body as a whole</li>
-  <li>The assumption that osmosis is a simple process, when in fact it is influenced by a complex array of factors, including the concentration of solutes and the properties of the selectively permeable membrane</li>
+<li>The idea that osmosis only occurs in living organisms, when in fact it can occur in any system with a selectively permeable membrane</li>
+<li>The notion that osmosis is a rapid process, when in fact it can occur slowly over time</li>
+<li>The belief that osmosis is only important for maintaining proper cell function, when in fact it also plays a critical role in regulating the balance of fluids and nutrients within the body as a whole</li>
+<li>The assumption that osmosis is a simple process, when in fact it is influenced by a complex array of factors, including the concentration of solutes and the properties of the selectively permeable membrane</li>
 </ul>
-
 <p>A real-world example of osmosis is the process by which a cucumber becomes a pickle. When a cucumber is placed in a brine solution, which is a solution with a high concentration of salt, water molecules will flow out of the cucumber, causing it to shrink. This process helps to preserve the cucumber by removing excess water and creating an environment that is not favorable to the growth of microorganisms.</p>
-
 <p>In summary, osmosis is the movement of water molecules from a region of high concentration to a region of low concentration through a selectively permeable membrane, which is essential for maintaining proper cell function and overall health.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/science/dna-replication/what-is.html" class="related-link">Dna Replication</a>
-        <a href="/science/gravity/what-is.html" class="related-link">Gravity</a>
-        <a href="/science/natural-selection/what-is.html" class="related-link">Natural Selection</a>
-        <a href="/science/nitrogen-cycle/what-is.html" class="related-link">Nitrogen Cycle</a>
-        <a href="/science/photosynthesis/what-is.html" class="related-link">Photosynthesis</a>
-        <a href="/science/potential-energy/what-is.html" class="related-link">Potential Energy</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

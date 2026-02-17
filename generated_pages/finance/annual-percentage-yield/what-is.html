@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#finance">Finance</a><span>&rsaquo;</span><a href="/finance/annual-percentage-yield/what-is.html">Annual Percentage Yield</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #1B4D8E">
     <main class="article-main">
         <article>
             <h1>What Is Annual Percentage Yield?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Annual percentage yield is a measure of the total interest earned on a deposit or investment over a year, taking into account the effect of compounding.</p>
-
 <p>The annual percentage yield, or APY, is an important concept in personal finance and investing. It helps individuals understand how much interest they can earn on their savings or investments over time. The APY is calculated by considering the interest rate and the frequency of compounding, which is the process of adding interest to the principal amount at regular intervals. This means that the interest earned in one period becomes the base for the next period, resulting in a snowball effect that can significantly increase the total amount over time.</p>
-
 <p>To understand the APY, it's essential to know how compounding works. Compounding can occur at different frequencies, such as daily, monthly, or annually. The more frequently interest is compounded, the higher the APY will be. For example, if a savings account has an interest rate of 2% per year, compounded daily, the APY will be higher than if it were compounded annually. This is because the daily compounding allows the interest to be added to the principal more frequently, resulting in a higher total amount at the end of the year.</p>
-
 <p>The APY is also affected by the interest rate, which is the percentage of the principal amount that is paid as interest over a year. A higher interest rate will result in a higher APY, assuming the same compounding frequency. Additionally, the APY can be influenced by fees and other charges associated with the account or investment. These fees can reduce the total interest earned, resulting in a lower APY.</p>
-
 <p>The key components of the annual percentage yield include:</p>
 <ul>
-  <li>Interest rate: the percentage of the principal amount that is paid as interest over a year</li>
-  <li>Compounding frequency: the number of times interest is added to the principal amount per year</li>
-  <li>Principal amount: the initial amount deposited or invested</li>
-  <li>Time: the length of time the money is deposited or invested for</li>
-  <li>Fees and charges: any costs associated with the account or investment that can reduce the total interest earned</li>
-  <li>Compounding method: the way in which interest is added to the principal amount, such as daily, monthly, or annually</li>
+<li>Interest rate: the percentage of the principal amount that is paid as interest over a year</li>
+<li>Compounding frequency: the number of times interest is added to the principal amount per year</li>
+<li>Principal amount: the initial amount deposited or invested</li>
+<li>Time: the length of time the money is deposited or invested for</li>
+<li>Fees and charges: any costs associated with the account or investment that can reduce the total interest earned</li>
+<li>Compounding method: the way in which interest is added to the principal amount, such as daily, monthly, or annually</li>
 </ul>
-
 <p>Despite its importance, the annual percentage yield is often misunderstood. Some common misconceptions about the APY include:</p>
 <ul>
-  <li>Assuming that the APY is the same as the interest rate, when in fact it takes into account the effect of compounding</li>
-  <li>Failing to consider the compounding frequency and its impact on the APY</li>
-  <li>Not accounting for fees and charges that can reduce the total interest earned</li>
-  <li>Believing that the APY is a guaranteed rate of return, when in fact it can vary depending on market conditions and other factors</li>
+<li>Assuming that the APY is the same as the interest rate, when in fact it takes into account the effect of compounding</li>
+<li>Failing to consider the compounding frequency and its impact on the APY</li>
+<li>Not accounting for fees and charges that can reduce the total interest earned</li>
+<li>Believing that the APY is a guaranteed rate of return, when in fact it can vary depending on market conditions and other factors</li>
 </ul>
-
 <p>For example, suppose an individual deposits $1,000 into a savings account with an interest rate of 2% per year, compounded daily. If the interest is compounded daily, the APY will be approximately 2.02%, resulting in a total amount of $1,020.20 at the end of the year. This example illustrates how the APY can help individuals understand the total interest they can earn on their savings over time.</p>
-
 <p>In summary, the annual percentage yield is a measure of the total interest earned on a deposit or investment over a year, taking into account the effect of compounding, and is an essential concept for individuals to understand when making decisions about their savings and investments.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/finance/amortization-schedule/what-is.html" class="related-link">Amortization Schedule</a>
-        <a href="/finance/annual-percentage-rate/what-is.html" class="related-link">Annual Percentage Rate</a>
-        <a href="/finance/asset-allocation/what-is.html" class="related-link">Asset Allocation</a>
-        <a href="/finance/bond-yield/what-is.html" class="related-link">Bond Yield</a>
-        <a href="/finance/capital-gains-tax/what-is.html" class="related-link">Capital Gains Tax</a>
-        <a href="/finance/emergency-fund/what-is.html" class="related-link">Emergency Fund</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -434,6 +467,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

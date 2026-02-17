@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of mean median mode - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of mean median mode - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/math/mean-median-mode/types-of.html">
     <meta property="og:title" content="Types of Mean Median Mode">
-    <meta property="og:description" content="A clear, simple explanation of mean median mode - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of mean median mode - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/math/mean-median-mode/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Mean Median Mode">
-    <meta name="twitter:description" content="A clear, simple explanation of mean median mode - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of mean median mode - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Mean Median Mode - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://360library.com/#math"}, {"@type": "ListItem", "position": 3, "name": "Mean Median Mode", "item": "https://360library.com/math/mean-median-mode/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Mean Median Mode", "description": "A clear, simple explanation of mean median mode - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/mean-median-mode/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/mean-median-mode/types-of.html"}, "about": {"@type": "Thing", "name": "Mean Median Mode"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Mean Median Mode", "description": "A clear, simple explanation of types of mean median mode - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/mean-median-mode/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/mean-median-mode/types-of.html"}, "about": {"@type": "Thing", "name": "Mean Median Mode"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,218 +388,70 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/mean-median-mode/what-is.html">Mean Median Mode</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>Types of Mean Median Mode</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
-<style>
-.calculator {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 24px 0;
-}
-.calculator h3 {
-    margin-top: 0;
-    color: #1a73e8;
-}
-.calc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 16px;
-}
-.calculator label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-}
-.calculator input, .calculator select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.calculator button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.calculator button:hover {
-    background: #1557b0;
-}
-.calc-result {
-    margin-top: 16px;
-    padding: 12px;
-    background: white;
-    border-radius: 4px;
-    border-left: 4px solid #1a73e8;
-}
-.calc-result p {
-    margin: 8px 0;
-}
-.calc-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.tab-btn {
-    background: #e0e0e0;
-    color: #333;
-}
-.tab-btn.active {
-    background: #1a73e8;
-    color: white;
-}
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-</style>
 
-<div class="calculator" id="stats-calc">
-    <h3>Statistics Calculator</h3>
-    <label>Enter numbers (comma-separated):
-        <input type="text" id="stats-input" value="5, 10, 15, 20, 20, 25, 30" style="width:100%">
-    </label>
-    <button onclick="calculateStats()">Calculate</button>
-    <div class="calc-result" id="stats-result"></div>
-</div>
-<script>
-function calculateStats() {
-    const input = document.getElementById('stats-input').value;
-    const nums = input.split(',').map(n => parseFloat(n.trim())).filter(n => !isNaN(n)).sort((a,b) => a-b);
-
-    if (nums.length === 0) {
-        document.getElementById('stats-result').innerHTML = '<p>Please enter valid numbers</p>';
-        return;
-    }
-
-    // Mean
-    const mean = nums.reduce((a,b) => a+b, 0) / nums.length;
-
-    // Median
-    const mid = Math.floor(nums.length / 2);
-    const median = nums.length % 2 ? nums[mid] : (nums[mid-1] + nums[mid]) / 2;
-
-    // Mode
-    const freq = {};
-    nums.forEach(n => freq[n] = (freq[n] || 0) + 1);
-    const maxFreq = Math.max(...Object.values(freq));
-    const modes = Object.keys(freq).filter(k => freq[k] === maxFreq);
-    const modeStr = maxFreq === 1 ? 'No mode' : modes.join(', ');
-
-    // Range
-    const range = nums[nums.length-1] - nums[0];
-
-    document.getElementById('stats-result').innerHTML = `
-        <p><strong>Mean (Average):</strong> ${mean.toFixed(2)}</p>
-        <p><strong>Median (Middle):</strong> ${median.toFixed(2)}</p>
-        <p><strong>Mode (Most Frequent):</strong> ${modeStr}</p>
-        <p><strong>Range:</strong> ${range.toFixed(2)}</p>
-        <p><strong>Count:</strong> ${nums.length} numbers</p>
-    `;
-}
-calculateStats();
-</script>
-
-
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>The types of mean, median, and mode are fundamental concepts in statistics, used to describe and analyze data. Classification of these measures of central tendency is essential to understand the characteristics of a dataset and make informed decisions. By categorizing mean, median, and mode, individuals can better comprehend the nature of their data, identify patterns, and apply the appropriate statistical methods to solve problems. Understanding the different types of mean, median, and mode enables individuals to accurately interpret and communicate their findings, making it a crucial aspect of data analysis.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the primary types of mean, median, and mode:</p>
 <ul>
-  <li><strong>Arithmetic Mean</strong></li>
-  <li>Definition: The arithmetic mean, also known as the average, is a measure of central tendency that calculates the sum of all values and divides it by the number of values. It is the most commonly used type of mean.</li>
-  <li>Key characteristics: The arithmetic mean is sensitive to extreme values and is suitable for datasets with symmetric distributions.</li>
-  <li>Example: The arithmetic mean of the numbers 2, 4, 6, 8, and 10 is (2 + 4 + 6 + 8 + 10) / 5 = 30 / 5 = 6.</li>
-  <li><strong>Geometric Mean</strong></li>
-  <li>Definition: The geometric mean is a measure of central tendency that calculates the nth root of the product of n values. It is used for datasets with skewed distributions and is particularly useful for calculating rates of change.</li>
-  <li>Key characteristics: The geometric mean is less sensitive to extreme values compared to the arithmetic mean and is suitable for datasets with positive values.</li>
-  <li>Example: The geometric mean of the numbers 2, 4, 6, and 8 is the fourth root of (2 * 4 * 6 * 8) = fourth root of 384 = 4.57.</li>
-  <li><strong>Harmonic Mean</strong></li>
-  <li>Definition: The harmonic mean is a measure of central tendency that calculates the reciprocal of the arithmetic mean of the reciprocals of the values. It is used for datasets with rates and ratios.</li>
-  <li>Key characteristics: The harmonic mean is less sensitive to extreme values compared to the arithmetic mean and is suitable for datasets with positive values.</li>
-  <li>Example: The harmonic mean of the numbers 2, 4, 6, and 8 is 4 / (1/2 + 1/4 + 1/6 + 1/8) = 4 / (0.5 + 0.25 + 0.17 + 0.125) = 4 / 1.015 = 3.94.</li>
-  <li><strong>Median</strong></li>
-  <li>Definition: The median is a measure of central tendency that represents the middle value of a dataset when it is sorted in ascending or descending order. If there are an even number of values, the median is the average of the two middle values.</li>
-  <li>Key characteristics: The median is less sensitive to extreme values compared to the arithmetic mean and is suitable for datasets with skewed distributions.</li>
-  <li>Example: The median of the numbers 2, 4, 6, 8, and 10 is 6, which is the middle value.</li>
-  <li><strong>Mode</strong></li>
-  <li>Definition: The mode is a measure of central tendency that represents the most frequently occurring value in a dataset.</li>
-  <li>Key characteristics: The mode can be used for both numerical and categorical data and is suitable for datasets with multiple peaks.</li>
-  <li>Example: The mode of the numbers 2, 4, 4, 6, 8, and 10 is 4, which is the most frequently occurring value.</li>
+<li><strong>Arithmetic Mean</strong></li>
+<li>Definition: The arithmetic mean, also known as the average, is a measure of central tendency that calculates the sum of all values and divides it by the number of values. It is the most commonly used type of mean.</li>
+<li>Key characteristics: The arithmetic mean is sensitive to extreme values and is suitable for datasets with symmetric distributions.</li>
+<li>Example: The arithmetic mean of the numbers 2, 4, 6, 8, and 10 is (2 + 4 + 6 + 8 + 10) / 5 = 30 / 5 = 6.</li>
+<li><strong>Geometric Mean</strong></li>
+<li>Definition: The geometric mean is a measure of central tendency that calculates the nth root of the product of n values. It is used for datasets with skewed distributions and is particularly useful for calculating rates of change.</li>
+<li>Key characteristics: The geometric mean is less sensitive to extreme values compared to the arithmetic mean and is suitable for datasets with positive values.</li>
+<li>Example: The geometric mean of the numbers 2, 4, 6, and 8 is the fourth root of (2 * 4 * 6 * 8) = fourth root of 384 = 4.57.</li>
+<li><strong>Harmonic Mean</strong></li>
+<li>Definition: The harmonic mean is a measure of central tendency that calculates the reciprocal of the arithmetic mean of the reciprocals of the values. It is used for datasets with rates and ratios.</li>
+<li>Key characteristics: The harmonic mean is less sensitive to extreme values compared to the arithmetic mean and is suitable for datasets with positive values.</li>
+<li>Example: The harmonic mean of the numbers 2, 4, 6, and 8 is 4 / (1/2 + 1/4 + 1/6 + 1/8) = 4 / (0.5 + 0.25 + 0.17 + 0.125) = 4 / 1.015 = 3.94.</li>
+<li><strong>Median</strong></li>
+<li>Definition: The median is a measure of central tendency that represents the middle value of a dataset when it is sorted in ascending or descending order. If there are an even number of values, the median is the average of the two middle values.</li>
+<li>Key characteristics: The median is less sensitive to extreme values compared to the arithmetic mean and is suitable for datasets with skewed distributions.</li>
+<li>Example: The median of the numbers 2, 4, 6, 8, and 10 is 6, which is the middle value.</li>
+<li><strong>Mode</strong></li>
+<li>Definition: The mode is a measure of central tendency that represents the most frequently occurring value in a dataset.</li>
+<li>Key characteristics: The mode can be used for both numerical and categorical data and is suitable for datasets with multiple peaks.</li>
+<li>Example: The mode of the numbers 2, 4, 4, 6, 8, and 10 is 4, which is the most frequently occurring value.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
 <p>The following table summarizes the differences between the types of mean, median, and mode:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Arithmetic Mean</td>
-<td>Sum of values divided by the number of values</td>
-<td>Sensitive to extreme values, suitable for symmetric distributions</td>
-<td>(2 + 4 + 6 + 8 + 10) / 5 = 6</td>
-</tr>
-<tr>
-<td>Geometric Mean</td>
-<td>nth root of the product of n values</td>
-<td>Less sensitive to extreme values, suitable for skewed distributions</td>
-<td>fourth root of (2 * 4 * 6 * 8) = 4.57</td>
-</tr>
-<tr>
-<td>Harmonic Mean</td>
-<td>Reciprocal of the arithmetic mean of the reciprocals of the values</td>
-<td>Less sensitive to extreme values, suitable for datasets with rates and ratios</td>
-<td>4 / (1/2 + 1/4 + 1/6 + 1/8) = 3.94</td>
-</tr>
-<tr>
-<td>Median</td>
-<td>Middle value of a sorted dataset</td>
-<td>Less sensitive to extreme values, suitable for skewed distributions</td>
-<td>6</td>
-</tr>
-<tr>
-<td>Mode</td>
-<td>Most frequently occurring value</td>
-<td>Suitable for numerical and categorical data, suitable for datasets with multiple peaks</td>
-<td>4</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Arithmetic Mean</td><td>Sum of values divided by the number of values</td><td>Sensitive to extreme values, suitable for symmetric distributions</td><td>(2 + 4 + 6 + 8 + 10) / 5 = 6</td></tr>
+<tr><td>Geometric Mean</td><td>nth root of the product of n values</td><td>Less sensitive to extreme values, suitable for skewed distributions</td><td>fourth root of (2 * 4 * 6 * 8) = 4.57</td></tr>
+<tr><td>Harmonic Mean</td><td>Reciprocal of the arithmetic mean of the reciprocals of the values</td><td>Less sensitive to extreme values, suitable for datasets with rates and ratios</td><td>4 / (1/2 + 1/4 + 1/6 + 1/8) = 3.94</td></tr>
+<tr><td>Median</td><td>Middle value of a sorted dataset</td><td>Less sensitive to extreme values, suitable for skewed distributions</td><td>6</td></tr>
+<tr><td>Mode</td><td>Most frequently occurring value</td><td>Suitable for numerical and categorical data, suitable for datasets with multiple peaks</td><td>4</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The types of mean, median, and mode are interconnected and can be used together to provide a comprehensive understanding of a dataset. The arithmetic mean, geometric mean, and harmonic mean are all measures of central tendency that can be used to describe the average value of a dataset. The median and mode, on the other hand, provide additional information about the distribution of the data and can be used to identify patterns and outliers. By using a combination of these measures, individuals can gain a deeper understanding of their data and make more informed decisions.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of mean, median, and mode provides a framework for understanding the different types of measures of central tendency, including the arithmetic mean, geometric mean, harmonic mean, median, and mode, each with its unique characteristics and applications.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/least-common-multiple/what-is.html" class="related-link">Least Common Multiple</a>
-        <a href="/math/linear-equations/what-is.html" class="related-link">Linear Equations</a>
-        <a href="/math/order-of-operations/what-is.html" class="related-link">Order Of Operations</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/ratios/what-is.html" class="related-link">Ratios</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -599,6 +496,9 @@ calculateStats();
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

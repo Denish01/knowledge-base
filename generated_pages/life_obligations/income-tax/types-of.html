@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of income tax - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of income tax - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/income-tax/types-of.html">
     <meta property="og:title" content="Types of Income Tax">
-    <meta property="og:description" content="A clear, simple explanation of income tax - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of income tax - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/income-tax/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Income Tax">
-    <meta name="twitter:description" content="A clear, simple explanation of income tax - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of income tax - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Income Tax - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Income Tax", "item": "https://360library.com/life_obligations/income-tax/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Income Tax", "description": "A clear, simple explanation of income tax - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/income-tax/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/income-tax/types-of.html"}, "about": {"@type": "Thing", "name": "Income Tax"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Income Tax", "description": "A clear, simple explanation of types of income tax - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/income-tax/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/income-tax/types-of.html"}, "about": {"@type": "Thing", "name": "Income Tax"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,102 +388,60 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/income-tax/what-is.html">Income Tax</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Income Tax</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION</p>
+            
 
+            <ol>
+<li>INTRODUCTION</li>
+</ol>
 <p>Income tax is a crucial aspect of a country's financial system, and understanding the different types of income tax is essential for individuals and businesses to manage their financial obligations effectively. Classification of income tax is important because it helps individuals and organizations determine which tax rules apply to them, how much tax they need to pay, and what deductions and exemptions they are eligible for. The various types of income tax are categorized based on factors such as the source of income, the type of taxpayer, and the tax jurisdiction. In this article, we will explore the main categories of income tax, their characteristics, and how they relate to each other.</p>
-
-<p>2. MAIN CATEGORIES</p>
-
+<ol>
+<li>MAIN CATEGORIES</li>
+</ol>
 <p>The following are the main types of income tax:</p>
 <ul>
-  <li><strong>Individual Income Tax</strong>: This type of tax is levied on the income earned by individuals, including wages, salaries, tips, and investment income. Key characteristics of individual income tax include progressive tax rates, personal exemptions, and deductions for items such as mortgage interest and charitable donations. For example, an individual who earns a salary of $50,000 per year and has a mortgage interest deduction of $10,000 may be eligible for a lower tax rate.</li>
-  <li><strong>Corporate Income Tax</strong>: This type of tax is imposed on the profits earned by corporations and other business entities. Key characteristics of corporate income tax include a flat tax rate, deductions for business expenses, and credits for items such as research and development. For example, a corporation that earns $100,000 in profits and has $20,000 in business expenses may be eligible for a tax credit.</li>
-  <li><strong>Capital Gains Tax</strong>: This type of tax is levied on the profits earned from the sale of capital assets, such as stocks, bonds, and real estate. Key characteristics of capital gains tax include a lower tax rate than ordinary income tax, a holding period requirement, and exemptions for certain types of assets. For example, an individual who sells a stock for a $10,000 profit after holding it for one year may be eligible for a lower tax rate.</li>
-  <li><strong>Withholding Tax</strong>: This type of tax is deducted from an individual's income at the source, such as from wages or dividends. Key characteristics of withholding tax include a fixed tax rate, no deductions or exemptions, and a requirement for the payer to remit the tax to the government. For example, an employer may withhold 20% of an employee's wages and remit the tax to the government on behalf of the employee.</li>
-  <li><strong>Value-Added Tax (VAT)</strong>: This type of tax is levied on the value added to goods and services at each stage of production and distribution. Key characteristics of VAT include a flat tax rate, a credit system for businesses, and exemptions for certain types of goods and services. For example, a business that produces a product with a value of $100 and adds $20 in value may be eligible for a VAT credit.</li>
-  <li><strong>Property Tax</strong>: This type of tax is imposed on the ownership of real property, such as land and buildings. Key characteristics of property tax include a tax rate based on the value of the property, exemptions for certain types of property, and a requirement for the owner to pay the tax annually. For example, a homeowner who owns a property worth $200,000 may be required to pay an annual property tax of $2,000.</li>
-  <li><strong>Inheritance Tax</strong>: This type of tax is levied on the transfer of wealth from one generation to the next, such as through inheritance or gifts. Key characteristics of inheritance tax include a tax rate based on the value of the estate, exemptions for certain types of assets, and a requirement for the estate to pay the tax within a certain timeframe. For example, an estate worth $500,000 may be eligible for an exemption of $100,000, resulting in a tax liability of $20,000.</li>
+<li><strong>Individual Income Tax</strong>: This type of tax is levied on the income earned by individuals, including wages, salaries, tips, and investment income. Key characteristics of individual income tax include progressive tax rates, personal exemptions, and deductions for items such as mortgage interest and charitable donations. For example, an individual who earns a salary of $50,000 per year and has a mortgage interest deduction of $10,000 may be eligible for a lower tax rate.</li>
+<li><strong>Corporate Income Tax</strong>: This type of tax is imposed on the profits earned by corporations and other business entities. Key characteristics of corporate income tax include a flat tax rate, deductions for business expenses, and credits for items such as research and development. For example, a corporation that earns $100,000 in profits and has $20,000 in business expenses may be eligible for a tax credit.</li>
+<li><strong>Capital Gains Tax</strong>: This type of tax is levied on the profits earned from the sale of capital assets, such as stocks, bonds, and real estate. Key characteristics of capital gains tax include a lower tax rate than ordinary income tax, a holding period requirement, and exemptions for certain types of assets. For example, an individual who sells a stock for a $10,000 profit after holding it for one year may be eligible for a lower tax rate.</li>
+<li><strong>Withholding Tax</strong>: This type of tax is deducted from an individual's income at the source, such as from wages or dividends. Key characteristics of withholding tax include a fixed tax rate, no deductions or exemptions, and a requirement for the payer to remit the tax to the government. For example, an employer may withhold 20% of an employee's wages and remit the tax to the government on behalf of the employee.</li>
+<li><strong>Value-Added Tax (VAT)</strong>: This type of tax is levied on the value added to goods and services at each stage of production and distribution. Key characteristics of VAT include a flat tax rate, a credit system for businesses, and exemptions for certain types of goods and services. For example, a business that produces a product with a value of $100 and adds $20 in value may be eligible for a VAT credit.</li>
+<li><strong>Property Tax</strong>: This type of tax is imposed on the ownership of real property, such as land and buildings. Key characteristics of property tax include a tax rate based on the value of the property, exemptions for certain types of property, and a requirement for the owner to pay the tax annually. For example, a homeowner who owns a property worth $200,000 may be required to pay an annual property tax of $2,000.</li>
+<li><strong>Inheritance Tax</strong>: This type of tax is levied on the transfer of wealth from one generation to the next, such as through inheritance or gifts. Key characteristics of inheritance tax include a tax rate based on the value of the estate, exemptions for certain types of assets, and a requirement for the estate to pay the tax within a certain timeframe. For example, an estate worth $500,000 may be eligible for an exemption of $100,000, resulting in a tax liability of $20,000.</li>
 </ul>
-
-<p>3. COMPARISON TABLE</p>
-
+<ol>
+<li>COMPARISON TABLE</li>
+</ol>
 <p>The following table summarizes the main differences between the types of income tax:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Tax</th>
-<th>Tax Rate</th>
-<th>Tax Base</th>
-<th>Exemptions and Deductions</th>
-</tr></thead><tbody>
-<tr>
-<td>Individual Income Tax</td>
-<td>Progressive</td>
-<td>Income earned by individuals</td>
-<td>Personal exemptions, mortgage interest, charitable donations</td>
-</tr>
-<tr>
-<td>Corporate Income Tax</td>
-<td>Flat</td>
-<td>Profits earned by corporations</td>
-<td>Business expenses, research and development credits</td>
-</tr>
-<tr>
-<td>Capital Gains Tax</td>
-<td>Lower than ordinary income tax</td>
-<td>Profits from sale of capital assets</td>
-<td>Holding period requirement, exemptions for certain assets</td>
-</tr>
-<tr>
-<td>Withholding Tax</td>
-<td>Fixed</td>
-<td>Income at source</td>
-<td>No deductions or exemptions</td>
-</tr>
-<tr>
-<td>Value-Added Tax (VAT)</td>
-<td>Flat</td>
-<td>Value added to goods and services</td>
-<td>Credit system for businesses, exemptions for certain goods and services</td>
-</tr>
-<tr>
-<td>Property Tax</td>
-<td>Based on property value</td>
-<td>Ownership of real property</td>
-<td>Exemptions for certain types of property</td>
-</tr>
-<tr>
-<td>Inheritance Tax</td>
-<td>Based on estate value</td>
-<td>Transfer of wealth</td>
-<td>Exemptions for certain types of assets</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE</p>
-
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Tax</th><th>Tax Rate</th><th>Tax Base</th><th>Exemptions and Deductions</th></tr></thead><tbody>
+<tr><td>Individual Income Tax</td><td>Progressive</td><td>Income earned by individuals</td><td>Personal exemptions, mortgage interest, charitable donations</td></tr>
+<tr><td>Corporate Income Tax</td><td>Flat</td><td>Profits earned by corporations</td><td>Business expenses, research and development credits</td></tr>
+<tr><td>Capital Gains Tax</td><td>Lower than ordinary income tax</td><td>Profits from sale of capital assets</td><td>Holding period requirement, exemptions for certain assets</td></tr>
+<tr><td>Withholding Tax</td><td>Fixed</td><td>Income at source</td><td>No deductions or exemptions</td></tr>
+<tr><td>Value-Added Tax (VAT)</td><td>Flat</td><td>Value added to goods and services</td><td>Credit system for businesses, exemptions for certain goods and services</td></tr>
+<tr><td>Property Tax</td><td>Based on property value</td><td>Ownership of real property</td><td>Exemptions for certain types of property</td></tr>
+<tr><td>Inheritance Tax</td><td>Based on estate value</td><td>Transfer of wealth</td><td>Exemptions for certain types of assets</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE</li>
+</ol>
 <p>The different types of income tax are connected in that they all contribute to the overall tax revenue of a country. Individual income tax and corporate income tax are the primary sources of tax revenue, while capital gains tax and withholding tax provide additional revenue. Value-added tax and property tax are indirect taxes that are levied on the value added to goods and services and the ownership of real property, respectively. Inheritance tax is a type of tax that is levied on the transfer of wealth from one generation to the next. Understanding how these different types of tax relate to each other is essential for individuals and businesses to manage their tax obligations effectively.</p>
-
-<p>5. SUMMARY</p>
-
+<ol>
+<li>SUMMARY</li>
+</ol>
 <p>The classification system of income tax consists of several main categories, including individual income tax, corporate income tax, capital gains tax, withholding tax, value-added tax, property tax, and inheritance tax, each with its own unique characteristics and requirements.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/income-eligibility/what-is.html" class="related-link">Income Eligibility</a>
-        <a href="/life_obligations/income-shares-model/what-is.html" class="related-link">Income Shares Model</a>
-        <a href="/life_obligations/insurance-deductible/what-is.html" class="related-link">Insurance Deductible</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -483,6 +486,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

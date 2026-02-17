@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/credit-card-debt/what-is.html">Credit Card Debt</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Credit Card Debt?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Credit card debt refers to the amount of money an individual or business owes to a credit card company as a result of purchasing goods or services using a credit card.</p>
-
 <p>Credit card debt occurs when a person uses a credit card to buy something, but does not pay the full amount due by the payment due date. As a result, the credit card company charges interest on the outstanding balance, which can cause the debt to grow over time. This type of debt is considered unsecured, meaning that there is no collateral, such as a house or car, that the credit card company can take possession of if the debt is not paid.</p>
-
 <p>When a person has credit card debt, they are required to make regular payments, usually monthly, to pay down the balance. These payments typically include both interest and principal, with the interest being a percentage of the outstanding balance. The credit card company will also often charge fees, such as late fees, if the payment is not made on time. It is essential to understand the terms and conditions of the credit card agreement, including the interest rate, fees, and payment terms, to manage credit card debt effectively.</p>
-
 <p>Credit card debt can be challenging to manage, especially if the interest rate is high or the balance is large. It is crucial to make timely payments and to pay more than the minimum payment due to avoid accumulating more interest and fees. Additionally, it is essential to monitor credit card statements regularly to ensure that all charges are accurate and to detect any potential errors or fraudulent activity.</p>
-
 <p>The key components of credit card debt include:</p>
 <ul>
-  <li>Principal: the initial amount borrowed or spent using the credit card</li>
-  <li>Interest: the amount charged on the outstanding balance, usually expressed as a percentage</li>
-  <li>Fees: charges imposed by the credit card company for late payments, foreign transactions, or other services</li>
-  <li>Minimum payment: the smallest amount that must be paid each month to avoid late fees and penalties</li>
-  <li>Credit limit: the maximum amount that can be charged on the credit card</li>
-  <li>APR: the annual percentage rate, which is the interest rate charged on the outstanding balance over a year</li>
+<li>Principal: the initial amount borrowed or spent using the credit card</li>
+<li>Interest: the amount charged on the outstanding balance, usually expressed as a percentage</li>
+<li>Fees: charges imposed by the credit card company for late payments, foreign transactions, or other services</li>
+<li>Minimum payment: the smallest amount that must be paid each month to avoid late fees and penalties</li>
+<li>Credit limit: the maximum amount that can be charged on the credit card</li>
+<li>APR: the annual percentage rate, which is the interest rate charged on the outstanding balance over a year</li>
 </ul>
-
 <p>Some common misconceptions about credit card debt include:</p>
 <ul>
-  <li>That credit card debt is not a significant problem, as long as the minimum payment is made each month</li>
-  <li>That credit card companies will not charge interest if the payment is made a few days late</li>
-  <li>That credit card debt is the same as other types of debt, such as mortgage or car loan debt</li>
-  <li>That credit card companies will forgive debt if the borrower is experiencing financial difficulties</li>
+<li>That credit card debt is not a significant problem, as long as the minimum payment is made each month</li>
+<li>That credit card companies will not charge interest if the payment is made a few days late</li>
+<li>That credit card debt is the same as other types of debt, such as mortgage or car loan debt</li>
+<li>That credit card companies will forgive debt if the borrower is experiencing financial difficulties</li>
 </ul>
-
 <p>For example, consider a person who charges $1,000 on a credit card with an interest rate of 18% and a minimum payment of $25. If the person only makes the minimum payment each month, it will take them over 5 years to pay off the debt, and they will end up paying over $1,900 in total, including interest.</p>
-
 <p>In summary, credit card debt is a type of unsecured debt that occurs when an individual or business owes money to a credit card company as a result of purchasing goods or services using a credit card, and it can be challenging to manage if not understood and addressed properly.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/cohabitation/what-is.html" class="related-link">Cohabitation</a>
-        <a href="/life_obligations/cost-sharing/what-is.html" class="related-link">Cost Sharing</a>
-        <a href="/life_obligations/custodial-parent/what-is.html" class="related-link">Custodial Parent</a>
-        <a href="/life_obligations/custody-time-adjustment/what-is.html" class="related-link">Custody Time Adjustment</a>
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

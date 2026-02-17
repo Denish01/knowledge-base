@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#economics">Economics</a><span>&rsaquo;</span><a href="/economics/trade-deficit/what-is.html">Trade Deficit</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #059669">
     <main class="article-main">
         <article>
             <h1>What Is Trade Deficit?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Trade deficit refers to a situation where a country imports more goods and services than it exports, resulting in a net outflow of money from the country.</p>
-
 <p>A trade deficit occurs when a country's total imports exceed its total exports. This means that the country is buying more goods and services from other countries than it is selling to them. The difference between the value of imports and exports is the trade deficit. For example, if a country imports $100 million worth of goods and services and exports $80 million worth, it has a trade deficit of $20 million.</p>
-
 <p>The trade deficit is an important concept in international trade and economics. It can have significant effects on a country's economy, including its exchange rate, employment, and economic growth. A trade deficit can also have implications for a country's balance of payments, which is a record of all the country's international transactions. A country with a large trade deficit may need to borrow money from other countries to finance its imports, which can increase its foreign debt.</p>
-
 <p>In simple terms, a trade deficit is like a household that spends more money than it earns. If a household spends $100 per month and earns only $80, it will need to borrow $20 to cover its expenses. Similarly, a country with a trade deficit needs to finance its excess spending on imports by borrowing from other countries or using its foreign exchange reserves.</p>
-
 <p>The key components of a trade deficit include:</p>
 <ul>
-  <li>The value of imports, which is the total value of goods and services bought from other countries</li>
-  <li>The value of exports, which is the total value of goods and services sold to other countries</li>
-  <li>The exchange rate, which is the rate at which a country's currency can be exchanged for other currencies</li>
-  <li>The balance of payments, which is a record of all a country's international transactions</li>
-  <li>The foreign exchange reserves, which are the funds held by a country's central bank to finance its international transactions</li>
-  <li>The trade policies, which are the rules and regulations that govern international trade, such as tariffs and quotas</li>
+<li>The value of imports, which is the total value of goods and services bought from other countries</li>
+<li>The value of exports, which is the total value of goods and services sold to other countries</li>
+<li>The exchange rate, which is the rate at which a country's currency can be exchanged for other currencies</li>
+<li>The balance of payments, which is a record of all a country's international transactions</li>
+<li>The foreign exchange reserves, which are the funds held by a country's central bank to finance its international transactions</li>
+<li>The trade policies, which are the rules and regulations that govern international trade, such as tariffs and quotas</li>
 </ul>
-
 <p>There are several common misconceptions about trade deficits. Some people believe that:</p>
 <ul>
-  <li>A trade deficit is always bad for a country's economy, but in reality, it can be a sign of a strong and growing economy</li>
-  <li>A trade deficit means that a country is not producing anything, but in reality, many countries with trade deficits have strong and diverse economies</li>
-  <li>A trade deficit is caused by unfair trade practices, but in reality, it can be caused by a variety of factors, including differences in productivity and competitiveness</li>
-  <li>A trade deficit can be eliminated by simply reducing imports, but in reality, it is a complex issue that requires a comprehensive approach</li>
+<li>A trade deficit is always bad for a country's economy, but in reality, it can be a sign of a strong and growing economy</li>
+<li>A trade deficit means that a country is not producing anything, but in reality, many countries with trade deficits have strong and diverse economies</li>
+<li>A trade deficit is caused by unfair trade practices, but in reality, it can be caused by a variety of factors, including differences in productivity and competitiveness</li>
+<li>A trade deficit can be eliminated by simply reducing imports, but in reality, it is a complex issue that requires a comprehensive approach</li>
 </ul>
-
 <p>A real-world example of a trade deficit is a country that imports a large amount of oil and pays for it in foreign currency. For instance, if a country imports $10 million worth of oil per month and exports only $8 million worth of goods and services, it will have a trade deficit of $2 million per month. To finance its oil imports, the country may need to borrow money from other countries or use its foreign exchange reserves.</p>
-
 <p>In summary, a trade deficit is a situation where a country imports more goods and services than it exports, resulting in a net outflow of money from the country, and it can have significant effects on a country's economy and international transactions.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/economics/deflation/what-is.html" class="related-link">Deflation</a>
-        <a href="/economics/monetary-policy/what-is.html" class="related-link">Monetary Policy</a>
-        <a href="/economics/recession/what-is.html" class="related-link">Recession</a>
-        <a href="/economics/stock-market/what-is.html" class="related-link">Stock Market</a>
-        <a href="/economics/supply-and-demand/what-is.html" class="related-link">Supply And Demand</a>
-        <a href="/economics/trade-surplus/what-is.html" class="related-link">Trade Surplus</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

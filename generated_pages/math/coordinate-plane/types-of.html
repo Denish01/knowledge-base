@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of coordinate plane - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of coordinate plane - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/math/coordinate-plane/types-of.html">
     <meta property="og:title" content="Types of Coordinate Plane">
-    <meta property="og:description" content="A clear, simple explanation of coordinate plane - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of coordinate plane - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/math/coordinate-plane/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Coordinate Plane">
-    <meta name="twitter:description" content="A clear, simple explanation of coordinate plane - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of coordinate plane - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Coordinate Plane - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://360library.com/#math"}, {"@type": "ListItem", "position": 3, "name": "Coordinate Plane", "item": "https://360library.com/math/coordinate-plane/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Coordinate Plane", "description": "A clear, simple explanation of coordinate plane - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/coordinate-plane/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/coordinate-plane/types-of.html"}, "about": {"@type": "Thing", "name": "Coordinate Plane"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Coordinate Plane", "description": "A clear, simple explanation of types of coordinate plane - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/coordinate-plane/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/coordinate-plane/types-of.html"}, "about": {"@type": "Thing", "name": "Coordinate Plane"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,97 +388,78 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/coordinate-plane/what-is.html">Coordinate Plane</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>Types of Coordinate Plane</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>The concept of a coordinate plane is a fundamental element in mathematics, particularly in geometry and graphing. It refers to a two-dimensional plane where points are represented by ordered pairs of numbers, known as coordinates. The classification of coordinate planes is crucial as it helps in understanding the different ways coordinates can be represented, which is essential for various mathematical operations and real-world applications. Classification matters because it enables the organization of these planes into distinct categories, facilitating a deeper understanding of their properties and uses. This, in turn, aids in solving problems and visualizing relationships between points in a plane.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the primary types of coordinate planes, each with its unique definition, characteristics, and examples:</p>
-
-<p>1. <strong>Cartesian Coordinate Plane</strong></p>
+<ol>
+<li><strong>Cartesian Coordinate Plane</strong></li>
+</ol>
 <ul>
-  <li>Definition: A Cartesian coordinate plane, also known as the rectangular coordinate system, is a plane where each point is determined by an ordered pair of numbers, representing the horizontal and vertical distances from two fixed lines, the x-axis and the y-axis.</li>
-  <li>Key Characteristics: The plane is divided into four quadrants by the x and y axes, with points represented as (x, y).</li>
-  <li>Simple Example: The point (3, 4) on a Cartesian plane is 3 units to the right of the y-axis and 4 units above the x-axis.</li>
+<li>Definition: A Cartesian coordinate plane, also known as the rectangular coordinate system, is a plane where each point is determined by an ordered pair of numbers, representing the horizontal and vertical distances from two fixed lines, the x-axis and the y-axis.</li>
+<li>Key Characteristics: The plane is divided into four quadrants by the x and y axes, with points represented as (x, y).</li>
+<li>Simple Example: The point (3, 4) on a Cartesian plane is 3 units to the right of the y-axis and 4 units above the x-axis.</li>
 </ul>
-
-<p>2. <strong>Polar Coordinate Plane</strong></p>
+<ol>
+<li><strong>Polar Coordinate Plane</strong></li>
+</ol>
 <ul>
-  <li>Definition: A polar coordinate plane is a system where each point is represented by a distance from a reference point (the origin) and the angle from a reference direction (usually the positive x-axis).</li>
-  <li>Key Characteristics: Points are represented as (r, θ), where r is the radius or distance from the origin, and θ is the angle.</li>
-  <li>Simple Example: The point (5, 30°) in a polar coordinate system is 5 units away from the origin at an angle of 30 degrees from the positive x-axis.</li>
+<li>Definition: A polar coordinate plane is a system where each point is represented by a distance from a reference point (the origin) and the angle from a reference direction (usually the positive x-axis).</li>
+<li>Key Characteristics: Points are represented as (r, θ), where r is the radius or distance from the origin, and θ is the angle.</li>
+<li>Simple Example: The point (5, 30°) in a polar coordinate system is 5 units away from the origin at an angle of 30 degrees from the positive x-axis.</li>
 </ul>
-
-<p>3. <strong>Spherical Coordinate Plane</strong></p>
+<ol>
+<li><strong>Spherical Coordinate Plane</strong></li>
+</ol>
 <ul>
-  <li>Definition: A spherical coordinate plane is a three-dimensional coordinate system where a point in space is specified by three numbers: the radial distance from the origin, the inclination angle from the positive z-axis, and the azimuth angle in the xy-plane from the positive x-axis.</li>
-  <li>Key Characteristics: Points are represented as (ρ, θ, φ), where ρ is the radius, θ is the azimuth angle, and φ is the inclination angle.</li>
-  <li>Simple Example: The point (10, 60°, 30°) in spherical coordinates represents a point 10 units from the origin, with specific angles relative to the axes.</li>
+<li>Definition: A spherical coordinate plane is a three-dimensional coordinate system where a point in space is specified by three numbers: the radial distance from the origin, the inclination angle from the positive z-axis, and the azimuth angle in the xy-plane from the positive x-axis.</li>
+<li>Key Characteristics: Points are represented as (ρ, θ, φ), where ρ is the radius, θ is the azimuth angle, and φ is the inclination angle.</li>
+<li>Simple Example: The point (10, 60°, 30°) in spherical coordinates represents a point 10 units from the origin, with specific angles relative to the axes.</li>
 </ul>
-
-<p>4. <strong>Cylindrical Coordinate Plane</strong></p>
+<ol>
+<li><strong>Cylindrical Coordinate Plane</strong></li>
+</ol>
 <ul>
-  <li>Definition: A cylindrical coordinate system is a three-dimensional coordinate system where a point is specified by the distance from the z-axis (radius), the angle in the xy-plane from the x-axis, and the height above the xy-plane.</li>
-  <li>Key Characteristics: Points are represented as (r, θ, z), where r is the radial distance, θ is the azimuth angle, and z is the height.</li>
-  <li>Simple Example: The point (2, 90°, 5) in cylindrical coordinates is 2 units away from the z-axis, at a 90° angle from the x-axis in the xy-plane, and 5 units above the xy-plane.</li>
+<li>Definition: A cylindrical coordinate system is a three-dimensional coordinate system where a point is specified by the distance from the z-axis (radius), the angle in the xy-plane from the x-axis, and the height above the xy-plane.</li>
+<li>Key Characteristics: Points are represented as (r, θ, z), where r is the radial distance, θ is the azimuth angle, and z is the height.</li>
+<li>Simple Example: The point (2, 90°, 5) in cylindrical coordinates is 2 units away from the z-axis, at a 90° angle from the x-axis in the xy-plane, and 5 units above the xy-plane.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
-<table class="comparison-table"><thead><tr>
-<th>Coordinate Plane</th>
-<th>Representation</th>
-<th>Dimensions</th>
-<th>Key Features</th>
-</tr></thead><tbody>
-<tr>
-<td>Cartesian</td>
-<td>(x, y)</td>
-<td>2D</td>
-<td>Divided into four quadrants by x and y axes</td>
-</tr>
-<tr>
-<td>Polar</td>
-<td>(r, θ)</td>
-<td>2D</td>
-<td>Uses distance and angle from origin and reference direction</td>
-</tr>
-<tr>
-<td>Spherical</td>
-<td>(ρ, θ, φ)</td>
-<td>3D</td>
-<td>Specifies points in space with radius, inclination, and azimuth angles</td>
-</tr>
-<tr>
-<td>Cylindrical</td>
-<td>(r, θ, z)</td>
-<td>3D</td>
-<td>Combines polar coordinates in xy-plane with height above the plane</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Coordinate Plane</th><th>Representation</th><th>Dimensions</th><th>Key Features</th></tr></thead><tbody>
+<tr><td>Cartesian</td><td>(x, y)</td><td>2D</td><td>Divided into four quadrants by x and y axes</td></tr>
+<tr><td>Polar</td><td>(r, θ)</td><td>2D</td><td>Uses distance and angle from origin and reference direction</td></tr>
+<tr><td>Spherical</td><td>(ρ, θ, φ)</td><td>3D</td><td>Specifies points in space with radius, inclination, and azimuth angles</td></tr>
+<tr><td>Cylindrical</td><td>(r, θ, z)</td><td>3D</td><td>Combines polar coordinates in xy-plane with height above the plane</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>These categories of coordinate planes are interconnected in their applications and mathematical principles. The Cartesian and polar coordinate systems are two-dimensional and are often used interchangeably, with conversions possible between the two. The spherical and cylindrical coordinate systems extend the concept into three dimensions, with the spherical system being useful for problems involving spheres or spherical symmetry, and the cylindrical system suited for problems with cylindrical symmetry. Understanding how to convert between these systems is crucial for solving complex problems in physics, engineering, and mathematics.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of coordinate planes encompasses Cartesian, polar, spherical, and cylindrical systems, each with distinct representations and applications that facilitate the solution of problems in mathematics and science by providing different perspectives on spatial relationships.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/absolute-value/what-is.html" class="related-link">Absolute Value</a>
-        <a href="/math/area-of-a-circle/what-is.html" class="related-link">Area Of A Circle</a>
-        <a href="/math/decimals/what-is.html" class="related-link">Decimals</a>
-        <a href="/math/exponents/what-is.html" class="related-link">Exponents</a>
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -478,6 +504,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

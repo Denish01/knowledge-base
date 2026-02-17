@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of student loan - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of student loan - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/student-loan/types-of.html">
     <meta property="og:title" content="Types of Student Loan">
-    <meta property="og:description" content="A clear, simple explanation of student loan - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of student loan - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/student-loan/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Student Loan">
-    <meta name="twitter:description" content="A clear, simple explanation of student loan - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of student loan - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Student Loan - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Student Loan", "item": "https://360library.com/life_obligations/student-loan/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Student Loan", "description": "A clear, simple explanation of student loan - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/student-loan/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/student-loan/types-of.html"}, "about": {"@type": "Thing", "name": "Student Loan"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Student Loan", "description": "A clear, simple explanation of types of student loan - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/student-loan/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/student-loan/types-of.html"}, "about": {"@type": "Thing", "name": "Student Loan"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,106 +388,88 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/student-loan/what-is.html">Student Loan</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Student Loan</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>The classification of student loans is a crucial aspect of understanding the various options available to individuals seeking financial assistance for their education. Student loans can be categorized into different types based on factors such as the lender, interest rates, repayment terms, and eligibility criteria. Understanding these categories is essential for borrowers to make informed decisions about which loan best suits their needs. The classification of student loans helps borrowers navigate the complex landscape of financial aid and ensures they are aware of the terms and conditions associated with each loan. By categorizing student loans, borrowers can compare and contrast different options, ultimately selecting the loan that best aligns with their financial situation and educational goals.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The main categories of student loans include:</p>
-<p>1. <strong>Federal Student Loans</strong></p>
+<ol>
+<li><strong>Federal Student Loans</strong></li>
+</ol>
 <ul>
-  <li>Definition: Federal student loans are provided by the federal government to help students finance their education. These loans have fixed interest rates and offer various repayment options.</li>
-  <li>Key characteristics: Federal student loans often have more flexible repayment terms, such as income-driven repayment plans, and may offer loan forgiveness options.</li>
-  <li>Example: A student borrows a federal direct subsidized loan to cover tuition fees for their undergraduate degree.</li>
+<li>Definition: Federal student loans are provided by the federal government to help students finance their education. These loans have fixed interest rates and offer various repayment options.</li>
+<li>Key characteristics: Federal student loans often have more flexible repayment terms, such as income-driven repayment plans, and may offer loan forgiveness options.</li>
+<li>Example: A student borrows a federal direct subsidized loan to cover tuition fees for their undergraduate degree.</li>
 </ul>
-<p>2. <strong>Private Student Loans</strong></p>
+<ol>
+<li><strong>Private Student Loans</strong></li>
+</ol>
 <ul>
-  <li>Definition: Private student loans are offered by banks, credit unions, and other financial institutions to help students cover educational expenses. These loans typically have variable interest rates and require a credit check.</li>
-  <li>Key characteristics: Private student loans often have less flexible repayment terms and may require a co-signer.</li>
-  <li>Example: A student borrows a private student loan from a bank to cover living expenses while attending graduate school.</li>
+<li>Definition: Private student loans are offered by banks, credit unions, and other financial institutions to help students cover educational expenses. These loans typically have variable interest rates and require a credit check.</li>
+<li>Key characteristics: Private student loans often have less flexible repayment terms and may require a co-signer.</li>
+<li>Example: A student borrows a private student loan from a bank to cover living expenses while attending graduate school.</li>
 </ul>
-<p>3. <strong>Perkins Loans</strong></p>
+<ol>
+<li><strong>Perkins Loans</strong></li>
+</ol>
 <ul>
-  <li>Definition: Perkins loans are a type of federal student loan awarded to students with exceptional financial need. These loans have a fixed interest rate and are subsidized by the federal government.</li>
-  <li>Key characteristics: Perkins loans have a fixed interest rate and offer a nine-month grace period before repayment begins.</li>
-  <li>Example: A student with significant financial need receives a Perkins loan to cover a portion of their undergraduate tuition fees.</li>
+<li>Definition: Perkins loans are a type of federal student loan awarded to students with exceptional financial need. These loans have a fixed interest rate and are subsidized by the federal government.</li>
+<li>Key characteristics: Perkins loans have a fixed interest rate and offer a nine-month grace period before repayment begins.</li>
+<li>Example: A student with significant financial need receives a Perkins loan to cover a portion of their undergraduate tuition fees.</li>
 </ul>
-<p>4. <strong>Parent PLUS Loans</strong></p>
+<ol>
+<li><strong>Parent PLUS Loans</strong></li>
+</ol>
 <ul>
-  <li>Definition: Parent PLUS loans are federal loans taken out by parents to help finance their child's education. These loans have a fixed interest rate and require a credit check.</li>
-  <li>Key characteristics: Parent PLUS loans have a fixed interest rate and offer various repayment options, including income-driven repayment plans.</li>
-  <li>Example: A parent borrows a Parent PLUS loan to cover a portion of their child's graduate school tuition fees.</li>
+<li>Definition: Parent PLUS loans are federal loans taken out by parents to help finance their child's education. These loans have a fixed interest rate and require a credit check.</li>
+<li>Key characteristics: Parent PLUS loans have a fixed interest rate and offer various repayment options, including income-driven repayment plans.</li>
+<li>Example: A parent borrows a Parent PLUS loan to cover a portion of their child's graduate school tuition fees.</li>
 </ul>
-<p>5. <strong>Consolidation Loans</strong></p>
+<ol>
+<li><strong>Consolidation Loans</strong></li>
+</ol>
 <ul>
-  <li>Definition: Consolidation loans combine multiple student loans into a single loan with a fixed interest rate. These loans can simplify repayment and may offer lower monthly payments.</li>
-  <li>Key characteristics: Consolidation loans often have a fixed interest rate and may offer longer repayment terms.</li>
-  <li>Example: A borrower consolidates multiple federal student loans into a single direct consolidation loan to simplify repayment.</li>
+<li>Definition: Consolidation loans combine multiple student loans into a single loan with a fixed interest rate. These loans can simplify repayment and may offer lower monthly payments.</li>
+<li>Key characteristics: Consolidation loans often have a fixed interest rate and may offer longer repayment terms.</li>
+<li>Example: A borrower consolidates multiple federal student loans into a single direct consolidation loan to simplify repayment.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
 <p>The following table summarizes the key differences between the main categories of student loans:</p>
-<table class="comparison-table"><thead><tr>
-<th>Loan Type</th>
-<th>Interest Rate</th>
-<th>Repayment Terms</th>
-<th>Eligibility Criteria</th>
-</tr></thead><tbody>
-<tr>
-<td>Federal Student Loans</td>
-<td>Fixed</td>
-<td>Flexible</td>
-<td>Financial need, citizenship status</td>
-</tr>
-<tr>
-<td>Private Student Loans</td>
-<td>Variable</td>
-<td>Less flexible</td>
-<td>Creditworthiness, co-signer</td>
-</tr>
-<tr>
-<td>Perkins Loans</td>
-<td>Fixed</td>
-<td>Fixed</td>
-<td>Exceptional financial need</td>
-</tr>
-<tr>
-<td>Parent PLUS Loans</td>
-<td>Fixed</td>
-<td>Flexible</td>
-<td>Creditworthiness, parental status</td>
-</tr>
-<tr>
-<td>Consolidation Loans</td>
-<td>Fixed</td>
-<td>Flexible</td>
-<td>Existing student loan debt</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Loan Type</th><th>Interest Rate</th><th>Repayment Terms</th><th>Eligibility Criteria</th></tr></thead><tbody>
+<tr><td>Federal Student Loans</td><td>Fixed</td><td>Flexible</td><td>Financial need, citizenship status</td></tr>
+<tr><td>Private Student Loans</td><td>Variable</td><td>Less flexible</td><td>Creditworthiness, co-signer</td></tr>
+<tr><td>Perkins Loans</td><td>Fixed</td><td>Fixed</td><td>Exceptional financial need</td></tr>
+<tr><td>Parent PLUS Loans</td><td>Fixed</td><td>Flexible</td><td>Creditworthiness, parental status</td></tr>
+<tr><td>Consolidation Loans</td><td>Fixed</td><td>Flexible</td><td>Existing student loan debt</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different categories of student loans are connected in that they all serve the purpose of providing financial assistance to students. However, they differ in terms of their lender, interest rates, repayment terms, and eligibility criteria. Federal student loans, including Perkins loans and Parent PLUS loans, are provided by the federal government and offer more flexible repayment terms. Private student loans, on the other hand, are offered by financial institutions and may have less flexible repayment terms. Consolidation loans combine multiple student loans into a single loan, simplifying repayment and potentially offering lower monthly payments.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of student loans categorizes these financial aid options into federal student loans, private student loans, Perkins loans, Parent PLUS loans, and consolidation loans, each with distinct characteristics and eligibility criteria.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/spousal-support-duration/what-is.html" class="related-link">Spousal Support Duration</a>
-        <a href="/life_obligations/standard-of-living/what-is.html" class="related-link">Standard Of Living</a>
-        <a href="/life_obligations/support-adjustment/what-is.html" class="related-link">Support Adjustment</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -487,6 +514,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

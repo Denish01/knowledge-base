@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/mental-illness/what-is.html">Mental Illness</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>What Is Mental Illness?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Mental illness is a condition that affects a person's thoughts, feelings, and behaviors, making it difficult for them to function in everyday life.</p>
-
 <p>Mental illness can take many forms, including mood disorders, anxiety disorders, and psychotic disorders. These conditions can be caused by a combination of genetic, environmental, and psychological factors. For example, a person may be more likely to develop a mental illness if they have a family history of the condition, have experienced trauma or stress, or have an imbalance of certain chemicals in the brain. Mental illnesses can also be triggered by significant life changes, such as the loss of a loved one, a move to a new home, or a change in job or school.</p>
-
 <p>Mental illnesses can have a significant impact on a person's daily life, affecting their relationships, work or school performance, and overall well-being. People with mental illnesses may experience symptoms such as changes in mood, difficulty sleeping, or difficulty concentrating. They may also experience feelings of anxiety, fear, or sadness that are overwhelming and interfere with their ability to function. In some cases, mental illnesses can be severe and debilitating, requiring professional treatment and support.</p>
-
 <p>In order to understand and address mental illnesses, it is essential to consider the complex interplay of factors that contribute to these conditions. This includes examining the role of genetics, environment, and lifestyle, as well as the impact of social and cultural factors. By taking a comprehensive approach to mental health, individuals and communities can work together to promote awareness, understanding, and support for those affected by mental illnesses.</p>
-
 <p>The key components of mental illness include:</p>
 <ul>
-  <li>Genetic predisposition: a person's inherited traits and characteristics that may increase their risk of developing a mental illness</li>
-  <li>Environmental factors: external factors such as trauma, stress, and social and cultural influences that can contribute to the development of a mental illness</li>
-  <li>Brain chemistry: the balance of chemicals in the brain that can affect mood, thoughts, and behaviors</li>
-  <li>Psychological factors: a person's thoughts, feelings, and behaviors that can contribute to the development and maintenance of a mental illness</li>
-  <li>Social support: the network of relationships and support systems that can help a person cope with a mental illness</li>
-  <li>Treatment and management: the various therapies, medications, and self-care strategies that can help a person manage their symptoms and improve their quality of life</li>
+<li>Genetic predisposition: a person's inherited traits and characteristics that may increase their risk of developing a mental illness</li>
+<li>Environmental factors: external factors such as trauma, stress, and social and cultural influences that can contribute to the development of a mental illness</li>
+<li>Brain chemistry: the balance of chemicals in the brain that can affect mood, thoughts, and behaviors</li>
+<li>Psychological factors: a person's thoughts, feelings, and behaviors that can contribute to the development and maintenance of a mental illness</li>
+<li>Social support: the network of relationships and support systems that can help a person cope with a mental illness</li>
+<li>Treatment and management: the various therapies, medications, and self-care strategies that can help a person manage their symptoms and improve their quality of life</li>
 </ul>
-
 <p>Despite the importance of understanding mental illness, there are many common misconceptions about these conditions. Some of these misconceptions include:</p>
 <ul>
-  <li>That people with mental illnesses are weak or flawed: this is not true, as mental illnesses are legitimate medical conditions that can affect anyone</li>
-  <li>That mental illnesses are the result of poor parenting or upbringing: this is not true, as mental illnesses are complex conditions that are influenced by a variety of factors</li>
-  <li>That people with mental illnesses are violent or dangerous: this is not true, as the vast majority of people with mental illnesses are not violent and are more likely to be victims of crime than perpetrators</li>
-  <li>That mental illnesses can be simply "snapped out of": this is not true, as mental illnesses are serious conditions that require professional treatment and support</li>
+<li>That people with mental illnesses are weak or flawed: this is not true, as mental illnesses are legitimate medical conditions that can affect anyone</li>
+<li>That mental illnesses are the result of poor parenting or upbringing: this is not true, as mental illnesses are complex conditions that are influenced by a variety of factors</li>
+<li>That people with mental illnesses are violent or dangerous: this is not true, as the vast majority of people with mental illnesses are not violent and are more likely to be victims of crime than perpetrators</li>
+<li>That mental illnesses can be simply "snapped out of": this is not true, as mental illnesses are serious conditions that require professional treatment and support</li>
 </ul>
-
 <p>A real-world example of mental illness is a person who experiences a major depressive episode after the loss of a loved one. This person may feel overwhelming sadness, hopelessness, and loss of interest in activities they once enjoyed, and may have difficulty sleeping, concentrating, and performing daily tasks. With the support of family, friends, and mental health professionals, this person can receive the treatment and care they need to manage their symptoms and improve their quality of life.</p>
-
 <p>In summary, mental illness is a complex and multifaceted condition that affects a person's thoughts, feelings, and behaviors, requiring a comprehensive approach to understanding, treatment, and support.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/infectious-diseases/what-is.html" class="related-link">Infectious Diseases</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/nervous-system/what-is.html" class="related-link">Nervous System</a>
-        <a href="/health/neurology/what-is.html" class="related-link">Neurology</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

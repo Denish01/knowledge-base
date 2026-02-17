@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of mental illness - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Clear examples of mental illness from everyday life. Concrete illustrations to help you understand the concept.">
     <link rel="canonical" href="https://360library.com/health/mental-illness/example-of.html">
     <meta property="og:title" content="Example of Mental Illness">
-    <meta property="og:description" content="A clear, simple explanation of mental illness - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Clear examples of mental illness from everyday life. Concrete illustrations to help you understand the concept.">
     <meta property="og:url" content="https://360library.com/health/mental-illness/example-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Example of Mental Illness">
-    <meta name="twitter:description" content="A clear, simple explanation of mental illness - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Clear examples of mental illness from everyday life. Concrete illustrations to help you understand the concept.">
     <title>Example of Mental Illness - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Mental Illness", "item": "https://360library.com/health/mental-illness/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Example"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Example of Mental Illness", "description": "A clear, simple explanation of mental illness - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/mental-illness/example-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/mental-illness/example-of.html"}, "about": {"@type": "Thing", "name": "Mental Illness"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Example of Mental Illness", "description": "Clear examples of mental illness from everyday life. Concrete illustrations to help you understand the concept.", "url": "https://360library.com/health/mental-illness/example-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/mental-illness/example-of.html"}, "about": {"@type": "Thing", "name": "Mental Illness"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,42 +388,44 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/mental-illness/what-is.html">Mental Illness</a><span>&rsaquo;</span>Example
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Example of Mental Illness</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION</p>
+            
+
+            <ol>
+<li>INTRODUCTION</li>
+</ol>
 <p>Mental illness refers to a wide range of conditions that affect a person's thoughts, feelings, and behaviors. These conditions can be severe and impact daily life, making it difficult for individuals to function normally. Mental illnesses can vary in severity and type, but they all have a significant impact on a person's overall well-being.</p>
-
-<p>2. EVERYDAY EXAMPLES</p>
+<ol>
+<li>EVERYDAY EXAMPLES</li>
+</ol>
 <p>Mental illnesses are more common than people think, and they can affect anyone. For example, Sarah, a high school student, has been struggling with anxiety. She often feels overwhelmed by her schoolwork and extracurricular activities, and she has trouble sleeping at night. Another example is John, a working professional who has been experiencing symptoms of depression. He has lost interest in his hobbies, feels tired all the time, and has difficulty concentrating on his work. Emily, a college student, has been diagnosed with obsessive-compulsive disorder (OCD). She has recurring thoughts about germs and feels compelled to wash her hands repeatedly throughout the day. Michael, a retired man, has been struggling with dementia. He often forgets important events, has trouble remembering names, and gets lost in familiar places.</p>
-
-<p>3. NOTABLE EXAMPLES</p>
+<ol>
+<li>NOTABLE EXAMPLES</li>
+</ol>
 <p>Some notable examples of mental illnesses include the case of Vincent van Gogh, the famous artist who struggled with bipolar disorder. He experienced extreme mood swings, from feelings of euphoria to deep depression, which affected his artwork and personal life. Another example is the story of Kay Redfield Jamison, a psychologist who has written extensively about her own struggles with bipolar disorder. Her experiences have helped to raise awareness about the condition and reduce stigma around mental illness. The case of Chris Sizemore, who inspired the film "The Three Faces of Eve," is also a classic example of dissociative identity disorder. She had multiple personalities, each with its own distinct characteristics and memories.</p>
-
-<p>4. EDGE CASES</p>
+<ol>
+<li>EDGE CASES</li>
+</ol>
 <p>Mental illnesses can also manifest in unusual ways. For example, a person with Cotard's syndrome may believe they are dead or do not exist. This condition is a rare neuropsychiatric disorder in which a person experiences nihilistic delusions, often accompanied by severe depression and anxiety. Another example is a person with alien hand syndrome, a condition in which a person's hand moves involuntarily and performs actions without their control. This condition can be caused by a variety of factors, including brain injury, infection, or neurological disorders.</p>
-
-<p>5. NON-EXAMPLES</p>
+<ol>
+<li>NON-EXAMPLES</li>
+</ol>
 <p>Some conditions are often mistaken for mental illnesses but are not. For example, having a bad day or experiencing stress does not necessarily mean someone has a mental illness. Grief, which is a normal response to loss, is also often confused with depression, but it is a distinct emotional state. Additionally, being shy or introverted is not the same as having social anxiety disorder, which is a specific condition characterized by excessive and persistent fear of social situations.</p>
-
-<p>6. PATTERN</p>
+<ol>
+<li>PATTERN</li>
+</ol>
 <p>Despite the wide range of mental illnesses, all valid examples have certain characteristics in common. They all involve significant distress or impairment in social, occupational, or other areas of life. Mental illnesses are also typically characterized by persistent and recurring symptoms, rather than occasional or fleeting experiences. Furthermore, mental illnesses often have a significant impact on a person's relationships, work, or daily activities, and they can be treated with a combination of therapy, medication, and lifestyle changes. By recognizing these common patterns, we can better understand and address mental illnesses, and work to reduce stigma and promote awareness and support for those affected.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/infectious-diseases/what-is.html" class="related-link">Infectious Diseases</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/nervous-system/what-is.html" class="related-link">Nervous System</a>
-        <a href="/health/neurology/what-is.html" class="related-link">Neurology</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -423,6 +470,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

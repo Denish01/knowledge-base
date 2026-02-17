@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of mental illness - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of what affects mental illness - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/mental-illness/what-affects-it.html">
     <meta property="og:title" content="What Affects Mental Illness">
-    <meta property="og:description" content="A clear, simple explanation of mental illness - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of what affects mental illness - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/mental-illness/what-affects-it.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="What Affects Mental Illness">
-    <meta name="twitter:description" content="A clear, simple explanation of mental illness - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of what affects mental illness - definition, key concepts, examples, and common misconceptions.">
     <title>What Affects Mental Illness - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Mental Illness", "item": "https://360library.com/health/mental-illness/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "What Affects It"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Affects Mental Illness", "description": "A clear, simple explanation of mental illness - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/mental-illness/what-affects-it.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/mental-illness/what-affects-it.html"}, "about": {"@type": "Thing", "name": "Mental Illness"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Affects Mental Illness", "description": "A clear, simple explanation of what affects mental illness - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/mental-illness/what-affects-it.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/mental-illness/what-affects-it.html"}, "about": {"@type": "Thing", "name": "Mental Illness"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,48 +388,49 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/mental-illness/what-is.html">Mental Illness</a><span>&rsaquo;</span>What Affects It
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>What Affects Mental Illness</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
-<p>Mental illness refers to a wide range of disorders that affect a person's thoughts, feelings, and behaviors. Understanding the factors that influence mental illness is crucial because it can help individuals, families, and healthcare professionals identify potential causes and develop effective treatment plans. By recognizing the various factors that contribute to mental illness, it is possible to take steps to prevent, manage, or alleviate symptoms. This knowledge can also help reduce stigma and promote a better understanding of mental health.</p>
+            
 
-<p>2. MAIN FACTORS:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
+<p>Mental illness refers to a wide range of disorders that affect a person's thoughts, feelings, and behaviors. Understanding the factors that influence mental illness is crucial because it can help individuals, families, and healthcare professionals identify potential causes and develop effective treatment plans. By recognizing the various factors that contribute to mental illness, it is possible to take steps to prevent, manage, or alleviate symptoms. This knowledge can also help reduce stigma and promote a better understanding of mental health.</p>
+<ol>
+<li>MAIN FACTORS:</li>
+</ol>
 <p>Several factors can affect mental illness, including:</p>
 <ul>
-  <li>Genetics: A person's genetic makeup can influence their susceptibility to mental illness. Certain genetic traits can increase the risk of developing a mental health disorder, while others may provide protection. The effect of genetics on mental illness is variable, as it depends on the specific genetic traits and how they interact with environmental factors.</li>
-  <li>Environment: The environment in which a person grows up and lives can have a significant impact on their mental health. Exposure to trauma, stress, or adverse childhood experiences can increase the risk of developing mental illness, while a supportive and nurturing environment can have a positive effect. The effect of environment on mental illness is variable, as it depends on the specific environmental factors and how they interact with individual characteristics.</li>
-  <li>Brain Chemistry: Imbalances in brain chemistry, such as changes in neurotransmitter levels, can contribute to mental illness. Certain medications and therapies can help restore balance to brain chemistry, which can have a positive effect on mental health. The effect of brain chemistry on mental illness is negative when imbalances occur, but it can be positive when treated effectively.</li>
-  <li>Lifestyle: A person's lifestyle, including their diet, exercise habits, and sleep patterns, can influence their mental health. A healthy lifestyle can have a positive effect on mental health, while an unhealthy lifestyle can increase the risk of developing mental illness. The effect of lifestyle on mental illness is variable, as it depends on the specific lifestyle choices and how they interact with individual characteristics.</li>
-  <li>Social Support: The level of social support a person receives from family, friends, and community can affect their mental health. Strong social support can have a positive effect on mental health, while a lack of social support can increase the risk of developing mental illness. The effect of social support on mental illness is positive when it is strong and negative when it is weak.</li>
-  <li>Trauma: Experiencing traumatic events, such as physical or emotional abuse, can increase the risk of developing mental illness. The effect of trauma on mental illness is negative, as it can lead to long-term mental health problems.</li>
-  <li>Socioeconomic Status: A person's socioeconomic status, including their income, education, and occupation, can influence their access to resources and opportunities, which can affect their mental health. The effect of socioeconomic status on mental illness is variable, as it depends on the specific socioeconomic factors and how they interact with individual characteristics.</li>
+<li>Genetics: A person's genetic makeup can influence their susceptibility to mental illness. Certain genetic traits can increase the risk of developing a mental health disorder, while others may provide protection. The effect of genetics on mental illness is variable, as it depends on the specific genetic traits and how they interact with environmental factors.</li>
+<li>Environment: The environment in which a person grows up and lives can have a significant impact on their mental health. Exposure to trauma, stress, or adverse childhood experiences can increase the risk of developing mental illness, while a supportive and nurturing environment can have a positive effect. The effect of environment on mental illness is variable, as it depends on the specific environmental factors and how they interact with individual characteristics.</li>
+<li>Brain Chemistry: Imbalances in brain chemistry, such as changes in neurotransmitter levels, can contribute to mental illness. Certain medications and therapies can help restore balance to brain chemistry, which can have a positive effect on mental health. The effect of brain chemistry on mental illness is negative when imbalances occur, but it can be positive when treated effectively.</li>
+<li>Lifestyle: A person's lifestyle, including their diet, exercise habits, and sleep patterns, can influence their mental health. A healthy lifestyle can have a positive effect on mental health, while an unhealthy lifestyle can increase the risk of developing mental illness. The effect of lifestyle on mental illness is variable, as it depends on the specific lifestyle choices and how they interact with individual characteristics.</li>
+<li>Social Support: The level of social support a person receives from family, friends, and community can affect their mental health. Strong social support can have a positive effect on mental health, while a lack of social support can increase the risk of developing mental illness. The effect of social support on mental illness is positive when it is strong and negative when it is weak.</li>
+<li>Trauma: Experiencing traumatic events, such as physical or emotional abuse, can increase the risk of developing mental illness. The effect of trauma on mental illness is negative, as it can lead to long-term mental health problems.</li>
+<li>Socioeconomic Status: A person's socioeconomic status, including their income, education, and occupation, can influence their access to resources and opportunities, which can affect their mental health. The effect of socioeconomic status on mental illness is variable, as it depends on the specific socioeconomic factors and how they interact with individual characteristics.</li>
 </ul>
-
-<p>3. INTERCONNECTIONS:</p>
+<ol>
+<li>INTERCONNECTIONS:</li>
+</ol>
 <p>These factors are interconnected and can influence each other. For example, a person's genetics can affect their brain chemistry, which can influence their mental health. Similarly, a person's environment can affect their lifestyle, which can impact their mental health. Trauma can also affect a person's social support, which can influence their mental health. Understanding these interconnections is essential for developing effective treatment plans and promoting overall mental well-being.</p>
-
-<p>4. CONTROLLABLE VS UNCONTROLLABLE:</p>
+<ol>
+<li>CONTROLLABLE VS UNCONTROLLABLE:</li>
+</ol>
 <p>While some factors, such as genetics and socioeconomic status, are uncontrollable, others, such as lifestyle and social support, can be managed. By making healthy lifestyle choices, building strong social support networks, and seeking professional help when needed, individuals can take steps to reduce their risk of developing mental illness or manage existing symptoms. Additionally, healthcare professionals can work with individuals to develop personalized treatment plans that address their unique needs and circumstances.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The most important factors to understand when it comes to mental illness are genetics, environment, brain chemistry, lifestyle, social support, trauma, and socioeconomic status. By recognizing the complex interplay between these factors and taking steps to manage controllable factors, individuals can promote their mental health and well-being. Understanding the causes and effects of mental illness can help reduce stigma and promote a better understanding of mental health, ultimately leading to more effective treatment and support. By acknowledging the role of these factors, individuals and healthcare professionals can work together to develop comprehensive and personalized approaches to mental health care.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/infectious-diseases/what-is.html" class="related-link">Infectious Diseases</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/nervous-system/what-is.html" class="related-link">Nervous System</a>
-        <a href="/health/neurology/what-is.html" class="related-link">Neurology</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -429,6 +475,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

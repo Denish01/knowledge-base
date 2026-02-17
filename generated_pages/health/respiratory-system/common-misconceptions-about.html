@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of respiratory system - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Common misconceptions about respiratory system debunked. Learn what people get wrong and the real facts.">
     <link rel="canonical" href="https://360library.com/health/respiratory-system/common-misconceptions-about.html">
     <meta property="og:title" content="Common Misconceptions About Respiratory System">
-    <meta property="og:description" content="A clear, simple explanation of respiratory system - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Common misconceptions about respiratory system debunked. Learn what people get wrong and the real facts.">
     <meta property="og:url" content="https://360library.com/health/respiratory-system/common-misconceptions-about.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Common Misconceptions About Respiratory System">
-    <meta name="twitter:description" content="A clear, simple explanation of respiratory system - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Common misconceptions about respiratory system debunked. Learn what people get wrong and the real facts.">
     <title>Common Misconceptions About Respiratory System - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Respiratory System", "item": "https://360library.com/health/respiratory-system/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Misconceptions"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Common Misconceptions About Respiratory System", "description": "A clear, simple explanation of respiratory system - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/respiratory-system/common-misconceptions-about.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/respiratory-system/common-misconceptions-about.html"}, "about": {"@type": "Thing", "name": "Respiratory System"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Common Misconceptions About Respiratory System", "description": "Common misconceptions about respiratory system debunked. Learn what people get wrong and the real facts.", "url": "https://360library.com/health/respiratory-system/common-misconceptions-about.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/respiratory-system/common-misconceptions-about.html"}, "about": {"@type": "Thing", "name": "Respiratory System"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,70 +388,65 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/respiratory-system/what-is.html">Respiratory System</a><span>&rsaquo;</span>Misconceptions
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Common Misconceptions About Respiratory System</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
-<p>The respiratory system is a complex and vital part of the human body, responsible for bringing oxygen into the body and removing carbon dioxide. Despite its importance, many people have misconceptions about how it works. This is often due to a lack of understanding of the underlying biology, as well as misinformation from various sources. Additionally, the respiratory system is closely tied to other bodily systems, such as the circulatory and nervous systems, which can lead to confusion. By examining common misconceptions and understanding why they exist, we can gain a clearer understanding of the respiratory system and how it functions.</p>
+            
 
-<p>2. MISCONCEPTION LIST:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
+<p>The respiratory system is a complex and vital part of the human body, responsible for bringing oxygen into the body and removing carbon dioxide. Despite its importance, many people have misconceptions about how it works. This is often due to a lack of understanding of the underlying biology, as well as misinformation from various sources. Additionally, the respiratory system is closely tied to other bodily systems, such as the circulatory and nervous systems, which can lead to confusion. By examining common misconceptions and understanding why they exist, we can gain a clearer understanding of the respiratory system and how it functions.</p>
+<ol>
+<li>MISCONCEPTION LIST:</li>
+</ol>
 <ul>
-  <li>Myth: You can breathe with only one lung.</li>
+<li>Myth: You can breathe with only one lung.</li>
 </ul>
 <p>Reality: While it is possible to survive with only one lung, it is not the same as having two healthy lungs. The lungs have a large capacity for expansion and contraction, and having two lungs allows for more efficient oxygenation of the blood.</p>
 <p>Why people believe this: This myth may have originated from the fact that some people can survive with only one lung due to surgical removal or damage. However, this does not mean that one lung can function exactly like two.</p>
-
 <ul>
-  <li>Myth: Shallow breathing is just as effective as deep breathing.</li>
+<li>Myth: Shallow breathing is just as effective as deep breathing.</li>
 </ul>
 <p>Reality: Deep breathing is more effective at bringing oxygen into the body than shallow breathing. When you breathe deeply, your lungs expand and fill with air, allowing for a greater exchange of oxygen and carbon dioxide.</p>
 <p>Why people believe this: This myth may have originated from the fact that shallow breathing is often sufficient for short periods of time, leading people to believe that it is just as effective as deep breathing.</p>
-
 <ul>
-  <li>Myth: The diaphragm is not an important muscle in the respiratory system.</li>
+<li>Myth: The diaphragm is not an important muscle in the respiratory system.</li>
 </ul>
 <p>Reality: The diaphragm is the primary muscle used for breathing, and it plays a crucial role in expanding and contracting the lungs.</p>
 <p>Why people believe this: This myth may have originated from a lack of understanding of the diaphragm's function in the respiratory system, as well as its location deep within the chest cavity.</p>
-
 <ul>
-  <li>Myth: You should always try to hold your breath for as long as possible.</li>
+<li>Myth: You should always try to hold your breath for as long as possible.</li>
 </ul>
 <p>Reality: Holding your breath for extended periods of time can be harmful and even dangerous. The body needs a constant supply of oxygen to function properly, and holding your breath can lead to a buildup of carbon dioxide in the blood.</p>
 <p>Why people believe this: This myth may have originated from the fact that some people can hold their breath for a long time, leading others to believe that it is a desirable skill.</p>
-
 <ul>
-  <li>Myth: The nose is the only way to breathe.</li>
+<li>Myth: The nose is the only way to breathe.</li>
 </ul>
 <p>Reality: While the nose is the primary way to breathe, it is possible to breathe through the mouth as well. In fact, during intense exercise or when the nose is congested, the body will often switch to mouth breathing.</p>
 <p>Why people believe this: This myth may have originated from the fact that the nose is the most common way to breathe, leading people to believe that it is the only way.</p>
-
 <ul>
-  <li>Myth: The lungs are the only organs involved in the respiratory system.</li>
+<li>Myth: The lungs are the only organs involved in the respiratory system.</li>
 </ul>
 <p>Reality: The respiratory system involves not only the lungs, but also the trachea, bronchi, and diaphragm, as well as the blood vessels and other tissues that support the exchange of oxygen and carbon dioxide.</p>
 <p>Why people believe this: This myth may have originated from a lack of understanding of the complexity of the respiratory system and the many organs and tissues that are involved.</p>
-
-<p>3. HOW TO REMEMBER:</p>
+<ol>
+<li>HOW TO REMEMBER:</li>
+</ol>
 <p>To avoid these common misconceptions, it is helpful to have a basic understanding of the anatomy and physiology of the respiratory system. This includes knowing the functions of the different organs and tissues involved, such as the lungs, diaphragm, and blood vessels. Additionally, it is helpful to remember that the respiratory system is closely tied to other bodily systems, such as the circulatory and nervous systems. By understanding how these systems interact and function together, you can gain a clearer understanding of the respiratory system and avoid common misconceptions.</p>
-
-<p>4. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The one thing to remember to avoid confusion about the respiratory system is that it is a complex and multifaceted system that involves many different organs and tissues working together to bring oxygen into the body and remove carbon dioxide. By understanding the functions of these different components and how they interact, you can gain a clearer understanding of the respiratory system and avoid common misconceptions. This knowledge can help you to better appreciate the importance of the respiratory system and to take care of your own respiratory health.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-        <a href="/health/pharmacology/what-is.html" class="related-link">Pharmacology</a>
-        <a href="/health/quarantine/what-is.html" class="related-link">Quarantine</a>
-        <a href="/health/sanitation/what-is.html" class="related-link">Sanitation</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -451,6 +491,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#economics">Economics</a><span>&rsaquo;</span><a href="/economics/supply-and-demand/what-is.html">Supply And Demand</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #059669">
     <main class="article-main">
         <article>
             <h1>What Is Supply And Demand?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Supply and demand is the fundamental concept in economics that describes the relationship between the availability of a product or service and the desire for it among consumers.</p>
-
 <p>The concept of supply and demand is based on the idea that the price and quantity of a product or service are determined by the interaction of two main forces: the supply of the product or service, which refers to the amount that producers are willing and able to produce and sell, and the demand for the product or service, which refers to the amount that consumers are willing and able to buy. When the supply of a product or service is high and the demand for it is low, the price tends to fall, as producers try to encourage consumers to buy more. On the other hand, when the supply is low and the demand is high, the price tends to rise, as consumers are willing to pay more to get the product or service.</p>
-
 <p>The supply and demand concept can be applied to any market, from goods and services to labor and capital. It is a dynamic concept, meaning that it is constantly changing as new information becomes available and as the preferences and behaviors of consumers and producers shift. For example, a change in consumer preferences or a new technology can affect the demand for a product or service, while a change in production costs or a new regulation can affect the supply. Understanding the concept of supply and demand is essential for businesses, policymakers, and individuals to make informed decisions about how to allocate resources and respond to changes in the market.</p>
-
 <p>In addition to understanding the basic concept of supply and demand, it is also important to recognize the different factors that can influence it. These factors can include things like consumer income, preferences, and expectations, as well as production costs, technology, and government policies. By analyzing these factors and how they interact, it is possible to gain a deeper understanding of how supply and demand work together to determine prices and quantities in different markets.</p>
-
 <p>The key components of supply and demand include:</p>
 <ul>
-  <li>The law of supply, which states that as the price of a product or service increases, the quantity supplied also increases</li>
-  <li>The law of demand, which states that as the price of a product or service increases, the quantity demanded decreases</li>
-  <li>The equilibrium price and quantity, which occur when the supply and demand curves intersect</li>
-  <li>The concept of elasticity, which refers to the responsiveness of supply and demand to changes in price</li>
-  <li>The concept of substitutes and complements, which refer to products or services that can be used in place of or in conjunction with each other</li>
-  <li>The role of external factors, such as government policies and technological changes, in influencing supply and demand</li>
+<li>The law of supply, which states that as the price of a product or service increases, the quantity supplied also increases</li>
+<li>The law of demand, which states that as the price of a product or service increases, the quantity demanded decreases</li>
+<li>The equilibrium price and quantity, which occur when the supply and demand curves intersect</li>
+<li>The concept of elasticity, which refers to the responsiveness of supply and demand to changes in price</li>
+<li>The concept of substitutes and complements, which refer to products or services that can be used in place of or in conjunction with each other</li>
+<li>The role of external factors, such as government policies and technological changes, in influencing supply and demand</li>
 </ul>
-
 <p>Despite its importance, the concept of supply and demand is often misunderstood. Some common misconceptions include:</p>
 <ul>
-  <li>The idea that supply and demand are fixed or unchanging, when in fact they are dynamic and constantly interacting</li>
-  <li>The idea that the government can control prices and quantities by setting arbitrary targets or limits, when in fact the market will often find a way to adjust to these changes</li>
-  <li>The idea that supply and demand only apply to markets for goods and services, when in fact they can be applied to any market, including labor and capital</li>
-  <li>The idea that the concept of supply and demand is only relevant to businesses and economists, when in fact it can be applied to any situation where resources are being allocated</li>
+<li>The idea that supply and demand are fixed or unchanging, when in fact they are dynamic and constantly interacting</li>
+<li>The idea that the government can control prices and quantities by setting arbitrary targets or limits, when in fact the market will often find a way to adjust to these changes</li>
+<li>The idea that supply and demand only apply to markets for goods and services, when in fact they can be applied to any market, including labor and capital</li>
+<li>The idea that the concept of supply and demand is only relevant to businesses and economists, when in fact it can be applied to any situation where resources are being allocated</li>
 </ul>
-
 <p>A real-world example of supply and demand in action can be seen in the market for housing. When there is a high demand for housing in a particular area, such as a city with a growing population and a strong economy, the price of housing tends to rise. This is because there are more people looking to buy or rent housing than there are available homes, so sellers and landlords can charge higher prices. On the other hand, when there is a surplus of housing, such as in an area with a declining population, the price tends to fall. This is because there are more homes available than there are people looking to buy or rent them, so sellers and landlords must lower their prices to attract buyers.</p>
-
 <p>In summary, supply and demand is a fundamental concept in economics that describes the dynamic and constantly interacting relationship between the availability of a product or service and the desire for it among consumers, and understanding this concept is essential for making informed decisions about how to allocate resources and respond to changes in the market.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/economics/deflation/what-is.html" class="related-link">Deflation</a>
-        <a href="/economics/monetary-policy/what-is.html" class="related-link">Monetary Policy</a>
-        <a href="/economics/recession/what-is.html" class="related-link">Recession</a>
-        <a href="/economics/scarcity/what-is.html" class="related-link">Scarcity</a>
-        <a href="/economics/stock-market/what-is.html" class="related-link">Stock Market</a>
-        <a href="/economics/trade-deficit/what-is.html" class="related-link">Trade Deficit</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

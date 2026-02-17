@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of inflation - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of inflation - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/economics/inflation/types-of.html">
     <meta property="og:title" content="Types of Inflation">
-    <meta property="og:description" content="A clear, simple explanation of inflation - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of inflation - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/economics/inflation/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Inflation">
-    <meta name="twitter:description" content="A clear, simple explanation of inflation - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of inflation - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Inflation - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Economics", "item": "https://360library.com/#economics"}, {"@type": "ListItem", "position": 3, "name": "Inflation", "item": "https://360library.com/economics/inflation/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Inflation", "description": "A clear, simple explanation of inflation - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/economics/inflation/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/economics/inflation/types-of.html"}, "about": {"@type": "Thing", "name": "Inflation"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Inflation", "description": "A clear, simple explanation of types of inflation - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/economics/inflation/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/economics/inflation/types-of.html"}, "about": {"@type": "Thing", "name": "Inflation"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,202 +388,73 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#economics">Economics</a><span>&rsaquo;</span><a href="/economics/inflation/what-is.html">Inflation</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #059669">
     <main class="article-main">
         <article>
             <h1>Types of Inflation</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
-<style>
-.calculator {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 24px 0;
-}
-.calculator h3 {
-    margin-top: 0;
-    color: #1a73e8;
-}
-.calc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 16px;
-}
-.calculator label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-}
-.calculator input, .calculator select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.calculator button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.calculator button:hover {
-    background: #1557b0;
-}
-.calc-result {
-    margin-top: 16px;
-    padding: 12px;
-    background: white;
-    border-radius: 4px;
-    border-left: 4px solid #1a73e8;
-}
-.calc-result p {
-    margin: 8px 0;
-}
-.calc-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.tab-btn {
-    background: #e0e0e0;
-    color: #333;
-}
-.tab-btn.active {
-    background: #1a73e8;
-    color: white;
-}
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-</style>
 
-<div class="calculator" id="inflation-calc">
-    <h3>Inflation Calculator</h3>
-    <div class="calc-grid">
-        <label>Amount ($): <input type="number" id="inf-amount" value="100" min="0"></label>
-        <label>Annual Inflation Rate (%): <input type="number" id="inf-rate" value="3" min="0" step="0.1"></label>
-        <label>Years: <input type="number" id="inf-years" value="10" min="1" max="100"></label>
-    </div>
-    <button onclick="calculateInflation()">Calculate</button>
-    <div class="calc-result" id="inflation-result"></div>
-</div>
-<script>
-function calculateInflation() {
-    const amount = parseFloat(document.getElementById('inf-amount').value);
-    const rate = parseFloat(document.getElementById('inf-rate').value) / 100;
-    const years = parseFloat(document.getElementById('inf-years').value);
-
-    const futureValue = amount * Math.pow(1 + rate, years);
-    const purchasingPower = amount / Math.pow(1 + rate, years);
-    const totalInflation = ((futureValue / amount) - 1) * 100;
-
-    document.getElementById('inflation-result').innerHTML = `
-        <p><strong>$${amount} today will cost:</strong> $${futureValue.toFixed(2)} in ${years} years</p>
-        <p><strong>$${amount} in ${years} years equals:</strong> $${purchasingPower.toFixed(2)} in today's dollars</p>
-        <p><strong>Total inflation:</strong> ${totalInflation.toFixed(1)}%</p>
-    `;
-}
-calculateInflation();
-</script>
-
-
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>The concept of inflation refers to the rate at which prices for goods and services are rising. Understanding the different types of inflation is crucial because it helps economists, policymakers, and individuals comprehend the underlying causes of price increases and their effects on the economy. Classification of inflation types matters as it enables the development of targeted policies to manage and mitigate its impact. By recognizing the various forms inflation can take, it becomes possible to analyze its roots and implement strategies to stabilize the economy. This classification system aids in distinguishing between different economic scenarios, thereby facilitating more informed decision-making.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <h3>1. Demand-Pull Inflation</h3>
 <ul>
-  <li><strong>Name:</strong> Demand-Pull Inflation</li>
-  <li><strong>Brief Definition:</strong> Demand-pull inflation occurs when the demand for goods and services exceeds their supply, driving up prices. This type of inflation is often seen in growing economies where consumer spending is high.</li>
-  <li><strong>Key Characteristics:</strong> High consumer demand, low unemployment rates, and an increase in wages.</li>
-  <li><strong>Simple Example:</strong> When a new smartphone model is released and many people want to buy it, but the company cannot produce enough to meet the demand, the price tends to rise due to the high demand and limited supply.</li>
+<li><strong>Name:</strong> Demand-Pull Inflation</li>
+<li><strong>Brief Definition:</strong> Demand-pull inflation occurs when the demand for goods and services exceeds their supply, driving up prices. This type of inflation is often seen in growing economies where consumer spending is high.</li>
+<li><strong>Key Characteristics:</strong> High consumer demand, low unemployment rates, and an increase in wages.</li>
+<li><strong>Simple Example:</strong> When a new smartphone model is released and many people want to buy it, but the company cannot produce enough to meet the demand, the price tends to rise due to the high demand and limited supply.</li>
 </ul>
-
 <h3>2. Cost-Push Inflation</h3>
 <ul>
-  <li><strong>Name:</strong> Cost-Push Inflation</li>
-  <li><strong>Brief Definition:</strong> Cost-push inflation happens when the costs of production increase, leading businesses to raise their prices to maintain profit margins. This can be due to higher wages, increased prices of raw materials, or other production costs.</li>
-  <li><strong>Key Characteristics:</strong> Increase in production costs, such as higher wages or raw material costs, and subsequent price increases by businesses.</li>
-  <li><strong>Simple Example:</strong> If a coffee shop faces an increase in the cost of coffee beans, it may raise the price of a cup of coffee to cover the higher cost and maintain its profit margin.</li>
+<li><strong>Name:</strong> Cost-Push Inflation</li>
+<li><strong>Brief Definition:</strong> Cost-push inflation happens when the costs of production increase, leading businesses to raise their prices to maintain profit margins. This can be due to higher wages, increased prices of raw materials, or other production costs.</li>
+<li><strong>Key Characteristics:</strong> Increase in production costs, such as higher wages or raw material costs, and subsequent price increases by businesses.</li>
+<li><strong>Simple Example:</strong> If a coffee shop faces an increase in the cost of coffee beans, it may raise the price of a cup of coffee to cover the higher cost and maintain its profit margin.</li>
 </ul>
-
 <h3>3. Built-In Inflation</h3>
 <ul>
-  <li><strong>Name:</strong> Built-In Inflation</li>
-  <li><strong>Brief Definition:</strong> Built-in inflation, also known as the wage-price spiral, occurs when workers demand higher wages to keep up with the expected rise in prices, and businesses, in turn, raise their prices to cover the increased cost of labor.</li>
-  <li><strong>Key Characteristics:</strong> Expectations of future inflation lead to higher wage demands and subsequent price increases.</li>
-  <li><strong>Simple Example:</strong> If workers expect prices to rise in the future, they may ask for a salary increase now to maintain their purchasing power, and companies, anticipating higher costs, may raise their prices.</li>
+<li><strong>Name:</strong> Built-In Inflation</li>
+<li><strong>Brief Definition:</strong> Built-in inflation, also known as the wage-price spiral, occurs when workers demand higher wages to keep up with the expected rise in prices, and businesses, in turn, raise their prices to cover the increased cost of labor.</li>
+<li><strong>Key Characteristics:</strong> Expectations of future inflation lead to higher wage demands and subsequent price increases.</li>
+<li><strong>Simple Example:</strong> If workers expect prices to rise in the future, they may ask for a salary increase now to maintain their purchasing power, and companies, anticipating higher costs, may raise their prices.</li>
 </ul>
-
 <h3>4. Hyperinflation</h3>
 <ul>
-  <li><strong>Name:</strong> Hyperinflation</li>
-  <li><strong>Brief Definition:</strong> Hyperinflation is an extreme and rare form of inflation where prices increase rapidly, often rendering the currency nearly worthless. This occurs when there is a complete loss of trust in the currency, often due to excessive money printing or severe economic distress.</li>
-  <li><strong>Key Characteristics:</strong> Extremely high and accelerated rate of inflation, loss of confidence in the currency, and a significant decrease in the currency's value.</li>
-  <li><strong>Simple Example:</strong> In a hyperinflation scenario, prices might double in a matter of weeks or months, making it difficult for people to afford even basic necessities.</li>
+<li><strong>Name:</strong> Hyperinflation</li>
+<li><strong>Brief Definition:</strong> Hyperinflation is an extreme and rare form of inflation where prices increase rapidly, often rendering the currency nearly worthless. This occurs when there is a complete loss of trust in the currency, often due to excessive money printing or severe economic distress.</li>
+<li><strong>Key Characteristics:</strong> Extremely high and accelerated rate of inflation, loss of confidence in the currency, and a significant decrease in the currency's value.</li>
+<li><strong>Simple Example:</strong> In a hyperinflation scenario, prices might double in a matter of weeks or months, making it difficult for people to afford even basic necessities.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
-<table class="comparison-table"><thead><tr>
-<th>Type of Inflation</th>
-<th>Cause</th>
-<th>Effect on Prices</th>
-<th>Characteristics</th>
-</tr></thead><tbody>
-<tr>
-<td>Demand-Pull</td>
-<td>High demand for goods and services</td>
-<td>Prices rise due to scarcity</td>
-<td>High consumer spending, low unemployment</td>
-</tr>
-<tr>
-<td>Cost-Push</td>
-<td>Increase in production costs</td>
-<td>Businesses raise prices to maintain profits</td>
-<td>Higher wages, raw material costs</td>
-</tr>
-<tr>
-<td>Built-In</td>
-<td>Expectations of future inflation</td>
-<td>Wage-price spiral, anticipated price increases</td>
-<td>Higher wage demands, expected inflation</td>
-</tr>
-<tr>
-<td>Hyperinflation</td>
-<td>Excessive money printing, loss of trust in currency</td>
-<td>Extremely rapid price increases, currency devaluation</td>
-<td>Loss of confidence, worthless currency</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Inflation</th><th>Cause</th><th>Effect on Prices</th><th>Characteristics</th></tr></thead><tbody>
+<tr><td>Demand-Pull</td><td>High demand for goods and services</td><td>Prices rise due to scarcity</td><td>High consumer spending, low unemployment</td></tr>
+<tr><td>Cost-Push</td><td>Increase in production costs</td><td>Businesses raise prices to maintain profits</td><td>Higher wages, raw material costs</td></tr>
+<tr><td>Built-In</td><td>Expectations of future inflation</td><td>Wage-price spiral, anticipated price increases</td><td>Higher wage demands, expected inflation</td></tr>
+<tr><td>Hyperinflation</td><td>Excessive money printing, loss of trust in currency</td><td>Extremely rapid price increases, currency devaluation</td><td>Loss of confidence, worthless currency</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>Each type of inflation connects to the broader economic context through the mechanisms of supply and demand, production costs, and expectations. Demand-pull and cost-push inflations are more directly related to the economic cycle, with demand-pull being a sign of a strong economy and cost-push often resulting from external factors like supply chain disruptions. Built-in inflation illustrates how expectations of inflation can become a self-fulfilling prophecy, influencing both wage and price settings. Hyperinflation, while distinct in its extremity, results from severe economic mismanagement or crisis, highlighting the potential endpoint of unchecked inflationary pressures.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of inflation encompasses demand-pull, cost-push, built-in, and hyperinflation, each with distinct causes, characteristics, and effects on the economy, providing a comprehensive framework for understanding and addressing the complexities of price increases in various economic scenarios.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/economics/deflation/what-is.html" class="related-link">Deflation</a>
-        <a href="/economics/fiscal-policy/what-is.html" class="related-link">Fiscal Policy</a>
-        <a href="/economics/gross-domestic-product/what-is.html" class="related-link">Gross Domestic Product</a>
-        <a href="/economics/interest-rates/what-is.html" class="related-link">Interest Rates</a>
-        <a href="/economics/market-equilibrium/what-is.html" class="related-link">Market Equilibrium</a>
-        <a href="/economics/monetary-policy/what-is.html" class="related-link">Monetary Policy</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -583,6 +499,9 @@ calculateInflation();
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

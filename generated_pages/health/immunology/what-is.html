@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,56 +388,43 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/immunology/what-is.html">Immunology</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>What Is Immunology?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Immunology is the study of the immune system, which is a complex network of cells, tissues, and organs that work together to defend the body against infection and disease.</p>
-
 <p>The immune system is made up of many different components, including the skin, mucous membranes, and various types of white blood cells. These components work together to protect the body from pathogens, such as bacteria, viruses, and other foreign substances. When a pathogen enters the body, the immune system responds by sending white blood cells to attack and destroy the invader. This response is known as an immune response, and it is a critical part of keeping the body healthy.</p>
-
 <p>One of the key ways that the immune system is able to recognize and respond to pathogens is through the use of antibodies. Antibodies are proteins that are produced by white blood cells, and they are specifically designed to bind to particular pathogens. When an antibody binds to a pathogen, it helps to mark the pathogen for destruction by other immune cells. This process is known as antibody-mediated immunity, and it is an important part of the immune system's overall function.</p>
-
 <p>In addition to antibody-mediated immunity, the immune system also has other ways of responding to pathogens. For example, some white blood cells are able to engulf and digest pathogens, a process known as phagocytosis. Other white blood cells are able to produce chemical signals that help to recruit additional immune cells to the site of an infection. All of these different responses work together to help the body fight off infection and disease.</p>
-
 <p>The immune system is also able to remember specific pathogens and respond more quickly and effectively to them if they enter the body again in the future. This is known as immunological memory, and it is an important part of the immune system's overall function. Immunological memory allows the body to mount a more rapid and effective response to pathogens that it has encountered before, which helps to prevent infection and disease.</p>
-
 <p>Key components of the immune system include:</p>
 <ul>
-  <li>White blood cells, such as neutrophils and lymphocytes, which are responsible for recognizing and responding to pathogens</li>
-  <li>Antibodies, which are proteins that are produced by white blood cells and are specifically designed to bind to particular pathogens</li>
-  <li>The lymphatic system, which is a network of vessels and organs that help to filter out pathogens and other foreign substances from the body</li>
-  <li>The spleen, which is an organ that helps to filter out pathogens and other foreign substances from the blood</li>
-  <li>The thymus, which is an organ that helps to produce and mature immune cells</li>
-  <li>The skin and mucous membranes, which provide a physical barrier against pathogens and other foreign substances</li>
+<li>White blood cells, such as neutrophils and lymphocytes, which are responsible for recognizing and responding to pathogens</li>
+<li>Antibodies, which are proteins that are produced by white blood cells and are specifically designed to bind to particular pathogens</li>
+<li>The lymphatic system, which is a network of vessels and organs that help to filter out pathogens and other foreign substances from the body</li>
+<li>The spleen, which is an organ that helps to filter out pathogens and other foreign substances from the blood</li>
+<li>The thymus, which is an organ that helps to produce and mature immune cells</li>
+<li>The skin and mucous membranes, which provide a physical barrier against pathogens and other foreign substances</li>
 </ul>
-
 <p>Despite its importance, there are many common misconceptions about the immune system. Some of these include:</p>
 <ul>
-  <li>The idea that the immune system is a single, unified entity, when in fact it is a complex network of cells, tissues, and organs that work together to defend the body</li>
-  <li>The idea that the immune system is only responsible for fighting off infection, when in fact it also plays a role in repairing damaged tissues and maintaining overall health</li>
-  <li>The idea that the immune system is always able to recognize and respond to pathogens, when in fact there are many cases in which the immune system is unable to mount an effective response</li>
-  <li>The idea that the immune system is only important for preventing infection, when in fact it also plays a role in preventing cancer and other diseases</li>
+<li>The idea that the immune system is a single, unified entity, when in fact it is a complex network of cells, tissues, and organs that work together to defend the body</li>
+<li>The idea that the immune system is only responsible for fighting off infection, when in fact it also plays a role in repairing damaged tissues and maintaining overall health</li>
+<li>The idea that the immune system is always able to recognize and respond to pathogens, when in fact there are many cases in which the immune system is unable to mount an effective response</li>
+<li>The idea that the immune system is only important for preventing infection, when in fact it also plays a role in preventing cancer and other diseases</li>
 </ul>
-
 <p>A real-world example of the immune system in action is the response to a cut or scrape. When the skin is broken, pathogens such as bacteria can enter the body and cause infection. However, the immune system is able to respond quickly by sending white blood cells to the site of the injury, where they are able to engulf and destroy the pathogens. The immune system is also able to produce chemical signals that help to promote healing and tissue repair, which allows the skin to recover from the injury.</p>
-
 <p>Immunology is the study of the complex network of cells, tissues, and organs that work together to defend the body against infection and disease, and it is a critical part of understanding how the body stays healthy.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/hygiene/what-is.html" class="related-link">Hygiene</a>
-        <a href="/health/hypertension/what-is.html" class="related-link">Hypertension</a>
-        <a href="/health/infectious-diseases/what-is.html" class="related-link">Infectious Diseases</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -437,6 +469,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#science">Science</a><span>&rsaquo;</span><a href="/science/water-cycle/what-is.html">Water Cycle</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #0891B2">
     <main class="article-main">
         <article>
             <h1>What Is Water Cycle?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Water cycle refers to the continuous process by which water is circulated between the Earth and the atmosphere, involving the movement of water in three phases: liquid, solid, and gas.</p>
-
 <p>The water cycle is a vital process that sustains life on Earth, as it distributes water throughout the planet, providing the necessary moisture for plants and animals to survive. It begins with evaporation, where the sun's energy heats up water in oceans, lakes, and rivers, turning it into water vapor. This water vapor rises into the atmosphere, where it cools down and condenses into tiny droplets, forming clouds. As more and more water vapor condenses onto these droplets, they grow and eventually become too heavy to remain suspended in the air, leading to precipitation.</p>
-
 <p>Precipitation can take many forms, including rain, snow, sleet, and hail, depending on the temperature and other conditions in the atmosphere. Once the precipitation reaches the ground, it can flow across the surface as runoff, seep into the soil to become groundwater, or be absorbed by plants. The water that seeps into the soil can eventually make its way back into bodies of water, where it can evaporate again and continue the cycle. This process is constantly occurring, with water molecules continuously being cycled between the Earth and the atmosphere.</p>
-
 <p>The water cycle is driven by the energy from the sun, which provides the heat necessary for evaporation to occur. It is also influenced by the topography of the land, the temperature and humidity of the air, and the presence of living organisms. The water cycle is an essential part of the Earth's system, as it helps to regulate the planet's climate, shape the landscape, and support the diversity of life.</p>
-
 <p>Key components of the water cycle include:</p>
 <ul>
-  <li>Evaporation: the process by which water is changed from a liquid to a gas</li>
-  <li>Condensation: the process by which water vapor is changed back into a liquid</li>
-  <li>Precipitation: the process by which water falls back to the Earth's surface</li>
-  <li>Runoff: the flow of water across the land into streams, rivers, and lakes</li>
-  <li>Infiltration: the process by which water seeps into the soil to become groundwater</li>
-  <li>Transpiration: the process by which plants release water vapor into the air through their leaves</li>
+<li>Evaporation: the process by which water is changed from a liquid to a gas</li>
+<li>Condensation: the process by which water vapor is changed back into a liquid</li>
+<li>Precipitation: the process by which water falls back to the Earth's surface</li>
+<li>Runoff: the flow of water across the land into streams, rivers, and lakes</li>
+<li>Infiltration: the process by which water seeps into the soil to become groundwater</li>
+<li>Transpiration: the process by which plants release water vapor into the air through their leaves</li>
 </ul>
-
 <p>Some common misconceptions about the water cycle include:</p>
 <ul>
-  <li>That the water cycle is a linear process, when in fact it is a continuous cycle with many different pathways</li>
-  <li>That the majority of the Earth's water is found in the atmosphere, when in fact the majority is found in the oceans</li>
-  <li>That the water cycle only involves liquid water, when in fact it also involves ice and water vapor</li>
-  <li>That humans have a significant impact on the water cycle, when in fact human activities only account for a small percentage of the total water cycled through the Earth's system</li>
+<li>That the water cycle is a linear process, when in fact it is a continuous cycle with many different pathways</li>
+<li>That the majority of the Earth's water is found in the atmosphere, when in fact the majority is found in the oceans</li>
+<li>That the water cycle only involves liquid water, when in fact it also involves ice and water vapor</li>
+<li>That humans have a significant impact on the water cycle, when in fact human activities only account for a small percentage of the total water cycled through the Earth's system</li>
 </ul>
-
 <p>A real-world example of the water cycle can be seen in the formation of a mountain stream. Imagine a stream that flows through a mountain valley, providing a source of water for plants and animals. The water in this stream comes from a variety of sources, including melting snow and ice, as well as runoff from the surrounding hills. As the stream flows, it provides a habitat for aquatic organisms, and its banks support a variety of plant life. Eventually, the stream flows into a larger river, which carries the water back to the ocean, where it can evaporate again and continue the cycle.</p>
-
 <p>Summary: The water cycle is a complex and essential process that involves the continuous movement of water between the Earth and the atmosphere, providing the necessary moisture for plants and animals to survive and sustaining life on Earth.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/science/adaptation/what-is.html" class="related-link">Adaptation</a>
-        <a href="/science/carbon-cycle/what-is.html" class="related-link">Carbon Cycle</a>
-        <a href="/science/dna-replication/what-is.html" class="related-link">Dna Replication</a>
-        <a href="/science/gravity/what-is.html" class="related-link">Gravity</a>
-        <a href="/science/osmosis/what-is.html" class="related-link">Osmosis</a>
-        <a href="/science/rock-cycle/what-is.html" class="related-link">Rock Cycle</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

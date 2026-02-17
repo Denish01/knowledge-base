@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of benefits enrollment - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of benefits enrollment - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/benefits-enrollment/types-of.html">
     <meta property="og:title" content="Types of Benefits Enrollment">
-    <meta property="og:description" content="A clear, simple explanation of benefits enrollment - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of benefits enrollment - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/benefits-enrollment/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Benefits Enrollment">
-    <meta name="twitter:description" content="A clear, simple explanation of benefits enrollment - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of benefits enrollment - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Benefits Enrollment - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Benefits Enrollment", "item": "https://360library.com/life_obligations/benefits-enrollment/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Benefits Enrollment", "description": "A clear, simple explanation of benefits enrollment - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/benefits-enrollment/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/benefits-enrollment/types-of.html"}, "about": {"@type": "Thing", "name": "Benefits Enrollment"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Benefits Enrollment", "description": "A clear, simple explanation of types of benefits enrollment - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/benefits-enrollment/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/benefits-enrollment/types-of.html"}, "about": {"@type": "Thing", "name": "Benefits Enrollment"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,83 +388,56 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/benefits-enrollment/what-is.html">Benefits Enrollment</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Benefits Enrollment</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
-<p>Benefits enrollment refers to the process by which individuals select and register for various benefits, such as health insurance, retirement plans, and other employee benefits. Classification of benefits enrollment is essential because it helps individuals and organizations understand the different types of enrollment processes, their characteristics, and how they interact with one another. By categorizing benefits enrollment, individuals can make informed decisions about their benefits and organizations can design and implement effective benefits administration systems. Understanding the different types of benefits enrollment is crucial for ensuring that individuals receive the benefits they need and that organizations comply with relevant laws and regulations.</p>
+            
 
-<p>2. MAIN CATEGORIES:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
+<p>Benefits enrollment refers to the process by which individuals select and register for various benefits, such as health insurance, retirement plans, and other employee benefits. Classification of benefits enrollment is essential because it helps individuals and organizations understand the different types of enrollment processes, their characteristics, and how they interact with one another. By categorizing benefits enrollment, individuals can make informed decisions about their benefits and organizations can design and implement effective benefits administration systems. Understanding the different types of benefits enrollment is crucial for ensuring that individuals receive the benefits they need and that organizations comply with relevant laws and regulations.</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <p>The following are the main categories of benefits enrollment:</p>
 <ul>
-  <li><strong>Initial Enrollment</strong>: Initial enrollment refers to the process of enrolling in benefits for the first time, typically when an individual starts a new job or becomes eligible for benefits. Key characteristics of initial enrollment include completing enrollment forms, selecting benefits options, and providing required documentation. For example, when a new employee starts working at a company, they will typically complete an initial enrollment process to select their health insurance and other benefits.</li>
-  <li><strong>Open Enrollment</strong>: Open enrollment refers to a specific period during which individuals can enroll in or change their benefits, usually on an annual basis. Key characteristics of open enrollment include a limited timeframe for making changes, the ability to switch benefits options, and the requirement to provide updated information. For example, a company may hold an open enrollment period each year, during which employees can change their health insurance plan or add new dependents to their coverage.</li>
-  <li><strong>Special Enrollment</strong>: Special enrollment refers to the process of enrolling in or changing benefits outside of the regular open enrollment period, usually due to a qualifying life event. Key characteristics of special enrollment include the requirement to provide documentation of the qualifying life event, the ability to enroll in or change benefits, and the limited timeframe for making changes. For example, if an individual gets married or has a child, they may be eligible for special enrollment to add their new spouse or child to their health insurance plan.</li>
-  <li><strong>Voluntary Enrollment</strong>: Voluntary enrollment refers to the process of enrolling in benefits that are not mandatory, such as life insurance or disability insurance. Key characteristics of voluntary enrollment include the ability to opt-in or opt-out of benefits, the requirement to provide additional premiums, and the flexibility to change benefits options. For example, an employee may choose to enroll in a voluntary life insurance plan to provide additional financial protection for their family.</li>
-  <li><strong>Dependent Enrollment</strong>: Dependent enrollment refers to the process of enrolling dependents, such as spouses or children, in benefits. Key characteristics of dependent enrollment include the requirement to provide documentation of the dependent's eligibility, the ability to add or remove dependents, and the potential impact on benefits costs. For example, an individual may need to enroll their dependent children in their health insurance plan when they turn 26 and are no longer eligible for coverage under their parent's plan.</li>
+<li><strong>Initial Enrollment</strong>: Initial enrollment refers to the process of enrolling in benefits for the first time, typically when an individual starts a new job or becomes eligible for benefits. Key characteristics of initial enrollment include completing enrollment forms, selecting benefits options, and providing required documentation. For example, when a new employee starts working at a company, they will typically complete an initial enrollment process to select their health insurance and other benefits.</li>
+<li><strong>Open Enrollment</strong>: Open enrollment refers to a specific period during which individuals can enroll in or change their benefits, usually on an annual basis. Key characteristics of open enrollment include a limited timeframe for making changes, the ability to switch benefits options, and the requirement to provide updated information. For example, a company may hold an open enrollment period each year, during which employees can change their health insurance plan or add new dependents to their coverage.</li>
+<li><strong>Special Enrollment</strong>: Special enrollment refers to the process of enrolling in or changing benefits outside of the regular open enrollment period, usually due to a qualifying life event. Key characteristics of special enrollment include the requirement to provide documentation of the qualifying life event, the ability to enroll in or change benefits, and the limited timeframe for making changes. For example, if an individual gets married or has a child, they may be eligible for special enrollment to add their new spouse or child to their health insurance plan.</li>
+<li><strong>Voluntary Enrollment</strong>: Voluntary enrollment refers to the process of enrolling in benefits that are not mandatory, such as life insurance or disability insurance. Key characteristics of voluntary enrollment include the ability to opt-in or opt-out of benefits, the requirement to provide additional premiums, and the flexibility to change benefits options. For example, an employee may choose to enroll in a voluntary life insurance plan to provide additional financial protection for their family.</li>
+<li><strong>Dependent Enrollment</strong>: Dependent enrollment refers to the process of enrolling dependents, such as spouses or children, in benefits. Key characteristics of dependent enrollment include the requirement to provide documentation of the dependent's eligibility, the ability to add or remove dependents, and the potential impact on benefits costs. For example, an individual may need to enroll their dependent children in their health insurance plan when they turn 26 and are no longer eligible for coverage under their parent's plan.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
 <p>The following table summarizes the differences between the main categories of benefits enrollment:</p>
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Enrollment Period</th>
-<th>Eligibility</th>
-<th>Documentation Required</th>
-</tr></thead><tbody>
-<tr>
-<td>Initial Enrollment</td>
-<td>One-time</td>
-<td>New hires or newly eligible individuals</td>
-<td>Enrollment forms, identification</td>
-</tr>
-<tr>
-<td>Open Enrollment</td>
-<td>Annual</td>
-<td>All eligible individuals</td>
-<td>Updated information, benefits options</td>
-</tr>
-<tr>
-<td>Special Enrollment</td>
-<td>As-needed</td>
-<td>Individuals with qualifying life events</td>
-<td>Documentation of qualifying life event</td>
-</tr>
-<tr>
-<td>Voluntary Enrollment</td>
-<td>Ongoing</td>
-<td>Eligible individuals</td>
-<td>Additional premiums, benefits options</td>
-</tr>
-<tr>
-<td>Dependent Enrollment</td>
-<td>As-needed</td>
-<td>Eligible dependents</td>
-<td>Documentation of dependent's eligibility</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Enrollment Period</th><th>Eligibility</th><th>Documentation Required</th></tr></thead><tbody>
+<tr><td>Initial Enrollment</td><td>One-time</td><td>New hires or newly eligible individuals</td><td>Enrollment forms, identification</td></tr>
+<tr><td>Open Enrollment</td><td>Annual</td><td>All eligible individuals</td><td>Updated information, benefits options</td></tr>
+<tr><td>Special Enrollment</td><td>As-needed</td><td>Individuals with qualifying life events</td><td>Documentation of qualifying life event</td></tr>
+<tr><td>Voluntary Enrollment</td><td>Ongoing</td><td>Eligible individuals</td><td>Additional premiums, benefits options</td></tr>
+<tr><td>Dependent Enrollment</td><td>As-needed</td><td>Eligible dependents</td><td>Documentation of dependent's eligibility</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different categories of benefits enrollment are connected in that they all relate to the process of selecting and registering for benefits. Initial enrollment sets the foundation for an individual's benefits, while open enrollment provides an opportunity to make changes to those benefits. Special enrollment allows individuals to make changes outside of the regular open enrollment period, and voluntary enrollment provides additional benefits options. Dependent enrollment is a subset of the other categories, as it involves enrolling dependents in benefits. Understanding how these categories relate to one another is essential for ensuring that individuals receive the benefits they need and that organizations comply with relevant laws and regulations.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system for benefits enrollment includes initial enrollment, open enrollment, special enrollment, voluntary enrollment, and dependent enrollment, each with its own characteristics and purpose, which together provide a comprehensive framework for understanding the benefits enrollment process.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/benefit-reduction/what-is.html" class="related-link">Benefit Reduction</a>
-        <a href="/life_obligations/benefit-threshold/what-is.html" class="related-link">Benefit Threshold</a>
-        <a href="/life_obligations/child-support/what-is.html" class="related-link">Child Support</a>
-        <a href="/life_obligations/child-support-duration/what-is.html" class="related-link">Child Support Duration</a>
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -464,6 +482,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

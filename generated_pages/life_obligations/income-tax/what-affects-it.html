@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of income tax - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of what affects income tax - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/income-tax/what-affects-it.html">
     <meta property="og:title" content="What Affects Income Tax">
-    <meta property="og:description" content="A clear, simple explanation of income tax - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of what affects income tax - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/income-tax/what-affects-it.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="What Affects Income Tax">
-    <meta name="twitter:description" content="A clear, simple explanation of income tax - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of what affects income tax - definition, key concepts, examples, and common misconceptions.">
     <title>What Affects Income Tax - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Income Tax", "item": "https://360library.com/life_obligations/income-tax/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "What Affects It"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Affects Income Tax", "description": "A clear, simple explanation of income tax - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/income-tax/what-affects-it.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/income-tax/what-affects-it.html"}, "about": {"@type": "Thing", "name": "Income Tax"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Affects Income Tax", "description": "A clear, simple explanation of what affects income tax - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/income-tax/what-affects-it.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/income-tax/what-affects-it.html"}, "about": {"@type": "Thing", "name": "Income Tax"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,48 +388,49 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/income-tax/what-is.html">Income Tax</a><span>&rsaquo;</span>What Affects It
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Affects Income Tax</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
-<p>Income tax is the amount of money that individuals and businesses must pay to the government based on their earnings. Understanding the factors that affect income tax is essential for managing personal and business finances effectively. Knowing what influences income tax can help individuals and businesses make informed decisions about their financial situations and plan accordingly. This knowledge can also help them take advantage of available tax deductions and credits, ultimately reducing their tax liability.</p>
+            
 
-<p>2. MAIN FACTORS:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
+<p>Income tax is the amount of money that individuals and businesses must pay to the government based on their earnings. Understanding the factors that affect income tax is essential for managing personal and business finances effectively. Knowing what influences income tax can help individuals and businesses make informed decisions about their financial situations and plan accordingly. This knowledge can also help them take advantage of available tax deductions and credits, ultimately reducing their tax liability.</p>
+<ol>
+<li>MAIN FACTORS:</li>
+</ol>
 <p>Several factors can affect income tax, including:</p>
 <ul>
-  <li><strong>Taxable Income</strong>: The amount of income that is subject to taxation influences income tax. As taxable income increases, the amount of income tax owed also increases. The effect of taxable income on income tax is positive.</li>
-  <li><strong>Tax Filing Status</strong>: An individual's tax filing status, such as single, married, or head of household, influences income tax. Different filing statuses have different tax rates and deductions, which can either increase or decrease the amount of income tax owed. The effect of tax filing status on income tax is variable.</li>
-  <li><strong>Deductions and Credits</strong>: The number and amount of deductions and credits claimed can influence income tax. Deductions and credits reduce taxable income, which in turn reduces the amount of income tax owed. The effect of deductions and credits on income tax is negative.</li>
-  <li><strong>Tax Rates</strong>: The tax rates applied to taxable income influence income tax. As tax rates increase, the amount of income tax owed also increases. The effect of tax rates on income tax is positive.</li>
-  <li><strong>Dependents and Exemptions</strong>: The number of dependents and exemptions claimed can influence income tax. Dependents and exemptions reduce taxable income, which in turn reduces the amount of income tax owed. The effect of dependents and exemptions on income tax is negative.</li>
-  <li><strong>Business Income and Expenses</strong>: For businesses, the amount of income and expenses can influence income tax. Business income increases taxable income, while business expenses reduce taxable income. The effect of business income and expenses on income tax is variable.</li>
-  <li><strong>State and Local Taxes</strong>: The amount of state and local taxes paid can influence income tax. In some cases, state and local taxes can be deducted from federal taxable income, reducing the amount of income tax owed. The effect of state and local taxes on income tax is negative.</li>
+<li><strong>Taxable Income</strong>: The amount of income that is subject to taxation influences income tax. As taxable income increases, the amount of income tax owed also increases. The effect of taxable income on income tax is positive.</li>
+<li><strong>Tax Filing Status</strong>: An individual's tax filing status, such as single, married, or head of household, influences income tax. Different filing statuses have different tax rates and deductions, which can either increase or decrease the amount of income tax owed. The effect of tax filing status on income tax is variable.</li>
+<li><strong>Deductions and Credits</strong>: The number and amount of deductions and credits claimed can influence income tax. Deductions and credits reduce taxable income, which in turn reduces the amount of income tax owed. The effect of deductions and credits on income tax is negative.</li>
+<li><strong>Tax Rates</strong>: The tax rates applied to taxable income influence income tax. As tax rates increase, the amount of income tax owed also increases. The effect of tax rates on income tax is positive.</li>
+<li><strong>Dependents and Exemptions</strong>: The number of dependents and exemptions claimed can influence income tax. Dependents and exemptions reduce taxable income, which in turn reduces the amount of income tax owed. The effect of dependents and exemptions on income tax is negative.</li>
+<li><strong>Business Income and Expenses</strong>: For businesses, the amount of income and expenses can influence income tax. Business income increases taxable income, while business expenses reduce taxable income. The effect of business income and expenses on income tax is variable.</li>
+<li><strong>State and Local Taxes</strong>: The amount of state and local taxes paid can influence income tax. In some cases, state and local taxes can be deducted from federal taxable income, reducing the amount of income tax owed. The effect of state and local taxes on income tax is negative.</li>
 </ul>
-
-<p>3. INTERCONNECTIONS:</p>
+<ol>
+<li>INTERCONNECTIONS:</li>
+</ol>
 <p>These factors are interconnected and can have a ripple effect on income tax. For example, an increase in taxable income can lead to a higher tax filing status, which in turn can affect the number of deductions and credits available. Additionally, business income and expenses can affect taxable income, which can then affect the number of dependents and exemptions that can be claimed. Understanding these interconnections is crucial for making informed decisions about financial situations.</p>
-
-<p>4. CONTROLLABLE VS UNCONTROLLABLE:</p>
+<ol>
+<li>CONTROLLABLE VS UNCONTROLLABLE:</li>
+</ol>
 <p>Some factors that affect income tax can be controlled, while others cannot. Controllable factors include the number of deductions and credits claimed, business income and expenses, and the number of dependents and exemptions claimed. Uncontrollable factors include tax rates, tax filing status, and state and local taxes. Individuals and businesses can manage their controllable factors to minimize their tax liability, but they must also be aware of the uncontrollable factors that can affect their income tax.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>In conclusion, understanding the factors that affect income tax is essential for managing personal and business finances effectively. The most important factors to understand are taxable income, tax filing status, deductions and credits, tax rates, dependents and exemptions, business income and expenses, and state and local taxes. By knowing how these factors influence income tax and how they interconnect, individuals and businesses can make informed decisions about their financial situations and plan accordingly. Additionally, being aware of the controllable and uncontrollable factors can help them manage their tax liability and take advantage of available tax deductions and credits.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/income-eligibility/what-is.html" class="related-link">Income Eligibility</a>
-        <a href="/life_obligations/income-shares-model/what-is.html" class="related-link">Income Shares Model</a>
-        <a href="/life_obligations/insurance-deductible/what-is.html" class="related-link">Insurance Deductible</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -429,6 +475,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

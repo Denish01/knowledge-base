@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of probability - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of what affects probability - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/math/probability/what-affects-it.html">
     <meta property="og:title" content="What Affects Probability">
-    <meta property="og:description" content="A clear, simple explanation of probability - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of what affects probability - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/math/probability/what-affects-it.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="What Affects Probability">
-    <meta name="twitter:description" content="A clear, simple explanation of probability - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of what affects probability - definition, key concepts, examples, and common misconceptions.">
     <title>What Affects Probability - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://360library.com/#math"}, {"@type": "ListItem", "position": 3, "name": "Probability", "item": "https://360library.com/math/probability/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "What Affects It"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Affects Probability", "description": "A clear, simple explanation of probability - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/probability/what-affects-it.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/probability/what-affects-it.html"}, "about": {"@type": "Thing", "name": "Probability"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Affects Probability", "description": "A clear, simple explanation of what affects probability - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/probability/what-affects-it.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/probability/what-affects-it.html"}, "about": {"@type": "Thing", "name": "Probability"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,148 +388,48 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/probability/what-is.html">Probability</a><span>&rsaquo;</span>What Affects It
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>What Affects Probability</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
-<style>
-.calculator {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 24px 0;
-}
-.calculator h3 {
-    margin-top: 0;
-    color: #1a73e8;
-}
-.calc-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-bottom: 16px;
-}
-.calculator label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-}
-.calculator input, .calculator select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-.calculator button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.calculator button:hover {
-    background: #1557b0;
-}
-.calc-result {
-    margin-top: 16px;
-    padding: 12px;
-    background: white;
-    border-radius: 4px;
-    border-left: 4px solid #1a73e8;
-}
-.calc-result p {
-    margin: 8px 0;
-}
-.calc-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-.tab-btn {
-    background: #e0e0e0;
-    color: #333;
-}
-.tab-btn.active {
-    background: #1a73e8;
-    color: white;
-}
-.tab-content {
-    display: none;
-}
-.tab-content.active {
-    display: block;
-}
-</style>
 
-<div class="calculator" id="prob-calc">
-    <h3>Basic Probability Calculator</h3>
-    <div class="calc-grid">
-        <label>Favorable Outcomes: <input type="number" id="prob-favorable" value="3" min="0"></label>
-        <label>Total Possible Outcomes: <input type="number" id="prob-total" value="10" min="1"></label>
-    </div>
-    <button onclick="calculateProbability()">Calculate</button>
-    <div class="calc-result" id="prob-result"></div>
-</div>
-<script>
-function calculateProbability() {
-    const favorable = parseInt(document.getElementById('prob-favorable').value);
-    const total = parseInt(document.getElementById('prob-total').value);
+            
 
-    const prob = favorable / total;
-    const pct = prob * 100;
-    const odds = favorable + ':' + (total - favorable);
-
-    document.getElementById('prob-result').innerHTML = `
-        <p><strong>Probability:</strong> ${prob.toFixed(4)} (${pct.toFixed(2)}%)</p>
-        <p><strong>Odds in favor:</strong> ${odds}</p>
-        <p><strong>Odds against:</strong> ${(total-favorable)}:${favorable}</p>
-    `;
-}
-calculateProbability();
-</script>
-
-
-            <p>1. INTRODUCTION:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>Probability is a measure of the likelihood that an event will occur. It is a number between 0 and 1 that represents the chance or probability of an event happening. Understanding the factors that affect probability is crucial because it helps individuals make informed decisions in various aspects of life, such as finance, insurance, and even daily choices. By recognizing the influences on probability, people can better assess risks and opportunities, leading to more effective decision-making. In this explanation, we will explore the key factors that impact probability and how they interact with each other.</p>
-
-<p>2. MAIN FACTORS:</p>
+<ol>
+<li>MAIN FACTORS:</li>
+</ol>
 <p>Several factors affect probability, including:</p>
 <ul>
-  <li>Sample Size: The number of observations or trials in an experiment influences probability. A larger sample size generally increases the accuracy of the probability estimate, making it a positive effect on probability.</li>
-  <li>Event Dependence: Whether events are dependent or independent affects probability. If events are dependent, the occurrence of one event can change the probability of another event, and this effect can be either positive or negative, depending on the situation.</li>
-  <li>Randomness: The level of randomness in a system impacts probability. Higher randomness can lead to more uncertainty, making it a negative effect on the accuracy of probability estimates.</li>
-  <li>Data Quality: The accuracy and reliability of the data used to calculate probability influence the outcome. High-quality data lead to more accurate probability estimates, resulting in a positive effect.</li>
-  <li>Prior Knowledge: Existing knowledge or experience about an event or situation can affect probability. Prior knowledge can provide valuable insights, increasing the accuracy of probability estimates, which is a positive effect.</li>
-  <li>Environmental Factors: External factors, such as weather or location, can influence probability. These factors can either increase or decrease the likelihood of an event, resulting in a variable effect.</li>
+<li>Sample Size: The number of observations or trials in an experiment influences probability. A larger sample size generally increases the accuracy of the probability estimate, making it a positive effect on probability.</li>
+<li>Event Dependence: Whether events are dependent or independent affects probability. If events are dependent, the occurrence of one event can change the probability of another event, and this effect can be either positive or negative, depending on the situation.</li>
+<li>Randomness: The level of randomness in a system impacts probability. Higher randomness can lead to more uncertainty, making it a negative effect on the accuracy of probability estimates.</li>
+<li>Data Quality: The accuracy and reliability of the data used to calculate probability influence the outcome. High-quality data lead to more accurate probability estimates, resulting in a positive effect.</li>
+<li>Prior Knowledge: Existing knowledge or experience about an event or situation can affect probability. Prior knowledge can provide valuable insights, increasing the accuracy of probability estimates, which is a positive effect.</li>
+<li>Environmental Factors: External factors, such as weather or location, can influence probability. These factors can either increase or decrease the likelihood of an event, resulting in a variable effect.</li>
 </ul>
-
-<p>3. INTERCONNECTIONS:</p>
+<ol>
+<li>INTERCONNECTIONS:</li>
+</ol>
 <p>These factors are interconnected and can impact each other. For instance, a larger sample size can lead to higher-quality data, which in turn increases the accuracy of probability estimates. Additionally, prior knowledge can help identify dependent events, allowing for more accurate probability calculations. Environmental factors can also affect the level of randomness in a system, which can then influence the probability of an event. Understanding these interconnections is essential to accurately assess probability.</p>
-
-<p>4. CONTROLLABLE VS UNCONTROLLABLE:</p>
+<ol>
+<li>CONTROLLABLE VS UNCONTROLLABLE:</li>
+</ol>
 <p>Some factors that affect probability can be controlled or managed, while others cannot. Sample size, data quality, and prior knowledge are factors that can be managed to some extent. For example, increasing the sample size or collecting higher-quality data can improve the accuracy of probability estimates. However, event dependence, randomness, and environmental factors are often uncontrollable. While it may be possible to mitigate their effects, they cannot be entirely eliminated.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>In conclusion, understanding the factors that affect probability is vital for making informed decisions. The main factors that influence probability include sample size, event dependence, randomness, data quality, prior knowledge, and environmental factors. These factors interact with each other, and recognizing their interconnections is crucial for accurate probability assessments. By managing controllable factors and acknowledging the impact of uncontrollable factors, individuals can improve their ability to estimate probability and make more effective decisions. The most important factors to understand are sample size, data quality, and prior knowledge, as they can be managed to increase the accuracy of probability estimates. By recognizing the causes and effects of these factors, individuals can develop a deeper understanding of probability and its role in decision-making.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/perimeter/what-is.html" class="related-link">Perimeter</a>
-        <a href="/math/prime-numbers/what-is.html" class="related-link">Prime Numbers</a>
-        <a href="/math/proportions/what-is.html" class="related-link">Proportions</a>
-        <a href="/math/pythagorean-theorem/what-is.html" class="related-link">Pythagorean Theorem</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -529,6 +474,9 @@ calculateProbability();
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of earning capacity - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Learn how earning capacity works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <link rel="canonical" href="https://360library.com/life_obligations/earning-capacity/how-it-works.html">
     <meta property="og:title" content="How Earning Capacity Works">
-    <meta property="og:description" content="A clear, simple explanation of earning capacity - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Learn how earning capacity works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <meta property="og:url" content="https://360library.com/life_obligations/earning-capacity/how-it-works.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How Earning Capacity Works">
-    <meta name="twitter:description" content="A clear, simple explanation of earning capacity - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Learn how earning capacity works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <title>How Earning Capacity Works - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Earning Capacity", "item": "https://360library.com/life_obligations/earning-capacity/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "How It Works"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Earning Capacity Works", "description": "A clear, simple explanation of earning capacity - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/earning-capacity/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/earning-capacity/how-it-works.html"}, "about": {"@type": "Thing", "name": "Earning Capacity"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Earning Capacity Works", "description": "Learn how earning capacity works with this step-by-step explanation. Simple guide to the process and mechanism.", "url": "https://360library.com/life_obligations/earning-capacity/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/earning-capacity/how-it-works.html"}, "about": {"@type": "Thing", "name": "Earning Capacity"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,44 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/earning-capacity/what-is.html">Earning Capacity</a><span>&rsaquo;</span>How It Works
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>How Earning Capacity Works</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. QUICK ANSWER: Earning capacity refers to an individual's ability to produce income, and it works by calculating the amount of money a person can potentially earn based on their skills, education, and experience. This calculation is used to determine a person's potential for generating income over a certain period of time.</p>
+            
 
-<p>2. STEP-BY-STEP PROCESS: First, an individual's education, skills, and work experience are assessed to determine their potential for employment in a particular field or industry. Then, the current job market and the demand for their skills are evaluated to determine the potential salary range for their position. Next, any additional factors that may impact their earning capacity, such as health or disability, are taken into account. After that, the individual's potential for career advancement and future salary increases are considered. Finally, all of these factors are used to calculate the individual's total earning capacity, which is typically expressed as a yearly or lifetime amount.</p>
-
-<p>3. KEY COMPONENTS: The key components involved in earning capacity include the individual's human capital, which refers to their education, skills, and experience, as well as the job market and the demand for their skills. Other important components include the individual's health and disability status, as well as their potential for career advancement and future salary increases. The role of these components is to provide a comprehensive picture of the individual's potential for generating income.</p>
-
-<p>4. VISUAL ANALOGY: A simple analogy for earning capacity is a water pipeline. Just as a pipeline has a maximum capacity for carrying water, an individual has a maximum capacity for earning income based on their skills, education, and experience. Just as the pipeline's capacity can be affected by factors such as pipe size and water pressure, an individual's earning capacity can be affected by factors such as job market demand and health status.</p>
-
-<p>5. COMMON QUESTIONS: But what about individuals who are self-employed or own their own businesses - how is their earning capacity calculated? What about individuals who have a disability or health condition that affects their ability to work - how is their earning capacity impacted? How does earning capacity relate to an individual's standard of living, and what are the implications for their financial well-being? But what about individuals who choose to pursue non-traditional or low-paying careers - how is their earning capacity affected by this choice?</p>
-
-<p>6. SUMMARY: Earning capacity is a calculation of an individual's potential to generate income based on their skills, education, experience, and other factors, and it provides a comprehensive picture of their ability to produce income over a certain period of time.</p>
-
+            <ol>
+<li>QUICK ANSWER: Earning capacity refers to an individual's ability to produce income, and it works by calculating the amount of money a person can potentially earn based on their skills, education, and experience. This calculation is used to determine a person's potential for generating income over a certain period of time.</li>
+</ol>
+<ol>
+<li>STEP-BY-STEP PROCESS: First, an individual's education, skills, and work experience are assessed to determine their potential for employment in a particular field or industry. Then, the current job market and the demand for their skills are evaluated to determine the potential salary range for their position. Next, any additional factors that may impact their earning capacity, such as health or disability, are taken into account. After that, the individual's potential for career advancement and future salary increases are considered. Finally, all of these factors are used to calculate the individual's total earning capacity, which is typically expressed as a yearly or lifetime amount.</li>
+</ol>
+<ol>
+<li>KEY COMPONENTS: The key components involved in earning capacity include the individual's human capital, which refers to their education, skills, and experience, as well as the job market and the demand for their skills. Other important components include the individual's health and disability status, as well as their potential for career advancement and future salary increases. The role of these components is to provide a comprehensive picture of the individual's potential for generating income.</li>
+</ol>
+<ol>
+<li>VISUAL ANALOGY: A simple analogy for earning capacity is a water pipeline. Just as a pipeline has a maximum capacity for carrying water, an individual has a maximum capacity for earning income based on their skills, education, and experience. Just as the pipeline's capacity can be affected by factors such as pipe size and water pressure, an individual's earning capacity can be affected by factors such as job market demand and health status.</li>
+</ol>
+<ol>
+<li>COMMON QUESTIONS: But what about individuals who are self-employed or own their own businesses - how is their earning capacity calculated? What about individuals who have a disability or health condition that affects their ability to work - how is their earning capacity impacted? How does earning capacity relate to an individual's standard of living, and what are the implications for their financial well-being? But what about individuals who choose to pursue non-traditional or low-paying careers - how is their earning capacity affected by this choice?</li>
+</ol>
+<ol>
+<li>SUMMARY: Earning capacity is a calculation of an individual's potential to generate income based on their skills, education, experience, and other factors, and it provides a comprehensive picture of their ability to produce income over a certain period of time.</li>
+</ol>
 <p>To further elaborate on the process, it is essential to consider the various factors that influence an individual's earning capacity. For instance, the job market and the demand for specific skills can significantly impact an individual's potential salary range. Additionally, an individual's health and disability status can affect their ability to work and, consequently, their earning capacity. The potential for career advancement and future salary increases is also a crucial factor in determining an individual's earning capacity.</p>
-
 <p>In the context of earning capacity, human capital plays a vital role. Human capital refers to the skills, knowledge, and experience that an individual possesses, which can be used to generate income. The more human capital an individual has, the higher their potential earning capacity. Furthermore, the job market and the demand for specific skills can also impact an individual's human capital, as certain skills may be more valuable in the job market than others.</p>
-
 <p>The calculation of earning capacity is a complex process that involves considering multiple factors. It is not just a simple matter of multiplying an individual's hourly wage by the number of hours they work. Rather, it involves assessing their potential for career advancement, their health and disability status, and the job market demand for their skills. By considering these factors, it is possible to get a comprehensive picture of an individual's potential to generate income over a certain period.</p>
-
 <p>In conclusion, earning capacity is a critical concept that has significant implications for an individual's financial well-being. By understanding how earning capacity works, individuals can make informed decisions about their education, career choices, and financial planning. Moreover, employers and policymakers can also use the concept of earning capacity to make informed decisions about hiring, training, and compensation. Ultimately, earning capacity is a vital component of an individual's overall financial situation, and it plays a crucial role in determining their standard of living.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/direct-deposit/what-is.html" class="related-link">Direct Deposit</a>
-        <a href="/life_obligations/disability-insurance/what-is.html" class="related-link">Disability Insurance</a>
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/eligibility-criteria/what-is.html" class="related-link">Eligibility Criteria</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -425,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

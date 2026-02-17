@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of alimony - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of alimony - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/alimony/types-of.html">
     <meta property="og:title" content="Types of Alimony">
-    <meta property="og:description" content="A clear, simple explanation of alimony - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of alimony - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/alimony/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Alimony">
-    <meta name="twitter:description" content="A clear, simple explanation of alimony - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of alimony - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Alimony - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Alimony", "item": "https://360library.com/life_obligations/alimony/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Alimony", "description": "A clear, simple explanation of alimony - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/alimony/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/alimony/types-of.html"}, "about": {"@type": "Thing", "name": "Alimony"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Alimony", "description": "A clear, simple explanation of types of alimony - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/alimony/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/alimony/types-of.html"}, "about": {"@type": "Thing", "name": "Alimony"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,83 +388,56 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/alimony/what-is.html">Alimony</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Alimony</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
-<p>The classification of alimony, also known as spousal support, is a crucial aspect of family law, as it determines the financial obligations of one spouse to the other during or after a divorce. Understanding the different types of alimony is essential for individuals going through a divorce, as well as for legal professionals and financial advisors. Classification matters because it helps to clarify the purposes, durations, and payment structures of each type, ensuring that the financial needs of both parties are met. By categorizing alimony into distinct types, individuals can better navigate the complex process of divorce and make informed decisions about their financial futures.</p>
+            
 
-<p>2. MAIN CATEGORIES:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
+<p>The classification of alimony, also known as spousal support, is a crucial aspect of family law, as it determines the financial obligations of one spouse to the other during or after a divorce. Understanding the different types of alimony is essential for individuals going through a divorce, as well as for legal professionals and financial advisors. Classification matters because it helps to clarify the purposes, durations, and payment structures of each type, ensuring that the financial needs of both parties are met. By categorizing alimony into distinct types, individuals can better navigate the complex process of divorce and make informed decisions about their financial futures.</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <p>There are several main categories of alimony, each with its unique characteristics and purposes. These categories include:</p>
 <ul>
-  <li><strong>Temporary Alimony</strong>: Temporary alimony, also known as pendente lite support, is a type of financial support provided to one spouse during the divorce proceedings. Its key characteristics include a temporary duration, typically ending when the divorce is finalized, and a focus on maintaining the recipient's standard of living during the divorce process. For example, if a wife is dependent on her husband's income, she may receive temporary alimony to cover her living expenses while the divorce is pending.</li>
-  <li><strong>Rehabilitative Alimony</strong>: Rehabilitative alimony is a type of financial support designed to help one spouse become self-sufficient after a divorce. Its key characteristics include a focus on education, training, or career development, and a limited duration, typically ending when the recipient becomes self-sufficient. For instance, if a husband has been the primary breadwinner, his wife may receive rehabilitative alimony to pursue a degree or certification, enabling her to enter the workforce.</li>
-  <li><strong>Permanent Alimony</strong>: Permanent alimony, also known as alimony pendente lite, is a type of financial support provided to one spouse after a divorce, typically when the recipient is unable to become self-sufficient. Its key characteristics include a long-term or permanent duration and a focus on maintaining the recipient's standard of living. For example, if a wife is unable to work due to a disability, she may receive permanent alimony from her ex-husband to ensure her financial well-being.</li>
-  <li><strong>Reimbursement Alimony</strong>: Reimbursement alimony is a type of financial support provided to one spouse as reimbursement for expenses incurred during the marriage, such as education or training. Its key characteristics include a focus on repayment and a limited duration, typically ending when the debt is paid off. For instance, if a husband pursued a graduate degree during the marriage, his wife may receive reimbursement alimony to compensate her for the financial support she provided during his studies.</li>
-  <li><strong>Lump Sum Alimony</strong>: Lump sum alimony is a type of financial support provided to one spouse in a single payment, rather than in ongoing installments. Its key characteristics include a one-time payment and a focus on finalizing the divorce settlement. For example, if a couple has a significant amount of marital property, one spouse may receive a lump sum alimony payment to compensate them for their share of the property.</li>
+<li><strong>Temporary Alimony</strong>: Temporary alimony, also known as pendente lite support, is a type of financial support provided to one spouse during the divorce proceedings. Its key characteristics include a temporary duration, typically ending when the divorce is finalized, and a focus on maintaining the recipient's standard of living during the divorce process. For example, if a wife is dependent on her husband's income, she may receive temporary alimony to cover her living expenses while the divorce is pending.</li>
+<li><strong>Rehabilitative Alimony</strong>: Rehabilitative alimony is a type of financial support designed to help one spouse become self-sufficient after a divorce. Its key characteristics include a focus on education, training, or career development, and a limited duration, typically ending when the recipient becomes self-sufficient. For instance, if a husband has been the primary breadwinner, his wife may receive rehabilitative alimony to pursue a degree or certification, enabling her to enter the workforce.</li>
+<li><strong>Permanent Alimony</strong>: Permanent alimony, also known as alimony pendente lite, is a type of financial support provided to one spouse after a divorce, typically when the recipient is unable to become self-sufficient. Its key characteristics include a long-term or permanent duration and a focus on maintaining the recipient's standard of living. For example, if a wife is unable to work due to a disability, she may receive permanent alimony from her ex-husband to ensure her financial well-being.</li>
+<li><strong>Reimbursement Alimony</strong>: Reimbursement alimony is a type of financial support provided to one spouse as reimbursement for expenses incurred during the marriage, such as education or training. Its key characteristics include a focus on repayment and a limited duration, typically ending when the debt is paid off. For instance, if a husband pursued a graduate degree during the marriage, his wife may receive reimbursement alimony to compensate her for the financial support she provided during his studies.</li>
+<li><strong>Lump Sum Alimony</strong>: Lump sum alimony is a type of financial support provided to one spouse in a single payment, rather than in ongoing installments. Its key characteristics include a one-time payment and a focus on finalizing the divorce settlement. For example, if a couple has a significant amount of marital property, one spouse may receive a lump sum alimony payment to compensate them for their share of the property.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
 <p>The following table summarizes the main differences between the categories of alimony:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Alimony</th>
-<th>Duration</th>
-<th>Purpose</th>
-<th>Payment Structure</th>
-</tr></thead><tbody>
-<tr>
-<td>Temporary</td>
-<td>Temporary</td>
-<td>Maintain standard of living during divorce</td>
-<td>Ongoing installments</td>
-</tr>
-<tr>
-<td>Rehabilitative</td>
-<td>Limited</td>
-<td>Become self-sufficient</td>
-<td>Ongoing installments</td>
-</tr>
-<tr>
-<td>Permanent</td>
-<td>Long-term/Permanent</td>
-<td>Maintain standard of living</td>
-<td>Ongoing installments</td>
-</tr>
-<tr>
-<td>Reimbursement</td>
-<td>Limited</td>
-<td>Reimburse expenses</td>
-<td>Ongoing installments or lump sum</td>
-</tr>
-<tr>
-<td>Lump Sum</td>
-<td>One-time</td>
-<td>Finalize divorce settlement</td>
-<td>Single payment</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Alimony</th><th>Duration</th><th>Purpose</th><th>Payment Structure</th></tr></thead><tbody>
+<tr><td>Temporary</td><td>Temporary</td><td>Maintain standard of living during divorce</td><td>Ongoing installments</td></tr>
+<tr><td>Rehabilitative</td><td>Limited</td><td>Become self-sufficient</td><td>Ongoing installments</td></tr>
+<tr><td>Permanent</td><td>Long-term/Permanent</td><td>Maintain standard of living</td><td>Ongoing installments</td></tr>
+<tr><td>Reimbursement</td><td>Limited</td><td>Reimburse expenses</td><td>Ongoing installments or lump sum</td></tr>
+<tr><td>Lump Sum</td><td>One-time</td><td>Finalize divorce settlement</td><td>Single payment</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different categories of alimony are interconnected, as they often serve as alternatives or complements to one another. For instance, temporary alimony may be provided during the divorce process, while rehabilitative alimony may be awarded after the divorce to help the recipient become self-sufficient. Permanent alimony, on the other hand, may be provided when the recipient is unable to become self-sufficient, and reimbursement alimony may be used to compensate one spouse for expenses incurred during the marriage. Lump sum alimony, as a one-time payment, can be used to finalize the divorce settlement and provide a clean break between the parties.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system of alimony encompasses various types, including temporary, rehabilitative, permanent, reimbursement, and lump sum alimony, each with distinct characteristics and purposes that serve to provide financial support and stability to individuals during and after a divorce.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/affordability-assessment/what-is.html" class="related-link">Affordability Assessment</a>
-        <a href="/life_obligations/assistance-programs/what-is.html" class="related-link">Assistance Programs</a>
-        <a href="/life_obligations/auto-insurance/what-is.html" class="related-link">Auto Insurance</a>
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -464,6 +482,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

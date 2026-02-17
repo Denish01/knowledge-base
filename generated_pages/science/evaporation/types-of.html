@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of evaporation - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of evaporation - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/science/evaporation/types-of.html">
     <meta property="og:title" content="Types of Evaporation">
-    <meta property="og:description" content="A clear, simple explanation of evaporation - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of evaporation - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/science/evaporation/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Evaporation">
-    <meta name="twitter:description" content="A clear, simple explanation of evaporation - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of evaporation - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Evaporation - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Science", "item": "https://360library.com/#science"}, {"@type": "ListItem", "position": 3, "name": "Evaporation", "item": "https://360library.com/science/evaporation/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Evaporation", "description": "A clear, simple explanation of evaporation - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/evaporation/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/evaporation/types-of.html"}, "about": {"@type": "Thing", "name": "Evaporation"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Evaporation", "description": "A clear, simple explanation of types of evaporation - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/evaporation/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/evaporation/types-of.html"}, "about": {"@type": "Thing", "name": "Evaporation"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,106 +388,88 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#science">Science</a><span>&rsaquo;</span><a href="/science/evaporation/what-is.html">Evaporation</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #0891B2">
     <main class="article-main">
         <article>
             <h1>Types of Evaporation</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>Types of evaporation refer to the various ways in which a liquid transforms into a gas or vapor. Classification of evaporation is crucial as it helps us understand the different mechanisms and processes involved in this fundamental physical phenomenon. By categorizing evaporation, we can better comprehend the factors that influence it, such as temperature, humidity, and surface area, and apply this knowledge to various fields like chemistry, physics, and environmental science. Understanding the different types of evaporation is essential for predicting and controlling the rate of evaporation in various situations, from industrial processes to natural ecosystems.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the main types of evaporation:</p>
-<p>1. <strong>Surface Evaporation</strong></p>
+<ol>
+<li><strong>Surface Evaporation</strong></li>
+</ol>
 <ul>
-  <li>Definition: Surface evaporation occurs when a liquid evaporates from its surface, typically from a free surface like an ocean, lake, or puddle. This type of evaporation is influenced by factors such as wind speed, temperature, and humidity.</li>
-  <li>Key characteristics: High surface area, direct exposure to air, and dependence on environmental conditions.</li>
-  <li>Example: Water evaporating from the surface of a lake on a warm summer day.</li>
+<li>Definition: Surface evaporation occurs when a liquid evaporates from its surface, typically from a free surface like an ocean, lake, or puddle. This type of evaporation is influenced by factors such as wind speed, temperature, and humidity.</li>
+<li>Key characteristics: High surface area, direct exposure to air, and dependence on environmental conditions.</li>
+<li>Example: Water evaporating from the surface of a lake on a warm summer day.</li>
 </ul>
-<p>2. <strong>Boiling Evaporation</strong></p>
+<ol>
+<li><strong>Boiling Evaporation</strong></li>
+</ol>
 <ul>
-  <li>Definition: Boiling evaporation, also known as bulk evaporation, occurs when a liquid is heated to its boiling point, causing rapid evaporation throughout the bulk of the liquid. This process is characterized by the formation of bubbles within the liquid.</li>
-  <li>Key characteristics: High temperatures, rapid evaporation rate, and bubble formation.</li>
-  <li>Example: Water boiling in a pot on a stove, where bubbles form and rise to the surface, releasing steam.</li>
+<li>Definition: Boiling evaporation, also known as bulk evaporation, occurs when a liquid is heated to its boiling point, causing rapid evaporation throughout the bulk of the liquid. This process is characterized by the formation of bubbles within the liquid.</li>
+<li>Key characteristics: High temperatures, rapid evaporation rate, and bubble formation.</li>
+<li>Example: Water boiling in a pot on a stove, where bubbles form and rise to the surface, releasing steam.</li>
 </ul>
-<p>3. <strong>Flash Evaporation</strong></p>
+<ol>
+<li><strong>Flash Evaporation</strong></li>
+</ol>
 <ul>
-  <li>Definition: Flash evaporation is a type of evaporation that occurs when a liquid is suddenly and briefly exposed to a significant reduction in pressure, causing a portion of the liquid to rapidly evaporate.</li>
-  <li>Key characteristics: Sudden pressure reduction, rapid evaporation, and typically occurs in industrial or technological applications.</li>
-  <li>Example: Flash evaporation used in desalination plants to remove salt from seawater, where the sudden reduction in pressure causes the water to evaporate rapidly.</li>
+<li>Definition: Flash evaporation is a type of evaporation that occurs when a liquid is suddenly and briefly exposed to a significant reduction in pressure, causing a portion of the liquid to rapidly evaporate.</li>
+<li>Key characteristics: Sudden pressure reduction, rapid evaporation, and typically occurs in industrial or technological applications.</li>
+<li>Example: Flash evaporation used in desalination plants to remove salt from seawater, where the sudden reduction in pressure causes the water to evaporate rapidly.</li>
 </ul>
-<p>4. <strong>Evaporative Cooling</strong></p>
+<ol>
+<li><strong>Evaporative Cooling</strong></li>
+</ol>
 <ul>
-  <li>Definition: Evaporative cooling is a process where evaporation is used to cool a surface or a liquid. As the liquid evaporates, it absorbs heat from the surrounding environment, thus cooling it down.</li>
-  <li>Key characteristics: Cooling effect, dependence on evaporation rate, and often used in cooling systems.</li>
-  <li>Example: A swamp cooler, which uses the evaporation of water to cool the air, providing a cooling effect through the absorption of heat.</li>
+<li>Definition: Evaporative cooling is a process where evaporation is used to cool a surface or a liquid. As the liquid evaporates, it absorbs heat from the surrounding environment, thus cooling it down.</li>
+<li>Key characteristics: Cooling effect, dependence on evaporation rate, and often used in cooling systems.</li>
+<li>Example: A swamp cooler, which uses the evaporation of water to cool the air, providing a cooling effect through the absorption of heat.</li>
 </ul>
-<p>5. <strong>Sublimation</strong></p>
+<ol>
+<li><strong>Sublimation</strong></li>
+</ol>
 <ul>
-  <li>Definition: Sublimation is the transition of a substance directly from the solid phase to the gas phase without going through the liquid phase. This process is a type of evaporation that occurs in solids.</li>
-  <li>Key characteristics: No liquid phase, direct transition from solid to gas, and typically occurs at low pressures.</li>
-  <li>Example: Dry ice (frozen carbon dioxide) sublimating into carbon dioxide gas at room temperature and pressure.</li>
+<li>Definition: Sublimation is the transition of a substance directly from the solid phase to the gas phase without going through the liquid phase. This process is a type of evaporation that occurs in solids.</li>
+<li>Key characteristics: No liquid phase, direct transition from solid to gas, and typically occurs at low pressures.</li>
+<li>Example: Dry ice (frozen carbon dioxide) sublimating into carbon dioxide gas at room temperature and pressure.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
 <p>The following table summarizes the main differences between the types of evaporation:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Evaporation</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Surface Evaporation</td>
-<td>Evaporation from a free surface</td>
-<td>High surface area, environmental dependence</td>
-<td>Lake evaporation</td>
-</tr>
-<tr>
-<td>Boiling Evaporation</td>
-<td>Evaporation at boiling point</td>
-<td>High temperature, bubble formation</td>
-<td>Boiling water</td>
-</tr>
-<tr>
-<td>Flash Evaporation</td>
-<td>Rapid evaporation due to pressure reduction</td>
-<td>Sudden pressure drop, rapid evaporation</td>
-<td>Desalination</td>
-</tr>
-<tr>
-<td>Evaporative Cooling</td>
-<td>Cooling through evaporation</td>
-<td>Cooling effect, evaporation rate dependence</td>
-<td>Swamp cooler</td>
-</tr>
-<tr>
-<td>Sublimation</td>
-<td>Solid to gas transition</td>
-<td>No liquid phase, low pressure</td>
-<td>Dry ice sublimation</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Evaporation</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Surface Evaporation</td><td>Evaporation from a free surface</td><td>High surface area, environmental dependence</td><td>Lake evaporation</td></tr>
+<tr><td>Boiling Evaporation</td><td>Evaporation at boiling point</td><td>High temperature, bubble formation</td><td>Boiling water</td></tr>
+<tr><td>Flash Evaporation</td><td>Rapid evaporation due to pressure reduction</td><td>Sudden pressure drop, rapid evaporation</td><td>Desalination</td></tr>
+<tr><td>Evaporative Cooling</td><td>Cooling through evaporation</td><td>Cooling effect, evaporation rate dependence</td><td>Swamp cooler</td></tr>
+<tr><td>Sublimation</td><td>Solid to gas transition</td><td>No liquid phase, low pressure</td><td>Dry ice sublimation</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different types of evaporation are connected through the common process of a liquid or solid transforming into a gas. However, each type has distinct characteristics and occurs under specific conditions. Surface evaporation and boiling evaporation are related in that they both involve the transformation of a liquid into a gas, but they differ in the rate and mechanism of evaporation. Flash evaporation and evaporative cooling are related to surface evaporation, as they both involve the rapid evaporation of a liquid, but they occur under different conditions and have different applications. Sublimation is distinct from the other types, as it involves the transition of a solid directly into a gas.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of types of evaporation includes surface evaporation, boiling evaporation, flash evaporation, evaporative cooling, and sublimation, each with unique characteristics and occurrences that help us understand and predict the process of evaporation in various contexts.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/science/dna-replication/what-is.html" class="related-link">Dna Replication</a>
-        <a href="/science/ecosystem/what-is.html" class="related-link">Ecosystem</a>
-        <a href="/science/food-chain/what-is.html" class="related-link">Food Chain</a>
-        <a href="/science/food-web/what-is.html" class="related-link">Food Web</a>
-        <a href="/science/gravity/what-is.html" class="related-link">Gravity</a>
-        <a href="/science/osmosis/what-is.html" class="related-link">Osmosis</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -487,6 +514,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of oncology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of oncology - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/oncology/types-of.html">
     <meta property="og:title" content="Types of Oncology">
-    <meta property="og:description" content="A clear, simple explanation of oncology - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of oncology - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/oncology/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Oncology">
-    <meta name="twitter:description" content="A clear, simple explanation of oncology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of oncology - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Oncology - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Oncology", "item": "https://360library.com/health/oncology/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Oncology", "description": "A clear, simple explanation of oncology - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/oncology/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/oncology/types-of.html"}, "about": {"@type": "Thing", "name": "Oncology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Oncology", "description": "A clear, simple explanation of types of oncology - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/oncology/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/oncology/types-of.html"}, "about": {"@type": "Thing", "name": "Oncology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,89 +388,57 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/oncology/what-is.html">Oncology</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Types of Oncology</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
-<p>Oncology, the study of cancer, is a complex and multifaceted field that encompasses various types of cancer, each with its unique characteristics, symptoms, and treatment options. The classification of oncology into different types is crucial for understanding the nature of cancer, developing effective treatment plans, and improving patient outcomes. A comprehensive classification system helps healthcare professionals to diagnose, treat, and manage cancer more effectively, and it also facilitates research and education in the field. By understanding the different types of oncology, medical professionals can provide personalized care to patients and develop targeted therapies to combat cancer.</p>
+            
 
-<p>2. MAIN CATEGORIES:</p>
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
+<p>Oncology, the study of cancer, is a complex and multifaceted field that encompasses various types of cancer, each with its unique characteristics, symptoms, and treatment options. The classification of oncology into different types is crucial for understanding the nature of cancer, developing effective treatment plans, and improving patient outcomes. A comprehensive classification system helps healthcare professionals to diagnose, treat, and manage cancer more effectively, and it also facilitates research and education in the field. By understanding the different types of oncology, medical professionals can provide personalized care to patients and develop targeted therapies to combat cancer.</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <p>The main categories of oncology include:</p>
 <ul>
-  <li><strong>Surgical Oncology</strong>: Surgical oncology is a specialty that focuses on the surgical treatment of cancer. It involves the use of surgery to diagnose, stage, and treat cancer. Key characteristics include the use of surgical techniques to remove tumors, repair damaged tissue, and restore function to affected areas. For example, a surgical oncologist may perform a mastectomy to remove a breast tumor.</li>
-  <li><strong>Medical Oncology</strong>: Medical oncology is a specialty that focuses on the medical treatment of cancer. It involves the use of chemotherapy, hormone therapy, and other medications to treat cancer. Key characteristics include the use of systemic therapies to target cancer cells, manage symptoms, and prevent recurrence. For example, a medical oncologist may prescribe chemotherapy to treat leukemia.</li>
-  <li><strong>Radiation Oncology</strong>: Radiation oncology is a specialty that focuses on the use of radiation therapy to treat cancer. It involves the use of high-energy rays to kill cancer cells, shrink tumors, and relieve symptoms. Key characteristics include the use of external beam radiation, brachytherapy, and stereotactic radiosurgery to target cancer cells. For example, a radiation oncologist may use external beam radiation to treat prostate cancer.</li>
-  <li><strong>Pediatric Oncology</strong>: Pediatric oncology is a specialty that focuses on the diagnosis, treatment, and management of cancer in children. It involves the use of specialized therapies and supportive care to meet the unique needs of pediatric patients. Key characteristics include the use of age-specific treatments, family-centered care, and long-term follow-up. For example, a pediatric oncologist may treat a child with leukemia using a combination of chemotherapy and bone marrow transplantation.</li>
-  <li><strong>Gynecologic Oncology</strong>: Gynecologic oncology is a specialty that focuses on the diagnosis, treatment, and management of cancer in women, particularly cancers of the reproductive system. It involves the use of surgical, medical, and radiation therapies to treat cancers such as ovarian, uterine, and cervical cancer. Key characteristics include the use of minimally invasive surgery, chemotherapy, and radiation therapy to target cancer cells. For example, a gynecologic oncologist may perform a hysterectomy to remove a uterine tumor.</li>
-  <li><strong>Hematology Oncology</strong>: Hematology oncology is a specialty that focuses on the diagnosis, treatment, and management of blood-related cancers, such as leukemia, lymphoma, and multiple myeloma. It involves the use of chemotherapy, targeted therapy, and stem cell transplantation to treat cancer. Key characteristics include the use of blood tests, bone marrow biopsies, and imaging studies to diagnose and monitor cancer. For example, a hematologist-oncologist may treat a patient with lymphoma using chemotherapy and radiation therapy.</li>
+<li><strong>Surgical Oncology</strong>: Surgical oncology is a specialty that focuses on the surgical treatment of cancer. It involves the use of surgery to diagnose, stage, and treat cancer. Key characteristics include the use of surgical techniques to remove tumors, repair damaged tissue, and restore function to affected areas. For example, a surgical oncologist may perform a mastectomy to remove a breast tumor.</li>
+<li><strong>Medical Oncology</strong>: Medical oncology is a specialty that focuses on the medical treatment of cancer. It involves the use of chemotherapy, hormone therapy, and other medications to treat cancer. Key characteristics include the use of systemic therapies to target cancer cells, manage symptoms, and prevent recurrence. For example, a medical oncologist may prescribe chemotherapy to treat leukemia.</li>
+<li><strong>Radiation Oncology</strong>: Radiation oncology is a specialty that focuses on the use of radiation therapy to treat cancer. It involves the use of high-energy rays to kill cancer cells, shrink tumors, and relieve symptoms. Key characteristics include the use of external beam radiation, brachytherapy, and stereotactic radiosurgery to target cancer cells. For example, a radiation oncologist may use external beam radiation to treat prostate cancer.</li>
+<li><strong>Pediatric Oncology</strong>: Pediatric oncology is a specialty that focuses on the diagnosis, treatment, and management of cancer in children. It involves the use of specialized therapies and supportive care to meet the unique needs of pediatric patients. Key characteristics include the use of age-specific treatments, family-centered care, and long-term follow-up. For example, a pediatric oncologist may treat a child with leukemia using a combination of chemotherapy and bone marrow transplantation.</li>
+<li><strong>Gynecologic Oncology</strong>: Gynecologic oncology is a specialty that focuses on the diagnosis, treatment, and management of cancer in women, particularly cancers of the reproductive system. It involves the use of surgical, medical, and radiation therapies to treat cancers such as ovarian, uterine, and cervical cancer. Key characteristics include the use of minimally invasive surgery, chemotherapy, and radiation therapy to target cancer cells. For example, a gynecologic oncologist may perform a hysterectomy to remove a uterine tumor.</li>
+<li><strong>Hematology Oncology</strong>: Hematology oncology is a specialty that focuses on the diagnosis, treatment, and management of blood-related cancers, such as leukemia, lymphoma, and multiple myeloma. It involves the use of chemotherapy, targeted therapy, and stem cell transplantation to treat cancer. Key characteristics include the use of blood tests, bone marrow biopsies, and imaging studies to diagnose and monitor cancer. For example, a hematologist-oncologist may treat a patient with lymphoma using chemotherapy and radiation therapy.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Oncology</th>
-<th>Focus</th>
-<th>Treatment Options</th>
-<th>Patient Population</th>
-</tr></thead><tbody>
-<tr>
-<td>Surgical Oncology</td>
-<td>Surgical treatment of cancer</td>
-<td>Surgery, reconstruction</td>
-<td>Adults and children</td>
-</tr>
-<tr>
-<td>Medical Oncology</td>
-<td>Medical treatment of cancer</td>
-<td>Chemotherapy, hormone therapy</td>
-<td>Adults and children</td>
-</tr>
-<tr>
-<td>Radiation Oncology</td>
-<td>Radiation therapy</td>
-<td>External beam radiation, brachytherapy</td>
-<td>Adults and children</td>
-</tr>
-<tr>
-<td>Pediatric Oncology</td>
-<td>Cancer in children</td>
-<td>Age-specific treatments, supportive care</td>
-<td>Children</td>
-</tr>
-<tr>
-<td>Gynecologic Oncology</td>
-<td>Cancer in women</td>
-<td>Surgery, chemotherapy, radiation therapy</td>
-<td>Women</td>
-</tr>
-<tr>
-<td>Hematology Oncology</td>
-<td>Blood-related cancers</td>
-<td>Chemotherapy, targeted therapy, stem cell transplantation</td>
-<td>Adults and children</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Oncology</th><th>Focus</th><th>Treatment Options</th><th>Patient Population</th></tr></thead><tbody>
+<tr><td>Surgical Oncology</td><td>Surgical treatment of cancer</td><td>Surgery, reconstruction</td><td>Adults and children</td></tr>
+<tr><td>Medical Oncology</td><td>Medical treatment of cancer</td><td>Chemotherapy, hormone therapy</td><td>Adults and children</td></tr>
+<tr><td>Radiation Oncology</td><td>Radiation therapy</td><td>External beam radiation, brachytherapy</td><td>Adults and children</td></tr>
+<tr><td>Pediatric Oncology</td><td>Cancer in children</td><td>Age-specific treatments, supportive care</td><td>Children</td></tr>
+<tr><td>Gynecologic Oncology</td><td>Cancer in women</td><td>Surgery, chemotherapy, radiation therapy</td><td>Women</td></tr>
+<tr><td>Hematology Oncology</td><td>Blood-related cancers</td><td>Chemotherapy, targeted therapy, stem cell transplantation</td><td>Adults and children</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different types of oncology are interconnected and often overlap. For example, a patient with breast cancer may require surgical oncology for tumor removal, medical oncology for chemotherapy, and radiation oncology for radiation therapy. Similarly, a patient with leukemia may require hematologist-oncology for diagnosis and treatment, as well as medical oncology for chemotherapy and supportive care. The classification system allows healthcare professionals to work together to provide comprehensive care to patients with cancer.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system of oncology encompasses various types, including surgical, medical, radiation, pediatric, gynecologic, and hematology oncology, each with its unique characteristics, treatment options, and patient populations, which work together to provide comprehensive care to patients with cancer.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/nutrition/what-is.html" class="related-link">Nutrition</a>
-        <a href="/health/obstetrics/what-is.html" class="related-link">Obstetrics</a>
-        <a href="/health/orthopedics/what-is.html" class="related-link">Orthopedics</a>
-        <a href="/health/otolaryngology/what-is.html" class="related-link">Otolaryngology</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -470,6 +483,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

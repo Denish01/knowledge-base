@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of bear market - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Learn how bear market works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <link rel="canonical" href="https://360library.com/economics/bear-market/how-it-works.html">
     <meta property="og:title" content="How Bear Market Works">
-    <meta property="og:description" content="A clear, simple explanation of bear market - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Learn how bear market works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <meta property="og:url" content="https://360library.com/economics/bear-market/how-it-works.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How Bear Market Works">
-    <meta name="twitter:description" content="A clear, simple explanation of bear market - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Learn how bear market works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <title>How Bear Market Works - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Economics", "item": "https://360library.com/#economics"}, {"@type": "ListItem", "position": 3, "name": "Bear Market", "item": "https://360library.com/economics/bear-market/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "How It Works"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Bear Market Works", "description": "A clear, simple explanation of bear market - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/economics/bear-market/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/economics/bear-market/how-it-works.html"}, "about": {"@type": "Thing", "name": "Bear Market"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Bear Market Works", "description": "Learn how bear market works with this step-by-step explanation. Simple guide to the process and mechanism.", "url": "https://360library.com/economics/bear-market/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/economics/bear-market/how-it-works.html"}, "about": {"@type": "Thing", "name": "Bear Market"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,40 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#economics">Economics</a><span>&rsaquo;</span><a href="/economics/bear-market/what-is.html">Bear Market</a><span>&rsaquo;</span>How It Works
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #059669">
     <main class="article-main">
         <article>
             <h1>How Bear Market Works</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. QUICK ANSWER: A bear market is a period of time when the overall value of stocks or investments is falling, causing investors to lose confidence and sell their holdings, which in turn drives prices down further. This cycle of declining prices and decreasing investor confidence is the core mechanism that drives a bear market.</p>
+            
 
-<p>2. STEP-BY-STEP PROCESS:</p>
+            <ol>
+<li>QUICK ANSWER: A bear market is a period of time when the overall value of stocks or investments is falling, causing investors to lose confidence and sell their holdings, which in turn drives prices down further. This cycle of declining prices and decreasing investor confidence is the core mechanism that drives a bear market.</li>
+</ol>
+<ol>
+<li>STEP-BY-STEP PROCESS:</li>
+</ol>
 <p>First, a bear market typically begins with a significant event or a series of events that erode investor confidence, such as a major company going bankrupt or a significant increase in interest rates. Then, as investors become more cautious, they start to sell their stocks, which leads to a decrease in stock prices. Next, as stock prices fall, more investors become fearful and sell their holdings, causing prices to drop even further. After that, the media and financial news outlets begin to report on the falling stock prices, which can create a sense of panic among investors, leading to even more selling. Finally, the combination of falling stock prices and decreased investor confidence creates a self-reinforcing cycle that drives the bear market.</p>
-
-<p>3. KEY COMPONENTS:</p>
+<ol>
+<li>KEY COMPONENTS:</li>
+</ol>
 <p>The key components involved in a bear market include investors, stocks, and the overall economy. Investors play a crucial role, as their buying and selling decisions drive the market. Stocks, or equities, are the financial instruments that are being bought and sold. The overall economy also plays a significant role, as economic indicators such as inflation, interest rates, and employment rates can influence investor confidence. Other key components include financial news outlets, which can amplify the effects of a bear market by reporting on falling stock prices, and government policies, which can either exacerbate or alleviate the effects of a bear market.</p>
-
-<p>4. VISUAL ANALOGY:</p>
+<ol>
+<li>VISUAL ANALOGY:</li>
+</ol>
 <p>A simple analogy that can help illustrate the mechanism of a bear market is a row of dominoes. Imagine that each domino represents a stock or an investor, and when one domino falls, it knocks over the next one, creating a chain reaction. In a bear market, the falling dominoes represent the declining stock prices and the decreasing investor confidence, which create a self-reinforcing cycle that drives the market downward.</p>
-
-<p>5. COMMON QUESTIONS:</p>
+<ol>
+<li>COMMON QUESTIONS:</li>
+</ol>
 <p>But what about the role of short selling in a bear market? Short selling is a practice where investors sell stocks they do not own, with the expectation of buying them back at a lower price to realize a profit. This practice can exacerbate the effects of a bear market by driving prices down further. But what about the impact of a bear market on the overall economy? A bear market can have a significant impact on the overall economy, as falling stock prices can lead to decreased consumer spending and investment. But what about the difference between a bear market and a correction? A correction is a short-term decline in stock prices, typically defined as a 10-20% decline, whereas a bear market is a more prolonged decline, typically defined as a 20% or greater decline. But what about the role of central banks in a bear market? Central banks can play a crucial role in alleviating the effects of a bear market by implementing monetary policies such as lowering interest rates or quantitative easing.</p>
+<ol>
+<li>SUMMARY: A bear market is a self-reinforcing cycle of declining stock prices and decreasing investor confidence, driven by a combination of factors including investor behavior, economic indicators, and financial news, which can have significant effects on the overall economy.</li>
+</ol>
 
-<p>6. SUMMARY: A bear market is a self-reinforcing cycle of declining stock prices and decreasing investor confidence, driven by a combination of factors including investor behavior, economic indicators, and financial news, which can have significant effects on the overall economy.</p>
+            
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/economics/absolute-advantage/what-is.html" class="related-link">Absolute Advantage</a>
-        <a href="/economics/bull-market/what-is.html" class="related-link">Bull Market</a>
-        <a href="/economics/central-bank/what-is.html" class="related-link">Central Bank</a>
-        <a href="/economics/deflation/what-is.html" class="related-link">Deflation</a>
-        <a href="/economics/monetary-policy/what-is.html" class="related-link">Monetary Policy</a>
-        <a href="/economics/recession/what-is.html" class="related-link">Recession</a>
-    </div>
-</div>
+            
         </article>
     </main>
 
@@ -421,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

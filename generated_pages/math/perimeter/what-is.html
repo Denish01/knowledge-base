@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/perimeter/what-is.html">Perimeter</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>What Is Perimeter?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Perimeter is a mathematical concept that refers to the distance around a shape or a figure.</p>
-
 <p>The perimeter of a shape is calculated by adding up the lengths of all its sides. This concept is essential in geometry and is used to determine the total distance around a shape. For example, if we have a rectangle with two sides of length 5 units and two sides of length 3 units, the perimeter would be the sum of all these sides. Understanding perimeter is crucial in various mathematical and real-world applications.</p>
-
 <p>To calculate the perimeter of a shape, we need to know the lengths of all its sides. For simple shapes like squares, rectangles, and triangles, this is straightforward. However, for more complex shapes like polygons or irregular figures, calculating the perimeter can be more challenging. In such cases, we need to break down the shape into simpler components and calculate the perimeter of each component separately.</p>
-
 <p>The concept of perimeter is also closely related to other geometric concepts like area and circumference. While perimeter refers to the distance around a shape, area refers to the amount of space inside the shape. Circumference, on the other hand, is a special type of perimeter that refers to the distance around a circle. Understanding the relationship between these concepts is essential for solving geometric problems.</p>
-
 <p>Key components of perimeter include:</p>
 <ul>
-  <li>The length of each side of the shape</li>
-  <li>The number of sides of the shape</li>
-  <li>The type of shape, whether it is regular or irregular</li>
-  <li>The units of measurement used to calculate the perimeter</li>
-  <li>The formula used to calculate the perimeter, which varies depending on the shape</li>
-  <li>The relationship between perimeter and other geometric concepts like area and circumference</li>
+<li>The length of each side of the shape</li>
+<li>The number of sides of the shape</li>
+<li>The type of shape, whether it is regular or irregular</li>
+<li>The units of measurement used to calculate the perimeter</li>
+<li>The formula used to calculate the perimeter, which varies depending on the shape</li>
+<li>The relationship between perimeter and other geometric concepts like area and circumference</li>
 </ul>
-
 <p>Common misconceptions about perimeter include:</p>
 <ul>
-  <li>Confusing perimeter with area or circumference</li>
-  <li>Forgetting to include all sides of the shape when calculating the perimeter</li>
-  <li>Using the wrong units of measurement to calculate the perimeter</li>
-  <li>Assuming that all shapes have a fixed perimeter, when in fact it can vary depending on the size and type of shape</li>
+<li>Confusing perimeter with area or circumference</li>
+<li>Forgetting to include all sides of the shape when calculating the perimeter</li>
+<li>Using the wrong units of measurement to calculate the perimeter</li>
+<li>Assuming that all shapes have a fixed perimeter, when in fact it can vary depending on the size and type of shape</li>
 </ul>
-
 <p>A simple example of perimeter can be seen in a rectangular garden with a length of 10 meters and a width of 5 meters. To calculate the perimeter of the garden, we need to add up the lengths of all its sides, which would be 10 + 5 + 10 + 5 = 30 meters. This means that if we want to put a fence around the garden, we would need 30 meters of fencing.</p>
-
 <p>In summary, perimeter is a fundamental geometric concept that refers to the distance around a shape, calculated by adding up the lengths of all its sides, and is essential for solving various mathematical and real-world problems.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/order-of-operations/what-is.html" class="related-link">Order Of Operations</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/prime-numbers/what-is.html" class="related-link">Prime Numbers</a>
-        <a href="/math/probability/what-is.html" class="related-link">Probability</a>
-        <a href="/math/ratios/what-is.html" class="related-link">Ratios</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

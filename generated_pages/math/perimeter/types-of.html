@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of perimeter - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of perimeter - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/math/perimeter/types-of.html">
     <meta property="og:title" content="Types of Perimeter">
-    <meta property="og:description" content="A clear, simple explanation of perimeter - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of perimeter - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/math/perimeter/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Perimeter">
-    <meta name="twitter:description" content="A clear, simple explanation of perimeter - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of perimeter - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Perimeter - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://360library.com/#math"}, {"@type": "ListItem", "position": 3, "name": "Perimeter", "item": "https://360library.com/math/perimeter/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Perimeter", "description": "A clear, simple explanation of perimeter - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/perimeter/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/perimeter/types-of.html"}, "about": {"@type": "Thing", "name": "Perimeter"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Perimeter", "description": "A clear, simple explanation of types of perimeter - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/perimeter/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/perimeter/types-of.html"}, "about": {"@type": "Thing", "name": "Perimeter"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,81 +388,54 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/perimeter/what-is.html">Perimeter</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>Types of Perimeter</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>The concept of perimeter is a fundamental aspect of geometry, referring to the distance around a shape or object. Understanding the different types of perimeter is essential in various fields, including architecture, engineering, and design. Classification of perimeters is crucial as it helps in identifying and calculating the boundaries of various shapes, which is vital for measuring areas, volumes, and sizes. By categorizing perimeters, individuals can better comprehend the characteristics and properties of different shapes, making it easier to work with and manipulate them. This classification system provides a comprehensive framework for understanding the various types of perimeters, enabling individuals to apply this knowledge in practical scenarios.</p>
-
-<p>2. MAIN CATEGORIES:</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <ul>
-  <li><strong>Polygon Perimeter</strong>: A polygon perimeter refers to the distance around a polygon, which is a two-dimensional shape with straight sides. Key characteristics of polygon perimeters include the number of sides, length of each side, and the presence of angles. For example, the perimeter of a rectangle can be calculated by adding the lengths of all its sides, which would be 2 times the length plus 2 times the width.</li>
-  <li><strong>Circle Perimeter (Circumference)</strong>: The perimeter of a circle is known as the circumference, which is the distance around the circle. Key characteristics of circle perimeters include the radius or diameter of the circle. A simple example is the circumference of a circular garden, which can be calculated using the formula 2 times pi times the radius.</li>
-  <li><strong>Ellipse Perimeter</strong>: An ellipse perimeter refers to the distance around an ellipse, which is a closed curve where the sum of the distances from two fixed points is constant. Key characteristics of ellipse perimeters include the lengths of the major and minor axes. For instance, the perimeter of an elliptical track can be approximated using various mathematical formulas.</li>
-  <li><strong>Irregular Shape Perimeter</strong>: An irregular shape perimeter refers to the distance around a shape that does not have a regular or standard form. Key characteristics of irregular shape perimeters include the presence of non-repeating patterns and varying side lengths. A simple example is the perimeter of a plot of land with an irregular boundary, which can be calculated by adding the lengths of all its sides.</li>
-  <li><strong>Fractal Perimeter</strong>: A fractal perimeter refers to the distance around a fractal, which is a geometric shape that exhibits self-similarity at different scales. Key characteristics of fractal perimeters include infinite details and non-integer dimensions. For example, the perimeter of a fractal curve, such as the Koch curve, can be calculated using mathematical formulas that account for its self-similar patterns.</li>
+<li><strong>Polygon Perimeter</strong>: A polygon perimeter refers to the distance around a polygon, which is a two-dimensional shape with straight sides. Key characteristics of polygon perimeters include the number of sides, length of each side, and the presence of angles. For example, the perimeter of a rectangle can be calculated by adding the lengths of all its sides, which would be 2 times the length plus 2 times the width.</li>
+<li><strong>Circle Perimeter (Circumference)</strong>: The perimeter of a circle is known as the circumference, which is the distance around the circle. Key characteristics of circle perimeters include the radius or diameter of the circle. A simple example is the circumference of a circular garden, which can be calculated using the formula 2 times pi times the radius.</li>
+<li><strong>Ellipse Perimeter</strong>: An ellipse perimeter refers to the distance around an ellipse, which is a closed curve where the sum of the distances from two fixed points is constant. Key characteristics of ellipse perimeters include the lengths of the major and minor axes. For instance, the perimeter of an elliptical track can be approximated using various mathematical formulas.</li>
+<li><strong>Irregular Shape Perimeter</strong>: An irregular shape perimeter refers to the distance around a shape that does not have a regular or standard form. Key characteristics of irregular shape perimeters include the presence of non-repeating patterns and varying side lengths. A simple example is the perimeter of a plot of land with an irregular boundary, which can be calculated by adding the lengths of all its sides.</li>
+<li><strong>Fractal Perimeter</strong>: A fractal perimeter refers to the distance around a fractal, which is a geometric shape that exhibits self-similarity at different scales. Key characteristics of fractal perimeters include infinite details and non-integer dimensions. For example, the perimeter of a fractal curve, such as the Koch curve, can be calculated using mathematical formulas that account for its self-similar patterns.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Perimeter</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Polygon Perimeter</td>
-<td>Distance around a polygon</td>
-<td>Number of sides, side lengths, angles</td>
-<td>Rectangle</td>
-</tr>
-<tr>
-<td>Circle Perimeter (Circumference)</td>
-<td>Distance around a circle</td>
-<td>Radius or diameter</td>
-<td>Circular garden</td>
-</tr>
-<tr>
-<td>Ellipse Perimeter</td>
-<td>Distance around an ellipse</td>
-<td>Lengths of major and minor axes</td>
-<td>Elliptical track</td>
-</tr>
-<tr>
-<td>Irregular Shape Perimeter</td>
-<td>Distance around an irregular shape</td>
-<td>Non-repeating patterns, varying side lengths</td>
-<td>Plot of land with irregular boundary</td>
-</tr>
-<tr>
-<td>Fractal Perimeter</td>
-<td>Distance around a fractal</td>
-<td>Infinite details, non-integer dimensions</td>
-<td>Fractal curve, such as the Koch curve</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Perimeter</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Polygon Perimeter</td><td>Distance around a polygon</td><td>Number of sides, side lengths, angles</td><td>Rectangle</td></tr>
+<tr><td>Circle Perimeter (Circumference)</td><td>Distance around a circle</td><td>Radius or diameter</td><td>Circular garden</td></tr>
+<tr><td>Ellipse Perimeter</td><td>Distance around an ellipse</td><td>Lengths of major and minor axes</td><td>Elliptical track</td></tr>
+<tr><td>Irregular Shape Perimeter</td><td>Distance around an irregular shape</td><td>Non-repeating patterns, varying side lengths</td><td>Plot of land with irregular boundary</td></tr>
+<tr><td>Fractal Perimeter</td><td>Distance around a fractal</td><td>Infinite details, non-integer dimensions</td><td>Fractal curve, such as the Koch curve</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different types of perimeters are connected through their shared concept of distance around a shape. While each type has distinct characteristics, they all contribute to the broader understanding of perimeters and their applications. Polygon perimeters, for instance, can be used to approximate the perimeters of irregular shapes, while circle perimeters can be used to calculate the distances around curved surfaces. Ellipse perimeters, on the other hand, can be used to model real-world phenomena, such as the orbits of planets. Fractal perimeters, with their infinite details, can be used to study complex patterns and structures. By recognizing the relationships between these types of perimeters, individuals can develop a deeper understanding of geometric shapes and their properties.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system of perimeters encompasses various types, including polygon, circle, ellipse, irregular shape, and fractal perimeters, each with distinct characteristics and applications that contribute to a comprehensive understanding of geometric shapes and their boundaries.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/order-of-operations/what-is.html" class="related-link">Order Of Operations</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/prime-numbers/what-is.html" class="related-link">Prime Numbers</a>
-        <a href="/math/probability/what-is.html" class="related-link">Probability</a>
-        <a href="/math/ratios/what-is.html" class="related-link">Ratios</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -462,6 +480,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

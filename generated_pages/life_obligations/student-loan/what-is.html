@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/student-loan/what-is.html">Student Loan</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Student Loan?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Student loan is a type of financial aid that allows students to borrow money to pay for their education, with the understanding that they will repay the loan, typically with interest, after they complete their studies.</p>
-
 <p>A student loan is a way for students to access funds to cover the costs of tuition, fees, and other educational expenses. These loans can be provided by the government or by private lenders, and they can be used to pay for a variety of educational programs, including college, university, and vocational training. Student loans can be an important resource for students who may not have the financial resources to pay for their education upfront.</p>
-
 <p>The process of obtaining a student loan typically involves applying for the loan and providing information about one's financial situation and educational plans. The lender will then review the application and determine whether to approve the loan, as well as the terms of the loan, such as the interest rate and repayment schedule. It is essential for students to carefully review the terms of the loan before accepting it, to ensure that they understand their obligations and can manage their debt.</p>
-
 <p>In addition to the loan amount and interest rate, student loans often have other terms and conditions that borrowers need to be aware of. For example, some loans may have a grace period, during which the borrower is not required to make payments, while others may require borrowers to begin making payments immediately. It is crucial for students to understand these terms and conditions to avoid any potential problems or penalties.</p>
-
 <p>The key components of a student loan include:</p>
 <ul>
-  <li>The principal amount, which is the amount borrowed by the student</li>
-  <li>The interest rate, which is the rate at which the loan accrues interest</li>
-  <li>The repayment schedule, which outlines when and how the borrower must make payments</li>
-  <li>The loan term, which is the length of time the borrower has to repay the loan</li>
-  <li>The collateral, if any, which is the asset or property that secures the loan</li>
-  <li>The default provisions, which outline the consequences of failing to make payments on the loan</li>
+<li>The principal amount, which is the amount borrowed by the student</li>
+<li>The interest rate, which is the rate at which the loan accrues interest</li>
+<li>The repayment schedule, which outlines when and how the borrower must make payments</li>
+<li>The loan term, which is the length of time the borrower has to repay the loan</li>
+<li>The collateral, if any, which is the asset or property that secures the loan</li>
+<li>The default provisions, which outline the consequences of failing to make payments on the loan</li>
 </ul>
-
 <p>Despite the importance of student loans, there are several common misconceptions about them. These include:</p>
 <ul>
-  <li>The idea that student loans are only available to students with excellent credit, when in fact many lenders offer loans to students with limited or no credit history</li>
-  <li>The notion that student loans are always subsidized by the government, when in fact many private lenders offer unsubsidized loans</li>
-  <li>The belief that student loans are only for undergraduate students, when in fact many graduate students also rely on loans to fund their education</li>
-  <li>The assumption that student loans are always a bad idea, when in fact they can be a useful tool for students who need financial assistance to pursue their educational goals</li>
+<li>The idea that student loans are only available to students with excellent credit, when in fact many lenders offer loans to students with limited or no credit history</li>
+<li>The notion that student loans are always subsidized by the government, when in fact many private lenders offer unsubsidized loans</li>
+<li>The belief that student loans are only for undergraduate students, when in fact many graduate students also rely on loans to fund their education</li>
+<li>The assumption that student loans are always a bad idea, when in fact they can be a useful tool for students who need financial assistance to pursue their educational goals</li>
 </ul>
-
 <p>For example, consider a student who wants to attend a four-year college but does not have the financial resources to pay the tuition upfront. The student applies for a student loan and is approved for a $10,000 loan with an interest rate of 6% and a repayment term of 10 years. The student uses the loan to pay for the first year of tuition and then begins making payments on the loan after graduation.</p>
-
 <p>In summary, a student loan is a financial aid option that allows students to borrow money to pay for their education, with the understanding that they will repay the loan, typically with interest, after they complete their studies.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/spousal-support-duration/what-is.html" class="related-link">Spousal Support Duration</a>
-        <a href="/life_obligations/standard-of-living/what-is.html" class="related-link">Standard Of Living</a>
-        <a href="/life_obligations/support-adjustment/what-is.html" class="related-link">Support Adjustment</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

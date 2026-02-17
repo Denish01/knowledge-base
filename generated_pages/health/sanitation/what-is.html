@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/sanitation/what-is.html">Sanitation</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>What Is Sanitation?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Sanitation is the process of maintaining a clean and healthy environment by managing waste, preventing the spread of diseases, and promoting personal hygiene.</p>
-
 <p>Sanitation is an essential aspect of public health, as it helps to prevent the spread of diseases and maintain a clean and healthy environment. The concept of sanitation encompasses various activities, including the collection, treatment, and disposal of waste, as well as the promotion of personal hygiene practices such as handwashing and proper use of toilets. Effective sanitation systems are crucial in preventing the spread of waterborne and infectious diseases, which can have severe consequences on human health.</p>
-
 <p>The importance of sanitation cannot be overstated, as it has a direct impact on the quality of life and the overall well-being of individuals and communities. Inadequate sanitation can lead to the contamination of water sources, soil, and air, which can have severe health and environmental consequences. Furthermore, poor sanitation can also have economic and social implications, as it can lead to lost productivity, reduced economic opportunities, and social stigma.</p>
-
 <p>Sanitation is a multifaceted concept that requires a comprehensive approach to ensure its effectiveness. It involves not only the physical infrastructure, such as toilets, sewage systems, and waste management facilities, but also the promotion of behavioral change and community participation. Education and awareness-raising activities are essential in promoting good sanitation practices, such as proper handwashing, use of toilets, and waste disposal.</p>
-
 <p>The key components of sanitation include:</p>
 <ul>
-  <li>Waste management, which involves the collection, treatment, and disposal of waste in a safe and environmentally friendly manner</li>
-  <li>Water supply, which involves the provision of clean and safe water for drinking, cooking, and personal hygiene</li>
-  <li>Personal hygiene, which involves practices such as handwashing, bathing, and proper use of toilets</li>
-  <li>Excreta management, which involves the safe disposal of human waste to prevent the spread of diseases</li>
-  <li>Vector control, which involves the management of insects and animals that can transmit diseases</li>
-  <li>Community participation, which involves the involvement of communities in sanitation planning, implementation, and maintenance</li>
+<li>Waste management, which involves the collection, treatment, and disposal of waste in a safe and environmentally friendly manner</li>
+<li>Water supply, which involves the provision of clean and safe water for drinking, cooking, and personal hygiene</li>
+<li>Personal hygiene, which involves practices such as handwashing, bathing, and proper use of toilets</li>
+<li>Excreta management, which involves the safe disposal of human waste to prevent the spread of diseases</li>
+<li>Vector control, which involves the management of insects and animals that can transmit diseases</li>
+<li>Community participation, which involves the involvement of communities in sanitation planning, implementation, and maintenance</li>
 </ul>
-
 <p>Despite its importance, there are common misconceptions about sanitation, including:</p>
 <ul>
-  <li>The belief that sanitation is only a matter of personal hygiene, when in fact it involves a range of activities and infrastructure</li>
-  <li>The assumption that sanitation is a luxury that only wealthy communities can afford, when in fact it is a basic human right</li>
-  <li>The notion that sanitation is only relevant in developing countries, when in fact it is a global issue that affects communities worldwide</li>
-  <li>The idea that sanitation is a one-time achievement, when in fact it requires ongoing maintenance and improvement</li>
+<li>The belief that sanitation is only a matter of personal hygiene, when in fact it involves a range of activities and infrastructure</li>
+<li>The assumption that sanitation is a luxury that only wealthy communities can afford, when in fact it is a basic human right</li>
+<li>The notion that sanitation is only relevant in developing countries, when in fact it is a global issue that affects communities worldwide</li>
+<li>The idea that sanitation is a one-time achievement, when in fact it requires ongoing maintenance and improvement</li>
 </ul>
-
 <p>A real-world example of sanitation in action is a community that builds a simple toilet facility and promotes its use through education and awareness-raising activities. The community also establishes a system for collecting and treating wastewater, and promotes good hygiene practices such as handwashing and proper waste disposal. As a result, the community experiences a significant reduction in the incidence of waterborne diseases, and enjoys improved overall health and well-being.</p>
-
 <p>In summary, sanitation is a critical aspect of public health that involves the management of waste, promotion of personal hygiene, and prevention of the spread of diseases to maintain a clean and healthy environment.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-        <a href="/health/quarantine/what-is.html" class="related-link">Quarantine</a>
-        <a href="/health/respiratory-system/what-is.html" class="related-link">Respiratory System</a>
-        <a href="/health/sleep-hygiene/what-is.html" class="related-link">Sleep Hygiene</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

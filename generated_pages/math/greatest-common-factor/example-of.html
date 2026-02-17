@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of greatest common factor - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Clear examples of greatest common factor from everyday life. Concrete illustrations to help you understand the concept.">
     <link rel="canonical" href="https://360library.com/math/greatest-common-factor/example-of.html">
     <meta property="og:title" content="Example of Greatest Common Factor">
-    <meta property="og:description" content="A clear, simple explanation of greatest common factor - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Clear examples of greatest common factor from everyday life. Concrete illustrations to help you understand the concept.">
     <meta property="og:url" content="https://360library.com/math/greatest-common-factor/example-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Example of Greatest Common Factor">
-    <meta name="twitter:description" content="A clear, simple explanation of greatest common factor - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Clear examples of greatest common factor from everyday life. Concrete illustrations to help you understand the concept.">
     <title>Example of Greatest Common Factor - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Math", "item": "https://360library.com/#math"}, {"@type": "ListItem", "position": 3, "name": "Greatest Common Factor", "item": "https://360library.com/math/greatest-common-factor/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Example"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Example of Greatest Common Factor", "description": "A clear, simple explanation of greatest common factor - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/math/greatest-common-factor/example-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/greatest-common-factor/example-of.html"}, "about": {"@type": "Thing", "name": "Greatest Common Factor"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Example of Greatest Common Factor", "description": "Clear examples of greatest common factor from everyday life. Concrete illustrations to help you understand the concept.", "url": "https://360library.com/math/greatest-common-factor/example-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/math/greatest-common-factor/example-of.html"}, "about": {"@type": "Thing", "name": "Greatest Common Factor"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,42 +388,44 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/greatest-common-factor/what-is.html">Greatest Common Factor</a><span>&rsaquo;</span>Example
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>Example of Greatest Common Factor</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>The greatest common factor (GCF) is a mathematical concept used to find the largest positive integer that divides two or more numbers without leaving a remainder. It is a fundamental idea in mathematics, essential for various calculations and problem-solving. Understanding the GCF is crucial for simplifying fractions, solving equations, and performing other mathematical operations.</p>
-
-<p>2. EVERYDAY EXAMPLES:</p>
+<ol>
+<li>EVERYDAY EXAMPLES:</li>
+</ol>
 <p>In daily life, the concept of GCF is applied in numerous situations. For instance, a recipe for making cookies calls for 12 cups of flour and 18 cups of sugar. To simplify the recipe, we need to find the GCF of 12 and 18, which is 6. This means we can divide both ingredients by 6 to get the simplest form of the recipe. Another example is a group of friends who want to share some candy equally. If they have 24 and 30 pieces of candy, the GCF of 24 and 30 is 6, so they can divide the candy into groups of 6 to share it equally. In construction, the GCF is used to determine the size of bricks or tiles that can be used to cover a floor without cutting any of them. For example, if a room has dimensions of 12 feet by 15 feet, the GCF of 12 and 15 is 3, so the bricks or tiles should be 3 feet by 3 feet to cover the floor perfectly. Additionally, a music teacher may want to find the GCF of the number of beats in two different songs to determine the longest interval at which they can both be played without sounding out of sync. If one song has 16 beats and the other has 24 beats, the GCF of 16 and 24 is 8, meaning the songs can be played together every 8 beats.</p>
-
-<p>3. NOTABLE EXAMPLES:</p>
+<ol>
+<li>NOTABLE EXAMPLES:</li>
+</ol>
 <p>The concept of GCF has been applied in various notable situations throughout history. The ancient Greeks used the GCF to solve geometric problems, such as finding the greatest common divisor of the lengths of the sides of a triangle. In music theory, the GCF is used to determine the rhythm and timing of musical compositions. For example, the rhythm of a song can be represented by the fraction 12/16, which can be simplified by finding the GCF of 12 and 16, resulting in 4/4 time. The GCF is also crucial in computer science, where it is used to optimize algorithms and improve the efficiency of computer programs.</p>
-
-<p>4. EDGE CASES:</p>
+<ol>
+<li>EDGE CASES:</li>
+</ol>
 <p>One unusual example of the GCF is in the field of astronomy, where it is used to calculate the orbital periods of celestial bodies. For instance, the orbital periods of two planets may be 24 and 30 Earth days, and the GCF of 24 and 30 is 6. This means that the two planets will align every 6 Earth days. Another example is in cryptography, where the GCF is used to break certain types of encryption codes. For example, if a code uses a key that is 12 characters long and another key that is 18 characters long, the GCF of 12 and 18 is 6, which can be used to crack the code.</p>
-
-<p>5. NON-EXAMPLES:</p>
+<ol>
+<li>NON-EXAMPLES:</li>
+</ol>
 <p>Some people often confuse the GCF with other mathematical concepts, such as the least common multiple (LCM) or the average. However, these are distinct concepts that serve different purposes. For example, the LCM of 12 and 18 is 36, not 6, which is the GCF. Another non-example is the concept of the median, which is the middle value of a set of numbers. The median of 12 and 18 is 15, not 6, which is the GCF. Additionally, some people may think that the GCF is the same as the greatest common divisor (GCD), but while they are related concepts, they are not exactly the same.</p>
-
-<p>6. PATTERN:</p>
+<ol>
+<li>PATTERN:</li>
+</ol>
 <p>All valid examples of the GCF have one thing in common: they involve finding the largest positive integer that divides two or more numbers without leaving a remainder. This pattern holds true regardless of the context or scale of the problem, whether it is a simple recipe or a complex astronomical calculation. The GCF is a fundamental concept that underlies many mathematical operations, and understanding it is essential for solving a wide range of problems. By recognizing this pattern, we can apply the concept of GCF to various situations and simplify complex problems, making it a powerful tool in mathematics and problem-solving.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/exponents/what-is.html" class="related-link">Exponents</a>
-        <a href="/math/fractions/what-is.html" class="related-link">Fractions</a>
-        <a href="/math/integers/what-is.html" class="related-link">Integers</a>
-        <a href="/math/least-common-multiple/what-is.html" class="related-link">Least Common Multiple</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/ratios/what-is.html" class="related-link">Ratios</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -423,6 +470,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

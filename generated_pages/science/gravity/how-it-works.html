@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of gravity - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Learn how gravity works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <link rel="canonical" href="https://360library.com/science/gravity/how-it-works.html">
     <meta property="og:title" content="How Gravity Works">
-    <meta property="og:description" content="A clear, simple explanation of gravity - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Learn how gravity works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <meta property="og:url" content="https://360library.com/science/gravity/how-it-works.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How Gravity Works">
-    <meta name="twitter:description" content="A clear, simple explanation of gravity - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Learn how gravity works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <title>How Gravity Works - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Science", "item": "https://360library.com/#science"}, {"@type": "ListItem", "position": 3, "name": "Gravity", "item": "https://360library.com/science/gravity/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "How It Works"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Gravity Works", "description": "A clear, simple explanation of gravity - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/gravity/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/gravity/how-it-works.html"}, "about": {"@type": "Thing", "name": "Gravity"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Gravity Works", "description": "Learn how gravity works with this step-by-step explanation. Simple guide to the process and mechanism.", "url": "https://360library.com/science/gravity/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/gravity/how-it-works.html"}, "about": {"@type": "Thing", "name": "Gravity"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,36 +388,38 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#science">Science</a><span>&rsaquo;</span><a href="/science/gravity/what-is.html">Gravity</a><span>&rsaquo;</span>How It Works
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #0891B2">
     <main class="article-main">
         <article>
             <h1>How Gravity Works</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. QUICK ANSWER: Gravity is a fundamental force of nature that causes objects with mass to attract each other, with the strength of the attraction depending on the mass of the objects and the distance between them. This force is what keeps planets in orbit around their stars and causes objects to fall towards the ground when dropped.</p>
+            
 
-<p>2. STEP-BY-STEP PROCESS: The process of gravity working can be broken down into several steps. First, any object with mass creates a gravitational field around itself, which is a region where the force of gravity can be detected. Then, when another object with mass enters this field, it experiences a force that pulls it towards the center of the first object. Next, the strength of this force depends on the mass of both objects and the distance between them, with more massive objects and closer distances resulting in a stronger force. The force of gravity then causes the objects to accelerate towards each other, with the object having less mass being pulled more strongly towards the object with greater mass. Finally, this force of attraction is what gives objects weight and keeps them on the surface of planets and other celestial bodies.</p>
+            <ol>
+<li>QUICK ANSWER: Gravity is a fundamental force of nature that causes objects with mass to attract each other, with the strength of the attraction depending on the mass of the objects and the distance between them. This force is what keeps planets in orbit around their stars and causes objects to fall towards the ground when dropped.</li>
+</ol>
+<ol>
+<li>STEP-BY-STEP PROCESS: The process of gravity working can be broken down into several steps. First, any object with mass creates a gravitational field around itself, which is a region where the force of gravity can be detected. Then, when another object with mass enters this field, it experiences a force that pulls it towards the center of the first object. Next, the strength of this force depends on the mass of both objects and the distance between them, with more massive objects and closer distances resulting in a stronger force. The force of gravity then causes the objects to accelerate towards each other, with the object having less mass being pulled more strongly towards the object with greater mass. Finally, this force of attraction is what gives objects weight and keeps them on the surface of planets and other celestial bodies.</li>
+</ol>
+<ol>
+<li>KEY COMPONENTS: The key components involved in the mechanism of gravity are mass, distance, and the gravitational field. Mass is a measure of the amount of matter in an object, and it is the source of the gravitational field. The distance between objects is also crucial, as it determines the strength of the gravitational force between them. The gravitational field is the region around an object where the force of gravity can be detected, and it is what allows objects to interact with each other through gravity. Other key elements include the gravitational constant, which is a fundamental constant of nature that determines the strength of the gravitational force, and the concept of inertia, which is the tendency of an object to resist changes in its motion.</li>
+</ol>
+<ol>
+<li>VISUAL ANALOGY: A simple analogy that can help to understand the mechanism of gravity is to imagine a heavy bowling ball placed on a trampoline. The bowling ball warps the surface of the trampoline, creating a depression that represents the gravitational field. If you then place a marble near the bowling ball, it will roll towards the center of the depression, representing the force of gravity pulling an object towards a more massive object. This analogy is not a perfect representation of gravity, but it can help to make the concept more intuitive and easier to understand.</li>
+</ol>
+<ol>
+<li>COMMON QUESTIONS: But what about objects that are in orbit around each other, such as the Earth and the Moon? The answer is that these objects are in a constant state of falling towards each other, but their forward motion is so great that they never actually get closer. But what about black holes, which have such strong gravity that not even light can escape? The answer is that black holes are regions of space where the gravitational field is so strong that it warps the fabric of space and time, creating a boundary called the event horizon. But what about the force of gravity on very small objects, such as atoms and molecules? The answer is that gravity is still present, but it is much weaker than the other fundamental forces of nature, such as electromagnetism and the strong and weak nuclear forces. But what about the gravitational force between two objects that are very far apart, such as two galaxies? The answer is that the force of gravity decreases with distance, so the gravitational force between two objects that are very far apart is very weak.</li>
+</ol>
+<ol>
+<li>SUMMARY: Gravity is a fundamental force of nature that causes objects with mass to attract each other through a gravitational field, with the strength of the attraction depending on the mass of the objects and the distance between them.</li>
+</ol>
 
-<p>3. KEY COMPONENTS: The key components involved in the mechanism of gravity are mass, distance, and the gravitational field. Mass is a measure of the amount of matter in an object, and it is the source of the gravitational field. The distance between objects is also crucial, as it determines the strength of the gravitational force between them. The gravitational field is the region around an object where the force of gravity can be detected, and it is what allows objects to interact with each other through gravity. Other key elements include the gravitational constant, which is a fundamental constant of nature that determines the strength of the gravitational force, and the concept of inertia, which is the tendency of an object to resist changes in its motion.</p>
+            
 
-<p>4. VISUAL ANALOGY: A simple analogy that can help to understand the mechanism of gravity is to imagine a heavy bowling ball placed on a trampoline. The bowling ball warps the surface of the trampoline, creating a depression that represents the gravitational field. If you then place a marble near the bowling ball, it will roll towards the center of the depression, representing the force of gravity pulling an object towards a more massive object. This analogy is not a perfect representation of gravity, but it can help to make the concept more intuitive and easier to understand.</p>
-
-<p>5. COMMON QUESTIONS: But what about objects that are in orbit around each other, such as the Earth and the Moon? The answer is that these objects are in a constant state of falling towards each other, but their forward motion is so great that they never actually get closer. But what about black holes, which have such strong gravity that not even light can escape? The answer is that black holes are regions of space where the gravitational field is so strong that it warps the fabric of space and time, creating a boundary called the event horizon. But what about the force of gravity on very small objects, such as atoms and molecules? The answer is that gravity is still present, but it is much weaker than the other fundamental forces of nature, such as electromagnetism and the strong and weak nuclear forces. But what about the gravitational force between two objects that are very far apart, such as two galaxies? The answer is that the force of gravity decreases with distance, so the gravitational force between two objects that are very far apart is very weak.</p>
-
-<p>6. SUMMARY: Gravity is a fundamental force of nature that causes objects with mass to attract each other through a gravitational field, with the strength of the attraction depending on the mass of the objects and the distance between them.</p>
-
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/science/dna-replication/what-is.html" class="related-link">Dna Replication</a>
-        <a href="/science/food-web/what-is.html" class="related-link">Food Web</a>
-        <a href="/science/friction/what-is.html" class="related-link">Friction</a>
-        <a href="/science/kinetic-energy/what-is.html" class="related-link">Kinetic Energy</a>
-        <a href="/science/meiosis/what-is.html" class="related-link">Meiosis</a>
-        <a href="/science/osmosis/what-is.html" class="related-link">Osmosis</a>
-    </div>
-</div>
+            
         </article>
     </main>
 
@@ -417,6 +464,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

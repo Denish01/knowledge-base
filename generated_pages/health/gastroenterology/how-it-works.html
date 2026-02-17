@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of gastroenterology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Learn how gastroenterology works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <link rel="canonical" href="https://360library.com/health/gastroenterology/how-it-works.html">
     <meta property="og:title" content="How Gastroenterology Works">
-    <meta property="og:description" content="A clear, simple explanation of gastroenterology - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Learn how gastroenterology works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <meta property="og:url" content="https://360library.com/health/gastroenterology/how-it-works.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How Gastroenterology Works">
-    <meta name="twitter:description" content="A clear, simple explanation of gastroenterology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Learn how gastroenterology works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <title>How Gastroenterology Works - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Gastroenterology", "item": "https://360library.com/health/gastroenterology/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "How It Works"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Gastroenterology Works", "description": "A clear, simple explanation of gastroenterology - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/gastroenterology/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/gastroenterology/how-it-works.html"}, "about": {"@type": "Thing", "name": "Gastroenterology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Gastroenterology Works", "description": "Learn how gastroenterology works with this step-by-step explanation. Simple guide to the process and mechanism.", "url": "https://360library.com/health/gastroenterology/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/gastroenterology/how-it-works.html"}, "about": {"@type": "Thing", "name": "Gastroenterology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,36 +388,38 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/gastroenterology/what-is.html">Gastroenterology</a><span>&rsaquo;</span>How It Works
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>How Gastroenterology Works</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. QUICK ANSWER: Gastroenterology is the study of the digestive system, focusing on how it breaks down food into nutrients that the body can absorb, and how it eliminates waste. This process involves a complex interplay of organs, muscles, and nerves that work together to facilitate digestion, absorption, and elimination.</p>
+            
 
-<p>2. STEP-BY-STEP PROCESS: The process of digestion and elimination can be broken down into several steps. First, food enters the mouth where it is chewed and mixed with saliva that contains enzymes to break down carbohydrates. Then, the food is swallowed and passes through the esophagus into the stomach, where it is mixed with stomach acid and digestive enzymes that break down proteins and fats. Next, the partially digested food enters the small intestine, where most of the nutrient absorption takes place. The walls of the small intestine are lined with finger-like projections called villi, which increase the surface area for absorption. Finally, the remaining waste products enter the large intestine, where water is absorbed and the waste is prepared for elimination from the body.</p>
+            <ol>
+<li>QUICK ANSWER: Gastroenterology is the study of the digestive system, focusing on how it breaks down food into nutrients that the body can absorb, and how it eliminates waste. This process involves a complex interplay of organs, muscles, and nerves that work together to facilitate digestion, absorption, and elimination.</li>
+</ol>
+<ol>
+<li>STEP-BY-STEP PROCESS: The process of digestion and elimination can be broken down into several steps. First, food enters the mouth where it is chewed and mixed with saliva that contains enzymes to break down carbohydrates. Then, the food is swallowed and passes through the esophagus into the stomach, where it is mixed with stomach acid and digestive enzymes that break down proteins and fats. Next, the partially digested food enters the small intestine, where most of the nutrient absorption takes place. The walls of the small intestine are lined with finger-like projections called villi, which increase the surface area for absorption. Finally, the remaining waste products enter the large intestine, where water is absorbed and the waste is prepared for elimination from the body.</li>
+</ol>
+<ol>
+<li>KEY COMPONENTS: The digestive system consists of several key components, including the mouth, esophagus, stomach, small intestine, and large intestine. The mouth contains teeth and salivary glands that break down food and moisten it for swallowing. The esophagus is a muscular tube that propels food into the stomach using peristalsis, a wave-like muscle contraction. The stomach contains digestive enzymes and acids that break down food into smaller molecules. The small intestine is where most of the nutrient absorption takes place, and the large intestine absorbs water and prepares waste for elimination. The pancreas and liver also play important roles in digestion, producing digestive enzymes and bile that help break down food.</li>
+</ol>
+<ol>
+<li>VISUAL ANALOGY: The digestive system can be thought of as a long, winding road that food takes as it passes through the body. Just as a car travels along a road, stopping at various stations along the way to refuel and pick up supplies, food travels through the digestive system, stopping at various organs and structures to be broken down and absorbed. The mouth is like the starting point, where the car is fueled up with food, and the small intestine is like the main service station, where the car is refueled with nutrients.</li>
+</ol>
+<ol>
+<li>COMMON QUESTIONS: But what about people who have digestive problems, such as irritable bowel syndrome or celiac disease? The digestive system is a complex process, and when one part of the system is not functioning properly, it can have a ripple effect throughout the entire system. But how do nutrients get from the digestive system into the rest of the body? Nutrients are absorbed into the bloodstream through the walls of the small intestine, and then carried to the liver for processing and distribution to the rest of the body. But what role do microbes play in the digestive system? Microbes, such as bacteria and yeast, live in the digestive system and play a crucial role in breaking down certain types of food and helping to regulate the immune system.</li>
+</ol>
+<ol>
+<li>SUMMARY: The digestive system works by breaking down food into smaller molecules through a series of mechanical and chemical processes, and then absorbing the nutrients into the bloodstream, where they can be carried to the rest of the body, while eliminating waste products through the large intestine.</li>
+</ol>
 
-<p>3. KEY COMPONENTS: The digestive system consists of several key components, including the mouth, esophagus, stomach, small intestine, and large intestine. The mouth contains teeth and salivary glands that break down food and moisten it for swallowing. The esophagus is a muscular tube that propels food into the stomach using peristalsis, a wave-like muscle contraction. The stomach contains digestive enzymes and acids that break down food into smaller molecules. The small intestine is where most of the nutrient absorption takes place, and the large intestine absorbs water and prepares waste for elimination. The pancreas and liver also play important roles in digestion, producing digestive enzymes and bile that help break down food.</p>
+            
 
-<p>4. VISUAL ANALOGY: The digestive system can be thought of as a long, winding road that food takes as it passes through the body. Just as a car travels along a road, stopping at various stations along the way to refuel and pick up supplies, food travels through the digestive system, stopping at various organs and structures to be broken down and absorbed. The mouth is like the starting point, where the car is fueled up with food, and the small intestine is like the main service station, where the car is refueled with nutrients.</p>
-
-<p>5. COMMON QUESTIONS: But what about people who have digestive problems, such as irritable bowel syndrome or celiac disease? The digestive system is a complex process, and when one part of the system is not functioning properly, it can have a ripple effect throughout the entire system. But how do nutrients get from the digestive system into the rest of the body? Nutrients are absorbed into the bloodstream through the walls of the small intestine, and then carried to the liver for processing and distribution to the rest of the body. But what role do microbes play in the digestive system? Microbes, such as bacteria and yeast, live in the digestive system and play a crucial role in breaking down certain types of food and helping to regulate the immune system.</p>
-
-<p>6. SUMMARY: The digestive system works by breaking down food into smaller molecules through a series of mechanical and chemical processes, and then absorbing the nutrients into the bloodstream, where they can be carried to the rest of the body, while eliminating waste products through the large intestine.</p>
-
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/epidemiology/what-is.html" class="related-link">Epidemiology</a>
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/gerontology/what-is.html" class="related-link">Gerontology</a>
-        <a href="/health/gynecology/what-is.html" class="related-link">Gynecology</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
         </article>
     </main>
 
@@ -417,6 +464,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

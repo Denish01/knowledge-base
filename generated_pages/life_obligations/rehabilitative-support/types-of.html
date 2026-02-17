@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of rehabilitative support - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of rehabilitative support - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/rehabilitative-support/types-of.html">
     <meta property="og:title" content="Types of Rehabilitative Support">
-    <meta property="og:description" content="A clear, simple explanation of rehabilitative support - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of rehabilitative support - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/rehabilitative-support/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Rehabilitative Support">
-    <meta name="twitter:description" content="A clear, simple explanation of rehabilitative support - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of rehabilitative support - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Rehabilitative Support - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Rehabilitative Support", "item": "https://360library.com/life_obligations/rehabilitative-support/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Rehabilitative Support", "description": "A clear, simple explanation of rehabilitative support - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/rehabilitative-support/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/rehabilitative-support/types-of.html"}, "about": {"@type": "Thing", "name": "Rehabilitative Support"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Rehabilitative Support", "description": "A clear, simple explanation of types of rehabilitative support - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/rehabilitative-support/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/rehabilitative-support/types-of.html"}, "about": {"@type": "Thing", "name": "Rehabilitative Support"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,107 +388,76 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/rehabilitative-support/what-is.html">Rehabilitative Support</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Rehabilitative Support</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>INTRODUCTION:</p>
 <p>Rehabilitative support refers to the various forms of assistance and care provided to individuals recovering from illness, injury, or disability. Classification of rehabilitative support is essential as it helps healthcare professionals, caregivers, and individuals understand the different types of support available, their purposes, and how they can be tailored to meet specific needs. By categorizing rehabilitative support, individuals can receive the most effective and efficient care, leading to better outcomes and improved quality of life. Understanding the different types of rehabilitative support is crucial for creating personalized treatment plans, allocating resources, and promoting overall well-being.</p>
-
 <p>MAIN CATEGORIES:</p>
-<p>1. <strong>Physical Therapy</strong></p>
+<ol>
+<li><strong>Physical Therapy</strong></li>
+</ol>
 <ul>
-  <li>Definition: Physical therapy involves the use of exercises, modalities, and techniques to improve mobility, strength, and function. It is designed to help individuals recover from physical injuries or conditions, such as stroke or sports injuries.</li>
-  <li>Key characteristics: Physical therapy often includes exercises, stretches, and manual therapy techniques, such as massage or joint mobilization.</li>
-  <li>Example: A person who has undergone knee surgery may work with a physical therapist to regain strength and range of motion in their knee.</li>
+<li>Definition: Physical therapy involves the use of exercises, modalities, and techniques to improve mobility, strength, and function. It is designed to help individuals recover from physical injuries or conditions, such as stroke or sports injuries.</li>
+<li>Key characteristics: Physical therapy often includes exercises, stretches, and manual therapy techniques, such as massage or joint mobilization.</li>
+<li>Example: A person who has undergone knee surgery may work with a physical therapist to regain strength and range of motion in their knee.</li>
 </ul>
-
-<p>2. <strong>Occupational Therapy</strong></p>
+<ol>
+<li><strong>Occupational Therapy</strong></li>
+</ol>
 <ul>
-  <li>Definition: Occupational therapy focuses on helping individuals develop the skills and abilities necessary for daily living and work. It aims to enable people to participate in activities that are meaningful and purposeful.</li>
-  <li>Key characteristics: Occupational therapy may involve adapting environments, using assistive devices, and teaching new skills, such as cooking or dressing.</li>
-  <li>Example: An individual with a disability may work with an occupational therapist to learn how to use adaptive equipment to prepare meals independently.</li>
+<li>Definition: Occupational therapy focuses on helping individuals develop the skills and abilities necessary for daily living and work. It aims to enable people to participate in activities that are meaningful and purposeful.</li>
+<li>Key characteristics: Occupational therapy may involve adapting environments, using assistive devices, and teaching new skills, such as cooking or dressing.</li>
+<li>Example: An individual with a disability may work with an occupational therapist to learn how to use adaptive equipment to prepare meals independently.</li>
 </ul>
-
-<p>3. <strong>Speech and Language Therapy</strong></p>
+<ol>
+<li><strong>Speech and Language Therapy</strong></li>
+</ol>
 <ul>
-  <li>Definition: Speech and language therapy involves the assessment and treatment of communication disorders, such as speech, language, or swallowing difficulties. It aims to improve an individual's ability to communicate effectively.</li>
-  <li>Key characteristics: Speech and language therapy may include exercises to improve articulation, language processing, and cognitive-communication skills.</li>
-  <li>Example: A person who has suffered a stroke may work with a speech-language pathologist to regain their ability to speak clearly and understand written and verbal language.</li>
+<li>Definition: Speech and language therapy involves the assessment and treatment of communication disorders, such as speech, language, or swallowing difficulties. It aims to improve an individual's ability to communicate effectively.</li>
+<li>Key characteristics: Speech and language therapy may include exercises to improve articulation, language processing, and cognitive-communication skills.</li>
+<li>Example: A person who has suffered a stroke may work with a speech-language pathologist to regain their ability to speak clearly and understand written and verbal language.</li>
 </ul>
-
-<p>4. <strong>Psychological Rehabilitation</strong></p>
+<ol>
+<li><strong>Psychological Rehabilitation</strong></li>
+</ol>
 <ul>
-  <li>Definition: Psychological rehabilitation involves the use of therapeutic techniques to help individuals cope with mental health conditions, such as anxiety, depression, or trauma. It aims to promote emotional well-being and improve mental health.</li>
-  <li>Key characteristics: Psychological rehabilitation may involve individual or group therapy, cognitive-behavioral therapy, or other evidence-based treatments.</li>
-  <li>Example: An individual who has experienced a traumatic event may work with a psychologist to develop coping strategies and manage symptoms of post-traumatic stress disorder.</li>
+<li>Definition: Psychological rehabilitation involves the use of therapeutic techniques to help individuals cope with mental health conditions, such as anxiety, depression, or trauma. It aims to promote emotional well-being and improve mental health.</li>
+<li>Key characteristics: Psychological rehabilitation may involve individual or group therapy, cognitive-behavioral therapy, or other evidence-based treatments.</li>
+<li>Example: An individual who has experienced a traumatic event may work with a psychologist to develop coping strategies and manage symptoms of post-traumatic stress disorder.</li>
 </ul>
-
-<p>5. <strong>Vocational Rehabilitation</strong></p>
+<ol>
+<li><strong>Vocational Rehabilitation</strong></li>
+</ol>
 <ul>
-  <li>Definition: Vocational rehabilitation involves the provision of services and support to help individuals with disabilities or injuries return to work or enter the workforce. It aims to enable people to achieve their employment goals and maintain employment.</li>
-  <li>Key characteristics: Vocational rehabilitation may include job training, education, and placement services, as well as assistance with resume development and interview skills.</li>
-  <li>Example: A person with a disability may work with a vocational rehabilitation counselor to develop a plan for returning to work, including identifying job opportunities and acquiring necessary skills.</li>
+<li>Definition: Vocational rehabilitation involves the provision of services and support to help individuals with disabilities or injuries return to work or enter the workforce. It aims to enable people to achieve their employment goals and maintain employment.</li>
+<li>Key characteristics: Vocational rehabilitation may include job training, education, and placement services, as well as assistance with resume development and interview skills.</li>
+<li>Example: A person with a disability may work with a vocational rehabilitation counselor to develop a plan for returning to work, including identifying job opportunities and acquiring necessary skills.</li>
 </ul>
-
 <p>COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Support</th>
-<th>Focus</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Physical Therapy</td>
-<td>Physical function</td>
-<td>Exercises, modalities, manual therapy</td>
-<td>Regaining strength after surgery</td>
-</tr>
-<tr>
-<td>Occupational Therapy</td>
-<td>Daily living skills</td>
-<td>Adaptive equipment, skill development</td>
-<td>Learning to cook with adaptive equipment</td>
-</tr>
-<tr>
-<td>Speech and Language Therapy</td>
-<td>Communication</td>
-<td>Exercises, language processing, cognitive-communication skills</td>
-<td>Regaining speech after a stroke</td>
-</tr>
-<tr>
-<td>Psychological Rehabilitation</td>
-<td>Mental health</td>
-<td>Individual or group therapy, cognitive-behavioral therapy</td>
-<td>Managing symptoms of anxiety</td>
-</tr>
-<tr>
-<td>Vocational Rehabilitation</td>
-<td>Employment</td>
-<td>Job training, education, placement services</td>
-<td>Returning to work after an injury</td>
-</tr>
-</tbody></table>
-
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Support</th><th>Focus</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Physical Therapy</td><td>Physical function</td><td>Exercises, modalities, manual therapy</td><td>Regaining strength after surgery</td></tr>
+<tr><td>Occupational Therapy</td><td>Daily living skills</td><td>Adaptive equipment, skill development</td><td>Learning to cook with adaptive equipment</td></tr>
+<tr><td>Speech and Language Therapy</td><td>Communication</td><td>Exercises, language processing, cognitive-communication skills</td><td>Regaining speech after a stroke</td></tr>
+<tr><td>Psychological Rehabilitation</td><td>Mental health</td><td>Individual or group therapy, cognitive-behavioral therapy</td><td>Managing symptoms of anxiety</td></tr>
+<tr><td>Vocational Rehabilitation</td><td>Employment</td><td>Job training, education, placement services</td><td>Returning to work after an injury</td></tr>
+</tbody>
+</table></div>
 <p>HOW THEY RELATE:</p>
 <p>The different types of rehabilitative support are interconnected and often overlap. For example, an individual may require physical therapy to recover from an injury, occupational therapy to adapt to their environment, and psychological rehabilitation to cope with the emotional impact of their condition. Additionally, vocational rehabilitation may involve collaboration with physical, occupational, or speech therapists to ensure that an individual's employment goals are aligned with their physical and emotional abilities. Understanding how these categories relate to one another is essential for providing comprehensive and effective rehabilitative support.</p>
-
 <p>SUMMARY: The classification system for rehabilitative support includes physical therapy, occupational therapy, speech and language therapy, psychological rehabilitation, and vocational rehabilitation, each with distinct focuses, characteristics, and examples that work together to provide comprehensive care and support for individuals recovering from illness, injury, or disability.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/proportional-contribution/what-is.html" class="related-link">Proportional Contribution</a>
-        <a href="/life_obligations/public-assistance/what-is.html" class="related-link">Public Assistance</a>
-        <a href="/life_obligations/rent-payment/what-is.html" class="related-link">Rent Payment</a>
-        <a href="/life_obligations/renters-insurance/what-is.html" class="related-link">Renters Insurance</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -488,6 +502,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

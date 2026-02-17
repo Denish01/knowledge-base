@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of health education - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of health education vs - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/health-education/vs.html">
     <meta property="og:title" content="Health Education Compared">
-    <meta property="og:description" content="A clear, simple explanation of health education - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of health education vs - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/health-education/vs.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Health Education Compared">
-    <meta name="twitter:description" content="A clear, simple explanation of health education - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of health education vs - definition, key concepts, examples, and common misconceptions.">
     <title>Health Education Compared - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Health Education", "item": "https://360library.com/health/health-education/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Comparison"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Health Education Compared", "description": "A clear, simple explanation of health education - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/health-education/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/health-education/vs.html"}, "about": {"@type": "Thing", "name": "Health Education"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Health Education Compared", "description": "A clear, simple explanation of health education vs - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/health-education/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/health-education/vs.html"}, "about": {"@type": "Thing", "name": "Health Education"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,52 +388,41 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/health-education/what-is.html">Health Education</a><span>&rsaquo;</span>Comparison
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Health Education Compared</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Health education versus other forms of education refers to the process of teaching people about healthy behaviors, diseases, and ways to improve their overall well-being, and how it differs from other educational approaches.</p>
-
 <p>Health education is an essential part of a person's overall education, as it provides individuals with the knowledge and skills they need to make informed decisions about their health. This type of education is not just limited to the classroom, but can also take place in community settings, such as hospitals, clinics, and public health organizations. The goal of health education is to empower people with the knowledge and skills they need to take control of their own health, and to make healthy choices that will improve their quality of life.</p>
-
 <p>Health education can be delivered in a variety of ways, including through formal education programs, community outreach efforts, and one-on-one counseling sessions. It can also be tailored to meet the specific needs of different populations, such as children, adults, and older adults. For example, health education programs for children might focus on teaching them about the importance of washing their hands, eating a balanced diet, and getting regular exercise. In contrast, health education programs for older adults might focus on teaching them about the importance of managing chronic health conditions, such as diabetes and heart disease.</p>
-
 <p>The key components of health education include:</p>
 <ul>
-  <li>Health literacy, which refers to the ability to read, understand, and act on health information</li>
-  <li>Behavioral change theories, which provide a framework for understanding how people can change their behaviors to improve their health</li>
-  <li>Health promotion strategies, which focus on encouraging people to engage in healthy behaviors</li>
-  <li>Disease prevention strategies, which focus on preventing illnesses and injuries from occurring in the first place</li>
-  <li>Community-based initiatives, which bring people together to work on health-related projects and activities</li>
-  <li>Evaluation and research methods, which are used to assess the effectiveness of health education programs and to identify areas for improvement</li>
+<li>Health literacy, which refers to the ability to read, understand, and act on health information</li>
+<li>Behavioral change theories, which provide a framework for understanding how people can change their behaviors to improve their health</li>
+<li>Health promotion strategies, which focus on encouraging people to engage in healthy behaviors</li>
+<li>Disease prevention strategies, which focus on preventing illnesses and injuries from occurring in the first place</li>
+<li>Community-based initiatives, which bring people together to work on health-related projects and activities</li>
+<li>Evaluation and research methods, which are used to assess the effectiveness of health education programs and to identify areas for improvement</li>
 </ul>
-
 <p>Despite its importance, health education is often misunderstood, and there are several common misconceptions about what it entails. Some of these misconceptions include:</p>
 <ul>
-  <li>That health education is only about teaching people about diseases and illnesses, when in fact it is also about promoting healthy behaviors and overall well-being</li>
-  <li>That health education is only relevant for people who are already sick or injured, when in fact it is relevant for everyone, regardless of their health status</li>
-  <li>That health education is a one-time event, when in fact it is an ongoing process that requires continuous learning and reinforcement</li>
-  <li>That health education is only the responsibility of healthcare professionals, when in fact it is a shared responsibility among individuals, families, communities, and society as a whole</li>
+<li>That health education is only about teaching people about diseases and illnesses, when in fact it is also about promoting healthy behaviors and overall well-being</li>
+<li>That health education is only relevant for people who are already sick or injured, when in fact it is relevant for everyone, regardless of their health status</li>
+<li>That health education is a one-time event, when in fact it is an ongoing process that requires continuous learning and reinforcement</li>
+<li>That health education is only the responsibility of healthcare professionals, when in fact it is a shared responsibility among individuals, families, communities, and society as a whole</li>
 </ul>
-
 <p>A real-world example of health education in action is a school program that teaches children about the importance of proper nutrition and physical activity. The program might include lessons on how to read food labels, how to plan healthy meals, and how to engage in regular exercise. The program might also include hands-on activities, such as cooking classes and sports teams, to help children put their new knowledge into practice.</p>
-
 <p>Health education versus other forms of education is a vital process that empowers individuals with the knowledge and skills they need to take control of their own health and make informed decisions about their well-being.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/gerontology/what-is.html" class="related-link">Gerontology</a>
-        <a href="/health/gynecology/what-is.html" class="related-link">Gynecology</a>
-        <a href="/health/health-promotion/what-is.html" class="related-link">Health Promotion</a>
-        <a href="/health/hygiene/what-is.html" class="related-link">Hygiene</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -433,6 +467,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

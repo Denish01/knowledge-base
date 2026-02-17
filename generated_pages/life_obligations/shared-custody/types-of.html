@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of shared custody - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of shared custody - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/shared-custody/types-of.html">
     <meta property="og:title" content="Types of Shared Custody">
-    <meta property="og:description" content="A clear, simple explanation of shared custody - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of shared custody - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/shared-custody/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Shared Custody">
-    <meta name="twitter:description" content="A clear, simple explanation of shared custody - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of shared custody - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Shared Custody - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Shared Custody", "item": "https://360library.com/life_obligations/shared-custody/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Shared Custody", "description": "A clear, simple explanation of shared custody - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/shared-custody/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/shared-custody/types-of.html"}, "about": {"@type": "Thing", "name": "Shared Custody"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Shared Custody", "description": "A clear, simple explanation of types of shared custody - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/shared-custody/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/shared-custody/types-of.html"}, "about": {"@type": "Thing", "name": "Shared Custody"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,104 +388,77 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/shared-custody/what-is.html">Shared Custody</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Shared Custody</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>INTRODUCTION</p>
 <p>Types of shared custody refer to the various arrangements that divorced or separated parents can make to care for their children. Classification of these types is essential because it helps parents, lawyers, and judges understand the different options available and make informed decisions about what works best for each family's unique situation. By understanding the different types of shared custody, parents can better navigate the complexities of co-parenting and create a stable and loving environment for their children. This classification system provides a framework for exploring the various arrangements that can be tailored to meet the needs of each family, taking into account factors such as work schedules, living arrangements, and the children's ages and needs.</p>
-
 <p>MAIN CATEGORIES</p>
-<p>1. <strong>Joint Physical Custody</strong></p>
+<ol>
+<li><strong>Joint Physical Custody</strong></li>
+</ol>
 <ul>
-  <li>Definition: Joint physical custody is an arrangement where both parents share physical care of the children, with the children spending significant amounts of time with each parent. This type of custody requires cooperation and communication between the parents to ensure the children's needs are met.</li>
-  <li>Key characteristics: Shared decision-making, equal or nearly equal time with each parent, and cooperation between parents.</li>
-  <li>Example: A family where the children spend weekdays with one parent and weekends with the other, with both parents involved in making decisions about the children's education and healthcare.</li>
+<li>Definition: Joint physical custody is an arrangement where both parents share physical care of the children, with the children spending significant amounts of time with each parent. This type of custody requires cooperation and communication between the parents to ensure the children's needs are met.</li>
+<li>Key characteristics: Shared decision-making, equal or nearly equal time with each parent, and cooperation between parents.</li>
+<li>Example: A family where the children spend weekdays with one parent and weekends with the other, with both parents involved in making decisions about the children's education and healthcare.</li>
 </ul>
-<p>2. <strong>Joint Legal Custody</strong></p>
+<ol>
+<li><strong>Joint Legal Custody</strong></li>
+</ol>
 <ul>
-  <li>Definition: Joint legal custody is an arrangement where both parents share responsibility for making major decisions about the children's lives, such as education, healthcare, and extracurricular activities. This type of custody requires parents to work together to make decisions that are in the best interests of the children.</li>
-  <li>Key characteristics: Shared decision-making, cooperation between parents, and equal responsibility for making major decisions.</li>
-  <li>Example: A family where both parents are involved in making decisions about the children's education, including choosing schools and approving homework assignments.</li>
+<li>Definition: Joint legal custody is an arrangement where both parents share responsibility for making major decisions about the children's lives, such as education, healthcare, and extracurricular activities. This type of custody requires parents to work together to make decisions that are in the best interests of the children.</li>
+<li>Key characteristics: Shared decision-making, cooperation between parents, and equal responsibility for making major decisions.</li>
+<li>Example: A family where both parents are involved in making decisions about the children's education, including choosing schools and approving homework assignments.</li>
 </ul>
-<p>3. <strong>Sole Physical Custody with Visitation</strong></p>
+<ol>
+<li><strong>Sole Physical Custody with Visitation</strong></li>
+</ol>
 <ul>
-  <li>Definition: Sole physical custody with visitation is an arrangement where one parent has primary physical care of the children, and the other parent has scheduled visitation rights. This type of custody is often used when one parent is not able to provide a stable environment for the children.</li>
-  <li>Key characteristics: One parent has primary physical care, the other parent has scheduled visitation, and the parents may or may not share decision-making responsibilities.</li>
-  <li>Example: A family where the children live with one parent during the week and visit the other parent every other weekend.</li>
+<li>Definition: Sole physical custody with visitation is an arrangement where one parent has primary physical care of the children, and the other parent has scheduled visitation rights. This type of custody is often used when one parent is not able to provide a stable environment for the children.</li>
+<li>Key characteristics: One parent has primary physical care, the other parent has scheduled visitation, and the parents may or may not share decision-making responsibilities.</li>
+<li>Example: A family where the children live with one parent during the week and visit the other parent every other weekend.</li>
 </ul>
-<p>4. <strong>Bird's Nest Custody</strong></p>
+<ol>
+<li><strong>Bird's Nest Custody</strong></li>
+</ol>
 <ul>
-  <li>Definition: Bird's nest custody is an arrangement where the children remain in the family home, and the parents take turns living with them. This type of custody is often used to minimize disruption to the children's lives and provide a sense of stability.</li>
-  <li>Key characteristics: The children remain in the family home, the parents take turns living with the children, and the parents may or may not share decision-making responsibilities.</li>
-  <li>Example: A family where the parents take turns living in the family home with the children, with each parent having their own separate residence for when they are not living with the children.</li>
+<li>Definition: Bird's nest custody is an arrangement where the children remain in the family home, and the parents take turns living with them. This type of custody is often used to minimize disruption to the children's lives and provide a sense of stability.</li>
+<li>Key characteristics: The children remain in the family home, the parents take turns living with the children, and the parents may or may not share decision-making responsibilities.</li>
+<li>Example: A family where the parents take turns living in the family home with the children, with each parent having their own separate residence for when they are not living with the children.</li>
 </ul>
-<p>5. <strong>Alternating Custody</strong></p>
+<ol>
+<li><strong>Alternating Custody</strong></li>
+</ol>
 <ul>
-  <li>Definition: Alternating custody is an arrangement where the children spend a set period of time with one parent, and then switch to the other parent. This type of custody can be weekly, bi-weekly, or monthly, depending on the family's needs and schedule.</li>
-  <li>Key characteristics: The children spend a set period of time with each parent, the parents may or may not share decision-making responsibilities, and the schedule can be tailored to meet the family's needs.</li>
-  <li>Example: A family where the children spend one week with one parent and the next week with the other parent, with the parents sharing decision-making responsibilities.</li>
+<li>Definition: Alternating custody is an arrangement where the children spend a set period of time with one parent, and then switch to the other parent. This type of custody can be weekly, bi-weekly, or monthly, depending on the family's needs and schedule.</li>
+<li>Key characteristics: The children spend a set period of time with each parent, the parents may or may not share decision-making responsibilities, and the schedule can be tailored to meet the family's needs.</li>
+<li>Example: A family where the children spend one week with one parent and the next week with the other parent, with the parents sharing decision-making responsibilities.</li>
 </ul>
-
 <p>COMPARISON TABLE</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Custody</th>
-<th>Primary Care</th>
-<th>Decision-Making</th>
-<th>Schedule</th>
-</tr></thead><tbody>
-<tr>
-<td>Joint Physical Custody</td>
-<td>Shared</td>
-<td>Shared</td>
-<td>Flexible</td>
-</tr>
-<tr>
-<td>Joint Legal Custody</td>
-<td>Not applicable</td>
-<td>Shared</td>
-<td>Not applicable</td>
-</tr>
-<tr>
-<td>Sole Physical Custody with Visitation</td>
-<td>One parent</td>
-<td>May be shared</td>
-<td>Scheduled visitation</td>
-</tr>
-<tr>
-<td>Bird's Nest Custody</td>
-<td>Shared</td>
-<td>May be shared</td>
-<td>Alternating</td>
-</tr>
-<tr>
-<td>Alternating Custody</td>
-<td>Alternating</td>
-<td>May be shared</td>
-<td>Scheduled</td>
-</tr>
-</tbody></table>
-
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Custody</th><th>Primary Care</th><th>Decision-Making</th><th>Schedule</th></tr></thead><tbody>
+<tr><td>Joint Physical Custody</td><td>Shared</td><td>Shared</td><td>Flexible</td></tr>
+<tr><td>Joint Legal Custody</td><td>Not applicable</td><td>Shared</td><td>Not applicable</td></tr>
+<tr><td>Sole Physical Custody with Visitation</td><td>One parent</td><td>May be shared</td><td>Scheduled visitation</td></tr>
+<tr><td>Bird's Nest Custody</td><td>Shared</td><td>May be shared</td><td>Alternating</td></tr>
+<tr><td>Alternating Custody</td><td>Alternating</td><td>May be shared</td><td>Scheduled</td></tr>
+</tbody>
+</table></div>
 <p>HOW THEY RELATE</p>
 <p>The different types of shared custody are connected in that they all involve some level of cooperation and communication between the parents. However, they differ in terms of the level of physical care and decision-making responsibility each parent has. For example, joint physical custody and joint legal custody both involve shared decision-making, but joint physical custody also involves shared physical care. In contrast, sole physical custody with visitation involves one parent having primary physical care, while the other parent has scheduled visitation rights. By understanding how these different types of custody relate to each other, parents can make informed decisions about what arrangement will work best for their family.</p>
-
 <p>SUMMARY</p>
 <p>The classification system of shared custody includes various types, such as joint physical custody, joint legal custody, sole physical custody with visitation, bird's nest custody, and alternating custody, each with its own unique characteristics and requirements.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/retirement-withdrawal/what-is.html" class="related-link">Retirement Withdrawal</a>
-        <a href="/life_obligations/self-sufficiency/what-is.html" class="related-link">Self Sufficiency</a>
-        <a href="/life_obligations/shared-expenses/what-is.html" class="related-link">Shared Expenses</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -485,6 +503,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

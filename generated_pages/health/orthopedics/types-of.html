@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of orthopedics - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of orthopedics - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/orthopedics/types-of.html">
     <meta property="og:title" content="Types of Orthopedics">
-    <meta property="og:description" content="A clear, simple explanation of orthopedics - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of orthopedics - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/orthopedics/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Orthopedics">
-    <meta name="twitter:description" content="A clear, simple explanation of orthopedics - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of orthopedics - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Orthopedics - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Orthopedics", "item": "https://360library.com/health/orthopedics/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Orthopedics", "description": "A clear, simple explanation of orthopedics - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/orthopedics/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/orthopedics/types-of.html"}, "about": {"@type": "Thing", "name": "Orthopedics"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Orthopedics", "description": "A clear, simple explanation of types of orthopedics - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/orthopedics/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/orthopedics/types-of.html"}, "about": {"@type": "Thing", "name": "Orthopedics"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,147 +388,98 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/orthopedics/what-is.html">Orthopedics</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Types of Orthopedics</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>The field of orthopedics encompasses a wide range of specialties that focus on the diagnosis, treatment, and prevention of disorders and injuries related to the musculoskeletal system, which includes bones, joints, muscles, tendons, and ligaments. Classification of orthopedics into different types is crucial as it enables healthcare professionals to identify and address specific conditions, develop targeted treatment plans, and improve patient outcomes. A comprehensive understanding of the various types of orthopedics is essential for providing effective care and promoting optimal recovery.</p>
-
-<p>2. MAIN CATEGORIES:</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <ul>
-  <li><strong>Pediatric Orthopedics</strong></li>
-  <li>Definition: Pediatric orthopedics focuses on the diagnosis and treatment of musculoskeletal disorders and injuries in children and adolescents. This specialty addresses conditions that affect the growing musculoskeletal system.</li>
-  <li>Key characteristics: Pediatric orthopedics often involves treating congenital conditions, growth-related disorders, and injuries sustained during sports or play.</li>
-  <li>Example: A child with scoliosis may require orthopedic treatment to correct spinal curvature and promote proper growth and development.</li>
+<li><strong>Pediatric Orthopedics</strong></li>
+<li>Definition: Pediatric orthopedics focuses on the diagnosis and treatment of musculoskeletal disorders and injuries in children and adolescents. This specialty addresses conditions that affect the growing musculoskeletal system.</li>
+<li>Key characteristics: Pediatric orthopedics often involves treating congenital conditions, growth-related disorders, and injuries sustained during sports or play.</li>
+<li>Example: A child with scoliosis may require orthopedic treatment to correct spinal curvature and promote proper growth and development.</li>
 </ul>
-
 <ul>
-  <li><strong>Sports Orthopedics</strong></li>
-  <li>Definition: Sports orthopedics is a specialty that deals with the prevention, diagnosis, and treatment of injuries and conditions related to sports and physical activity. This field combines orthopedic care with sports medicine to help athletes recover from injuries and maintain optimal performance.</li>
-  <li>Key characteristics: Sports orthopedics often involves treating acute injuries, such as sprains and fractures, as well as chronic conditions like tendonitis and overuse injuries.</li>
-  <li>Example: A professional athlete who suffers a torn ligament may require sports orthopedic care to repair the injury and develop a rehabilitation plan.</li>
+<li><strong>Sports Orthopedics</strong></li>
+<li>Definition: Sports orthopedics is a specialty that deals with the prevention, diagnosis, and treatment of injuries and conditions related to sports and physical activity. This field combines orthopedic care with sports medicine to help athletes recover from injuries and maintain optimal performance.</li>
+<li>Key characteristics: Sports orthopedics often involves treating acute injuries, such as sprains and fractures, as well as chronic conditions like tendonitis and overuse injuries.</li>
+<li>Example: A professional athlete who suffers a torn ligament may require sports orthopedic care to repair the injury and develop a rehabilitation plan.</li>
 </ul>
-
 <ul>
-  <li><strong>Joint Replacement Orthopedics</strong></li>
-  <li>Definition: Joint replacement orthopedics involves the surgical replacement of damaged or arthritic joints with artificial prostheses. This specialty aims to restore joint function, alleviate pain, and improve mobility.</li>
-  <li>Key characteristics: Joint replacement orthopedics typically involves major surgery, followed by a period of rehabilitation and recovery.</li>
-  <li>Example: An individual with severe arthritis may undergo joint replacement surgery to replace a damaged hip or knee joint with an artificial prosthesis.</li>
+<li><strong>Joint Replacement Orthopedics</strong></li>
+<li>Definition: Joint replacement orthopedics involves the surgical replacement of damaged or arthritic joints with artificial prostheses. This specialty aims to restore joint function, alleviate pain, and improve mobility.</li>
+<li>Key characteristics: Joint replacement orthopedics typically involves major surgery, followed by a period of rehabilitation and recovery.</li>
+<li>Example: An individual with severe arthritis may undergo joint replacement surgery to replace a damaged hip or knee joint with an artificial prosthesis.</li>
 </ul>
-
 <ul>
-  <li><strong>Spine Orthopedics</strong></li>
-  <li>Definition: Spine orthopedics focuses on the diagnosis and treatment of disorders and injuries affecting the spine, including the cervical, thoracic, and lumbar regions. This specialty addresses conditions such as herniated discs, spinal stenosis, and scoliosis.</li>
-  <li>Key characteristics: Spine orthopedics often involves treating conditions that affect the spinal cord, nerves, and surrounding muscles.</li>
-  <li>Example: An individual with a herniated disc may require spine orthopedic care to alleviate pain, restore mobility, and prevent further injury.</li>
+<li><strong>Spine Orthopedics</strong></li>
+<li>Definition: Spine orthopedics focuses on the diagnosis and treatment of disorders and injuries affecting the spine, including the cervical, thoracic, and lumbar regions. This specialty addresses conditions such as herniated discs, spinal stenosis, and scoliosis.</li>
+<li>Key characteristics: Spine orthopedics often involves treating conditions that affect the spinal cord, nerves, and surrounding muscles.</li>
+<li>Example: An individual with a herniated disc may require spine orthopedic care to alleviate pain, restore mobility, and prevent further injury.</li>
 </ul>
-
 <ul>
-  <li><strong>Hand and Upper Extremity Orthopedics</strong></li>
-  <li>Definition: Hand and upper extremity orthopedics is a specialty that deals with the diagnosis and treatment of disorders and injuries affecting the hands, wrists, elbows, and shoulders. This field addresses conditions such as carpal tunnel syndrome, tendonitis, and fractures.</li>
-  <li>Key characteristics: Hand and upper extremity orthopedics often involves treating complex injuries and conditions that require precise surgical techniques and rehabilitation.</li>
-  <li>Example: An individual who suffers a wrist fracture may require hand and upper extremity orthopedic care to repair the injury and restore hand function.</li>
+<li><strong>Hand and Upper Extremity Orthopedics</strong></li>
+<li>Definition: Hand and upper extremity orthopedics is a specialty that deals with the diagnosis and treatment of disorders and injuries affecting the hands, wrists, elbows, and shoulders. This field addresses conditions such as carpal tunnel syndrome, tendonitis, and fractures.</li>
+<li>Key characteristics: Hand and upper extremity orthopedics often involves treating complex injuries and conditions that require precise surgical techniques and rehabilitation.</li>
+<li>Example: An individual who suffers a wrist fracture may require hand and upper extremity orthopedic care to repair the injury and restore hand function.</li>
 </ul>
-
 <ul>
-  <li><strong>Foot and Ankle Orthopedics</strong></li>
-  <li>Definition: Foot and ankle orthopedics focuses on the diagnosis and treatment of disorders and injuries affecting the feet and ankles. This specialty addresses conditions such as bunions, hammertoes, and ankle sprains.</li>
-  <li>Key characteristics: Foot and ankle orthopedics often involves treating conditions that affect balance, mobility, and overall lower extremity function.</li>
-  <li>Example: An individual with a severe ankle sprain may require foot and ankle orthopedic care to repair the injury and develop a rehabilitation plan.</li>
+<li><strong>Foot and Ankle Orthopedics</strong></li>
+<li>Definition: Foot and ankle orthopedics focuses on the diagnosis and treatment of disorders and injuries affecting the feet and ankles. This specialty addresses conditions such as bunions, hammertoes, and ankle sprains.</li>
+<li>Key characteristics: Foot and ankle orthopedics often involves treating conditions that affect balance, mobility, and overall lower extremity function.</li>
+<li>Example: An individual with a severe ankle sprain may require foot and ankle orthopedic care to repair the injury and develop a rehabilitation plan.</li>
 </ul>
-
 <ul>
-  <li><strong>Musculoskeletal Oncology</strong></li>
-  <li>Definition: Musculoskeletal oncology is a specialty that deals with the diagnosis and treatment of benign and malignant tumors affecting the musculoskeletal system. This field combines orthopedic care with oncology to address conditions such as osteosarcoma and chondrosarcoma.</li>
-  <li>Key characteristics: Musculoskeletal oncology often involves treating complex and rare conditions that require a multidisciplinary approach.</li>
-  <li>Example: An individual diagnosed with a bone tumor may require musculoskeletal oncology care to develop a treatment plan that includes surgery, chemotherapy, and radiation therapy.</li>
+<li><strong>Musculoskeletal Oncology</strong></li>
+<li>Definition: Musculoskeletal oncology is a specialty that deals with the diagnosis and treatment of benign and malignant tumors affecting the musculoskeletal system. This field combines orthopedic care with oncology to address conditions such as osteosarcoma and chondrosarcoma.</li>
+<li>Key characteristics: Musculoskeletal oncology often involves treating complex and rare conditions that require a multidisciplinary approach.</li>
+<li>Example: An individual diagnosed with a bone tumor may require musculoskeletal oncology care to develop a treatment plan that includes surgery, chemotherapy, and radiation therapy.</li>
 </ul>
-
 <ul>
-  <li><strong>Orthopedic Trauma</strong></li>
-  <li>Definition: Orthopedic trauma is a specialty that focuses on the diagnosis and treatment of acute injuries and conditions affecting the musculoskeletal system, often resulting from accidents or violence. This field addresses conditions such as fractures, dislocations, and soft tissue injuries.</li>
-  <li>Key characteristics: Orthopedic trauma often involves treating complex and critical injuries that require immediate attention and stabilization.</li>
-  <li>Example: An individual who suffers a severe fracture in a car accident may require orthopedic trauma care to stabilize the injury and develop a treatment plan.</li>
+<li><strong>Orthopedic Trauma</strong></li>
+<li>Definition: Orthopedic trauma is a specialty that focuses on the diagnosis and treatment of acute injuries and conditions affecting the musculoskeletal system, often resulting from accidents or violence. This field addresses conditions such as fractures, dislocations, and soft tissue injuries.</li>
+<li>Key characteristics: Orthopedic trauma often involves treating complex and critical injuries that require immediate attention and stabilization.</li>
+<li>Example: An individual who suffers a severe fracture in a car accident may require orthopedic trauma care to stabilize the injury and develop a treatment plan.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Focus</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Pediatric Orthopedics</td>
-<td>Children and adolescents</td>
-<td>Congenital conditions, growth-related disorders</td>
-<td>Scoliosis</td>
-</tr>
-<tr>
-<td>Sports Orthopedics</td>
-<td>Sports-related injuries</td>
-<td>Acute injuries, chronic conditions</td>
-<td>Torn ligament</td>
-</tr>
-<tr>
-<td>Joint Replacement Orthopedics</td>
-<td>Damaged or arthritic joints</td>
-<td>Major surgery, rehabilitation</td>
-<td>Hip replacement</td>
-</tr>
-<tr>
-<td>Spine Orthopedics</td>
-<td>Spinal disorders</td>
-<td>Spinal cord, nerves, muscles</td>
-<td>Herniated disc</td>
-</tr>
-<tr>
-<td>Hand and Upper Extremity Orthopedics</td>
-<td>Hands, wrists, elbows, shoulders</td>
-<td>Complex injuries, precise surgery</td>
-<td>Wrist fracture</td>
-</tr>
-<tr>
-<td>Foot and Ankle Orthopedics</td>
-<td>Feet and ankles</td>
-<td>Balance, mobility, lower extremity function</td>
-<td>Ankle sprain</td>
-</tr>
-<tr>
-<td>Musculoskeletal Oncology</td>
-<td>Benign and malignant tumors</td>
-<td>Multidisciplinary approach, rare conditions</td>
-<td>Bone tumor</td>
-</tr>
-<tr>
-<td>Orthopedic Trauma</td>
-<td>Acute injuries</td>
-<td>Complex, critical injuries, immediate attention</td>
-<td>Severe fracture</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Focus</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Pediatric Orthopedics</td><td>Children and adolescents</td><td>Congenital conditions, growth-related disorders</td><td>Scoliosis</td></tr>
+<tr><td>Sports Orthopedics</td><td>Sports-related injuries</td><td>Acute injuries, chronic conditions</td><td>Torn ligament</td></tr>
+<tr><td>Joint Replacement Orthopedics</td><td>Damaged or arthritic joints</td><td>Major surgery, rehabilitation</td><td>Hip replacement</td></tr>
+<tr><td>Spine Orthopedics</td><td>Spinal disorders</td><td>Spinal cord, nerves, muscles</td><td>Herniated disc</td></tr>
+<tr><td>Hand and Upper Extremity Orthopedics</td><td>Hands, wrists, elbows, shoulders</td><td>Complex injuries, precise surgery</td><td>Wrist fracture</td></tr>
+<tr><td>Foot and Ankle Orthopedics</td><td>Feet and ankles</td><td>Balance, mobility, lower extremity function</td><td>Ankle sprain</td></tr>
+<tr><td>Musculoskeletal Oncology</td><td>Benign and malignant tumors</td><td>Multidisciplinary approach, rare conditions</td><td>Bone tumor</td></tr>
+<tr><td>Orthopedic Trauma</td><td>Acute injuries</td><td>Complex, critical injuries, immediate attention</td><td>Severe fracture</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The various categories of orthopedics are interconnected and often overlap. For example, a patient with a sports-related injury may require care from both sports orthopedics and orthopedic trauma specialists. Similarly, an individual with a spinal condition may need treatment from spine orthopedics and musculoskeletal oncology experts. Understanding the relationships between these categories is essential for providing comprehensive and effective care.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system of orthopedics encompasses a range of specialties, including pediatric, sports, joint replacement, spine, hand and upper extremity, foot and ankle, musculoskeletal oncology, and orthopedic trauma, each with distinct focuses, key characteristics, and examples, which collectively contribute to a comprehensive understanding of the field and enable healthcare professionals to provide targeted and effective care.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/obstetrics/what-is.html" class="related-link">Obstetrics</a>
-        <a href="/health/oncology/what-is.html" class="related-link">Oncology</a>
-        <a href="/health/otolaryngology/what-is.html" class="related-link">Otolaryngology</a>
-        <a href="/health/pathology/what-is.html" class="related-link">Pathology</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -528,6 +524,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

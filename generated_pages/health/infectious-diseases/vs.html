@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of infectious diseases - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of infectious diseases vs - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/infectious-diseases/vs.html">
     <meta property="og:title" content="Infectious Diseases Compared">
-    <meta property="og:description" content="A clear, simple explanation of infectious diseases - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of infectious diseases vs - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/infectious-diseases/vs.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Infectious Diseases Compared">
-    <meta name="twitter:description" content="A clear, simple explanation of infectious diseases - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of infectious diseases vs - definition, key concepts, examples, and common misconceptions.">
     <title>Infectious Diseases Compared - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Infectious Diseases", "item": "https://360library.com/health/infectious-diseases/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Comparison"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Infectious Diseases Compared", "description": "A clear, simple explanation of infectious diseases - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/infectious-diseases/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/infectious-diseases/vs.html"}, "about": {"@type": "Thing", "name": "Infectious Diseases"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Infectious Diseases Compared", "description": "A clear, simple explanation of infectious diseases vs - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/infectious-diseases/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/infectious-diseases/vs.html"}, "about": {"@type": "Thing", "name": "Infectious Diseases"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/infectious-diseases/what-is.html">Infectious Diseases</a><span>&rsaquo;</span>Comparison
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Infectious Diseases Compared</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Infectious diseases vs noninfectious diseases is a comparison between two types of diseases that affect the human body in different ways.</p>
-
 <p>Infectious diseases are caused by pathogens such as bacteria, viruses, fungi, and parasites. These pathogens can enter the body through various means, such as contaminated food or water, insect bites, or contact with an infected person. Once inside the body, the pathogens multiply and cause damage to the body's cells and tissues, leading to symptoms such as fever, pain, and inflammation.</p>
-
 <p>Noninfectious diseases, on the other hand, are not caused by pathogens. Instead, they are often the result of a combination of genetic, environmental, and lifestyle factors. Noninfectious diseases can include conditions such as heart disease, cancer, and diabetes. These diseases are often chronic, meaning they develop over a long period of time, and can be influenced by factors such as diet, exercise, and exposure to certain chemicals or pollutants.</p>
-
 <p>The key difference between infectious and noninfectious diseases is the way they are transmitted and the way they are treated. Infectious diseases can be spread from person to person, while noninfectious diseases are not contagious. Treatment for infectious diseases often involves the use of antibiotics or other medications that target the specific pathogen causing the disease. Treatment for noninfectious diseases, on the other hand, may involve lifestyle changes, such as changes to diet or exercise, or the use of medications that help manage symptoms.</p>
-
 <p>The main principles of infectious and noninfectious diseases can be summarized as follows:</p>
 <ul>
-  <li>Infectious diseases are caused by pathogens such as bacteria, viruses, and parasites</li>
-  <li>Noninfectious diseases are caused by a combination of genetic, environmental, and lifestyle factors</li>
-  <li>Infectious diseases can be spread from person to person, while noninfectious diseases are not contagious</li>
-  <li>Treatment for infectious diseases often involves the use of antibiotics or other medications</li>
-  <li>Noninfectious diseases are often chronic and can be influenced by factors such as diet and exercise</li>
-  <li>The prevention of infectious diseases often involves the use of vaccines, while the prevention of noninfectious diseases may involve lifestyle changes</li>
+<li>Infectious diseases are caused by pathogens such as bacteria, viruses, and parasites</li>
+<li>Noninfectious diseases are caused by a combination of genetic, environmental, and lifestyle factors</li>
+<li>Infectious diseases can be spread from person to person, while noninfectious diseases are not contagious</li>
+<li>Treatment for infectious diseases often involves the use of antibiotics or other medications</li>
+<li>Noninfectious diseases are often chronic and can be influenced by factors such as diet and exercise</li>
+<li>The prevention of infectious diseases often involves the use of vaccines, while the prevention of noninfectious diseases may involve lifestyle changes</li>
 </ul>
-
 <p>There are several common misconceptions about infectious and noninfectious diseases. Some people believe that:</p>
 <ul>
-  <li>All diseases are infectious and can be spread from person to person</li>
-  <li>Noninfectious diseases are not serious and do not require medical attention</li>
-  <li>Infectious diseases can only be treated with antibiotics</li>
-  <li>Noninfectious diseases are always caused by genetics and cannot be prevented</li>
+<li>All diseases are infectious and can be spread from person to person</li>
+<li>Noninfectious diseases are not serious and do not require medical attention</li>
+<li>Infectious diseases can only be treated with antibiotics</li>
+<li>Noninfectious diseases are always caused by genetics and cannot be prevented</li>
 </ul>
-
 <p>A real-world example of the difference between infectious and noninfectious diseases can be seen in the case of tuberculosis, which is an infectious disease caused by a bacterium, and heart disease, which is a noninfectious disease caused by a combination of factors such as high blood pressure, high cholesterol, and smoking. While tuberculosis can be spread from person to person through the air, heart disease is not contagious and is often the result of a lifetime of poor lifestyle choices.</p>
-
 <p>In summary, infectious diseases vs noninfectious diseases is a comparison between two types of diseases that have different causes, modes of transmission, and treatments, and understanding the differences between them is crucial for the prevention and management of these diseases.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/hypertension/what-is.html" class="related-link">Hypertension</a>
-        <a href="/health/immunology/what-is.html" class="related-link">Immunology</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/mental-illness/what-is.html" class="related-link">Mental Illness</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

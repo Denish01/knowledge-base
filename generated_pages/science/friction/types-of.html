@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of friction - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of friction - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/science/friction/types-of.html">
     <meta property="og:title" content="Types of Friction">
-    <meta property="og:description" content="A clear, simple explanation of friction - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of friction - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/science/friction/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Friction">
-    <meta name="twitter:description" content="A clear, simple explanation of friction - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of friction - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Friction - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Science", "item": "https://360library.com/#science"}, {"@type": "ListItem", "position": 3, "name": "Friction", "item": "https://360library.com/science/friction/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Friction", "description": "A clear, simple explanation of friction - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/friction/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/friction/types-of.html"}, "about": {"@type": "Thing", "name": "Friction"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Friction", "description": "A clear, simple explanation of types of friction - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/friction/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/friction/types-of.html"}, "about": {"@type": "Thing", "name": "Friction"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,90 +388,65 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#science">Science</a><span>&rsaquo;</span><a href="/science/friction/what-is.html">Friction</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #0891B2">
     <main class="article-main">
         <article>
             <h1>Types of Friction</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>Friction is a fundamental force that opposes motion between two surfaces in contact. Understanding the different types of friction is crucial in various fields, including physics, engineering, and everyday life. Classification of friction is essential as it helps to identify and analyze the unique characteristics of each type, enabling the development of strategies to reduce or increase friction as needed. By categorizing friction, individuals can better comprehend the underlying mechanisms and make informed decisions in design, safety, and problem-solving contexts.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the primary types of friction, each with distinct definitions, characteristics, and examples.</p>
-
 <ul>
-  <li><strong>Static Friction</strong></li>
-  <li>Definition: Static friction is the force that opposes the initiation of motion between two surfaces that are stationary relative to each other. It is the force that must be overcome to start moving an object.</li>
-  <li>Key characteristics: Static friction is dependent on the surfaces' material properties and the normal force between them. It is typically greater than kinetic friction.</li>
-  <li>Example: Trying to push a heavy box that is stationary on the floor, where the force applied must overcome the static friction to start moving the box.</li>
-  <li><strong>Kinetic Friction</strong></li>
-  <li>Definition: Kinetic friction, also known as dynamic friction, is the force that opposes motion between two surfaces that are moving relative to each other. It is the force that acts on an object while it is in motion.</li>
-  <li>Key characteristics: Kinetic friction is generally less than static friction and is also dependent on the surfaces' material properties and the normal force between them.</li>
-  <li>Example: A car moving on a paved road, where the tires experience kinetic friction as they roll and slide slightly against the road surface.</li>
-  <li><strong>Rolling Friction</strong></li>
-  <li>Definition: Rolling friction occurs when an object rolls over a surface, such as a wheel or a ball. It is the force that opposes the rolling motion.</li>
-  <li>Key characteristics: Rolling friction is typically much less than static or kinetic friction because the objects are not sliding against each other. It is dependent on the radius of the rolling object and the surface properties.</li>
-  <li>Example: A bicycle moving on a flat road, where the wheels experience rolling friction as they rotate and make contact with the road surface.</li>
-  <li><strong>Fluid Friction</strong></li>
-  <li>Definition: Fluid friction, also known as viscous friction, occurs in fluids, such as liquids and gases, and opposes the motion of an object through the fluid.</li>
-  <li>Key characteristics: Fluid friction is dependent on the fluid's viscosity, the object's velocity, and the surface area of the object in contact with the fluid.</li>
-  <li>Example: A swimmer moving through water, where the fluid friction acts on the swimmer's body as it displaces the surrounding water.</li>
+<li><strong>Static Friction</strong></li>
+<li>Definition: Static friction is the force that opposes the initiation of motion between two surfaces that are stationary relative to each other. It is the force that must be overcome to start moving an object.</li>
+<li>Key characteristics: Static friction is dependent on the surfaces' material properties and the normal force between them. It is typically greater than kinetic friction.</li>
+<li>Example: Trying to push a heavy box that is stationary on the floor, where the force applied must overcome the static friction to start moving the box.</li>
+<li><strong>Kinetic Friction</strong></li>
+<li>Definition: Kinetic friction, also known as dynamic friction, is the force that opposes motion between two surfaces that are moving relative to each other. It is the force that acts on an object while it is in motion.</li>
+<li>Key characteristics: Kinetic friction is generally less than static friction and is also dependent on the surfaces' material properties and the normal force between them.</li>
+<li>Example: A car moving on a paved road, where the tires experience kinetic friction as they roll and slide slightly against the road surface.</li>
+<li><strong>Rolling Friction</strong></li>
+<li>Definition: Rolling friction occurs when an object rolls over a surface, such as a wheel or a ball. It is the force that opposes the rolling motion.</li>
+<li>Key characteristics: Rolling friction is typically much less than static or kinetic friction because the objects are not sliding against each other. It is dependent on the radius of the rolling object and the surface properties.</li>
+<li>Example: A bicycle moving on a flat road, where the wheels experience rolling friction as they rotate and make contact with the road surface.</li>
+<li><strong>Fluid Friction</strong></li>
+<li>Definition: Fluid friction, also known as viscous friction, occurs in fluids, such as liquids and gases, and opposes the motion of an object through the fluid.</li>
+<li>Key characteristics: Fluid friction is dependent on the fluid's viscosity, the object's velocity, and the surface area of the object in contact with the fluid.</li>
+<li>Example: A swimmer moving through water, where the fluid friction acts on the swimmer's body as it displaces the surrounding water.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
 <p>The following table summarizes the key differences between the main categories of friction:</p>
-
-<table class="comparison-table"><thead><tr>
-<th>Type of Friction</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Static Friction</td>
-<td>Opposes initiation of motion</td>
-<td>Dependent on surface properties and normal force</td>
-<td>Pushing a stationary box</td>
-</tr>
-<tr>
-<td>Kinetic Friction</td>
-<td>Opposes motion between moving surfaces</td>
-<td>Dependent on surface properties and normal force</td>
-<td>Car moving on a road</td>
-</tr>
-<tr>
-<td>Rolling Friction</td>
-<td>Opposes rolling motion</td>
-<td>Dependent on rolling object's radius and surface properties</td>
-<td>Bicycle moving on a road</td>
-</tr>
-<tr>
-<td>Fluid Friction</td>
-<td>Opposes motion through a fluid</td>
-<td>Dependent on fluid viscosity, object velocity, and surface area</td>
-<td>Swimmer moving through water</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Friction</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Static Friction</td><td>Opposes initiation of motion</td><td>Dependent on surface properties and normal force</td><td>Pushing a stationary box</td></tr>
+<tr><td>Kinetic Friction</td><td>Opposes motion between moving surfaces</td><td>Dependent on surface properties and normal force</td><td>Car moving on a road</td></tr>
+<tr><td>Rolling Friction</td><td>Opposes rolling motion</td><td>Dependent on rolling object's radius and surface properties</td><td>Bicycle moving on a road</td></tr>
+<tr><td>Fluid Friction</td><td>Opposes motion through a fluid</td><td>Dependent on fluid viscosity, object velocity, and surface area</td><td>Swimmer moving through water</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different types of friction are interconnected and can occur simultaneously in various situations. For instance, when a car is moving, it experiences both kinetic friction from the tires sliding on the road and rolling friction from the wheels rotating. Understanding how these types of friction relate and interact is essential for designing and optimizing systems, such as vehicle braking systems or industrial machinery. Additionally, minimizing or maximizing friction in different contexts requires a comprehensive understanding of the underlying mechanisms and how they differ or connect.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of friction encompasses static, kinetic, rolling, and fluid friction, each with unique characteristics and examples that help individuals understand and analyze the complex interactions between surfaces and objects in various contexts.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/science/dna-replication/what-is.html" class="related-link">Dna Replication</a>
-        <a href="/science/food-chain/what-is.html" class="related-link">Food Chain</a>
-        <a href="/science/food-web/what-is.html" class="related-link">Food Web</a>
-        <a href="/science/gravity/what-is.html" class="related-link">Gravity</a>
-        <a href="/science/kinetic-energy/what-is.html" class="related-link">Kinetic Energy</a>
-        <a href="/science/osmosis/what-is.html" class="related-link">Osmosis</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -471,6 +491,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

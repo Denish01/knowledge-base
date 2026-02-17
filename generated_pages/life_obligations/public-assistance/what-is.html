@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/public-assistance/what-is.html">Public Assistance</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Public Assistance?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Public assistance is a range of government programs and services designed to provide financial and social support to individuals and families in need.</p>
-
 <p>Public assistance programs are typically funded by the government and aim to help people who are struggling to meet their basic needs, such as food, shelter, and healthcare. These programs can take many forms, including cash assistance, food stamps, housing subsidies, and job training programs. The goal of public assistance is to provide a safety net for vulnerable populations, such as low-income families, the elderly, and people with disabilities, and to help them become self-sufficient over time.</p>
-
 <p>Public assistance programs are often administered by government agencies at the local, state, or federal level, and eligibility for these programs is usually based on income, family size, and other factors. For example, a family may be eligible for food stamps if their income is below a certain threshold, while a person with a disability may be eligible for cash assistance to help them pay for basic needs. Public assistance programs can also provide support for education and job training, which can help people gain the skills and knowledge they need to find employment and become self-sufficient.</p>
-
 <p>In addition to providing financial support, public assistance programs can also provide social support, such as counseling, childcare, and transportation assistance. These services can help people overcome barriers to employment and self-sufficiency, such as lack of childcare or transportation, and can provide a sense of stability and security for families in need. Overall, public assistance programs play a critical role in supporting vulnerable populations and helping them to achieve their full potential.</p>
-
 <p>The key components of public assistance include:</p>
 <ul>
-  <li>Financial assistance, such as cash benefits or food stamps, to help people meet their basic needs</li>
-  <li>Social services, such as counseling or childcare, to provide support and guidance</li>
-  <li>Job training and education programs, to help people gain the skills and knowledge they need to find employment</li>
-  <li>Housing assistance, such as subsidies or rent assistance, to help people access safe and affordable housing</li>
-  <li>Healthcare services, such as Medicaid or other forms of health insurance, to provide access to medical care</li>
-  <li>Eligibility determination, which involves assessing an individual's or family's income, assets, and other factors to determine their eligibility for public assistance programs</li>
+<li>Financial assistance, such as cash benefits or food stamps, to help people meet their basic needs</li>
+<li>Social services, such as counseling or childcare, to provide support and guidance</li>
+<li>Job training and education programs, to help people gain the skills and knowledge they need to find employment</li>
+<li>Housing assistance, such as subsidies or rent assistance, to help people access safe and affordable housing</li>
+<li>Healthcare services, such as Medicaid or other forms of health insurance, to provide access to medical care</li>
+<li>Eligibility determination, which involves assessing an individual's or family's income, assets, and other factors to determine their eligibility for public assistance programs</li>
 </ul>
-
 <p>Despite the importance of public assistance, there are many common misconceptions about these programs. For example:</p>
 <ul>
-  <li>Some people believe that public assistance programs are only for people who are lazy or unwilling to work, when in fact most recipients are working or actively seeking employment</li>
-  <li>Others believe that public assistance programs are too generous, when in fact benefits are often limited and subject to strict eligibility requirements</li>
-  <li>Some people assume that public assistance programs are only for certain groups, such as the elderly or people with disabilities, when in fact these programs serve a wide range of populations</li>
-  <li>Others believe that public assistance programs are ineffective, when in fact many programs have been shown to be highly effective in reducing poverty and promoting self-sufficiency</li>
+<li>Some people believe that public assistance programs are only for people who are lazy or unwilling to work, when in fact most recipients are working or actively seeking employment</li>
+<li>Others believe that public assistance programs are too generous, when in fact benefits are often limited and subject to strict eligibility requirements</li>
+<li>Some people assume that public assistance programs are only for certain groups, such as the elderly or people with disabilities, when in fact these programs serve a wide range of populations</li>
+<li>Others believe that public assistance programs are ineffective, when in fact many programs have been shown to be highly effective in reducing poverty and promoting self-sufficiency</li>
 </ul>
-
 <p>A real-world example of public assistance in action is a single mother who is working part-time and receiving food stamps to help feed her children. She is also enrolled in a job training program to help her gain the skills and education she needs to find a better-paying job and become self-sufficient. With the support of public assistance programs, she is able to provide for her children's basic needs and work towards a brighter future.</p>
-
 <p>In summary, public assistance is a range of government programs and services designed to provide financial and social support to individuals and families in need, with the ultimate goal of helping them become self-sufficient and achieve their full potential.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/property-tax/what-is.html" class="related-link">Property Tax</a>
-        <a href="/life_obligations/proportional-contribution/what-is.html" class="related-link">Proportional Contribution</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/rent-payment/what-is.html" class="related-link">Rent Payment</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

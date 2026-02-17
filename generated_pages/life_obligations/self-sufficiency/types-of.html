@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of self sufficiency - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of self-sufficiency - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/self-sufficiency/types-of.html">
     <meta property="og:title" content="Types of Self Sufficiency">
-    <meta property="og:description" content="A clear, simple explanation of self sufficiency - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of self-sufficiency - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/self-sufficiency/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Self Sufficiency">
-    <meta name="twitter:description" content="A clear, simple explanation of self sufficiency - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of self-sufficiency - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Self Sufficiency - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Self Sufficiency", "item": "https://360library.com/life_obligations/self-sufficiency/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Self Sufficiency", "description": "A clear, simple explanation of self sufficiency - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/self-sufficiency/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/self-sufficiency/types-of.html"}, "about": {"@type": "Thing", "name": "Self Sufficiency"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Self Sufficiency", "description": "A clear, simple explanation of types of self-sufficiency - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/self-sufficiency/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/self-sufficiency/types-of.html"}, "about": {"@type": "Thing", "name": "Self Sufficiency"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,96 +388,69 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/self-sufficiency/what-is.html">Self Sufficiency</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Self Sufficiency</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>Types of self-sufficiency refer to the various ways individuals or communities can become independent and rely on themselves for their needs, rather than relying on external sources. Classification of self-sufficiency is essential because it helps to understand the different approaches and strategies that can be employed to achieve independence. By categorizing the different types of self-sufficiency, individuals can better comprehend the concepts, identify their goals, and develop a plan to achieve self-sufficiency. This classification system provides a framework for understanding the different aspects of self-sufficiency, enabling individuals to make informed decisions and take deliberate steps towards achieving their goals.</p>
-
-<p>2. MAIN CATEGORIES:</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <ul>
-  <li><strong>Food Self-Sufficiency</strong></li>
-  <li>Definition: Food self-sufficiency refers to the ability to produce or obtain food without relying on external sources. This can be achieved through gardening, farming, or other means of food production.</li>
-  <li>Key characteristics: Food self-sufficiency involves growing or raising one's own food, preserving and storing food for future use, and developing skills such as cooking and food preservation.</li>
-  <li>Example: A family growing their own fruits and vegetables in a backyard garden and preserving them through canning and freezing.</li>
-  <li><strong>Energy Self-Sufficiency</strong></li>
-  <li>Definition: Energy self-sufficiency refers to the ability to generate or obtain energy without relying on external sources. This can be achieved through the use of renewable energy sources such as solar or wind power.</li>
-  <li>Key characteristics: Energy self-sufficiency involves generating or producing one's own energy, reducing energy consumption, and developing skills such as energy efficiency and conservation.</li>
-  <li>Example: A household installing solar panels to generate electricity and reduce their reliance on the grid.</li>
-  <li><strong>Water Self-Sufficiency</strong></li>
-  <li>Definition: Water self-sufficiency refers to the ability to collect, conserve, and manage water without relying on external sources. This can be achieved through the use of rainwater harvesting systems or wells.</li>
-  <li>Key characteristics: Water self-sufficiency involves collecting and storing rainwater, conserving water through efficient use, and developing skills such as water management and conservation.</li>
-  <li>Example: A community installing a rainwater harvesting system to collect and store rainwater for non-potable uses.</li>
-  <li><strong>Financial Self-Sufficiency</strong></li>
-  <li>Definition: Financial self-sufficiency refers to the ability to manage one's finances and meet financial needs without relying on external sources. This can be achieved through budgeting, saving, and investing.</li>
-  <li>Key characteristics: Financial self-sufficiency involves managing finances, reducing debt, and developing skills such as budgeting and investing.</li>
-  <li>Example: An individual creating a budget and saving for retirement to achieve financial independence.</li>
-  <li><strong>Shelter Self-Sufficiency</strong></li>
-  <li>Definition: Shelter self-sufficiency refers to the ability to provide or maintain one's own shelter without relying on external sources. This can be achieved through building or maintaining one's own home.</li>
-  <li>Key characteristics: Shelter self-sufficiency involves building or maintaining a home, developing skills such as construction and repair, and reducing reliance on external sources for shelter.</li>
-  <li>Example: A person building their own home using natural and sustainable materials.</li>
+<li><strong>Food Self-Sufficiency</strong></li>
+<li>Definition: Food self-sufficiency refers to the ability to produce or obtain food without relying on external sources. This can be achieved through gardening, farming, or other means of food production.</li>
+<li>Key characteristics: Food self-sufficiency involves growing or raising one's own food, preserving and storing food for future use, and developing skills such as cooking and food preservation.</li>
+<li>Example: A family growing their own fruits and vegetables in a backyard garden and preserving them through canning and freezing.</li>
+<li><strong>Energy Self-Sufficiency</strong></li>
+<li>Definition: Energy self-sufficiency refers to the ability to generate or obtain energy without relying on external sources. This can be achieved through the use of renewable energy sources such as solar or wind power.</li>
+<li>Key characteristics: Energy self-sufficiency involves generating or producing one's own energy, reducing energy consumption, and developing skills such as energy efficiency and conservation.</li>
+<li>Example: A household installing solar panels to generate electricity and reduce their reliance on the grid.</li>
+<li><strong>Water Self-Sufficiency</strong></li>
+<li>Definition: Water self-sufficiency refers to the ability to collect, conserve, and manage water without relying on external sources. This can be achieved through the use of rainwater harvesting systems or wells.</li>
+<li>Key characteristics: Water self-sufficiency involves collecting and storing rainwater, conserving water through efficient use, and developing skills such as water management and conservation.</li>
+<li>Example: A community installing a rainwater harvesting system to collect and store rainwater for non-potable uses.</li>
+<li><strong>Financial Self-Sufficiency</strong></li>
+<li>Definition: Financial self-sufficiency refers to the ability to manage one's finances and meet financial needs without relying on external sources. This can be achieved through budgeting, saving, and investing.</li>
+<li>Key characteristics: Financial self-sufficiency involves managing finances, reducing debt, and developing skills such as budgeting and investing.</li>
+<li>Example: An individual creating a budget and saving for retirement to achieve financial independence.</li>
+<li><strong>Shelter Self-Sufficiency</strong></li>
+<li>Definition: Shelter self-sufficiency refers to the ability to provide or maintain one's own shelter without relying on external sources. This can be achieved through building or maintaining one's own home.</li>
+<li>Key characteristics: Shelter self-sufficiency involves building or maintaining a home, developing skills such as construction and repair, and reducing reliance on external sources for shelter.</li>
+<li>Example: A person building their own home using natural and sustainable materials.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Food</td>
-<td>Producing or obtaining food without external sources</td>
-<td>Gardening, farming, food preservation</td>
-<td>Backyard garden</td>
-</tr>
-<tr>
-<td>Energy</td>
-<td>Generating or obtaining energy without external sources</td>
-<td>Renewable energy sources, energy efficiency</td>
-<td>Solar panels</td>
-</tr>
-<tr>
-<td>Water</td>
-<td>Collecting, conserving, and managing water without external sources</td>
-<td>Rainwater harvesting, water conservation</td>
-<td>Rainwater harvesting system</td>
-</tr>
-<tr>
-<td>Financial</td>
-<td>Managing finances and meeting financial needs without external sources</td>
-<td>Budgeting, saving, investing</td>
-<td>Budgeting and saving</td>
-</tr>
-<tr>
-<td>Shelter</td>
-<td>Providing or maintaining shelter without external sources</td>
-<td>Building or maintaining a home, construction and repair</td>
-<td>Building a home using natural materials</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Food</td><td>Producing or obtaining food without external sources</td><td>Gardening, farming, food preservation</td><td>Backyard garden</td></tr>
+<tr><td>Energy</td><td>Generating or obtaining energy without external sources</td><td>Renewable energy sources, energy efficiency</td><td>Solar panels</td></tr>
+<tr><td>Water</td><td>Collecting, conserving, and managing water without external sources</td><td>Rainwater harvesting, water conservation</td><td>Rainwater harvesting system</td></tr>
+<tr><td>Financial</td><td>Managing finances and meeting financial needs without external sources</td><td>Budgeting, saving, investing</td><td>Budgeting and saving</td></tr>
+<tr><td>Shelter</td><td>Providing or maintaining shelter without external sources</td><td>Building or maintaining a home, construction and repair</td><td>Building a home using natural materials</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different categories of self-sufficiency are interconnected and can complement one another. For example, food self-sufficiency can be achieved through gardening, which can also help to reduce energy consumption and promote energy self-sufficiency. Similarly, water self-sufficiency can be achieved through rainwater harvesting, which can also help to reduce water consumption and promote financial self-sufficiency. By understanding the relationships between the different categories, individuals can develop a comprehensive approach to achieving self-sufficiency.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system for types of self-sufficiency includes food, energy, water, financial, and shelter self-sufficiency, each with its own unique characteristics and approaches, and can be used as a framework for understanding and achieving independence in various aspects of life.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/retirement-savings/what-is.html" class="related-link">Retirement Savings</a>
-        <a href="/life_obligations/retirement-withdrawal/what-is.html" class="related-link">Retirement Withdrawal</a>
-        <a href="/life_obligations/shared-custody/what-is.html" class="related-link">Shared Custody</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -477,6 +495,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

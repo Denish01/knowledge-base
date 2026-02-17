@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of exercise - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Learn how exercise works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <link rel="canonical" href="https://360library.com/health/exercise/how-it-works.html">
     <meta property="og:title" content="How Exercise Works">
-    <meta property="og:description" content="A clear, simple explanation of exercise - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Learn how exercise works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <meta property="og:url" content="https://360library.com/health/exercise/how-it-works.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How Exercise Works">
-    <meta name="twitter:description" content="A clear, simple explanation of exercise - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Learn how exercise works with this step-by-step explanation. Simple guide to the process and mechanism.">
     <title>How Exercise Works - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Exercise", "item": "https://360library.com/health/exercise/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "How It Works"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Exercise Works", "description": "A clear, simple explanation of exercise - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/exercise/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/exercise/how-it-works.html"}, "about": {"@type": "Thing", "name": "Exercise"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Exercise Works", "description": "Learn how exercise works with this step-by-step explanation. Simple guide to the process and mechanism.", "url": "https://360library.com/health/exercise/how-it-works.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/exercise/how-it-works.html"}, "about": {"@type": "Thing", "name": "Exercise"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,25 +388,34 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/exercise/what-is.html">Exercise</a><span>&rsaquo;</span>How It Works
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>How Exercise Works</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. QUICK ANSWER: Exercise works by stimulating the body's physiological systems, leading to a series of adaptations that improve overall health and fitness. This process involves a complex interplay of physical activity, cellular responses, and hormonal changes that ultimately enhance the body's ability to function efficiently.</p>
+            
 
-<p>2. STEP-BY-STEP PROCESS:</p>
+            <ol>
+<li>QUICK ANSWER: Exercise works by stimulating the body's physiological systems, leading to a series of adaptations that improve overall health and fitness. This process involves a complex interplay of physical activity, cellular responses, and hormonal changes that ultimately enhance the body's ability to function efficiently.</li>
+</ol>
+<ol>
+<li>STEP-BY-STEP PROCESS:</li>
+</ol>
 <p>First, when an individual engages in physical activity, their muscles contract and relax in a coordinated manner, generating force and movement. Then, this muscle activity stimulates the nervous system, which sends signals to the brain, indicating the need for increased energy production. Next, the brain responds by releasing hormones, such as adrenaline and cortisol, which prepare the body for physical exertion by increasing heart rate, blood pressure, and respiration. As the body adapts to the demands of exercise, it begins to break down stored energy sources, such as glycogen and fat, to fuel muscle contractions. The energy released from these sources is then converted into a usable form, allowing the muscles to continue contracting and relaxing. Finally, as the exercise session comes to an end, the body's physiological systems return to a state of rest, and the process of recovery and adaptation begins, leading to improvements in cardiovascular function, muscular strength and endurance, and overall health.</p>
-
-<p>3. KEY COMPONENTS:</p>
+<ol>
+<li>KEY COMPONENTS:</li>
+</ol>
 <p>The key components involved in the exercise process include the muscular system, nervous system, cardiovascular system, and endocrine system. The muscular system, comprising skeletal, smooth, and cardiac muscles, plays a central role in generating movement and force. The nervous system, including the brain, spinal cord, and peripheral nerves, coordinates and regulates muscle activity, as well as integrates sensory information from the environment. The cardiovascular system, consisting of the heart, blood vessels, and blood, supplies oxygen and nutrients to the muscles, while removing waste products. The endocrine system, which includes glands such as the adrenal glands and pancreas, produces hormones that help regulate energy metabolism, growth, and repair. Each of these components works together to enable the body to respond to physical activity and adapt to the demands of exercise.</p>
-
-<p>4. VISUAL ANALOGY:</p>
+<ol>
+<li>VISUAL ANALOGY:</li>
+</ol>
 <p>A simple analogy that helps illustrate the exercise mechanism is to think of the body as a car. Just as a car requires gasoline to run, the body needs energy from food to fuel physical activity. When you exercise, it's like stepping on the gas pedal - the body's engines (muscles) start to work harder, and the fuel (energy) is converted into motion. The nervous system acts like the car's computer, regulating the flow of fuel and adjusting the engine's performance to meet the demands of the road (exercise). The cardiovascular system is like the car's fuel delivery system, ensuring that the energy is delivered to the muscles efficiently. As the car (body) adapts to the demands of the road (exercise), it becomes more efficient, just like how regular exercise improves the body's ability to function.</p>
-
-<p>5. COMMON QUESTIONS:</p>
+<ol>
+<li>COMMON QUESTIONS:</li>
+</ol>
 <p>But what about people who are just starting to exercise - how do they benefit from physical activity if they're not already fit?</p>
 <p>The answer lies in the fact that the body is highly adaptable, and even small amounts of exercise can stimulate positive changes in physiological function.</p>
 <p>But what role does nutrition play in the exercise process - do you need to eat special foods to get the most out of your workouts?</p>
@@ -370,20 +424,13 @@ a:hover { text-decoration: underline; }
 <p>Rest and recovery are critical components of the exercise process, as they allow the body to repair and adapt to the stresses imposed by physical activity.</p>
 <p>But what about the impact of exercise on mental health - can physical activity really improve mood and reduce stress?</p>
 <p>Exercise has been shown to have a positive impact on mental health, reducing symptoms of anxiety and depression, and improving overall well-being.</p>
+<ol>
+<li>SUMMARY: Exercise works by stimulating the body's physiological systems, leading to a series of adaptations that improve overall health and fitness through a complex interplay of physical activity, cellular responses, and hormonal changes.</li>
+</ol>
 
-<p>6. SUMMARY: Exercise works by stimulating the body's physiological systems, leading to a series of adaptations that improve overall health and fitness through a complex interplay of physical activity, cellular responses, and hormonal changes.</p>
+            
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/endocrine-system/what-is.html" class="related-link">Endocrine System</a>
-        <a href="/health/epidemiology/what-is.html" class="related-link">Epidemiology</a>
-        <a href="/health/gastroenterology/what-is.html" class="related-link">Gastroenterology</a>
-        <a href="/health/gerontology/what-is.html" class="related-link">Gerontology</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
         </article>
     </main>
 
@@ -428,6 +475,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

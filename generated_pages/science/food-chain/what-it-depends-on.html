@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of food chain - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of what food chain depends on - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/science/food-chain/what-it-depends-on.html">
     <meta property="og:title" content="What Food Chain Depends On">
-    <meta property="og:description" content="A clear, simple explanation of food chain - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of what food chain depends on - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/science/food-chain/what-it-depends-on.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="What Food Chain Depends On">
-    <meta name="twitter:description" content="A clear, simple explanation of food chain - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of what food chain depends on - definition, key concepts, examples, and common misconceptions.">
     <title>What Food Chain Depends On - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Science", "item": "https://360library.com/#science"}, {"@type": "ListItem", "position": 3, "name": "Food Chain", "item": "https://360library.com/science/food-chain/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "What It Depends On"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Food Chain Depends On", "description": "A clear, simple explanation of food chain - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/food-chain/what-it-depends-on.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/food-chain/what-it-depends-on.html"}, "about": {"@type": "Thing", "name": "Food Chain"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What Food Chain Depends On", "description": "A clear, simple explanation of what food chain depends on - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/food-chain/what-it-depends-on.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/food-chain/what-it-depends-on.html"}, "about": {"@type": "Thing", "name": "Food Chain"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,45 +388,46 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#science">Science</a><span>&rsaquo;</span><a href="/science/food-chain/what-is.html">Food Chain</a><span>&rsaquo;</span>What It Depends On
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #0891B2">
     <main class="article-main">
         <article>
             <h1>What Food Chain Depends On</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION</p>
+            
+
+            <ol>
+<li>INTRODUCTION</li>
+</ol>
 <p>A food chain is a series of events where one organism is eaten by another, each serving as a source of food and energy for the next. Understanding what a food chain depends on is crucial because it reveals the fundamental prerequisites for the survival and functioning of ecosystems. The dependencies of a food chain are the foundation upon which the entire structure is built, and without these elements, the chain would collapse. Recognizing these dependencies is essential for grasping the intricate relationships within ecosystems and the importance of preserving them.</p>
-
-<p>2. KEY DEPENDENCIES</p>
+<ol>
+<li>KEY DEPENDENCIES</li>
+</ol>
 <ul>
-  <li><strong>Primary Producers</strong>: Primary producers, such as plants and algae, are necessary because they form the base of the food chain by converting sunlight into energy through photosynthesis. Without primary producers, there would be no energy source for the rest of the organisms in the chain, leading to the collapse of the ecosystem.</li>
-  <li><strong>Nutrient Availability</strong>: Nutrient availability is crucial because it provides the necessary components for growth and survival of organisms within the food chain. Without sufficient nutrients, organisms cannot thrive, and the chain is disrupted, affecting all levels of the ecosystem.</li>
-  <li><strong>Water Availability</strong>: Water availability is essential because it is required for the survival of virtually all organisms within the food chain. Without water, plants cannot perform photosynthesis, and animals cannot survive, leading to a breakdown in the food chain.</li>
-  <li><strong>Suitable Habitat</strong>: A suitable habitat is necessary because it provides the environment in which organisms can live, feed, and reproduce. Without a suitable habitat, organisms cannot survive, and the food chain is severely impacted, leading to the loss of biodiversity.</li>
-  <li><strong>Predator-Prey Balance</strong>: Predator-prey balance is vital because it maintains the stability of the food chain by regulating population sizes. Without this balance, overpopulation or underpopulation of species can occur, disrupting the entire ecosystem.</li>
+<li><strong>Primary Producers</strong>: Primary producers, such as plants and algae, are necessary because they form the base of the food chain by converting sunlight into energy through photosynthesis. Without primary producers, there would be no energy source for the rest of the organisms in the chain, leading to the collapse of the ecosystem.</li>
+<li><strong>Nutrient Availability</strong>: Nutrient availability is crucial because it provides the necessary components for growth and survival of organisms within the food chain. Without sufficient nutrients, organisms cannot thrive, and the chain is disrupted, affecting all levels of the ecosystem.</li>
+<li><strong>Water Availability</strong>: Water availability is essential because it is required for the survival of virtually all organisms within the food chain. Without water, plants cannot perform photosynthesis, and animals cannot survive, leading to a breakdown in the food chain.</li>
+<li><strong>Suitable Habitat</strong>: A suitable habitat is necessary because it provides the environment in which organisms can live, feed, and reproduce. Without a suitable habitat, organisms cannot survive, and the food chain is severely impacted, leading to the loss of biodiversity.</li>
+<li><strong>Predator-Prey Balance</strong>: Predator-prey balance is vital because it maintains the stability of the food chain by regulating population sizes. Without this balance, overpopulation or underpopulation of species can occur, disrupting the entire ecosystem.</li>
 </ul>
-
-<p>3. ORDER OF IMPORTANCE</p>
+<ol>
+<li>ORDER OF IMPORTANCE</li>
+</ol>
 <p>While all dependencies are critical, primary producers and nutrient availability can be considered the most foundational. Without these, the food chain cannot initiate or sustain itself. Water availability and suitable habitat are also crucial, as they directly affect the survival of organisms. Predator-prey balance, while essential for long-term stability, can fluctuate without immediately collapsing the entire chain, but its disruption can have severe long-term consequences.</p>
-
-<p>4. COMMON GAPS</p>
+<ol>
+<li>COMMON GAPS</li>
+</ol>
 <p>Often, people overlook the intricate dependency of food chains on non-living components such as water and nutrients, assuming that the presence of organisms alone is sufficient for a food chain to exist. Another common gap is underestimating the importance of habitat suitability, assuming that as long as there are organisms, the ecosystem will function regardless of environmental conditions.</p>
-
-<p>5. SUMMARY</p>
+<ol>
+<li>SUMMARY</li>
+</ol>
 <p>The foundation for a food chain is multifaceted, relying on the interplay of primary producers, nutrient availability, water, suitable habitats, and the balance between predators and prey. Understanding these dependencies is essential for recognizing the fragility and resilience of ecosystems. By acknowledging these prerequisites, we can better appreciate the complex relationships within food chains and the importance of preserving the natural balance of our ecosystems. This foundation is critical for the survival and health of all organisms within the food chain, highlighting the need for a holistic approach to environmental conservation and management.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/science/dna-replication/what-is.html" class="related-link">Dna Replication</a>
-        <a href="/science/ecosystem/what-is.html" class="related-link">Ecosystem</a>
-        <a href="/science/evaporation/what-is.html" class="related-link">Evaporation</a>
-        <a href="/science/food-web/what-is.html" class="related-link">Food Web</a>
-        <a href="/science/friction/what-is.html" class="related-link">Friction</a>
-        <a href="/science/gravity/what-is.html" class="related-link">Gravity</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -426,6 +472,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

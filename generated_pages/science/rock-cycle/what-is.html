@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,56 +388,43 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#science">Science</a><span>&rsaquo;</span><a href="/science/rock-cycle/what-is.html">Rock Cycle</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #0891B2">
     <main class="article-main">
         <article>
             <h1>What Is Rock Cycle?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Rock cycle is a process that describes the dynamic transformation of rocks between three main types: igneous, sedimentary, and metamorphic, through various geological processes.</p>
-
 <p>The rock cycle is a complex and continuous process that involves the formation, transformation, and destruction of rocks. It begins with the cooling and solidification of magma or lava, resulting in the formation of igneous rocks. These rocks can then be weathered and eroded, breaking down into sediments that can be transported and deposited in a new location. Over time, these sediments can be compressed and cemented together to form sedimentary rocks. Igneous and sedimentary rocks can also be subjected to high temperatures and pressures, causing them to undergo metamorphism and transform into metamorphic rocks.</p>
-
 <p>The rock cycle is driven by the forces of plate tectonics, weathering, and erosion. Plate tectonics is the movement of the Earth's lithosphere, which is the outermost solid layer of the planet. This movement can cause the Earth's crust to be stretched, compressed, and heated, resulting in the formation of mountains, volcanoes, and other geological features. Weathering and erosion are the processes that break down rocks into sediments, which can then be transported and deposited in a new location. The rock cycle is a slow and continuous process that has been shaping the Earth's surface for millions of years.</p>
-
 <p>The transformation of rocks from one type to another is a key aspect of the rock cycle. For example, igneous rocks can be transformed into sedimentary rocks through the process of weathering and erosion. Sedimentary rocks can be transformed into metamorphic rocks through the process of metamorphism. Metamorphic rocks can also be transformed back into igneous rocks through the process of melting. This continuous transformation of rocks is what drives the rock cycle and shapes the Earth's surface.</p>
-
 <p>The rock cycle is an important concept in geology because it helps us understand the formation and transformation of rocks, as well as the processes that shape the Earth's surface. It is a complex and dynamic process that involves the interaction of many different geological processes, including plate tectonics, weathering, and erosion. By studying the rock cycle, we can gain a better understanding of the Earth's history and the processes that have shaped our planet.</p>
-
 <p>The key components of the rock cycle include:</p>
 <ul>
-  <li>Igneous rocks, which are formed from the cooling and solidification of magma or lava</li>
-  <li>Sedimentary rocks, which are formed from the compression and cementation of sediments</li>
-  <li>Metamorphic rocks, which are formed from the transformation of existing rocks under high temperatures and pressures</li>
-  <li>Weathering and erosion, which are the processes that break down rocks into sediments</li>
-  <li>Plate tectonics, which is the movement of the Earth's lithosphere and drives the rock cycle</li>
-  <li>Metamorphism, which is the process of transforming existing rocks into new rocks under high temperatures and pressures</li>
+<li>Igneous rocks, which are formed from the cooling and solidification of magma or lava</li>
+<li>Sedimentary rocks, which are formed from the compression and cementation of sediments</li>
+<li>Metamorphic rocks, which are formed from the transformation of existing rocks under high temperatures and pressures</li>
+<li>Weathering and erosion, which are the processes that break down rocks into sediments</li>
+<li>Plate tectonics, which is the movement of the Earth's lithosphere and drives the rock cycle</li>
+<li>Metamorphism, which is the process of transforming existing rocks into new rocks under high temperatures and pressures</li>
 </ul>
-
 <p>However, there are some common misconceptions about the rock cycle. Some people believe that:</p>
 <ul>
-  <li>The rock cycle is a linear process, where rocks are formed and then remain unchanged</li>
-  <li>The rock cycle only involves the formation of igneous rocks from magma or lava</li>
-  <li>The rock cycle is a fast process, where rocks are formed and transformed quickly</li>
-  <li>The rock cycle is only driven by plate tectonics, and does not involve other geological processes</li>
+<li>The rock cycle is a linear process, where rocks are formed and then remain unchanged</li>
+<li>The rock cycle only involves the formation of igneous rocks from magma or lava</li>
+<li>The rock cycle is a fast process, where rocks are formed and transformed quickly</li>
+<li>The rock cycle is only driven by plate tectonics, and does not involve other geological processes</li>
 </ul>
-
 <p>A real-world example of the rock cycle can be seen in the formation of the Rocky Mountains. The rocks that make up the Rocky Mountains were formed from the compression and cementation of sediments that were deposited in a sea that covered the area millions of years ago. Over time, these sedimentary rocks were subjected to high temperatures and pressures, causing them to undergo metamorphism and transform into metamorphic rocks. The Rocky Mountains were then uplifted and exposed through the process of plate tectonics, resulting in the formation of a mountain range.</p>
-
 <p>The rock cycle is a complex and dynamic process that describes the continuous transformation of rocks between three main types: igneous, sedimentary, and metamorphic, through various geological processes.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/science/dna-replication/what-is.html" class="related-link">Dna Replication</a>
-        <a href="/science/gravity/what-is.html" class="related-link">Gravity</a>
-        <a href="/science/osmosis/what-is.html" class="related-link">Osmosis</a>
-        <a href="/science/potential-energy/what-is.html" class="related-link">Potential Energy</a>
-        <a href="/science/precipitation/what-is.html" class="related-link">Precipitation</a>
-        <a href="/science/symbiosis/what-is.html" class="related-link">Symbiosis</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -437,6 +469,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

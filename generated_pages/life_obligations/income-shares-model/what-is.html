@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/income-shares-model/what-is.html">Income Shares Model</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Income Shares Model?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Income shares model is a financial framework in which an individual or organization receives a percentage of income from a project or investment in exchange for providing funding or support.</p>
-
 <p>The income shares model is often used as an alternative to traditional loan structures, where the lender provides a fixed amount of money to the borrower in exchange for regular interest payments. In contrast, the income shares model allows the investor to share in the risks and rewards of the project, as their return is directly tied to the project's revenue. This approach can be beneficial for projects that have uncertain revenue streams or high growth potential, as it allows the investor to potentially earn a higher return if the project is successful.</p>
-
 <p>The income shares model can be applied to a wide range of projects and investments, including businesses, real estate, and intellectual property. In each case, the investor provides funding or support in exchange for a percentage of the project's income, which can be defined as revenue, profits, or other forms of income. The terms of the agreement, including the percentage of income shared and the duration of the agreement, are typically negotiated between the parties involved.</p>
-
 <p>The income shares model can provide a number of benefits to both investors and project owners. For investors, it offers the potential for higher returns if the project is successful, as well as a more direct connection to the project's performance. For project owners, it provides access to funding and support without the need for fixed interest payments or collateral. However, the income shares model also requires careful consideration of the terms and conditions of the agreement, as well as the potential risks and rewards involved.</p>
-
 <p>Key components of the income shares model include:</p>
 <ul>
-  <li>The percentage of income shared between the investor and the project owner</li>
-  <li>The definition of income, which can include revenue, profits, or other forms of income</li>
-  <li>The duration of the agreement, which can be fixed or variable</li>
-  <li>The terms and conditions of the agreement, including any requirements for reporting or disclosure</li>
-  <li>The potential risks and rewards involved, including the potential for higher returns if the project is successful</li>
-  <li>The tax implications of the agreement, which can vary depending on the jurisdiction and the type of income involved</li>
+<li>The percentage of income shared between the investor and the project owner</li>
+<li>The definition of income, which can include revenue, profits, or other forms of income</li>
+<li>The duration of the agreement, which can be fixed or variable</li>
+<li>The terms and conditions of the agreement, including any requirements for reporting or disclosure</li>
+<li>The potential risks and rewards involved, including the potential for higher returns if the project is successful</li>
+<li>The tax implications of the agreement, which can vary depending on the jurisdiction and the type of income involved</li>
 </ul>
-
 <p>Despite its potential benefits, the income shares model is often misunderstood or misapplied. Common misconceptions about the income shares model include:</p>
 <ul>
-  <li>The assumption that it is a type of loan or debt instrument, rather than a form of equity investment</li>
-  <li>The belief that it is only suitable for high-growth or high-risk projects, when in fact it can be applied to a wide range of investments</li>
-  <li>The failure to carefully consider the terms and conditions of the agreement, including the potential risks and rewards involved</li>
-  <li>The assumption that it is a passive form of investment, when in fact it often requires active involvement and monitoring</li>
+<li>The assumption that it is a type of loan or debt instrument, rather than a form of equity investment</li>
+<li>The belief that it is only suitable for high-growth or high-risk projects, when in fact it can be applied to a wide range of investments</li>
+<li>The failure to carefully consider the terms and conditions of the agreement, including the potential risks and rewards involved</li>
+<li>The assumption that it is a passive form of investment, when in fact it often requires active involvement and monitoring</li>
 </ul>
-
 <p>A real-world example of the income shares model is a musician who enters into an agreement with a record label to share a percentage of their music royalties in exchange for funding and support. In this case, the record label provides funding and support for the musician's music, and in return receives a percentage of the royalties earned from album sales and performances. This approach allows the musician to access the resources and expertise of the record label, while also providing the label with a potential source of revenue.</p>
-
 <p>In summary, the income shares model is a financial framework in which an individual or organization receives a percentage of income from a project or investment in exchange for providing funding or support, offering a unique alternative to traditional loan structures and providing potential benefits to both investors and project owners.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/income-disparity/what-is.html" class="related-link">Income Disparity</a>
-        <a href="/life_obligations/income-eligibility/what-is.html" class="related-link">Income Eligibility</a>
-        <a href="/life_obligations/income-tax/what-is.html" class="related-link">Income Tax</a>
-        <a href="/life_obligations/insurance-deductible/what-is.html" class="related-link">Insurance Deductible</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

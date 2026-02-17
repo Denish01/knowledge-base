@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of dependent care - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of dependent care - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/dependent-care/types-of.html">
     <meta property="og:title" content="Types of Dependent Care">
-    <meta property="og:description" content="A clear, simple explanation of dependent care - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of dependent care - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/dependent-care/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Dependent Care">
-    <meta name="twitter:description" content="A clear, simple explanation of dependent care - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of dependent care - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Dependent Care - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Dependent Care", "item": "https://360library.com/life_obligations/dependent-care/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Dependent Care", "description": "A clear, simple explanation of dependent care - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/dependent-care/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/dependent-care/types-of.html"}, "about": {"@type": "Thing", "name": "Dependent Care"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Dependent Care", "description": "A clear, simple explanation of types of dependent care - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/dependent-care/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/dependent-care/types-of.html"}, "about": {"@type": "Thing", "name": "Dependent Care"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,95 +388,58 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/dependent-care/what-is.html">Dependent Care</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Dependent Care</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>Dependent care refers to the support and assistance provided to individuals who are unable to care for themselves, such as children, adults with disabilities, and the elderly. Classification of dependent care is essential as it helps in understanding the various types of care required, identifying the needs of the dependents, and providing appropriate support. A comprehensive classification system enables caregivers, healthcare professionals, and social workers to develop effective care plans, allocate resources, and make informed decisions. By categorizing dependent care, it becomes easier to navigate the complex needs of dependents and provide them with the necessary assistance to lead fulfilling lives.</p>
-
-<p>2. MAIN CATEGORIES:</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <ul>
-  <li><strong>Child Care</strong>: Child care refers to the supervision and nurturing of children, typically from infancy to adolescence, to ensure their physical, emotional, and cognitive development. Key characteristics include age-specific activities, safety measures, and educational programs. For example, a daycare center providing meals, games, and lessons for preschoolers is a form of child care.</li>
-  <li><strong>Adult Day Care</strong>: Adult day care provides social interaction, meals, and recreational activities for adults who require supervision and support during the day. Key characteristics include structured programs, transportation services, and medical assistance. For instance, an adult day care center offering arts and crafts, exercise classes, and health checks for seniors is an example of adult day care.</li>
-  <li><strong>Respite Care</strong>: Respite care offers temporary relief to primary caregivers, providing them with a break from their caregiving responsibilities. Key characteristics include short-term care, flexible scheduling, and emergency support. For example, a respite care service providing overnight care for a child with disabilities, allowing the parents to take a break, is a form of respite care.</li>
-  <li><strong>Home Care</strong>: Home care refers to the provision of medical and non-medical support services to individuals in their own homes. Key characteristics include personalized care plans, medical equipment, and assistance with daily activities. For instance, a home care agency providing nursing services, physical therapy, and meal preparation for an elderly person is an example of home care.</li>
-  <li><strong>Institutional Care</strong>: Institutional care provides 24-hour support and supervision to individuals in a residential setting, such as nursing homes, group homes, or assisted living facilities. Key characteristics include structured routines, medical staff, and social activities. For example, a nursing home providing room, board, and medical care for residents with chronic illnesses is a form of institutional care.</li>
-  <li><strong>Hospice Care</strong>: Hospice care focuses on providing comfort, pain management, and emotional support to individuals with terminal illnesses. Key characteristics include interdisciplinary care teams, symptom management, and spiritual support. For instance, a hospice care program providing home visits, counseling, and medication management for a patient with a terminal illness is an example of hospice care.</li>
-  <li><strong>Disability Support</strong>: Disability support provides assistance and resources to individuals with physical, intellectual, or developmental disabilities. Key characteristics include individualized support plans, adaptive equipment, and advocacy services. For example, a disability support organization offering job training, transportation, and housing assistance for individuals with disabilities is a form of disability support.</li>
+<li><strong>Child Care</strong>: Child care refers to the supervision and nurturing of children, typically from infancy to adolescence, to ensure their physical, emotional, and cognitive development. Key characteristics include age-specific activities, safety measures, and educational programs. For example, a daycare center providing meals, games, and lessons for preschoolers is a form of child care.</li>
+<li><strong>Adult Day Care</strong>: Adult day care provides social interaction, meals, and recreational activities for adults who require supervision and support during the day. Key characteristics include structured programs, transportation services, and medical assistance. For instance, an adult day care center offering arts and crafts, exercise classes, and health checks for seniors is an example of adult day care.</li>
+<li><strong>Respite Care</strong>: Respite care offers temporary relief to primary caregivers, providing them with a break from their caregiving responsibilities. Key characteristics include short-term care, flexible scheduling, and emergency support. For example, a respite care service providing overnight care for a child with disabilities, allowing the parents to take a break, is a form of respite care.</li>
+<li><strong>Home Care</strong>: Home care refers to the provision of medical and non-medical support services to individuals in their own homes. Key characteristics include personalized care plans, medical equipment, and assistance with daily activities. For instance, a home care agency providing nursing services, physical therapy, and meal preparation for an elderly person is an example of home care.</li>
+<li><strong>Institutional Care</strong>: Institutional care provides 24-hour support and supervision to individuals in a residential setting, such as nursing homes, group homes, or assisted living facilities. Key characteristics include structured routines, medical staff, and social activities. For example, a nursing home providing room, board, and medical care for residents with chronic illnesses is a form of institutional care.</li>
+<li><strong>Hospice Care</strong>: Hospice care focuses on providing comfort, pain management, and emotional support to individuals with terminal illnesses. Key characteristics include interdisciplinary care teams, symptom management, and spiritual support. For instance, a hospice care program providing home visits, counseling, and medication management for a patient with a terminal illness is an example of hospice care.</li>
+<li><strong>Disability Support</strong>: Disability support provides assistance and resources to individuals with physical, intellectual, or developmental disabilities. Key characteristics include individualized support plans, adaptive equipment, and advocacy services. For example, a disability support organization offering job training, transportation, and housing assistance for individuals with disabilities is a form of disability support.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Age Group</th>
-<th>Setting</th>
-<th>Level of Care</th>
-</tr></thead><tbody>
-<tr>
-<td>Child Care</td>
-<td>Infancy to adolescence</td>
-<td>Daycare centers, homes</td>
-<td>Supervision, education</td>
-</tr>
-<tr>
-<td>Adult Day Care</td>
-<td>Adults</td>
-<td>Day care centers</td>
-<td>Social interaction, meals, recreation</td>
-</tr>
-<tr>
-<td>Respite Care</td>
-<td>All ages</td>
-<td>Homes, centers</td>
-<td>Temporary relief, emergency support</td>
-</tr>
-<tr>
-<td>Home Care</td>
-<td>All ages</td>
-<td>Homes</td>
-<td>Medical, non-medical support</td>
-</tr>
-<tr>
-<td>Institutional Care</td>
-<td>All ages</td>
-<td>Nursing homes, group homes</td>
-<td>24-hour support, medical care</td>
-</tr>
-<tr>
-<td>Hospice Care</td>
-<td>All ages</td>
-<td>Homes, hospices</td>
-<td>Comfort, pain management, emotional support</td>
-</tr>
-<tr>
-<td>Disability Support</td>
-<td>All ages</td>
-<td>Homes, communities</td>
-<td>Individualized support, advocacy</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Age Group</th><th>Setting</th><th>Level of Care</th></tr></thead><tbody>
+<tr><td>Child Care</td><td>Infancy to adolescence</td><td>Daycare centers, homes</td><td>Supervision, education</td></tr>
+<tr><td>Adult Day Care</td><td>Adults</td><td>Day care centers</td><td>Social interaction, meals, recreation</td></tr>
+<tr><td>Respite Care</td><td>All ages</td><td>Homes, centers</td><td>Temporary relief, emergency support</td></tr>
+<tr><td>Home Care</td><td>All ages</td><td>Homes</td><td>Medical, non-medical support</td></tr>
+<tr><td>Institutional Care</td><td>All ages</td><td>Nursing homes, group homes</td><td>24-hour support, medical care</td></tr>
+<tr><td>Hospice Care</td><td>All ages</td><td>Homes, hospices</td><td>Comfort, pain management, emotional support</td></tr>
+<tr><td>Disability Support</td><td>All ages</td><td>Homes, communities</td><td>Individualized support, advocacy</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The categories of dependent care are interconnected and may overlap, as individuals may require different types of care at various stages of their lives. For instance, a child with disabilities may require child care and disability support, while an elderly person may need home care and adult day care. Understanding the relationships between these categories enables caregivers and healthcare professionals to provide comprehensive and coordinated care, addressing the complex needs of dependents and promoting their overall well-being.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system of dependent care encompasses various categories, including child care, adult day care, respite care, home care, institutional care, hospice care, and disability support, each with distinct characteristics and purposes, to provide a framework for understanding and addressing the diverse needs of dependents.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/debt-repayment/what-is.html" class="related-link">Debt Repayment</a>
-        <a href="/life_obligations/dependent/what-is.html" class="related-link">Dependent</a>
-        <a href="/life_obligations/dependent-qualification/what-is.html" class="related-link">Dependent Qualification</a>
-        <a href="/life_obligations/direct-deposit/what-is.html" class="related-link">Direct Deposit</a>
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -476,6 +484,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of carbon cycle - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of carbon cycle - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/science/carbon-cycle/types-of.html">
     <meta property="og:title" content="Types of Carbon Cycle">
-    <meta property="og:description" content="A clear, simple explanation of carbon cycle - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of carbon cycle - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/science/carbon-cycle/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Carbon Cycle">
-    <meta name="twitter:description" content="A clear, simple explanation of carbon cycle - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of carbon cycle - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Carbon Cycle - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Science", "item": "https://360library.com/#science"}, {"@type": "ListItem", "position": 3, "name": "Carbon Cycle", "item": "https://360library.com/science/carbon-cycle/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Carbon Cycle", "description": "A clear, simple explanation of carbon cycle - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/carbon-cycle/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/carbon-cycle/types-of.html"}, "about": {"@type": "Thing", "name": "Carbon Cycle"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Carbon Cycle", "description": "A clear, simple explanation of types of carbon cycle - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/carbon-cycle/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/carbon-cycle/types-of.html"}, "about": {"@type": "Thing", "name": "Carbon Cycle"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,81 +388,54 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#science">Science</a><span>&rsaquo;</span><a href="/science/carbon-cycle/what-is.html">Carbon Cycle</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #0891B2">
     <main class="article-main">
         <article>
             <h1>Types of Carbon Cycle</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION</p>
+            
+
+            <ol>
+<li>INTRODUCTION</li>
+</ol>
 <p>The carbon cycle is a vital process that describes the movement of carbon through the environment, living organisms, and the atmosphere. Classification of the carbon cycle is essential as it helps us understand the various stages and processes involved in the circulation of carbon. The different types of carbon cycle cover the exchange of carbon between the atmosphere, oceans, land, and living organisms, and classification matters because it allows us to identify and analyze the distinct pathways and mechanisms that govern the flow of carbon. By categorizing the carbon cycle, we can better comprehend the complex interactions between the environment, ecosystems, and the atmosphere, ultimately leading to a deeper understanding of the Earth's systems and the impact of human activities on the planet.</p>
-
-<p>2. MAIN CATEGORIES</p>
+<ol>
+<li>MAIN CATEGORIES</li>
+</ol>
 <ul>
-  <li><strong>Atmospheric Carbon Cycle</strong>: The atmospheric carbon cycle refers to the movement of carbon dioxide between the atmosphere and the Earth's surface. Key characteristics include the exchange of carbon dioxide through photosynthesis, respiration, and decomposition. A simple example is the process of plants absorbing carbon dioxide from the atmosphere for photosynthesis.</li>
-  <li><strong>Oceanic Carbon Cycle</strong>: The oceanic carbon cycle involves the exchange of carbon between the oceans and the atmosphere. Key characteristics include the absorption of carbon dioxide by the oceans, the formation of calcium carbonate shells by marine organisms, and the storage of carbon in ocean sediments. A simple example is the process of coral reefs forming through the accumulation of calcium carbonate.</li>
-  <li><strong>Terrestrial Carbon Cycle</strong>: The terrestrial carbon cycle refers to the movement of carbon between the land and the atmosphere. Key characteristics include the exchange of carbon through photosynthesis, respiration, and decomposition in terrestrial ecosystems. A simple example is the process of trees absorbing carbon dioxide from the atmosphere for photosynthesis.</li>
-  <li><strong>Biological Carbon Cycle</strong>: The biological carbon cycle involves the movement of carbon through living organisms, including the processes of photosynthesis, respiration, and decomposition. Key characteristics include the exchange of carbon between organisms and the environment through metabolic processes. A simple example is the process of animals consuming plants and releasing carbon dioxide through respiration.</li>
-  <li><strong>Geochemical Carbon Cycle</strong>: The geochemical carbon cycle refers to the movement of carbon through geological processes, including the formation of fossil fuels and the weathering of rocks. Key characteristics include the long-term storage of carbon in geological formations and the release of carbon through geological processes. A simple example is the process of coal formation through the compression of ancient plant material.</li>
+<li><strong>Atmospheric Carbon Cycle</strong>: The atmospheric carbon cycle refers to the movement of carbon dioxide between the atmosphere and the Earth's surface. Key characteristics include the exchange of carbon dioxide through photosynthesis, respiration, and decomposition. A simple example is the process of plants absorbing carbon dioxide from the atmosphere for photosynthesis.</li>
+<li><strong>Oceanic Carbon Cycle</strong>: The oceanic carbon cycle involves the exchange of carbon between the oceans and the atmosphere. Key characteristics include the absorption of carbon dioxide by the oceans, the formation of calcium carbonate shells by marine organisms, and the storage of carbon in ocean sediments. A simple example is the process of coral reefs forming through the accumulation of calcium carbonate.</li>
+<li><strong>Terrestrial Carbon Cycle</strong>: The terrestrial carbon cycle refers to the movement of carbon between the land and the atmosphere. Key characteristics include the exchange of carbon through photosynthesis, respiration, and decomposition in terrestrial ecosystems. A simple example is the process of trees absorbing carbon dioxide from the atmosphere for photosynthesis.</li>
+<li><strong>Biological Carbon Cycle</strong>: The biological carbon cycle involves the movement of carbon through living organisms, including the processes of photosynthesis, respiration, and decomposition. Key characteristics include the exchange of carbon between organisms and the environment through metabolic processes. A simple example is the process of animals consuming plants and releasing carbon dioxide through respiration.</li>
+<li><strong>Geochemical Carbon Cycle</strong>: The geochemical carbon cycle refers to the movement of carbon through geological processes, including the formation of fossil fuels and the weathering of rocks. Key characteristics include the long-term storage of carbon in geological formations and the release of carbon through geological processes. A simple example is the process of coal formation through the compression of ancient plant material.</li>
 </ul>
-
-<p>3. COMPARISON TABLE</p>
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Atmospheric Carbon Cycle</td>
-<td>Exchange of carbon dioxide between atmosphere and surface</td>
-<td>Photosynthesis, respiration, decomposition</td>
-<td>Plant absorption of CO2</td>
-</tr>
-<tr>
-<td>Oceanic Carbon Cycle</td>
-<td>Exchange of carbon between oceans and atmosphere</td>
-<td>Absorption of CO2, formation of calcium carbonate, storage in sediments</td>
-<td>Coral reef formation</td>
-</tr>
-<tr>
-<td>Terrestrial Carbon Cycle</td>
-<td>Exchange of carbon between land and atmosphere</td>
-<td>Photosynthesis, respiration, decomposition</td>
-<td>Tree absorption of CO2</td>
-</tr>
-<tr>
-<td>Biological Carbon Cycle</td>
-<td>Movement of carbon through living organisms</td>
-<td>Metabolic processes, exchange of carbon between organisms and environment</td>
-<td>Animal consumption of plants</td>
-</tr>
-<tr>
-<td>Geochemical Carbon Cycle</td>
-<td>Movement of carbon through geological processes</td>
-<td>Long-term storage in geological formations, release through geological processes</td>
-<td>Coal formation</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE</p>
+<ol>
+<li>COMPARISON TABLE</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Atmospheric Carbon Cycle</td><td>Exchange of carbon dioxide between atmosphere and surface</td><td>Photosynthesis, respiration, decomposition</td><td>Plant absorption of CO2</td></tr>
+<tr><td>Oceanic Carbon Cycle</td><td>Exchange of carbon between oceans and atmosphere</td><td>Absorption of CO2, formation of calcium carbonate, storage in sediments</td><td>Coral reef formation</td></tr>
+<tr><td>Terrestrial Carbon Cycle</td><td>Exchange of carbon between land and atmosphere</td><td>Photosynthesis, respiration, decomposition</td><td>Tree absorption of CO2</td></tr>
+<tr><td>Biological Carbon Cycle</td><td>Movement of carbon through living organisms</td><td>Metabolic processes, exchange of carbon between organisms and environment</td><td>Animal consumption of plants</td></tr>
+<tr><td>Geochemical Carbon Cycle</td><td>Movement of carbon through geological processes</td><td>Long-term storage in geological formations, release through geological processes</td><td>Coal formation</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE</li>
+</ol>
 <p>The different categories of the carbon cycle are interconnected and interdependent. The atmospheric carbon cycle is linked to the oceanic and terrestrial carbon cycles through the exchange of carbon dioxide. The biological carbon cycle is connected to the atmospheric, oceanic, and terrestrial carbon cycles through the processes of photosynthesis, respiration, and decomposition. The geochemical carbon cycle is related to the other categories through the formation of fossil fuels and the release of carbon through geological processes. Understanding the relationships between these categories is essential for comprehending the complex dynamics of the carbon cycle and the impact of human activities on the environment.</p>
-
-<p>5. SUMMARY</p>
+<ol>
+<li>SUMMARY</li>
+</ol>
 <p>The carbon cycle can be classified into five main categories: atmospheric, oceanic, terrestrial, biological, and geochemical, each with distinct characteristics and processes that govern the flow of carbon through the environment and living organisms.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/science/adaptation/what-is.html" class="related-link">Adaptation</a>
-        <a href="/science/cellular-respiration/what-is.html" class="related-link">Cellular Respiration</a>
-        <a href="/science/condensation/what-is.html" class="related-link">Condensation</a>
-        <a href="/science/dna-replication/what-is.html" class="related-link">Dna Replication</a>
-        <a href="/science/gravity/what-is.html" class="related-link">Gravity</a>
-        <a href="/science/osmosis/what-is.html" class="related-link">Osmosis</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -462,6 +480,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

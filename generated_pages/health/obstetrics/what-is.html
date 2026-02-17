@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/obstetrics/what-is.html">Obstetrics</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>What Is Obstetrics?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Obstetrics is the branch of medicine that deals with the care of women during pregnancy, childbirth, and the postpartum period.</p>
-
 <p>Obstetrics is a vital field of medicine that focuses on the health and well-being of women during a critical period in their lives. This field of medicine involves the diagnosis, treatment, and prevention of complications that may arise during pregnancy, childbirth, and the postpartum period. Obstetric care is typically provided by a healthcare provider, such as an obstetrician or a midwife, who has received specialized training in this field.</p>
-
 <p>The goal of obstetrics is to ensure that women receive the best possible care during pregnancy, childbirth, and the postpartum period. This involves monitoring the health of the mother and the fetus, identifying any potential complications, and taking steps to prevent or treat them. Obstetric care also involves educating women about healthy pregnancy habits, such as proper nutrition, exercise, and prenatal care.</p>
-
 <p>In addition to providing medical care, obstetrics also involves supporting women emotionally and psychologically during this significant life event. This can include counseling, education, and support groups to help women cope with the physical and emotional changes that occur during pregnancy and the postpartum period.</p>
-
 <p>The main components of obstetrics include:</p>
 <ul>
-  <li>Prenatal care, which involves regular check-ups and monitoring of the mother's and fetus's health during pregnancy</li>
-  <li>Labor and delivery care, which involves supporting women during childbirth and ensuring a safe and healthy delivery</li>
-  <li>Postpartum care, which involves caring for women after childbirth and supporting them as they recover and care for their newborn</li>
-  <li>Fetal monitoring, which involves tracking the fetus's health and well-being during pregnancy and childbirth</li>
-  <li>Ultrasound imaging, which involves using sound waves to create images of the fetus and monitor its development</li>
-  <li>Genetic testing, which involves testing for genetic disorders or birth defects</li>
+<li>Prenatal care, which involves regular check-ups and monitoring of the mother's and fetus's health during pregnancy</li>
+<li>Labor and delivery care, which involves supporting women during childbirth and ensuring a safe and healthy delivery</li>
+<li>Postpartum care, which involves caring for women after childbirth and supporting them as they recover and care for their newborn</li>
+<li>Fetal monitoring, which involves tracking the fetus's health and well-being during pregnancy and childbirth</li>
+<li>Ultrasound imaging, which involves using sound waves to create images of the fetus and monitor its development</li>
+<li>Genetic testing, which involves testing for genetic disorders or birth defects</li>
 </ul>
-
 <p>Despite its importance, there are many common misconceptions about obstetrics. Some of these misconceptions include:</p>
 <ul>
-  <li>The idea that all women will experience a normal, uncomplicated pregnancy and childbirth, when in fact many women may experience complications or require medical intervention</li>
-  <li>The notion that obstetric care is only necessary for women who are high-risk or experiencing complications, when in fact all women should receive regular prenatal care to ensure a healthy pregnancy and childbirth</li>
-  <li>The belief that women should not seek medical attention unless they are experiencing severe symptoms or complications, when in fact regular check-ups and monitoring are essential for a healthy pregnancy and childbirth</li>
-  <li>The idea that obstetrics is only concerned with the physical health of the mother and fetus, when in fact it also involves supporting women emotionally and psychologically during this significant life event</li>
+<li>The idea that all women will experience a normal, uncomplicated pregnancy and childbirth, when in fact many women may experience complications or require medical intervention</li>
+<li>The notion that obstetric care is only necessary for women who are high-risk or experiencing complications, when in fact all women should receive regular prenatal care to ensure a healthy pregnancy and childbirth</li>
+<li>The belief that women should not seek medical attention unless they are experiencing severe symptoms or complications, when in fact regular check-ups and monitoring are essential for a healthy pregnancy and childbirth</li>
+<li>The idea that obstetrics is only concerned with the physical health of the mother and fetus, when in fact it also involves supporting women emotionally and psychologically during this significant life event</li>
 </ul>
-
 <p>A real-world example of obstetrics in action is a woman who is pregnant with her first child and receives regular prenatal care from her obstetrician. At each check-up, her obstetrician monitors her health and the health of her fetus, provides her with guidance on healthy pregnancy habits, and answers any questions or concerns she may have. As her due date approaches, her obstetrician helps her prepare for childbirth and supports her as she delivers her baby.</p>
-
 <p>In summary, obstetrics is a vital field of medicine that involves the care of women during pregnancy, childbirth, and the postpartum period, with the goal of ensuring the health and well-being of both the mother and the fetus.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/neurology/what-is.html" class="related-link">Neurology</a>
-        <a href="/health/nutrition/what-is.html" class="related-link">Nutrition</a>
-        <a href="/health/oncology/what-is.html" class="related-link">Oncology</a>
-        <a href="/health/orthopedics/what-is.html" class="related-link">Orthopedics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

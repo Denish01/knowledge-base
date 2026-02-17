@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/spousal-support/what-is.html">Spousal Support</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Spousal Support?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Spousal support is a legal obligation where one spouse provides financial assistance to the other spouse, typically after a divorce or separation.</p>
-
 <p>Spousal support, also known as alimony, is a court-ordered payment that one spouse makes to the other to help them maintain a certain standard of living after a divorce or separation. The purpose of spousal support is to provide financial assistance to the spouse who earns less or has limited financial resources, allowing them to become self-sufficient over time. This type of support can be temporary or permanent, depending on the circumstances of the divorce or separation.</p>
-
 <p>In general, spousal support is determined by a court based on various factors, including the length of the marriage, the income and earning potential of each spouse, and the standard of living established during the marriage. The court may also consider other factors, such as the age and health of each spouse, as well as any child custody arrangements. The amount and duration of spousal support can vary significantly depending on the specific circumstances of the case.</p>
-
 <p>The calculation of spousal support can be complex and may involve the consideration of various financial factors, including income, expenses, debts, and assets. The goal of spousal support is to provide a fair and reasonable amount of financial assistance to the spouse who needs it, while also taking into account the financial resources and obligations of the other spouse. In some cases, spousal support may be modified or terminated if there is a significant change in the circumstances of either spouse.</p>
-
 <p>The key components of spousal support include:</p>
 <ul>
-  <li>The amount of support to be paid, which can be a fixed amount or a percentage of the paying spouse's income</li>
-  <li>The duration of support, which can be temporary or permanent</li>
-  <li>The method of payment, which can be monthly, quarterly, or annually</li>
-  <li>The tax implications of spousal support, which can affect the amount of support paid and received</li>
-  <li>The circumstances under which support can be modified or terminated, such as a change in income or remarriage</li>
-  <li>The enforcement mechanisms available to collect unpaid support, such as wage garnishment or contempt of court proceedings</li>
+<li>The amount of support to be paid, which can be a fixed amount or a percentage of the paying spouse's income</li>
+<li>The duration of support, which can be temporary or permanent</li>
+<li>The method of payment, which can be monthly, quarterly, or annually</li>
+<li>The tax implications of spousal support, which can affect the amount of support paid and received</li>
+<li>The circumstances under which support can be modified or terminated, such as a change in income or remarriage</li>
+<li>The enforcement mechanisms available to collect unpaid support, such as wage garnishment or contempt of court proceedings</li>
 </ul>
-
 <p>Despite its importance, there are many common misconceptions about spousal support, including:</p>
 <ul>
-  <li>The assumption that spousal support is always paid by the husband to the wife, when in fact either spouse can pay support to the other</li>
-  <li>The belief that spousal support is always permanent, when in fact it can be temporary or limited in duration</li>
-  <li>The idea that spousal support is only available in cases where one spouse is wealthy, when in fact it can be awarded in a wide range of financial circumstances</li>
-  <li>The misconception that spousal support is not taxable, when in fact it can have significant tax implications for both the paying and receiving spouse</li>
+<li>The assumption that spousal support is always paid by the husband to the wife, when in fact either spouse can pay support to the other</li>
+<li>The belief that spousal support is always permanent, when in fact it can be temporary or limited in duration</li>
+<li>The idea that spousal support is only available in cases where one spouse is wealthy, when in fact it can be awarded in a wide range of financial circumstances</li>
+<li>The misconception that spousal support is not taxable, when in fact it can have significant tax implications for both the paying and receiving spouse</li>
 </ul>
-
 <p>For example, consider a couple who were married for 10 years and have two children together. The husband earns $100,000 per year, while the wife earns $50,000 per year and has primary custody of the children. In this case, the court may order the husband to pay spousal support to the wife to help her maintain a certain standard of living and care for the children. The amount and duration of support would depend on various factors, including the husband's income and earning potential, the wife's income and expenses, and the needs of the children.</p>
-
 <p>Spousal support is a legal obligation that provides financial assistance to one spouse after a divorce or separation, taking into account various factors such as income, earning potential, and standard of living to ensure a fair and reasonable amount of support.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/shared-expenses/what-is.html" class="related-link">Shared Expenses</a>
-        <a href="/life_obligations/social-security/what-is.html" class="related-link">Social Security</a>
-        <a href="/life_obligations/spousal-support-duration/what-is.html" class="related-link">Spousal Support Duration</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

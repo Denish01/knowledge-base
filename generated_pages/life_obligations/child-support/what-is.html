@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/child-support/what-is.html">Child Support</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Child Support?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Child support is a legal obligation where one parent provides financial assistance to the other parent for the care and well-being of their child or children.</p>
-
 <p>Child support is a critical aspect of family law, as it ensures that both parents contribute to the financial needs of their children. When parents separate or divorce, they must consider how to provide for their children's financial needs. Child support is typically paid by the non-custodial parent, who is the parent with whom the child does not live, to the custodial parent, who is the parent with whom the child resides. The amount of child support paid is usually determined by a court, taking into account various factors such as the income of both parents, the number of children, and the financial needs of the children.</p>
-
 <p>The purpose of child support is to ensure that children receive the financial support they need to thrive, even if their parents are no longer together. Child support can be used to cover a wide range of expenses, including food, clothing, housing, education, and healthcare. In some cases, child support may also include additional expenses, such as childcare costs or extracurricular activities. The goal of child support is to provide a stable and secure financial environment for children, allowing them to grow and develop without undue financial hardship.</p>
-
 <p>In addition to providing financial support, child support can also play a role in promoting parental responsibility and involvement. When parents are required to contribute financially to their children's care, they are more likely to remain engaged and involved in their children's lives. This can have a positive impact on the emotional and psychological well-being of children, who benefit from having both parents actively involved in their lives.</p>
-
 <p>The key components of child support include:</p>
 <ul>
-  <li>The amount of child support paid, which is typically determined by a court</li>
-  <li>The frequency of child support payments, which can be monthly, biweekly, or weekly</li>
-  <li>The method of payment, which can be direct deposit, check, or money order</li>
-  <li>The duration of child support, which typically ends when the child reaches the age of majority</li>
-  <li>The possibility of modifying child support orders, which can be done if there is a change in circumstances</li>
-  <li>The enforcement of child support orders, which can involve wage garnishment or other collection methods</li>
+<li>The amount of child support paid, which is typically determined by a court</li>
+<li>The frequency of child support payments, which can be monthly, biweekly, or weekly</li>
+<li>The method of payment, which can be direct deposit, check, or money order</li>
+<li>The duration of child support, which typically ends when the child reaches the age of majority</li>
+<li>The possibility of modifying child support orders, which can be done if there is a change in circumstances</li>
+<li>The enforcement of child support orders, which can involve wage garnishment or other collection methods</li>
 </ul>
-
 <p>Despite its importance, there are several common misconceptions about child support. These include:</p>
 <ul>
-  <li>The idea that child support is only paid by fathers, when in fact either parent can be required to pay child support</li>
-  <li>The notion that child support is only used for luxury items, when in fact it is intended to cover basic expenses such as food and housing</li>
-  <li>The belief that child support ends when the child turns 18, when in fact it may continue until the child reaches the age of majority, which can be 19 or 21 in some states</li>
-  <li>The assumption that child support is not enforceable, when in fact courts have various methods to collect unpaid child support</li>
+<li>The idea that child support is only paid by fathers, when in fact either parent can be required to pay child support</li>
+<li>The notion that child support is only used for luxury items, when in fact it is intended to cover basic expenses such as food and housing</li>
+<li>The belief that child support ends when the child turns 18, when in fact it may continue until the child reaches the age of majority, which can be 19 or 21 in some states</li>
+<li>The assumption that child support is not enforceable, when in fact courts have various methods to collect unpaid child support</li>
 </ul>
-
 <p>A real-world example of child support in action is a situation where a mother and father have joint custody of their two children, but the father has a higher income. In this case, the court may order the father to pay child support to the mother to help cover the expenses of caring for the children, even though they spend equal time with both parents. For example, if the father earns $50,000 per year and the mother earns $30,000 per year, the court may order the father to pay $500 per month in child support to help cover the children's expenses.</p>
-
 <p>In summary, child support is a legal obligation where one parent provides financial assistance to the other parent for the care and well-being of their child or children, ensuring that children receive the financial support they need to thrive, even if their parents are no longer together.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/benefit-threshold/what-is.html" class="related-link">Benefit Threshold</a>
-        <a href="/life_obligations/benefits-enrollment/what-is.html" class="related-link">Benefits Enrollment</a>
-        <a href="/life_obligations/child-support-duration/what-is.html" class="related-link">Child Support Duration</a>
-        <a href="/life_obligations/child-support-obligation/what-is.html" class="related-link">Child Support Obligation</a>
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

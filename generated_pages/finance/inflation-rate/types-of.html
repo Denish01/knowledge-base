@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of inflation rate - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of inflation rate - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/finance/inflation-rate/types-of.html">
     <meta property="og:title" content="Types of Inflation Rate">
-    <meta property="og:description" content="A clear, simple explanation of inflation rate - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of inflation rate - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/finance/inflation-rate/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Inflation Rate">
-    <meta name="twitter:description" content="A clear, simple explanation of inflation rate - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of inflation rate - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Inflation Rate - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Finance", "item": "https://360library.com/#finance"}, {"@type": "ListItem", "position": 3, "name": "Inflation Rate", "item": "https://360library.com/finance/inflation-rate/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Inflation Rate", "description": "A clear, simple explanation of inflation rate - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/finance/inflation-rate/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/finance/inflation-rate/types-of.html"}, "about": {"@type": "Thing", "name": "Inflation Rate"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Inflation Rate", "description": "A clear, simple explanation of types of inflation rate - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/finance/inflation-rate/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/finance/inflation-rate/types-of.html"}, "about": {"@type": "Thing", "name": "Inflation Rate"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,86 +388,64 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#finance">Finance</a><span>&rsaquo;</span><a href="/finance/inflation-rate/what-is.html">Inflation Rate</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #1B4D8E">
     <main class="article-main">
         <article>
             <h1>Types of Inflation Rate</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>The inflation rate is a crucial economic indicator that measures the rate at which prices for goods and services are rising. Understanding the different types of inflation rates is essential for individuals, businesses, and policymakers to make informed decisions. Classification of inflation rates matters because it helps to identify the underlying causes of inflation, anticipate its effects, and develop effective strategies to manage it. By recognizing the various types of inflation rates, it is possible to better navigate economic fluctuations and make more accurate predictions about future economic conditions. The classification of inflation rates is a fundamental concept in economics that has significant implications for monetary policy, investment decisions, and overall economic stability.</p>
-
-<p>2. MAIN CATEGORIES:</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <ul>
-  <li><strong>Demand-Pull Inflation</strong></li>
-  <li>Definition: Demand-pull inflation occurs when aggregate demand exceeds the available supply of goods and services, driving up prices. This type of inflation is often the result of an expanding economy, where consumers and businesses have more money to spend, leading to increased demand.</li>
-  <li>Key characteristics: Increased consumer spending, low unemployment, and economic growth.</li>
-  <li>Example: When a new smartphone is released, and many people want to buy it, the high demand can drive up the price if the supply is limited.</li>
-  <li><strong>Cost-Push Inflation</strong></li>
-  <li>Definition: Cost-push inflation arises when there is an increase in the cost of production, such as higher wages or raw materials, which leads to higher prices. This type of inflation can be caused by external factors like global events or natural disasters that disrupt supply chains.</li>
-  <li>Key characteristics: Increased production costs, supply chain disruptions, and higher prices for raw materials.</li>
-  <li>Example: If a drought affects coffee bean crops, leading to a shortage and higher prices, coffee shops may raise the price of coffee to maintain their profit margins.</li>
-  <li><strong>Built-In Inflation</strong></li>
-  <li>Definition: Built-in inflation, also known as the wage-price spiral, occurs when workers demand higher wages to keep up with the expected rise in prices, leading to a self-reinforcing cycle of inflation. This type of inflation is often the result of inflationary expectations, where people anticipate future price increases and adjust their behavior accordingly.</li>
-  <li>Key characteristics: Wage increases, inflationary expectations, and a self-reinforcing cycle of price and wage growth.</li>
-  <li>Example: If workers expect prices to rise by 3% in the next year, they may demand a 3% wage increase to maintain their purchasing power, which can lead to higher prices and further inflation.</li>
-  <li><strong>Hyperinflation</strong></li>
-  <li>Definition: Hyperinflation is an extreme and rare type of inflation where prices increase exponentially, often rendering the currency nearly worthless. This type of inflation can be caused by a combination of factors, including excessive money printing, economic instability, and loss of confidence in the currency.</li>
-  <li>Key characteristics: Extremely high and accelerating inflation rates, loss of confidence in the currency, and a breakdown in the monetary system.</li>
-  <li>Example: In a hypothetical scenario, if a country's government prints excessive amounts of money to pay off its debt, it can lead to hyperinflation, where prices double or triple in a matter of weeks or months.</li>
+<li><strong>Demand-Pull Inflation</strong></li>
+<li>Definition: Demand-pull inflation occurs when aggregate demand exceeds the available supply of goods and services, driving up prices. This type of inflation is often the result of an expanding economy, where consumers and businesses have more money to spend, leading to increased demand.</li>
+<li>Key characteristics: Increased consumer spending, low unemployment, and economic growth.</li>
+<li>Example: When a new smartphone is released, and many people want to buy it, the high demand can drive up the price if the supply is limited.</li>
+<li><strong>Cost-Push Inflation</strong></li>
+<li>Definition: Cost-push inflation arises when there is an increase in the cost of production, such as higher wages or raw materials, which leads to higher prices. This type of inflation can be caused by external factors like global events or natural disasters that disrupt supply chains.</li>
+<li>Key characteristics: Increased production costs, supply chain disruptions, and higher prices for raw materials.</li>
+<li>Example: If a drought affects coffee bean crops, leading to a shortage and higher prices, coffee shops may raise the price of coffee to maintain their profit margins.</li>
+<li><strong>Built-In Inflation</strong></li>
+<li>Definition: Built-in inflation, also known as the wage-price spiral, occurs when workers demand higher wages to keep up with the expected rise in prices, leading to a self-reinforcing cycle of inflation. This type of inflation is often the result of inflationary expectations, where people anticipate future price increases and adjust their behavior accordingly.</li>
+<li>Key characteristics: Wage increases, inflationary expectations, and a self-reinforcing cycle of price and wage growth.</li>
+<li>Example: If workers expect prices to rise by 3% in the next year, they may demand a 3% wage increase to maintain their purchasing power, which can lead to higher prices and further inflation.</li>
+<li><strong>Hyperinflation</strong></li>
+<li>Definition: Hyperinflation is an extreme and rare type of inflation where prices increase exponentially, often rendering the currency nearly worthless. This type of inflation can be caused by a combination of factors, including excessive money printing, economic instability, and loss of confidence in the currency.</li>
+<li>Key characteristics: Extremely high and accelerating inflation rates, loss of confidence in the currency, and a breakdown in the monetary system.</li>
+<li>Example: In a hypothetical scenario, if a country's government prints excessive amounts of money to pay off its debt, it can lead to hyperinflation, where prices double or triple in a matter of weeks or months.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Inflation</th>
-<th>Cause</th>
-<th>Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Demand-Pull</td>
-<td>Excess demand</td>
-<td>Low unemployment, economic growth</td>
-<td>New smartphone release</td>
-</tr>
-<tr>
-<td>Cost-Push</td>
-<td>Increased production costs</td>
-<td>Supply chain disruptions, higher raw material prices</td>
-<td>Coffee bean shortage</td>
-</tr>
-<tr>
-<td>Built-In</td>
-<td>Inflationary expectations</td>
-<td>Wage-price spiral, self-reinforcing cycle</td>
-<td>Workers demanding higher wages</td>
-</tr>
-<tr>
-<td>Hyperinflation</td>
-<td>Excessive money printing, economic instability</td>
-<td>Extremely high inflation rates, loss of confidence in currency</td>
-<td>Excessive money printing</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Inflation</th><th>Cause</th><th>Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Demand-Pull</td><td>Excess demand</td><td>Low unemployment, economic growth</td><td>New smartphone release</td></tr>
+<tr><td>Cost-Push</td><td>Increased production costs</td><td>Supply chain disruptions, higher raw material prices</td><td>Coffee bean shortage</td></tr>
+<tr><td>Built-In</td><td>Inflationary expectations</td><td>Wage-price spiral, self-reinforcing cycle</td><td>Workers demanding higher wages</td></tr>
+<tr><td>Hyperinflation</td><td>Excessive money printing, economic instability</td><td>Extremely high inflation rates, loss of confidence in currency</td><td>Excessive money printing</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different types of inflation rates are interconnected and can influence one another. For instance, demand-pull inflation can lead to built-in inflation if workers begin to expect higher prices and demand higher wages. Cost-push inflation can also contribute to demand-pull inflation if the increased costs are passed on to consumers, leading to higher prices and reduced demand. Hyperinflation, on the other hand, is often the result of a combination of factors, including excessive money printing, economic instability, and a loss of confidence in the currency. Understanding the relationships between these types of inflation rates is crucial for developing effective monetary policies and making informed economic decisions.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system of inflation rates encompasses various types, including demand-pull, cost-push, built-in, and hyperinflation, each with distinct causes, characteristics, and examples, which are essential to understand in order to navigate economic fluctuations and make informed decisions.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/finance/capital-gains-tax/what-is.html" class="related-link">Capital Gains Tax</a>
-        <a href="/finance/emergency-fund/what-is.html" class="related-link">Emergency Fund</a>
-        <a href="/finance/exchange-traded-fund/what-is.html" class="related-link">Exchange Traded Fund</a>
-        <a href="/finance/index-fund/what-is.html" class="related-link">Index Fund</a>
-        <a href="/finance/liquidity/what-is.html" class="related-link">Liquidity</a>
-        <a href="/finance/market-capitalization/what-is.html" class="related-link">Market Capitalization</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -466,6 +489,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

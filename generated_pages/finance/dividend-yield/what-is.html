@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#finance">Finance</a><span>&rsaquo;</span><a href="/finance/dividend-yield/what-is.html">Dividend Yield</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #1B4D8E">
     <main class="article-main">
         <article>
             <h1>What Is Dividend Yield?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Dividend yield is a measure of the return on investment for a stock that pays dividends, calculated by dividing the annual dividend payment by the stock's current price.</p>
-
 <p>Investing in the stock market can be a complex and confusing process, but understanding key concepts like dividend yield can help make informed decisions. When a company earns a profit, it can choose to distribute some of those earnings to its shareholders in the form of dividends. The dividend yield is a way to measure the ratio of the annual dividend payment to the stock's current price, giving investors an idea of the return they can expect on their investment.</p>
-
 <p>To calculate the dividend yield, an investor needs to know the annual dividend payment and the current stock price. For example, if a company pays an annual dividend of $2 per share and the current stock price is $50, the dividend yield would be 4%. This means that for every $100 invested in the stock, the investor can expect to receive $4 in dividend payments over the course of a year. The dividend yield is an important metric because it allows investors to compare the potential return on investment for different stocks.</p>
-
 <p>The dividend yield is also a useful tool for evaluating the relative attractiveness of different investment opportunities. By comparing the dividend yields of different stocks, investors can get a sense of which ones may offer the highest potential return. Additionally, the dividend yield can be used in conjunction with other metrics, such as the stock's price-to-earnings ratio, to get a more complete picture of the investment's potential.</p>
-
 <p>The key components of dividend yield include:</p>
 <ul>
-  <li>The annual dividend payment, which is the total amount of money paid out to shareholders over the course of a year</li>
-  <li>The current stock price, which is the price at which the stock is currently trading</li>
-  <li>The dividend yield formula, which is calculated by dividing the annual dividend payment by the current stock price</li>
-  <li>The investment amount, which is the total amount of money invested in the stock</li>
-  <li>The expected return, which is the potential profit or loss on the investment</li>
-  <li>The risk level, which is the potential for the investment to lose value</li>
+<li>The annual dividend payment, which is the total amount of money paid out to shareholders over the course of a year</li>
+<li>The current stock price, which is the price at which the stock is currently trading</li>
+<li>The dividend yield formula, which is calculated by dividing the annual dividend payment by the current stock price</li>
+<li>The investment amount, which is the total amount of money invested in the stock</li>
+<li>The expected return, which is the potential profit or loss on the investment</li>
+<li>The risk level, which is the potential for the investment to lose value</li>
 </ul>
-
 <p>Despite its importance, there are several common misconceptions about dividend yield. Some people believe that a high dividend yield is always a good thing, but this is not necessarily true. A high dividend yield can be a sign of a struggling company that is trying to attract investors by offering a high dividend payment. Other misconceptions include:</p>
 <ul>
-  <li>The idea that dividend yield is the only factor to consider when evaluating an investment</li>
-  <li>The belief that a low dividend yield is always a bad thing, when in fact it may be a sign of a company with strong growth potential</li>
-  <li>The assumption that dividend yield is a guaranteed return, when in fact it is subject to change based on a variety of factors</li>
-  <li>The notion that dividend yield is only relevant for income investors, when in fact it can be an important consideration for investors of all types</li>
+<li>The idea that dividend yield is the only factor to consider when evaluating an investment</li>
+<li>The belief that a low dividend yield is always a bad thing, when in fact it may be a sign of a company with strong growth potential</li>
+<li>The assumption that dividend yield is a guaranteed return, when in fact it is subject to change based on a variety of factors</li>
+<li>The notion that dividend yield is only relevant for income investors, when in fact it can be an important consideration for investors of all types</li>
 </ul>
-
 <p>For example, consider an investor who purchases 100 shares of a stock with a current price of $40 and an annual dividend payment of $1.50 per share. The dividend yield would be 3.75%, meaning that the investor can expect to receive $150 in dividend payments over the course of a year. This provides a regular stream of income and can help offset any potential losses in the stock's value.</p>
-
 <p>In summary, dividend yield is a measure of the return on investment for a stock that pays dividends, calculated by dividing the annual dividend payment by the stock's current price, and is an important metric for evaluating the potential return on investment for different stocks.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/finance/capital-gains-tax/what-is.html" class="related-link">Capital Gains Tax</a>
-        <a href="/finance/credit-score/what-is.html" class="related-link">Credit Score</a>
-        <a href="/finance/diversification/what-is.html" class="related-link">Diversification</a>
-        <a href="/finance/dollar-cost-averaging/what-is.html" class="related-link">Dollar Cost Averaging</a>
-        <a href="/finance/emergency-fund/what-is.html" class="related-link">Emergency Fund</a>
-        <a href="/finance/mortgage-amortization/what-is.html" class="related-link">Mortgage Amortization</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -434,6 +467,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

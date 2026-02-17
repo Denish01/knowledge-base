@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of substance abuse - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of substance abuse - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/substance-abuse/types-of.html">
     <meta property="og:title" content="Types of Substance Abuse">
-    <meta property="og:description" content="A clear, simple explanation of substance abuse - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of substance abuse - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/substance-abuse/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Substance Abuse">
-    <meta name="twitter:description" content="A clear, simple explanation of substance abuse - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of substance abuse - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Substance Abuse - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Substance Abuse", "item": "https://360library.com/health/substance-abuse/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Substance Abuse", "description": "A clear, simple explanation of substance abuse - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/substance-abuse/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/substance-abuse/types-of.html"}, "about": {"@type": "Thing", "name": "Substance Abuse"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Substance Abuse", "description": "A clear, simple explanation of types of substance abuse - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/substance-abuse/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/substance-abuse/types-of.html"}, "about": {"@type": "Thing", "name": "Substance Abuse"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,104 +388,61 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/substance-abuse/what-is.html">Substance Abuse</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Types of Substance Abuse</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>Substance abuse refers to the misuse of various substances, including drugs, alcohol, and other chemicals, which can have harmful effects on an individual's physical and mental health. Classification of substance abuse is crucial as it helps in understanding the different types of substances that are commonly misused, their effects, and the various ways in which they can be abused. This classification is essential for developing effective treatment and prevention strategies, as well as for raising awareness about the risks and consequences of substance abuse. By categorizing substance abuse, healthcare professionals, educators, and policymakers can better address the complex issues surrounding substance misuse and provide targeted support to those affected.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The main categories of substance abuse include:</p>
 <ul>
-  <li><strong>Alcohol Abuse</strong>: Alcohol abuse refers to the excessive consumption of alcohol, which can lead to physical and mental health problems. Key characteristics include drinking large amounts of alcohol, drinking frequently, and experiencing withdrawal symptoms when not drinking. A simple example is a person who drinks a bottle of wine every night, despite knowing that it is affecting their relationships and work performance.</li>
-  <li><strong>Tobacco Abuse</strong>: Tobacco abuse involves the misuse of tobacco products, such as cigarettes, cigars, and chewing tobacco. Key characteristics include smoking or using tobacco products regularly, experiencing withdrawal symptoms when not using tobacco, and continuing to use tobacco despite health problems. A simple example is a person who smokes a pack of cigarettes every day, despite having a persistent cough and shortness of breath.</li>
-  <li><strong>Cannabis Abuse</strong>: Cannabis abuse refers to the misuse of marijuana or cannabis products, which can lead to physical and mental health problems. Key characteristics include using cannabis regularly, experiencing withdrawal symptoms when not using cannabis, and continuing to use cannabis despite problems with relationships, work, or school. A simple example is a person who uses cannabis every day, despite knowing that it is affecting their motivation and concentration.</li>
-  <li><strong>Stimulant Abuse</strong>: Stimulant abuse involves the misuse of stimulant substances, such as cocaine, methamphetamine, and prescription stimulants. Key characteristics include using stimulants regularly, experiencing withdrawal symptoms when not using stimulants, and continuing to use stimulants despite health problems or relationship issues. A simple example is a person who uses cocaine on weekends, despite knowing that it is affecting their relationships and work performance.</li>
-  <li><strong>Opioid Abuse</strong>: Opioid abuse refers to the misuse of opioid substances, such as heroin, prescription painkillers, and fentanyl. Key characteristics include using opioids regularly, experiencing withdrawal symptoms when not using opioids, and continuing to use opioids despite health problems or relationship issues. A simple example is a person who uses prescription painkillers more frequently or in larger doses than prescribed, despite knowing that it is affecting their physical and mental health.</li>
-  <li><strong>Hallucinogen Abuse</strong>: Hallucinogen abuse involves the misuse of hallucinogenic substances, such as LSD, psilocybin, and PCP. Key characteristics include using hallucinogens regularly, experiencing withdrawal symptoms when not using hallucinogens, and continuing to use hallucinogens despite health problems or relationship issues. A simple example is a person who uses LSD at parties, despite knowing that it is affecting their perception and judgment.</li>
-  <li><strong>Inhalant Abuse</strong>: Inhalant abuse refers to the misuse of inhalant substances, such as solvents, aerosols, and gases. Key characteristics include using inhalants regularly, experiencing withdrawal symptoms when not using inhalants, and continuing to use inhalants despite health problems or relationship issues. A simple example is a person who uses spray paint to get high, despite knowing that it is affecting their brain and nervous system.</li>
-  <li><strong>Prescription Drug Abuse</strong>: Prescription drug abuse involves the misuse of prescription medications, such as sedatives, tranquilizers, and painkillers. Key characteristics include using prescription medications more frequently or in larger doses than prescribed, experiencing withdrawal symptoms when not using prescription medications, and continuing to use prescription medications despite health problems or relationship issues. A simple example is a person who uses prescription sedatives to sleep, despite knowing that it is affecting their physical and mental health.</li>
+<li><strong>Alcohol Abuse</strong>: Alcohol abuse refers to the excessive consumption of alcohol, which can lead to physical and mental health problems. Key characteristics include drinking large amounts of alcohol, drinking frequently, and experiencing withdrawal symptoms when not drinking. A simple example is a person who drinks a bottle of wine every night, despite knowing that it is affecting their relationships and work performance.</li>
+<li><strong>Tobacco Abuse</strong>: Tobacco abuse involves the misuse of tobacco products, such as cigarettes, cigars, and chewing tobacco. Key characteristics include smoking or using tobacco products regularly, experiencing withdrawal symptoms when not using tobacco, and continuing to use tobacco despite health problems. A simple example is a person who smokes a pack of cigarettes every day, despite having a persistent cough and shortness of breath.</li>
+<li><strong>Cannabis Abuse</strong>: Cannabis abuse refers to the misuse of marijuana or cannabis products, which can lead to physical and mental health problems. Key characteristics include using cannabis regularly, experiencing withdrawal symptoms when not using cannabis, and continuing to use cannabis despite problems with relationships, work, or school. A simple example is a person who uses cannabis every day, despite knowing that it is affecting their motivation and concentration.</li>
+<li><strong>Stimulant Abuse</strong>: Stimulant abuse involves the misuse of stimulant substances, such as cocaine, methamphetamine, and prescription stimulants. Key characteristics include using stimulants regularly, experiencing withdrawal symptoms when not using stimulants, and continuing to use stimulants despite health problems or relationship issues. A simple example is a person who uses cocaine on weekends, despite knowing that it is affecting their relationships and work performance.</li>
+<li><strong>Opioid Abuse</strong>: Opioid abuse refers to the misuse of opioid substances, such as heroin, prescription painkillers, and fentanyl. Key characteristics include using opioids regularly, experiencing withdrawal symptoms when not using opioids, and continuing to use opioids despite health problems or relationship issues. A simple example is a person who uses prescription painkillers more frequently or in larger doses than prescribed, despite knowing that it is affecting their physical and mental health.</li>
+<li><strong>Hallucinogen Abuse</strong>: Hallucinogen abuse involves the misuse of hallucinogenic substances, such as LSD, psilocybin, and PCP. Key characteristics include using hallucinogens regularly, experiencing withdrawal symptoms when not using hallucinogens, and continuing to use hallucinogens despite health problems or relationship issues. A simple example is a person who uses LSD at parties, despite knowing that it is affecting their perception and judgment.</li>
+<li><strong>Inhalant Abuse</strong>: Inhalant abuse refers to the misuse of inhalant substances, such as solvents, aerosols, and gases. Key characteristics include using inhalants regularly, experiencing withdrawal symptoms when not using inhalants, and continuing to use inhalants despite health problems or relationship issues. A simple example is a person who uses spray paint to get high, despite knowing that it is affecting their brain and nervous system.</li>
+<li><strong>Prescription Drug Abuse</strong>: Prescription drug abuse involves the misuse of prescription medications, such as sedatives, tranquilizers, and painkillers. Key characteristics include using prescription medications more frequently or in larger doses than prescribed, experiencing withdrawal symptoms when not using prescription medications, and continuing to use prescription medications despite health problems or relationship issues. A simple example is a person who uses prescription sedatives to sleep, despite knowing that it is affecting their physical and mental health.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
 <p>The following table summarizes the main differences between the categories of substance abuse:</p>
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Substance</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Alcohol Abuse</td>
-<td>Alcohol</td>
-<td>Excessive consumption, withdrawal symptoms</td>
-<td>Drinking a bottle of wine every night</td>
-</tr>
-<tr>
-<td>Tobacco Abuse</td>
-<td>Tobacco</td>
-<td>Regular use, withdrawal symptoms</td>
-<td>Smoking a pack of cigarettes every day</td>
-</tr>
-<tr>
-<td>Cannabis Abuse</td>
-<td>Cannabis</td>
-<td>Regular use, withdrawal symptoms</td>
-<td>Using cannabis every day</td>
-</tr>
-<tr>
-<td>Stimulant Abuse</td>
-<td>Stimulants</td>
-<td>Regular use, withdrawal symptoms</td>
-<td>Using cocaine on weekends</td>
-</tr>
-<tr>
-<td>Opioid Abuse</td>
-<td>Opioids</td>
-<td>Regular use, withdrawal symptoms</td>
-<td>Using prescription painkillers more frequently than prescribed</td>
-</tr>
-<tr>
-<td>Hallucinogen Abuse</td>
-<td>Hallucinogens</td>
-<td>Regular use, withdrawal symptoms</td>
-<td>Using LSD at parties</td>
-</tr>
-<tr>
-<td>Inhalant Abuse</td>
-<td>Inhalants</td>
-<td>Regular use, withdrawal symptoms</td>
-<td>Using spray paint to get high</td>
-</tr>
-<tr>
-<td>Prescription Drug Abuse</td>
-<td>Prescription medications</td>
-<td>Using more frequently or in larger doses than prescribed</td>
-<td>Using prescription sedatives to sleep</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Substance</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Alcohol Abuse</td><td>Alcohol</td><td>Excessive consumption, withdrawal symptoms</td><td>Drinking a bottle of wine every night</td></tr>
+<tr><td>Tobacco Abuse</td><td>Tobacco</td><td>Regular use, withdrawal symptoms</td><td>Smoking a pack of cigarettes every day</td></tr>
+<tr><td>Cannabis Abuse</td><td>Cannabis</td><td>Regular use, withdrawal symptoms</td><td>Using cannabis every day</td></tr>
+<tr><td>Stimulant Abuse</td><td>Stimulants</td><td>Regular use, withdrawal symptoms</td><td>Using cocaine on weekends</td></tr>
+<tr><td>Opioid Abuse</td><td>Opioids</td><td>Regular use, withdrawal symptoms</td><td>Using prescription painkillers more frequently than prescribed</td></tr>
+<tr><td>Hallucinogen Abuse</td><td>Hallucinogens</td><td>Regular use, withdrawal symptoms</td><td>Using LSD at parties</td></tr>
+<tr><td>Inhalant Abuse</td><td>Inhalants</td><td>Regular use, withdrawal symptoms</td><td>Using spray paint to get high</td></tr>
+<tr><td>Prescription Drug Abuse</td><td>Prescription medications</td><td>Using more frequently or in larger doses than prescribed</td><td>Using prescription sedatives to sleep</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The categories of substance abuse are interconnected, as individuals may misuse multiple substances simultaneously or over time. For example, a person who abuses alcohol may also abuse tobacco or prescription medications. Additionally, the misuse of one substance can increase the risk of misusing other substances. Understanding the relationships between the categories of substance abuse is essential for developing effective treatment and prevention strategies.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of substance abuse includes eight main categories, each with distinct characteristics and examples, which are interconnected and can have complex effects on individuals and society.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-        <a href="/health/sleep-hygiene/what-is.html" class="related-link">Sleep Hygiene</a>
-        <a href="/health/stress-management/what-is.html" class="related-link">Stress Management</a>
-        <a href="/health/toxicology/what-is.html" class="related-link">Toxicology</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -485,6 +487,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

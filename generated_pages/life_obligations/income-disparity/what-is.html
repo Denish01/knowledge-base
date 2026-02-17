@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/income-disparity/what-is.html">Income Disparity</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Income Disparity?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Income disparity refers to the uneven distribution of income among individuals, households, or groups within a population, resulting in significant differences in the amount of money people have to spend or save.</p>
-
 <p>Income disparity is a complex issue that arises from a variety of factors, including differences in education, job opportunities, and access to resources. In a society with income disparity, some people may have very high incomes, while others may struggle to make ends meet. This can lead to differences in the quality of life, with those having higher incomes generally having better access to healthcare, education, and other essential services. Income disparity can also lead to social and economic problems, such as poverty, crime, and social unrest.</p>
-
 <p>One of the main reasons for income disparity is the difference in earning potential among various occupations. Certain jobs, such as those in the medical or financial fields, often require specialized education and training, and therefore tend to offer higher salaries. On the other hand, jobs that require less education or training, such as retail or food service work, often pay lower wages. Additionally, factors such as discrimination, lack of access to education and job opportunities, and economic conditions can also contribute to income disparity.</p>
-
 <p>Another factor that contributes to income disparity is the distribution of wealth. Wealthy individuals and families often have more opportunities to invest and accumulate more wealth, which can further widen the income gap. This can create a cycle of poverty, where those who are already disadvantaged have limited opportunities to improve their economic situation. Furthermore, income disparity can also be affected by government policies, such as taxation and social welfare programs, which can either exacerbate or alleviate the issue.</p>
-
 <p>Key components of income disparity include:</p>
 <ul>
-  <li>Differences in education and job opportunities, which can affect earning potential</li>
-  <li>Variations in access to resources, such as healthcare and social services</li>
-  <li>Discrimination and bias, which can limit opportunities for certain groups</li>
-  <li>Economic conditions, such as recession or inflation, which can affect income levels</li>
-  <li>Government policies, such as taxation and social welfare programs, which can influence income distribution</li>
-  <li>Access to credit and financial services, which can affect an individual's ability to accumulate wealth</li>
+<li>Differences in education and job opportunities, which can affect earning potential</li>
+<li>Variations in access to resources, such as healthcare and social services</li>
+<li>Discrimination and bias, which can limit opportunities for certain groups</li>
+<li>Economic conditions, such as recession or inflation, which can affect income levels</li>
+<li>Government policies, such as taxation and social welfare programs, which can influence income distribution</li>
+<li>Access to credit and financial services, which can affect an individual's ability to accumulate wealth</li>
 </ul>
-
 <p>Despite the importance of understanding income disparity, there are several common misconceptions about the issue. Some people believe that:</p>
 <ul>
-  <li>Income disparity is solely the result of individual effort or lack thereof, ignoring the role of systemic factors</li>
-  <li>Everyone has an equal opportunity to succeed, regardless of their background or circumstances</li>
-  <li>Income disparity is only a problem for the very poor, and does not affect the broader economy or society</li>
-  <li>Government intervention is always the solution to income disparity, without considering the potential unintended consequences of such policies</li>
+<li>Income disparity is solely the result of individual effort or lack thereof, ignoring the role of systemic factors</li>
+<li>Everyone has an equal opportunity to succeed, regardless of their background or circumstances</li>
+<li>Income disparity is only a problem for the very poor, and does not affect the broader economy or society</li>
+<li>Government intervention is always the solution to income disparity, without considering the potential unintended consequences of such policies</li>
 </ul>
-
 <p>A simple example of income disparity can be seen in a small town where there are two main employers: a factory and a hospital. The factory workers may earn minimum wage, while the hospital workers, such as doctors and nurses, earn much higher salaries. This can lead to a significant difference in the standard of living between the two groups, with the hospital workers able to afford better housing, education, and healthcare.</p>
-
 <p>In summary, income disparity is a complex issue that arises from a variety of factors, including differences in education, job opportunities, and access to resources, and can have significant social and economic consequences.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/household-size/what-is.html" class="related-link">Household Size</a>
-        <a href="/life_obligations/income-adjustment/what-is.html" class="related-link">Income Adjustment</a>
-        <a href="/life_obligations/income-eligibility/what-is.html" class="related-link">Income Eligibility</a>
-        <a href="/life_obligations/income-shares-model/what-is.html" class="related-link">Income Shares Model</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

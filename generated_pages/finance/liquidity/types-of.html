@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of liquidity - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of liquidity - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/finance/liquidity/types-of.html">
     <meta property="og:title" content="Types of Liquidity">
-    <meta property="og:description" content="A clear, simple explanation of liquidity - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of liquidity - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/finance/liquidity/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Liquidity">
-    <meta name="twitter:description" content="A clear, simple explanation of liquidity - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of liquidity - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Liquidity - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Finance", "item": "https://360library.com/#finance"}, {"@type": "ListItem", "position": 3, "name": "Liquidity", "item": "https://360library.com/finance/liquidity/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Liquidity", "description": "A clear, simple explanation of liquidity - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/finance/liquidity/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/finance/liquidity/types-of.html"}, "about": {"@type": "Thing", "name": "Liquidity"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Liquidity", "description": "A clear, simple explanation of types of liquidity - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/finance/liquidity/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/finance/liquidity/types-of.html"}, "about": {"@type": "Thing", "name": "Liquidity"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,99 +388,79 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#finance">Finance</a><span>&rsaquo;</span><a href="/finance/liquidity/what-is.html">Liquidity</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #1B4D8E">
     <main class="article-main">
         <article>
             <h1>Types of Liquidity</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>The concept of liquidity refers to the ability to buy or sell an asset quickly and at a fair price. Understanding the different types of liquidity is crucial in various fields, including finance, economics, and business, as it helps individuals and organizations make informed decisions about investments, risk management, and financial planning. Classification of liquidity types matters because it allows for a more nuanced understanding of the complex factors that influence the ease of buying or selling assets, ultimately contributing to more effective financial management and decision-making. By categorizing liquidity into distinct types, individuals can better navigate financial markets, assess risks, and optimize their investment strategies.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the primary types of liquidity, each with its unique characteristics and examples:</p>
-
-<p>1. <strong>Market Liquidity</strong></p>
+<ol>
+<li><strong>Market Liquidity</strong></li>
+</ol>
 <ul>
-  <li>Definition: Market liquidity refers to the ability to buy or sell a large quantity of an asset quickly and at a fair price without significantly affecting the market price. It is a measure of how easily an asset can be traded in a market.</li>
-  <li>Key Characteristics: Depth, breadth, and resilience are key characteristics of market liquidity. Depth refers to the ability to trade large volumes, breadth refers to the number of participants, and resilience refers to the market's ability to absorb shocks.</li>
-  <li>Example: A stock with high market liquidity can be sold quickly without causing a significant drop in its price, even if a large quantity is being sold.</li>
+<li>Definition: Market liquidity refers to the ability to buy or sell a large quantity of an asset quickly and at a fair price without significantly affecting the market price. It is a measure of how easily an asset can be traded in a market.</li>
+<li>Key Characteristics: Depth, breadth, and resilience are key characteristics of market liquidity. Depth refers to the ability to trade large volumes, breadth refers to the number of participants, and resilience refers to the market's ability to absorb shocks.</li>
+<li>Example: A stock with high market liquidity can be sold quickly without causing a significant drop in its price, even if a large quantity is being sold.</li>
 </ul>
-
-<p>2. <strong>Funding Liquidity</strong></p>
+<ol>
+<li><strong>Funding Liquidity</strong></li>
+</ol>
 <ul>
-  <li>Definition: Funding liquidity refers to the ability of a financial institution or individual to meet their short-term financial obligations, such as paying debts or covering operational costs. It is about having sufficient funds or access to funds when needed.</li>
-  <li>Key Characteristics: Funding liquidity is characterized by the availability of cash, access to credit lines, and the ability to raise capital quickly.</li>
-  <li>Example: A company with strong funding liquidity can easily pay its employees and suppliers on time, even during periods of low sales or unexpected expenses.</li>
+<li>Definition: Funding liquidity refers to the ability of a financial institution or individual to meet their short-term financial obligations, such as paying debts or covering operational costs. It is about having sufficient funds or access to funds when needed.</li>
+<li>Key Characteristics: Funding liquidity is characterized by the availability of cash, access to credit lines, and the ability to raise capital quickly.</li>
+<li>Example: A company with strong funding liquidity can easily pay its employees and suppliers on time, even during periods of low sales or unexpected expenses.</li>
 </ul>
-
-<p>3. <strong>Accounting Liquidity</strong></p>
+<ol>
+<li><strong>Accounting Liquidity</strong></li>
+</ol>
 <ul>
-  <li>Definition: Accounting liquidity, often referred to as current liquidity, measures a company's ability to pay its short-term debts using its current assets. It is an important indicator of a company's financial health.</li>
-  <li>Key Characteristics: The key characteristics include the ratio of current assets to current liabilities, the ability to convert assets into cash quickly, and the management of working capital.</li>
-  <li>Example: A company with high accounting liquidity has a strong current ratio, indicating it can easily cover its short-term debts with its current assets.</li>
+<li>Definition: Accounting liquidity, often referred to as current liquidity, measures a company's ability to pay its short-term debts using its current assets. It is an important indicator of a company's financial health.</li>
+<li>Key Characteristics: The key characteristics include the ratio of current assets to current liabilities, the ability to convert assets into cash quickly, and the management of working capital.</li>
+<li>Example: A company with high accounting liquidity has a strong current ratio, indicating it can easily cover its short-term debts with its current assets.</li>
 </ul>
-
-<p>4. <strong>Operational Liquidity</strong></p>
+<ol>
+<li><strong>Operational Liquidity</strong></li>
+</ol>
 <ul>
-  <li>Definition: Operational liquidity refers to the efficiency with which a company can manage its daily operations and convert its inventory into sales, thereby generating cash. It is about the smooth functioning of a business's day-to-day activities.</li>
-  <li>Key Characteristics: Key characteristics include inventory turnover, accounts receivable and payable management, and the overall operational efficiency.</li>
-  <li>Example: A retail store with high operational liquidity can quickly sell its inventory, collect payments from customers, and pay its suppliers, maintaining a healthy cash flow.</li>
+<li>Definition: Operational liquidity refers to the efficiency with which a company can manage its daily operations and convert its inventory into sales, thereby generating cash. It is about the smooth functioning of a business's day-to-day activities.</li>
+<li>Key Characteristics: Key characteristics include inventory turnover, accounts receivable and payable management, and the overall operational efficiency.</li>
+<li>Example: A retail store with high operational liquidity can quickly sell its inventory, collect payments from customers, and pay its suppliers, maintaining a healthy cash flow.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
 <p>The following table summarizes the main differences between the types of liquidity:</p>
-
-<table class="comparison-table"><thead><tr>
-<th>Type of Liquidity</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Market Liquidity</td>
-<td>Ability to buy/sell assets quickly at a fair price</td>
-<td>Depth, breadth, resilience</td>
-<td>Selling a stock without affecting its price</td>
-</tr>
-<tr>
-<td>Funding Liquidity</td>
-<td>Ability to meet short-term financial obligations</td>
-<td>Availability of cash, access to credit, ability to raise capital</td>
-<td>Paying debts on time</td>
-</tr>
-<tr>
-<td>Accounting Liquidity</td>
-<td>Ability to pay short-term debts with current assets</td>
-<td>Current ratio, asset conversion, working capital management</td>
-<td>Covering short-term debts with current assets</td>
-</tr>
-<tr>
-<td>Operational Liquidity</td>
-<td>Efficiency in managing daily operations and converting inventory to sales</td>
-<td>Inventory turnover, accounts management, operational efficiency</td>
-<td>Selling inventory quickly and maintaining cash flow</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Liquidity</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Market Liquidity</td><td>Ability to buy/sell assets quickly at a fair price</td><td>Depth, breadth, resilience</td><td>Selling a stock without affecting its price</td></tr>
+<tr><td>Funding Liquidity</td><td>Ability to meet short-term financial obligations</td><td>Availability of cash, access to credit, ability to raise capital</td><td>Paying debts on time</td></tr>
+<tr><td>Accounting Liquidity</td><td>Ability to pay short-term debts with current assets</td><td>Current ratio, asset conversion, working capital management</td><td>Covering short-term debts with current assets</td></tr>
+<tr><td>Operational Liquidity</td><td>Efficiency in managing daily operations and converting inventory to sales</td><td>Inventory turnover, accounts management, operational efficiency</td><td>Selling inventory quickly and maintaining cash flow</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different types of liquidity are interconnected and can impact one another. For instance, strong market liquidity can contribute to funding liquidity by providing a ready market for assets, which can be sold to meet financial obligations. Similarly, operational liquidity affects accounting liquidity by influencing the conversion of inventory into cash, which is then used to pay short-term debts. Understanding these relationships is crucial for managing liquidity effectively across all aspects of a business or investment portfolio.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification of liquidity into market, funding, accounting, and operational categories provides a comprehensive framework for understanding the various aspects of liquidity and how they contribute to the overall financial health and stability of individuals, businesses, and financial institutions.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/finance/capital-gains-tax/what-is.html" class="related-link">Capital Gains Tax</a>
-        <a href="/finance/emergency-fund/what-is.html" class="related-link">Emergency Fund</a>
-        <a href="/finance/index-fund/what-is.html" class="related-link">Index Fund</a>
-        <a href="/finance/inflation-rate/what-is.html" class="related-link">Inflation Rate</a>
-        <a href="/finance/market-capitalization/what-is.html" class="related-link">Market Capitalization</a>
-        <a href="/finance/mortgage-amortization/what-is.html" class="related-link">Mortgage Amortization</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -479,6 +504,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of epidemiology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of epidemiology vs - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/epidemiology/vs.html">
     <meta property="og:title" content="Epidemiology Compared">
-    <meta property="og:description" content="A clear, simple explanation of epidemiology - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of epidemiology vs - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/epidemiology/vs.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Epidemiology Compared">
-    <meta name="twitter:description" content="A clear, simple explanation of epidemiology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of epidemiology vs - definition, key concepts, examples, and common misconceptions.">
     <title>Epidemiology Compared - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Epidemiology", "item": "https://360library.com/health/epidemiology/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Comparison"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Epidemiology Compared", "description": "A clear, simple explanation of epidemiology - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/epidemiology/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/epidemiology/vs.html"}, "about": {"@type": "Thing", "name": "Epidemiology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Epidemiology Compared", "description": "A clear, simple explanation of epidemiology vs - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/epidemiology/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/epidemiology/vs.html"}, "about": {"@type": "Thing", "name": "Epidemiology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/epidemiology/what-is.html">Epidemiology</a><span>&rsaquo;</span>Comparison
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Epidemiology Compared</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Epidemiology vs other fields of study refers to the comparison of epidemiology, the study of the distribution and determinants of health-related events, diseases, or health-related characteristics among populations, with other disciplines that also examine health and disease.</p>
-
 <p>Epidemiology is a fundamental science that seeks to understand the causes, patterns, and effects of health and disease conditions in defined populations. It is distinct from other fields, such as medicine, which focuses on the diagnosis and treatment of individual patients, and sociology, which examines the social structures and relationships that shape human behavior. Epidemiology uses a range of study designs, including observational studies and experiments, to investigate the relationships between risk factors, such as environmental exposures or genetic predispositions, and health outcomes.</p>
-
 <p>One of the key differences between epidemiology and other fields is its focus on populations rather than individuals. While clinicians may focus on treating a single patient, epidemiologists examine the health of entire communities or populations, seeking to identify patterns and trends that can inform public health interventions. This population-level perspective allows epidemiologists to develop and evaluate strategies for preventing and controlling disease, such as vaccination programs or health education campaigns. Epidemiology also draws on a range of disciplines, including biology, statistics, and social sciences, to understand the complex interactions between health, disease, and the environment.</p>
-
 <p>Epidemiology is often compared to other fields, such as biostatistics, which focuses on the statistical analysis of health data, and health services research, which examines the organization and delivery of healthcare. While these fields share some similarities with epidemiology, they have distinct goals and methods. Biostatistics, for example, is primarily concerned with the development and application of statistical techniques to analyze health data, while health services research focuses on evaluating the effectiveness and efficiency of healthcare systems.</p>
-
 <p>Key components of epidemiology include:</p>
 <ul>
-  <li>Study design, which refers to the plan and structure of an epidemiological study</li>
-  <li>Data collection, which involves gathering information on health-related events or characteristics</li>
-  <li>Data analysis, which uses statistical techniques to examine the relationships between variables</li>
-  <li>Interpretation, which involves drawing conclusions from the results of a study</li>
-  <li>Communication, which is the process of sharing findings with others, such as policymakers or healthcare professionals</li>
-  <li>Evaluation, which involves assessing the validity and reliability of a study's findings</li>
+<li>Study design, which refers to the plan and structure of an epidemiological study</li>
+<li>Data collection, which involves gathering information on health-related events or characteristics</li>
+<li>Data analysis, which uses statistical techniques to examine the relationships between variables</li>
+<li>Interpretation, which involves drawing conclusions from the results of a study</li>
+<li>Communication, which is the process of sharing findings with others, such as policymakers or healthcare professionals</li>
+<li>Evaluation, which involves assessing the validity and reliability of a study's findings</li>
 </ul>
-
 <p>Despite its importance, epidemiology is often misunderstood, and several common misconceptions exist. These include:</p>
 <ul>
-  <li>The idea that epidemiology is only concerned with infectious diseases, when in fact it examines a broad range of health conditions, including chronic diseases and injuries</li>
-  <li>The notion that epidemiology is solely focused on identifying risk factors, when in fact it seeks to understand the complex interactions between risk factors, health outcomes, and the environment</li>
-  <li>The belief that epidemiology is a purely theoretical discipline, when in fact it is deeply rooted in practical applications, such as disease surveillance and outbreak investigation</li>
-  <li>The assumption that epidemiology is only relevant to developing countries, when in fact it is essential for understanding and addressing health issues in all populations, regardless of their socioeconomic or geographic context</li>
+<li>The idea that epidemiology is only concerned with infectious diseases, when in fact it examines a broad range of health conditions, including chronic diseases and injuries</li>
+<li>The notion that epidemiology is solely focused on identifying risk factors, when in fact it seeks to understand the complex interactions between risk factors, health outcomes, and the environment</li>
+<li>The belief that epidemiology is a purely theoretical discipline, when in fact it is deeply rooted in practical applications, such as disease surveillance and outbreak investigation</li>
+<li>The assumption that epidemiology is only relevant to developing countries, when in fact it is essential for understanding and addressing health issues in all populations, regardless of their socioeconomic or geographic context</li>
 </ul>
-
 <p>A real-world example of epidemiology in action is the investigation of a foodborne outbreak. Suppose a cluster of cases of food poisoning is reported in a particular region, and epidemiologists are called in to investigate. They would use a range of study designs, including case-control studies and cohort studies, to identify the source of the outbreak and the factors that contributed to its spread. They might collect data on the food consumption habits of affected individuals, as well as environmental samples from suspected food sources, and use statistical analysis to examine the relationships between these variables. The findings of the investigation would inform public health interventions, such as recalling contaminated food products or implementing new food safety regulations.</p>
-
 <p>In summary, epidemiology vs other fields of study refers to the comparison of epidemiology, a fundamental science that examines the distribution and determinants of health-related events, diseases, or health-related characteristics among populations, with other disciplines that also investigate health and disease, and is distinguished by its focus on populations, use of a range of study designs, and emphasis on understanding the complex interactions between health, disease, and the environment.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/disease-prevention/what-is.html" class="related-link">Disease Prevention</a>
-        <a href="/health/endocrine-system/what-is.html" class="related-link">Endocrine System</a>
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/gastroenterology/what-is.html" class="related-link">Gastroenterology</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

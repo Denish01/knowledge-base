@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of epidemiology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="Clear examples of epidemiology from everyday life. Concrete illustrations to help you understand the concept.">
     <link rel="canonical" href="https://360library.com/health/epidemiology/example-of.html">
     <meta property="og:title" content="Example of Epidemiology">
-    <meta property="og:description" content="A clear, simple explanation of epidemiology - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="Clear examples of epidemiology from everyday life. Concrete illustrations to help you understand the concept.">
     <meta property="og:url" content="https://360library.com/health/epidemiology/example-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Example of Epidemiology">
-    <meta name="twitter:description" content="A clear, simple explanation of epidemiology - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="Clear examples of epidemiology from everyday life. Concrete illustrations to help you understand the concept.">
     <title>Example of Epidemiology - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Epidemiology", "item": "https://360library.com/health/epidemiology/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Example"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Example of Epidemiology", "description": "A clear, simple explanation of epidemiology - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/epidemiology/example-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/epidemiology/example-of.html"}, "about": {"@type": "Thing", "name": "Epidemiology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Example of Epidemiology", "description": "Clear examples of epidemiology from everyday life. Concrete illustrations to help you understand the concept.", "url": "https://360library.com/health/epidemiology/example-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/epidemiology/example-of.html"}, "about": {"@type": "Thing", "name": "Epidemiology"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,42 +388,44 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/epidemiology/what-is.html">Epidemiology</a><span>&rsaquo;</span>Example
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Example of Epidemiology</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION</p>
+            
+
+            <ol>
+<li>INTRODUCTION</li>
+</ol>
 <p>Epidemiology is the study of how diseases spread and can be controlled in populations. It involves looking at the causes, patterns, and effects of health issues in groups of people. Epidemiologists use this information to develop strategies for preventing and treating diseases. By understanding how diseases spread, epidemiologists can help keep people healthy and save lives.</p>
-
-<p>2. EVERYDAY EXAMPLES</p>
+<ol>
+<li>EVERYDAY EXAMPLES</li>
+</ol>
 <p>In everyday life, epidemiology is used in many ways. For example, a school nurse might track the number of students who get the flu each year to see if the flu vaccine is working. If the number of flu cases goes down after the vaccine is given, the nurse knows the vaccine is effective. In a community, epidemiologists might study the connection between air pollution and asthma. They might find that people who live near busy roads are more likely to have asthma attacks. In a hospital, epidemiologists might look at how often patients get infections after surgery. If they find that patients who have surgery in the morning are less likely to get infections than those who have surgery in the afternoon, they might change the way surgeries are scheduled. In a small town, epidemiologists might investigate an outbreak of food poisoning at a restaurant. They might find that the people who got sick all ate the same type of food, and then they can warn others not to eat that food.</p>
-
-<p>3. NOTABLE EXAMPLES</p>
+<ol>
+<li>NOTABLE EXAMPLES</li>
+</ol>
 <p>There are many well-known examples of epidemiology in action. One example is the work of John Snow, who studied a cholera outbreak in London. He found that people who got cholera all got their water from the same pump, and he convinced the authorities to remove the handle from the pump. This stopped the outbreak. Another example is the study of the connection between smoking and lung cancer. Epidemiologists found that people who smoke are much more likely to get lung cancer than those who do not smoke. This led to warnings on cigarette packs and public health campaigns to reduce smoking. A third example is the investigation of the source of a Legionnaires' disease outbreak at a hotel. Epidemiologists found that the bacteria that cause the disease were in the hotel's air conditioning system, and they were able to stop the outbreak by cleaning the system.</p>
-
-<p>4. EDGE CASES</p>
+<ol>
+<li>EDGE CASES</li>
+</ol>
 <p>Epidemiology can also be used in unusual or unexpected ways. For example, epidemiologists might study the spread of a disease in animals, such as a outbreak of rabies in a population of raccoons. They might find that the disease is spreading quickly because the raccoons are coming into contact with each other at food sources. Another example is the study of the connection between a disease and a specific occupation. For instance, epidemiologists might find that miners are more likely to get a certain type of lung disease due to their exposure to dust in the mines.</p>
-
-<p>5. NON-EXAMPLES</p>
+<ol>
+<li>NON-EXAMPLES</li>
+</ol>
 <p>Some things might seem like epidemiology, but are not. For example, a doctor treating a single patient for a disease is not doing epidemiology, because epidemiology involves studying groups of people. A study of the chemical composition of a disease-causing agent is also not epidemiology, because it does not involve looking at how the disease spreads in a population. A public health campaign to promote healthy eating is not epidemiology, because it does not involve studying the causes or patterns of a specific disease.</p>
-
-<p>6. PATTERN</p>
+<ol>
+<li>PATTERN</li>
+</ol>
 <p>All valid examples of epidemiology have one thing in common: they involve studying the causes, patterns, and effects of health issues in groups of people. Whether it is a school nurse tracking the flu, a researcher studying the connection between smoking and lung cancer, or an investigator looking into an outbreak of food poisoning, epidemiology always involves looking at how diseases spread and how they can be controlled. By understanding these patterns, epidemiologists can help keep people healthy and save lives. Epidemiology is a crucial tool for protecting public health, and its applications can be seen in many different contexts and scales.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/disease-prevention/what-is.html" class="related-link">Disease Prevention</a>
-        <a href="/health/endocrine-system/what-is.html" class="related-link">Endocrine System</a>
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/gastroenterology/what-is.html" class="related-link">Gastroenterology</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/pediatrics/what-is.html" class="related-link">Pediatrics</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -423,6 +470,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

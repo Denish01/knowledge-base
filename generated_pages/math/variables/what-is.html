@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#math">Math</a><span>&rsaquo;</span><a href="/math/variables/what-is.html">Variables</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #D97706">
     <main class="article-main">
         <article>
             <h1>What Is Variables?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Variables is a fundamental concept in mathematics, science, and programming that refers to a symbol or name that represents a value that can change or vary.</p>
-
 <p>In simple terms, a variable is a container that holds a value. This value can be a number, a word, or even a sentence. The key idea behind variables is that they allow us to work with unknown or changing values without having to know the exact value at the start. Variables are used to represent quantities that can be measured, calculated, or manipulated in some way. For example, in a math problem, a variable might represent the unknown value that we are trying to solve for.</p>
-
 <p>In science and programming, variables are used to store and manipulate data. They can be used to represent a wide range of values, from simple numbers to complex data structures. Variables can also be used to perform calculations, make decisions, and control the flow of a program or experiment. The use of variables allows us to write flexible and reusable code, which is essential in many fields. By using variables, we can create programs and models that can be applied to a wide range of situations, without having to start from scratch each time.</p>
-
 <p>The concept of variables is also closely related to the idea of constants. While variables represent changing or unknown values, constants represent fixed values that do not change. The use of variables and constants together allows us to create powerful and flexible models that can be used to describe and analyze a wide range of phenomena. In addition, variables can be used to represent relationships between different quantities, which is essential in many fields, including physics, engineering, and economics.</p>
-
 <p>The key components of variables include:</p>
 <ul>
-  <li>A name or symbol that represents the variable</li>
-  <li>A value that is assigned to the variable</li>
-  <li>A data type that determines the type of value that can be stored in the variable</li>
-  <li>A scope that determines where the variable can be used</li>
-  <li>A lifetime that determines how long the variable exists</li>
-  <li>A way to manipulate and change the value of the variable</li>
+<li>A name or symbol that represents the variable</li>
+<li>A value that is assigned to the variable</li>
+<li>A data type that determines the type of value that can be stored in the variable</li>
+<li>A scope that determines where the variable can be used</li>
+<li>A lifetime that determines how long the variable exists</li>
+<li>A way to manipulate and change the value of the variable</li>
 </ul>
-
 <p>However, there are some common misconceptions about variables that people often get wrong. These include:</p>
 <ul>
-  <li>Thinking that variables are only used in math and science, when in fact they are used in many fields, including programming and engineering</li>
-  <li>Believing that variables are only used to represent numbers, when in fact they can represent a wide range of values, including words and sentences</li>
-  <li>Assuming that variables are always changing, when in fact they can also represent fixed values</li>
-  <li>Thinking that variables are only used in complex problems, when in fact they can be used in simple problems as well</li>
+<li>Thinking that variables are only used in math and science, when in fact they are used in many fields, including programming and engineering</li>
+<li>Believing that variables are only used to represent numbers, when in fact they can represent a wide range of values, including words and sentences</li>
+<li>Assuming that variables are always changing, when in fact they can also represent fixed values</li>
+<li>Thinking that variables are only used in complex problems, when in fact they can be used in simple problems as well</li>
 </ul>
-
 <p>A real-world example of a variable can be seen in a simple recipe. Let's say we are making a cake, and the recipe calls for a certain amount of sugar. The amount of sugar can be represented by a variable, such as "sugar_amount". The value of this variable can be changed depending on the type of cake we are making, and the recipe can be adjusted accordingly. For example, if we are making a chocolate cake, the value of "sugar_amount" might be 2 cups, while if we are making a vanilla cake, the value might be 1.5 cups.</p>
-
 <p>In summary, variables are symbols or names that represent values that can change or vary, and are a fundamental concept in mathematics, science, and programming that allows us to work with unknown or changing values in a flexible and reusable way.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/math/absolute-value/what-is.html" class="related-link">Absolute Value</a>
-        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
-        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
-        <a href="/math/ratios/what-is.html" class="related-link">Ratios</a>
-        <a href="/math/square-roots/what-is.html" class="related-link">Square Roots</a>
-        <a href="/math/standard-deviation/what-is.html" class="related-link">Standard Deviation</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -4,86 +4,463 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A clear, simple explanation of parts of annual percentage rate - definition, key concepts, examples, and common misconceptions.">
-    <title>What is Parts Of Annual Percentage Rate? - Simple Explanation</title>
+    <link rel="canonical" href="https://360library.com/None">
+    
+    <title>What is Parts Of Annual Percentage Rate? - 360Library</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
-        h1 { color: #1a1a1a; }
-        h2 { color: #2a2a2a; margin-top: 32px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        p { margin-bottom: 16px; }
-        .example { background: #f5f5f5; padding: 16px; border-radius: 8px; margin: 16px 0; }
-        h3 { color: #3a3a3a; margin-top: 24px; }
-        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background: #f5f5f5; font-weight: 600; }
-        tr:nth-child(even) { background: #fafafa; }
+
+/* === Reset & Base === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #1F2937;
+    background: #FAFBFC;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: #1B4D8E; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* === Header === */
+.site-header {
+    background: #1B4D8E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 60px;
+}
+.site-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+.site-logo:hover { text-decoration: none; opacity: 0.9; }
+.site-logo span { color: #D97706; }
+
+/* Domain nav */
+.domain-nav { display: flex; gap: 4px; list-style: none; }
+.domain-nav a {
+    color: rgba(255,255,255,0.85);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.domain-nav a:hover { background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; }
+.domain-nav a.active { background: rgba(255,255,255,0.2); color: #fff; }
+
+/* Mobile hamburger (pure CSS) */
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.menu-toggle span, .menu-toggle span::before, .menu-toggle span::after {
+    display: block; width: 22px; height: 2px; background: #fff; position: relative; transition: 0.3s;
+}
+.menu-toggle span::before, .menu-toggle span::after { content: ''; position: absolute; left: 0; }
+.menu-toggle span::before { top: -7px; }
+.menu-toggle span::after { top: 7px; }
+#mobile-menu-state { display: none; }
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .domain-nav {
+        display: none; flex-direction: column; position: absolute;
+        top: 60px; left: 0; right: 0; background: #1B4D8E;
+        padding: 12px; gap: 2px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .domain-nav a { padding: 12px 16px; border-radius: 8px; }
+    #mobile-menu-state:checked ~ .header-inner .domain-nav { display: flex; }
+}
+
+/* === Footer === */
+.site-footer {
+    background: #111827;
+    color: #9CA3AF;
+    margin-top: 80px;
+    padding: 48px 24px 32px;
+}
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+.footer-brand .site-logo { font-size: 18px; display: inline-block; margin-bottom: 12px; }
+.footer-brand p { font-size: 14px; line-height: 1.6; max-width: 320px; }
+.footer-col h4 { color: #fff; font-size: 14px; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+.footer-col a { display: block; color: #9CA3AF; font-size: 14px; padding: 4px 0; transition: color 0.2s; text-decoration: none; }
+.footer-col a:hover { color: #fff; text-decoration: none; }
+.footer-bottom {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid #374151;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* === Breadcrumbs === */
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #6B7280;
+}
+.breadcrumbs a { color: #1B4D8E; }
+.breadcrumbs span { margin: 0 8px; color: #D1D5DB; }
+
+
+/* === Article Layout === */
+.article-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Main content */
+.article-main { min-width: 0; }
+.article-main article {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+}
+.article-main h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 24px;
+    line-height: 1.3;
+}
+.article-main h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
+}
+.article-main h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #374151;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+.article-main p {
+    margin-bottom: 16px;
+    color: #374151;
+}
+.article-main ul {
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+.article-main li {
+    margin-bottom: 8px;
+    color: #374151;
+}
+.article-main table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.article-main th, .article-main td {
+    border: 1px solid #E5E7EB;
+    padding: 12px 16px;
+    text-align: left;
+}
+.article-main th {
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
+    font-weight: 600;
+}
+.article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
+
+/* Calculator styles (preserve existing) */
+.article-main .calculator,
+.article-main .calc-container {
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 24px;
+    margin: 24px 0;
+}
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
+
+/* === Sidebar === */
+.article-sidebar {
+    position: sticky;
+    top: 76px;
+}
+.sidebar-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+}
+.sidebar-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #E8F0FE;
+}
+.sidebar-card .angle-nav { list-style: none; }
+.sidebar-card .angle-nav li { margin-bottom: 4px; }
+.sidebar-card .angle-nav a {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4B5563;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+}
+.sidebar-card .angle-nav a:hover {
+    background: #F3F4F6;
+    color: #1B4D8E;
+    text-decoration: none;
+}
+.sidebar-card .angle-nav a.active {
+    background: #E8F0FE;
+    color: #1B4D8E;
+    font-weight: 600;
+}
+
+/* Back to domain link */
+.sidebar-card .back-link {
+    display: block;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #E5E7EB;
+    font-size: 13px;
+    color: #6B7280;
+}
+.sidebar-card .back-link:hover { color: #1B4D8E; text-decoration: none; }
+
+@media (max-width: 900px) {
+    .article-wrapper {
+        grid-template-columns: 1fr;
+        padding: 16px 16px 0;
+    }
+    .article-sidebar {
+        position: static;
+        order: -1;
+    }
+    .article-main article { padding: 24px; }
+    .article-main h1 { font-size: 24px; }
+}
+
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
+
+/* === Related Concepts === */
+.related-concepts {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid #E8F0FE;
+}
+.related-concepts h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+}
+.related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.related-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #F3F4F6;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1B4D8E;
+    font-weight: 500;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+.related-link:hover {
+    background: #E8F0FE;
+    text-decoration: none;
+}
+
     </style>
+    
 </head>
 <body>
-    <article>
-        <h1>What is Parts Of Annual Percentage Rate?</h1>
+<input type="checkbox" id="mobile-menu-state" aria-hidden="true">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/" class="site-logo">360 <span>Library</span></a>
+        <label for="mobile-menu-state" class="menu-toggle" aria-label="Toggle menu"><span></span></label>
+        <ul class="domain-nav">
+        <li><a href="/#economics">Economics</a></li>
+        <li><a href="/#finance">Finance</a></li>
+        <li><a href="/#health">Health</a></li>
+        <li><a href="/#life_obligations">Life Obligations</a></li>
+        <li><a href="/#math">Math</a></li>
+        <li><a href="/#science">Science</a></li>
+        </ul>
+    </div>
+</header>
 
-        
 
-        <p>1. INTRODUCTION:</p>
+
+<div class="article-wrapper" style="--domain-color: #1B4D8E">
+    <main class="article-main">
+        <article>
+            <h1>What is Parts Of Annual Percentage Rate?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
+
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>The Annual Percentage Rate (APR) is a crucial concept in personal finance, representing the total cost of borrowing money, including interest rates and fees. Understanding the parts of APR is essential for individuals to make informed decisions when taking out loans or credit cards. Classification of APR components matters because it helps consumers navigate the complex world of lending, enabling them to compare different offers and choose the most suitable option for their needs. By breaking down APR into its constituent parts, individuals can better comprehend the true cost of borrowing and avoid potential pitfalls.</p>
-
-<p>2. MAIN CATEGORIES:</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <p>The following are the primary components of APR:</p>
 <ul>
-  <li><strong>Nominal Interest Rate</strong>: The nominal interest rate is the basic interest rate charged on a loan or credit card, excluding any additional fees or compounding effects. It is the rate at which interest accrues on the principal amount borrowed. Key characteristics include being the base rate for calculating interest, and it can be fixed or variable. For example, if a credit card has a nominal interest rate of 12%, the borrower will be charged 12% interest on their outstanding balance.</li>
-  <li><strong>Compounding Interest</strong>: Compounding interest refers to the practice of adding interest to the principal amount borrowed, so that interest is earned on both the principal and any accrued interest. Key characteristics include increasing the total interest paid over time, and it can be compounded daily, monthly, or annually. For instance, if a loan has a nominal interest rate of 6% compounded monthly, the borrower will be charged 6% interest on their outstanding balance, and the interest will be added to the principal at the end of each month.</li>
-  <li><strong>Fees and Charges</strong>: Fees and charges are additional costs associated with borrowing money, such as origination fees, late payment fees, and balance transfer fees. Key characteristics include being one-time or recurring, and they can be a fixed amount or a percentage of the outstanding balance. For example, a credit card may charge a balance transfer fee of 3% of the transferred amount, which would be added to the borrower's outstanding balance.</li>
-  <li><strong>Introductory Offers</strong>: Introductory offers are promotional interest rates or terms that apply for a limited time, often at the beginning of a loan or credit card agreement. Key characteristics include being temporary, and they can be used to attract new customers or incentivize certain behaviors. For instance, a credit card may offer 0% introductory APR for the first 12 months, after which the regular APR will apply.</li>
+<li><strong>Nominal Interest Rate</strong>: The nominal interest rate is the basic interest rate charged on a loan or credit card, excluding any additional fees or compounding effects. It is the rate at which interest accrues on the principal amount borrowed. Key characteristics include being the base rate for calculating interest, and it can be fixed or variable. For example, if a credit card has a nominal interest rate of 12%, the borrower will be charged 12% interest on their outstanding balance.</li>
+<li><strong>Compounding Interest</strong>: Compounding interest refers to the practice of adding interest to the principal amount borrowed, so that interest is earned on both the principal and any accrued interest. Key characteristics include increasing the total interest paid over time, and it can be compounded daily, monthly, or annually. For instance, if a loan has a nominal interest rate of 6% compounded monthly, the borrower will be charged 6% interest on their outstanding balance, and the interest will be added to the principal at the end of each month.</li>
+<li><strong>Fees and Charges</strong>: Fees and charges are additional costs associated with borrowing money, such as origination fees, late payment fees, and balance transfer fees. Key characteristics include being one-time or recurring, and they can be a fixed amount or a percentage of the outstanding balance. For example, a credit card may charge a balance transfer fee of 3% of the transferred amount, which would be added to the borrower's outstanding balance.</li>
+<li><strong>Introductory Offers</strong>: Introductory offers are promotional interest rates or terms that apply for a limited time, often at the beginning of a loan or credit card agreement. Key characteristics include being temporary, and they can be used to attract new customers or incentivize certain behaviors. For instance, a credit card may offer 0% introductory APR for the first 12 months, after which the regular APR will apply.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
 <p>The following table summarizes the key differences between the main categories of APR components:</p>
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Nominal Interest Rate</td>
-<td>Basic interest rate</td>
-<td>Base rate, fixed or variable</td>
-<td>12% credit card interest rate</td>
-</tr>
-<tr>
-<td>Compounding Interest</td>
-<td>Interest on principal and accrued interest</td>
-<td>Increases total interest, compounded daily/monthly/annually</td>
-<td>6% loan interest compounded monthly</td>
-</tr>
-<tr>
-<td>Fees and Charges</td>
-<td>Additional borrowing costs</td>
-<td>One-time or recurring, fixed or percentage-based</td>
-<td>3% balance transfer fee</td>
-</tr>
-<tr>
-<td>Introductory Offers</td>
-<td>Promotional interest rates or terms</td>
-<td>Temporary, used to attract customers or incentivize behavior</td>
-<td>0% introductory APR for 12 months</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Nominal Interest Rate</td><td>Basic interest rate</td><td>Base rate, fixed or variable</td><td>12% credit card interest rate</td></tr>
+<tr><td>Compounding Interest</td><td>Interest on principal and accrued interest</td><td>Increases total interest, compounded daily/monthly/annually</td><td>6% loan interest compounded monthly</td></tr>
+<tr><td>Fees and Charges</td><td>Additional borrowing costs</td><td>One-time or recurring, fixed or percentage-based</td><td>3% balance transfer fee</td></tr>
+<tr><td>Introductory Offers</td><td>Promotional interest rates or terms</td><td>Temporary, used to attract customers or incentivize behavior</td><td>0% introductory APR for 12 months</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The categories of APR components are interconnected, as they all contribute to the total cost of borrowing. The nominal interest rate serves as the foundation for calculating interest, while compounding interest increases the total interest paid over time. Fees and charges add to the overall cost, and introductory offers can temporarily reduce or eliminate certain costs. Understanding how these components relate to each other is essential for borrowers to accurately calculate the total cost of borrowing and make informed decisions.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system for parts of Annual Percentage Rate (APR) encompasses nominal interest rate, compounding interest, fees and charges, and introductory offers, which collectively determine the total cost of borrowing and help consumers navigate the complex world of lending.</p>
-    </article>
+
+            
+
+            
+        </article>
+    </main>
+
+    
+</div>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="/" class="site-logo">360 <span>Library</span></a>
+            <p>Free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Domains</h4>
+            <a href="/#economics">Economics</a>
+            <a href="/#finance">Finance</a>
+            <a href="/#health">Health</a>
+            <a href="/#life_obligations">Life Obligations</a>
+            <a href="/#math">Math</a>
+            <a href="/#science">Science</a>
+        </div>
+        <div class="footer-col">
+            <h4>Info</h4>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Use</a>
+            <a href="/sitemap.xml">Sitemap</a>
+            <a href="mailto:mrgovernment02@gmail.com">Contact</a>
+        </div>
+    </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
+    <div class="footer-bottom">
+        &copy; 2026 360Library.com &mdash; All rights reserved.
+    </div>
+</footer>
 </body>
 </html>

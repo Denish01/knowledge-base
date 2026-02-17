@@ -4,60 +4,457 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A clear, simple explanation of what net worth is used for - definition, key concepts, examples, and common misconceptions.">
-    <title>What is What Net Worth Is Used For? - Simple Explanation</title>
+    <link rel="canonical" href="https://360library.com/None">
+    
+    <title>What is What Net Worth Is Used For? - 360Library</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
-        h1 { color: #1a1a1a; }
-        h2 { color: #2a2a2a; margin-top: 32px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        p { margin-bottom: 16px; }
-        .example { background: #f5f5f5; padding: 16px; border-radius: 8px; margin: 16px 0; }
-        h3 { color: #3a3a3a; margin-top: 24px; }
-        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background: #f5f5f5; font-weight: 600; }
-        tr:nth-child(even) { background: #fafafa; }
+
+/* === Reset & Base === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #1F2937;
+    background: #FAFBFC;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: #1B4D8E; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* === Header === */
+.site-header {
+    background: #1B4D8E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 60px;
+}
+.site-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+.site-logo:hover { text-decoration: none; opacity: 0.9; }
+.site-logo span { color: #D97706; }
+
+/* Domain nav */
+.domain-nav { display: flex; gap: 4px; list-style: none; }
+.domain-nav a {
+    color: rgba(255,255,255,0.85);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.domain-nav a:hover { background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; }
+.domain-nav a.active { background: rgba(255,255,255,0.2); color: #fff; }
+
+/* Mobile hamburger (pure CSS) */
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.menu-toggle span, .menu-toggle span::before, .menu-toggle span::after {
+    display: block; width: 22px; height: 2px; background: #fff; position: relative; transition: 0.3s;
+}
+.menu-toggle span::before, .menu-toggle span::after { content: ''; position: absolute; left: 0; }
+.menu-toggle span::before { top: -7px; }
+.menu-toggle span::after { top: 7px; }
+#mobile-menu-state { display: none; }
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .domain-nav {
+        display: none; flex-direction: column; position: absolute;
+        top: 60px; left: 0; right: 0; background: #1B4D8E;
+        padding: 12px; gap: 2px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .domain-nav a { padding: 12px 16px; border-radius: 8px; }
+    #mobile-menu-state:checked ~ .header-inner .domain-nav { display: flex; }
+}
+
+/* === Footer === */
+.site-footer {
+    background: #111827;
+    color: #9CA3AF;
+    margin-top: 80px;
+    padding: 48px 24px 32px;
+}
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+.footer-brand .site-logo { font-size: 18px; display: inline-block; margin-bottom: 12px; }
+.footer-brand p { font-size: 14px; line-height: 1.6; max-width: 320px; }
+.footer-col h4 { color: #fff; font-size: 14px; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+.footer-col a { display: block; color: #9CA3AF; font-size: 14px; padding: 4px 0; transition: color 0.2s; text-decoration: none; }
+.footer-col a:hover { color: #fff; text-decoration: none; }
+.footer-bottom {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid #374151;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* === Breadcrumbs === */
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #6B7280;
+}
+.breadcrumbs a { color: #1B4D8E; }
+.breadcrumbs span { margin: 0 8px; color: #D1D5DB; }
+
+
+/* === Article Layout === */
+.article-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Main content */
+.article-main { min-width: 0; }
+.article-main article {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+}
+.article-main h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 24px;
+    line-height: 1.3;
+}
+.article-main h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
+}
+.article-main h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #374151;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+.article-main p {
+    margin-bottom: 16px;
+    color: #374151;
+}
+.article-main ul {
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+.article-main li {
+    margin-bottom: 8px;
+    color: #374151;
+}
+.article-main table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.article-main th, .article-main td {
+    border: 1px solid #E5E7EB;
+    padding: 12px 16px;
+    text-align: left;
+}
+.article-main th {
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
+    font-weight: 600;
+}
+.article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
+
+/* Calculator styles (preserve existing) */
+.article-main .calculator,
+.article-main .calc-container {
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 24px;
+    margin: 24px 0;
+}
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
+
+/* === Sidebar === */
+.article-sidebar {
+    position: sticky;
+    top: 76px;
+}
+.sidebar-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+}
+.sidebar-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #E8F0FE;
+}
+.sidebar-card .angle-nav { list-style: none; }
+.sidebar-card .angle-nav li { margin-bottom: 4px; }
+.sidebar-card .angle-nav a {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4B5563;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+}
+.sidebar-card .angle-nav a:hover {
+    background: #F3F4F6;
+    color: #1B4D8E;
+    text-decoration: none;
+}
+.sidebar-card .angle-nav a.active {
+    background: #E8F0FE;
+    color: #1B4D8E;
+    font-weight: 600;
+}
+
+/* Back to domain link */
+.sidebar-card .back-link {
+    display: block;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #E5E7EB;
+    font-size: 13px;
+    color: #6B7280;
+}
+.sidebar-card .back-link:hover { color: #1B4D8E; text-decoration: none; }
+
+@media (max-width: 900px) {
+    .article-wrapper {
+        grid-template-columns: 1fr;
+        padding: 16px 16px 0;
+    }
+    .article-sidebar {
+        position: static;
+        order: -1;
+    }
+    .article-main article { padding: 24px; }
+    .article-main h1 { font-size: 24px; }
+}
+
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
+
+/* === Related Concepts === */
+.related-concepts {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid #E8F0FE;
+}
+.related-concepts h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+}
+.related-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.related-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #F3F4F6;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1B4D8E;
+    font-weight: 500;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+.related-link:hover {
+    background: #E8F0FE;
+    text-decoration: none;
+}
+
     </style>
+    
 </head>
 <body>
-    <article>
-        <h1>What is What Net Worth Is Used For?</h1>
+<input type="checkbox" id="mobile-menu-state" aria-hidden="true">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/" class="site-logo">360 <span>Library</span></a>
+        <label for="mobile-menu-state" class="menu-toggle" aria-label="Toggle menu"><span></span></label>
+        <ul class="domain-nav">
+        <li><a href="/#economics">Economics</a></li>
+        <li><a href="/#finance">Finance</a></li>
+        <li><a href="/#health">Health</a></li>
+        <li><a href="/#life_obligations">Life Obligations</a></li>
+        <li><a href="/#math">Math</a></li>
+        <li><a href="/#science">Science</a></li>
+        </ul>
+    </div>
+</header>
 
-        
 
-        <p>1. INTRODUCTION:</p>
+
+<div class="article-wrapper" style="--domain-color: #1B4D8E">
+    <main class="article-main">
+        <article>
+            <h1>What is What Net Worth Is Used For?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
+
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>Net worth is the total value of everything an individual or organization owns, minus any debts or liabilities. It is a financial metric used to determine the overall financial health and stability of an entity. The primary purpose of net worth is to provide a comprehensive picture of one's financial situation, allowing for informed decision-making and financial planning.</p>
-
-<p>2. PRIMARY USES:</p>
+<ol>
+<li>PRIMARY USES:</li>
+</ol>
 <p>Net worth has several main applications. Firstly, it is used for financial planning and goal-setting. For example, an individual may calculate their net worth to determine how much they need to save for retirement or to achieve a specific financial goal, such as buying a house. Net worth is also used for loan applications and credit evaluations. Lenders use net worth to assess an individual's or business's creditworthiness and determine their ability to repay a loan. Additionally, net worth is used for investment and portfolio management. Investors and financial advisors use net worth to evaluate an individual's or organization's overall financial situation and create a tailored investment strategy. Lastly, net worth is used for tax planning and estate management. It helps individuals and organizations understand their tax obligations and plan for the distribution of their assets after death.</p>
-
 <p>For instance, a business may use its net worth to determine its ability to expand operations or invest in new projects. An individual may use their net worth to determine how much they can afford to spend on a vacation or a major purchase. Net worth is also used to evaluate the financial performance of a company or organization. It helps stakeholders, such as shareholders or investors, understand the company's financial health and make informed decisions.</p>
-
-<p>3. SECONDARY USES:</p>
+<ol>
+<li>SECONDARY USES:</li>
+</ol>
 <p>Net worth also has some less common but still important applications. It can be used for divorce settlements and property division. In the event of a divorce, net worth is used to determine the division of assets and debts between spouses. Net worth can also be used for charitable giving and philanthropy. Individuals and organizations may use their net worth to determine how much they can afford to donate to charitable causes. Furthermore, net worth can be used for research and academic studies. Researchers may use net worth data to study economic trends, financial behavior, and social inequality.</p>
-
 <p>For example, a researcher may use net worth data to study the relationship between net worth and financial stress. A philanthropist may use their net worth to determine how much they can afford to donate to a charitable cause. Net worth can also be used to evaluate the financial impact of a natural disaster or economic downturn. It helps individuals and organizations understand the financial consequences of such events and develop strategies to mitigate their effects.</p>
-
-<p>4. WHO USES IT:</p>
+<ol>
+<li>WHO USES IT:</li>
+</ol>
 <p>Net worth is used by a variety of groups and fields, including individuals, businesses, financial institutions, and government agencies. Individuals use net worth to manage their personal finances and make informed decisions about investments and spending. Businesses use net worth to evaluate their financial performance and make strategic decisions about expansion and investment. Financial institutions, such as banks and credit unions, use net worth to evaluate creditworthiness and determine loan eligibility. Government agencies, such as the Internal Revenue Service, use net worth to assess tax obligations and enforce tax laws.</p>
-
 <p>For instance, a financial advisor may use an individual's net worth to create a personalized investment plan. A business owner may use their company's net worth to determine its ability to secure a loan or invest in a new project. A government agency may use net worth data to evaluate the financial health of a community or region.</p>
-
-<p>5. LIMITATIONS:</p>
+<ol>
+<li>LIMITATIONS:</li>
+</ol>
 <p>Net worth is not used for determining an individual's or organization's income or cash flow. It is also not used for evaluating an individual's or organization's credit score, although it can be used as one factor in determining creditworthiness. Additionally, net worth is not used for predicting future financial performance or guaranteeing financial success. It is a snapshot of an individual's or organization's financial situation at a particular point in time and should be used in conjunction with other financial metrics to get a complete picture.</p>
-
 <p>For example, an individual's net worth may not reflect their monthly expenses or cash flow. A business's net worth may not reflect its ability to generate revenue or profits. Net worth is just one tool used to evaluate an individual's or organization's financial health, and it should be used in conjunction with other financial metrics, such as income statements and cash flow statements.</p>
-
-<p>6. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>In summary, net worth is a financial metric used to determine the overall financial health and stability of an individual or organization. Its core purpose is to provide a comprehensive picture of one's financial situation, allowing for informed decision-making and financial planning. Net worth has a variety of practical applications, including financial planning, loan applications, investment management, and tax planning. It is used by individuals, businesses, financial institutions, and government agencies to evaluate financial performance, make strategic decisions, and plan for the future. By understanding net worth and its applications, individuals and organizations can make informed decisions about their financial resources and achieve their financial goals. Net worth is a fundamental concept in personal finance and business management, and it plays a critical role in helping individuals and organizations achieve financial stability and success.</p>
-    </article>
+
+            
+
+            
+        </article>
+    </main>
+
+    
+</div>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="/" class="site-logo">360 <span>Library</span></a>
+            <p>Free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Domains</h4>
+            <a href="/#economics">Economics</a>
+            <a href="/#finance">Finance</a>
+            <a href="/#health">Health</a>
+            <a href="/#life_obligations">Life Obligations</a>
+            <a href="/#math">Math</a>
+            <a href="/#science">Science</a>
+        </div>
+        <div class="footer-col">
+            <h4>Info</h4>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Use</a>
+            <a href="/sitemap.xml">Sitemap</a>
+            <a href="mailto:mrgovernment02@gmail.com">Contact</a>
+        </div>
+    </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
+    <div class="footer-bottom">
+        &copy; 2026 360Library.com &mdash; All rights reserved.
+    </div>
+</footer>
 </body>
 </html>

@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/household-size/what-is.html">Household Size</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Household Size?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Household size is the number of people who live together in a single dwelling unit, such as a house, apartment, or condominium.</p>
-
 <p>A household is a group of people who share a common residence and may or may not be related to each other. Household size can vary greatly, from a single person living alone to a large family with multiple generations. The size of a household is often used as a measure of the number of people who are dependent on a particular income or set of resources. For example, a household with multiple people may require a larger income to support everyone's basic needs, such as food, shelter, and clothing.</p>
-
 <p>Household size can also affect the way people live and interact with each other. In smaller households, people may have more private space and be more likely to have their own bedrooms. In larger households, people may have to share bedrooms and other living spaces, which can affect relationships and overall quality of life. Additionally, household size can influence the types of activities and hobbies that people can participate in, as well as the amount of time and resources available for leisure activities.</p>
-
 <p>The size of a household can also have an impact on the environment and the community. Larger households may consume more resources, such as water and energy, and produce more waste. On the other hand, smaller households may be more efficient and have a smaller environmental footprint. Understanding household size is important for policymakers, urban planners, and social scientists, as it can help them develop more effective strategies for meeting the needs of different types of households.</p>
-
 <p>Key components of household size include:</p>
 <ul>
-  <li>The number of people living in the household</li>
-  <li>The relationships between household members, such as family ties or roommates</li>
-  <li>The age and demographic characteristics of household members</li>
-  <li>The income and resources available to the household</li>
-  <li>The size and type of dwelling unit, such as a house or apartment</li>
-  <li>The location of the household, such as urban or rural area</li>
+<li>The number of people living in the household</li>
+<li>The relationships between household members, such as family ties or roommates</li>
+<li>The age and demographic characteristics of household members</li>
+<li>The income and resources available to the household</li>
+<li>The size and type of dwelling unit, such as a house or apartment</li>
+<li>The location of the household, such as urban or rural area</li>
 </ul>
-
 <p>Common misconceptions about household size include:</p>
 <ul>
-  <li>Assuming that all households are traditional nuclear families with two parents and children</li>
-  <li>Believing that household size is the same as family size</li>
-  <li>Thinking that household size is only important for demographic or statistical purposes</li>
-  <li>Assuming that household size is fixed and does not change over time</li>
+<li>Assuming that all households are traditional nuclear families with two parents and children</li>
+<li>Believing that household size is the same as family size</li>
+<li>Thinking that household size is only important for demographic or statistical purposes</li>
+<li>Assuming that household size is fixed and does not change over time</li>
 </ul>
-
 <p>A real-world example of household size can be seen in a family with two parents and three children who live together in a single-family home. In this example, the household size is five people, and the family must manage their resources and living space to meet the needs of all household members.</p>
-
 <p>In summary, household size refers to the number of people who live together in a single dwelling unit, and it is an important concept that can affect the way people live, interact, and use resources.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/homeowners-insurance/what-is.html" class="related-link">Homeowners Insurance</a>
-        <a href="/life_obligations/household-income/what-is.html" class="related-link">Household Income</a>
-        <a href="/life_obligations/income-adjustment/what-is.html" class="related-link">Income Adjustment</a>
-        <a href="/life_obligations/income-disparity/what-is.html" class="related-link">Income Disparity</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

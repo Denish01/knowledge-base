@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of tax deduction - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of tax deduction - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/tax-deduction/types-of.html">
     <meta property="og:title" content="Types of Tax Deduction">
-    <meta property="og:description" content="A clear, simple explanation of tax deduction - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of tax deduction - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/tax-deduction/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Tax Deduction">
-    <meta name="twitter:description" content="A clear, simple explanation of tax deduction - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of tax deduction - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Tax Deduction - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Tax Deduction", "item": "https://360library.com/life_obligations/tax-deduction/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Tax Deduction", "description": "A clear, simple explanation of tax deduction - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/tax-deduction/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/tax-deduction/types-of.html"}, "about": {"@type": "Thing", "name": "Tax Deduction"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Tax Deduction", "description": "A clear, simple explanation of types of tax deduction - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/tax-deduction/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/tax-deduction/types-of.html"}, "about": {"@type": "Thing", "name": "Tax Deduction"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,111 +388,88 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/tax-deduction/what-is.html">Tax Deduction</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Tax Deduction</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>Tax deductions are essential for individuals and businesses to reduce their taxable income, thereby lowering their tax liability. The classification of tax deductions is crucial as it helps individuals and businesses understand the various types of deductions available, ensuring they take advantage of the deductions they are eligible for. A comprehensive understanding of the different types of tax deductions enables taxpayers to navigate the complex tax system more effectively, potentially leading to significant savings. By categorizing tax deductions, taxpayers can better organize their expenses, identify eligible deductions, and make informed decisions about their financial planning.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The following are the primary types of tax deductions:</p>
-
-<p>1. <strong>Business Deductions</strong></p>
+<ol>
+<li><strong>Business Deductions</strong></li>
+</ol>
 <ul>
-  <li>Definition: Business deductions are expenses incurred by a business to generate income, which can be subtracted from the business's total income to reduce its taxable income. These deductions are subject to specific rules and regulations.</li>
-  <li>Key Characteristics: Must be ordinary and necessary for the business, must be related to the business operation, and must be documented properly.</li>
-  <li>Example: A self-employed consultant can deduct the cost of a computer and software used for work as a business deduction.</li>
+<li>Definition: Business deductions are expenses incurred by a business to generate income, which can be subtracted from the business's total income to reduce its taxable income. These deductions are subject to specific rules and regulations.</li>
+<li>Key Characteristics: Must be ordinary and necessary for the business, must be related to the business operation, and must be documented properly.</li>
+<li>Example: A self-employed consultant can deduct the cost of a computer and software used for work as a business deduction.</li>
 </ul>
-
-<p>2. <strong>Itemized Deductions</strong></p>
+<ol>
+<li><strong>Itemized Deductions</strong></li>
+</ol>
 <ul>
-  <li>Definition: Itemized deductions are personal expenses that can be subtracted from an individual's taxable income, such as medical expenses, mortgage interest, and charitable donations. These deductions require detailed records and must exceed the standard deduction amount to be beneficial.</li>
-  <li>Key Characteristics: Must be itemized on Schedule A of the tax return, must exceed the standard deduction, and are subject to certain limits and phase-outs.</li>
-  <li>Example: An individual can itemize deductions for medical expenses exceeding a certain percentage of their income, such as hospital bills and prescription medications.</li>
+<li>Definition: Itemized deductions are personal expenses that can be subtracted from an individual's taxable income, such as medical expenses, mortgage interest, and charitable donations. These deductions require detailed records and must exceed the standard deduction amount to be beneficial.</li>
+<li>Key Characteristics: Must be itemized on Schedule A of the tax return, must exceed the standard deduction, and are subject to certain limits and phase-outs.</li>
+<li>Example: An individual can itemize deductions for medical expenses exceeding a certain percentage of their income, such as hospital bills and prescription medications.</li>
 </ul>
-
-<p>3. <strong>Standard Deductions</strong></p>
+<ol>
+<li><strong>Standard Deductions</strong></li>
+</ol>
 <ul>
-  <li>Definition: Standard deductions are fixed amounts that can be subtracted from an individual's taxable income without needing to itemize specific expenses. The standard deduction amount varies based on filing status.</li>
-  <li>Key Characteristics: Does not require itemization, is a fixed amount based on filing status, and can be claimed without detailed records.</li>
-  <li>Example: A single individual can claim a standard deduction, which is a predetermined amount that does not require documentation of specific expenses.</li>
+<li>Definition: Standard deductions are fixed amounts that can be subtracted from an individual's taxable income without needing to itemize specific expenses. The standard deduction amount varies based on filing status.</li>
+<li>Key Characteristics: Does not require itemization, is a fixed amount based on filing status, and can be claimed without detailed records.</li>
+<li>Example: A single individual can claim a standard deduction, which is a predetermined amount that does not require documentation of specific expenses.</li>
 </ul>
-
-<p>4. <strong>Above-the-Line Deductions</strong></p>
+<ol>
+<li><strong>Above-the-Line Deductions</strong></li>
+</ol>
 <ul>
-  <li>Definition: Above-the-line deductions are expenses that can be subtracted from gross income to reduce adjusted gross income (AGI), such as alimony payments, student loan interest, and moving expenses for military personnel.</li>
-  <li>Key Characteristics: Can be claimed regardless of whether the individual itemizes or takes the standard deduction, must be reported on specific lines of the tax return, and are subject to certain limits.</li>
-  <li>Example: A student can deduct the interest paid on a student loan as an above-the-line deduction, reducing their AGI.</li>
+<li>Definition: Above-the-line deductions are expenses that can be subtracted from gross income to reduce adjusted gross income (AGI), such as alimony payments, student loan interest, and moving expenses for military personnel.</li>
+<li>Key Characteristics: Can be claimed regardless of whether the individual itemizes or takes the standard deduction, must be reported on specific lines of the tax return, and are subject to certain limits.</li>
+<li>Example: A student can deduct the interest paid on a student loan as an above-the-line deduction, reducing their AGI.</li>
 </ul>
-
-<p>5. <strong>Below-the-Line Deductions</strong></p>
+<ol>
+<li><strong>Below-the-Line Deductions</strong></li>
+</ol>
 <ul>
-  <li>Definition: Below-the-line deductions are itemized deductions that are subtracted from AGI to reduce taxable income, such as medical expenses, mortgage interest, and charitable donations.</li>
-  <li>Key Characteristics: Must be itemized on Schedule A, are subject to certain limits and phase-outs, and can only be claimed if the individual itemizes deductions.</li>
-  <li>Example: An individual can deduct charitable donations as a below-the-line deduction, which can reduce their taxable income.</li>
+<li>Definition: Below-the-line deductions are itemized deductions that are subtracted from AGI to reduce taxable income, such as medical expenses, mortgage interest, and charitable donations.</li>
+<li>Key Characteristics: Must be itemized on Schedule A, are subject to certain limits and phase-outs, and can only be claimed if the individual itemizes deductions.</li>
+<li>Example: An individual can deduct charitable donations as a below-the-line deduction, which can reduce their taxable income.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
 <p>The following table summarizes the main differences between the types of tax deductions:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Deduction</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Business Deductions</td>
-<td>Expenses for business income</td>
-<td>Ordinary and necessary, documented</td>
-<td>Computer for work</td>
-</tr>
-<tr>
-<td>Itemized Deductions</td>
-<td>Personal expenses exceeding standard deduction</td>
-<td>Itemized on Schedule A, subject to limits</td>
-<td>Medical expenses</td>
-</tr>
-<tr>
-<td>Standard Deductions</td>
-<td>Fixed amount without itemization</td>
-<td>Fixed amount, no documentation required</td>
-<td>Single individual's standard deduction</td>
-</tr>
-<tr>
-<td>Above-the-Line Deductions</td>
-<td>Expenses reducing AGI</td>
-<td>Claimed regardless of itemization, reported on specific lines</td>
-<td>Student loan interest</td>
-</tr>
-<tr>
-<td>Below-the-Line Deductions</td>
-<td>Itemized deductions reducing taxable income</td>
-<td>Itemized on Schedule A, subject to limits</td>
-<td>Charitable donations</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Deduction</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Business Deductions</td><td>Expenses for business income</td><td>Ordinary and necessary, documented</td><td>Computer for work</td></tr>
+<tr><td>Itemized Deductions</td><td>Personal expenses exceeding standard deduction</td><td>Itemized on Schedule A, subject to limits</td><td>Medical expenses</td></tr>
+<tr><td>Standard Deductions</td><td>Fixed amount without itemization</td><td>Fixed amount, no documentation required</td><td>Single individual's standard deduction</td></tr>
+<tr><td>Above-the-Line Deductions</td><td>Expenses reducing AGI</td><td>Claimed regardless of itemization, reported on specific lines</td><td>Student loan interest</td></tr>
+<tr><td>Below-the-Line Deductions</td><td>Itemized deductions reducing taxable income</td><td>Itemized on Schedule A, subject to limits</td><td>Charitable donations</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The categories of tax deductions are interconnected, as they all contribute to reducing an individual's or business's taxable income. Business deductions are specific to business income, while itemized, standard, above-the-line, and below-the-line deductions apply to personal income. Above-the-line deductions reduce AGI, which in turn affects the eligibility and amount of below-the-line deductions. Understanding how these categories relate is essential for maximizing tax savings and ensuring compliance with tax regulations.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The classification system of tax deductions includes business deductions, itemized deductions, standard deductions, above-the-line deductions, and below-the-line deductions, each with distinct characteristics and purposes that work together to help individuals and businesses reduce their taxable income and navigate the complex tax system.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/support-modification/what-is.html" class="related-link">Support Modification</a>
-        <a href="/life_obligations/tax-credit/what-is.html" class="related-link">Tax Credit</a>
-        <a href="/life_obligations/tax-filing/what-is.html" class="related-link">Tax Filing</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -492,6 +514,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

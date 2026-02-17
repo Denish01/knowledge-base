@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of spousal support - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of spousal support vs - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/spousal-support/vs.html">
     <meta property="og:title" content="Spousal Support Compared">
-    <meta property="og:description" content="A clear, simple explanation of spousal support - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of spousal support vs - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/spousal-support/vs.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Spousal Support Compared">
-    <meta name="twitter:description" content="A clear, simple explanation of spousal support - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of spousal support vs - definition, key concepts, examples, and common misconceptions.">
     <title>Spousal Support Compared - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Spousal Support", "item": "https://360library.com/life_obligations/spousal-support/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Comparison"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Spousal Support Compared", "description": "A clear, simple explanation of spousal support - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/spousal-support/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/spousal-support/vs.html"}, "about": {"@type": "Thing", "name": "Spousal Support"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Spousal Support Compared", "description": "A clear, simple explanation of spousal support vs - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/spousal-support/vs.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/spousal-support/vs.html"}, "about": {"@type": "Thing", "name": "Spousal Support"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,51 +388,40 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/spousal-support/what-is.html">Spousal Support</a><span>&rsaquo;</span>Comparison
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Spousal Support Compared</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Spousal support vs refers to the comparison and contrast between the different types of financial assistance that one spouse may be required to provide to the other after a divorce or separation.</p>
-
 <p>When a marriage ends, the financial situation of the couple can become complicated. In many cases, one spouse may have been the primary breadwinner, while the other spouse may have been responsible for taking care of the household and raising children. Spousal support, also known as alimony, is a way to help balance out the financial situation between the two spouses. There are different types of spousal support, and each type has its own set of rules and guidelines.</p>
-
 <p>The main goal of spousal support is to provide financial assistance to the spouse who is in need. This can be done in a variety of ways, including through monthly payments, lump sum payments, or a combination of both. The amount of spousal support that is awarded can depend on a number of factors, including the length of the marriage, the income of both spouses, and the standard of living that was established during the marriage. In some cases, spousal support may be temporary, while in other cases it may be permanent.</p>
-
 <p>The different types of spousal support can be confusing, and it is essential to understand the key components of each type. The following are some of the main principles of spousal support:</p>
 <ul>
-  <li>Rehabilitative spousal support is designed to help one spouse become self-sufficient by providing financial assistance for a limited period.</li>
-  <li>Permanent spousal support is awarded to provide long-term financial assistance to one spouse, usually until the recipient remarries or dies.</li>
-  <li>Temporary spousal support is awarded to provide financial assistance during the divorce process, usually until a final settlement is reached.</li>
-  <li>Reimbursement spousal support is awarded to reimburse one spouse for expenses incurred during the marriage, such as education or training costs.</li>
-  <li>Lump sum spousal support is a one-time payment made by one spouse to the other, usually in lieu of monthly payments.</li>
+<li>Rehabilitative spousal support is designed to help one spouse become self-sufficient by providing financial assistance for a limited period.</li>
+<li>Permanent spousal support is awarded to provide long-term financial assistance to one spouse, usually until the recipient remarries or dies.</li>
+<li>Temporary spousal support is awarded to provide financial assistance during the divorce process, usually until a final settlement is reached.</li>
+<li>Reimbursement spousal support is awarded to reimburse one spouse for expenses incurred during the marriage, such as education or training costs.</li>
+<li>Lump sum spousal support is a one-time payment made by one spouse to the other, usually in lieu of monthly payments.</li>
 </ul>
-
 <p>Despite the importance of spousal support, there are many common misconceptions about the concept. The following are some things that people often get wrong:</p>
 <ul>
-  <li>That spousal support is always awarded to the wife, when in fact it can be awarded to either spouse depending on the circumstances.</li>
-  <li>That spousal support is always permanent, when in fact it can be temporary or rehabilitative.</li>
-  <li>That spousal support is always based on fault, when in fact it is usually based on need and ability to pay.</li>
-  <li>That spousal support is always a fixed amount, when in fact it can be adjusted over time based on changes in circumstances.</li>
+<li>That spousal support is always awarded to the wife, when in fact it can be awarded to either spouse depending on the circumstances.</li>
+<li>That spousal support is always permanent, when in fact it can be temporary or rehabilitative.</li>
+<li>That spousal support is always based on fault, when in fact it is usually based on need and ability to pay.</li>
+<li>That spousal support is always a fixed amount, when in fact it can be adjusted over time based on changes in circumstances.</li>
 </ul>
-
 <p>For example, consider a couple who has been married for 20 years. The husband has been the primary breadwinner, while the wife has been a stay-at-home parent. After the divorce, the wife may be awarded spousal support to help her get back on her feet and become self-sufficient. The husband may be required to pay a certain amount of money each month to the wife, which will help her pay for living expenses and education or training costs.</p>
-
 <p>In summary, spousal support vs refers to the different types of financial assistance that one spouse may be required to provide to the other after a divorce or separation, with the main goal of providing financial assistance to the spouse in need.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/rehabilitative-support/what-is.html" class="related-link">Rehabilitative Support</a>
-        <a href="/life_obligations/shared-expenses/what-is.html" class="related-link">Shared Expenses</a>
-        <a href="/life_obligations/social-security/what-is.html" class="related-link">Social Security</a>
-        <a href="/life_obligations/spousal-support-duration/what-is.html" class="related-link">Spousal Support Duration</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -432,6 +466,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#economics">Economics</a><span>&rsaquo;</span><a href="/economics/stock-market/what-is.html">Stock Market</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #059669">
     <main class="article-main">
         <article>
             <h1>What Is Stock Market?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Stock market refers to a system that allows people to buy and sell parts of companies, known as stocks or shares, in the hope of earning a profit.</p>
-
 <p>The concept of a stock market is based on the idea of supply and demand. When a company decides to issue stocks, it is essentially selling a portion of its ownership to the public. This allows the company to raise capital, which can be used to fund its operations, expand its business, or pay off debts. In return, the people who buy the stocks, known as investors, become part-owners of the company and are entitled to a portion of its profits. The value of the stocks can fluctuate based on the company's performance, the overall state of the economy, and other factors.</p>
-
 <p>The stock market provides a platform for investors to buy and sell stocks. It is a place where companies can raise capital and where investors can invest their money in the hope of earning a return. The stock market is made up of various exchanges, such as the New York Stock Exchange or the NASDAQ, where stocks are listed and traded. The prices of the stocks are determined by the forces of supply and demand, with buyers and sellers interacting to determine the prices at which they are willing to trade.</p>
-
 <p>The stock market plays a crucial role in the economy, as it allows companies to raise capital and provides investors with a way to invest their money. It also provides a way for people to own a part of a company and potentially earn a profit. The stock market is subject to various rules and regulations, which are designed to protect investors and ensure that the market operates fairly and efficiently.</p>
-
 <p>Key components of the stock market include:</p>
 <ul>
-  <li>Stocks, which represent ownership in a company</li>
-  <li>Bonds, which represent debt issued by a company or government</li>
-  <li>Brokers, who act as intermediaries between buyers and sellers</li>
-  <li>Exchanges, where stocks are listed and traded</li>
-  <li>Indices, which track the performance of a group of stocks</li>
-  <li>Regulatory bodies, which oversee the stock market and enforce its rules</li>
+<li>Stocks, which represent ownership in a company</li>
+<li>Bonds, which represent debt issued by a company or government</li>
+<li>Brokers, who act as intermediaries between buyers and sellers</li>
+<li>Exchanges, where stocks are listed and traded</li>
+<li>Indices, which track the performance of a group of stocks</li>
+<li>Regulatory bodies, which oversee the stock market and enforce its rules</li>
 </ul>
-
 <p>Common misconceptions about the stock market include:</p>
 <ul>
-  <li>That it is only for wealthy people or experienced investors</li>
-  <li>That it is a guaranteed way to make money</li>
-  <li>That it is a place where people can get rich quickly</li>
-  <li>That it is not subject to risks, such as the possibility of losing money</li>
+<li>That it is only for wealthy people or experienced investors</li>
+<li>That it is a guaranteed way to make money</li>
+<li>That it is a place where people can get rich quickly</li>
+<li>That it is not subject to risks, such as the possibility of losing money</li>
 </ul>
-
 <p>For example, suppose a person buys 100 shares of a company's stock at $10 per share, and the company performs well, causing the stock price to rise to $15 per share. The person can then sell their shares for $15 each, earning a profit of $5 per share, or $500 in total.</p>
-
 <p>Summary: The stock market is a system that allows people to buy and sell parts of companies, known as stocks or shares, in the hope of earning a profit, and it plays a crucial role in the economy by providing a way for companies to raise capital and for investors to invest their money.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/economics/deflation/what-is.html" class="related-link">Deflation</a>
-        <a href="/economics/monetary-policy/what-is.html" class="related-link">Monetary Policy</a>
-        <a href="/economics/recession/what-is.html" class="related-link">Recession</a>
-        <a href="/economics/scarcity/what-is.html" class="related-link">Scarcity</a>
-        <a href="/economics/supply-and-demand/what-is.html" class="related-link">Supply And Demand</a>
-        <a href="/economics/trade-deficit/what-is.html" class="related-link">Trade Deficit</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

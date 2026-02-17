@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of water cycle - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of water cycle - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/science/water-cycle/types-of.html">
     <meta property="og:title" content="Types of Water Cycle">
-    <meta property="og:description" content="A clear, simple explanation of water cycle - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of water cycle - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/science/water-cycle/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Water Cycle">
-    <meta name="twitter:description" content="A clear, simple explanation of water cycle - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of water cycle - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Water Cycle - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Science", "item": "https://360library.com/#science"}, {"@type": "ListItem", "position": 3, "name": "Water Cycle", "item": "https://360library.com/science/water-cycle/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Water Cycle", "description": "A clear, simple explanation of water cycle - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/water-cycle/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/water-cycle/types-of.html"}, "about": {"@type": "Thing", "name": "Water Cycle"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Water Cycle", "description": "A clear, simple explanation of types of water cycle - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/science/water-cycle/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/science/water-cycle/types-of.html"}, "about": {"@type": "Thing", "name": "Water Cycle"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,89 +388,56 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#science">Science</a><span>&rsaquo;</span><a href="/science/water-cycle/what-is.html">Water Cycle</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #0891B2">
     <main class="article-main">
         <article>
             <h1>Types of Water Cycle</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            <nav class="toc">
+    <h3>In This Article</h3>
+    <ol>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#main-categories">MAIN CATEGORIES</a></li>
+        <li><a href="#comparison-table">COMPARISON TABLE</a></li>
+        <li><a href="#how-they-relate">HOW THEY RELATE</a></li>
+        <li><a href="#summary">SUMMARY</a></li>
+    </ol>
+</nav>
 
             
 
-            <h2>INTRODUCTION</h2>
+            <h2 id="introduction">INTRODUCTION</h2>
 <p>The water cycle, also known as the hydrologic cycle, is the continuous process by which water is circulated between the Earth and the atmosphere. Classification of the water cycle into different types or stages is essential to understand the complex interactions between the atmosphere, oceans, lakes, rivers, and land. By categorizing the various processes involved in the water cycle, scientists can better comprehend the movement of water, its transformations, and its impact on the environment. This classification helps to identify the distinct characteristics of each stage, making it easier to study, analyze, and predict the water cycle's behavior. Understanding the different types of water cycle is crucial for managing water resources, predicting weather patterns, and mitigating the effects of natural disasters such as floods and droughts.</p>
-
-<h2>MAIN CATEGORIES</h2>
+<h2 id="main-categories">MAIN CATEGORIES</h2>
 <p>The water cycle can be broadly classified into several main categories, each with its unique characteristics and processes. These categories include:</p>
 <ul>
-  <li><strong>Evaporation</strong>: Evaporation is the process by which water is transformed from a liquid to a gas, typically occurring at the surface of oceans, lakes, and rivers. Key characteristics of evaporation include the absorption of heat energy from the sun, the formation of water vapor, and the increase in humidity. A simple example of evaporation is the formation of mist above a hot cup of coffee, where the heat from the coffee causes the water molecules to turn into vapor.</li>
-  <li><strong>Condensation</strong>: Condensation is the process by which water vapor in the atmosphere is cooled and transformed back into liquid water, resulting in the formation of clouds, fog, or dew. Key characteristics of condensation include the cooling of air, the increase in humidity, and the formation of visible clouds or precipitation. A simple example of condensation is the formation of dew on a grassy lawn overnight, where the cooler air causes the water vapor to condense into droplets.</li>
-  <li><strong>Precipitation</strong>: Precipitation is the process by which water falls to the Earth's surface, typically in the form of rain, snow, sleet, or hail. Key characteristics of precipitation include the formation of clouds, the condensation of water vapor, and the gravitational pull of the Earth. A simple example of precipitation is a spring shower, where the water vapor in the atmosphere condenses and falls to the ground as rain.</li>
-  <li><strong>Runoff</strong>: Runoff is the process by which water flows over the land and into streams, rivers, and lakes, often occurring after precipitation. Key characteristics of runoff include the flow of water over the surface, the erosion of soil and rocks, and the transport of nutrients and sediments. A simple example of runoff is the flow of water over a parking lot after a heavy rain, where the water flows into the storm drains and eventually into nearby waterways.</li>
-  <li><strong>Infiltration</strong>: Infiltration is the process by which water seeps into the soil and becomes groundwater, often occurring after precipitation or runoff. Key characteristics of infiltration include the percolation of water into the soil, the recharge of groundwater aquifers, and the support of plant growth. A simple example of infiltration is the absorption of water by a plant's roots, where the water is drawn into the soil and used for growth and development.</li>
-  <li><strong>Transpiration</strong>: Transpiration is the process by which plants release water vapor into the atmosphere, typically through their leaves. Key characteristics of transpiration include the absorption of water by plant roots, the transport of water through the plant's vascular system, and the release of water vapor into the air. A simple example of transpiration is the release of water vapor by a tree on a hot summer day, where the tree absorbs water from the soil and releases it into the air as water vapor.</li>
+<li><strong>Evaporation</strong>: Evaporation is the process by which water is transformed from a liquid to a gas, typically occurring at the surface of oceans, lakes, and rivers. Key characteristics of evaporation include the absorption of heat energy from the sun, the formation of water vapor, and the increase in humidity. A simple example of evaporation is the formation of mist above a hot cup of coffee, where the heat from the coffee causes the water molecules to turn into vapor.</li>
+<li><strong>Condensation</strong>: Condensation is the process by which water vapor in the atmosphere is cooled and transformed back into liquid water, resulting in the formation of clouds, fog, or dew. Key characteristics of condensation include the cooling of air, the increase in humidity, and the formation of visible clouds or precipitation. A simple example of condensation is the formation of dew on a grassy lawn overnight, where the cooler air causes the water vapor to condense into droplets.</li>
+<li><strong>Precipitation</strong>: Precipitation is the process by which water falls to the Earth's surface, typically in the form of rain, snow, sleet, or hail. Key characteristics of precipitation include the formation of clouds, the condensation of water vapor, and the gravitational pull of the Earth. A simple example of precipitation is a spring shower, where the water vapor in the atmosphere condenses and falls to the ground as rain.</li>
+<li><strong>Runoff</strong>: Runoff is the process by which water flows over the land and into streams, rivers, and lakes, often occurring after precipitation. Key characteristics of runoff include the flow of water over the surface, the erosion of soil and rocks, and the transport of nutrients and sediments. A simple example of runoff is the flow of water over a parking lot after a heavy rain, where the water flows into the storm drains and eventually into nearby waterways.</li>
+<li><strong>Infiltration</strong>: Infiltration is the process by which water seeps into the soil and becomes groundwater, often occurring after precipitation or runoff. Key characteristics of infiltration include the percolation of water into the soil, the recharge of groundwater aquifers, and the support of plant growth. A simple example of infiltration is the absorption of water by a plant's roots, where the water is drawn into the soil and used for growth and development.</li>
+<li><strong>Transpiration</strong>: Transpiration is the process by which plants release water vapor into the atmosphere, typically through their leaves. Key characteristics of transpiration include the absorption of water by plant roots, the transport of water through the plant's vascular system, and the release of water vapor into the air. A simple example of transpiration is the release of water vapor by a tree on a hot summer day, where the tree absorbs water from the soil and releases it into the air as water vapor.</li>
 </ul>
-
-<h2>COMPARISON TABLE</h2>
-<table class="comparison-table"><thead><tr>
-<th>Category</th>
-<th>Definition</th>
-<th>Key Characteristics</th>
-<th>Example</th>
-</tr></thead><tbody>
-<tr>
-<td>Evaporation</td>
-<td>Transformation of liquid water to gas</td>
-<td>Heat energy, formation of water vapor, increase in humidity</td>
-<td>Mist above a hot cup of coffee</td>
-</tr>
-<tr>
-<td>Condensation</td>
-<td>Transformation of water vapor to liquid</td>
-<td>Cooling of air, increase in humidity, formation of clouds or precipitation</td>
-<td>Dew on a grassy lawn overnight</td>
-</tr>
-<tr>
-<td>Precipitation</td>
-<td>Water falls to the Earth's surface</td>
-<td>Formation of clouds, condensation of water vapor, gravitational pull</td>
-<td>Spring shower</td>
-</tr>
-<tr>
-<td>Runoff</td>
-<td>Water flows over land and into streams, rivers, and lakes</td>
-<td>Flow of water over surface, erosion of soil and rocks, transport of nutrients and sediments</td>
-<td>Flow of water over a parking lot after a heavy rain</td>
-</tr>
-<tr>
-<td>Infiltration</td>
-<td>Water seeps into soil and becomes groundwater</td>
-<td>Percolation of water into soil, recharge of groundwater aquifers, support of plant growth</td>
-<td>Absorption of water by a plant's roots</td>
-</tr>
-<tr>
-<td>Transpiration</td>
-<td>Plants release water vapor into the atmosphere</td>
-<td>Absorption of water by plant roots, transport of water through vascular system, release of water vapor into air</td>
-<td>Release of water vapor by a tree on a hot summer day</td>
-</tr>
-</tbody></table>
-
-<h2>HOW THEY RELATE</h2>
+<h2 id="comparison-table">COMPARISON TABLE</h2>
+<div class="table-wrapper"><table>
+<thead><tr><th>Category</th><th>Definition</th><th>Key Characteristics</th><th>Example</th></tr></thead><tbody>
+<tr><td>Evaporation</td><td>Transformation of liquid water to gas</td><td>Heat energy, formation of water vapor, increase in humidity</td><td>Mist above a hot cup of coffee</td></tr>
+<tr><td>Condensation</td><td>Transformation of water vapor to liquid</td><td>Cooling of air, increase in humidity, formation of clouds or precipitation</td><td>Dew on a grassy lawn overnight</td></tr>
+<tr><td>Precipitation</td><td>Water falls to the Earth's surface</td><td>Formation of clouds, condensation of water vapor, gravitational pull</td><td>Spring shower</td></tr>
+<tr><td>Runoff</td><td>Water flows over land and into streams, rivers, and lakes</td><td>Flow of water over surface, erosion of soil and rocks, transport of nutrients and sediments</td><td>Flow of water over a parking lot after a heavy rain</td></tr>
+<tr><td>Infiltration</td><td>Water seeps into soil and becomes groundwater</td><td>Percolation of water into soil, recharge of groundwater aquifers, support of plant growth</td><td>Absorption of water by a plant's roots</td></tr>
+<tr><td>Transpiration</td><td>Plants release water vapor into the atmosphere</td><td>Absorption of water by plant roots, transport of water through vascular system, release of water vapor into air</td><td>Release of water vapor by a tree on a hot summer day</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-they-relate">HOW THEY RELATE</h2>
 <p>The different categories of the water cycle are interconnected and interdependent, with each stage influencing the others. For example, evaporation leads to condensation, which in turn leads to precipitation. Precipitation can result in runoff, infiltration, or a combination of both. Infiltration recharges groundwater aquifers, which can eventually feed into streams, rivers, and lakes, where the water can evaporate again. Transpiration is also closely linked to the other stages, as plants absorb water from the soil and release it into the atmosphere as water vapor, which can then condense and precipitate.</p>
-
-<h2>SUMMARY</h2>
+<h2 id="summary">SUMMARY</h2>
 <p>The water cycle can be classified into several distinct categories, including evaporation, condensation, precipitation, runoff, infiltration, and transpiration, each with its unique characteristics and processes that are interconnected and interdependent.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/science/adaptation/what-is.html" class="related-link">Adaptation</a>
-        <a href="/science/carbon-cycle/what-is.html" class="related-link">Carbon Cycle</a>
-        <a href="/science/dna-replication/what-is.html" class="related-link">Dna Replication</a>
-        <a href="/science/gravity/what-is.html" class="related-link">Gravity</a>
-        <a href="/science/osmosis/what-is.html" class="related-link">Osmosis</a>
-        <a href="/science/rock-cycle/what-is.html" class="related-link">Rock Cycle</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -470,6 +482,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

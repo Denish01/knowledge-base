@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of nutrition - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of nutrition - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/health/nutrition/types-of.html">
     <meta property="og:title" content="Types of Nutrition">
-    <meta property="og:description" content="A clear, simple explanation of nutrition - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of nutrition - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/health/nutrition/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Nutrition">
-    <meta name="twitter:description" content="A clear, simple explanation of nutrition - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of nutrition - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Nutrition - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Health", "item": "https://360library.com/#health"}, {"@type": "ListItem", "position": 3, "name": "Nutrition", "item": "https://360library.com/health/nutrition/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Nutrition", "description": "A clear, simple explanation of nutrition - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/nutrition/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/nutrition/types-of.html"}, "about": {"@type": "Thing", "name": "Nutrition"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Nutrition", "description": "A clear, simple explanation of types of nutrition - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/health/nutrition/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/health/nutrition/types-of.html"}, "about": {"@type": "Thing", "name": "Nutrition"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,126 +388,84 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#health">Health</a><span>&rsaquo;</span><a href="/health/nutrition/what-is.html">Nutrition</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #DC2626">
     <main class="article-main">
         <article>
             <h1>Types of Nutrition</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>The study of types of nutrition encompasses various ways in which living organisms obtain and utilize nutrients to maintain their functions, grow, and reproduce. Classification of nutrition is essential as it helps in understanding the diverse requirements and processes that different organisms undergo to sustain life. By categorizing nutrition, scientists can better comprehend the complex interactions between organisms and their environment, ultimately leading to a deeper understanding of the natural world and the development of strategies to maintain health and prevent disease.</p>
-
-<p>2. MAIN CATEGORIES:</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <ul>
-  <li><strong>Autotrophic Nutrition</strong></li>
-  <li>Definition: Autotrophic nutrition involves the production of nutrients through the conversion of light energy or chemical energy into organic compounds. This process is typically seen in plants, algae, and some bacteria.</li>
-  <li>Key characteristics: The ability to synthesize organic compounds from inorganic substances, presence of chlorophyll or other pigments, and the use of energy from light or chemicals.</li>
-  <li>Example: Plants use sunlight, carbon dioxide, and water to produce glucose and oxygen through photosynthesis.</li>
-  <li><strong>Heterotrophic Nutrition</strong></li>
-  <li>Definition: Heterotrophic nutrition involves the consumption of organic compounds produced by other organisms to obtain energy and nutrients. This type of nutrition is characteristic of animals, fungi, and some bacteria.</li>
-  <li>Key characteristics: The inability to synthesize organic compounds from inorganic substances, reliance on consuming other organisms or organic matter, and the use of energy from the breakdown of complex molecules.</li>
-  <li>Example: Humans consume a variety of foods, including plants and animals, to obtain the necessary nutrients for energy and growth.</li>
-  <li><strong>Saprotrophic Nutrition</strong></li>
-  <li>Definition: Saprotrophic nutrition involves the breakdown and absorption of dead organic matter to obtain nutrients. This type of nutrition is seen in fungi and some bacteria.</li>
-  <li>Key characteristics: The ability to decompose complex organic molecules into simpler compounds, the presence of enzymes that facilitate breakdown, and the absorption of nutrients from the decomposed matter.</li>
-  <li>Example: Mushrooms obtain their nutrients by breaking down and absorbing the organic matter in soil and decaying wood.</li>
-  <li><strong>Parasitic Nutrition</strong></li>
-  <li>Definition: Parasitic nutrition involves the obtaining of nutrients by living on or in another organism, often causing harm to the host. This type of nutrition is seen in parasites such as tapeworms and hookworms.</li>
-  <li>Key characteristics: The reliance on a host organism for nutrients, the presence of adaptations that facilitate attachment or invasion of the host, and the potential to cause harm or disease in the host.</li>
-  <li>Example: Tapeworms live in the intestines of animals and humans, absorbing nutrients from the host's digestive system.</li>
-  <li><strong>Holozoic Nutrition</strong></li>
-  <li>Definition: Holozoic nutrition involves the ingestion and digestion of complex organic matter to obtain nutrients. This type of nutrition is characteristic of animals.</li>
-  <li>Key characteristics: The ability to ingest and digest solid food particles, the presence of a mouth and digestive system, and the use of enzymes to break down complex molecules.</li>
-  <li>Example: Dogs eat and digest a variety of foods, including meat, bones, and plants, to obtain the necessary nutrients for energy and growth.</li>
-  <li><strong>Omnivorous Nutrition</strong></li>
-  <li>Definition: Omnivorous nutrition involves the consumption of both plant and animal matter to obtain nutrients. This type of nutrition is seen in humans, bears, and pigs.</li>
-  <li>Key characteristics: The ability to digest and utilize a wide variety of food sources, including plants and animals, and the presence of adaptations that facilitate the consumption of different types of food.</li>
-  <li>Example: Humans consume a diet that includes fruits, vegetables, grains, and animal products, such as meat, dairy, and eggs.</li>
-  <li><strong>Carnivorous Nutrition</strong></li>
-  <li>Definition: Carnivorous nutrition involves the consumption of primarily animal matter to obtain nutrients. This type of nutrition is characteristic of animals such as lions, tigers, and wolves.</li>
-  <li>Key characteristics: The reliance on animal tissue as the primary source of nutrients, the presence of adaptations that facilitate the capture and consumption of prey, and the use of enzymes to break down protein and fat.</li>
-  <li>Example: Lions primarily consume meat, hunting and eating large ungulates such as zebras and antelopes.</li>
-  <li><strong>Herbivorous Nutrition</strong></li>
-  <li>Definition: Herbivorous nutrition involves the consumption of primarily plant matter to obtain nutrients. This type of nutrition is seen in animals such as cows, deer, and rabbits.</li>
-  <li>Key characteristics: The reliance on plant tissue as the primary source of nutrients, the presence of adaptations that facilitate the consumption and digestion of plant material, and the use of enzymes to break down cellulose and other complex carbohydrates.</li>
-  <li>Example: Cows primarily consume grasses and other plant material, using their four-chambered stomach to digest and extract nutrients from cellulose.</li>
+<li><strong>Autotrophic Nutrition</strong></li>
+<li>Definition: Autotrophic nutrition involves the production of nutrients through the conversion of light energy or chemical energy into organic compounds. This process is typically seen in plants, algae, and some bacteria.</li>
+<li>Key characteristics: The ability to synthesize organic compounds from inorganic substances, presence of chlorophyll or other pigments, and the use of energy from light or chemicals.</li>
+<li>Example: Plants use sunlight, carbon dioxide, and water to produce glucose and oxygen through photosynthesis.</li>
+<li><strong>Heterotrophic Nutrition</strong></li>
+<li>Definition: Heterotrophic nutrition involves the consumption of organic compounds produced by other organisms to obtain energy and nutrients. This type of nutrition is characteristic of animals, fungi, and some bacteria.</li>
+<li>Key characteristics: The inability to synthesize organic compounds from inorganic substances, reliance on consuming other organisms or organic matter, and the use of energy from the breakdown of complex molecules.</li>
+<li>Example: Humans consume a variety of foods, including plants and animals, to obtain the necessary nutrients for energy and growth.</li>
+<li><strong>Saprotrophic Nutrition</strong></li>
+<li>Definition: Saprotrophic nutrition involves the breakdown and absorption of dead organic matter to obtain nutrients. This type of nutrition is seen in fungi and some bacteria.</li>
+<li>Key characteristics: The ability to decompose complex organic molecules into simpler compounds, the presence of enzymes that facilitate breakdown, and the absorption of nutrients from the decomposed matter.</li>
+<li>Example: Mushrooms obtain their nutrients by breaking down and absorbing the organic matter in soil and decaying wood.</li>
+<li><strong>Parasitic Nutrition</strong></li>
+<li>Definition: Parasitic nutrition involves the obtaining of nutrients by living on or in another organism, often causing harm to the host. This type of nutrition is seen in parasites such as tapeworms and hookworms.</li>
+<li>Key characteristics: The reliance on a host organism for nutrients, the presence of adaptations that facilitate attachment or invasion of the host, and the potential to cause harm or disease in the host.</li>
+<li>Example: Tapeworms live in the intestines of animals and humans, absorbing nutrients from the host's digestive system.</li>
+<li><strong>Holozoic Nutrition</strong></li>
+<li>Definition: Holozoic nutrition involves the ingestion and digestion of complex organic matter to obtain nutrients. This type of nutrition is characteristic of animals.</li>
+<li>Key characteristics: The ability to ingest and digest solid food particles, the presence of a mouth and digestive system, and the use of enzymes to break down complex molecules.</li>
+<li>Example: Dogs eat and digest a variety of foods, including meat, bones, and plants, to obtain the necessary nutrients for energy and growth.</li>
+<li><strong>Omnivorous Nutrition</strong></li>
+<li>Definition: Omnivorous nutrition involves the consumption of both plant and animal matter to obtain nutrients. This type of nutrition is seen in humans, bears, and pigs.</li>
+<li>Key characteristics: The ability to digest and utilize a wide variety of food sources, including plants and animals, and the presence of adaptations that facilitate the consumption of different types of food.</li>
+<li>Example: Humans consume a diet that includes fruits, vegetables, grains, and animal products, such as meat, dairy, and eggs.</li>
+<li><strong>Carnivorous Nutrition</strong></li>
+<li>Definition: Carnivorous nutrition involves the consumption of primarily animal matter to obtain nutrients. This type of nutrition is characteristic of animals such as lions, tigers, and wolves.</li>
+<li>Key characteristics: The reliance on animal tissue as the primary source of nutrients, the presence of adaptations that facilitate the capture and consumption of prey, and the use of enzymes to break down protein and fat.</li>
+<li>Example: Lions primarily consume meat, hunting and eating large ungulates such as zebras and antelopes.</li>
+<li><strong>Herbivorous Nutrition</strong></li>
+<li>Definition: Herbivorous nutrition involves the consumption of primarily plant matter to obtain nutrients. This type of nutrition is seen in animals such as cows, deer, and rabbits.</li>
+<li>Key characteristics: The reliance on plant tissue as the primary source of nutrients, the presence of adaptations that facilitate the consumption and digestion of plant material, and the use of enzymes to break down cellulose and other complex carbohydrates.</li>
+<li>Example: Cows primarily consume grasses and other plant material, using their four-chambered stomach to digest and extract nutrients from cellulose.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Nutrition</th>
-<th>Energy Source</th>
-<th>Nutrient Source</th>
-<th>Examples</th>
-</tr></thead><tbody>
-<tr>
-<td>Autotrophic</td>
-<td>Light/Chemical</td>
-<td>Inorganic compounds</td>
-<td>Plants, algae, bacteria</td>
-</tr>
-<tr>
-<td>Heterotrophic</td>
-<td>Organic compounds</td>
-<td>Other organisms</td>
-<td>Animals, fungi, bacteria</td>
-</tr>
-<tr>
-<td>Saprotrophic</td>
-<td>Dead organic matter</td>
-<td>Decomposed organic compounds</td>
-<td>Fungi, bacteria</td>
-</tr>
-<tr>
-<td>Parasitic</td>
-<td>Host organism</td>
-<td>Nutrients from host</td>
-<td>Tapeworms, hookworms</td>
-</tr>
-<tr>
-<td>Holozoic</td>
-<td>Ingested organic matter</td>
-<td>Solid food particles</td>
-<td>Animals</td>
-</tr>
-<tr>
-<td>Omnivorous</td>
-<td>Plant and animal matter</td>
-<td>Variety of food sources</td>
-<td>Humans, bears, pigs</td>
-</tr>
-<tr>
-<td>Carnivorous</td>
-<td>Animal matter</td>
-<td>Animal tissue</td>
-<td>Lions, tigers, wolves</td>
-</tr>
-<tr>
-<td>Herbivorous</td>
-<td>Plant matter</td>
-<td>Plant tissue</td>
-<td>Cows, deer, rabbits</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Nutrition</th><th>Energy Source</th><th>Nutrient Source</th><th>Examples</th></tr></thead><tbody>
+<tr><td>Autotrophic</td><td>Light/Chemical</td><td>Inorganic compounds</td><td>Plants, algae, bacteria</td></tr>
+<tr><td>Heterotrophic</td><td>Organic compounds</td><td>Other organisms</td><td>Animals, fungi, bacteria</td></tr>
+<tr><td>Saprotrophic</td><td>Dead organic matter</td><td>Decomposed organic compounds</td><td>Fungi, bacteria</td></tr>
+<tr><td>Parasitic</td><td>Host organism</td><td>Nutrients from host</td><td>Tapeworms, hookworms</td></tr>
+<tr><td>Holozoic</td><td>Ingested organic matter</td><td>Solid food particles</td><td>Animals</td></tr>
+<tr><td>Omnivorous</td><td>Plant and animal matter</td><td>Variety of food sources</td><td>Humans, bears, pigs</td></tr>
+<tr><td>Carnivorous</td><td>Animal matter</td><td>Animal tissue</td><td>Lions, tigers, wolves</td></tr>
+<tr><td>Herbivorous</td><td>Plant matter</td><td>Plant tissue</td><td>Cows, deer, rabbits</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different types of nutrition are interconnected and often overlap. For example, autotrophic organisms such as plants are the primary producers of nutrients, while heterotrophic organisms such as animals rely on consuming these producers to obtain energy and nutrients. Saprotrophic organisms such as fungi and bacteria play a crucial role in decomposing dead organic matter, releasing nutrients back into the environment. Parasitic organisms, on the other hand, obtain nutrients by living on or in other organisms, often causing harm to the host. The various types of nutrition are also influenced by environmental factors, such as the availability of light, water, and nutrients, which can impact the growth and survival of organisms.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system of types of nutrition encompasses various categories, including autotrophic, heterotrophic, saprotrophic, parasitic, holozoic, omnivorous, carnivorous, and herbivorous nutrition, each with distinct characteristics and examples that highlight the diverse ways in which living organisms obtain and utilize nutrients to sustain life.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/health/exercise/what-is.html" class="related-link">Exercise</a>
-        <a href="/health/mental-health/what-is.html" class="related-link">Mental Health</a>
-        <a href="/health/nervous-system/what-is.html" class="related-link">Nervous System</a>
-        <a href="/health/neurology/what-is.html" class="related-link">Neurology</a>
-        <a href="/health/obstetrics/what-is.html" class="related-link">Obstetrics</a>
-        <a href="/health/oncology/what-is.html" class="related-link">Oncology</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -507,6 +510,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

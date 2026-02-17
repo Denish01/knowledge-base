@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -343,54 +388,42 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/net-income-for-support/what-is.html">Net Income For Support</a><span>&rsaquo;</span>What Is
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>What Is Net Income For Support?</h1>
+            <div class="article-meta">Last updated: February 2026</div>
+
+            
 
             
 
             <p>Net income for support is the amount of money an individual or family has available to spend on basic needs, such as food, shelter, and clothing, after all necessary expenses have been paid.</p>
-
 <p>Understanding net income for support is important because it helps determine how much money is available for daily living expenses. To calculate net income for support, one must first determine the total income from all sources, including employment, investments, and government benefits. This total income is then reduced by necessary expenses, such as taxes, childcare costs, and medical expenses. The remaining amount is the net income for support, which can be used to pay for basic needs and discretionary items.</p>
-
 <p>The calculation of net income for support is crucial in various contexts, including child support and spousal support. In these situations, the court or relevant authority will consider the net income for support of each parent or spouse to determine the amount of support that should be paid. This calculation ensures that the individual or family has enough money to meet their basic needs, while also providing for the support of dependents.</p>
-
 <p>In addition to its use in support calculations, net income for support is also an important concept in personal finance. It helps individuals and families understand how much money they have available to spend on non-essential items, such as entertainment and travel. By knowing their net income for support, individuals can make informed decisions about their budgets and financial priorities.</p>
-
 <p>The key components of net income for support include:</p>
 <ul>
-  <li>Gross income, which is the total amount of money earned from all sources</li>
-  <li>Necessary expenses, such as taxes, childcare costs, and medical expenses</li>
-  <li>Disposable income, which is the amount of money available for spending after necessary expenses have been paid</li>
-  <li>Basic needs, such as food, shelter, and clothing, which must be met before discretionary items can be purchased</li>
-  <li>Support obligations, such as child support or spousal support, which must be paid from net income</li>
-  <li>Financial priorities, which determine how net income is allocated among different expenses and savings goals</li>
+<li>Gross income, which is the total amount of money earned from all sources</li>
+<li>Necessary expenses, such as taxes, childcare costs, and medical expenses</li>
+<li>Disposable income, which is the amount of money available for spending after necessary expenses have been paid</li>
+<li>Basic needs, such as food, shelter, and clothing, which must be met before discretionary items can be purchased</li>
+<li>Support obligations, such as child support or spousal support, which must be paid from net income</li>
+<li>Financial priorities, which determine how net income is allocated among different expenses and savings goals</li>
 </ul>
-
 <p>Despite its importance, net income for support is often misunderstood. Some common misconceptions include:</p>
 <ul>
-  <li>Assuming that net income for support is the same as gross income, without accounting for necessary expenses</li>
-  <li>Failing to consider all sources of income, such as investments or government benefits, when calculating net income for support</li>
-  <li>Overlooking support obligations, such as child support or spousal support, when determining net income for support</li>
-  <li>Believing that net income for support is only relevant in the context of child support or spousal support, when in fact it is an important concept in personal finance</li>
+<li>Assuming that net income for support is the same as gross income, without accounting for necessary expenses</li>
+<li>Failing to consider all sources of income, such as investments or government benefits, when calculating net income for support</li>
+<li>Overlooking support obligations, such as child support or spousal support, when determining net income for support</li>
+<li>Believing that net income for support is only relevant in the context of child support or spousal support, when in fact it is an important concept in personal finance</li>
 </ul>
-
 <p>For example, consider a single parent with two children, who earns $4,000 per month from their job. After paying $1,000 in taxes, $500 in childcare costs, and $500 in medical expenses, the parent has $2,000 remaining as net income for support. From this amount, the parent must pay $500 in child support, leaving $1,500 to cover basic needs, such as food, shelter, and clothing, as well as discretionary items, such as entertainment and travel.</p>
-
 <p>In summary, net income for support is the amount of money an individual or family has available to spend on basic needs and discretionary items after all necessary expenses have been paid, and it is an important concept in both personal finance and support calculations.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/minimum-payment/what-is.html" class="related-link">Minimum Payment</a>
-        <a href="/life_obligations/mortgage-payment/what-is.html" class="related-link">Mortgage Payment</a>
-        <a href="/life_obligations/non-compete-agreement/what-is.html" class="related-link">Non Compete Agreement</a>
-        <a href="/life_obligations/noncustodial-parent/what-is.html" class="related-link">Noncustodial Parent</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -435,6 +468,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>

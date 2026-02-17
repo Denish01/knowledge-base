@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear, simple explanation of mortgage payment - definition, key concepts, examples, and common misconceptions.">
+    <meta name="description" content="A clear, simple explanation of types of mortgage payment - definition, key concepts, examples, and common misconceptions.">
     <link rel="canonical" href="https://360library.com/life_obligations/mortgage-payment/types-of.html">
     <meta property="og:title" content="Types of Mortgage Payment">
-    <meta property="og:description" content="A clear, simple explanation of mortgage payment - definition, key concepts, examples, and common misconceptions.">
+    <meta property="og:description" content="A clear, simple explanation of types of mortgage payment - definition, key concepts, examples, and common misconceptions.">
     <meta property="og:url" content="https://360library.com/life_obligations/mortgage-payment/types-of.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="360Library">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Types of Mortgage Payment">
-    <meta name="twitter:description" content="A clear, simple explanation of mortgage payment - definition, key concepts, examples, and common misconceptions.">
+    <meta name="twitter:description" content="A clear, simple explanation of types of mortgage payment - definition, key concepts, examples, and common misconceptions.">
     <title>Types of Mortgage Payment - 360Library</title>
     <style>
 
@@ -169,7 +169,7 @@ a:hover { text-decoration: underline; }
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #E8F0FE;
+    border-bottom: 2px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white);
 }
 .article-main h3 {
     font-size: 18px;
@@ -202,11 +202,12 @@ a:hover { text-decoration: underline; }
     text-align: left;
 }
 .article-main th {
-    background: #F9FAFB;
+    background: var(--domain-color, #1B4D8E);
+    color: #fff;
     font-weight: 600;
-    color: #1F2937;
 }
 .article-main tr:nth-child(even) { background: #F9FAFB; }
+.article-main tr:hover { background: color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white); }
 
 /* Calculator styles (preserve existing) */
 .article-main .calculator,
@@ -217,6 +218,28 @@ a:hover { text-decoration: underline; }
     padding: 24px;
     margin: 24px 0;
 }
+
+/* Factbox */
+.factbox { background: linear-gradient(135deg, color-mix(in srgb, var(--domain-color, #1B4D8E) 5%, white), color-mix(in srgb, var(--domain-color, #1B4D8E) 12%, white)); border: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 20%, white); border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.factbox h3 { color: var(--domain-color, #1B4D8E); margin: 0 0 12px; font-size: 16px; }
+.fact-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--domain-color, #1B4D8E) 10%, white); }
+.fact-row:last-child { border-bottom: none; }
+.fact-key { font-weight: 600; color: #1F2937; flex: 0 0 45%; }
+.fact-val { color: #6B7280; text-align: right; flex: 0 0 50%; }
+
+/* Callout */
+.callout { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.callout .misconception { color: #856404; margin-bottom: 4px; }
+.callout .reality { color: #155724; background: #d4edda; padding: 8px 12px; border-radius: 4px; margin-bottom: 12px; }
+
+/* Rating */
+.rating { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.rating-label { font-weight: 600; min-width: 160px; }
+.rating-dots { font-size: 1.2em; color: var(--domain-color, #1B4D8E); letter-spacing: 2px; }
+.rating-score { color: #6B7280; font-size: 13px; }
+
+/* Table wrapper */
+.table-wrapper { overflow-x: auto; margin: 16px 0; }
 
 /* === Sidebar === */
 .article-sidebar {
@@ -284,6 +307,28 @@ a:hover { text-decoration: underline; }
     .article-main h1 { font-size: 24px; }
 }
 
+/* === Table of Contents === */
+.toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 0 0 28px; }
+.toc h3 { font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { font-size: 14px; margin-bottom: 4px; line-height: 1.5; }
+.toc a { color: var(--domain-color, #1B4D8E); }
+
+/* === Article Meta === */
+.article-meta { font-size: 13px; color: #6B7280; margin-bottom: 20px; }
+
+/* === Angle Cross-reference === */
+.see-also { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 24px; margin: 32px 0; }
+.see-also h3 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 10px; }
+.see-also ul { list-style: none; padding: 0; margin: 0; }
+.see-also li { margin-bottom: 6px; }
+.see-also a { font-size: 14px; color: var(--domain-color, #1B4D8E); }
+
+/* === Calculator Callout === */
+.calculator-callout { border: 1px solid #E2E8F0; border-radius: 10px; overflow: hidden; margin: 24px 0; }
+.calculator-callout-header { background: var(--domain-color, #1B4D8E); color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 600; }
+.calculator-callout-body { padding: 20px; }
+
 
 /* === Related Concepts === */
 .related-concepts {
@@ -320,7 +365,7 @@ a:hover { text-decoration: underline; }
 
     </style>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Life Obligations", "item": "https://360library.com/#life_obligations"}, {"@type": "ListItem", "position": 3, "name": "Mortgage Payment", "item": "https://360library.com/life_obligations/mortgage-payment/what-is.html"}, {"@type": "ListItem", "position": 4, "name": "Types"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Mortgage Payment", "description": "A clear, simple explanation of mortgage payment - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/mortgage-payment/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/mortgage-payment/types-of.html"}, "about": {"@type": "Thing", "name": "Mortgage Payment"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Types of Mortgage Payment", "description": "A clear, simple explanation of types of mortgage payment - definition, key concepts, examples, and common misconceptions.", "url": "https://360library.com/life_obligations/mortgage-payment/types-of.html", "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com", "contactPoint": {"@type": "ContactPoint", "email": "mrgovernment02@gmail.com", "contactType": "customer support"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://360library.com/life_obligations/mortgage-payment/types-of.html"}, "about": {"@type": "Thing", "name": "Mortgage Payment"}, "isPartOf": {"@type": "WebSite", "name": "360Library", "url": "https://360library.com"}}</script>
 </head>
 <body>
 <input type="checkbox" id="mobile-menu-state" aria-hidden="true">
@@ -343,96 +388,69 @@ a:hover { text-decoration: underline; }
     <a href="/">Home</a><span>&rsaquo;</span><a href="/#life_obligations">Life Obligations</a><span>&rsaquo;</span><a href="/life_obligations/mortgage-payment/what-is.html">Mortgage Payment</a><span>&rsaquo;</span>Types
 </nav>
 
-<div class="article-wrapper">
+<div class="article-wrapper" style="--domain-color: #7C3AED">
     <main class="article-main">
         <article>
             <h1>Types of Mortgage Payment</h1>
+            <div class="article-meta">Last updated: February 2026</div>
 
             
 
-            <p>1. INTRODUCTION:</p>
+            
+
+            <ol>
+<li>INTRODUCTION:</li>
+</ol>
 <p>The types of mortgage payment refer to the various ways in which borrowers can structure their mortgage payments to repay their loan. Classification of mortgage payments is important because it helps borrowers understand their options and choose the payment plan that best suits their financial situation and goals. By categorizing mortgage payments, borrowers can make informed decisions about their loan and avoid potential pitfalls. Understanding the different types of mortgage payment is crucial for managing debt and achieving long-term financial stability.</p>
-
-<p>2. MAIN CATEGORIES:</p>
+<ol>
+<li>MAIN CATEGORIES:</li>
+</ol>
 <ul>
-  <li><strong>Fixed-Rate Mortgage</strong></li>
-  <li>Brief definition: A fixed-rate mortgage is a type of mortgage where the interest rate remains the same for the entire term of the loan. This means that the borrower's monthly payment amount will not change.</li>
-  <li>Key characteristics: Fixed interest rate, fixed monthly payment, predictable payments.</li>
-  <li>Simple example: A borrower takes out a 30-year fixed-rate mortgage with an interest rate of 4%. Their monthly payment will remain the same for the entire 30 years.</li>
-  <li><strong>Adjustable-Rate Mortgage</strong></li>
-  <li>Brief definition: An adjustable-rate mortgage is a type of mortgage where the interest rate can change periodically based on market conditions. This means that the borrower's monthly payment amount may increase or decrease.</li>
-  <li>Key characteristics: Variable interest rate, changing monthly payment, potential for lower initial payments.</li>
-  <li>Simple example: A borrower takes out a 5/1 adjustable-rate mortgage, where the interest rate is fixed for the first 5 years and then adjusts annually. If the interest rate increases, the borrower's monthly payment will also increase.</li>
-  <li><strong>Interest-Only Mortgage</strong></li>
-  <li>Brief definition: An interest-only mortgage is a type of mortgage where the borrower only pays the interest on the loan for a specified period, usually 5-10 years. After this period, the borrower must start making payments on the principal amount.</li>
-  <li>Key characteristics: Lower initial payments, potential for higher payments later, risk of negative amortization.</li>
-  <li>Simple example: A borrower takes out an interest-only mortgage with a 5-year interest-only period. For the first 5 years, they only pay the interest on the loan, but after the 5-year period, they must start making payments on the principal amount.</li>
-  <li><strong>Government-Backed Mortgage</strong></li>
-  <li>Brief definition: A government-backed mortgage is a type of mortgage that is insured or guaranteed by a government agency, such as the Federal Housing Administration (FHA) or the Department of Veterans Affairs (VA). These mortgages often have more lenient credit score requirements and lower down payment options.</li>
-  <li>Key characteristics: Government guarantee, lower down payment options, more lenient credit score requirements.</li>
-  <li>Simple example: A borrower takes out an FHA loan, which requires a down payment of only 3.5%. The borrower's credit score is 600, which is lower than the typical requirement for a conventional loan.</li>
-  <li><strong>Bi-Weekly Mortgage</strong></li>
-  <li>Brief definition: A bi-weekly mortgage is a type of mortgage where the borrower makes half of their monthly payment every two weeks. This can help the borrower pay off the loan faster and reduce the total interest paid.</li>
-  <li>Key characteristics: Half payments made every two weeks, potential for faster loan payoff, reduced total interest paid.</li>
-  <li>Simple example: A borrower takes out a bi-weekly mortgage and makes half of their monthly payment every two weeks. Over the course of a year, they make 26 half payments, which is equivalent to 13 full monthly payments.</li>
+<li><strong>Fixed-Rate Mortgage</strong></li>
+<li>Brief definition: A fixed-rate mortgage is a type of mortgage where the interest rate remains the same for the entire term of the loan. This means that the borrower's monthly payment amount will not change.</li>
+<li>Key characteristics: Fixed interest rate, fixed monthly payment, predictable payments.</li>
+<li>Simple example: A borrower takes out a 30-year fixed-rate mortgage with an interest rate of 4%. Their monthly payment will remain the same for the entire 30 years.</li>
+<li><strong>Adjustable-Rate Mortgage</strong></li>
+<li>Brief definition: An adjustable-rate mortgage is a type of mortgage where the interest rate can change periodically based on market conditions. This means that the borrower's monthly payment amount may increase or decrease.</li>
+<li>Key characteristics: Variable interest rate, changing monthly payment, potential for lower initial payments.</li>
+<li>Simple example: A borrower takes out a 5/1 adjustable-rate mortgage, where the interest rate is fixed for the first 5 years and then adjusts annually. If the interest rate increases, the borrower's monthly payment will also increase.</li>
+<li><strong>Interest-Only Mortgage</strong></li>
+<li>Brief definition: An interest-only mortgage is a type of mortgage where the borrower only pays the interest on the loan for a specified period, usually 5-10 years. After this period, the borrower must start making payments on the principal amount.</li>
+<li>Key characteristics: Lower initial payments, potential for higher payments later, risk of negative amortization.</li>
+<li>Simple example: A borrower takes out an interest-only mortgage with a 5-year interest-only period. For the first 5 years, they only pay the interest on the loan, but after the 5-year period, they must start making payments on the principal amount.</li>
+<li><strong>Government-Backed Mortgage</strong></li>
+<li>Brief definition: A government-backed mortgage is a type of mortgage that is insured or guaranteed by a government agency, such as the Federal Housing Administration (FHA) or the Department of Veterans Affairs (VA). These mortgages often have more lenient credit score requirements and lower down payment options.</li>
+<li>Key characteristics: Government guarantee, lower down payment options, more lenient credit score requirements.</li>
+<li>Simple example: A borrower takes out an FHA loan, which requires a down payment of only 3.5%. The borrower's credit score is 600, which is lower than the typical requirement for a conventional loan.</li>
+<li><strong>Bi-Weekly Mortgage</strong></li>
+<li>Brief definition: A bi-weekly mortgage is a type of mortgage where the borrower makes half of their monthly payment every two weeks. This can help the borrower pay off the loan faster and reduce the total interest paid.</li>
+<li>Key characteristics: Half payments made every two weeks, potential for faster loan payoff, reduced total interest paid.</li>
+<li>Simple example: A borrower takes out a bi-weekly mortgage and makes half of their monthly payment every two weeks. Over the course of a year, they make 26 half payments, which is equivalent to 13 full monthly payments.</li>
 </ul>
-
-<p>3. COMPARISON TABLE:</p>
-<table class="comparison-table"><thead><tr>
-<th>Type of Mortgage</th>
-<th>Interest Rate</th>
-<th>Monthly Payment</th>
-<th>Risk Level</th>
-</tr></thead><tbody>
-<tr>
-<td>Fixed-Rate Mortgage</td>
-<td>Fixed</td>
-<td>Fixed</td>
-<td>Low</td>
-</tr>
-<tr>
-<td>Adjustable-Rate Mortgage</td>
-<td>Variable</td>
-<td>Changing</td>
-<td>Medium</td>
-</tr>
-<tr>
-<td>Interest-Only Mortgage</td>
-<td>Variable</td>
-<td>Lower initial payments</td>
-<td>High</td>
-</tr>
-<tr>
-<td>Government-Backed Mortgage</td>
-<td>Fixed or Variable</td>
-<td>Fixed or Changing</td>
-<td>Low to Medium</td>
-</tr>
-<tr>
-<td>Bi-Weekly Mortgage</td>
-<td>Fixed or Variable</td>
-<td>Half payments every two weeks</td>
-<td>Low to Medium</td>
-</tr>
-</tbody></table>
-
-<p>4. HOW THEY RELATE:</p>
+<ol>
+<li>COMPARISON TABLE:</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead><tr><th>Type of Mortgage</th><th>Interest Rate</th><th>Monthly Payment</th><th>Risk Level</th></tr></thead><tbody>
+<tr><td>Fixed-Rate Mortgage</td><td>Fixed</td><td>Fixed</td><td>Low</td></tr>
+<tr><td>Adjustable-Rate Mortgage</td><td>Variable</td><td>Changing</td><td>Medium</td></tr>
+<tr><td>Interest-Only Mortgage</td><td>Variable</td><td>Lower initial payments</td><td>High</td></tr>
+<tr><td>Government-Backed Mortgage</td><td>Fixed or Variable</td><td>Fixed or Changing</td><td>Low to Medium</td></tr>
+<tr><td>Bi-Weekly Mortgage</td><td>Fixed or Variable</td><td>Half payments every two weeks</td><td>Low to Medium</td></tr>
+</tbody>
+</table></div>
+<ol>
+<li>HOW THEY RELATE:</li>
+</ol>
 <p>The different types of mortgage payment are connected in that they all serve the same purpose: to help borrowers repay their loan. However, they differ in terms of their interest rates, monthly payment amounts, and risk levels. Borrowers can choose the type of mortgage payment that best suits their financial situation and goals, and lenders can offer a range of options to accommodate different borrower needs. The key characteristics of each type of mortgage payment, such as fixed or variable interest rates, can help borrowers understand the potential risks and benefits of each option.</p>
-
-<p>5. SUMMARY:</p>
+<ol>
+<li>SUMMARY:</li>
+</ol>
 <p>The classification system for types of mortgage payment includes fixed-rate mortgage, adjustable-rate mortgage, interest-only mortgage, government-backed mortgage, and bi-weekly mortgage, each with its own unique characteristics and benefits.</p>
 
-            <div class="related-concepts">
-    <h3>Related Concepts</h3>
-    <div class="related-grid">
-        <a href="/life_obligations/education-funding/what-is.html" class="related-link">Education Funding</a>
-        <a href="/life_obligations/insurance-premium/what-is.html" class="related-link">Insurance Premium</a>
-        <a href="/life_obligations/means-testing/what-is.html" class="related-link">Means Testing</a>
-        <a href="/life_obligations/minimum-payment/what-is.html" class="related-link">Minimum Payment</a>
-        <a href="/life_obligations/net-income-for-support/what-is.html" class="related-link">Net Income For Support</a>
-        <a href="/life_obligations/non-compete-agreement/what-is.html" class="related-link">Non Compete Agreement</a>
-    </div>
-</div>
+            
+
+            
         </article>
     </main>
 
@@ -477,6 +495,9 @@ a:hover { text-decoration: underline; }
             <a href="mailto:mrgovernment02@gmail.com">Contact</a>
         </div>
     </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
     <div class="footer-bottom">
         &copy; 2026 360Library.com &mdash; All rights reserved.
     </div>
