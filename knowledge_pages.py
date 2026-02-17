@@ -313,18 +313,28 @@ BANNED — never use any of these phrases or patterns:
 - "In this article", "In this guide", "In this section", "Let's explore", "Let's dive in"
 - "In conclusion", "To summarize", "To sum up", "As we have seen"
 - "It is important to note", "It is worth noting", "It should be noted"
-- "For example," at the start of a sentence — integrate examples naturally instead
+- "For example," or "For instance," at the start of a sentence — weave examples into the sentence naturally
 - "This is because", "This means that", "This is due to the fact that"
-- "The concept of X is important because" — show why, don't announce importance
+- "The concept of X" — just say "X" directly
 - "This is not necessarily true" — name the specific counterexample instead
 - "plays a crucial role", "is a key factor", "is essential", "is vital"
 - "various", "numerous", "a number of", "a wide range of"
 - "overall", "generally speaking", "as a whole"
 - "It can be said that", "One might argue that"
+- "which allows", "which enables", "which makes it possible" — rewrite as direct cause-effect
+- "has been applied in various contexts" or any variant — name the specific contexts
+- "A study by X found that" — instead cite inline: "Boeing holds 60% market share (Teal Group)"
+- "According to a study by" — same, use inline parenthetical citations
 - Never repeat a definition — state it once, then move on
 - Never restate what the previous sentence said in different words
+- Never use "the concept of" before a term — just use the term
 - Write as a professor explaining to a smart colleague, not a textbook explaining to a student
-- Every claim must be attributable — name the economist, the study, the year, or the dataset
+
+CITATION RULES:
+- Only cite frameworks, models, and economists by name (e.g., "Ricardo's comparative advantage model, 1817")
+- Do NOT fabricate study citations with years like "(World Bank, 2019)" — you don't know if these exist
+- If you cite a number or statistic, attribute it to the organization inline: "Boeing produces ~800 aircraft annually (Boeing annual report)"
+- Prefer well-known, verifiable facts over obscure claims with fake citations
 """
 
 KNOWLEDGE_PAGE_PROMPT = """You are a subject-matter expert writing a reference page.
@@ -341,7 +351,7 @@ One precise sentence: "{{topic}} is/refers to..." with the originator's name and
 2-3 paragraphs. Each paragraph must advance the explanation — no paragraph may restate the previous one. Include specific mechanisms, quantities, or named frameworks.
 
 ## Key Components
-4-6 bullet points. Each must explain the component's specific role in {topic} — not just define the term generically.
+4-6 bullet points. Each must explain what this component specifically does within {topic} and what changes when it increases or decreases. Never write a dictionary definition — explain the functional role.
 
 ## Common Misconceptions
 3-4 items. Format each as: **Myth:** X — **Fact:** Y (with a specific citation or counterexample that disproves it).
