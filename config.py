@@ -7,6 +7,19 @@ Generates AI designs and distributes to multiple platforms:
 - Stock Media: Wirestock (distributes to Adobe Stock, Shutterstock, etc.)
 """
 
+import os
+from pathlib import Path
+
+# Load .env file if present
+_env_file = Path(__file__).parent / ".env"
+if _env_file.exists():
+    for _line in _env_file.read_text().splitlines():
+        _line = _line.strip()
+        if _line and not _line.startswith("#") and "=" in _line:
+            _key, _, _val = _line.partition("=")
+            _val = _val.strip().strip('"').strip("'")
+            os.environ.setdefault(_key.strip(), _val)
+
 # =============================================================================
 # API KEYS - Fill these in once, never touch again
 # =============================================================================
@@ -22,6 +35,9 @@ LEONARDO_API_KEY = ""
 
 # Replicate API (for Flux, SDXL) - https://replicate.com/
 REPLICATE_API_KEY = ""
+
+# Groq API (fast inference) - https://console.groq.com/keys
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 
 # Google Gemini API (for Imagen 3) - https://ai.google.dev/
 GOOGLE_API_KEY = "AIzaSyC61DGQuvngWBF0LpyFpNJwaXxeWkW_VZk"
