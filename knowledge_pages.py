@@ -323,7 +323,7 @@ Structure (follow exactly):
 2. SIMPLE EXPLANATION: 2-3 short paragraphs explaining the concept
 3. KEY COMPONENTS: 4-6 bullet points of main principles or parts
 4. COMMON MISCONCEPTIONS: 3-4 bullet points of things people get wrong
-5. REAL-WORLD EXAMPLE: One concrete, simple example
+5. REAL-WORLD EXAMPLE: One concrete, simple example with specific numbers or names
 6. SUMMARY: One sentence that captures the essence
 
 Constraints:
@@ -332,7 +332,8 @@ Constraints:
 - Plain language, no jargon without explanation
 - No emojis
 - No markdown formatting (I will add it)
-- Evergreen content only - must be valid for 10+ years"""
+- Evergreen content only - must be valid for 10+ years
+- CRITICAL: Every paragraph must contain at least one specific fact, number, or named example. Never write a paragraph that only restates the topic name or gives vague generalities. No filler sentences. No repeating the same idea in different words. If a section would be vague, skip it and add depth to another section instead."""
 
 
 # =============================================================================
@@ -366,7 +367,8 @@ Constraints:
 - 600-800 words total
 - Balanced treatment (no bias toward either option)
 - No emojis
-- Evergreen content only"""
+- Evergreen content only
+- CRITICAL: Every paragraph must contain at least one specific fact, number, or named example. No filler sentences. No repeating the same idea in different words."""
 
 
 # =============================================================================
@@ -399,7 +401,8 @@ Constraints:
 - 600-900 words total
 - Clear hierarchy and organization
 - No emojis
-- Evergreen content only"""
+- Evergreen content only
+- CRITICAL: Every category must include a concrete, named example. No filler sentences. No repeating the same idea in different words."""
 
 
 # =============================================================================
@@ -429,7 +432,8 @@ Constraints:
 - 500-700 words total
 - Process-focused language (first, then, next, finally)
 - No emojis
-- Evergreen content only"""
+- Evergreen content only
+- CRITICAL: Each step must explain a specific mechanism with cause and effect. No filler sentences. No repeating the same idea in different words. Include at least one concrete number or measurement."""
 
 
 WHY_IT_MATTERS_PROMPT = """You are generating an evergreen "why it matters" explanation page.
@@ -455,7 +459,8 @@ Constraints:
 - 400-600 words total
 - Benefit-focused language
 - No emojis
-- Evergreen content only"""
+- Evergreen content only
+- CRITICAL: Every impact must cite a specific real-world consequence with numbers or named examples. No filler sentences. No repeating the same idea in different words."""
 
 
 EXAMPLES_PROMPT = """You are generating an evergreen examples page.
@@ -481,7 +486,8 @@ Constraints:
 - 500-700 words total
 - Concrete and specific (names, numbers, scenarios)
 - No emojis
-- Evergreen content only"""
+- Evergreen content only
+- CRITICAL: Every example must include a specific name, place, number, or measurement. Never describe an example vaguely. No filler sentences. No repeating the same idea in different words."""
 
 
 MISCONCEPTIONS_PROMPT = """You are generating an evergreen misconceptions/myths page.
@@ -506,9 +512,10 @@ Structure (follow exactly):
 Constraints:
 - Start with a direct one-sentence answer before any sections
 - 500-700 words total
-- "Myth vs Reality" format
+- "Myth vs Reality" format — each misconception MUST have all three parts (myth, reality, why people believe it). Do not list myths without realities.
 - No emojis
-- Evergreen content only"""
+- Evergreen content only
+- CRITICAL: Each reality must cite a specific fact that disproves the myth. No filler sentences. No repeating the same idea in different words."""
 
 
 BEGINNER_GUIDE_PROMPT = """You are generating an evergreen beginner's guide page.
@@ -534,7 +541,8 @@ Constraints:
 - 400-600 words total
 - Short sentences, simple words
 - No emojis
-- Evergreen content only"""
+- Evergreen content only
+- CRITICAL: Use a concrete analogy or everyday scenario in The Basics section. Each key term must have a specific, memorable definition — not a restatement of the term. No filler sentences."""
 
 
 WHAT_AFFECTS_PROMPT = """You are generating an evergreen "what affects" explanation page.
@@ -562,7 +570,8 @@ Constraints:
 - 500-700 words total
 - Clear cause-effect language
 - No emojis
-- Evergreen content only"""
+- Evergreen content only
+- CRITICAL: Each factor must explain the specific mechanism of influence (how exactly it affects the topic, with direction and magnitude). No filler sentences. No repeating the same idea in different words."""
 
 
 WHAT_DEPENDS_ON_PROMPT = """You are generating an evergreen "what it depends on" explanation page.
@@ -590,7 +599,8 @@ Constraints:
 - 400-600 words total
 - Prerequisite-focused language
 - No emojis
-- Evergreen content only"""
+- Evergreen content only
+- CRITICAL: Each dependency must explain what specifically breaks or fails without it. No filler sentences. No repeating the same idea in different words."""
 
 
 WHAT_USED_FOR_PROMPT = """You are generating an evergreen "what it's used for" explanation page.
@@ -616,7 +626,8 @@ Constraints:
 - 500-700 words total
 - Application-focused language
 - No emojis
-- Evergreen content only"""
+- Evergreen content only
+- CRITICAL: Every use case must name a specific field, profession, or scenario where this is applied. No filler sentences. No repeating the same idea in different words."""
 
 
 # =============================================================================
@@ -3180,6 +3191,111 @@ def rebuild_all_html():
     return rebuilt
 
 
+def regenerate_all_content(domain=None, count=None, delay=2):
+    """Delete existing content and regenerate all pages with improved prompts.
+
+    Args:
+        domain: Only regenerate pages in this domain (e.g., 'economics'). None = all.
+        count: Max pages to regenerate. None = all.
+        delay: Seconds between API calls (rate limiting).
+    """
+    import time
+
+    registry = load_angle_registry()
+    if not registry:
+        log("No angle registry found", "ERROR")
+        return []
+
+    angles = registry.get("angles", {})
+
+    # Find all structured concept folders
+    targets = []
+    for structured_dir in sorted(OUTPUT_DIR.glob("*_structured")):
+        d_slug = structured_dir.name.replace("_structured", "")
+        if domain and d_slug != domain:
+            continue
+        for concept_dir in sorted(structured_dir.iterdir()):
+            if not concept_dir.is_dir():
+                continue
+            concept_slug = concept_dir.name
+            concept_name = concept_slug.replace("-", " ")
+            for angle_id in angles:
+                json_file = concept_dir / f"{angle_id}.json"
+                if json_file.exists():
+                    targets.append((d_slug, concept_slug, concept_name, angle_id, json_file))
+
+    if count:
+        targets = targets[:count]
+
+    if not targets:
+        log("No pages found to regenerate", "WARN")
+        return []
+
+    log(f"Regenerating {len(targets)} pages...")
+    print("=" * 60)
+
+    results = []
+    for i, (d_slug, concept_slug, concept_name, angle_id, json_file) in enumerate(targets, 1):
+        print(f"\n[{i}/{len(targets)}] {d_slug}/{concept_slug}/{angle_id}")
+        print("-" * 40)
+
+        try:
+            # Build topic string from angle
+            angle_config = angles[angle_id]
+            topic = get_angle_title(concept_name, angle_id)
+
+            # Generate new content using improved prompts
+            content = generate_content(topic)
+            if not content:
+                log(f"  No content generated, skipping", "WARN")
+                continue
+
+            word_count = len(content.split())
+            log(f"  Generated {word_count} words", "SUCCESS")
+
+            # Get all sibling concepts for related linking
+            structured_dir = OUTPUT_DIR / f"{d_slug}_structured"
+            all_concepts = [d.name for d in structured_dir.iterdir() if d.is_dir()] if structured_dir.exists() else []
+            all_angles = [f.stem for f in json_file.parent.glob("*.json")]
+
+            page_title = get_angle_title(concept_name, angle_id)
+            canonical_path = f"{d_slug}/{concept_slug}/{angle_id}.html"
+
+            # Save JSON
+            json_data = format_as_json(topic, content, d_slug, angle_id=angle_id, base_concept=concept_name)
+            json_file.write_text(json_data, encoding="utf-8")
+
+            # Save HTML
+            html = format_as_html(
+                topic=topic,
+                content=content,
+                page_title=page_title,
+                domain_slug=d_slug,
+                concept_slug=concept_slug,
+                angle_id=angle_id,
+                all_angles=all_angles,
+                canonical_path=canonical_path,
+                all_concepts=all_concepts,
+            )
+            json_file.with_suffix(".html").write_text(html, encoding="utf-8")
+
+            # Save MD
+            md = format_as_markdown(topic, content, page_title=page_title)
+            json_file.with_suffix(".md").write_text(md, encoding="utf-8")
+
+            results.append(f"{d_slug}/{concept_slug}/{angle_id}")
+
+        except Exception as e:
+            log(f"  Failed: {e}", "ERROR")
+
+        if i < len(targets):
+            time.sleep(delay)
+
+    print("\n" + "=" * 60)
+    log(f"Regenerated {len(results)}/{len(targets)} pages", "SUCCESS")
+    return results
+
+
 # =============================================================================
 # CLI
 # =============================================================================
@@ -3227,6 +3343,8 @@ if __name__ == "__main__":
     parser.add_argument("--restructure", action="store_true", help="Restructure into concept folders with canonical angle names")
     parser.add_argument("--dry-run", action="store_true", help="Show what restructure would do without making changes")
     parser.add_argument("--rebuild-html", action="store_true", help="Rebuild all HTML from JSON with new template features (TOC, cross-refs, meta)")
+    parser.add_argument("--regenerate", action="store_true", help="Regenerate ALL content with improved prompts (re-calls AI)")
+    parser.add_argument("--domain", type=str, help="Filter regeneration to specific domain (e.g., economics)")
 
     # Closure tracking (per-concept completion)
     parser.add_argument("--closure-report", action="store_true", help="Show per-concept completion status (uses strict 8-angle registry)")
@@ -3306,6 +3424,13 @@ if __name__ == "__main__":
     elif args.rebuild_html:
         count = rebuild_all_html()
         print(f"\nRebuilt {count} HTML pages with new template features.")
+
+    elif args.regenerate:
+        results = regenerate_all_content(
+            domain=args.domain,
+            count=args.count,
+        )
+        print(f"\nRegenerated {len(results)} pages with improved prompts.")
 
     # =========================================================================
     elif args.rerender:
