@@ -307,431 +307,342 @@ def log(message, level="INFO"):
 # MASTER PROMPT - DO NOT CHANGE STRUCTURE
 # =============================================================================
 
-KNOWLEDGE_PAGE_PROMPT = """You are generating an evergreen educational reference page.
+BANNED_PHRASES_BLOCK = """
+BANNED — never use any of these phrases or patterns:
+- "In today's world", "In the modern era", "In recent years", "In the emerging world"
+- "In this article", "In this guide", "In this section", "Let's explore", "Let's dive in"
+- "In conclusion", "To summarize", "To sum up", "As we have seen"
+- "It is important to note", "It is worth noting", "It should be noted"
+- "For example," at the start of a sentence — integrate examples naturally instead
+- "This is because", "This means that", "This is due to the fact that"
+- "The concept of X is important because" — show why, don't announce importance
+- "This is not necessarily true" — name the specific counterexample instead
+- "plays a crucial role", "is a key factor", "is essential", "is vital"
+- "various", "numerous", "a number of", "a wide range of"
+- "overall", "generally speaking", "as a whole"
+- "It can be said that", "One might argue that"
+- Never repeat a definition — state it once, then move on
+- Never restate what the previous sentence said in different words
+- Write as a professor explaining to a smart colleague, not a textbook explaining to a student
+- Every claim must be attributable — name the economist, the study, the year, or the dataset
+"""
+
+KNOWLEDGE_PAGE_PROMPT = """You are a subject-matter expert writing a reference page.
 
 Topic: {topic}
 
-Rules:
-- Neutral, factual, timeless
-- 8th-grade reading level
-- No opinions, no dates, no trends, no current events
-- No brand promotion or product recommendations
-- No phrases like "in today's world" or "recently"
+{banned_phrases}
 
 Structure (use ## for each section heading):
 ## Definition
-Start with "{{topic}} is..." or "{{topic}} refers to..."
+One precise sentence: "{{topic}} is/refers to..." with the originator's name and year if applicable.
 
 ## How It Works
-2-3 short paragraphs explaining the concept
+2-3 paragraphs. Each paragraph must advance the explanation — no paragraph may restate the previous one. Include specific mechanisms, quantities, or named frameworks.
 
 ## Key Components
-4-6 bullet points of main principles or parts
+4-6 bullet points. Each must explain the component's specific role in {topic} — not just define the term generically.
 
 ## Common Misconceptions
-3-4 bullet points of things people get wrong
+3-4 items. Format each as: **Myth:** X — **Fact:** Y (with a specific citation or counterexample that disproves it).
 
 ## Real-World Example
-One concrete, simple example with specific numbers or names
-
-## Summary
-One sentence that captures the essence
+One concrete scenario with specific country/company names, dollar amounts, or measurements. No hypothetical "Country A vs Country B."
 
 Constraints:
-- Start with a direct one-sentence answer before any sections
+- Open with a direct one-sentence answer — no preamble
 - 600-800 words total
-- Plain language, no jargon without explanation
 - No emojis
 - Use ## for section headings, - for bullet lists, **bold** for key terms
-- Evergreen content only - must be valid for 10+ years
-- CRITICAL: Every paragraph must contain at least one specific fact, number, or named example. Never write a paragraph that only restates the topic name or gives vague generalities. No filler sentences. No repeating the same idea in different words. If a section would be vague, skip it and add depth to another section instead."""
+- Evergreen content only
+- Every paragraph must contain at least one specific fact, number, or named example. If a section would be vague, cut it and add depth elsewhere."""
 
 
 # =============================================================================
 # COMPARISON PAGE PROMPT (X vs Y)
 # =============================================================================
 
-COMPARISON_PAGE_PROMPT = """You are generating an evergreen comparison page.
+COMPARISON_PAGE_PROMPT = """You are a subject-matter expert writing a comparison page.
 
 Compare: {topic}
 
-Rules:
-- Neutral, factual, no winner declared
-- 8th-grade reading level
-- No opinions, no recommendations
-- No dates or trends
+{banned_phrases}
 
 Structure (use ## for each section heading):
-## Introduction
-One paragraph explaining what both terms are and why people compare them
-
 ## Side-by-Side Comparison
-A clear list comparing key aspects: definition of each, key characteristics, when to use each, pros and cons
+Define each term in one sentence, then compare: key characteristics, when each applies, strengths and weaknesses. Use a markdown table if it fits.
 
 ## Key Differences
-4-5 bullet points highlighting the main distinctions
+4-5 bullet points. Each must name a specific dimension (cost, speed, scope, etc.) and state how the two differ on that dimension with numbers or named examples.
 
 ## Key Similarities
-2-3 bullet points of what they share
+2-3 bullet points of what they share — must be non-obvious.
 
-## Simple Example
-One scenario showing when you'd choose each
-
-## Summary
-One sentence capturing the core difference
+## When to Use Each
+One concrete scenario per option, with specific industry, profession, or situation named.
 
 Constraints:
-- Start with a direct one-sentence answer before any sections
+- Open with one sentence that states the core distinction — no preamble
 - 600-800 words total
-- Balanced treatment (no bias toward either option)
+- Balanced — no winner declared
 - No emojis
 - Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
-- CRITICAL: Every paragraph must contain at least one specific fact, number, or named example. No filler sentences. No repeating the same idea in different words."""
+- Every bullet must contain a specific fact or named example."""
 
 
 # =============================================================================
 # CLASSIFICATION PAGE PROMPT (Types of X, Parts of X)
 # =============================================================================
 
-CLASSIFICATION_PAGE_PROMPT = """You are generating an evergreen classification/list page.
+CLASSIFICATION_PAGE_PROMPT = """You are a subject-matter expert writing a classification page.
 
 Topic: {topic}
 
-Rules:
-- Factual, structured, comprehensive
-- 8th-grade reading level
-- No opinions or rankings
-- No dates or trends
+{banned_phrases}
 
 Structure (use ## for each section heading):
-## Introduction
-One paragraph explaining what {topic} covers and why classification matters
-
 ## Main Categories
-List each type/part/stage with: name, brief definition (1-2 sentences), key characteristics, simple example
+For each type/part/stage: **Name** — one-sentence definition, distinguishing characteristics, and one concrete named example. No generic descriptions.
 
 ## Comparison Table
-Summarize differences between categories
+Markdown table comparing categories across 3-4 specific dimensions (e.g., cost, scale, speed, risk).
 
 ## How They Relate
-Brief explanation of how categories connect or differ
-
-## Summary
-One sentence capturing the classification system
+How categories overlap, feed into each other, or are commonly confused. Name specific pairs.
 
 Constraints:
-- Start with a direct one-sentence answer before any sections
+- Open with one sentence that states how many categories exist and the organizing principle — no preamble
 - 600-900 words total
-- Clear hierarchy and organization
 - No emojis
 - Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
-- CRITICAL: Every category must include a concrete, named example. No filler sentences. No repeating the same idea in different words."""
+- Every category must include a concrete, named real-world example."""
 
 
 # =============================================================================
 # QUESTION-FRAME PROMPTS (Upgrade 3: Question Templates)
 # =============================================================================
 
-HOW_IT_WORKS_PROMPT = """You are generating an evergreen "how it works" explanation page.
+HOW_IT_WORKS_PROMPT = """You are a subject-matter expert explaining a mechanism.
 
 Topic: How {topic} works
 
-Rules:
-- Focus on mechanism, process, and steps
-- 8th-grade reading level
-- No opinions, no dates, no trends
-- Explain cause and effect clearly
+{banned_phrases}
 
 Structure (use ## for each section heading):
-## Quick Answer
-1-2 sentences explaining the core mechanism
+## The Mechanism
+1-2 sentences naming the core cause-and-effect chain. Be specific — name the inputs, the process, and the outputs.
 
-## Step-by-Step Process
-Break down how it works into 4-6 clear steps
+## Step-by-Step
+4-6 numbered steps. Each step must state what happens, what causes it, and what measurable result it produces. No step should merely restate the previous one.
 
 ## Key Components
-What parts/elements are involved and their roles
-
-## Visual Analogy
-One simple analogy that makes the mechanism intuitive
+What parts are involved and their specific roles. Each component must explain what breaks or changes if removed.
 
 ## Common Questions
-3-4 "but what about..." questions people have
-
-## Summary
-One sentence capturing the essential mechanism
+3-4 questions people actually ask (e.g., "What happens if X fails?"). Answer each in 1-2 sentences with a specific fact.
 
 Constraints:
-- Start with a direct one-sentence answer before any sections
+- Open with one sentence naming the mechanism — no preamble
 - 500-700 words total
-- Process-focused language (first, then, next, finally)
 - No emojis
 - Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
-- CRITICAL: Each step must explain a specific mechanism with cause and effect. No filler sentences. No repeating the same idea in different words. Include at least one concrete number or measurement."""
+- Each step must include a specific number, measurement, or named example."""
 
 
-WHY_IT_MATTERS_PROMPT = """You are generating an evergreen "why it matters" explanation page.
+WHY_IT_MATTERS_PROMPT = """You are a subject-matter expert explaining why something matters.
 
 Topic: Why {topic} matters
 
-Rules:
-- Focus on importance, impact, and relevance
-- 8th-grade reading level
-- No opinions, no dates, no trends
-- Concrete benefits and consequences
+{banned_phrases}
 
 Structure (use ## for each section heading):
-## Core Importance
-1-2 sentences on why this concept matters
-
 ## Real-World Impact
-3-4 ways this affects everyday life or decisions
+3-4 specific consequences with named industries, dollar amounts, or population numbers affected. Each must answer "what measurably changes?"
 
 ## What Happens Without It
-Consequences of ignoring or not understanding this
+Concrete failures or losses — name a historical case, a country, or an industry where ignoring this caused measurable damage.
 
-## Who Needs to Know This
-Groups of people for whom this is especially relevant
+## Who Relies on This
+Specific professions, industries, or institutions that depend on this — not vague groups like "businesses" or "people."
 
-## Connection to Bigger Picture
-How this fits into larger systems or concepts
-
-## Summary
-One sentence on the essential importance
+## Bigger Picture
+How this connects to 1-2 larger systems or frameworks. Name the frameworks.
 
 Constraints:
-- Start with a direct one-sentence answer before any sections
+- Open with one sentence stating the measurable impact — no preamble
 - 400-600 words total
-- Benefit-focused language
 - No emojis
 - Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
-- CRITICAL: Every impact must cite a specific real-world consequence with numbers or named examples. No filler sentences. No repeating the same idea in different words."""
+- Every impact must cite a specific consequence with numbers or named examples."""
 
 
-EXAMPLES_PROMPT = """You are generating an evergreen examples page.
+EXAMPLES_PROMPT = """You are a subject-matter expert illustrating a concept through examples.
 
 Topic: Examples of {topic}
 
-Rules:
-- Focus on concrete, relatable examples
-- 8th-grade reading level
-- No opinions, no dates, no trends
-- Variety of contexts and scales
+{banned_phrases}
 
 Structure (use ## for each section heading):
-## Introduction
-Brief definition of {topic} to set context
-
 ## Everyday Examples
-3-4 examples from daily life everyone can relate to
+3-4 examples from daily life. Each must name a specific product, company, country, or dollar amount — never "Country A" or "Company X."
 
 ## Notable Examples
-2-3 well-known or classic examples
+2-3 well-known or classic cases from history, industry, or academia. Name the people, places, and numbers involved.
 
 ## Edge Cases
-1-2 unusual or surprising examples that still qualify
+1-2 surprising examples that technically qualify. Explain why they fit despite seeming different.
 
 ## Non-Examples
-2-3 things people often confuse for this but aren't
+2-3 things commonly confused for {topic}. State specifically why each fails to qualify.
 
-## Pattern
-What do all valid examples have in common?
+## The Pattern
+One sentence: what do all valid examples share that non-examples lack?
 
 Constraints:
-- Start with a direct one-sentence answer before any sections
+- Open with a one-sentence definition — no preamble, no "in this article"
 - 500-700 words total
-- Concrete and specific (names, numbers, scenarios)
 - No emojis
 - Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
-- CRITICAL: Every example must include a specific name, place, number, or measurement. Never describe an example vaguely. No filler sentences. No repeating the same idea in different words."""
+- Every example must include a specific name, place, number, or measurement."""
 
 
-MISCONCEPTIONS_PROMPT = """You are generating an evergreen misconceptions/myths page.
+MISCONCEPTIONS_PROMPT = """You are a subject-matter expert correcting common misunderstandings.
 
 Topic: Common misconceptions about {topic}
 
-Rules:
-- Focus on what people get wrong and why
-- 8th-grade reading level
-- No opinions, no dates, no trends
-- Respectful correction, not condescension
+{banned_phrases}
 
 Structure (use ## for each section heading):
-## Introduction
-Why misconceptions about {topic} are common
-
 ## Misconceptions
-5-7 common myths, each with: **Myth:** (what people believe), **Reality:** (what's actually true), **Why people believe this:** (the source of confusion)
+5-7 myths. Format each as:
+- **Myth:** What people believe (state it clearly)
+- **Fact:** The specific truth that disproves it — cite a study, a number, a named case, or a historical event
+- **Source of confusion:** One sentence on why this myth persists (name the textbook, the media narrative, or the logical fallacy)
 
-## How to Remember
-Simple tips to avoid these mistakes
-
-## Summary
-The one thing to remember to avoid confusion
+## Quick Reference
+A compact list: myth → fact, one line each. No elaboration — this is a cheat sheet.
 
 Constraints:
-- Start with a direct one-sentence answer before any sections
+- Open with one sentence naming the most common misconception — no preamble
 - 500-700 words total
-- "Myth vs Reality" format — each misconception MUST have all three parts (myth, reality, why people believe it). Do not list myths without realities.
+- Every "Fact" must cite a specific disproof — a number, a name, a study
 - No emojis
 - Use ## for section headings, - for bullet lists, **bold** for key terms
-- Evergreen content only
-- CRITICAL: Each reality must cite a specific fact that disproves the myth. No filler sentences. No repeating the same idea in different words."""
+- Evergreen content only"""
 
 
-BEGINNER_GUIDE_PROMPT = """You are generating an evergreen beginner's guide page.
+BEGINNER_GUIDE_PROMPT = """You are a subject-matter expert writing for someone with zero prior knowledge.
 
 Topic: {topic} for beginners
 
-Rules:
-- Assume zero prior knowledge
-- 6th-grade reading level (simpler than usual)
-- No jargon without immediate explanation
-- Encouraging and accessible tone
+{banned_phrases}
 
 Structure (use ## for each section heading):
-## What You'll Learn
-1-2 sentences on what this guide covers
-
 ## The Basics
-Simplest possible explanation of {topic}
+Simplest possible explanation using one concrete analogy from everyday life. No abstract restatements.
 
 ## Key Terms
-4-6 vocabulary words with plain definitions
+4-6 vocabulary words. Each: **Term** — a specific, memorable definition that a 12-year-old would understand. Never define a term by restating it.
 
 ## First Steps
-What a beginner should do or understand first
+What a beginner should understand first, in order of priority. Each step must be actionable or verifiable.
 
 ## Common Beginner Mistakes
-3-4 pitfalls to avoid
+3-4 specific pitfalls. Each must name what goes wrong and what to do instead.
 
-## Next Steps
-What to learn after mastering the basics
+## What to Learn Next
+2-3 specific next topics with one sentence on why each follows logically.
 
 Constraints:
-- Start with a direct one-sentence answer before any sections
+- Open with one plain-English sentence explaining {topic} — no preamble
 - 400-600 words total
-- Short sentences, simple words
+- Short sentences, simple words, 6th-grade reading level
 - No emojis
 - Use ## for section headings, - for bullet lists, **bold** for key terms
-- Evergreen content only
-- CRITICAL: Use a concrete analogy or everyday scenario in The Basics section. Each key term must have a specific, memorable definition — not a restatement of the term. No filler sentences."""
+- Evergreen content only"""
 
 
-WHAT_AFFECTS_PROMPT = """You are generating an evergreen "what affects" explanation page.
+WHAT_AFFECTS_PROMPT = """You are a subject-matter expert explaining causal factors.
 
 Topic: What affects {topic}
 
-Rules:
-- Focus on factors, influences, and variables
-- 8th-grade reading level
-- No opinions, no dates, no trends
-- Cause-and-effect relationships
+{banned_phrases}
 
 Structure (use ## for each section heading):
-## Introduction
-Brief definition of {topic} and why understanding influences matters
-
 ## Main Factors
-5-7 things that affect {topic}, each with: the factor name, how it influences {topic}, whether the effect is positive, negative, or variable
+5-7 factors. Each: **Factor name** — the specific mechanism (how it affects {topic}), the direction (increases/decreases/varies), and a concrete example with numbers showing the magnitude.
 
-## Interconnections
-How these factors relate to each other
+## How They Interact
+Name 2-3 specific factor pairs that amplify or cancel each other. Explain the interaction with a real example.
 
 ## Controllable vs Uncontrollable
-Which factors can be managed
-
-## Summary
-The most important factors to understand
+Split the factors into two groups. For controllable ones, name who controls them and how.
 
 Constraints:
-- Start with a direct one-sentence answer before any sections
+- Open with one sentence naming the single biggest factor — no preamble
 - 500-700 words total
-- Clear cause-effect language
 - No emojis
 - Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
-- CRITICAL: Each factor must explain the specific mechanism of influence (how exactly it affects the topic, with direction and magnitude). No filler sentences. No repeating the same idea in different words."""
+- Each factor must include direction, magnitude, and a named example."""
 
 
-WHAT_DEPENDS_ON_PROMPT = """You are generating an evergreen "what it depends on" explanation page.
+WHAT_DEPENDS_ON_PROMPT = """You are a subject-matter expert explaining dependencies and prerequisites.
 
 Topic: What {topic} depends on
 
-Rules:
-- Focus on prerequisites, requirements, and foundations
-- 8th-grade reading level
-- No opinions, no dates, no trends
-- Dependency relationships
+{banned_phrases}
 
 Structure (use ## for each section heading):
-## Introduction
-Brief definition of {topic} and why dependencies matter
-
 ## Key Dependencies
-4-6 things {topic} requires or depends on, each with: the dependency, why it's necessary, what happens without it
+4-6 prerequisites. Each: **Dependency** — why it's required, and what specifically breaks or fails without it. Name a real case where the absence caused a measurable problem.
 
-## Order of Importance
-Which dependencies are most critical
+## Priority Order
+Rank dependencies from most to least critical. Justify the ranking with a specific reason per item.
 
 ## Common Gaps
-What people often overlook or assume
-
-## Summary
-The essential foundation for {topic}
+What people overlook or take for granted. Name the specific assumption and the failure it causes.
 
 Constraints:
-- Start with a direct one-sentence answer before any sections
+- Open with one sentence naming the most critical dependency — no preamble
 - 400-600 words total
-- Prerequisite-focused language
 - No emojis
 - Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
-- CRITICAL: Each dependency must explain what specifically breaks or fails without it. No filler sentences. No repeating the same idea in different words."""
+- Each dependency must include a specific failure case."""
 
 
-WHAT_USED_FOR_PROMPT = """You are generating an evergreen "what it's used for" explanation page.
+WHAT_USED_FOR_PROMPT = """You are a subject-matter expert explaining practical applications.
 
 Topic: What {topic} is used for
 
-Rules:
-- Focus on applications, purposes, and practical uses
-- 8th-grade reading level
-- No opinions, no dates, no trends
-- Real-world applications
+{banned_phrases}
 
 Structure (use ## for each section heading):
-## Introduction
-Brief definition of {topic} and its general purpose
-
 ## Primary Uses
-3-4 main applications with concrete examples
+3-4 main applications. Each must name a specific industry, profession, or institution that uses this and explain what they accomplish with it.
 
 ## Secondary Uses
-2-3 less common but valid applications
+2-3 less obvious applications. Explain why these are surprising or overlooked.
 
-## Who Uses It
-Groups or fields that rely on {topic}
+## Who Relies on It
+Specific professions or institutions — not vague groups. Name job titles, agencies, or companies.
 
-## Limitations
-What {topic} is NOT used for (to avoid confusion)
-
-## Summary
-The core purpose of {topic}
+## What It Cannot Do
+2-3 things people mistakenly try to use {topic} for. Name the actual tool or method that works instead.
 
 Constraints:
-- Start with a direct one-sentence answer before any sections
+- Open with one sentence naming the most common application — no preamble
 - 500-700 words total
-- Application-focused language
 - No emojis
 - Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
-- CRITICAL: Every use case must name a specific field, profession, or scenario where this is applied. No filler sentences. No repeating the same idea in different words."""
+- Every use case must name a specific field, profession, or scenario."""
 
 
 # =============================================================================
@@ -2188,31 +2099,32 @@ def get_prompt_for_topic(topic):
     # Extract base topic for question-frame prompts
     base_topic = extract_base_topic(topic)
 
+    bp = BANNED_PHRASES_BLOCK
+
     if page_type == "comparison":
-        return COMPARISON_PAGE_PROMPT.format(topic=topic)
+        return COMPARISON_PAGE_PROMPT.format(topic=topic, banned_phrases=bp)
     elif page_type == "classification":
-        return CLASSIFICATION_PAGE_PROMPT.format(topic=topic)
+        return CLASSIFICATION_PAGE_PROMPT.format(topic=topic, banned_phrases=bp)
     elif page_type == "how":
-        return HOW_IT_WORKS_PROMPT.format(topic=base_topic)
+        return HOW_IT_WORKS_PROMPT.format(topic=base_topic, banned_phrases=bp)
     elif page_type == "why":
-        return WHY_IT_MATTERS_PROMPT.format(topic=base_topic)
+        return WHY_IT_MATTERS_PROMPT.format(topic=base_topic, banned_phrases=bp)
     elif page_type == "examples":
-        return EXAMPLES_PROMPT.format(topic=base_topic)
+        return EXAMPLES_PROMPT.format(topic=base_topic, banned_phrases=bp)
     elif page_type in ("parts", "stages", "types"):
-        # Structure angles use classification prompt
-        return CLASSIFICATION_PAGE_PROMPT.format(topic=topic)
+        return CLASSIFICATION_PAGE_PROMPT.format(topic=topic, banned_phrases=bp)
     elif page_type == "affects":
-        return WHAT_AFFECTS_PROMPT.format(topic=base_topic)
+        return WHAT_AFFECTS_PROMPT.format(topic=base_topic, banned_phrases=bp)
     elif page_type == "depends":
-        return WHAT_DEPENDS_ON_PROMPT.format(topic=base_topic)
+        return WHAT_DEPENDS_ON_PROMPT.format(topic=base_topic, banned_phrases=bp)
     elif page_type == "used_for":
-        return WHAT_USED_FOR_PROMPT.format(topic=base_topic)
+        return WHAT_USED_FOR_PROMPT.format(topic=base_topic, banned_phrases=bp)
     elif page_type == "misconceptions":
-        return MISCONCEPTIONS_PROMPT.format(topic=base_topic)
+        return MISCONCEPTIONS_PROMPT.format(topic=base_topic, banned_phrases=bp)
     elif page_type == "beginner":
-        return BEGINNER_GUIDE_PROMPT.format(topic=base_topic)
+        return BEGINNER_GUIDE_PROMPT.format(topic=base_topic, banned_phrases=bp)
     else:
-        return KNOWLEDGE_PAGE_PROMPT.format(topic=topic)
+        return KNOWLEDGE_PAGE_PROMPT.format(topic=topic, banned_phrases=bp)
 
 
 def extract_base_topic(topic):
