@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "description": "Master manifest for Universal Knowledge Index - tracks all domains, status, and roadmap",
-  "last_updated": "2026-02-16",
+  "last_updated": "2026-02-17",
   "domains": {
     "finance": {
       "status": "CLOSED",
@@ -75,12 +75,13 @@
       "closure_date": "2026-02-07"
     },
     "health": {
-      "status": "IN_PROGRESS",
+      "status": "CLOSED",
       "priority": 88,
-      "concepts": 0,
-      "pages": 0,
+      "concepts": 41,
+      "pages": 328,
       "canonical_file": "canonical_concepts_health.json",
-      "notes": "High search volume potential - Tier 2"
+      "notes": "High search volume potential - Tier 2",
+      "closure_date": "2026-02-17"
     },
     "psychology": {
       "status": "QUEUED",
@@ -100,10 +101,10 @@
     }
   },
   "totals": {
-    "domains_closed": 5,
-    "domains_queued": 3,
-    "total_concepts": 265,
-    "total_pages": 1615
+    "domains_closed": 6,
+    "domains_queued": 2,
+    "total_concepts": 306,
+    "total_pages": 1943
   },
   "angle_registry": {
     "file": "angle_registry.json",

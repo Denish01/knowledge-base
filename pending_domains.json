@@ -21,8 +21,9 @@
       "tier": 2,
       "concepts_estimated": 40,
       "discovered_date": "2026-02-06",
-      "status": "processing",
-      "notes": "High search volume potential"
+      "status": "completed",
+      "notes": "High search volume potential",
+      "completed_date": "2026-02-17"
     },
     {
       "domain": "psychology",
@@ -135,12 +136,13 @@
       "notes": "Study of birds and their behavior"
     }
   ],
-  "processing": "health",
+  "processing": null,
   "completed": [
     "finance",
     "life_obligations",
     "science",
     "math",
-    "economics"
+    "economics",
+    "health"
   ]
 }
