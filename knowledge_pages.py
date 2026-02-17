@@ -3191,13 +3191,14 @@ def rebuild_all_html():
     return rebuilt
 
 
-def regenerate_all_content(domain=None, count=None, delay=2):
+def regenerate_all_content(domain=None, count=None, delay=2, provider=None):
     """Delete existing content and regenerate all pages with improved prompts.
 
     Args:
         domain: Only regenerate pages in this domain (e.g., 'economics'). None = all.
         count: Max pages to regenerate. None = all.
         delay: Seconds between API calls (rate limiting).
+        provider: Force a specific AI provider ('groq', 'grok', 'gemini').
     """
     import time
 
@@ -3250,7 +3251,7 @@ def regenerate_all_content(domain=None, count=None, delay=2):
             topic = get_angle_title(concept_name, angle_id)
 
             # Generate new content using improved prompts
-            content = generate_content(topic)
+            content = generate_content(topic, provider=provider)
             if not content:
                 log(f"  No content generated, skipping", "WARN")
                 continue
@@ -3434,6 +3435,7 @@ if __name__ == "__main__":
         results = regenerate_all_content(
             domain=args.domain,
             count=args.count,
+            provider=args.provider,
         )
         print(f"\nRegenerated {len(results)} pages with improved prompts.")
 
