@@ -381,7 +381,7 @@ ARTICLE_CSS = """
 .article-main h2 {
     font-size: 22px;
     font-weight: 700;
-    color: #1F2937;
+    color: var(--domain-color, #1B4D8E);
     margin-top: 36px;
     margin-bottom: 16px;
     padding-bottom: 8px;
@@ -390,7 +390,7 @@ ARTICLE_CSS = """
 .article-main h3 {
     font-size: 18px;
     font-weight: 600;
-    color: #374151;
+    color: var(--domain-color, #1B4D8E);
     margin-top: 28px;
     margin-bottom: 12px;
 }

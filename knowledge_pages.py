@@ -318,20 +318,31 @@ Rules:
 - No brand promotion or product recommendations
 - No phrases like "in today's world" or "recently"
 
-Structure (follow exactly):
-1. ONE-SENTENCE DEFINITION: Start with "{{topic}} is..." or "{{topic}} refers to..."
-2. SIMPLE EXPLANATION: 2-3 short paragraphs explaining the concept
-3. KEY COMPONENTS: 4-6 bullet points of main principles or parts
-4. COMMON MISCONCEPTIONS: 3-4 bullet points of things people get wrong
-5. REAL-WORLD EXAMPLE: One concrete, simple example with specific numbers or names
-6. SUMMARY: One sentence that captures the essence
+Structure (use ## for each section heading):
+## Definition
+Start with "{{topic}} is..." or "{{topic}} refers to..."
+
+## How It Works
+2-3 short paragraphs explaining the concept
+
+## Key Components
+4-6 bullet points of main principles or parts
+
+## Common Misconceptions
+3-4 bullet points of things people get wrong
+
+## Real-World Example
+One concrete, simple example with specific numbers or names
+
+## Summary
+One sentence that captures the essence
 
 Constraints:
 - Start with a direct one-sentence answer before any sections
 - 600-800 words total
 - Plain language, no jargon without explanation
 - No emojis
-- No markdown formatting (I will add it)
+- Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only - must be valid for 10+ years
 - CRITICAL: Every paragraph must contain at least one specific fact, number, or named example. Never write a paragraph that only restates the topic name or gives vague generalities. No filler sentences. No repeating the same idea in different words. If a section would be vague, skip it and add depth to another section instead."""
 
@@ -350,23 +361,31 @@ Rules:
 - No opinions, no recommendations
 - No dates or trends
 
-Structure (follow exactly):
-1. INTRODUCTION: One paragraph explaining what both terms are and why people compare them
-2. SIDE-BY-SIDE COMPARISON: A clear list comparing key aspects:
-   - Definition of each
-   - Key characteristics of each
-   - When to use each
-   - Pros and cons of each
-3. KEY DIFFERENCES: 4-5 bullet points highlighting the main distinctions
-4. KEY SIMILARITIES: 2-3 bullet points of what they share
-5. SIMPLE EXAMPLE: One scenario showing when you'd choose each
-6. SUMMARY: One sentence capturing the core difference
+Structure (use ## for each section heading):
+## Introduction
+One paragraph explaining what both terms are and why people compare them
+
+## Side-by-Side Comparison
+A clear list comparing key aspects: definition of each, key characteristics, when to use each, pros and cons
+
+## Key Differences
+4-5 bullet points highlighting the main distinctions
+
+## Key Similarities
+2-3 bullet points of what they share
+
+## Simple Example
+One scenario showing when you'd choose each
+
+## Summary
+One sentence capturing the core difference
 
 Constraints:
 - Start with a direct one-sentence answer before any sections
 - 600-800 words total
 - Balanced treatment (no bias toward either option)
 - No emojis
+- Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
 - CRITICAL: Every paragraph must contain at least one specific fact, number, or named example. No filler sentences. No repeating the same idea in different words."""
 
@@ -385,22 +404,28 @@ Rules:
 - No opinions or rankings
 - No dates or trends
 
-Structure (follow exactly):
-1. INTRODUCTION: One paragraph explaining what {topic} covers and why classification matters
-2. MAIN CATEGORIES: List each type/part/stage with:
-   - Name
-   - Brief definition (1-2 sentences)
-   - Key characteristics
-   - Simple example
-3. COMPARISON TABLE: Summarize differences between categories
-4. HOW THEY RELATE: Brief explanation of how categories connect or differ
-5. SUMMARY: One sentence capturing the classification system
+Structure (use ## for each section heading):
+## Introduction
+One paragraph explaining what {topic} covers and why classification matters
+
+## Main Categories
+List each type/part/stage with: name, brief definition (1-2 sentences), key characteristics, simple example
+
+## Comparison Table
+Summarize differences between categories
+
+## How They Relate
+Brief explanation of how categories connect or differ
+
+## Summary
+One sentence capturing the classification system
 
 Constraints:
 - Start with a direct one-sentence answer before any sections
 - 600-900 words total
 - Clear hierarchy and organization
 - No emojis
+- Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
 - CRITICAL: Every category must include a concrete, named example. No filler sentences. No repeating the same idea in different words."""
 
@@ -419,19 +444,31 @@ Rules:
 - No opinions, no dates, no trends
 - Explain cause and effect clearly
 
-Structure (follow exactly):
-1. QUICK ANSWER: 1-2 sentences explaining the core mechanism
-2. STEP-BY-STEP PROCESS: Break down how it works into 4-6 clear steps
-3. KEY COMPONENTS: What parts/elements are involved and their roles
-4. VISUAL ANALOGY: One simple analogy that makes the mechanism intuitive
-5. COMMON QUESTIONS: 3-4 "but what about..." questions people have
-6. SUMMARY: One sentence capturing the essential mechanism
+Structure (use ## for each section heading):
+## Quick Answer
+1-2 sentences explaining the core mechanism
+
+## Step-by-Step Process
+Break down how it works into 4-6 clear steps
+
+## Key Components
+What parts/elements are involved and their roles
+
+## Visual Analogy
+One simple analogy that makes the mechanism intuitive
+
+## Common Questions
+3-4 "but what about..." questions people have
+
+## Summary
+One sentence capturing the essential mechanism
 
 Constraints:
 - Start with a direct one-sentence answer before any sections
 - 500-700 words total
 - Process-focused language (first, then, next, finally)
 - No emojis
+- Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
 - CRITICAL: Each step must explain a specific mechanism with cause and effect. No filler sentences. No repeating the same idea in different words. Include at least one concrete number or measurement."""
 
@@ -446,19 +483,31 @@ Rules:
 - No opinions, no dates, no trends
 - Concrete benefits and consequences
 
-Structure (follow exactly):
-1. CORE IMPORTANCE: 1-2 sentences on why this concept matters
-2. REAL-WORLD IMPACT: 3-4 ways this affects everyday life or decisions
-3. WHAT HAPPENS WITHOUT IT: Consequences of ignoring or not understanding this
-4. WHO NEEDS TO KNOW THIS: Groups of people for whom this is especially relevant
-5. CONNECTION TO BIGGER PICTURE: How this fits into larger systems or concepts
-6. SUMMARY: One sentence on the essential importance
+Structure (use ## for each section heading):
+## Core Importance
+1-2 sentences on why this concept matters
+
+## Real-World Impact
+3-4 ways this affects everyday life or decisions
+
+## What Happens Without It
+Consequences of ignoring or not understanding this
+
+## Who Needs to Know This
+Groups of people for whom this is especially relevant
+
+## Connection to Bigger Picture
+How this fits into larger systems or concepts
+
+## Summary
+One sentence on the essential importance
 
 Constraints:
 - Start with a direct one-sentence answer before any sections
 - 400-600 words total
 - Benefit-focused language
 - No emojis
+- Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
 - CRITICAL: Every impact must cite a specific real-world consequence with numbers or named examples. No filler sentences. No repeating the same idea in different words."""
 
@@ -473,19 +522,31 @@ Rules:
 - No opinions, no dates, no trends
 - Variety of contexts and scales
 
-Structure (follow exactly):
-1. INTRODUCTION: Brief definition of {topic} to set context
-2. EVERYDAY EXAMPLES: 3-4 examples from daily life everyone can relate to
-3. NOTABLE EXAMPLES: 2-3 well-known or classic examples
-4. EDGE CASES: 1-2 unusual or surprising examples that still qualify
-5. NON-EXAMPLES: 2-3 things people often confuse for this but aren't
-6. PATTERN: What do all valid examples have in common?
+Structure (use ## for each section heading):
+## Introduction
+Brief definition of {topic} to set context
+
+## Everyday Examples
+3-4 examples from daily life everyone can relate to
+
+## Notable Examples
+2-3 well-known or classic examples
+
+## Edge Cases
+1-2 unusual or surprising examples that still qualify
+
+## Non-Examples
+2-3 things people often confuse for this but aren't
+
+## Pattern
+What do all valid examples have in common?
 
 Constraints:
 - Start with a direct one-sentence answer before any sections
 - 500-700 words total
 - Concrete and specific (names, numbers, scenarios)
 - No emojis
+- Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
 - CRITICAL: Every example must include a specific name, place, number, or measurement. Never describe an example vaguely. No filler sentences. No repeating the same idea in different words."""
 
@@ -500,20 +561,25 @@ Rules:
 - No opinions, no dates, no trends
 - Respectful correction, not condescension
 
-Structure (follow exactly):
-1. INTRODUCTION: Why misconceptions about {topic} are common
-2. MISCONCEPTION LIST: 5-7 common myths, each with:
-   - The myth (what people believe)
-   - The reality (what's actually true)
-   - Why people believe this (the source of confusion)
-3. HOW TO REMEMBER: Simple tips to avoid these mistakes
-4. SUMMARY: The one thing to remember to avoid confusion
+Structure (use ## for each section heading):
+## Introduction
+Why misconceptions about {topic} are common
+
+## Misconceptions
+5-7 common myths, each with: **Myth:** (what people believe), **Reality:** (what's actually true), **Why people believe this:** (the source of confusion)
+
+## How to Remember
+Simple tips to avoid these mistakes
+
+## Summary
+The one thing to remember to avoid confusion
 
 Constraints:
 - Start with a direct one-sentence answer before any sections
 - 500-700 words total
 - "Myth vs Reality" format — each misconception MUST have all three parts (myth, reality, why people believe it). Do not list myths without realities.
 - No emojis
+- Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
 - CRITICAL: Each reality must cite a specific fact that disproves the myth. No filler sentences. No repeating the same idea in different words."""
 
@@ -528,19 +594,31 @@ Rules:
 - No jargon without immediate explanation
 - Encouraging and accessible tone
 
-Structure (follow exactly):
-1. WHAT YOU'LL LEARN: 1-2 sentences on what this guide covers
-2. THE BASICS: Simplest possible explanation of {topic}
-3. KEY TERMS: 4-6 vocabulary words with plain definitions
-4. FIRST STEPS: What a beginner should do or understand first
-5. COMMON BEGINNER MISTAKES: 3-4 pitfalls to avoid
-6. NEXT STEPS: What to learn after mastering the basics
+Structure (use ## for each section heading):
+## What You'll Learn
+1-2 sentences on what this guide covers
+
+## The Basics
+Simplest possible explanation of {topic}
+
+## Key Terms
+4-6 vocabulary words with plain definitions
+
+## First Steps
+What a beginner should do or understand first
+
+## Common Beginner Mistakes
+3-4 pitfalls to avoid
+
+## Next Steps
+What to learn after mastering the basics
 
 Constraints:
 - Start with a direct one-sentence answer before any sections
 - 400-600 words total
 - Short sentences, simple words
 - No emojis
+- Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
 - CRITICAL: Use a concrete analogy or everyday scenario in The Basics section. Each key term must have a specific, memorable definition — not a restatement of the term. No filler sentences."""
 
@@ -555,21 +633,28 @@ Rules:
 - No opinions, no dates, no trends
 - Cause-and-effect relationships
 
-Structure (follow exactly):
-1. INTRODUCTION: Brief definition of {topic} and why understanding influences matters
-2. MAIN FACTORS: 5-7 things that affect {topic}, each with:
-   - The factor name
-   - How it influences {topic}
-   - Whether the effect is positive, negative, or variable
-3. INTERCONNECTIONS: How these factors relate to each other
-4. CONTROLLABLE VS UNCONTROLLABLE: Which factors can be managed
-5. SUMMARY: The most important factors to understand
+Structure (use ## for each section heading):
+## Introduction
+Brief definition of {topic} and why understanding influences matters
+
+## Main Factors
+5-7 things that affect {topic}, each with: the factor name, how it influences {topic}, whether the effect is positive, negative, or variable
+
+## Interconnections
+How these factors relate to each other
+
+## Controllable vs Uncontrollable
+Which factors can be managed
+
+## Summary
+The most important factors to understand
 
 Constraints:
 - Start with a direct one-sentence answer before any sections
 - 500-700 words total
 - Clear cause-effect language
 - No emojis
+- Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
 - CRITICAL: Each factor must explain the specific mechanism of influence (how exactly it affects the topic, with direction and magnitude). No filler sentences. No repeating the same idea in different words."""
 
@@ -584,21 +669,28 @@ Rules:
 - No opinions, no dates, no trends
 - Dependency relationships
 
-Structure (follow exactly):
-1. INTRODUCTION: Brief definition of {topic} and why dependencies matter
-2. KEY DEPENDENCIES: 4-6 things {topic} requires or depends on, each with:
-   - The dependency
-   - Why it's necessary
-   - What happens without it
-3. ORDER OF IMPORTANCE: Which dependencies are most critical
-4. COMMON GAPS: What people often overlook or assume
-5. SUMMARY: The essential foundation for {topic}
+Structure (use ## for each section heading):
+## Introduction
+Brief definition of {topic} and why dependencies matter
+
+## Key Dependencies
+4-6 things {topic} requires or depends on, each with: the dependency, why it's necessary, what happens without it
+
+## Order of Importance
+Which dependencies are most critical
+
+## Common Gaps
+What people often overlook or assume
+
+## Summary
+The essential foundation for {topic}
 
 Constraints:
 - Start with a direct one-sentence answer before any sections
 - 400-600 words total
 - Prerequisite-focused language
 - No emojis
+- Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
 - CRITICAL: Each dependency must explain what specifically breaks or fails without it. No filler sentences. No repeating the same idea in different words."""
 
@@ -613,19 +705,31 @@ Rules:
 - No opinions, no dates, no trends
 - Real-world applications
 
-Structure (follow exactly):
-1. INTRODUCTION: Brief definition of {topic} and its general purpose
-2. PRIMARY USES: 3-4 main applications with concrete examples
-3. SECONDARY USES: 2-3 less common but valid applications
-4. WHO USES IT: Groups or fields that rely on {topic}
-5. LIMITATIONS: What {topic} is NOT used for (to avoid confusion)
-6. SUMMARY: The core purpose of {topic}
+Structure (use ## for each section heading):
+## Introduction
+Brief definition of {topic} and its general purpose
+
+## Primary Uses
+3-4 main applications with concrete examples
+
+## Secondary Uses
+2-3 less common but valid applications
+
+## Who Uses It
+Groups or fields that rely on {topic}
+
+## Limitations
+What {topic} is NOT used for (to avoid confusion)
+
+## Summary
+The core purpose of {topic}
 
 Constraints:
 - Start with a direct one-sentence answer before any sections
 - 500-700 words total
 - Application-focused language
 - No emojis
+- Use ## for section headings, - for bullet lists, **bold** for key terms
 - Evergreen content only
 - CRITICAL: Every use case must name a specific field, profession, or scenario where this is applied. No filler sentences. No repeating the same idea in different words."""
 
