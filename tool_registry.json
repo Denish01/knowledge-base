@@ -1,0 +1,354 @@
+{
+  "calculators": [
+    {
+      "slug": "compound-interest-calculator",
+      "title": "Compound Interest Calculator",
+      "category": "finance",
+      "calculator_key": "compound_interest",
+      "word_target": 700,
+      "meta_description": "Free compound interest calculator. Enter your principal, interest rate, and time period to see how your money grows with compounding.",
+      "related_tools": ["retirement-calculator", "investment-return-calculator", "dollar-cost-averaging-calculator"],
+      "related_knowledge": ["finance/compound-interest"]
+    },
+    {
+      "slug": "mortgage-calculator",
+      "title": "Mortgage Calculator",
+      "category": "finance",
+      "calculator_key": "mortgage",
+      "word_target": 700,
+      "meta_description": "Free mortgage calculator. Calculate your monthly payment, total interest, and total cost for any home loan amount, rate, and term.",
+      "related_tools": ["loan-repayment-calculator", "compound-interest-calculator"],
+      "related_knowledge": ["finance/mortgage-amortization"]
+    },
+    {
+      "slug": "loan-repayment-calculator",
+      "title": "Loan Repayment Calculator",
+      "category": "finance",
+      "calculator_key": "loan_repayment",
+      "word_target": 700,
+      "meta_description": "Free loan repayment calculator. See your monthly payment, total interest paid, and full amortization schedule for any loan.",
+      "related_tools": ["mortgage-calculator", "credit-card-payoff-calculator"],
+      "related_knowledge": ["finance/amortization-schedule"]
+    },
+    {
+      "slug": "retirement-calculator",
+      "title": "Retirement Savings Calculator",
+      "category": "finance",
+      "calculator_key": "retirement",
+      "word_target": 700,
+      "meta_description": "Free retirement savings calculator. See how much you need to save monthly to reach your retirement goal based on your age and expected returns.",
+      "related_tools": ["compound-interest-calculator", "investment-return-calculator"],
+      "related_knowledge": ["finance/401k-retirement-plan", "finance/roth-ira"]
+    },
+    {
+      "slug": "investment-return-calculator",
+      "title": "Investment Return Calculator",
+      "category": "finance",
+      "calculator_key": "investment_return",
+      "word_target": 700,
+      "meta_description": "Free investment return calculator. Calculate your portfolio growth with initial investment, monthly contributions, and expected annual returns.",
+      "related_tools": ["compound-interest-calculator", "retirement-calculator", "dollar-cost-averaging-calculator"],
+      "related_knowledge": ["finance/dollar-cost-averaging"]
+    },
+    {
+      "slug": "credit-card-payoff-calculator",
+      "title": "Credit Card Payoff Calculator",
+      "category": "finance",
+      "calculator_key": "credit_card_payoff",
+      "word_target": 700,
+      "meta_description": "Free credit card payoff calculator. See how long it takes to pay off your balance and how much interest you'll pay at your current monthly payment.",
+      "related_tools": ["loan-repayment-calculator", "apr-calculator"],
+      "related_knowledge": ["finance/annual-percentage-rate"]
+    },
+    {
+      "slug": "emergency-fund-calculator",
+      "title": "Emergency Fund Calculator",
+      "category": "finance",
+      "calculator_key": "emergency_fund",
+      "word_target": 700,
+      "meta_description": "Free emergency fund calculator. Find out how much you need in your emergency fund based on your monthly expenses and personal risk factors.",
+      "related_tools": ["net-worth-calculator", "retirement-calculator"],
+      "related_knowledge": ["finance/emergency-fund"]
+    },
+    {
+      "slug": "net-worth-calculator",
+      "title": "Net Worth Calculator",
+      "category": "finance",
+      "calculator_key": "net_worth",
+      "word_target": 700,
+      "meta_description": "Free net worth calculator. Add up your assets and liabilities to calculate your total net worth and track your financial progress.",
+      "related_tools": ["emergency-fund-calculator", "retirement-calculator"],
+      "related_knowledge": ["finance/net-worth"]
+    },
+    {
+      "slug": "dollar-cost-averaging-calculator",
+      "title": "Dollar Cost Averaging Calculator",
+      "category": "finance",
+      "calculator_key": "dca",
+      "word_target": 700,
+      "meta_description": "Free dollar cost averaging calculator. See how regular investing over time can reduce risk and build wealth compared to lump-sum investing.",
+      "related_tools": ["investment-return-calculator", "compound-interest-calculator"],
+      "related_knowledge": ["finance/dollar-cost-averaging"]
+    },
+    {
+      "slug": "apr-calculator",
+      "title": "APR/APY Calculator",
+      "category": "finance",
+      "calculator_key": "apr",
+      "word_target": 700,
+      "meta_description": "Free APR and APY calculator. Convert between annual percentage rate and annual percentage yield, and understand the true cost of borrowing.",
+      "related_tools": ["compound-interest-calculator", "loan-repayment-calculator"],
+      "related_knowledge": ["finance/annual-percentage-rate", "finance/annual-percentage-yield"]
+    },
+    {
+      "slug": "inflation-calculator",
+      "title": "Inflation Calculator",
+      "category": "finance",
+      "calculator_key": "inflation",
+      "word_target": 700,
+      "meta_description": "Free inflation calculator. See how inflation erodes purchasing power over time and what today's dollars will be worth in the future.",
+      "related_tools": ["compound-interest-calculator", "retirement-calculator"],
+      "related_knowledge": ["finance/inflation-rate"]
+    },
+    {
+      "slug": "capital-gains-calculator",
+      "title": "Capital Gains Tax Calculator",
+      "category": "tax",
+      "calculator_key": "capital_gains",
+      "word_target": 700,
+      "meta_description": "Free capital gains tax calculator. Calculate your tax liability on investment profits based on purchase price, sale price, and holding period.",
+      "related_tools": ["roi-calculator", "investment-return-calculator"],
+      "related_knowledge": ["finance/capital-gains-tax"]
+    },
+    {
+      "slug": "vat-calculator",
+      "title": "VAT Calculator",
+      "category": "tax",
+      "calculator_key": "vat_calculator",
+      "word_target": 700,
+      "meta_description": "Free VAT calculator. Quickly add or remove VAT at any rate. Works for UK VAT (20%), EU VAT, and any custom tax rate.",
+      "related_tools": ["profit-margin-calculator", "markup-calculator"],
+      "related_knowledge": []
+    },
+    {
+      "slug": "percentage-calculator",
+      "title": "Percentage Calculator",
+      "category": "math",
+      "calculator_key": "percentage",
+      "word_target": 700,
+      "meta_description": "Free percentage calculator with three modes: find percentage of a number, calculate percentage change, and find what percent X is of Y.",
+      "related_tools": ["markup-calculator", "profit-margin-calculator"],
+      "related_knowledge": ["math/percentages"]
+    },
+    {
+      "slug": "statistics-calculator",
+      "title": "Statistics Calculator (Mean, Median, Mode)",
+      "category": "math",
+      "calculator_key": "statistics",
+      "word_target": 700,
+      "meta_description": "Free statistics calculator. Enter any data set to instantly calculate mean, median, mode, range, and count.",
+      "related_tools": ["standard-deviation-calculator", "percentage-calculator"],
+      "related_knowledge": ["math/mean-median-mode"]
+    },
+    {
+      "slug": "standard-deviation-calculator",
+      "title": "Standard Deviation Calculator",
+      "category": "math",
+      "calculator_key": "std_dev",
+      "word_target": 700,
+      "meta_description": "Free standard deviation calculator. Calculate population and sample standard deviation, variance, and mean for any data set.",
+      "related_tools": ["statistics-calculator", "percentage-calculator"],
+      "related_knowledge": ["math/standard-deviation"]
+    },
+    {
+      "slug": "pythagorean-theorem-calculator",
+      "title": "Pythagorean Theorem Calculator",
+      "category": "math",
+      "calculator_key": "pythagorean",
+      "word_target": 700,
+      "meta_description": "Free Pythagorean theorem calculator. Find any missing side of a right triangle using a² + b² = c².",
+      "related_tools": ["circle-area-calculator", "volume-calculator"],
+      "related_knowledge": ["math/pythagorean-theorem"]
+    },
+    {
+      "slug": "circle-area-calculator",
+      "title": "Circle Area Calculator",
+      "category": "math",
+      "calculator_key": "circle_area",
+      "word_target": 700,
+      "meta_description": "Free circle calculator. Calculate the area, circumference, and diameter of any circle from its radius.",
+      "related_tools": ["volume-calculator", "pythagorean-theorem-calculator"],
+      "related_knowledge": ["math/area-of-a-circle"]
+    },
+    {
+      "slug": "volume-calculator",
+      "title": "Volume Calculator",
+      "category": "math",
+      "calculator_key": "volume",
+      "word_target": 700,
+      "meta_description": "Free volume calculator for common 3D shapes. Calculate the volume of cubes, spheres, cylinders, cones, and rectangular prisms.",
+      "related_tools": ["circle-area-calculator", "pythagorean-theorem-calculator"],
+      "related_knowledge": ["math/volume"]
+    },
+    {
+      "slug": "probability-calculator",
+      "title": "Probability Calculator",
+      "category": "math",
+      "calculator_key": "probability",
+      "word_target": 700,
+      "meta_description": "Free probability calculator. Calculate the probability of an event, odds in favor, and odds against from favorable and total outcomes.",
+      "related_tools": ["statistics-calculator", "percentage-calculator"],
+      "related_knowledge": ["math/probability"]
+    },
+    {
+      "slug": "profit-margin-calculator",
+      "title": "Profit Margin Calculator",
+      "category": "business",
+      "calculator_key": "profit_margin",
+      "word_target": 700,
+      "meta_description": "Free profit margin calculator. Calculate gross profit margin, net margin, and markup from cost and revenue figures.",
+      "related_tools": ["markup-calculator", "break-even-calculator", "roi-calculator"],
+      "related_knowledge": []
+    },
+    {
+      "slug": "break-even-calculator",
+      "title": "Break-Even Calculator",
+      "category": "business",
+      "calculator_key": "break_even",
+      "word_target": 700,
+      "meta_description": "Free break-even calculator. Find out how many units you need to sell to cover your fixed and variable costs.",
+      "related_tools": ["profit-margin-calculator", "roi-calculator"],
+      "related_knowledge": []
+    },
+    {
+      "slug": "roi-calculator",
+      "title": "ROI Calculator",
+      "category": "business",
+      "calculator_key": "roi_calculator",
+      "word_target": 700,
+      "meta_description": "Free ROI calculator. Calculate return on investment as a percentage from your investment cost and gain.",
+      "related_tools": ["profit-margin-calculator", "investment-return-calculator"],
+      "related_knowledge": []
+    },
+    {
+      "slug": "markup-calculator",
+      "title": "Markup Calculator",
+      "category": "business",
+      "calculator_key": "markup_calculator",
+      "word_target": 700,
+      "meta_description": "Free markup calculator. Calculate selling price from cost and markup percentage, or find the markup from cost and selling price.",
+      "related_tools": ["profit-margin-calculator", "vat-calculator"],
+      "related_knowledge": []
+    },
+    {
+      "slug": "bmi-calculator",
+      "title": "BMI Calculator",
+      "category": "health",
+      "calculator_key": "bmi_calculator",
+      "word_target": 700,
+      "meta_description": "Free BMI calculator. Calculate your Body Mass Index from height and weight with instant category classification.",
+      "related_tools": ["calorie-calculator", "body-fat-calculator"],
+      "related_knowledge": []
+    },
+    {
+      "slug": "calorie-calculator",
+      "title": "Calorie Calculator",
+      "category": "health",
+      "calculator_key": "calorie_calculator",
+      "word_target": 700,
+      "meta_description": "Free daily calorie calculator. Estimate how many calories you need per day based on age, weight, height, and activity level.",
+      "related_tools": ["bmi-calculator"],
+      "related_knowledge": []
+    },
+    {
+      "slug": "unit-converter",
+      "title": "Unit Converter",
+      "category": "conversion",
+      "calculator_key": "unit_converter",
+      "word_target": 700,
+      "meta_description": "Free unit converter. Convert between common units of length, weight, volume, and more with instant results.",
+      "related_tools": ["temperature-converter", "currency-converter"],
+      "related_knowledge": ["science/unit-conversion"]
+    },
+    {
+      "slug": "currency-converter",
+      "title": "Currency Converter",
+      "category": "conversion",
+      "calculator_key": "currency_converter",
+      "word_target": 700,
+      "meta_description": "Educational currency converter with reference exchange rates. Convert between major world currencies for estimation purposes.",
+      "related_tools": ["unit-converter", "temperature-converter"],
+      "related_knowledge": []
+    },
+    {
+      "slug": "temperature-converter",
+      "title": "Temperature Converter",
+      "category": "conversion",
+      "calculator_key": "temperature_converter",
+      "word_target": 700,
+      "meta_description": "Free temperature converter. Convert between Celsius, Fahrenheit, and Kelvin instantly with the formulas shown.",
+      "related_tools": ["unit-converter", "currency-converter"],
+      "related_knowledge": []
+    }
+  ],
+  "country_calculators": [
+    {
+      "slug": "income-tax-calculator",
+      "title_pattern": "Income Tax Calculator — {Country}",
+      "category": "tax",
+      "calculator_key": "income_tax",
+      "word_target": 700,
+      "meta_description_pattern": "Free {Country} income tax calculator. Estimate your tax liability based on {country_adj} tax brackets for the current year.",
+      "related_tools": ["salary-after-tax-calculator", "capital-gains-calculator"],
+      "countries": ["united-states", "united-kingdom", "canada", "australia", "india", "germany", "france", "japan", "brazil", "nigeria", "kenya", "south-africa"]
+    },
+    {
+      "slug": "salary-after-tax-calculator",
+      "title_pattern": "Salary After Tax Calculator — {Country}",
+      "category": "tax",
+      "calculator_key": "salary_after_tax",
+      "word_target": 700,
+      "meta_description_pattern": "Free {Country} salary after tax calculator. Enter your gross salary to see your estimated take-home pay after income tax and deductions.",
+      "related_tools": ["income-tax-calculator", "capital-gains-calculator"],
+      "countries": ["united-states", "united-kingdom", "canada", "australia", "india", "germany", "france", "japan", "brazil", "nigeria", "kenya", "south-africa"]
+    },
+    {
+      "slug": "capital-gains-tax-calculator",
+      "title_pattern": "Capital Gains Tax Calculator — {Country}",
+      "category": "tax",
+      "calculator_key": "capital_gains",
+      "word_target": 700,
+      "meta_description_pattern": "Free {Country} capital gains tax calculator. Estimate your tax on investment profits based on {country_adj} capital gains tax rates.",
+      "related_tools": ["income-tax-calculator", "roi-calculator"],
+      "countries": ["united-states", "united-kingdom", "canada", "australia", "india", "germany", "france", "japan", "brazil", "nigeria", "kenya", "south-africa"]
+    },
+    {
+      "slug": "self-employment-tax-calculator",
+      "title_pattern": "Self-Employment Tax Calculator — {Country}",
+      "category": "tax",
+      "calculator_key": "self_employment_tax",
+      "word_target": 700,
+      "meta_description_pattern": "Free {Country} self-employment tax calculator. Estimate your self-employment tax liability including social contributions.",
+      "related_tools": ["income-tax-calculator", "salary-after-tax-calculator"],
+      "countries": ["united-states", "united-kingdom", "canada", "australia", "india", "germany", "france", "japan", "brazil", "nigeria", "kenya", "south-africa"]
+    },
+    {
+      "slug": "vat-sales-tax-calculator",
+      "title_pattern": "VAT/Sales Tax Calculator — {Country}",
+      "category": "tax",
+      "calculator_key": "vat_calculator",
+      "word_target": 700,
+      "meta_description_pattern": "Free {Country} VAT/sales tax calculator. Add or remove tax at the current {country_adj} rate.",
+      "related_tools": ["income-tax-calculator", "profit-margin-calculator"],
+      "countries": ["united-states", "united-kingdom", "canada", "australia", "india", "germany", "france", "japan", "brazil", "nigeria", "kenya", "south-africa"]
+    }
+  ],
+  "categories": {
+    "finance": {"name": "Finance", "color": "#059669", "icon": "💰"},
+    "tax": {"name": "Tax", "color": "#DC2626", "icon": "🏛️"},
+    "math": {"name": "Math", "color": "#D97706", "icon": "🔢"},
+    "business": {"name": "Business", "color": "#7C3AED", "icon": "📊"},
+    "health": {"name": "Health", "color": "#0891B2", "icon": "❤️"},
+    "conversion": {"name": "Conversion", "color": "#2563EB", "icon": "🔄"}
+  }
+}

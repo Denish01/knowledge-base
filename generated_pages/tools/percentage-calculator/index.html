@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free percentage calculator with three modes: find percentage of a number, calculate percentage change, and find what percent X is of Y.">
+    <link rel="canonical" href="https://360library.com/tools/percentage-calculator/">
+    <meta property="og:title" content="Percentage Calculator">
+    <meta property="og:description" content="Free percentage calculator with three modes: find percentage of a number, calculate percentage change, and find what percent X is of Y.">
+    <meta property="og:url" content="https://360library.com/tools/percentage-calculator/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="360Library">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Percentage Calculator">
+    <meta name="twitter:description" content="Free percentage calculator with three modes: find percentage of a number, calculate percentage change, and find what percent X is of Y.">
+    <title>Percentage Calculator - 360Library</title>
+    <style>
+
+/* === Reset & Base === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #1F2937;
+    background: #FAFBFC;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: #1B4D8E; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* === Header === */
+.site-header {
+    background: #1B4D8E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 60px;
+}
+.site-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+.site-logo:hover { text-decoration: none; opacity: 0.9; }
+.site-logo span { color: #D97706; }
+
+/* Domain nav */
+.domain-nav { display: flex; gap: 4px; list-style: none; }
+.domain-nav a {
+    color: rgba(255,255,255,0.85);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.domain-nav a:hover { background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; }
+.domain-nav a.active { background: rgba(255,255,255,0.2); color: #fff; }
+
+/* Mobile hamburger (pure CSS) */
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.menu-toggle span, .menu-toggle span::before, .menu-toggle span::after {
+    display: block; width: 22px; height: 2px; background: #fff; position: relative; transition: 0.3s;
+}
+.menu-toggle span::before, .menu-toggle span::after { content: ''; position: absolute; left: 0; }
+.menu-toggle span::before { top: -7px; }
+.menu-toggle span::after { top: 7px; }
+#mobile-menu-state { display: none; }
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .domain-nav {
+        display: none; flex-direction: column; position: absolute;
+        top: 60px; left: 0; right: 0; background: #1B4D8E;
+        padding: 12px; gap: 2px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .domain-nav a { padding: 12px 16px; border-radius: 8px; }
+    #mobile-menu-state:checked ~ .header-inner .domain-nav { display: flex; }
+}
+
+/* === Footer === */
+.site-footer {
+    background: #111827;
+    color: #9CA3AF;
+    margin-top: 80px;
+    padding: 48px 24px 32px;
+}
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+.footer-brand .site-logo { font-size: 18px; display: inline-block; margin-bottom: 12px; }
+.footer-brand p { font-size: 14px; line-height: 1.6; max-width: 320px; }
+.footer-col h4 { color: #fff; font-size: 14px; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+.footer-col a { display: block; color: #9CA3AF; font-size: 14px; padding: 4px 0; transition: color 0.2s; text-decoration: none; }
+.footer-col a:hover { color: #fff; text-decoration: none; }
+.footer-bottom {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid #374151;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* === Breadcrumbs === */
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #6B7280;
+}
+.breadcrumbs a { color: #1B4D8E; }
+.breadcrumbs span { margin: 0 8px; color: #D1D5DB; }
+
+
+/* === Tool Page Layout === */
+.tool-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+}
+.tool-main { min-width: 0; }
+.tool-main .tool-calculator {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border: 1px solid #E5E7EB;
+    border-top: 4px solid var(--tool-color, #059669);
+    margin-bottom: 24px;
+}
+.tool-main .tool-calculator .calculator {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.tool-main .tool-calculator .calculator h3 {
+    display: none;
+}
+.tool-main .tool-calculator .calculator button {
+    background: var(--tool-color, #059669);
+}
+.tool-main .tool-calculator .calculator button:hover {
+    filter: brightness(0.9);
+}
+.tool-main .tool-calculator .calc-result {
+    border-left-color: var(--tool-color, #059669);
+}
+.tool-main .tool-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+}
+.tool-main h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+.tool-main .tool-subtitle {
+    font-size: 16px;
+    color: #6B7280;
+    margin-bottom: 24px;
+}
+.tool-main .tool-content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--tool-color, #059669);
+    margin-top: 32px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid color-mix(in srgb, var(--tool-color, #059669) 20%, white);
+}
+.tool-main .tool-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--tool-color, #059669);
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+.tool-main .tool-content p {
+    margin-bottom: 14px;
+    color: #374151;
+    line-height: 1.7;
+}
+.tool-main .tool-content ul {
+    padding-left: 24px;
+    margin-bottom: 14px;
+}
+.tool-main .tool-content li {
+    margin-bottom: 6px;
+    color: #374151;
+}
+.tool-main .tool-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 14px;
+}
+.tool-main .tool-content th, .tool-main .tool-content td {
+    border: 1px solid #E5E7EB;
+    padding: 10px 14px;
+    text-align: left;
+}
+.tool-main .tool-content th {
+    background: var(--tool-color, #059669);
+    color: #fff;
+    font-weight: 600;
+}
+.tool-main .tool-content tr:nth-child(even) { background: #F9FAFB; }
+
+/* === Tool Sidebar === */
+.tool-sidebar {
+    position: sticky;
+    top: 76px;
+}
+.tool-sidebar-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+    margin-bottom: 20px;
+}
+.tool-sidebar-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #E8F0FE;
+}
+.tool-sidebar-card .tool-link {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4B5563;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+.tool-sidebar-card .tool-link:hover {
+    background: #F3F4F6;
+    color: var(--tool-color, #059669);
+    text-decoration: none;
+}
+.tool-sidebar-card .knowledge-link {
+    display: block;
+    font-size: 14px;
+    color: #1B4D8E;
+    padding: 4px 0;
+    text-decoration: none;
+}
+.tool-sidebar-card .knowledge-link:hover {
+    text-decoration: underline;
+}
+
+/* === Related Tools Grid === */
+.related-tools {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid #E8F0FE;
+}
+.related-tools h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+}
+.related-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+}
+.related-tool-card {
+    display: block;
+    padding: 16px;
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.related-tool-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+.related-tool-card .tool-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+/* === Tool Index Grid === */
+.tools-hero {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    color: #fff;
+    padding: 56px 24px;
+    text-align: center;
+}
+.tools-hero h1 { font-size: 36px; font-weight: 700; margin-bottom: 12px; }
+.tools-hero p { font-size: 17px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+.tools-section {
+    max-width: 1200px;
+    margin: 48px auto;
+    padding: 0 24px;
+}
+.tools-category { margin-bottom: 40px; }
+.tools-category-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E5E7EB;
+}
+.tools-category-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2937;
+}
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+.tool-index-card {
+    display: block;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid var(--cat-color, #059669);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.tool-index-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+.tool-index-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 6px;
+}
+.tool-index-card p {
+    font-size: 13px;
+    color: #6B7280;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .tool-wrapper {
+        grid-template-columns: 1fr;
+        padding: 16px 16px 0;
+    }
+    .tool-sidebar {
+        position: static;
+        order: -1;
+    }
+    .tool-main .tool-calculator { padding: 20px; }
+    .tool-main .tool-content { padding: 24px; }
+    .tool-main h1 { font-size: 24px; }
+    .tools-hero { padding: 40px 20px; }
+    .tools-hero h1 { font-size: 28px; }
+}
+
+    </style>
+    
+<style>
+.calculator {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+}
+.calculator h3 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.calculator label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.calculator button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.calculator button:hover {
+    background: #1557b0;
+}
+.calc-result {
+    margin-top: 16px;
+    padding: 12px;
+    background: white;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+.calc-result p {
+    margin: 8px 0;
+}
+.calc-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tab-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+.tab-btn.active {
+    background: #1a73e8;
+    color: white;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+</style>
+
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Percentage Calculator", "description": "Free percentage calculator with three modes: find percentage of a number, calculate percentage change, and find what percent X is of Y.", "url": "https://360library.com/tools/percentage-calculator/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://360library.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Percentage Calculator"}]}</script>
+</head>
+<body>
+<input type="checkbox" id="mobile-menu-state" aria-hidden="true">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/" class="site-logo">360 <span>Library</span></a>
+        <label for="mobile-menu-state" class="menu-toggle" aria-label="Toggle menu"><span></span></label>
+        <ul class="domain-nav">
+        <li><a href="/#economics">Economics</a></li>
+        <li><a href="/#finance">Finance</a></li>
+        <li><a href="/#health">Health</a></li>
+        <li><a href="/#life_obligations">Life Obligations</a></li>
+        <li><a href="/#math">Math</a></li>
+        <li><a href="/#science">Science</a></li>
+        <li><a href="/tools/" class="active">Tools</a></li>
+        </ul>
+    </div>
+</header>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>&rsaquo;</span><a href="/tools/">Tools</a><span>&rsaquo;</span>Percentage Calculator
+</nav>
+
+<div class="tool-wrapper" style="--tool-color: #D97706">
+    <main class="tool-main">
+        <h1>Percentage Calculator</h1>
+        <p class="tool-subtitle">Free online calculator &mdash; instant results, no signup required.</p>
+
+        <div class="tool-calculator">
+            
+<div class="calculator" id="percent-calc">
+    <h3>Percentage Calculator</h3>
+    <div class="calc-tabs">
+        <button class="tab-btn active" onclick="showTab('pct-of')">% of Number</button>
+        <button class="tab-btn" onclick="showTab('pct-change')">% Change</button>
+        <button class="tab-btn" onclick="showTab('pct-is')">X is what % of Y</button>
+    </div>
+    <div id="pct-of" class="tab-content active">
+        <label>What is <input type="number" id="pct1-percent" value="25" style="width:60px">% of
+        <input type="number" id="pct1-number" value="200" style="width:80px">?</label>
+        <button onclick="calcPctOf()">Calculate</button>
+        <div class="calc-result" id="pct1-result"></div>
+    </div>
+    <div id="pct-change" class="tab-content">
+        <label>From <input type="number" id="pct2-from" value="100" style="width:80px"> to
+        <input type="number" id="pct2-to" value="150" style="width:80px"></label>
+        <button onclick="calcPctChange()">Calculate</button>
+        <div class="calc-result" id="pct2-result"></div>
+    </div>
+    <div id="pct-is" class="tab-content">
+        <label><input type="number" id="pct3-x" value="25" style="width:80px"> is what % of
+        <input type="number" id="pct3-y" value="200" style="width:80px">?</label>
+        <button onclick="calcPctIs()">Calculate</button>
+        <div class="calc-result" id="pct3-result"></div>
+    </div>
+</div>
+<script>
+function showTab(id) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+}
+function calcPctOf() {
+    const pct = parseFloat(document.getElementById('pct1-percent').value);
+    const num = parseFloat(document.getElementById('pct1-number').value);
+    document.getElementById('pct1-result').innerHTML = `<p><strong>Result:</strong> ${(pct/100 * num).toFixed(2)}</p>`;
+}
+function calcPctChange() {
+    const from = parseFloat(document.getElementById('pct2-from').value);
+    const to = parseFloat(document.getElementById('pct2-to').value);
+    const change = ((to - from) / from * 100).toFixed(2);
+    document.getElementById('pct2-result').innerHTML = `<p><strong>Change:</strong> ${change}%</p>`;
+}
+function calcPctIs() {
+    const x = parseFloat(document.getElementById('pct3-x').value);
+    const y = parseFloat(document.getElementById('pct3-y').value);
+    document.getElementById('pct3-result').innerHTML = `<p><strong>Result:</strong> ${(x/y*100).toFixed(2)}%</p>`;
+}
+calcPctOf();
+</script>
+
+        </div>
+
+        <div class="tool-content">
+            <h2 id="how-to-use-this-calculator">How to Use This Calculator</h2>
+<p>To use the percentage calculator, enter the initial value, the percentage to apply, and select whether you want to calculate the percentage of the initial value or the initial value based on the percentage result. For example, if you want to find 25% of $120, you would enter 120 as the initial value and 25 as the percentage.</p>
+<p>Let's say you want to calculate a 15% discount on a $200 purchase: you enter 200 as the initial value and 15 as the percentage, and the calculator will output the discount amount and the final price after the discount.</p>
+<h2 id="the-formula-behind-it">The Formula Behind It</h2>
+<p>The formula for calculating percentages is: result = (percentage / 100) * initial value.</p>
+<p>The variables are:</p>
+<ul>
+<li>result: the calculated percentage value</li>
+<li>percentage: the percentage to apply</li>
+<li>initial value: the base value.</li>
+</ul>
+<h2 id="practical-examples">Practical Examples</h2>
+<p>Here are a few examples of using the percentage calculator:</p>
+<ul>
+<li>If you earn $50,000 per year and get a 10% raise, the calculator will show that your new salary is $55,000.</li>
+<li>A store is having a 20% off sale on a $100 item, and the calculator will output that the discount is $20 and the final price is $80.</li>
+<li>If a company's stock price increases by 5% from $500 to a new price, the calculator will show that the new price is $525.</li>
+</ul>
+<h2 id="common-questions">Common Questions</h2>
+<h3 id="what-is-the-difference-between-percentage-and-percent">What is the difference between percentage and percent?</h3>
+<p>Percentage and percent are often used interchangeably, but technically percent means "out of 100" and percentage is the result of a calculation.</p>
+<h3 id="how-do-i-calculate-reverse-percentage">How do I calculate reverse percentage?</h3>
+<p>To calculate the initial value based on a percentage result, enter the result and the percentage in the calculator.</p>
+<h3 id="can-i-use-the-calculator-for-negative-percentages">Can I use the calculator for negative percentages?</h3>
+<p>Yes, you can use the calculator to calculate negative percentages, such as a 10% decrease.</p>
+<h3 id="how-do-i-calculate-a-percentage-of-a-percentage">How do I calculate a percentage of a percentage?</h3>
+<p>To calculate a percentage of a percentage, first calculate the first percentage, then use the result as the initial value to calculate the second percentage.</p>
+<h3 id="what-if-i-need-to-calculate-multiple-percentages">What if I need to calculate multiple percentages?</h3>
+<p>You can use the calculator to calculate each percentage separately, or calculate the total percentage by adding the individual percentages.</p>
+
+            <div class="related-tools"><h3>Related Calculators</h3><div class="related-tools-grid">
+        <a href="/tools/markup-calculator/" class="related-tool-card"><span class="tool-card-title">Markup Calculator</span></a>
+        <a href="/tools/profit-margin-calculator/" class="related-tool-card"><span class="tool-card-title">Profit Margin Calculator</span></a>
+    </div></div>
+        </div>
+    </main>
+
+    <aside class="tool-sidebar">
+    <div class="tool-sidebar-card">
+        <h3>Related Calculators</h3>
+        <a href="/tools/markup-calculator/" class="tool-link">Markup</a>
+        <a href="/tools/profit-margin-calculator/" class="tool-link">Profit Margin</a>
+    </div>
+    <div class="tool-sidebar-card">
+        <h3>Learn More</h3>
+        <a href="/math/percentages/what-is.html" class="knowledge-link">Percentages &rarr;</a>
+    </div>
+    <div class="tool-sidebar-card">
+        <a href="/tools/" class="tool-link" style="font-weight:600">&larr; All Calculators</a>
+    </div>
+</aside>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="/" class="site-logo">360 <span>Library</span></a>
+            <p>Free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Domains</h4>
+            <a href="/#economics">Economics</a>
+            <a href="/#finance">Finance</a>
+            <a href="/#health">Health</a>
+            <a href="/#life_obligations">Life Obligations</a>
+            <a href="/#math">Math</a>
+            <a href="/#science">Science</a>
+        </div>
+        <div class="footer-col">
+            <h4>Info</h4>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Use</a>
+            <a href="/sitemap.xml">Sitemap</a>
+            <a href="mailto:mrgovernment02@gmail.com">Contact</a>
+        </div>
+    </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
+    <div class="footer-bottom">
+        &copy; 2026 360Library.com &mdash; All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

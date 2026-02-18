@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free France salary after tax calculator. Enter your gross salary to see your estimated take-home pay after income tax and deductions.">
+    <link rel="canonical" href="https://360library.com/tools/salary-after-tax-calculator/france/">
+    <meta property="og:title" content="Salary After Tax Calculator — France">
+    <meta property="og:description" content="Free France salary after tax calculator. Enter your gross salary to see your estimated take-home pay after income tax and deductions.">
+    <meta property="og:url" content="https://360library.com/tools/salary-after-tax-calculator/france/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="360Library">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Salary After Tax Calculator — France">
+    <meta name="twitter:description" content="Free France salary after tax calculator. Enter your gross salary to see your estimated take-home pay after income tax and deductions.">
+    <title>Salary After Tax Calculator — France - 360Library</title>
+    <style>
+
+/* === Reset & Base === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #1F2937;
+    background: #FAFBFC;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: #1B4D8E; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* === Header === */
+.site-header {
+    background: #1B4D8E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 60px;
+}
+.site-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+.site-logo:hover { text-decoration: none; opacity: 0.9; }
+.site-logo span { color: #D97706; }
+
+/* Domain nav */
+.domain-nav { display: flex; gap: 4px; list-style: none; }
+.domain-nav a {
+    color: rgba(255,255,255,0.85);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.domain-nav a:hover { background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; }
+.domain-nav a.active { background: rgba(255,255,255,0.2); color: #fff; }
+
+/* Mobile hamburger (pure CSS) */
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.menu-toggle span, .menu-toggle span::before, .menu-toggle span::after {
+    display: block; width: 22px; height: 2px; background: #fff; position: relative; transition: 0.3s;
+}
+.menu-toggle span::before, .menu-toggle span::after { content: ''; position: absolute; left: 0; }
+.menu-toggle span::before { top: -7px; }
+.menu-toggle span::after { top: 7px; }
+#mobile-menu-state { display: none; }
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .domain-nav {
+        display: none; flex-direction: column; position: absolute;
+        top: 60px; left: 0; right: 0; background: #1B4D8E;
+        padding: 12px; gap: 2px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .domain-nav a { padding: 12px 16px; border-radius: 8px; }
+    #mobile-menu-state:checked ~ .header-inner .domain-nav { display: flex; }
+}
+
+/* === Footer === */
+.site-footer {
+    background: #111827;
+    color: #9CA3AF;
+    margin-top: 80px;
+    padding: 48px 24px 32px;
+}
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+.footer-brand .site-logo { font-size: 18px; display: inline-block; margin-bottom: 12px; }
+.footer-brand p { font-size: 14px; line-height: 1.6; max-width: 320px; }
+.footer-col h4 { color: #fff; font-size: 14px; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+.footer-col a { display: block; color: #9CA3AF; font-size: 14px; padding: 4px 0; transition: color 0.2s; text-decoration: none; }
+.footer-col a:hover { color: #fff; text-decoration: none; }
+.footer-bottom {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid #374151;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* === Breadcrumbs === */
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #6B7280;
+}
+.breadcrumbs a { color: #1B4D8E; }
+.breadcrumbs span { margin: 0 8px; color: #D1D5DB; }
+
+
+/* === Tool Page Layout === */
+.tool-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+}
+.tool-main { min-width: 0; }
+.tool-main .tool-calculator {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border: 1px solid #E5E7EB;
+    border-top: 4px solid var(--tool-color, #059669);
+    margin-bottom: 24px;
+}
+.tool-main .tool-calculator .calculator {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.tool-main .tool-calculator .calculator h3 {
+    display: none;
+}
+.tool-main .tool-calculator .calculator button {
+    background: var(--tool-color, #059669);
+}
+.tool-main .tool-calculator .calculator button:hover {
+    filter: brightness(0.9);
+}
+.tool-main .tool-calculator .calc-result {
+    border-left-color: var(--tool-color, #059669);
+}
+.tool-main .tool-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+}
+.tool-main h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+.tool-main .tool-subtitle {
+    font-size: 16px;
+    color: #6B7280;
+    margin-bottom: 24px;
+}
+.tool-main .tool-content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--tool-color, #059669);
+    margin-top: 32px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid color-mix(in srgb, var(--tool-color, #059669) 20%, white);
+}
+.tool-main .tool-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--tool-color, #059669);
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+.tool-main .tool-content p {
+    margin-bottom: 14px;
+    color: #374151;
+    line-height: 1.7;
+}
+.tool-main .tool-content ul {
+    padding-left: 24px;
+    margin-bottom: 14px;
+}
+.tool-main .tool-content li {
+    margin-bottom: 6px;
+    color: #374151;
+}
+.tool-main .tool-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 14px;
+}
+.tool-main .tool-content th, .tool-main .tool-content td {
+    border: 1px solid #E5E7EB;
+    padding: 10px 14px;
+    text-align: left;
+}
+.tool-main .tool-content th {
+    background: var(--tool-color, #059669);
+    color: #fff;
+    font-weight: 600;
+}
+.tool-main .tool-content tr:nth-child(even) { background: #F9FAFB; }
+
+/* === Tool Sidebar === */
+.tool-sidebar {
+    position: sticky;
+    top: 76px;
+}
+.tool-sidebar-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+    margin-bottom: 20px;
+}
+.tool-sidebar-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #E8F0FE;
+}
+.tool-sidebar-card .tool-link {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4B5563;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+.tool-sidebar-card .tool-link:hover {
+    background: #F3F4F6;
+    color: var(--tool-color, #059669);
+    text-decoration: none;
+}
+.tool-sidebar-card .knowledge-link {
+    display: block;
+    font-size: 14px;
+    color: #1B4D8E;
+    padding: 4px 0;
+    text-decoration: none;
+}
+.tool-sidebar-card .knowledge-link:hover {
+    text-decoration: underline;
+}
+
+/* === Related Tools Grid === */
+.related-tools {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid #E8F0FE;
+}
+.related-tools h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+}
+.related-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+}
+.related-tool-card {
+    display: block;
+    padding: 16px;
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.related-tool-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+.related-tool-card .tool-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+/* === Tool Index Grid === */
+.tools-hero {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    color: #fff;
+    padding: 56px 24px;
+    text-align: center;
+}
+.tools-hero h1 { font-size: 36px; font-weight: 700; margin-bottom: 12px; }
+.tools-hero p { font-size: 17px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+.tools-section {
+    max-width: 1200px;
+    margin: 48px auto;
+    padding: 0 24px;
+}
+.tools-category { margin-bottom: 40px; }
+.tools-category-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E5E7EB;
+}
+.tools-category-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2937;
+}
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+.tool-index-card {
+    display: block;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid var(--cat-color, #059669);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.tool-index-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+.tool-index-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 6px;
+}
+.tool-index-card p {
+    font-size: 13px;
+    color: #6B7280;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .tool-wrapper {
+        grid-template-columns: 1fr;
+        padding: 16px 16px 0;
+    }
+    .tool-sidebar {
+        position: static;
+        order: -1;
+    }
+    .tool-main .tool-calculator { padding: 20px; }
+    .tool-main .tool-content { padding: 24px; }
+    .tool-main h1 { font-size: 24px; }
+    .tools-hero { padding: 40px 20px; }
+    .tools-hero h1 { font-size: 28px; }
+}
+
+    </style>
+    
+<style>
+.calculator {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+}
+.calculator h3 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.calculator label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.calculator button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.calculator button:hover {
+    background: #1557b0;
+}
+.calc-result {
+    margin-top: 16px;
+    padding: 12px;
+    background: white;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+.calc-result p {
+    margin: 8px 0;
+}
+.calc-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tab-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+.tab-btn.active {
+    background: #1a73e8;
+    color: white;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+</style>
+
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Salary After Tax Calculator — France", "description": "Free France salary after tax calculator. Enter your gross salary to see your estimated take-home pay after income tax and deductions.", "url": "https://360library.com/tools/salary-after-tax-calculator/france/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://360library.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Salary After Tax Calculator — France"}]}</script>
+</head>
+<body>
+<input type="checkbox" id="mobile-menu-state" aria-hidden="true">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/" class="site-logo">360 <span>Library</span></a>
+        <label for="mobile-menu-state" class="menu-toggle" aria-label="Toggle menu"><span></span></label>
+        <ul class="domain-nav">
+        <li><a href="/#economics">Economics</a></li>
+        <li><a href="/#finance">Finance</a></li>
+        <li><a href="/#health">Health</a></li>
+        <li><a href="/#life_obligations">Life Obligations</a></li>
+        <li><a href="/#math">Math</a></li>
+        <li><a href="/#science">Science</a></li>
+        <li><a href="/tools/" class="active">Tools</a></li>
+        </ul>
+    </div>
+</header>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>&rsaquo;</span><a href="/tools/">Tools</a><span>&rsaquo;</span>Salary After Tax Calculator — France
+</nav>
+
+<div class="tool-wrapper" style="--tool-color: #DC2626">
+    <main class="tool-main">
+        <h1>Salary After Tax Calculator — France</h1>
+        <p class="tool-subtitle">Free online calculator &mdash; instant results, no signup required.</p>
+
+        <div class="tool-calculator">
+            
+<div class="calculator" id="salary-calc">
+    <h3>Salary After Tax Calculator</h3>
+    <div class="calc-grid">
+        <label>Annual Gross Salary ($)
+            <input type="number" id="sal-gross" value="65000" min="0">
+        </label>
+        <label>Federal Tax Rate (%)
+            <input type="number" id="sal-fed" value="22" min="0" max="50" step="0.5">
+        </label>
+        <label>State/Local Tax Rate (%)
+            <input type="number" id="sal-state" value="5" min="0" max="15" step="0.5">
+        </label>
+        <label>Social Security (%)
+            <input type="number" id="sal-ss" value="6.2" min="0" max="15" step="0.1">
+        </label>
+        <label>Medicare (%)
+            <input type="number" id="sal-med" value="1.45" min="0" max="5" step="0.05">
+        </label>
+        <label>Other Deductions ($/month)
+            <input type="number" id="sal-other" value="0" min="0">
+        </label>
+    </div>
+    <button onclick="calculateSalaryNet()">Calculate</button>
+    <div class="calc-result" id="salary-result"></div>
+</div>
+<script>
+function calculateSalaryNet() {
+    const gross = parseFloat(document.getElementById('sal-gross').value);
+    const fedRate = parseFloat(document.getElementById('sal-fed').value) / 100;
+    const stateRate = parseFloat(document.getElementById('sal-state').value) / 100;
+    const ssRate = parseFloat(document.getElementById('sal-ss').value) / 100;
+    const medRate = parseFloat(document.getElementById('sal-med').value) / 100;
+    const otherMonthly = parseFloat(document.getElementById('sal-other').value);
+
+    const fedTax = gross * fedRate;
+    const stateTax = gross * stateRate;
+    const ssTax = Math.min(gross, 168600) * ssRate;
+    const medTax = gross * medRate;
+    const otherAnnual = otherMonthly * 12;
+    const totalDeductions = fedTax + stateTax + ssTax + medTax + otherAnnual;
+    const net = gross - totalDeductions;
+
+    document.getElementById('salary-result').innerHTML = `
+        <p><strong>Annual Gross:</strong> $${gross.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Federal Tax:</strong> -$${fedTax.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>State/Local Tax:</strong> -$${stateTax.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Social Security:</strong> -$${ssTax.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Medicare:</strong> -$${medTax.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        ${otherAnnual > 0 ? '<p><strong>Other Deductions:</strong> -$' + otherAnnual.toFixed(2) + '</p>' : ''}
+        <hr style="margin:12px 0;border:none;border-top:1px solid #ddd">
+        <p><strong>Annual Take-Home:</strong> $${net.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Monthly Take-Home:</strong> $${(net/12).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Effective Tax Rate:</strong> ${(totalDeductions/gross*100).toFixed(1)}%</p>
+    `;
+}
+calculateSalaryNet();
+</script>
+
+        </div>
+
+        <div class="tool-content">
+            <h2 id="how-france-salary-after-tax-works">How France Salary After Tax Works</h2>
+<p>The French tax system is progressive, meaning that higher income earners are taxed at a higher rate. The system has several brackets, with tax rates ranging from 11% to 45%. For the 2023 tax year, the brackets are as follows:</p>
+<ul>
+<li>11% on income up to €10,256</li>
+<li>30% on income between €10,257 and €27,361</li>
+<li>41% on income between €27,362 and €73,177</li>
+<li>45% on income above €73,177</li>
+</ul>
+<h2 id="how-to-use-this-calculator">How to Use This Calculator</h2>
+<p>To use this calculator, you will need to input your annual salary, the number of children you have (if any), and your marital status. For example, let's say you are a single person with no children, earning a gross salary of €50,000 per year. You would input these values into the calculator to see your net salary after tax.</p>
+<h2 id="key-france-salary-after-tax-rules">Key France Salary After Tax Rules</h2>
+<p>Some important rules to note about the French tax system include:</p>
+<ul>
+<li><strong>\1</strong>: You can deduct certain expenses, such as mortgage interest and charitable donations, from your taxable income.</li>
+<li><strong>\1</strong>: Families with two or more children may be eligible for a tax credit of up to €1,339 per year.</li>
+<li><strong>\1</strong>: These are typically around 9.7% of your gross salary, but may vary depending on your employment status.</li>
+<li><strong>\1</strong>: Tax returns must be filed by May 31st of each year.</li>
+<li><strong>\1</strong>: Certain types of income, such as interest on savings accounts, are exempt from tax up to a certain threshold (€2,012 for the 2023 tax year).</li>
+</ul>
+<h2 id="common-questions">Common Questions</h2>
+<h3 id="what-is-the-difference-between-gross-and-net-salary-in-france">What is the difference between gross and net salary in France?</h3>
+<p>Gross salary is the amount of money you earn before taxes and social security contributions are deducted, while net salary is the amount you take home after these deductions.</p>
+<h3 id="how-do-i-calculate-my-tax-rate-in-france">How do I calculate my tax rate in France?</h3>
+<p>You can use the tax brackets above to estimate your tax rate, or use this calculator to get a more accurate estimate based on your individual circumstances.</p>
+<h3 id="can-i-claim-tax-deductions-in-france-if-i-am-self-employed">Can I claim tax deductions in France if I am self-employed?</h3>
+<p>Yes, self-employed individuals can claim tax deductions on business expenses, such as equipment and travel costs.</p>
+<h3 id="how-do-i-file-my-tax-return-in-france">How do I file my tax return in France?</h3>
+<p>You can file your tax return online through the French tax authority's website, or by mail using a paper form.</p>
+<h3 id="are-there-any-tax-credits-available-for-pensioners-in-france">Are there any tax credits available for pensioners in France?</h3>
+<p>Yes, pensioners may be eligible for a tax credit of up to €2,344 per year, depending on their income level and other factors.</p>
+
+            <div class="related-tools"><h3>Related Calculators</h3><div class="related-tools-grid">
+        <a href="/tools/income-tax-calculator/" class="related-tool-card"><span class="tool-card-title">Income Tax Calculator</span></a>
+        <a href="/tools/capital-gains-calculator/" class="related-tool-card"><span class="tool-card-title">Capital Gains Calculator</span></a>
+    </div></div>
+        </div>
+    </main>
+
+    <aside class="tool-sidebar">
+    <div class="tool-sidebar-card">
+        <h3>Related Calculators</h3>
+        <a href="/tools/income-tax-calculator/" class="tool-link">Income Tax</a>
+        <a href="/tools/capital-gains-calculator/" class="tool-link">Capital Gains</a>
+    </div>
+    <div class="tool-sidebar-card">
+        <a href="/tools/" class="tool-link" style="font-weight:600">&larr; All Calculators</a>
+    </div>
+</aside>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="/" class="site-logo">360 <span>Library</span></a>
+            <p>Free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Domains</h4>
+            <a href="/#economics">Economics</a>
+            <a href="/#finance">Finance</a>
+            <a href="/#health">Health</a>
+            <a href="/#life_obligations">Life Obligations</a>
+            <a href="/#math">Math</a>
+            <a href="/#science">Science</a>
+        </div>
+        <div class="footer-col">
+            <h4>Info</h4>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Use</a>
+            <a href="/sitemap.xml">Sitemap</a>
+            <a href="mailto:mrgovernment02@gmail.com">Contact</a>
+        </div>
+    </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
+    <div class="footer-bottom">
+        &copy; 2026 360Library.com &mdash; All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

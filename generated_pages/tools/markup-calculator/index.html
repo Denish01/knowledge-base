@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free markup calculator. Calculate selling price from cost and markup percentage, or find the markup from cost and selling price.">
+    <link rel="canonical" href="https://360library.com/tools/markup-calculator/">
+    <meta property="og:title" content="Markup Calculator">
+    <meta property="og:description" content="Free markup calculator. Calculate selling price from cost and markup percentage, or find the markup from cost and selling price.">
+    <meta property="og:url" content="https://360library.com/tools/markup-calculator/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="360Library">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Markup Calculator">
+    <meta name="twitter:description" content="Free markup calculator. Calculate selling price from cost and markup percentage, or find the markup from cost and selling price.">
+    <title>Markup Calculator - 360Library</title>
+    <style>
+
+/* === Reset & Base === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #1F2937;
+    background: #FAFBFC;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: #1B4D8E; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* === Header === */
+.site-header {
+    background: #1B4D8E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 60px;
+}
+.site-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+.site-logo:hover { text-decoration: none; opacity: 0.9; }
+.site-logo span { color: #D97706; }
+
+/* Domain nav */
+.domain-nav { display: flex; gap: 4px; list-style: none; }
+.domain-nav a {
+    color: rgba(255,255,255,0.85);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.domain-nav a:hover { background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; }
+.domain-nav a.active { background: rgba(255,255,255,0.2); color: #fff; }
+
+/* Mobile hamburger (pure CSS) */
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.menu-toggle span, .menu-toggle span::before, .menu-toggle span::after {
+    display: block; width: 22px; height: 2px; background: #fff; position: relative; transition: 0.3s;
+}
+.menu-toggle span::before, .menu-toggle span::after { content: ''; position: absolute; left: 0; }
+.menu-toggle span::before { top: -7px; }
+.menu-toggle span::after { top: 7px; }
+#mobile-menu-state { display: none; }
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .domain-nav {
+        display: none; flex-direction: column; position: absolute;
+        top: 60px; left: 0; right: 0; background: #1B4D8E;
+        padding: 12px; gap: 2px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .domain-nav a { padding: 12px 16px; border-radius: 8px; }
+    #mobile-menu-state:checked ~ .header-inner .domain-nav { display: flex; }
+}
+
+/* === Footer === */
+.site-footer {
+    background: #111827;
+    color: #9CA3AF;
+    margin-top: 80px;
+    padding: 48px 24px 32px;
+}
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+.footer-brand .site-logo { font-size: 18px; display: inline-block; margin-bottom: 12px; }
+.footer-brand p { font-size: 14px; line-height: 1.6; max-width: 320px; }
+.footer-col h4 { color: #fff; font-size: 14px; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+.footer-col a { display: block; color: #9CA3AF; font-size: 14px; padding: 4px 0; transition: color 0.2s; text-decoration: none; }
+.footer-col a:hover { color: #fff; text-decoration: none; }
+.footer-bottom {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid #374151;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* === Breadcrumbs === */
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #6B7280;
+}
+.breadcrumbs a { color: #1B4D8E; }
+.breadcrumbs span { margin: 0 8px; color: #D1D5DB; }
+
+
+/* === Tool Page Layout === */
+.tool-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+}
+.tool-main { min-width: 0; }
+.tool-main .tool-calculator {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border: 1px solid #E5E7EB;
+    border-top: 4px solid var(--tool-color, #059669);
+    margin-bottom: 24px;
+}
+.tool-main .tool-calculator .calculator {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.tool-main .tool-calculator .calculator h3 {
+    display: none;
+}
+.tool-main .tool-calculator .calculator button {
+    background: var(--tool-color, #059669);
+}
+.tool-main .tool-calculator .calculator button:hover {
+    filter: brightness(0.9);
+}
+.tool-main .tool-calculator .calc-result {
+    border-left-color: var(--tool-color, #059669);
+}
+.tool-main .tool-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+}
+.tool-main h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+.tool-main .tool-subtitle {
+    font-size: 16px;
+    color: #6B7280;
+    margin-bottom: 24px;
+}
+.tool-main .tool-content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--tool-color, #059669);
+    margin-top: 32px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid color-mix(in srgb, var(--tool-color, #059669) 20%, white);
+}
+.tool-main .tool-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--tool-color, #059669);
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+.tool-main .tool-content p {
+    margin-bottom: 14px;
+    color: #374151;
+    line-height: 1.7;
+}
+.tool-main .tool-content ul {
+    padding-left: 24px;
+    margin-bottom: 14px;
+}
+.tool-main .tool-content li {
+    margin-bottom: 6px;
+    color: #374151;
+}
+.tool-main .tool-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 14px;
+}
+.tool-main .tool-content th, .tool-main .tool-content td {
+    border: 1px solid #E5E7EB;
+    padding: 10px 14px;
+    text-align: left;
+}
+.tool-main .tool-content th {
+    background: var(--tool-color, #059669);
+    color: #fff;
+    font-weight: 600;
+}
+.tool-main .tool-content tr:nth-child(even) { background: #F9FAFB; }
+
+/* === Tool Sidebar === */
+.tool-sidebar {
+    position: sticky;
+    top: 76px;
+}
+.tool-sidebar-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+    margin-bottom: 20px;
+}
+.tool-sidebar-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #E8F0FE;
+}
+.tool-sidebar-card .tool-link {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4B5563;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+.tool-sidebar-card .tool-link:hover {
+    background: #F3F4F6;
+    color: var(--tool-color, #059669);
+    text-decoration: none;
+}
+.tool-sidebar-card .knowledge-link {
+    display: block;
+    font-size: 14px;
+    color: #1B4D8E;
+    padding: 4px 0;
+    text-decoration: none;
+}
+.tool-sidebar-card .knowledge-link:hover {
+    text-decoration: underline;
+}
+
+/* === Related Tools Grid === */
+.related-tools {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid #E8F0FE;
+}
+.related-tools h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+}
+.related-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+}
+.related-tool-card {
+    display: block;
+    padding: 16px;
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.related-tool-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+.related-tool-card .tool-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+/* === Tool Index Grid === */
+.tools-hero {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    color: #fff;
+    padding: 56px 24px;
+    text-align: center;
+}
+.tools-hero h1 { font-size: 36px; font-weight: 700; margin-bottom: 12px; }
+.tools-hero p { font-size: 17px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+.tools-section {
+    max-width: 1200px;
+    margin: 48px auto;
+    padding: 0 24px;
+}
+.tools-category { margin-bottom: 40px; }
+.tools-category-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E5E7EB;
+}
+.tools-category-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2937;
+}
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+.tool-index-card {
+    display: block;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid var(--cat-color, #059669);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.tool-index-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+.tool-index-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 6px;
+}
+.tool-index-card p {
+    font-size: 13px;
+    color: #6B7280;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .tool-wrapper {
+        grid-template-columns: 1fr;
+        padding: 16px 16px 0;
+    }
+    .tool-sidebar {
+        position: static;
+        order: -1;
+    }
+    .tool-main .tool-calculator { padding: 20px; }
+    .tool-main .tool-content { padding: 24px; }
+    .tool-main h1 { font-size: 24px; }
+    .tools-hero { padding: 40px 20px; }
+    .tools-hero h1 { font-size: 28px; }
+}
+
+    </style>
+    
+<style>
+.calculator {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+}
+.calculator h3 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.calculator label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.calculator button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.calculator button:hover {
+    background: #1557b0;
+}
+.calc-result {
+    margin-top: 16px;
+    padding: 12px;
+    background: white;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+.calc-result p {
+    margin: 8px 0;
+}
+.calc-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tab-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+.tab-btn.active {
+    background: #1a73e8;
+    color: white;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+</style>
+
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Markup Calculator", "description": "Free markup calculator. Calculate selling price from cost and markup percentage, or find the markup from cost and selling price.", "url": "https://360library.com/tools/markup-calculator/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://360library.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Markup Calculator"}]}</script>
+</head>
+<body>
+<input type="checkbox" id="mobile-menu-state" aria-hidden="true">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/" class="site-logo">360 <span>Library</span></a>
+        <label for="mobile-menu-state" class="menu-toggle" aria-label="Toggle menu"><span></span></label>
+        <ul class="domain-nav">
+        <li><a href="/#economics">Economics</a></li>
+        <li><a href="/#finance">Finance</a></li>
+        <li><a href="/#health">Health</a></li>
+        <li><a href="/#life_obligations">Life Obligations</a></li>
+        <li><a href="/#math">Math</a></li>
+        <li><a href="/#science">Science</a></li>
+        <li><a href="/tools/" class="active">Tools</a></li>
+        </ul>
+    </div>
+</header>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>&rsaquo;</span><a href="/tools/">Tools</a><span>&rsaquo;</span>Markup Calculator
+</nav>
+
+<div class="tool-wrapper" style="--tool-color: #7C3AED">
+    <main class="tool-main">
+        <h1>Markup Calculator</h1>
+        <p class="tool-subtitle">Free online calculator &mdash; instant results, no signup required.</p>
+
+        <div class="tool-calculator">
+            
+<div class="calculator" id="markup-calc">
+    <h3>Markup Calculator</h3>
+    <div class="calc-tabs">
+        <button class="tab-btn active" onclick="showMarkupTab('mu-forward')">Cost + Markup</button>
+        <button class="tab-btn" onclick="showMarkupTab('mu-reverse')">Find Markup</button>
+    </div>
+    <div id="mu-forward" class="tab-content active">
+        <div class="calc-grid">
+            <label>Cost ($) <input type="number" id="mu-cost" value="50" min="0" step="0.01"></label>
+            <label>Markup (%) <input type="number" id="mu-pct" value="60" min="0" step="0.5"></label>
+        </div>
+        <button onclick="calcMarkupForward()">Calculate</button>
+        <div class="calc-result" id="mu-fwd-result"></div>
+    </div>
+    <div id="mu-reverse" class="tab-content">
+        <div class="calc-grid">
+            <label>Cost ($) <input type="number" id="mu-rev-cost" value="50" min="0" step="0.01"></label>
+            <label>Selling Price ($) <input type="number" id="mu-rev-price" value="80" min="0" step="0.01"></label>
+        </div>
+        <button onclick="calcMarkupReverse()">Calculate</button>
+        <div class="calc-result" id="mu-rev-result"></div>
+    </div>
+</div>
+<script>
+function showMarkupTab(id) {
+    document.querySelectorAll('#markup-calc .tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('#markup-calc .tab-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+}
+function calcMarkupForward() {
+    const cost = parseFloat(document.getElementById('mu-cost').value);
+    const pct = parseFloat(document.getElementById('mu-pct').value) / 100;
+    const price = cost * (1 + pct);
+    const profit = price - cost;
+    const margin = (profit / price * 100).toFixed(2);
+    document.getElementById('mu-fwd-result').innerHTML = `
+        <p><strong>Selling Price:</strong> $${price.toFixed(2)}</p>
+        <p><strong>Profit:</strong> $${profit.toFixed(2)}</p>
+        <p><strong>Profit Margin:</strong> ${margin}%</p>
+    `;
+}
+function calcMarkupReverse() {
+    const cost = parseFloat(document.getElementById('mu-rev-cost').value);
+    const price = parseFloat(document.getElementById('mu-rev-price').value);
+    const markup = ((price - cost) / cost * 100).toFixed(2);
+    const margin = ((price - cost) / price * 100).toFixed(2);
+    document.getElementById('mu-rev-result').innerHTML = `
+        <p><strong>Markup:</strong> ${markup}%</p>
+        <p><strong>Profit Margin:</strong> ${margin}%</p>
+        <p><strong>Profit:</strong> $${(price - cost).toFixed(2)}</p>
+    `;
+}
+calcMarkupForward();
+</script>
+
+        </div>
+
+        <div class="tool-content">
+            <h2 id="how-to-use-this-calculator">How to Use This Calculator</h2>
+<p>The calculator requires three inputs: the cost of the product, the desired profit margin, and the desired selling price. The cost of the product is the amount it costs to produce or purchase the item, the desired profit margin is the percentage of profit you want to make, and the desired selling price is the price at which you want to sell the item. For example, if the cost of a product is $100, the desired profit margin is 25%, and the desired selling price is $125, the calculator will determine the markup amount.</p>
+<h2 id="the-formula-behind-it">The Formula Behind It</h2>
+<p>The formula used to calculate the markup is: Markup = (Selling Price - Cost) / Cost * 100. The variables in this equation are the Selling Price, which is the price at which the item is sold, the Cost, which is the amount it costs to produce or purchase the item. The result is the markup amount, which is expressed as a percentage.</p>
+<h2 id="practical-examples">Practical Examples</h2>
+<ul>
+<li>If a company purchases a product for $50 and wants to make a 30% profit, the calculator will determine the selling price to be $65.</li>
+<li>A retailer buys a shirt for $20 and wants to sell it for a 50% markup, the calculator will determine the selling price to be $30.</li>
+<li>A manufacturer produces a product for $100 and wants to make a 20% profit, the calculator will determine the selling price to be $120.</li>
+</ul>
+<h2 id="common-questions">Common Questions</h2>
+<h3 id="what-is-the-difference-between-markup-and-margin">What is the difference between markup and margin?</h3>
+<p>Markup is the amount added to the cost of a product to determine the selling price, while margin is the difference between the selling price and the cost, expressed as a percentage of the selling price.</p>
+<h3 id="how-do-i-calculate-the-selling-price-using-the-markup-percentage">How do I calculate the selling price using the markup percentage?</h3>
+<p>To calculate the selling price, you can use the formula: Selling Price = Cost + (Cost * Markup Percentage).</p>
+<h3 id="can-i-use-the-calculator-to-determine-the-cost-of-a-product-if-i-know-the-selling-price-and-markup-percentage">Can I use the calculator to determine the cost of a product if I know the selling price and markup percentage?</h3>
+<p>Yes, you can use the calculator to determine the cost of a product by entering the selling price and markup percentage.</p>
+<h3 id="what-is-a-typical-markup-percentage-for-retail-products">What is a typical markup percentage for retail products?</h3>
+<p>A typical markup percentage for retail products can range from 20% to 50%, depending on the type of product, industry, and target market.</p>
+<h3 id="how-does-the-calculator-handle-decimal-values-for-the-markup-percentage">How does the calculator handle decimal values for the markup percentage?</h3>
+<p>The calculator will accept decimal values for the markup percentage, allowing you to enter precise values, such as 25.5% or 12.25%.</p>
+
+            <div class="related-tools"><h3>Related Calculators</h3><div class="related-tools-grid">
+        <a href="/tools/profit-margin-calculator/" class="related-tool-card"><span class="tool-card-title">Profit Margin Calculator</span></a>
+        <a href="/tools/vat-calculator/" class="related-tool-card"><span class="tool-card-title">Vat Calculator</span></a>
+    </div></div>
+        </div>
+    </main>
+
+    <aside class="tool-sidebar">
+    <div class="tool-sidebar-card">
+        <h3>Related Calculators</h3>
+        <a href="/tools/profit-margin-calculator/" class="tool-link">Profit Margin</a>
+        <a href="/tools/vat-calculator/" class="tool-link">Vat</a>
+    </div>
+    <div class="tool-sidebar-card">
+        <a href="/tools/" class="tool-link" style="font-weight:600">&larr; All Calculators</a>
+    </div>
+</aside>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="/" class="site-logo">360 <span>Library</span></a>
+            <p>Free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Domains</h4>
+            <a href="/#economics">Economics</a>
+            <a href="/#finance">Finance</a>
+            <a href="/#health">Health</a>
+            <a href="/#life_obligations">Life Obligations</a>
+            <a href="/#math">Math</a>
+            <a href="/#science">Science</a>
+        </div>
+        <div class="footer-col">
+            <h4>Info</h4>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Use</a>
+            <a href="/sitemap.xml">Sitemap</a>
+            <a href="mailto:mrgovernment02@gmail.com">Contact</a>
+        </div>
+    </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
+    <div class="footer-bottom">
+        &copy; 2026 360Library.com &mdash; All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

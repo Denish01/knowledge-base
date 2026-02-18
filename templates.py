@@ -557,6 +557,8 @@ def generate_header_html(active_domain=None):
         active_cls = ' class="active"' if slug == active_domain else ""
         display = meta["name"]
         nav_items += f'        <li><a href="/#{slug}"{active_cls}>{display}</a></li>\n'
+    tools_active = ' class="active"' if active_domain == "tools" else ""
+    nav_items += f'        <li><a href="/tools/"{tools_active}>Tools</a></li>\n'
 
     return f"""<input type="checkbox" id="mobile-menu-state" aria-hidden="true">
 <header class="site-header">
@@ -853,3 +855,426 @@ RELATED_CSS = """
     text-decoration: none;
 }
 """
+
+
+# =============================================================================
+# TOOL PAGE CSS & HTML GENERATOR
+# =============================================================================
+
+TOOL_CSS = """
+/* === Tool Page Layout === */
+.tool-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+}
+.tool-main { min-width: 0; }
+.tool-main .tool-calculator {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border: 1px solid #E5E7EB;
+    border-top: 4px solid var(--tool-color, #059669);
+    margin-bottom: 24px;
+}
+.tool-main .tool-calculator .calculator {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.tool-main .tool-calculator .calculator h3 {
+    display: none;
+}
+.tool-main .tool-calculator .calculator button {
+    background: var(--tool-color, #059669);
+}
+.tool-main .tool-calculator .calculator button:hover {
+    filter: brightness(0.9);
+}
+.tool-main .tool-calculator .calc-result {
+    border-left-color: var(--tool-color, #059669);
+}
+.tool-main .tool-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+}
+.tool-main h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+.tool-main .tool-subtitle {
+    font-size: 16px;
+    color: #6B7280;
+    margin-bottom: 24px;
+}
+.tool-main .tool-content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--tool-color, #059669);
+    margin-top: 32px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid color-mix(in srgb, var(--tool-color, #059669) 20%, white);
+}
+.tool-main .tool-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--tool-color, #059669);
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+.tool-main .tool-content p {
+    margin-bottom: 14px;
+    color: #374151;
+    line-height: 1.7;
+}
+.tool-main .tool-content ul {
+    padding-left: 24px;
+    margin-bottom: 14px;
+}
+.tool-main .tool-content li {
+    margin-bottom: 6px;
+    color: #374151;
+}
+.tool-main .tool-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 14px;
+}
+.tool-main .tool-content th, .tool-main .tool-content td {
+    border: 1px solid #E5E7EB;
+    padding: 10px 14px;
+    text-align: left;
+}
+.tool-main .tool-content th {
+    background: var(--tool-color, #059669);
+    color: #fff;
+    font-weight: 600;
+}
+.tool-main .tool-content tr:nth-child(even) { background: #F9FAFB; }
+
+/* === Tool Sidebar === */
+.tool-sidebar {
+    position: sticky;
+    top: 76px;
+}
+.tool-sidebar-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+    margin-bottom: 20px;
+}
+.tool-sidebar-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #E8F0FE;
+}
+.tool-sidebar-card .tool-link {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4B5563;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+.tool-sidebar-card .tool-link:hover {
+    background: #F3F4F6;
+    color: var(--tool-color, #059669);
+    text-decoration: none;
+}
+.tool-sidebar-card .knowledge-link {
+    display: block;
+    font-size: 14px;
+    color: #1B4D8E;
+    padding: 4px 0;
+    text-decoration: none;
+}
+.tool-sidebar-card .knowledge-link:hover {
+    text-decoration: underline;
+}
+
+/* === Related Tools Grid === */
+.related-tools {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid #E8F0FE;
+}
+.related-tools h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+}
+.related-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+}
+.related-tool-card {
+    display: block;
+    padding: 16px;
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.related-tool-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+.related-tool-card .tool-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+/* === Tool Index Grid === */
+.tools-hero {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    color: #fff;
+    padding: 56px 24px;
+    text-align: center;
+}
+.tools-hero h1 { font-size: 36px; font-weight: 700; margin-bottom: 12px; }
+.tools-hero p { font-size: 17px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+.tools-section {
+    max-width: 1200px;
+    margin: 48px auto;
+    padding: 0 24px;
+}
+.tools-category { margin-bottom: 40px; }
+.tools-category-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E5E7EB;
+}
+.tools-category-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2937;
+}
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+.tool-index-card {
+    display: block;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid var(--cat-color, #059669);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.tool-index-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+.tool-index-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 6px;
+}
+.tool-index-card p {
+    font-size: 13px;
+    color: #6B7280;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .tool-wrapper {
+        grid-template-columns: 1fr;
+        padding: 16px 16px 0;
+    }
+    .tool-sidebar {
+        position: static;
+        order: -1;
+    }
+    .tool-main .tool-calculator { padding: 20px; }
+    .tool-main .tool-content { padding: 24px; }
+    .tool-main h1 { font-size: 24px; }
+    .tools-hero { padding: 40px 20px; }
+    .tools-hero h1 { font-size: 28px; }
+}
+"""
+
+TOOL_CATEGORY_COLORS = {
+    "finance": "#059669",
+    "tax": "#DC2626",
+    "math": "#D97706",
+    "business": "#7C3AED",
+    "health": "#0891B2",
+    "conversion": "#2563EB",
+}
+
+
+def generate_tool_breadcrumb_html(tool_title, country=None):
+    """Generate breadcrumb for tool pages: Home > Tools > Tool Name."""
+    crumbs = '<a href="/">Home</a><span>&rsaquo;</span><a href="/tools/">Tools</a>'
+    if country:
+        crumbs += f'<span>&rsaquo;</span>{tool_title}'
+    else:
+        crumbs += f'<span>&rsaquo;</span>{tool_title}'
+    return f'<nav class="breadcrumbs" aria-label="Breadcrumb">\n    {crumbs}\n</nav>'
+
+
+def generate_tool_jsonld(title, description, canonical_url):
+    """Generate Schema.org WebApplication structured data for tool pages."""
+    import json as _json2
+    app = {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": title,
+        "description": description,
+        "url": f"https://360library.com{canonical_url}",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "360Library",
+            "url": "https://360library.com",
+        },
+    }
+    breadcrumb = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://360library.com/tools/"},
+            {"@type": "ListItem", "position": 3, "name": title},
+        ]
+    }
+    return (f'<script type="application/ld+json">{_json2.dumps(app, ensure_ascii=False)}</script>\n'
+            f'<script type="application/ld+json">{_json2.dumps(breadcrumb, ensure_ascii=False)}</script>')
+
+
+def generate_tool_sidebar_html(related_tools, related_knowledge, all_tools_lookup=None):
+    """Generate sidebar with related tools and knowledge links."""
+    sidebar = '<aside class="tool-sidebar">\n'
+
+    if related_tools:
+        sidebar += '    <div class="tool-sidebar-card">\n        <h3>Related Calculators</h3>\n'
+        for slug in related_tools:
+            display = slug.replace("-", " ").title().replace(" Calculator", "")
+            sidebar += f'        <a href="/tools/{slug}/" class="tool-link">{display}</a>\n'
+        sidebar += '    </div>\n'
+
+    if related_knowledge:
+        sidebar += '    <div class="tool-sidebar-card">\n        <h3>Learn More</h3>\n'
+        for path in related_knowledge:
+            parts = path.split("/")
+            display = parts[-1].replace("-", " ").title() if len(parts) > 1 else path.replace("-", " ").title()
+            sidebar += f'        <a href="/{path}/what-is.html" class="knowledge-link">{display} &rarr;</a>\n'
+        sidebar += '    </div>\n'
+
+    sidebar += '    <div class="tool-sidebar-card">\n        <a href="/tools/" class="tool-link" style="font-weight:600">&larr; All Calculators</a>\n    </div>\n'
+    sidebar += '</aside>'
+    return sidebar
+
+
+def generate_tool_page_html(title, meta_description, calculator_html, calculator_styles,
+                            content_html, category, slug, related_tools=None,
+                            related_knowledge=None, country=None):
+    """Generate a complete tool page HTML."""
+    tool_color = TOOL_CATEGORY_COLORS.get(category, "#059669")
+    canonical_path = f"/tools/{slug}/"
+    if country:
+        canonical_path = f"/tools/{slug}/{country}/"
+
+    header = generate_header_html(active_domain="tools")
+    footer = generate_footer_html()
+    breadcrumb = generate_tool_breadcrumb_html(title, country)
+    jsonld = generate_tool_jsonld(title, meta_description, canonical_path)
+    og = generate_og_tags(title, meta_description, f"https://360library.com{canonical_path}", og_type="website")
+    sidebar = generate_tool_sidebar_html(related_tools or [], related_knowledge or [])
+
+    # Related tools grid at bottom of content
+    related_grid = ""
+    if related_tools:
+        cards = ""
+        for rt_slug in related_tools:
+            display = rt_slug.replace("-", " ").title()
+            cards += f'        <a href="/tools/{rt_slug}/" class="related-tool-card"><span class="tool-card-title">{display}</span></a>\n'
+        related_grid = f'<div class="related-tools"><h3>Related Calculators</h3><div class="related-tools-grid">\n{cards}    </div></div>'
+
+    from calculators import CALCULATOR_STYLES
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{meta_description}">
+    <link rel="canonical" href="https://360library.com{canonical_path}">
+    {og}
+    <title>{title} - 360Library</title>
+    <style>
+{SHARED_CSS}
+{TOOL_CSS}
+    </style>
+    {CALCULATOR_STYLES}
+    {jsonld}
+</head>
+<body>
+{header}
+
+{breadcrumb}
+
+<div class="tool-wrapper" style="--tool-color: {tool_color}">
+    <main class="tool-main">
+        <h1>{title}</h1>
+        <p class="tool-subtitle">Free online calculator &mdash; instant results, no signup required.</p>
+
+        <div class="tool-calculator">
+            {calculator_html}
+        </div>
+
+        <div class="tool-content">
+            {content_html}
+
+            {related_grid}
+        </div>
+    </main>
+
+    {sidebar}
+</div>
+
+{footer}
+</body>
+</html>"""

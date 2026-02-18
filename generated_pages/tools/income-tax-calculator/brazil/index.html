@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Brazil income tax calculator. Estimate your tax liability based on Brazil tax brackets for the current year.">
+    <link rel="canonical" href="https://360library.com/tools/income-tax-calculator/brazil/">
+    <meta property="og:title" content="Income Tax Calculator — Brazil">
+    <meta property="og:description" content="Free Brazil income tax calculator. Estimate your tax liability based on Brazil tax brackets for the current year.">
+    <meta property="og:url" content="https://360library.com/tools/income-tax-calculator/brazil/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="360Library">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Income Tax Calculator — Brazil">
+    <meta name="twitter:description" content="Free Brazil income tax calculator. Estimate your tax liability based on Brazil tax brackets for the current year.">
+    <title>Income Tax Calculator — Brazil - 360Library</title>
+    <style>
+
+/* === Reset & Base === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #1F2937;
+    background: #FAFBFC;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: #1B4D8E; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* === Header === */
+.site-header {
+    background: #1B4D8E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 60px;
+}
+.site-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+.site-logo:hover { text-decoration: none; opacity: 0.9; }
+.site-logo span { color: #D97706; }
+
+/* Domain nav */
+.domain-nav { display: flex; gap: 4px; list-style: none; }
+.domain-nav a {
+    color: rgba(255,255,255,0.85);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.domain-nav a:hover { background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; }
+.domain-nav a.active { background: rgba(255,255,255,0.2); color: #fff; }
+
+/* Mobile hamburger (pure CSS) */
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.menu-toggle span, .menu-toggle span::before, .menu-toggle span::after {
+    display: block; width: 22px; height: 2px; background: #fff; position: relative; transition: 0.3s;
+}
+.menu-toggle span::before, .menu-toggle span::after { content: ''; position: absolute; left: 0; }
+.menu-toggle span::before { top: -7px; }
+.menu-toggle span::after { top: 7px; }
+#mobile-menu-state { display: none; }
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .domain-nav {
+        display: none; flex-direction: column; position: absolute;
+        top: 60px; left: 0; right: 0; background: #1B4D8E;
+        padding: 12px; gap: 2px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .domain-nav a { padding: 12px 16px; border-radius: 8px; }
+    #mobile-menu-state:checked ~ .header-inner .domain-nav { display: flex; }
+}
+
+/* === Footer === */
+.site-footer {
+    background: #111827;
+    color: #9CA3AF;
+    margin-top: 80px;
+    padding: 48px 24px 32px;
+}
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+.footer-brand .site-logo { font-size: 18px; display: inline-block; margin-bottom: 12px; }
+.footer-brand p { font-size: 14px; line-height: 1.6; max-width: 320px; }
+.footer-col h4 { color: #fff; font-size: 14px; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+.footer-col a { display: block; color: #9CA3AF; font-size: 14px; padding: 4px 0; transition: color 0.2s; text-decoration: none; }
+.footer-col a:hover { color: #fff; text-decoration: none; }
+.footer-bottom {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid #374151;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* === Breadcrumbs === */
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #6B7280;
+}
+.breadcrumbs a { color: #1B4D8E; }
+.breadcrumbs span { margin: 0 8px; color: #D1D5DB; }
+
+
+/* === Tool Page Layout === */
+.tool-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+}
+.tool-main { min-width: 0; }
+.tool-main .tool-calculator {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border: 1px solid #E5E7EB;
+    border-top: 4px solid var(--tool-color, #059669);
+    margin-bottom: 24px;
+}
+.tool-main .tool-calculator .calculator {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.tool-main .tool-calculator .calculator h3 {
+    display: none;
+}
+.tool-main .tool-calculator .calculator button {
+    background: var(--tool-color, #059669);
+}
+.tool-main .tool-calculator .calculator button:hover {
+    filter: brightness(0.9);
+}
+.tool-main .tool-calculator .calc-result {
+    border-left-color: var(--tool-color, #059669);
+}
+.tool-main .tool-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+}
+.tool-main h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+.tool-main .tool-subtitle {
+    font-size: 16px;
+    color: #6B7280;
+    margin-bottom: 24px;
+}
+.tool-main .tool-content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--tool-color, #059669);
+    margin-top: 32px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid color-mix(in srgb, var(--tool-color, #059669) 20%, white);
+}
+.tool-main .tool-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--tool-color, #059669);
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+.tool-main .tool-content p {
+    margin-bottom: 14px;
+    color: #374151;
+    line-height: 1.7;
+}
+.tool-main .tool-content ul {
+    padding-left: 24px;
+    margin-bottom: 14px;
+}
+.tool-main .tool-content li {
+    margin-bottom: 6px;
+    color: #374151;
+}
+.tool-main .tool-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 14px;
+}
+.tool-main .tool-content th, .tool-main .tool-content td {
+    border: 1px solid #E5E7EB;
+    padding: 10px 14px;
+    text-align: left;
+}
+.tool-main .tool-content th {
+    background: var(--tool-color, #059669);
+    color: #fff;
+    font-weight: 600;
+}
+.tool-main .tool-content tr:nth-child(even) { background: #F9FAFB; }
+
+/* === Tool Sidebar === */
+.tool-sidebar {
+    position: sticky;
+    top: 76px;
+}
+.tool-sidebar-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+    margin-bottom: 20px;
+}
+.tool-sidebar-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #E8F0FE;
+}
+.tool-sidebar-card .tool-link {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4B5563;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+.tool-sidebar-card .tool-link:hover {
+    background: #F3F4F6;
+    color: var(--tool-color, #059669);
+    text-decoration: none;
+}
+.tool-sidebar-card .knowledge-link {
+    display: block;
+    font-size: 14px;
+    color: #1B4D8E;
+    padding: 4px 0;
+    text-decoration: none;
+}
+.tool-sidebar-card .knowledge-link:hover {
+    text-decoration: underline;
+}
+
+/* === Related Tools Grid === */
+.related-tools {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid #E8F0FE;
+}
+.related-tools h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+}
+.related-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+}
+.related-tool-card {
+    display: block;
+    padding: 16px;
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.related-tool-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+.related-tool-card .tool-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+/* === Tool Index Grid === */
+.tools-hero {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    color: #fff;
+    padding: 56px 24px;
+    text-align: center;
+}
+.tools-hero h1 { font-size: 36px; font-weight: 700; margin-bottom: 12px; }
+.tools-hero p { font-size: 17px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+.tools-section {
+    max-width: 1200px;
+    margin: 48px auto;
+    padding: 0 24px;
+}
+.tools-category { margin-bottom: 40px; }
+.tools-category-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E5E7EB;
+}
+.tools-category-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2937;
+}
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+.tool-index-card {
+    display: block;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid var(--cat-color, #059669);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.tool-index-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+.tool-index-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 6px;
+}
+.tool-index-card p {
+    font-size: 13px;
+    color: #6B7280;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .tool-wrapper {
+        grid-template-columns: 1fr;
+        padding: 16px 16px 0;
+    }
+    .tool-sidebar {
+        position: static;
+        order: -1;
+    }
+    .tool-main .tool-calculator { padding: 20px; }
+    .tool-main .tool-content { padding: 24px; }
+    .tool-main h1 { font-size: 24px; }
+    .tools-hero { padding: 40px 20px; }
+    .tools-hero h1 { font-size: 28px; }
+}
+
+    </style>
+    
+<style>
+.calculator {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+}
+.calculator h3 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.calculator label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.calculator button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.calculator button:hover {
+    background: #1557b0;
+}
+.calc-result {
+    margin-top: 16px;
+    padding: 12px;
+    background: white;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+.calc-result p {
+    margin: 8px 0;
+}
+.calc-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tab-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+.tab-btn.active {
+    background: #1a73e8;
+    color: white;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+</style>
+
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Income Tax Calculator — Brazil", "description": "Free Brazil income tax calculator. Estimate your tax liability based on Brazil tax brackets for the current year.", "url": "https://360library.com/tools/income-tax-calculator/brazil/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://360library.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Income Tax Calculator — Brazil"}]}</script>
+</head>
+<body>
+<input type="checkbox" id="mobile-menu-state" aria-hidden="true">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/" class="site-logo">360 <span>Library</span></a>
+        <label for="mobile-menu-state" class="menu-toggle" aria-label="Toggle menu"><span></span></label>
+        <ul class="domain-nav">
+        <li><a href="/#economics">Economics</a></li>
+        <li><a href="/#finance">Finance</a></li>
+        <li><a href="/#health">Health</a></li>
+        <li><a href="/#life_obligations">Life Obligations</a></li>
+        <li><a href="/#math">Math</a></li>
+        <li><a href="/#science">Science</a></li>
+        <li><a href="/tools/" class="active">Tools</a></li>
+        </ul>
+    </div>
+</header>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>&rsaquo;</span><a href="/tools/">Tools</a><span>&rsaquo;</span>Income Tax Calculator — Brazil
+</nav>
+
+<div class="tool-wrapper" style="--tool-color: #DC2626">
+    <main class="tool-main">
+        <h1>Income Tax Calculator — Brazil</h1>
+        <p class="tool-subtitle">Free online calculator &mdash; instant results, no signup required.</p>
+
+        <div class="tool-calculator">
+            
+<div class="calculator" id="tax-calc">
+    <h3>Income Tax Calculator</h3>
+    <div class="calc-grid">
+        <label>Annual Gross Income ($)
+            <input type="number" id="tax-income" value="75000" min="0">
+        </label>
+        <label>Filing Status
+            <select id="tax-status">
+                <option value="single">Single</option>
+                <option value="married">Married Filing Jointly</option>
+                <option value="head">Head of Household</option>
+            </select>
+        </label>
+        <label>Standard Deduction ($)
+            <input type="number" id="tax-deduction" value="14600" min="0">
+        </label>
+    </div>
+    <button onclick="calculateIncomeTax()">Calculate</button>
+    <div class="calc-result" id="tax-result"></div>
+</div>
+<script>
+function calculateIncomeTax() {
+    const income = parseFloat(document.getElementById('tax-income').value);
+    const deduction = parseFloat(document.getElementById('tax-deduction').value);
+    const status = document.getElementById('tax-status').value;
+
+    const taxableIncome = Math.max(0, income - deduction);
+
+    // US 2024 brackets (simplified)
+    const brackets = {
+        single: [[11600, 0.10], [47150, 0.12], [100525, 0.22], [191950, 0.24], [243725, 0.32], [609350, 0.35], [Infinity, 0.37]],
+        married: [[23200, 0.10], [94300, 0.12], [201050, 0.22], [383900, 0.24], [487450, 0.32], [731200, 0.35], [Infinity, 0.37]],
+        head: [[16550, 0.10], [63100, 0.12], [100500, 0.22], [191950, 0.24], [243700, 0.32], [609350, 0.35], [Infinity, 0.37]]
+    };
+
+    const rates = brackets[status];
+    let tax = 0;
+    let prev = 0;
+    let breakdownHtml = '';
+
+    for (const [limit, rate] of rates) {
+        if (taxableIncome <= prev) break;
+        const taxable = Math.min(taxableIncome, limit) - prev;
+        const bracketTax = taxable * rate;
+        tax += bracketTax;
+        if (taxable > 0) {
+            breakdownHtml += '<p style="font-size:13px">' + (rate * 100).toFixed(0) + '% bracket: $' + taxable.toFixed(2) + ' = $' + bracketTax.toFixed(2) + '</p>';
+        }
+        prev = limit;
+    }
+
+    const effectiveRate = (tax / income * 100).toFixed(2);
+    const marginalRate = rates.find(([limit]) => taxableIncome <= limit)?.[1] * 100 || 37;
+    const afterTax = income - tax;
+
+    document.getElementById('tax-result').innerHTML = `
+        <p><strong>Taxable Income:</strong> $${taxableIncome.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Estimated Federal Tax:</strong> $${tax.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Effective Tax Rate:</strong> ${effectiveRate}%</p>
+        <p><strong>Marginal Tax Rate:</strong> ${marginalRate}%</p>
+        <p><strong>After-Tax Income:</strong> $${afterTax.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <details style="margin-top:12px"><summary style="cursor:pointer;font-weight:600;color:#1a73e8">Tax Bracket Breakdown</summary>${breakdownHtml}</details>
+    `;
+}
+calculateIncomeTax();
+</script>
+
+        </div>
+
+        <div class="tool-content">
+            <h2 id="how-brazil-income-tax-works">How Brazil Income Tax Works</h2>
+<p>Brazil has a progressive income tax system, where higher income earners are taxed at a higher rate. The tax year in Brazil runs from January 1 to December 31. The current income tax rates in Brazil range from 0% to 27.5%, with three main tax brackets: 0% on income up to R$1,903.98, 7.5% on income between R$1,903.99 and R$2,667.72, and 27.5% on income above R$2,667.72, 22.5% on income between R$2,380.42 and R$2,667.72, 15% on income between R$1,903.99 and R$2,380.41, and 7.5% on income between R$1,613.32 and R$1,903.98.</p>
+<h2 id="how-to-use-this-calculator">How to Use This Calculator</h2>
+<p>To use this calculator, simply enter your annual income in Brazilian Real (R$). The calculator will then apply the relevant tax rates and brackets to calculate your income tax liability. For example, let's say you have an annual income of R$60,000. You would enter this amount into the calculator, and it would calculate your tax liability based on the current tax rates and brackets. In this case, your tax liability would be approximately R$8,500.</p>
+<h2 id="key-brazil-income-tax-rules">Key Brazil Income Tax Rules</h2>
+<p>Some important rules to keep in mind when it comes to income tax in Brazil include:</p>
+<ul>
+<li>The tax authority in Brazil is the Receita Federal.</li>
+<li>Tax filing is mandatory for all individuals with income above R$28,123.91.</li>
+<li>The deadline for filing income tax returns in Brazil is typically April 30th of each year.</li>
+<li>There are certain exemptions and deductions available, such as the exemption for income from foreign sources.</li>
+</ul>
+<h2 id="common-questions">Common Questions</h2>
+<h3 id="what-is-the-deadline-for-filing-income-tax-returns-in-brazil">What is the deadline for filing income tax returns in Brazil?</h3>
+<p>The deadline for filing income tax returns in Brazil is typically April 30th of each year.</p>
+<h3 id="do-i-need-to-file-a-tax-return-if-i-dont-have-any-income">Do I need to file a tax return if I don't have any income?</h3>
+<p>No, if you don't have any income, you are not required to file a tax return.</p>
+<h3 id="can-i-deduct-expenses-related-to-my-job-on-my-tax-return">Can I deduct expenses related to my job on my tax return?</h3>
+<p>Yes, certain expenses related to your job may be deductible on your tax return, such as transportation costs and professional fees.</p>
+<h3 id="how-do-i-pay-my-income-tax-in-brazil">How do I pay my income tax in Brazil?</h3>
+<p>You can pay your income tax in Brazil online through the Receita Federal website, or in person at a bank or other authorized payment location.</p>
+<h3 id="what-happens-if-i-miss-the-deadline-for-filing-my-tax-return">What happens if I miss the deadline for filing my tax return?</h3>
+<p>If you miss the deadline for filing your tax return, you may be subject to penalties and fines, so it's <strong>\1</strong>.</p>
+
+            <div class="related-tools"><h3>Related Calculators</h3><div class="related-tools-grid">
+        <a href="/tools/salary-after-tax-calculator/" class="related-tool-card"><span class="tool-card-title">Salary After Tax Calculator</span></a>
+        <a href="/tools/capital-gains-calculator/" class="related-tool-card"><span class="tool-card-title">Capital Gains Calculator</span></a>
+    </div></div>
+        </div>
+    </main>
+
+    <aside class="tool-sidebar">
+    <div class="tool-sidebar-card">
+        <h3>Related Calculators</h3>
+        <a href="/tools/salary-after-tax-calculator/" class="tool-link">Salary After Tax</a>
+        <a href="/tools/capital-gains-calculator/" class="tool-link">Capital Gains</a>
+    </div>
+    <div class="tool-sidebar-card">
+        <a href="/tools/" class="tool-link" style="font-weight:600">&larr; All Calculators</a>
+    </div>
+</aside>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="/" class="site-logo">360 <span>Library</span></a>
+            <p>Free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Domains</h4>
+            <a href="/#economics">Economics</a>
+            <a href="/#finance">Finance</a>
+            <a href="/#health">Health</a>
+            <a href="/#life_obligations">Life Obligations</a>
+            <a href="/#math">Math</a>
+            <a href="/#science">Science</a>
+        </div>
+        <div class="footer-col">
+            <h4>Info</h4>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Use</a>
+            <a href="/sitemap.xml">Sitemap</a>
+            <a href="mailto:mrgovernment02@gmail.com">Contact</a>
+        </div>
+    </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
+    <div class="footer-bottom">
+        &copy; 2026 360Library.com &mdash; All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

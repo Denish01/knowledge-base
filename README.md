@@ -45,7 +45,7 @@ python pipeline.py --designs 10
 |-------------|--------|--------------|---------------|
 | **Programmatic Knowledge Pages** | Text/HTML | Google SEO | Ads, Affiliates |
 | **Printable Utilities** | PDF | Marketplaces | $5-20/pack |
-| **Micro-Calculators** | Web tools | SEO | Ads, Lead capture |
+| **Standalone Calculator Tools** | Web tools | SEO | Ads ($10-50 CPM) |
 
 ### Tier 2: High Automation
 
@@ -126,15 +126,38 @@ Visual learning assets for classrooms.
 
 **Format:** 16:9 aspect ratio, 2K/4K resolution
 
-### 4. Micro-Calculators (Future)
+### 4. Standalone Calculator Tool Pages (NEW - High CPM)
 
-Logic-based tools that run forever.
+Full-page calculator tools at `/tools/` targeting transactional intent keywords ($10-50 CPM).
 
-**Examples:**
-- Compound interest calculator
-- GPA calculator
-- Loan payoff calculator
-- Unit converters
+**Structure:** Calculator widget above the fold + AI-generated expert content below (how to use, formula, examples, FAQ).
+
+**Categories:**
+- Finance: Compound interest, mortgage, loan repayment, retirement, investment return, credit card payoff, emergency fund, net worth, DCA, APR/APY, inflation
+- Tax: Income tax, salary after tax, capital gains, VAT, self-employment (with country variants for 12 countries)
+- Math: Percentage, statistics, standard deviation, Pythagorean, circle area, volume, probability
+- Business: Profit margin, break-even, ROI, markup
+- Health: BMI, calorie
+- Conversion: Unit, currency, temperature
+
+**Total:** ~29 standalone + ~60 country variants = ~90 pages
+
+```bash
+# Generate all tool pages
+python generate_tool_pages.py --generate-all
+
+# Generate country variants (income tax, salary, etc. for 12 countries)
+python generate_tool_pages.py --generate-country-variants
+
+# Build tools landing page
+python generate_tool_pages.py --build-index
+
+# Rebuild HTML without API calls (from cached content)
+python generate_tool_pages.py --rebuild-html
+
+# Generate a single tool
+python generate_tool_pages.py --generate-single compound-interest-calculator
+```
 
 ### 5. Structured JSON Data (Future - Licensing)
 
@@ -316,7 +339,9 @@ Rules:
 |-----------|--------|-------|
 | Knowledge page generator | ✅ Complete | 1,415 pages generated |
 | Domain closure system | ✅ Complete | 4 domains closed |
-| Sitemap generator | ✅ Complete | Auto-generates sitemap.xml |
+| Calculator tool pages | ✅ Complete | 29 standalone + 60 country variants |
+| Tool page generator | ✅ Complete | `generate_tool_pages.py` |
+| Sitemap generator | ✅ Complete | Auto-generates sitemap.xml (incl. tools) |
 | Self-expansion engine | 🔄 Documented | See `SELF_EXPANSION.md` |
 | Infographic generator | ✅ Ready | Gemini + Stable Horde |
 | Printable PDF generator | ❌ Pending | Future |
@@ -356,13 +381,16 @@ See `DOMAIN_MANIFEST.json` for full roadmap.
 asset-generator/
 ├── config.py                 # API keys, settings
 ├── knowledge_pages.py        # Main page generator (closure system)
-├── calculators.py            # Embedded calculator library
+├── calculators.py            # Calculator library (27 calculators)
+├── templates.py              # Shared HTML/CSS templates (articles + tools)
 ├── generate_sitemap.py       # Sitemap and index generator
+├── generate_tool_pages.py    # Tool page generation pipeline (NEW)
+├── tool_registry.json        # Calculator tool definitions (NEW)
 ├── DOMAIN_MANIFEST.json      # Master domain tracker and roadmap
 ├── SELF_EXPANSION.md         # Self-expanding system architecture
 ├── angle_registry.json       # Frozen 8-angle registry
 ├── canonical_concepts_*.json # Domain boundary definitions
-├── sitemap.xml               # Generated sitemap (1,415 pages)
+├── sitemap.xml               # Generated sitemap
 ├── generated_pages/
 │   ├── index.html            # Homepage with navigation
 │   ├── robots.txt            # Crawler instructions
@@ -370,7 +398,12 @@ asset-generator/
 │   ├── life_obligations_structured/  # 105 concepts, 840 pages (CLOSED)
 │   ├── science_structured/   # 25 concepts, 200 pages (CLOSED)
 │   ├── math_structured/      # 25 concepts, 200 pages (CLOSED)
-│   └── {domain}_deprecated/  # Quarantined non-canonical pages
+│   ├── {domain}_deprecated/  # Quarantined non-canonical pages
+│   ├── tools/                # Standalone calculator tool pages (NEW)
+│   │   ├── index.html        # Tools landing page
+│   │   ├── {slug}/index.html # Individual tool pages
+│   │   └── {slug}/{country}/index.html  # Country variants
+│   └── tools_content/        # Cached AI content JSON (for rebuild)
 ├── pipeline.py               # Image orchestrator
 ├── design_generator.py       # AI image generation
 ├── educational_content.py    # Infographic topics
@@ -456,6 +489,16 @@ python pipeline.py --designs 10
 python pipeline.py --designs 10 --skip-upload
 python pipeline.py --educational-only
 
+# Tool pages
+python generate_tool_pages.py --generate-all              # All standalone tools
+python generate_tool_pages.py --generate-country-variants  # Country-specific tax tools
+python generate_tool_pages.py --build-index                # Tools landing page
+python generate_tool_pages.py --rebuild-html               # Rebuild from cache (no API)
+python generate_tool_pages.py --generate-single <slug>     # Single tool
+
+# Sitemap & index
+python generate_sitemap.py
+
 # Reports
 python pipeline.py --report
 
@@ -498,6 +541,6 @@ REDBUBBLE_PASSWORD = ""
 
 ---
 
-*Last updated: 2026-02-06*
+*Last updated: 2026-02-17*
 
 *This is infrastructure, not a hack. Build once, wait for cash.*

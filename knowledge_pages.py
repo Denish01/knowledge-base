@@ -17,6 +17,7 @@ import os
 import re
 import random
 import subprocess
+import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -2586,6 +2587,32 @@ def markdown_to_html(content):
     return '\n'.join(html_lines)
 
 
+# Calculator key -> tool page slug mapping (for cross-links)
+_CALC_KEY_TO_TOOL_SLUG = {
+    "compound_interest": "compound-interest-calculator",
+    "mortgage": "mortgage-calculator",
+    "retirement": "retirement-calculator",
+    "dca": "dollar-cost-averaging-calculator",
+    "net_worth": "net-worth-calculator",
+    "percentage": "percentage-calculator",
+    "statistics": "statistics-calculator",
+    "std_dev": "standard-deviation-calculator",
+    "pythagorean": "pythagorean-theorem-calculator",
+    "circle_area": "circle-area-calculator",
+    "inflation": "inflation-calculator",
+    "probability": "probability-calculator",
+    "unit_converter": "unit-converter",
+}
+
+
+def _get_tool_page_link(topic):
+    """Return the tool page URL for a topic's calculator, or None."""
+    calc_key = get_calculator_for_topic(topic)
+    if calc_key and calc_key in _CALC_KEY_TO_TOOL_SLUG:
+        return f"/tools/{_CALC_KEY_TO_TOOL_SLUG[calc_key]}/"
+    return None
+
+
 def format_as_html(topic, content, page_title=None, domain_slug=None,
                    concept_slug=None, angle_id=None, all_angles=None,
                    canonical_path=None, all_concepts=None):
@@ -2614,8 +2641,13 @@ def format_as_html(topic, content, page_title=None, domain_slug=None,
     calculator_html = get_calculator_html(topic) or ""
     if calculator_html:
         log(f"  Adding calculator for: {topic}", "SUCCESS")
+        # Check if there's a full tool page for this calculator
+        tool_link = _get_tool_page_link(topic)
+        tool_link_html = ""
+        if tool_link:
+            tool_link_html = f'<div style="margin-top:12px;padding-top:12px;border-top:1px solid #E5E7EB"><a href="{tool_link}" style="font-weight:600;font-size:14px;color:#059669">Use our full calculator &rarr;</a></div>'
         # Wrap calculator in callout box if present
-        calculator_html = f'<div class="calculator-callout"><div class="calculator-callout-header">Calculator</div><div class="calculator-callout-body">{calculator_html}</div></div>'
+        calculator_html = f'<div class="calculator-callout"><div class="calculator-callout-header">Calculator</div><div class="calculator-callout-body">{calculator_html}{tool_link_html}</div></div>'
 
     # Generate meta description based on page type
     base_topic = extract_base_topic(topic)
@@ -3458,9 +3490,11 @@ if __name__ == "__main__":
         print(f"\nRebuilt {count} HTML pages with new template features.")
 
     elif args.regenerate:
+        # For regeneration, only limit count if explicitly passed (not the default 5)
+        regen_count = args.count if '--count' in sys.argv else None
         results = regenerate_all_content(
             domain=args.domain,
-            count=args.count,
+            count=regen_count,
             provider=args.provider,
         )
         print(f"\nRegenerated {len(results)} pages with improved prompts.")

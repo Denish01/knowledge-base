@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Kenya self-employment tax calculator. Estimate your self-employment tax liability including social contributions.">
+    <link rel="canonical" href="https://360library.com/tools/self-employment-tax-calculator/kenya/">
+    <meta property="og:title" content="Self-Employment Tax Calculator — Kenya">
+    <meta property="og:description" content="Free Kenya self-employment tax calculator. Estimate your self-employment tax liability including social contributions.">
+    <meta property="og:url" content="https://360library.com/tools/self-employment-tax-calculator/kenya/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="360Library">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Self-Employment Tax Calculator — Kenya">
+    <meta name="twitter:description" content="Free Kenya self-employment tax calculator. Estimate your self-employment tax liability including social contributions.">
+    <title>Self-Employment Tax Calculator — Kenya - 360Library</title>
+    <style>
+
+/* === Reset & Base === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #1F2937;
+    background: #FAFBFC;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: #1B4D8E; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* === Header === */
+.site-header {
+    background: #1B4D8E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 60px;
+}
+.site-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+.site-logo:hover { text-decoration: none; opacity: 0.9; }
+.site-logo span { color: #D97706; }
+
+/* Domain nav */
+.domain-nav { display: flex; gap: 4px; list-style: none; }
+.domain-nav a {
+    color: rgba(255,255,255,0.85);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.domain-nav a:hover { background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; }
+.domain-nav a.active { background: rgba(255,255,255,0.2); color: #fff; }
+
+/* Mobile hamburger (pure CSS) */
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.menu-toggle span, .menu-toggle span::before, .menu-toggle span::after {
+    display: block; width: 22px; height: 2px; background: #fff; position: relative; transition: 0.3s;
+}
+.menu-toggle span::before, .menu-toggle span::after { content: ''; position: absolute; left: 0; }
+.menu-toggle span::before { top: -7px; }
+.menu-toggle span::after { top: 7px; }
+#mobile-menu-state { display: none; }
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .domain-nav {
+        display: none; flex-direction: column; position: absolute;
+        top: 60px; left: 0; right: 0; background: #1B4D8E;
+        padding: 12px; gap: 2px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .domain-nav a { padding: 12px 16px; border-radius: 8px; }
+    #mobile-menu-state:checked ~ .header-inner .domain-nav { display: flex; }
+}
+
+/* === Footer === */
+.site-footer {
+    background: #111827;
+    color: #9CA3AF;
+    margin-top: 80px;
+    padding: 48px 24px 32px;
+}
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+.footer-brand .site-logo { font-size: 18px; display: inline-block; margin-bottom: 12px; }
+.footer-brand p { font-size: 14px; line-height: 1.6; max-width: 320px; }
+.footer-col h4 { color: #fff; font-size: 14px; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+.footer-col a { display: block; color: #9CA3AF; font-size: 14px; padding: 4px 0; transition: color 0.2s; text-decoration: none; }
+.footer-col a:hover { color: #fff; text-decoration: none; }
+.footer-bottom {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid #374151;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* === Breadcrumbs === */
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #6B7280;
+}
+.breadcrumbs a { color: #1B4D8E; }
+.breadcrumbs span { margin: 0 8px; color: #D1D5DB; }
+
+
+/* === Tool Page Layout === */
+.tool-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+}
+.tool-main { min-width: 0; }
+.tool-main .tool-calculator {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border: 1px solid #E5E7EB;
+    border-top: 4px solid var(--tool-color, #059669);
+    margin-bottom: 24px;
+}
+.tool-main .tool-calculator .calculator {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.tool-main .tool-calculator .calculator h3 {
+    display: none;
+}
+.tool-main .tool-calculator .calculator button {
+    background: var(--tool-color, #059669);
+}
+.tool-main .tool-calculator .calculator button:hover {
+    filter: brightness(0.9);
+}
+.tool-main .tool-calculator .calc-result {
+    border-left-color: var(--tool-color, #059669);
+}
+.tool-main .tool-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+}
+.tool-main h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+.tool-main .tool-subtitle {
+    font-size: 16px;
+    color: #6B7280;
+    margin-bottom: 24px;
+}
+.tool-main .tool-content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--tool-color, #059669);
+    margin-top: 32px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid color-mix(in srgb, var(--tool-color, #059669) 20%, white);
+}
+.tool-main .tool-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--tool-color, #059669);
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+.tool-main .tool-content p {
+    margin-bottom: 14px;
+    color: #374151;
+    line-height: 1.7;
+}
+.tool-main .tool-content ul {
+    padding-left: 24px;
+    margin-bottom: 14px;
+}
+.tool-main .tool-content li {
+    margin-bottom: 6px;
+    color: #374151;
+}
+.tool-main .tool-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 14px;
+}
+.tool-main .tool-content th, .tool-main .tool-content td {
+    border: 1px solid #E5E7EB;
+    padding: 10px 14px;
+    text-align: left;
+}
+.tool-main .tool-content th {
+    background: var(--tool-color, #059669);
+    color: #fff;
+    font-weight: 600;
+}
+.tool-main .tool-content tr:nth-child(even) { background: #F9FAFB; }
+
+/* === Tool Sidebar === */
+.tool-sidebar {
+    position: sticky;
+    top: 76px;
+}
+.tool-sidebar-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+    margin-bottom: 20px;
+}
+.tool-sidebar-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #E8F0FE;
+}
+.tool-sidebar-card .tool-link {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4B5563;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+.tool-sidebar-card .tool-link:hover {
+    background: #F3F4F6;
+    color: var(--tool-color, #059669);
+    text-decoration: none;
+}
+.tool-sidebar-card .knowledge-link {
+    display: block;
+    font-size: 14px;
+    color: #1B4D8E;
+    padding: 4px 0;
+    text-decoration: none;
+}
+.tool-sidebar-card .knowledge-link:hover {
+    text-decoration: underline;
+}
+
+/* === Related Tools Grid === */
+.related-tools {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid #E8F0FE;
+}
+.related-tools h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+}
+.related-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+}
+.related-tool-card {
+    display: block;
+    padding: 16px;
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.related-tool-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+.related-tool-card .tool-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+/* === Tool Index Grid === */
+.tools-hero {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    color: #fff;
+    padding: 56px 24px;
+    text-align: center;
+}
+.tools-hero h1 { font-size: 36px; font-weight: 700; margin-bottom: 12px; }
+.tools-hero p { font-size: 17px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+.tools-section {
+    max-width: 1200px;
+    margin: 48px auto;
+    padding: 0 24px;
+}
+.tools-category { margin-bottom: 40px; }
+.tools-category-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E5E7EB;
+}
+.tools-category-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2937;
+}
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+.tool-index-card {
+    display: block;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid var(--cat-color, #059669);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.tool-index-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+.tool-index-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 6px;
+}
+.tool-index-card p {
+    font-size: 13px;
+    color: #6B7280;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .tool-wrapper {
+        grid-template-columns: 1fr;
+        padding: 16px 16px 0;
+    }
+    .tool-sidebar {
+        position: static;
+        order: -1;
+    }
+    .tool-main .tool-calculator { padding: 20px; }
+    .tool-main .tool-content { padding: 24px; }
+    .tool-main h1 { font-size: 24px; }
+    .tools-hero { padding: 40px 20px; }
+    .tools-hero h1 { font-size: 28px; }
+}
+
+    </style>
+    
+<style>
+.calculator {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+}
+.calculator h3 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.calculator label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.calculator button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.calculator button:hover {
+    background: #1557b0;
+}
+.calc-result {
+    margin-top: 16px;
+    padding: 12px;
+    background: white;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+.calc-result p {
+    margin: 8px 0;
+}
+.calc-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tab-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+.tab-btn.active {
+    background: #1a73e8;
+    color: white;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+</style>
+
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Self-Employment Tax Calculator — Kenya", "description": "Free Kenya self-employment tax calculator. Estimate your self-employment tax liability including social contributions.", "url": "https://360library.com/tools/self-employment-tax-calculator/kenya/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@type": "Organization", "name": "360Library", "url": "https://360library.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://360library.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://360library.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Self-Employment Tax Calculator — Kenya"}]}</script>
+</head>
+<body>
+<input type="checkbox" id="mobile-menu-state" aria-hidden="true">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="/" class="site-logo">360 <span>Library</span></a>
+        <label for="mobile-menu-state" class="menu-toggle" aria-label="Toggle menu"><span></span></label>
+        <ul class="domain-nav">
+        <li><a href="/#economics">Economics</a></li>
+        <li><a href="/#finance">Finance</a></li>
+        <li><a href="/#health">Health</a></li>
+        <li><a href="/#life_obligations">Life Obligations</a></li>
+        <li><a href="/#math">Math</a></li>
+        <li><a href="/#science">Science</a></li>
+        <li><a href="/tools/" class="active">Tools</a></li>
+        </ul>
+    </div>
+</header>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>&rsaquo;</span><a href="/tools/">Tools</a><span>&rsaquo;</span>Self-Employment Tax Calculator — Kenya
+</nav>
+
+<div class="tool-wrapper" style="--tool-color: #DC2626">
+    <main class="tool-main">
+        <h1>Self-Employment Tax Calculator — Kenya</h1>
+        <p class="tool-subtitle">Free online calculator &mdash; instant results, no signup required.</p>
+
+        <div class="tool-calculator">
+            
+<div class="calculator" id="se-calc">
+    <h3>Self-Employment Tax Calculator</h3>
+    <div class="calc-grid">
+        <label>Net Self-Employment Income ($)
+            <input type="number" id="se-income" value="80000" min="0">
+        </label>
+        <label>Social Security Rate (%)
+            <input type="number" id="se-ss" value="12.4" min="0" max="20" step="0.1">
+        </label>
+        <label>Medicare Rate (%)
+            <input type="number" id="se-med" value="2.9" min="0" max="10" step="0.1">
+        </label>
+        <label>SS Wage Base ($)
+            <input type="number" id="se-base" value="168600" min="0">
+        </label>
+    </div>
+    <button onclick="calculateSETax()">Calculate</button>
+    <div class="calc-result" id="se-result"></div>
+</div>
+<script>
+function calculateSETax() {
+    const income = parseFloat(document.getElementById('se-income').value);
+    const ssRate = parseFloat(document.getElementById('se-ss').value) / 100;
+    const medRate = parseFloat(document.getElementById('se-med').value) / 100;
+    const ssBase = parseFloat(document.getElementById('se-base').value);
+
+    const taxableBase = income * 0.9235;
+    const ssTax = Math.min(taxableBase, ssBase) * ssRate;
+    const medTax = taxableBase * medRate;
+    const additionalMed = taxableBase > 200000 ? (taxableBase - 200000) * 0.009 : 0;
+    const totalSE = ssTax + medTax + additionalMed;
+    const deduction = totalSE / 2;
+
+    document.getElementById('se-result').innerHTML = `
+        <p><strong>Taxable SE Base (92.35%):</strong> $${taxableBase.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Social Security Tax:</strong> $${ssTax.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Medicare Tax:</strong> $${medTax.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        ${additionalMed > 0 ? '<p><strong>Additional Medicare:</strong> $' + additionalMed.toFixed(2) + '</p>' : ''}
+        <p><strong>Total SE Tax:</strong> $${totalSE.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Deductible Portion (50%):</strong> $${deduction.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+    `;
+}
+calculateSETax();
+</script>
+
+        </div>
+
+        <div class="tool-content">
+            <h2 id="how-kenya-self-employment-tax-works">How Kenya Self Employment Tax Works</h2>
+<p>Kenya's self-employment tax system is designed for individuals who earn income from their own businesses or freelance work. The tax rates and brackets are as follows:</p>
+<ul>
+<li>10% on the first KES 235,001 - 332,000</li>
+<li>15% on KES 332,001 - 388,000</li>
+<li>20% on KES 388,001 - 564,000</li>
+<li>25% on KES 564,001 and above.</li>
+</ul>
+<p>These rates apply to the tax year 2023.</p>
+<h2 id="how-to-use-this-calculator">How to Use This Calculator</h2>
+<p>To use the self-employment tax calculator, you need to input your net earnings from self-employment. This includes income from your business or freelance work, minus any business expenses.</p>
+<p>For example, let's say you're a freelance writer with a net income of KES 800,000. You would enter this amount into the calculator to determine your self-employment tax liability.</p>
+<p>The calculator will then apply the tax rates and brackets to your net earnings, taking into account any deductions or exemptions you may be eligible for.</p>
+<h2 id="key-kenya-self-employment-tax-rules">Key Kenya Self Employment Tax Rules</h2>
+<p>Some key rules to keep in mind when it comes to self-employment tax in Kenya include:</p>
+<ul>
+<li>The tax year in Kenya runs from January 1 to December 31.</li>
+<li>You are required to file your tax return by June 30 of the following year.</li>
+<li>You may be eligible for deductions on business expenses, such as equipment, rent, and travel costs.</li>
+<li>If your net earnings from self-employment are below KES 235,000, you are exempt from paying self-employment tax.</li>
+</ul>
+<h3 id="filing-deadlines-and-exemptions">Filing Deadlines and Exemptions</h3>
+<p>It's essential to be aware of the filing deadlines and exemptions that apply to your specific situation. For instance, if you're a resident of Kenya, you're required to file a tax return annually, regardless of your income level. However, if you're a non-resident, you may only be required to file a tax return if you have income sourced in Kenya.</p>
+<h2 id="common-questions">Common Questions</h2>
+<h3 id="what-is-the-tax-year-in-kenya">What is the tax year in Kenya?</h3>
+<p>The tax year in Kenya runs from January 1 to December 31.</p>
+<h3 id="how-do-i-calculate-my-net-earnings-from-self-employment">How do I calculate my net earnings from self-employment?</h3>
+<p>To calculate your net earnings, subtract your business expenses from your total income.</p>
+<h3 id="what-deductions-can-i-claim-as-a-self-employed-individual-in-kenya">What deductions can I claim as a self-employed individual in Kenya?</h3>
+<p>You can claim deductions on business expenses, such as equipment, rent, and travel costs.</p>
+<h3 id="do-i-need-to-file-a-tax-return-if-im-a-non-resident-of-kenya">Do I need to file a tax return if I'm a non-resident of Kenya?</h3>
+<p>You may only be required to file a tax return if you have income sourced in Kenya.</p>
+<h3 id="can-i-file-my-tax-return-electronically">Can I file my tax return electronically?</h3>
+<p>Yes, you can file your tax return electronically through the Kenya Revenue Authority (KRA) website.</p>
+
+            <div class="related-tools"><h3>Related Calculators</h3><div class="related-tools-grid">
+        <a href="/tools/income-tax-calculator/" class="related-tool-card"><span class="tool-card-title">Income Tax Calculator</span></a>
+        <a href="/tools/salary-after-tax-calculator/" class="related-tool-card"><span class="tool-card-title">Salary After Tax Calculator</span></a>
+    </div></div>
+        </div>
+    </main>
+
+    <aside class="tool-sidebar">
+    <div class="tool-sidebar-card">
+        <h3>Related Calculators</h3>
+        <a href="/tools/income-tax-calculator/" class="tool-link">Income Tax</a>
+        <a href="/tools/salary-after-tax-calculator/" class="tool-link">Salary After Tax</a>
+    </div>
+    <div class="tool-sidebar-card">
+        <a href="/tools/" class="tool-link" style="font-weight:600">&larr; All Calculators</a>
+    </div>
+</aside>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="/" class="site-logo">360 <span>Library</span></a>
+            <p>Free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Domains</h4>
+            <a href="/#economics">Economics</a>
+            <a href="/#finance">Finance</a>
+            <a href="/#health">Health</a>
+            <a href="/#life_obligations">Life Obligations</a>
+            <a href="/#math">Math</a>
+            <a href="/#science">Science</a>
+        </div>
+        <div class="footer-col">
+            <h4>Info</h4>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Use</a>
+            <a href="/sitemap.xml">Sitemap</a>
+            <a href="mailto:mrgovernment02@gmail.com">Contact</a>
+        </div>
+    </div>
+        <div style="max-width:1200px;margin:24px auto 0;padding:0 24px;font-size:12px;color:#6B7280;line-height:1.5;">
+            Editorial note: 360Library content is written by subject-matter contributors and reviewed for accuracy. We strive for factual, balanced coverage. If you spot an error, <a href="mailto:mrgovernment02@gmail.com" style="color:#9CA3AF;">let us know</a>.
+        </div>
+    <div class="footer-bottom">
+        &copy; 2026 360Library.com &mdash; All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

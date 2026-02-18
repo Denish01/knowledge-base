@@ -58,6 +58,50 @@ def _parse_flat_filename(stem):
     return stem, "what-is"
 
 
+def get_tool_pages():
+    """Crawl tools/ directory and collect tool page URLs."""
+    pages = []
+    tools_dir = OUTPUT_DIR / "tools"
+    if not tools_dir.exists():
+        return pages
+
+    for item in sorted(tools_dir.iterdir()):
+        if item.is_file() and item.name == "index.html":
+            # Tools index page
+            mtime = datetime.fromtimestamp(item.stat().st_mtime)
+            pages.append({
+                "url": "/tools/",
+                "lastmod": mtime.strftime("%Y-%m-%d"),
+                "priority": "0.95",
+                "changefreq": "monthly",
+            })
+        elif item.is_dir():
+            # Tool directory (e.g., compound-interest-calculator/)
+            tool_index = item / "index.html"
+            if tool_index.exists():
+                mtime = datetime.fromtimestamp(tool_index.stat().st_mtime)
+                pages.append({
+                    "url": f"/tools/{item.name}/",
+                    "lastmod": mtime.strftime("%Y-%m-%d"),
+                    "priority": "0.9",
+                    "changefreq": "monthly",
+                })
+            # Country subdirectories (e.g., income-tax-calculator/united-states/)
+            for sub in sorted(item.iterdir()):
+                if sub.is_dir():
+                    sub_index = sub / "index.html"
+                    if sub_index.exists():
+                        mtime = datetime.fromtimestamp(sub_index.stat().st_mtime)
+                        pages.append({
+                            "url": f"/tools/{item.name}/{sub.name}/",
+                            "lastmod": mtime.strftime("%Y-%m-%d"),
+                            "priority": "0.8",
+                            "changefreq": "monthly",
+                        })
+
+    return pages
+
+
 def get_all_pages():
     """Crawl all domain folders and collect page URLs.
 
@@ -67,7 +111,7 @@ def get_all_pages():
     """
     pages = []
 
-    skip_names = {"index.html", "robots.txt", "CNAME"}
+    skip_names = {"index.html", "robots.txt", "CNAME", "tools", "tools_content"}
     for domain_dir in sorted(OUTPUT_DIR.iterdir()):
         if not domain_dir.is_dir():
             continue
@@ -118,6 +162,9 @@ def get_all_pages():
                     "_concept": concept,
                     "_angle": angle,
                 })
+
+    # Add tool pages
+    pages.extend(get_tool_pages())
 
     return pages
 
