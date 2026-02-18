@@ -32,7 +32,7 @@
       "tier": 2,
       "concepts_estimated": 25,
       "discovered_date": "2026-02-06",
-      "status": "pending",
+      "status": "processing",
       "notes": "Life-adjacent, evergreen content"
     },
     {
@@ -136,7 +136,7 @@
       "notes": "Study of birds and their behavior"
     }
   ],
-  "processing": null,
+  "processing": "psychology",
   "completed": [
     "finance",
     "life_obligations",

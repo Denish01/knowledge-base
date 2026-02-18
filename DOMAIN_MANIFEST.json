@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "description": "Master manifest for Universal Knowledge Index - tracks all domains, status, and roadmap",
-  "last_updated": "2026-02-17",
+  "last_updated": "2026-02-18",
   "domains": {
     "finance": {
       "status": "CLOSED",
@@ -84,11 +84,11 @@
       "closure_date": "2026-02-17"
     },
     "psychology": {
-      "status": "QUEUED",
+      "status": "IN_PROGRESS",
       "priority": 75,
-      "concepts": 25,
+      "concepts": 0,
       "pages": 0,
-      "canonical_file": null,
+      "canonical_file": "canonical_concepts_psychology.json",
       "notes": "Life-adjacent - Tier 2"
     },
     "technology": {
@@ -103,7 +103,7 @@
   "totals": {
     "domains_closed": 6,
     "domains_queued": 2,
-    "total_concepts": 306,
+    "total_concepts": 281,
     "total_pages": 1943
   },
   "angle_registry": {
