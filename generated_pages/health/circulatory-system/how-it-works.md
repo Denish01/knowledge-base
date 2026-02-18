@@ -1,36 +1,35 @@
 ---
 title: "How Circulatory System Works"
-slug: how-does-circulatory-system-work
-description: "A clear, simple explanation of how does circulatory system work - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-09
+slug: how-circulatory-system-works
+description: "A clear, simple explanation of How Circulatory System Works - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # How Circulatory System Works
 
-1. QUICK ANSWER: The circulatory system works by transporting blood throughout the body, supplying oxygen and nutrients to cells and organs, and removing waste products. This process is made possible by the coordinated effort of the heart, blood vessels, and blood itself.
+The **circulatory system** is a complex mechanism that transports oxygen and nutrients to cells and removes waste products, driven by the pumping of the **heart**, which generates a pressure of approximately 120 mmHg, and the **blood vessels**, which have a total length of around 60,000 miles. This process involves the coordination of multiple components, including the **heart**, **blood vessels**, and **blood**, to maintain a flow rate of about 5 liters per minute.
 
-2. STEP-BY-STEP PROCESS: 
-First, the heart pumps blood into the arteries, which are thick-walled vessels that carry blood away from the heart. Then, the blood travels through the arteries, which branch into smaller arterioles, and finally into capillaries, where oxygen and nutrients are exchanged for waste products. Next, the blood, now rich in waste products, enters the venules, which merge to form larger veins that return the blood to the heart. The heart then pumps the blood to the lungs, where carbon dioxide is removed and oxygen is added. Finally, the newly oxygenated blood is pumped back into the arteries, restarting the cycle.
+## The Mechanism
+The core cause-and-effect chain of the circulatory system involves the heart pumping blood through the blood vessels, which then deliver oxygen and nutrients to cells and remove waste products. The process begins with the heart pumping blood into the **aorta**, the largest artery, at a rate of around 2,000 gallons per day (American Heart Association).
 
-As the blood flows through the capillaries, the walls of these tiny vessels allow for the exchange of oxygen, nutrients, and waste products. This exchange is crucial for the proper functioning of cells and organs throughout the body. The blood then continues its journey, returning to the heart and repeating the cycle.
+## Step-by-Step
+1. The heart pumps blood into the aorta, generating a pressure of approximately 120 mmHg, which then branches into smaller arteries, such as the **coronary arteries**, that supply blood to the heart itself, with a flow rate of around 250 milliliters per minute.
+2. The blood then flows through **capillaries**, tiny blood vessels with a diameter of around 5-10 micrometers, where oxygen and nutrients are exchanged for waste products, with a surface area of around 1,000 square meters (Alberts et al.).
+3. The deoxygenated blood then flows into **veins**, such as the **superior vena cava**, which have a diameter of around 1-2 centimeters, and returns to the heart, with a flow rate of around 1.5 liters per minute.
+4. The heart then pumps the deoxygenated blood into the **pulmonary arteries**, which have a diameter of around 2-3 centimeters, and into the lungs, where it picks up oxygen and releases carbon dioxide, with a gas exchange rate of around 250 milliliters per minute (West).
+5. The oxygenated blood then flows back into the heart and is pumped into the aorta, completing the cycle, with a cardiac output of around 5 liters per minute (Guyton).
+6. The circulatory system also regulates blood pressure, with the **baroreceptors** in the walls of the aorta and carotid arteries detecting changes in pressure and sending signals to the brain, which then adjusts the heart rate and blood vessel diameter to maintain a pressure of around 90-120 mmHg (Berne).
 
-The circulatory system also plays a critical role in regulating body temperature, as the blood helps to distribute heat throughout the body. This process is essential for maintaining proper bodily functions, as cells and organs are sensitive to temperature fluctuations.
+## Key Components
+- **Heart**: pumps blood through the blood vessels, generating a pressure of approximately 120 mmHg, and if removed, the circulatory system would fail to function.
+- **Blood vessels**: transport blood throughout the body, with a total length of around 60,000 miles, and if blocked or damaged, would reduce blood flow to cells and organs.
+- **Blood**: carries oxygen and nutrients to cells and removes waste products, with a pH of around 7.4, and if its composition is altered, would affect the functioning of the circulatory system.
 
-3. KEY COMPONENTS: 
-The circulatory system consists of the heart, arteries, veins, capillaries, and blood. The heart is a muscular pump that propels blood throughout the body. Arteries are the vessels that carry blood away from the heart, while veins return blood to the heart. Capillaries are tiny vessels where the exchange of oxygen, nutrients, and waste products occurs. Blood is the fluid that transports these substances throughout the body, and it is composed of plasma, red blood cells, white blood cells, and platelets. Each component plays a vital role in the functioning of the circulatory system.
-
-The heart, with its chambers and valves, ensures that blood flows in one direction, preventing backflow and maintaining efficient circulation. The arteries, veins, and capillaries work together to form a network of vessels that reach every part of the body, supplying cells and organs with the necessary oxygen and nutrients.
-
-4. VISUAL ANALOGY: 
-The circulatory system can be thought of as a delivery system, similar to a network of roads and highways. Just as cars travel on roads to deliver goods to different locations, blood travels through blood vessels to deliver oxygen and nutrients to cells and organs. The heart is like a central hub, pumping blood into the "roads" (arteries), which then branch into smaller "streets" (capillaries) where the delivery of goods (oxygen and nutrients) takes place.
-
-5. COMMON QUESTIONS: 
-But what about the role of the lungs in the circulatory system? The lungs are responsible for exchanging oxygen and carbon dioxide through the process of respiration, which is essential for the circulatory system to function properly. 
-But how does the circulatory system regulate blood pressure? The circulatory system regulates blood pressure through a complex system of sensors and regulators that adjust the diameter of blood vessels and the force of the heart's contractions. 
-But what happens if the circulatory system is not functioning properly? If the circulatory system is not functioning properly, it can lead to a range of health problems, including heart disease, stroke, and kidney disease. 
-But how does the circulatory system adapt to changes in the body's needs? The circulatory system adapts to changes in the body's needs by adjusting the diameter of blood vessels and the force of the heart's contractions to ensure that cells and organs receive the necessary oxygen and nutrients.
-
-6. SUMMARY: The circulatory system works by transporting blood throughout the body, supplying oxygen and nutrients to cells and organs, and removing waste products through a coordinated effort of the heart, blood vessels, and blood.
+## Common Questions
+What happens if the heart fails? The circulatory system would fail to function, and blood would not be pumped to the body's cells and organs, leading to tissue damage and death. 
+What is the function of the blood vessels? The blood vessels transport blood throughout the body, regulating blood pressure and flow rate, and if damaged, would reduce blood flow to cells and organs. 
+How does the circulatory system regulate blood pressure? The circulatory system regulates blood pressure through the **baroreceptors** in the walls of the aorta and carotid arteries, which detect changes in pressure and send signals to the brain, which then adjusts the heart rate and blood vessel diameter to maintain a pressure of around 90-120 mmHg. 
+What happens if the blood vessels are blocked? If the blood vessels are blocked, blood flow to cells and organs would be reduced, leading to tissue damage and potentially life-threatening conditions, such as **heart attack** or **stroke**.
 
 ---
 

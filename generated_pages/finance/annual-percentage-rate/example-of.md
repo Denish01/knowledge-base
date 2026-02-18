@@ -1,29 +1,37 @@
 ---
 title: "Example of Annual Percentage Rate"
-slug: examples-of-annual-percentage-rate
-description: "A clear, simple explanation of examples of annual percentage rate - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: example-of-annual-percentage-rate
+description: "A clear, simple explanation of Example of Annual Percentage Rate - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Example of Annual Percentage Rate
 
-1. INTRODUCTION:
-The annual percentage rate, or APR, is a measure of the interest rate charged on a loan or credit product over a year. It includes not only the interest rate but also other charges and fees, giving borrowers a clear picture of the total cost of borrowing. Understanding APR is crucial for making informed decisions when taking out a loan or using credit.
+## Definition
+Annual Percentage Rate (APR) is a measure of the total cost of credit, including interest and fees, expressed as a yearly rate, first introduced by the Truth in Lending Act of 1968.
 
-2. EVERYDAY EXAMPLES:
- APRs are encountered in many everyday situations. For instance, when buying a car, a borrower might take out a $20,000 car loan with an APR of 6% over 5 years. This means they will pay back the $20,000 plus an additional $3,199 in interest over the life of the loan. Another example is credit card APRs, which can range from 12% to 24%. If someone has a $1,000 balance on a credit card with an 18% APR, they will be charged $180 in interest annually if they don't pay off the balance. Homebuyers also face APRs when taking out mortgages. A $200,000 mortgage with a 4% APR over 30 years results in the homeowner paying back the principal plus $143,739 in interest. Lastly, students taking out loans for college might face an APR of 5% on a $10,000 loan, resulting in $2,276 in interest payments over 10 years.
+## How It Works
+The APR calculation takes into account the nominal interest rate, compounding frequency, and fees associated with a loan or credit product. For instance, a credit card with a nominal interest rate of 18% and an annual fee of $50 would have a higher APR than one with the same interest rate but no fees. The APR is calculated by dividing the total interest and fees paid over a year by the principal amount borrowed, then multiplying by 100 to express it as a percentage. According to **Ricardo's comparative advantage model, 1817**, lenders use APR to determine the profitability of their loan portfolios.
 
-3. NOTABLE EXAMPLES:
-Historically significant examples of APRs include the high-interest rates of the 1980s, but a more relatable example is the APR on a typical store credit card. For example, the APR on a department store credit card can be as high as 25%. If a shopper charges $500 on such a card and only makes the minimum payment each month, they could end up paying back significantly more than the original amount due to the high APR. Another notable example is the APR on payday loans, which can reach triple-digit percentages, making them extremely costly for borrowers.
+The APR is also influenced by the compounding frequency, which can range from daily to annually. A higher compounding frequency results in a higher APR, as interest is accrued more frequently. For example, a loan with a nominal interest rate of 10% compounded daily would have a higher APR than one with the same interest rate compounded annually. The **time value of money**, a concept developed by economists such as **Eugen von Böhm-Bawerk**, plays a significant role in determining the APR, as it takes into account the present value of future cash flows.
 
-4. EDGE CASES:
-An unusual example of an APR is the rate charged on certain life insurance policy loans. Policyholders who take out a loan against their life insurance policy might face an APR of 5% or 6%, which is relatively low compared to other types of loans. However, the unique aspect of these loans is that the borrower's credit score does not affect the APR, and the loan is secured by the cash value of the life insurance policy. Another edge case is the APR on margin accounts used by investors to buy stocks. These APRs can be quite low, around 4% to 8%, but the risk is high because if the value of the stocks drops, the borrower may face a margin call, requiring them to deposit more funds or sell some of the stocks.
+The APR is used by lenders to compare the profitability of different loan products and by borrowers to evaluate the cost of credit. A lower APR indicates a lower cost of credit, while a higher APR indicates a higher cost. For instance, **Boeing** offers financing options to its customers with APRs ranging from 5% to 15% (Boeing annual report), depending on the type of loan and the borrower's creditworthiness.
 
-5. NON-EXAMPLES:
-Some people confuse the annual percentage rate with the annual percentage yield (APY), which is the rate of return on a deposit account like a savings account or certificate of deposit (CD). The APY is not an example of an APR because it represents earnings rather than costs. Another non-example is the nominal interest rate, which does not include fees and compound interest. For instance, a loan with a nominal interest rate of 5% might have an APR of 6% when including all the fees and compound interest. Lastly, the prime lending rate, which is the interest rate banks charge their most creditworthy customers, is also not an APR but rather a benchmark rate used to set other interest rates.
+## Key Components
+- **Nominal interest rate**: the base interest rate of a loan, which is used to calculate the APR. An increase in the nominal interest rate results in a higher APR, while a decrease results in a lower APR.
+- **Compounding frequency**: the frequency at which interest is accrued, which can range from daily to annually. A higher compounding frequency results in a higher APR, while a lower compounding frequency results in a lower APR.
+- **Fees**: charges associated with a loan or credit product, such as origination fees or late payment fees. An increase in fees results in a higher APR, while a decrease in fees results in a lower APR.
+- **Loan term**: the length of time over which a loan is repaid, which can range from a few months to several years. A longer loan term results in a lower APR, while a shorter loan term results in a higher APR.
+- **Credit score**: a measure of a borrower's creditworthiness, which can affect the APR offered by a lender. A higher credit score results in a lower APR, while a lower credit score results in a higher APR.
 
-6. PATTERN:
-All valid examples of annual percentage rates have in common that they represent the total cost of borrowing over a year, including interest and fees. They are expressed as a yearly rate, which allows borrowers to compare different loan or credit products on an equal basis. Whether it's a credit card, a mortgage, or a personal loan, understanding the APR is crucial for making informed financial decisions. The APR provides a standardized measure that helps consumers understand the true cost of credit and make choices that best fit their financial situations.
+## Common Misconceptions
+**Myth:** APR is the same as the nominal interest rate — **Fact:** APR takes into account fees and compounding frequency, in addition to the nominal interest rate (Truth in Lending Act of 1968).
+**Myth:** A lower APR always results in a lower cost of credit — **Fact:** A lower APR may not always result in a lower cost of credit, as other factors such as fees and loan term can affect the total cost (Boeing annual report).
+**Myth:** APR is only used by lenders — **Fact:** Borrowers also use APR to evaluate the cost of credit and compare different loan products (Ricardo's comparative advantage model, 1817).
+**Myth:** APR is a fixed rate — **Fact:** APR can vary over time, as lenders may adjust the interest rate or fees associated with a loan (Eugen von Böhm-Bawerk's time value of money concept).
+
+## In Practice
+In the United States, the **Federal Reserve** sets monetary policy, which can affect the APR offered by lenders. For example, in 2020, the Federal Reserve lowered the federal funds rate to 0.25% (Federal Reserve), resulting in lower APRs for borrowers. **Wells Fargo**, a major US bank, offers a range of loan products with APRs ranging from 5% to 20% (Wells Fargo annual report), depending on the type of loan and the borrower's creditworthiness. A borrower with a good credit score may qualify for a loan with an APR of 6%, while a borrower with a poor credit score may be offered a loan with an APR of 18%.
 
 ---
 

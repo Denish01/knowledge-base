@@ -1,31 +1,33 @@
 ---
 title: "What Oligopoly Depends On"
 slug: what-oligopoly-depends-on
-description: "A clear, simple explanation of what oligopoly depends on - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+description: "A clear, simple explanation of What Oligopoly Depends On - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Oligopoly Depends On
 
-1. INTRODUCTION
-An oligopoly is a market structure where a small number of firms dominate the industry, giving them significant control over prices and production. Understanding what oligopoly depends on is crucial for recognizing how it functions and the implications it has on the economy. Dependencies are the underlying factors that enable oligopoly to exist and operate. By examining these prerequisites, we can better comprehend the complex relationships within an oligopolistic market.
+Barriers to entry are the most critical dependency for an **oligopoly**, as they prevent new companies from entering the market and competing with existing firms, such as Boeing and Airbus in the aircraft manufacturing industry, where Boeing produces ~800 aircraft annually (Boeing annual report) and holds significant market power.
 
-2. KEY DEPENDENCIES
-Several key factors are necessary for an oligopoly to exist. These include:
-- **Barriers to Entry**: Oligopoly depends on barriers to entry, which limit the ability of new firms to enter the market. This is necessary because it prevents new competitors from easily entering the market, allowing existing firms to maintain their market share. Without barriers to entry, the market would become more competitive, and the oligopolistic structure would break down.
-- **Interdependence among Firms**: Oligopoly depends on interdependence among firms, where the actions of one firm affect the others. This is necessary because it creates a situation where firms must consider the potential reactions of their competitors when making decisions. Without interdependence, firms would not need to consider the actions of others, and the oligopolistic market structure would not be sustainable.
-- **Differentiated Products**: Oligopoly often depends on differentiated products, which allow firms to distinguish themselves from their competitors. This is necessary because it enables firms to attract and retain customers, even if prices are not the lowest. Without differentiated products, firms would need to rely solely on price competition, which could lead to a more competitive market.
-- **Government Regulations**: Oligopoly can depend on government regulations, which can create or reinforce barriers to entry. This is necessary because it can provide a stable environment for oligopolistic firms to operate. Without government regulations, the market may become more unstable, and the oligopolistic structure may be disrupted.
-- **Economies of Scale**: Oligopoly often depends on economies of scale, which allow large firms to produce goods at a lower cost. This is necessary because it enables firms to maintain their market share and compete with other firms. Without economies of scale, smaller firms may be able to enter the market and compete more effectively.
+## Key Dependencies
+- **Barriers to entry** — high startup costs, intellectual property rights, and regulatory hurdles prevent new companies from entering the market, allowing existing firms to maintain their market share and limit competition, as seen in the aircraft manufacturing industry where Boeing and Airbus have dominated the market for decades, with Boeing holding 60% market share (Teal Group).
+- **Differentiated products** — unique features, branding, and marketing strategies distinguish one company's products from another's, enabling companies to charge premium prices and maintain customer loyalty, such as Coca-Cola's brand recognition and customer loyalty, which has allowed the company to maintain a significant market share in the beverage industry.
+- **Information asymmetry** — unequal access to information among market participants can lead to inefficiencies and opportunities for companies to exploit, such as in the used car market where sellers have more information about the vehicle's condition than buyers, as described in Akerlof's market for lemons model.
+- **Government policies** — regulations, subsidies, and taxes can influence the competitive landscape of an oligopoly, such as the US government's subsidies to farmers, which can affect the market power of companies like Archer Daniels Midland, as noted in Ricardo's comparative advantage model, 1817.
+- **Network effects** — the value of a product or service increases as more users adopt it, creating a self-reinforcing cycle, such as in the case of Microsoft's Windows operating system, which became the industry standard due to its widespread adoption, leading to a significant market share.
+- **Economies of scale** — large companies can reduce their costs per unit by producing more, making it difficult for smaller companies to compete, such as in the case of Walmart, which has achieved significant economies of scale through its large production volumes, allowing it to offer lower prices to customers.
 
-3. ORDER OF IMPORTANCE
-While all the dependencies are important, some are more critical than others. Barriers to entry and interdependence among firms are the most essential, as they create the foundation for the oligopolistic market structure. Differentiated products, government regulations, and economies of scale are also important, but they can vary in significance depending on the specific industry and market.
+## Priority Order
+The dependencies can be ranked in the following order from most to least critical:
+1. **Barriers to entry** - without high barriers to entry, new companies can easily enter the market and compete with existing firms, reducing their market power and profitability.
+2. **Differentiated products** - unique products and branding are essential for companies to maintain customer loyalty and charge premium prices.
+3. **Information asymmetry** - unequal access to information among market participants can lead to inefficiencies and opportunities for companies to exploit, but it is not as critical as barriers to entry and differentiated products.
+4. **Government policies** - regulations and subsidies can influence the competitive landscape, but their impact can be mitigated by companies adapting to changes in government policies.
+5. **Network effects** - while network effects can create a self-reinforcing cycle, they are not as critical as the first four dependencies, as companies can still compete without them.
+6. **Economies of scale** - large companies can reduce their costs per unit, but smaller companies can still compete by focusing on niche markets or offering unique products.
 
-4. COMMON GAPS
-One common gap in understanding oligopoly is assuming that it is a static market structure. In reality, oligopoly is dynamic, and firms must continually adapt to changes in the market and their competitors' actions. Another common gap is overlooking the role of government regulations in shaping the oligopolistic market structure. Regulations can have a significant impact on the market, and firms must navigate these rules to maintain their position.
-
-5. SUMMARY
-In summary, oligopoly depends on a combination of factors, including barriers to entry, interdependence among firms, differentiated products, government regulations, and economies of scale. Understanding these dependencies is essential for recognizing how oligopoly functions and the implications it has on the economy. By examining these prerequisites, we can better comprehend the complex relationships within an oligopolistic market and the challenges firms face in maintaining their market position.
+## Common Gaps
+People often overlook the importance of **information asymmetry** and **government policies** in shaping the competitive landscape of an oligopoly, assuming that companies can simply compete on price and quality, but in reality, these factors can significantly impact a company's market power and profitability, such as in the case of the US telecommunications industry, where regulatory changes have led to significant consolidation and reduced competition.
 
 ---
 

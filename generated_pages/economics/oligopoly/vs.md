@@ -1,37 +1,39 @@
 ---
 title: "Oligopoly Compared"
-slug: oligopoly-vs
-description: "A clear, simple explanation of oligopoly vs - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: oligopoly-compared
+description: "A clear, simple explanation of Oligopoly Compared - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Oligopoly Compared
 
-Oligopoly vs monopoly refers to a comparison between two types of market structures in which a small number of firms or a single firm dominate the market, respectively.
+Oligopoly Compared refers to the analysis of market structures where a small number of firms compete with each other, often resulting in **barriers to entry** and **interdependent decision-making**, as described by Cournot's oligopoly model, 1838.
 
-In a market economy, various structures exist, including perfect competition, monopoly, and oligopoly. Understanding the differences between these structures is essential to grasping how businesses operate and how they affect the economy. An oligopoly is a market structure in which a small number of firms produce and sell a particular good or service. These firms have a significant influence on the market price and output, and they often compete with each other through advertising, product differentiation, and other non-price means.
+## Definition
+Oligopoly Compared is a market structure in which a small number of firms, often with significant market share, compete with each other, resulting in **price rigidity** and **non-price competition**, as seen in the **kinked demand curve** model.
 
-In contrast, a monopoly is a market structure in which a single firm supplies the entire market with a particular good or service. This firm has complete control over the market price and output, and it can maximize its profits by producing the quantity that equates marginal revenue with marginal cost. The key difference between an oligopoly and a monopoly is the number of firms operating in the market. While an oligopoly has multiple firms, a monopoly has only one.
+## How It Works
+The oligopoly market structure is characterized by **mutual interdependence**, where the actions of one firm affect the market and the actions of its competitors, as demonstrated by the **prisoner's dilemma** game theory model. In an oligopoly, firms often engage in **non-price competition**, such as advertising and product differentiation, to gain a competitive advantage, as seen in the **cola wars** between Coca-Cola and Pepsi. The **Herfindahl-Hirschman Index** (HHI) is a commonly used measure to assess the level of competition in an oligopoly market, with higher values indicating greater concentration and less competition, such as the US airline industry, which has an HHI of over 1,000 (US Department of Justice).
 
-The main difference between an oligopoly and a monopoly is the level of competition and the resulting market outcomes. In an oligopoly, firms compete with each other, which can lead to lower prices and higher output. In a monopoly, the single firm has no incentive to reduce prices or increase output, as it can maximize its profits by restricting output and charging a higher price.
+The **Bertrand model** of oligopoly, which assumes firms compete on price, predicts that firms will engage in **price warfare**, resulting in prices approaching **marginal cost**, as seen in the **telecommunications industry**, where firms like Verizon and AT&T compete on price and service quality. In contrast, the **Cournot model**, which assumes firms compete on quantity, predicts that firms will produce less than the **monopolistic** level, resulting in higher prices and lower output, as seen in the **oil industry**, where firms like ExxonMobil and Shell compete on quantity and price.
 
-Key components of the comparison between oligopoly and monopoly include:
-* The number of firms operating in the market, which affects the level of competition and the resulting market outcomes
-* The level of barriers to entry, which can prevent new firms from entering the market and competing with existing firms
-* The degree of product differentiation, which can affect the level of competition and the resulting market outcomes
-* The level of government regulation, which can affect the behavior of firms in an oligopoly or monopoly
-* The impact on consumer welfare, which can be affected by the level of competition and the resulting market outcomes
-* The potential for collusion, which can occur in an oligopoly when firms agree to cooperate and restrict output or fix prices
+The **Stackelberg model** of oligopoly, which assumes firms have different levels of **market power**, predicts that the firm with the greatest market power will set its output level first, and the other firms will follow, resulting in a **leader-follower** dynamic, as seen in the **automobile industry**, where firms like Toyota and General Motors compete on quantity and price. The **Sweezy model** of oligopoly, which assumes firms have **kinked demand curves**, predicts that firms will engage in **price rigidity**, resulting in **sticky prices**, as seen in the **retail industry**, where firms like Walmart and Target compete on price and service quality.
 
-Common misconceptions about oligopoly and monopoly include:
-* The idea that an oligopoly is the same as a monopoly, when in fact they are distinct market structures with different characteristics
-* The notion that firms in an oligopoly always compete with each other, when in fact they may cooperate and collude to restrict output and fix prices
-* The belief that a monopoly is always bad for consumers, when in fact it can lead to lower costs and higher output if the single firm is efficient and innovative
-* The idea that government regulation can always prevent the formation of a monopoly or oligopoly, when in fact it may be difficult or impossible to prevent the formation of these market structures
+## Key Components
+- **Barriers to entry**: high startup costs, **economies of scale**, and **regulatory hurdles** that prevent new firms from entering the market, such as the **airline industry**, where high capital requirements and regulatory approvals limit new entrants.
+- **Interdependent decision-making**: firms in an oligopoly make decisions based on the expected actions of their competitors, such as the **price leadership** model, where one firm sets the price and others follow.
+- **Non-price competition**: firms in an oligopoly compete on factors other than price, such as **advertising**, **product differentiation**, and **service quality**, as seen in the **cosmetics industry**, where firms like L'Oréal and Estee Lauder compete on brand image and product quality.
+- **Price rigidity**: firms in an oligopoly may maintain prices at a certain level, even in the face of changing market conditions, due to **kinked demand curves** and **fear of retaliation**, as seen in the **oil industry**, where firms like ExxonMobil and Shell maintain prices despite fluctuations in demand.
+- **Mutual interdependence**: firms in an oligopoly are aware of the actions of their competitors and adjust their strategies accordingly, resulting in a **dynamic game** of competition and cooperation, as seen in the **telecommunications industry**, where firms like Verizon and AT&T engage in **price wars** and **service battles**.
 
-A real-world example of the difference between an oligopoly and a monopoly is the market for soft drinks. In this market, a small number of firms, such as Coca-Cola and Pepsi, compete with each other to sell their products to consumers. This competition leads to lower prices and higher output, as firms try to attract consumers with their products. In contrast, a single firm, such as a local water utility, may have a monopoly on the supply of water to consumers in a particular area. This firm has complete control over the market price and output, and it can maximize its profits by producing the quantity that equates marginal revenue with marginal cost.
+## Common Misconceptions
+**Myth:** Oligopolies always lead to higher prices and lower output — **Fact:** The **Bertrand model** of oligopoly predicts that firms will engage in **price warfare**, resulting in prices approaching **marginal cost**, as seen in the **telecommunications industry**, where firms like Verizon and AT&T compete on price and service quality.
+**Myth:** Firms in an oligopoly always engage in **non-cooperative behavior** — **Fact:** The **Stackelberg model** of oligopoly predicts that firms may engage in **cooperative behavior**, such as **price leadership**, as seen in the **automobile industry**, where firms like Toyota and General Motors engage in **leader-follower** dynamics.
+**Myth:** Oligopolies are always **inefficient** — **Fact:** The **Cournot model** of oligopoly predicts that firms may produce at a level that is **socially optimal**, as seen in the **oil industry**, where firms like ExxonMobil and Shell produce at a level that balances **supply and demand**.
+**Myth:** Firms in an oligopoly always have **perfect information** — **Fact:** The **Sweezy model** of oligopoly predicts that firms may have **imperfect information**, resulting in **price rigidity** and **sticky prices**, as seen in the **retail industry**, where firms like Walmart and Target maintain prices despite fluctuations in demand.
 
-In summary, the comparison between oligopoly and monopoly refers to the differences between two market structures in which a small number of firms or a single firm dominate the market, with distinct characteristics and resulting market outcomes.
+## In Practice
+In the **US airline industry**, for example, the oligopoly market structure has resulted in **price rigidity** and **non-price competition**, with firms like American Airlines, Delta Air Lines, and United Airlines competing on factors such as **service quality**, **route networks**, and **frequent flyer programs**, with the HHI exceeding 1,000 (US Department of Justice), and Boeing producing ~800 aircraft annually (Boeing annual report), with a market share of over 60% (Teal Group).
 
 ---
 

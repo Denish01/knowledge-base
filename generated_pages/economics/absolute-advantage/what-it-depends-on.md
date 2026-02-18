@@ -7,36 +7,27 @@ date: 2026-02-16
 
 # What Absolute Advantage Depends On
 
-Absolute advantage depends on various prerequisites that enable an entity to produce a greater quantity of a good or service than its competitors, and understanding these dependencies is crucial to grasping the concept.
+Absolute advantage depends on **technological advancement**, as it requires a country to have a higher productivity level in the production of a particular good or service compared to other countries, which is often achieved through the adoption of advanced technology, such as Boeing's use of automation in aircraft manufacturing, which produces ~800 aircraft annually (Boeing annual report).
 
-1. INTRODUCTION: 
-Absolute advantage refers to the ability of an entity, such as a country or company, to produce more of a good or service than its competitors. The dependencies that underlie absolute advantage are essential to understanding how this concept works, as they provide the foundation upon which it is built. Without these prerequisites, absolute advantage cannot be achieved, and it is therefore vital to comprehend the relationships between these dependencies and the concept itself.
+## Key Dependencies
+- **Technological advancement** — is required for a country to achieve a higher productivity level, and without it, a country may struggle to compete with other nations, as seen in the case of the Indian textile industry, which failed to adopt new technologies and lost its competitive edge to countries like China and Bangladesh, resulting in a significant decline in exports.
+- **Skilled labor** — is necessary for the effective use of technology and the production of high-quality goods and services, and without it, a country may experience a decline in productivity, as seen in the case of the Russian aerospace industry, which struggled to replace skilled workers who left the industry after the Soviet Union collapsed.
+- **Natural resources** — are essential for the production of certain goods and services, and without access to these resources, a country may be unable to produce these goods and services, as seen in the case of Japan, which lacks significant oil reserves and must import most of its oil, making it vulnerable to fluctuations in global oil prices.
+- **Infrastructure** — is critical for the transportation of goods and services, and without it, a country may struggle to get its products to market, as seen in the case of Brazil, which has struggled to develop its transportation infrastructure, resulting in high logistics costs and reduced competitiveness.
+- **Institutional framework** — is necessary for providing a stable and predictable business environment, and without it, a country may experience a decline in investment and economic growth, as seen in the case of Venezuela, which has struggled with a weak institutional framework, resulting in a significant decline in foreign investment and economic activity.
+- **Trade agreements** — are important for providing access to foreign markets, and without them, a country may struggle to export its goods and services, as seen in the case of the United States, which has benefited from trade agreements like NAFTA, which has increased trade with Canada and Mexico.
 
-2. KEY DEPENDENCIES: 
-- The dependency: Access to natural resources
-  Why it's necessary: Natural resources, such as raw materials and labor, are necessary for production, and access to these resources is essential for achieving absolute advantage.
-  What happens without it: Without access to natural resources, production cannot occur, and absolute advantage is impossible to achieve, as the entity would be unable to produce any goods or services.
-- The dependency: Technological capabilities
-  Why it's necessary: Technological capabilities, such as machinery and equipment, are necessary for efficient production, and are a critical component of achieving absolute advantage.
-  What happens without it: Without technological capabilities, production would be slow and inefficient, and the entity would be unable to produce a greater quantity of goods or services than its competitors, resulting in a failure to achieve absolute advantage.
-- The dependency: Skilled labor
-  Why it's necessary: Skilled labor is necessary for efficient production, as it enables the entity to produce high-quality goods or services.
-  What happens without it: Without skilled labor, production would be of poor quality, and the entity would be unable to produce a greater quantity of goods or services than its competitors, leading to a failure to achieve absolute advantage.
-- The dependency: Infrastructure
-  Why it's necessary: Infrastructure, such as transportation and communication systems, is necessary for the efficient production and distribution of goods or services.
-  What happens without it: Without infrastructure, production and distribution would be slow and inefficient, and the entity would be unable to produce a greater quantity of goods or services than its competitors, resulting in a failure to achieve absolute advantage.
-- The dependency: Economic stability
-  Why it's necessary: Economic stability is necessary for investment and production, as it provides a predictable environment for business operations.
-  What happens without it: Without economic stability, investment and production would be risky and unpredictable, and the entity would be unable to achieve absolute advantage, as it would be unable to produce a consistent quantity of goods or services.
+## Priority Order
+The dependencies can be ranked in the following order from most to least critical:
+- **Technological advancement**, as it provides the foundation for productivity growth and competitiveness, and without it, a country may struggle to compete with other nations.
+- **Skilled labor**, as it is necessary for the effective use of technology and the production of high-quality goods and services.
+- **Institutional framework**, as it provides a stable and predictable business environment, which is necessary for investment and economic growth.
+- **Infrastructure**, as it is critical for the transportation of goods and services, and without it, a country may struggle to get its products to market.
+- **Natural resources**, as they are essential for the production of certain goods and services, but can be substituted with other resources or imported.
+- **Trade agreements**, as they are important for providing access to foreign markets, but can be substituted with other forms of trade, such as export-led growth.
 
-3. ORDER OF IMPORTANCE: 
-While all the dependencies are crucial, access to natural resources and technological capabilities are the most critical, as they provide the foundation for production. Skilled labor and infrastructure are also essential, as they enable efficient production and distribution. Economic stability is also vital, as it provides a predictable environment for business operations.
-
-4. COMMON GAPS: 
-People often overlook the importance of economic stability and infrastructure in achieving absolute advantage, assuming that these factors are already in place. However, without these prerequisites, absolute advantage is impossible to achieve, and it is therefore essential to consider these dependencies when evaluating an entity's ability to produce a greater quantity of goods or services than its competitors.
-
-5. SUMMARY: 
-The essential foundation for absolute advantage is a combination of prerequisites, including access to natural resources, technological capabilities, skilled labor, infrastructure, and economic stability. Without these dependencies, absolute advantage cannot be achieved, and it is therefore vital to understand the relationships between these prerequisites and the concept itself. By recognizing the importance of these dependencies, entities can take the necessary steps to achieve absolute advantage and produce a greater quantity of goods or services than their competitors.
+## Common Gaps
+People often overlook the importance of **institutional framework** and **infrastructure**, assuming that they are already in place or that they can be easily developed, but the absence of these dependencies can cause significant problems, such as reduced investment and economic growth, as seen in the case of many African countries, which have struggled to develop their institutional frameworks and infrastructure, resulting in reduced economic growth and development.
 
 ---
 

@@ -1,37 +1,38 @@
 ---
 title: "What Is Risk Tolerance?"
-slug: risk-tolerance
-description: "A clear, simple explanation of risk tolerance - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: what-is-risk-tolerance
+description: "A clear, simple explanation of What Is Risk Tolerance? - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Is Risk Tolerance?
 
-Risk tolerance is the degree to which an individual or organization is willing to accept uncertainty and potential losses in pursuit of a goal or investment.
+## Definition
+Risk tolerance is the degree of uncertainty or volatility an individual or organization is willing to accept in pursuit of their financial goals, a concept closely related to Harry Markowitz's Modern Portfolio Theory, 1952.
 
-Risk tolerance is a fundamental concept that affects decision-making in various aspects of life, including finance, business, and personal choices. It is the ability to withstand the possibility of losing money, time, or other resources without becoming overly anxious or stressed. People with a high risk tolerance are more likely to engage in activities that involve uncertainty, such as investing in the stock market or starting a new business. On the other hand, those with a low risk tolerance tend to prefer safer and more predictable options, such as saving money in a bank account or investing in bonds.
+## How It Works
+Risk tolerance affects investment decisions by influencing the allocation of assets in a portfolio. According to the Capital Asset Pricing Model (CAPM), investors demand a higher return for taking on more risk, which is reflected in the **beta** of a stock. For instance, an investor with a high risk tolerance may allocate a larger portion of their portfolio to **high-beta stocks**, such as those in the technology sector, which have historically been more volatile than the overall market. Boeing produces ~800 aircraft annually (Boeing annual report), and investors in the company's stock must be willing to accept the risks associated with the aerospace industry, including fluctuations in demand and regulatory changes.
 
-The concept of risk tolerance is closely related to the idea of risk assessment, which involves evaluating the potential risks and rewards associated with a particular decision or action. When considering a risk, individuals must weigh the potential benefits against the potential costs and determine whether the potential rewards are worth the potential risks. This process involves considering factors such as the likelihood of success or failure, the potential magnitude of gains or losses, and the individual's personal comfort level with uncertainty.
+The risk tolerance of an investor also determines their willingness to hold onto an investment during periods of market volatility. Investors with a low risk tolerance may be more likely to **sell their assets** during a downturn, realizing a loss, while those with a higher risk tolerance may be more likely to **ride out the storm**, potentially benefiting from a recovery in the market. The **Sharpe Ratio**, developed by William Sharpe, 1966, provides a measure of the excess return of an investment over the risk-free rate, relative to its volatility, allowing investors to evaluate the risk-adjusted performance of their portfolio.
 
-In addition to personal factors, risk tolerance can also be influenced by external factors, such as cultural and social norms, economic conditions, and regulatory requirements. For example, in some cultures, taking risks is encouraged and seen as a sign of strength and entrepreneurship, while in others, caution and risk aversion are valued. Understanding these factors is essential to developing a comprehensive understanding of risk tolerance and its role in decision-making.
+Investment managers use various techniques to assess an individual's risk tolerance, including **questionnaires** and **risk assessments**, to determine the optimal asset allocation for their clients. The **efficient frontier**, a concept introduced by Markowitz, 1952, represents the set of optimal portfolios that offer the highest expected return for a given level of risk, and investment managers use this framework to construct portfolios that align with their clients' risk tolerance. For example, an investment manager may use the **Black-Litterman model**, developed by Fischer Black and Robert Litterman, 1990, to combine the investor's prior beliefs about the market with the historical returns of the assets, resulting in a more informed asset allocation decision.
 
-The key components of risk tolerance include:
-* The ability to withstand uncertainty and potential losses
-* The willingness to take calculated risks in pursuit of a goal or investment
-* The evaluation of potential risks and rewards associated with a decision or action
-* The consideration of personal comfort level with uncertainty and risk
-* The influence of external factors, such as cultural and social norms, on risk tolerance
-* The balance between risk and reward in decision-making
+## Key Components
+- **Risk capacity**: the amount of risk an individual or organization can afford to take, based on their financial situation and goals, which increases as their wealth and income grow.
+- **Risk perception**: the subjective assessment of risk, influenced by personal experiences, emotions, and biases, which can lead to inconsistent investment decisions if not properly managed.
+- **Investment horizon**: the length of time an investor has to achieve their financial goals, which affects their risk tolerance, as a longer horizon allows for more risk-taking due to the potential for higher returns over the long term.
+- **Diversification**: the strategy of spreading investments across different asset classes to reduce risk, which is essential for managing risk tolerance, as a diversified portfolio can provide more stable returns over time.
+- **Expected return**: the anticipated return on an investment, based on historical data and market expectations, which is a critical component of risk tolerance, as investors must balance their expected return with their willingness to accept risk.
+- **Volatility**: the degree of uncertainty or fluctuation in the value of an investment, which is a key factor in determining risk tolerance, as investors must be willing to accept a certain level of volatility to achieve their financial goals.
 
-Common misconceptions about risk tolerance include:
-* The idea that risk tolerance is the same as recklessness or a lack of caution
-* The assumption that risk tolerance is fixed and unchanging over time
-* The belief that risk tolerance is solely determined by personal factors, such as personality or temperament
-* The notion that risk tolerance is only relevant in financial or business contexts
+## Common Misconceptions
+**Myth:** All investors should aim to maximize their returns, regardless of risk — **Fact:** Investors with a low risk tolerance, such as retirees, may prioritize preserving their capital over maximizing returns, as evidenced by the **life-cycle hypothesis**, developed by Franco Modigliani and Richard Brumberg, 1954. 
+**Myth:** Risk tolerance is constant over time — **Fact:** Risk tolerance can change over time due to changes in personal circumstances, such as marriage, divorce, or retirement, which can affect an individual's financial situation and goals.
+**Myth:** Investors with a high risk tolerance always earn higher returns — **Fact:** While investors with a high risk tolerance may earn higher returns over the long term, they also face a higher risk of losses, as seen in the **2008 financial crisis**, when many investors with high-risk portfolios suffered significant losses.
+**Myth:** Risk tolerance is the same as risk capacity — **Fact:** Risk tolerance refers to an investor's willingness to accept risk, while risk capacity refers to their ability to absorb losses, as illustrated by the **Bernstein's risk questionnaire**, which assesses an individual's risk tolerance and capacity.
 
-A real-world example of risk tolerance can be seen in the decision to start a new business. An individual with a high risk tolerance may be willing to invest their savings and quit their job to pursue an entrepreneurial venture, while someone with a low risk tolerance may prefer to keep their job and start a side business on a part-time basis. For instance, consider an individual who wants to open a restaurant. They may need to invest a significant amount of money, time, and effort to get the business off the ground, and there is a risk that the restaurant may not be successful. However, if they have a high risk tolerance, they may be willing to take on this challenge and potentially reap the rewards of owning a successful business.
-
-In summary, risk tolerance is the degree to which an individual or organization is willing to accept uncertainty and potential losses in pursuit of a goal or investment, and it plays a critical role in decision-making across various aspects of life.
+## In Practice
+The Norwegian Government Pension Fund Global, with assets over $1 trillion (Norges Bank Investment Management), has a long-term investment horizon and a relatively high risk tolerance, which allows it to invest in a diversified portfolio of stocks, bonds, and real estate. The fund's investment strategy is guided by the **Markowitz's Modern Portfolio Theory**, 1952, and the **Black-Litterman model**, 1990, to optimize its asset allocation and balance its expected return with its risk tolerance. By taking a long-term perspective and maintaining a diversified portfolio, the fund has been able to achieve stable returns over time, while managing its risk exposure to meet its financial goals.
 
 ---
 

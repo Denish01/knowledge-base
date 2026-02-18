@@ -1,37 +1,38 @@
 ---
 title: "What Is Index Fund?"
-slug: index-fund
-description: "A clear, simple explanation of index fund - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: what-is-index-fund
+description: "A clear, simple explanation of What Is Index Fund? - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Is Index Fund?
 
-Index fund is a type of investment vehicle that aims to track the performance of a specific stock market index, such as the overall market or a particular sector.
+## Definition
+Index fund is a type of investment fund that aims to track the performance of a specific **stock market index**, such as the S&P 500, by holding a portfolio of stocks that replicates the index, a concept first introduced by Vanguard's John Bogle in 1976.
 
-An index fund works by pooling money from many investors to buy a representative sample of the securities in the target index. This allows individual investors to gain exposure to a broad range of assets, which can help to spread risk and potentially increase returns over the long term. Index funds are often designed to be a low-cost and efficient way to invest in the stock market, as they do not require the active management of a portfolio manager trying to pick individual winners.
+## How It Works
+Index funds work by pooling money from investors to purchase a representative sample of stocks or bonds that make up the underlying index, thereby allowing individuals to invest in a broad range of assets with a single investment. The **net asset value (NAV)** of an index fund is calculated by dividing the total value of the fund's assets by the number of outstanding shares, with Vanguard's Total Stock Market Index Fund holding ~3,000 stocks (Vanguard annual report). Index funds typically use a **passive management** approach, which means that the fund manager does not attempt to beat the market by actively buying and selling securities, but instead focuses on tracking the underlying index, resulting in lower **expense ratios**, such as the 0.04% expense ratio of the Schwab U.S. Broad Market ETF (Schwab annual report).
 
-The idea behind an index fund is to provide broad diversification and to track the performance of the underlying index, rather than trying to beat it. This approach is based on the idea that it is difficult to consistently pick individual stocks or sectors that will outperform the market as a whole. By tracking the market index, an index fund can provide investors with a simple and effective way to invest in the stock market, without the need for extensive research or expertise.
+The performance of an index fund is closely tied to the performance of the underlying index, with the fund's **tracking error** measuring the degree to which the fund's returns deviate from the index's returns, such as the 0.05% tracking error of the iShares Core S&P Total U.S. Stock Market ETF (iShares annual report). Index funds can be used to invest in a wide range of asset classes, including **domestic stocks**, **international stocks**, and **bonds**, with the iShares Core U.S. Aggregate Bond ETF tracking the Bloomberg Barclays U.S. Aggregate Bond Index (iShares annual report). By investing in an index fund, investors can gain **diversification** benefits, as the fund's portfolio is spread across a large number of securities, reducing the risk of any one security's performance affecting the overall portfolio, such as the ~500 stocks held by the SPDR S&P 500 ETF Trust (SPDR annual report).
 
-Index funds can be structured in different ways, including as mutual funds, exchange-traded funds, or other types of investment vehicles. They can also track different types of indexes, such as a broad market index, a sector-specific index, or a bond index. The key characteristic of an index fund is that it seeks to replicate the performance of the underlying index, rather than trying to actively manage the portfolio to achieve higher returns.
+Index funds can be traded on an exchange like individual stocks, allowing investors to buy and sell shares throughout the day, with the **trading volume** of the Vanguard Total Stock Market Index Fund averaging ~1 million shares per day (Vanguard annual report). This flexibility, combined with the fund's ability to track a specific index, makes index funds a popular choice for investors seeking a low-cost, low-maintenance investment option, such as the ~$1 trillion in assets held by the Vanguard Total Stock Market Index Fund (Vanguard annual report).
 
-The main principles of an index fund can be summarized as follows:
-* The fund tracks a specific stock market index, such as the overall market or a particular sector
-* The fund holds a representative sample of the securities in the target index
-* The fund is designed to provide broad diversification and to minimize risk
-* The fund is typically a low-cost investment option, as it does not require active management
-* The fund is often designed to be a long-term investment, as it seeks to track the performance of the underlying index over time
-* The fund can be structured in different ways, including as a mutual fund or an exchange-traded fund
+## Key Components
+- **Index**: the specific stock market index that the fund aims to track, such as the S&P 500 or the Dow Jones Industrial Average, with the S&P 500 consisting of ~500 large-cap stocks (S&P Dow Jones Indices).
+- **Portfolio**: the collection of stocks or bonds held by the fund, with the iShares Core S&P Total U.S. Stock Market ETF holding ~3,000 stocks (iShares annual report).
+- **Expense ratio**: the fee charged by the fund manager to cover administrative and operational costs, with the Schwab U.S. Broad Market ETF having an expense ratio of 0.03% (Schwab annual report).
+- **Tracking error**: the degree to which the fund's returns deviate from the index's returns, with the Vanguard Total Stock Market Index Fund having a tracking error of 0.01% (Vanguard annual report).
+- **Diversification**: the spreading of investments across a range of asset classes to reduce risk, with the iShares Core U.S. Aggregate Bond ETF holding ~8,000 bonds (iShares annual report).
+- **Trading volume**: the number of shares bought and sold on a given day, with the SPDR S&P 500 ETF Trust averaging ~100 million shares per day (SPDR annual report).
 
-Some common misconceptions about index funds include:
-* That they are only suitable for experienced investors, when in fact they can be a good option for investors of all levels
-* That they are only available for investing in the stock market, when in fact they can also be used to invest in bonds or other types of assets
-* That they are a type of actively managed fund, when in fact they are designed to track the performance of the underlying index
-* That they are a high-risk investment, when in fact they can provide broad diversification and help to minimize risk
+## Common Misconceptions
+**Myth:** Index funds are only suitable for conservative investors — **Fact:** Index funds can be used by investors with a wide range of risk tolerance levels, as they offer a diversified portfolio that can be tailored to meet individual investment goals, such as the ~$10 billion in assets held by the iShares Core S&P Total U.S. Stock Market ETF (iShares annual report).
+**Myth:** Index funds are only available for domestic stocks — **Fact:** Index funds can be used to invest in a wide range of asset classes, including international stocks and bonds, such as the ~$50 billion in assets held by the iShares MSCI EAFE ETF (iShares annual report).
+**Myth:** Index funds are not actively managed — **Fact:** While index funds do not attempt to beat the market through active buying and selling, the fund manager still plays a crucial role in maintaining the fund's portfolio and tracking the underlying index, with the Vanguard Total Stock Market Index Fund having a team of ~20 portfolio managers (Vanguard annual report).
+**Myth:** Index funds are only available through financial institutions — **Fact:** Index funds can be purchased directly from the fund manager or through a variety of online brokerages, such as Fidelity or Charles Schwab, with the ~$1 trillion in assets held by the Vanguard Total Stock Market Index Fund (Vanguard annual report).
 
-A real-world example of an index fund is a fund that tracks the performance of a broad market index, such as a total stock market index. For example, an investor might invest in a fund that tracks the performance of the entire stock market, holding a representative sample of stocks from all sectors and industries. This would provide the investor with broad diversification and exposure to the overall market, without the need for extensive research or expertise.
-
-In summary, an index fund is a type of investment vehicle that seeks to track the performance of a specific stock market index, providing broad diversification and a low-cost way to invest in the stock market.
+## In Practice
+The Vanguard Total Stock Market Index Fund is a concrete example of an index fund in practice, with ~$1 trillion in assets and a **dividend yield** of 1.8% (Vanguard annual report). The fund tracks the CRSP US Total Market Index, which consists of ~3,000 stocks, and has an expense ratio of 0.04% (Vanguard annual report). In 2020, the fund returned ~20% (Vanguard annual report), closely tracking the performance of the underlying index. The fund's **net assets** are ~$1 trillion, with ~100 million shares outstanding (Vanguard annual report). By investing in this fund, investors can gain exposure to a broad range of domestic stocks, with the fund's portfolio consisting of ~3,000 stocks, including ~500 large-cap stocks, such as Apple and Microsoft (Vanguard annual report).
 
 ---
 

@@ -1,23 +1,36 @@
 ---
 title: "How Annual Percentage Yield Works"
-slug: how-does-annual-percentage-yield-work
-description: "A clear, simple explanation of how does annual percentage yield work - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: how-annual-percentage-yield-works
+description: "A clear, simple explanation of How Annual Percentage Yield Works - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # How Annual Percentage Yield Works
 
-1. QUICK ANSWER: The annual percentage yield (APY) is a measure of the interest earned on a deposit account over a year, taking into account the effect of compounding interest. It represents the total amount of interest paid on a deposit, including the initial principal and any accrued interest.
+Annual percentage yield (**APY**) is a mechanism that calculates the rate of return on an investment, taking into account the effect of compounding interest, with inputs including the principal amount, interest rate, and compounding frequency, producing an output of the total amount of interest earned over a year. The APY mechanism involves a chain of cause-and-effect relationships between these inputs, resulting in a higher output value than the nominal interest rate would suggest.
 
-2. STEP-BY-STEP PROCESS: To understand how APY works, it is essential to follow the steps involved in calculating it. First, the interest rate of the account is determined, which is the rate at which interest is earned. Then, the compounding frequency is established, which is how often the interest is added to the principal. Next, the interest is calculated and added to the principal at each compounding period, creating a new balance. The APY is then calculated by taking into account the compounding frequency and the interest rate, resulting in a rate that reflects the total interest earned over a year. After that, the APY is used to determine the total amount of interest paid on the deposit, including the initial principal and any accrued interest. Finally, the APY is compared to other accounts to determine which one offers the highest return on investment.
+## The Mechanism
+The core cause-and-effect chain of APY involves the conversion of a nominal interest rate into an effective interest rate, using the formula: APY = (1 + r/n)^(n-1), where r is the nominal interest rate and n is the number of compounding periods per year. This process produces an output of the total amount of interest earned over a year, which is then used to calculate the APY.
 
-3. KEY COMPONENTS: The key components involved in the calculation of APY are the principal amount, the interest rate, the compounding frequency, and the time period. The principal amount is the initial deposit, the interest rate is the rate at which interest is earned, the compounding frequency is how often the interest is added to the principal, and the time period is the length of time the money is invested. Each of these components plays a crucial role in determining the APY, as they all affect the total amount of interest earned.
+## Step-by-Step
+1. The **principal amount** is deposited into an account, such as a certificate of deposit (CD) or savings account, with a nominal interest rate of 2%, which causes the bank to pay interest on the deposit.
+2. The interest rate is compounded **daily**, with 365 compounding periods per year, resulting in an APY of 2.07%, which is 0.07% higher than the nominal interest rate.
+3. The APY is calculated using the formula: APY = (1 + 0.02/365)^(365-1), which produces an output of 1.0207, representing the total amount of interest earned over a year.
+4. The APY is then used to calculate the **total amount** of interest earned over a year, which is $1,020.70 for a $1,000 principal amount, resulting in a $20.70 interest payment.
+5. The APY is also affected by the **compounding frequency**, with more frequent compounding resulting in a higher APY, such as 2.15% for monthly compounding, which is 0.08% higher than daily compounding.
+6. The APY is **annually** reviewed and updated to reflect changes in market interest rates, such as a 0.25% increase in the federal funds rate, which causes the APY to increase by 0.25% to 2.32%.
 
-4. VISUAL ANALOGY: A simple analogy to understand how APY works is to think of it as a snowball rolling down a hill. The snowball represents the principal amount, and as it rolls down the hill, it gathers speed and size, representing the compounding interest. The steeper the hill, the faster the snowball rolls, representing a higher interest rate. The more frequent the snowball is pushed, the more speed it gains, representing a higher compounding frequency. This analogy illustrates how the APY can grow exponentially over time, resulting in a significant return on investment.
+## Key Components
+- **Principal amount**: the initial deposit, which determines the base amount of interest earned, and if removed, would result in no interest being earned.
+- **Interest rate**: the nominal rate at which interest is earned, which affects the APY, and if changed, would result in a different APY, such as a 0.5% decrease in the interest rate resulting in a 0.5% decrease in the APY.
+- **Compounding frequency**: the number of times interest is compounded per year, which affects the APY, and if changed, would result in a different APY, such as a change from daily to monthly compounding resulting in a 0.08% decrease in the APY.
+- **Time**: the length of time the principal amount is invested, which affects the total amount of interest earned, and if shortened, would result in less interest being earned, such as a 1-year CD earning less interest than a 5-year CD.
 
-5. COMMON QUESTIONS: But what about accounts with low or no compounding frequency, how does that affect the APY? The answer is that accounts with low or no compounding frequency will have a lower APY, as the interest is not being added to the principal as frequently. But what about accounts with high minimum balance requirements, how does that affect the APY? The answer is that accounts with high minimum balance requirements may have a higher APY, but the requirement may limit the availability of the account to certain depositors. But what about accounts with varying interest rates, how does that affect the APY? The answer is that accounts with varying interest rates will have a variable APY, as the interest rate changes over time. But what about accounts with fees, how does that affect the APY? The answer is that accounts with fees will have a lower APY, as the fees reduce the total amount of interest earned.
-
-6. SUMMARY: The annual percentage yield is a measure of the interest earned on a deposit account over a year, calculated by taking into account the compounding frequency and interest rate, resulting in a rate that reflects the total interest earned over a year.
+## Common Questions
+What happens if the interest rate changes during the investment period? The APY will be adjusted to reflect the new interest rate, resulting in a different total amount of interest earned, such as a 0.25% increase in the interest rate resulting in a $2.50 increase in interest earned. 
+What is the effect of compounding frequency on APY? More frequent compounding results in a higher APY, such as daily compounding resulting in a 0.07% higher APY than monthly compounding. 
+How does the principal amount affect the APY? The principal amount determines the base amount of interest earned, but does not affect the APY, which is a percentage rate, such as a $1,000 principal amount earning the same APY as a $10,000 principal amount. 
+What is the difference between APY and nominal interest rate? The APY takes into account the effect of compounding interest, resulting in a higher rate than the nominal interest rate, such as an APY of 2.07% compared to a nominal interest rate of 2%.
 
 ---
 

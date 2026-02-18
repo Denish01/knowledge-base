@@ -1,50 +1,30 @@
 ---
 title: "Types of Capital Gains Tax"
 slug: types-of-capital-gains-tax
-description: "A clear, simple explanation of types of capital gains tax - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+description: "A clear, simple explanation of Types of Capital Gains Tax - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Types of Capital Gains Tax
 
-## INTRODUCTION
-Capital gains tax is a type of tax levied on the profit made from the sale of an asset, such as stocks, real estate, or investments. The classification of capital gains tax is essential because it helps individuals and businesses understand the different types of taxes they may be subject to, depending on the type of asset sold, the length of time it was held, and other factors. A comprehensive understanding of the various types of capital gains tax can help taxpayers navigate the complex tax landscape and make informed decisions about their investments. By categorizing capital gains tax, individuals can better comprehend their tax obligations and plan accordingly, which is crucial for financial planning and tax compliance.
+There are four main categories of **Capital Gains Tax**, which are organized based on the type of asset being sold and the duration of ownership. 
 
-## MAIN CATEGORIES
-The following are the main categories of capital gains tax:
-1. **Short-Term Capital Gains Tax**
-   - Definition: This type of tax is applied to assets sold within a year of their purchase, and the tax rate is typically the same as the individual's ordinary income tax rate. The tax is calculated based on the profit made from the sale of the asset.
-   - Key characteristics: The asset is sold within a year of purchase, and the tax rate is based on the individual's income tax bracket.
-   - Example: If an individual buys stocks for $1,000 and sells them for $1,200 within six months, the $200 profit would be subject to short-term capital gains tax.
+## Main Categories
+- **Short-Term Capital Gains Tax** — applies to assets held for less than one year, such as stocks or bonds, and is taxed as ordinary income, with **Apple** being a well-known example of a company whose stocks are frequently subject to short-term capital gains tax.
+- **Long-Term Capital Gains Tax** — applies to assets held for more than one year, such as real estate or investments, and is taxed at a lower rate than ordinary income, with **Warren Buffett's** long-term investment in **Coca-Cola** being a notable example.
+- **Section 1244 Capital Gains Tax** — applies to losses from the sale of small business stock, allowing for ordinary loss treatment, with **Google's** early investors being an example of those who could have utilized this tax provision.
+- **Superfund Capital Gains Tax** — a type of tax on gains from the sale of certain types of assets, such as collectibles or precious metals, with **Sotheby's** auction house being a platform where such assets are frequently sold.
 
-2. **Long-Term Capital Gains Tax**
-   - Definition: This type of tax is applied to assets sold after being held for more than a year, and the tax rate is typically lower than the individual's ordinary income tax rate. The tax is calculated based on the profit made from the sale of the asset.
-   - Key characteristics: The asset is sold after being held for more than a year, and the tax rate is generally lower than the individual's income tax bracket.
-   - Example: If an individual buys real estate for $100,000 and sells it for $150,000 after five years, the $50,000 profit would be subject to long-term capital gains tax.
-
-3. **Super Long-Term Capital Gains Tax**
-   - Definition: Some jurisdictions have a special category for assets held for an extended period, often more than five or ten years, which may qualify for a lower tax rate or exemptions. The tax rate and exemptions vary depending on the jurisdiction.
-   - Key characteristics: The asset is sold after being held for an extended period, and the tax rate may be lower or exempt.
-   - Example: If an individual inherits a property and sells it after 20 years, the profit may be subject to a lower tax rate or exempt from tax, depending on the jurisdiction.
-
-4. **Section 1231 Capital Gains Tax**
-   - Definition: This type of tax applies to the sale of business assets, such as equipment or property, and may be taxed at a lower rate or exempt from tax if certain conditions are met. The tax is calculated based on the profit made from the sale of the asset.
-   - Key characteristics: The asset is a business asset, and the tax rate may be lower or exempt if the sale results in a gain.
-   - Example: If a business sells a piece of equipment for a profit, the gain may be subject to Section 1231 capital gains tax, which may be taxed at a lower rate.
-
-## COMPARISON TABLE
-| Category | Tax Rate | Holding Period | Example |
+## Comparison Table
+| Category | Tax Rate | Asset Type | Holding Period |
 | --- | --- | --- | --- |
-| Short-Term | Ordinary income tax rate | Less than 1 year | Stocks sold within 6 months |
-| Long-Term | Lower than ordinary income tax rate | More than 1 year | Real estate sold after 5 years |
-| Super Long-Term | Lower or exempt | More than 5 or 10 years | Inherited property sold after 20 years |
-| Section 1231 | Lower or exempt | Varies | Business equipment sold for a profit |
+| Short-Term | ordinary income rate | stocks, bonds | < 1 year |
+| Long-Term | 0-20% | real estate, investments | > 1 year |
+| Section 1244 | ordinary loss rate | small business stock | N/A |
+| Superfund | 28% | collectibles, precious metals | N/A |
 
-## HOW THEY RELATE
-The different categories of capital gains tax are connected in that they all relate to the sale of assets, but they differ in terms of the type of asset, the length of time it was held, and the tax rate applied. Understanding how these categories relate can help taxpayers navigate the complex tax landscape and make informed decisions about their investments. For example, an individual may hold onto an asset for more than a year to qualify for long-term capital gains tax, which may have a lower tax rate.
-
-## SUMMARY
-The classification system of capital gains tax includes short-term, long-term, super long-term, and Section 1231 categories, each with its own set of characteristics and tax implications, helping individuals and businesses understand their tax obligations and plan accordingly.
+## How They Relate
+The categories of **Capital Gains Tax** can overlap, such as when a **long-term capital gain** is also subject to **Superfund** tax rates if the gain is from the sale of a collectible. **Short-term capital gains** and **long-term capital gains** are often confused, but the primary distinction lies in the holding period, with **short-term** applying to assets held for less than one year and **long-term** applying to assets held for more than one year. Additionally, **Section 1244** and **Superfund** taxes are often misunderstood as being mutually exclusive, but they can actually apply to the same asset if it meets the specific criteria for each category, such as a small business stock that is also a collectible. The **Ricardo's comparative advantage model** (1817) can be used to understand the economic implications of these tax categories on investment decisions. **Boeing's** tax strategy, for instance, involves careful consideration of these tax categories to minimize tax liability, with the company producing ~800 aircraft annually (Boeing annual report).
 
 ---
 

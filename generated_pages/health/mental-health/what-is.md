@@ -1,37 +1,37 @@
 ---
 title: "What Is Mental Health?"
-slug: mental-health
-description: "A clear, simple explanation of mental health - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-09
+slug: what-is-mental-health
+description: "A clear, simple explanation of What Is Mental Health? - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Is Mental Health?
 
-Mental health is the overall well-being of a person's emotional, psychological, and social state, which affects how they think, feel, and behave.
+## Definition
+Mental health is a state of well-being in which an individual realizes their own abilities, can cope with the normal stresses of life, can work productively, and is able to make a contribution to their community, as defined by the World Health Organization (WHO).
 
-Mental health is a complex and multifaceted concept that encompasses various aspects of a person's life. It is influenced by a combination of factors, including biological, environmental, and social elements. A person's mental health can affect their relationships, daily activities, and overall quality of life. Mental health is not just the absence of mental illness, but also the presence of positive mental well-being, which enables individuals to cope with life's challenges, build strong relationships, and make meaningful contributions to their communities.
+## How It Works
+Mental health is influenced by a complex interplay of biological, psychological, and social factors. The **biopsychosocial model**, developed by George Engel in 1977, provides a framework for understanding the relationships between these factors. According to this model, mental health is shaped by the interaction of biological factors, such as genetics and neurochemistry, psychological factors, such as thoughts and emotions, and social factors, such as relationships and environment. For example, the presence of a mental health disorder can affect an individual's ability to work productively, with the WHO estimating that depression and anxiety disorders cost the global economy approximately $1 trillion in lost productivity annually (WHO).
 
-Mental health can be affected by various factors, such as genetics, brain chemistry, and life experiences. For example, traumatic events, stress, and social isolation can all impact a person's mental health. On the other hand, a supportive social network, healthy lifestyle, and positive coping mechanisms can help promote good mental health. It is essential to recognize that mental health is just as important as physical health and that taking care of one's mental well-being is crucial for overall health and well-being.
+The **stress-diathesis model** also provides insight into the development of mental health disorders. This model suggests that individuals with a predisposition to a mental health disorder are more likely to develop the disorder when exposed to stressful life events. The model is supported by research on the impact of adverse childhood experiences, such as abuse or neglect, on the development of mental health disorders later in life. The Adverse Childhood Experiences (ACE) study, conducted by the Centers for Disease Control and Prevention (CDC), found that individuals who experienced four or more adverse childhood experiences were at increased risk of developing depression, anxiety, and other mental health disorders.
 
-Maintaining good mental health requires a holistic approach that incorporates self-care, social support, and professional help when needed. This can involve engaging in activities that bring joy and fulfillment, practicing stress-reducing techniques, and seeking help from mental health professionals. By prioritizing mental health, individuals can build resilience, improve their overall well-being, and lead happy and healthy lives.
+Mental health can also be influenced by social and environmental factors, such as socioeconomic status, education, and access to healthcare. The **social determinants of health** framework, developed by the WHO, highlights the importance of these factors in shaping mental health outcomes. For example, individuals with lower socioeconomic status may experience greater financial stress, which can contribute to the development of mental health disorders. The WHO estimates that approximately 30% of individuals with mental health disorders in low-income countries do not receive treatment due to lack of access to healthcare services.
 
-Key components of mental health include:
-* Emotional well-being, which refers to a person's ability to recognize and manage their emotions
-* Psychological well-being, which encompasses a person's thoughts, feelings, and behaviors
-* Social well-being, which involves a person's relationships and interactions with others
-* Resilience, which is the ability to cope with and bounce back from adversity
-* Self-awareness, which involves having a clear understanding of one's thoughts, feelings, and behaviors
-* Coping skills, which are the strategies and techniques used to manage stress and difficult emotions
+## Key Components
+- **Emotional regulation**: the ability to manage and regulate emotions, which is critical for maintaining mental health. When emotional regulation increases, individuals are better able to cope with stress and adversity, and when it decreases, they may be more likely to experience mood disorders.
+- **Cognitive functioning**: the ability to process and interpret information, which is essential for problem-solving and decision-making. When cognitive functioning increases, individuals are better able to adapt to changing circumstances, and when it decreases, they may experience cognitive impairment.
+- **Social support**: the presence of supportive relationships, which can provide emotional support and practical assistance. When social support increases, individuals are better able to cope with stress and adversity, and when it decreases, they may be more likely to experience feelings of loneliness and isolation.
+- **Self-esteem**: the evaluation of one's own worth and abilities, which can influence mental health outcomes. When self-esteem increases, individuals are more likely to experience confidence and self-efficacy, and when it decreases, they may experience self-doubt and low self-worth.
+- **Resilience**: the ability to adapt to and recover from adversity, which is critical for maintaining mental health. When resilience increases, individuals are better able to cope with stress and adversity, and when it decreases, they may be more likely to experience mental health disorders.
 
-Common misconceptions about mental health include:
-* The idea that mental illness is a sign of weakness, when in fact it is a common and treatable condition
-* The belief that people with mental illness are violent or unpredictable, when in fact the vast majority of people with mental illness are not violent
-* The notion that mental health is only relevant to people with mental illness, when in fact mental health is important for everyone
-* The assumption that mental health problems will go away on their own, when in fact they often require professional help and support
+## Common Misconceptions
+**Myth:** Mental health disorders are a sign of weakness — **Fact:** Mental health disorders are a result of a complex interplay of biological, psychological, and social factors, and individuals with mental health disorders are not weak, but rather, they are struggling with a serious health condition (WHO).
+**Myth:** Mental health disorders only affect individuals with a family history of mental health disorders — **Fact:** Mental health disorders can affect anyone, regardless of their family history, and are influenced by a range of factors, including socioeconomic status, education, and access to healthcare (CDC).
+**Myth:** Mental health disorders are not treatable — **Fact:** Mental health disorders are treatable, and a range of effective treatments are available, including medication, therapy, and lifestyle changes, such as regular exercise and healthy eating (National Institute of Mental Health).
+**Myth:** Mental health disorders are rare — **Fact:** Mental health disorders are common, with approximately 1 in 4 individuals experiencing a mental health disorder each year, and approximately 1 in 2 individuals experiencing a mental health disorder at some point in their lifetime (WHO).
 
-A real-world example of the importance of mental health is a student who is struggling to cope with the pressure of schoolwork and social expectations. This student may begin to experience anxiety, depression, or other mental health issues if they do not receive the support and resources they need. By recognizing the signs of mental health problems and seeking help, this student can learn healthy coping mechanisms, build a support network, and develop the resilience needed to thrive in school and beyond.
-
-In summary, mental health refers to the overall well-being of a person's emotional, psychological, and social state, and is influenced by a combination of biological, environmental, and social factors, requiring a holistic approach to maintain good mental health and overall well-being.
+## In Practice
+The **Mental Health Action Plan**, developed by the WHO, provides a framework for improving mental health outcomes globally. The plan emphasizes the importance of increasing access to mental health services, particularly in low-income countries, where mental health services are often limited. For example, in Rwanda, the government has implemented a mental health program that provides training for community health workers to provide mental health services, including counseling and medication management. The program has resulted in a significant increase in access to mental health services, with approximately 70% of individuals with mental health disorders receiving treatment (WHO). The program has also resulted in a significant reduction in the economic burden of mental health disorders, with the WHO estimating that the program has saved approximately $10 million in lost productivity annually (WHO).
 
 ---
 

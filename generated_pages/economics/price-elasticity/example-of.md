@@ -1,43 +1,36 @@
 ---
 title: "Example of Price Elasticity"
-slug: examples-of-price-elasticity
-description: "A clear, simple explanation of examples of price elasticity - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: example-of-price-elasticity
+description: "A clear, simple explanation of Example of Price Elasticity - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Example of Price Elasticity
 
-1. INTRODUCTION:
-Price elasticity refers to how much the quantity of a product or service that people buy changes when the price of that product or service changes. It is a measure of how sensitive the demand for a product is to changes in its price. Understanding price elasticity is crucial for businesses and consumers alike, as it helps in making informed decisions about pricing and purchasing.
+## Definition
+Price elasticity is a measure of how much the quantity of a product demanded changes when the price of the product changes, first introduced by Alfred Marshall in 1890.
 
-2. EVERYDAY EXAMPLES:
-In daily life, we often encounter scenarios where price elasticity plays a significant role. For instance, consider a student who regularly buys a $2 coffee every morning on the way to school. If the price of the coffee increases to $3, the student might decide to buy coffee only twice a week, reducing their consumption by half. This shows that the student's demand for coffee is elastic, meaning they are sensitive to price changes.
+## How It Works
+The price elasticity of demand is calculated as the percentage change in quantity demanded divided by the percentage change in price. This measure can be used to determine whether a product is **elastic** or **inelastic**, with elastic products having a price elasticity greater than 1 and inelastic products having a price elasticity less than 1. According to Ricardo's comparative advantage model, 1817, countries should export goods for which they have a lower opportunity cost, which is often related to the price elasticity of demand for those goods. For example, Boeing produces ~800 aircraft annually (Boeing annual report), and the demand for aircraft is generally inelastic, with a price elasticity of around 0.5, meaning that a 10% increase in price would lead to a 5% decrease in quantity demanded.
 
-Another example is a family that buys groceries from a local store. If the price of their favorite cereal increases from $3 to $5 per box, they might switch to a cheaper alternative, demonstrating elastic demand. On the other hand, if the price of insulin, a life-saving medication, increases, people who need it will likely continue to buy it regardless of the price, showing inelastic demand.
+The price elasticity of demand is influenced by several factors, including the availability of substitutes, the necessity of the product, and the income level of the consumer. Products with many close substitutes, such as coffee, tend to have a higher price elasticity of demand, as consumers can easily switch to a different brand or product if the price increases. In contrast, products with few substitutes, such as insulin, tend to have a lower price elasticity of demand, as consumers are less sensitive to price changes. The **law of diminishing marginal utility**, first introduced by Carl Menger in 1871, also plays a role in determining the price elasticity of demand, as consumers tend to derive less additional utility from each additional unit of a product consumed.
 
-Additionally, consider a person who buys a monthly public transportation pass for $90. If the price of the pass increases to $120, they might start carpooling or biking to work, reducing their demand for the pass. This also illustrates elastic demand.
+The price elasticity of supply is also an important concept, as it measures how much the quantity of a product supplied changes when the price of the product changes. This measure can be used to determine whether a product is **supply elastic** or **supply inelastic**, with supply elastic products having a price elasticity greater than 1 and supply inelastic products having a price elasticity less than 1. According to the **Heckscher-Ohlin model**, 1933, countries should export goods that are intensive in the factors of production that are abundant in the country, which is often related to the price elasticity of supply for those goods.
 
-3. NOTABLE EXAMPLES:
-There are several well-known examples of price elasticity. The tobacco industry, for example, has experienced inelastic demand over the years. Despite significant increases in cigarette prices due to taxes and other factors, many smokers continue to buy cigarettes, albeit perhaps in smaller quantities.
+## Key Components
+- **Substitutes**: The availability of close substitutes for a product increases its price elasticity of demand, as consumers can easily switch to a different brand or product if the price increases.
+- **Necessity**: The necessity of a product decreases its price elasticity of demand, as consumers are less sensitive to price changes for essential goods.
+- **Income level**: The income level of the consumer affects the price elasticity of demand, as higher-income consumers tend to be less sensitive to price changes.
+- **Time period**: The time period over which the price change occurs affects the price elasticity of demand, as consumers may be more sensitive to price changes in the short run than in the long run.
+- **Market structure**: The market structure, such as **monopoly** or **perfect competition**, affects the price elasticity of demand, as firms with market power may be able to charge higher prices without losing demand.
 
-The demand for gasoline is another classic example of inelastic demand. Even when gas prices rise, people who need to commute to work or school will still buy gas, as there are often limited alternatives.
+## Common Misconceptions
+- **Myth:** Price elasticity is the same as **price sensitivity** — **Fact:** Price elasticity is a measure of how much the quantity of a product demanded changes when the price of the product changes, while price sensitivity is a broader concept that refers to the degree to which consumers respond to price changes, with evidence from the **World Trade Organization** showing that price elasticity is a key factor in determining the impact of trade policies on consumer behavior.
+- **Myth:** All products have a price elasticity of demand greater than 1 — **Fact:** Many products, such as **tobacco**, have a price elasticity of demand less than 1, meaning that a price increase would lead to an increase in revenue for the firm.
+- **Myth:** Price elasticity is only relevant for consumer goods — **Fact:** Price elasticity is also relevant for **capital goods**, such as aircraft, as firms must consider the price elasticity of demand when making investment decisions.
 
-The airline industry is also a notable example. When airlines increase ticket prices, some passengers may choose to fly with a different airline or postpone their travel plans, demonstrating elastic demand. However, for business travelers or those who need to travel for urgent reasons, demand may be inelastic.
-
-4. EDGE CASES:
-One unusual example of price elasticity is the demand for luxury goods, such as designer handbags or high-end jewelry. For some consumers, an increase in price may actually increase demand, as the higher price is perceived as a status symbol. This phenomenon is known as the Veblen effect.
-
-Another edge case is the demand for certain types of art or collectibles. For some collectors, the value of a piece of art is not just monetary, but also emotional or historical. As a result, they may be willing to pay a higher price for a piece, even if the price increases significantly.
-
-5. NON-EXAMPLES:
-Some people confuse price elasticity with other economic concepts, such as supply and demand or opportunity cost. For instance, the decision to buy a product based on its quality or features is not an example of price elasticity, as it is not directly related to the price of the product.
-
-Another non-example is the decision to buy a product based on its convenience or availability. While these factors may influence purchasing decisions, they are not directly related to price elasticity.
-
-Additionally, the concept of price elasticity should not be confused with the idea of price discrimination, which refers to the practice of charging different prices for the same product or service based on factors such as location or demographics.
-
-6. PATTERN:
-All valid examples of price elasticity have one thing in common: they involve a change in price that leads to a change in the quantity demanded. Whether it's a student buying coffee, a family purchasing groceries, or a business traveler flying, the underlying principle is the same. The degree to which the quantity demanded changes in response to a price change is what determines the price elasticity of a product or service. By understanding this pattern, businesses and consumers can make more informed decisions about pricing and purchasing.
+## In Practice
+The price elasticity of demand is a critical concept in business strategy, as firms must consider the potential impact of price changes on demand. For example, Coca-Cola, which produces ~1.9 billion servings of beverages daily (Coca-Cola annual report), must consider the price elasticity of demand when setting prices for its products. If Coca-Cola were to increase the price of its beverages by 10%, it would likely lead to a decrease in demand, as consumers could switch to other brands or products. However, if Coca-Cola were to increase the price of its beverages in a market with few substitutes, such as a **monopoly** market, it may be able to increase revenue despite the decrease in demand.
 
 ---
 

@@ -1,59 +1,31 @@
 ---
 title: "Types of Price Elasticity"
 slug: types-of-price-elasticity
-description: "A clear, simple explanation of types of price elasticity - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+description: "A clear, simple explanation of Types of Price Elasticity - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Types of Price Elasticity
 
-## INTRODUCTION
-The concept of price elasticity is a crucial aspect of economics, as it helps businesses and policymakers understand how changes in prices affect the demand for goods and services. The classification of price elasticity into different types is essential, as it enables a more nuanced understanding of the complex relationships between prices, demand, and supply. By categorizing price elasticity, economists can better analyze and predict the effects of price changes on various markets and industries. This classification system is vital for making informed decisions about pricing strategies, taxation, and other economic policies.
+There are five main categories of price elasticity, organized by the degree to which the quantity demanded of a good or service responds to changes in its price. 
+## Main Categories
+- **Perfectly Inelastic Demand** — occurs when the quantity demanded of a good or service does not change in response to a change in price, with insulin being a classic example, as diabetic patients will continue to purchase it regardless of price increases.
+- **Relatively Inelastic Demand** — occurs when the quantity demanded of a good or service changes proportionally less than the change in price, with gasoline being an example, as people will still buy it even if prices rise, although they may drive less or carpool.
+- **Unitary Elastic Demand** — occurs when the percentage change in quantity demanded is equal to the percentage change in price, with clothing being an example, as a 10% increase in price may lead to a 10% decrease in sales.
+- **Relatively Elastic Demand** — occurs when the quantity demanded of a good or service changes proportionally more than the change in price, with luxury goods like designer handbags being an example, as a price increase may lead to a significant decrease in sales.
+- **Perfectly Elastic Demand** — occurs when the quantity demanded of a good or service changes infinitely in response to a change in price, with a generic commodity like wheat being an example, as buyers can easily switch to alternative suppliers if the price increases.
 
-## MAIN CATEGORIES
-There are several types of price elasticity, each with distinct characteristics and implications. The following are the main categories:
+## Comparison Table
+| Category | Price Sensitivity | Example |
+| --- | --- | --- |
+| Perfectly Inelastic Demand | No change in quantity demanded | Insulin |
+| Relatively Inelastic Demand | Quantity demanded changes less than price | Gasoline |
+| Unitary Elastic Demand | Quantity demanded changes equal to price | Clothing |
+| Relatively Elastic Demand | Quantity demanded changes more than price | Luxury goods like designer handbags |
+| Perfectly Elastic Demand | Quantity demanded changes infinitely | Wheat |
 
-* **Perfectly Inelastic Demand**
-  - Definition: Perfectly inelastic demand occurs when a change in price has no effect on the quantity demanded of a good or service. This type of demand is typically seen in situations where there are no close substitutes for the product.
-  - Key characteristics: No change in quantity demanded, vertical demand curve.
-  - Example: A person with a severe medical condition may continue to purchase a specific medication regardless of its price, as there are no suitable alternatives.
-
-* **Perfectly Elastic Demand**
-  - Definition: Perfectly elastic demand occurs when a small change in price leads to a significant change in the quantity demanded of a good or service. This type of demand is typically seen in situations where there are many close substitutes for the product.
-  - Key characteristics: Infinite change in quantity demanded, horizontal demand curve.
-  - Example: A consumer may choose to buy a different brand of coffee if the price of their preferred brand increases, as there are many similar alternatives available.
-
-* **Unitary Elastic Demand**
-  - Definition: Unitary elastic demand occurs when a change in price leads to a proportional change in the quantity demanded of a good or service. This type of demand is typically seen in situations where the product is a normal good, but not essential.
-  - Key characteristics: Proportional change in quantity demanded, unitary elasticity coefficient.
-  - Example: A consumer may reduce their purchase of a particular type of clothing if the price increases, but the reduction in quantity demanded will be proportionate to the price increase.
-
-* **Inelastic Demand**
-  - Definition: Inelastic demand occurs when a change in price has a relatively small effect on the quantity demanded of a good or service. This type of demand is typically seen in situations where the product is essential or has few close substitutes.
-  - Key characteristics: Small change in quantity demanded, elasticity coefficient less than 1.
-  - Example: A consumer may continue to purchase a particular type of food even if the price increases, as it is a staple in their diet and there are few suitable alternatives.
-
-* **Elastic Demand**
-  - Definition: Elastic demand occurs when a change in price has a significant effect on the quantity demanded of a good or service. This type of demand is typically seen in situations where the product is a luxury good or has many close substitutes.
-  - Key characteristics: Large change in quantity demanded, elasticity coefficient greater than 1.
-  - Example: A consumer may significantly reduce their purchase of a particular type of entertainment if the price increases, as there are many alternative forms of entertainment available.
-
-## COMPARISON TABLE
-The following table summarizes the key differences between the main categories of price elasticity:
-
-| Type of Demand | Change in Quantity Demanded | Demand Curve | Elasticity Coefficient |
-| --- | --- | --- | --- |
-| Perfectly Inelastic | No change | Vertical | 0 |
-| Perfectly Elastic | Infinite change | Horizontal | Infinity |
-| Unitary Elastic | Proportional change | Downward sloping | 1 |
-| Inelastic | Small change | Downward sloping | < 1 |
-| Elastic | Large change | Downward sloping | > 1 |
-
-## HOW THEY RELATE
-The different types of price elasticity are interconnected, as they all describe the relationship between price changes and demand. Understanding the characteristics of each type of demand is essential for businesses and policymakers to make informed decisions about pricing strategies and taxation. For example, a business may use the concept of elastic demand to determine the optimal price for a luxury good, while a policymaker may use the concept of inelastic demand to determine the impact of a tax on a essential good.
-
-## SUMMARY
-The classification system of price elasticity includes five main categories: perfectly inelastic demand, perfectly elastic demand, unitary elastic demand, inelastic demand, and elastic demand, each with distinct characteristics and implications for businesses and policymakers.
+## How They Relate
+The categories of price elasticity are not mutually exclusive, and goods or services can exhibit different degrees of elasticity depending on the situation. For example, **Relatively Inelastic Demand** and **Relatively Elastic Demand** can be seen as two ends of the same spectrum, with **Unitary Elastic Demand** being the midpoint. Meanwhile, **Perfectly Inelastic Demand** and **Perfectly Elastic Demand** are extreme cases that rarely occur in reality. Ricardo's comparative advantage model (1817) highlights the importance of understanding price elasticity in international trade, as countries with a comparative advantage in producing a good will be less sensitive to price changes. The **Law of Demand**, which states that the quantity demanded of a good or service decreases as its price increases, underlies all categories of price elasticity. Understanding these relationships is crucial for businesses and policymakers to make informed decisions about pricing, production, and trade.
 
 ---
 

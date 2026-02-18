@@ -1,45 +1,38 @@
 ---
 title: "Example of Amortization Schedule"
-slug: examples-of-amortization-schedule
-description: "A clear, simple explanation of examples of amortization schedule - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: example-of-amortization-schedule
+description: "A clear, simple explanation of Example of Amortization Schedule - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Example of Amortization Schedule
 
-1. INTRODUCTION:
-An amortization schedule is a table that shows how much of each payment on a loan goes towards interest and how much goes towards the principal. It helps borrowers understand how their loan payments are structured and how long it will take to pay off the loan. The schedule typically includes the loan amount, interest rate, payment amount, and the number of payments.
+## Definition
+An **amortization schedule** is a table that outlines the periodic payments of a loan, showing the amount of interest and principal paid in each installment, developed from the concept of amortized loans by **Francis Bacon** in the 17th century.
 
-2. EVERYDAY EXAMPLES:
-Many people use amortization schedules in their daily lives without realizing it. For instance, when buying a house, a homeowner may take out a $200,000 mortgage with a 4% interest rate and a 30-year repayment term. Their monthly payment would be approximately $955, with the first payment consisting of $667 in interest and $288 in principal. As the years go by, the amount of interest paid decreases, and the amount of principal paid increases.
+## How It Works
+An amortization schedule works by calculating the total amount paid over the life of the loan, taking into account the loan amount, interest rate, and loan term. The **monthly payment** is calculated using the formula M = P[r(1+r)^n]/[(1+r)^n – 1], where M is the monthly payment, P is the principal loan amount, r is the monthly interest rate, and n is the number of payments. This formula is based on the **time value of money** concept, which states that a dollar today is worth more than a dollar in the future. For example, a $200,000 mortgage with an interest rate of 4% and a 30-year loan term would have a monthly payment of approximately $955.
 
-Another example is a car loan. Suppose someone buys a $30,000 car with a 5% interest rate and a 5-year repayment term. Their monthly payment would be approximately $566, with the first payment consisting of $125 in interest and $441 in principal. 
+The amortization schedule then breaks down each monthly payment into its **interest** and **principal** components. In the early years of the loan, the majority of the monthly payment goes towards paying off the interest, while in the later years, the majority goes towards paying off the principal. This is because the **interest rate** is applied to the outstanding loan balance, which decreases over time as the principal is paid off. For instance, in the first year of the $200,000 mortgage, approximately $7,863 of the $11,460 paid goes towards interest, while in the 30th year, approximately $955 of the $955 paid goes towards principal.
 
-Additionally, credit card companies often use amortization schedules to calculate the minimum payment due each month. For example, if someone has a $2,000 credit card balance with an 18% interest rate, their minimum payment might be $50 per month. The amortization schedule would show how much of each payment goes towards interest and how much goes towards the principal.
+The amortization schedule also takes into account the **compounding frequency** of the interest rate, which can be monthly, quarterly, or annually. The more frequently the interest is compounded, the more interest will be paid over the life of the loan. For example, if the interest rate on the $200,000 mortgage is compounded monthly, the total interest paid over the 30-year loan term would be approximately $143,739, while if it were compounded annually, the total interest paid would be approximately $134,019.
 
-A student loan is another common example. A student may borrow $10,000 to pay for college with a 6% interest rate and a 10-year repayment term. Their monthly payment would be approximately $111, with the first payment consisting of $50 in interest and $61 in principal.
+## Key Components
+- **Loan term**: The length of time the borrower has to repay the loan, which affects the monthly payment and total interest paid. A longer loan term results in lower monthly payments, but more interest paid over the life of the loan.
+- **Interest rate**: The percentage of the outstanding loan balance that is paid as interest each year, which affects the monthly payment and total interest paid. A higher interest rate results in higher monthly payments and more interest paid over the life of the loan.
+- **Principal**: The initial amount borrowed, which decreases over time as the borrower makes monthly payments. As the principal decreases, the amount of interest paid also decreases.
+- **Monthly payment**: The amount paid each month to cover the interest and principal, which is calculated using the formula M = P[r(1+r)^n]/[(1+r)^n – 1].
+- **Total interest paid**: The total amount of interest paid over the life of the loan, which is affected by the loan term, interest rate, and compounding frequency.
+- **Payoff date**: The date on which the loan will be fully paid off, which is affected by the loan term and monthly payment.
 
-3. NOTABLE EXAMPLES:
-Some notable examples of amortization schedules can be seen in large-scale projects. For instance, a company may take out a $10 million loan to build a new factory with a 7% interest rate and a 20-year repayment term. Their monthly payment would be approximately $77,000, with the first payment consisting of $58,333 in interest and $18,667 in principal.
+## Common Misconceptions
+- **Myth:** Amortization schedules are only used for mortgages. **Fact:** Amortization schedules can be used for any type of loan, including car loans, student loans, and personal loans.
+- **Myth:** The interest rate on a loan is always fixed. **Fact:** Some loans, such as adjustable-rate mortgages, have interest rates that can change over time, affecting the monthly payment and total interest paid.
+- **Myth:** Making extra payments on a loan will always save the borrower money. **Fact:** While making extra payments can save the borrower money in interest, it may not always be the best use of their money, as they may be able to earn a higher return by investing the money elsewhere, such as in a **401(k)** or **IRA**.
+- **Myth:** Amortization schedules are only used for loans with fixed interest rates. **Fact:** Amortization schedules can be used for loans with variable interest rates, such as **ARMs**, which can affect the monthly payment and total interest paid.
 
-Another example is a government bond. The US government may issue a $100 million bond with a 5% interest rate and a 10-year repayment term. The bondholders would receive approximately $5 million in interest per year, and the principal would be paid back in full at the end of the 10-year term.
-
-A well-known example is the mortgage on the Empire State Building. When the building was first constructed, the owners took out a $27 million mortgage with a 5% interest rate and a 25-year repayment term. The monthly payment would have been approximately $143,000, with the first payment consisting of $112,500 in interest and $30,500 in principal.
-
-4. EDGE CASES:
-Some edge cases of amortization schedules can be seen in unusual loan scenarios. For example, a farmer may take out a $500,000 loan to buy a farm with a 6% interest rate and a 30-year repayment term, but with a balloon payment of $200,000 due after 10 years. The amortization schedule would show how much of each payment goes towards interest and how much goes towards the principal, as well as the large balloon payment due after 10 years.
-
-Another example is a loan with a variable interest rate. A borrower may take out a $20,000 loan with a 4% interest rate that can change over time. The amortization schedule would show how the payments change as the interest rate changes.
-
-5. NON-EXAMPLES:
-Some things that people often confuse for amortization schedules are not actually the same thing. For example, a simple interest calculation is not an amortization schedule. If someone borrows $1,000 at a 5% interest rate, the interest owed would be $50 per year, but this does not take into account the repayment of the principal.
-
-Another example is a payment plan that does not involve interest. If someone buys a $1,000 item on a payment plan with 12 monthly payments of $83, this is not an amortization schedule because there is no interest involved.
-
-A third example is a budgeting plan. If someone creates a plan to pay off their debt by allocating a certain amount of money each month, this is not an amortization schedule because it does not take into account the interest rate or the principal balance.
-
-6. PATTERN:
-All valid examples of amortization schedules have certain things in common. They all involve a loan or debt with a principal balance, an interest rate, and a repayment term. They all show how much of each payment goes towards interest and how much goes towards the principal. They all take into account the time value of money and the fact that the interest rate can change over time. Whether it's a small personal loan or a large business loan, an amortization schedule is an essential tool for understanding how the loan works and how to pay it off.
+## In Practice
+For example, **Wells Fargo** offers a 30-year mortgage with an interest rate of 4% and a loan amount of $250,000. Using an amortization schedule, the borrower can see that the monthly payment would be approximately $1,194, and the total interest paid over the life of the loan would be approximately $173,757. If the borrower were to make an extra payment of $500 per month, the loan would be paid off 5 years early, and the total interest paid would be reduced to approximately $134,919. This is based on the **amortization formula**, which is used to calculate the monthly payment and total interest paid. The borrower can use this information to make informed decisions about their loan and **financial planning**.
 
 ---
 

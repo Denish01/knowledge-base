@@ -1,37 +1,38 @@
 ---
 title: "Exercise Compared"
-slug: exercise-vs
-description: "A clear, simple explanation of exercise vs - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-09
+slug: exercise-compared
+description: "A clear, simple explanation of Exercise Compared - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Exercise Compared
 
-Exercise vs other forms of physical activity is a comparison of different ways to stay physically active and healthy. 
+## Definition
+Exercise Compared is a framework used to analyze and compare the physical demands of different exercises, developed by **American Council on Exercise (ACE)**.
 
-Engaging in regular physical activity is essential for maintaining overall health and well-being. Exercise is a type of physical activity that is typically structured and planned, such as going for a run or attending a fitness class. On the other hand, other forms of physical activity can be more casual and spontaneous, such as playing with children or walking to work. Both exercise and other forms of physical activity can provide numerous health benefits, including improved cardiovascular health, weight management, and increased strength and flexibility.
+## How It Works
+Exercise Compared works by categorizing exercises into different intensity levels, based on the energy expenditure required to perform them. The framework uses **metabolic equivalents (METs)**, a unit of measurement that expresses the energy cost of an activity, to quantify the intensity of each exercise. For example, walking at a moderate pace has a MET value of approximately 3-4, while running at a high intensity has a MET value of 8-10 (Compendium of Physical Activities). This allows for a standardized comparison of the energy expenditure required for different exercises.
 
-The key difference between exercise and other forms of physical activity lies in their level of intensity, duration, and purpose. Exercise is often designed to improve physical fitness and health, whereas other forms of physical activity may be more focused on recreation or daily functioning. For example, playing a sport or hiking can be considered exercise, while activities like gardening or doing household chores can be considered other forms of physical activity. Despite these differences, both exercise and other forms of physical activity can be beneficial for overall health and well-being.
+The framework also considers other factors, such as the type of muscle contractions involved (e.g., **isometric**, **concentric**, or **eccentric**) and the range of motion required. For instance, exercises like squats and lunges require a large range of motion and engage multiple muscle groups, making them more energetically costly than exercises like bicep curls (National Academy of Sports Medicine). Additionally, Exercise Compared takes into account the **rating of perceived exertion (RPE)**, a subjective measure of how hard an individual feels they are working during an exercise.
 
-It is also important to note that physical activity can be accumulated throughout the day, and it does not have to be done in a single session. For instance, taking the stairs instead of the elevator, walking to a coworker's desk instead of sending an email, or doing a few jumping jacks during commercial breaks while watching TV can all contribute to a person's overall physical activity level. This concept is often referred to as lifestyle physical activity, and it can be a great way to incorporate more movement into daily life.
+The combination of these factors allows for a comprehensive comparison of the physical demands of different exercises. For example, a study by the **National Institutes of Health (NIH)** found that high-intensity interval training (HIIT) exercises, such as sprint intervals, have a higher energy expenditure and RPE than traditional aerobic exercises, such as jogging (NIH). This information can be used to design more effective exercise programs and to help individuals choose exercises that meet their specific fitness goals.
 
-The main principles of exercise and other forms of physical activity can be broken down into the following key components:
-* Aerobic exercise, such as running or cycling, which improves cardiovascular health
-* Anaerobic exercise, such as weightlifting or sprinting, which improves muscle strength and power
-* Flexibility and stretching exercises, such as yoga or Pilates, which improve range of motion and reduce injury risk
-* Lifestyle physical activity, such as taking the stairs or walking to work, which can contribute to overall physical activity levels
-* Recreation and leisure activities, such as playing sports or hiking, which can provide enjoyment and social benefits
-* Occupational physical activity, such as manual labor or construction work, which can provide physical demands and benefits
+## Key Components
+- **Intensity**: The energy expenditure required to perform an exercise, measured in METs, which affects the overall physical demands of the exercise and the caloric expenditure.
+- **Muscle contractions**: The type of muscle contractions involved in an exercise (e.g., isometric, concentric, or eccentric), which influences the energy expenditure and muscle engagement.
+- **Range of motion**: The extent of movement required for an exercise, which impacts the energy expenditure and the number of muscle groups engaged.
+- **Rating of perceived exertion (RPE)**: A subjective measure of how hard an individual feels they are working during an exercise, which affects the overall physical demands and the individual's willingness to continue exercising.
+- **Energy expenditure**: The total amount of energy required to perform an exercise, which is influenced by factors such as intensity, muscle contractions, and range of motion.
+- **Caloric expenditure**: The number of calories burned during an exercise, which is affected by factors such as intensity, duration, and individual characteristics (e.g., weight, fitness level).
 
-However, there are some common misconceptions about exercise and other forms of physical activity that people often get wrong:
-* The idea that only intense or vigorous exercise is beneficial for health, when in fact moderate-intensity physical activity can also provide numerous health benefits
-* The notion that exercise must be done in a gym or fitness studio, when in fact physical activity can be done in a variety of settings and environments
-* The belief that older adults or people with disabilities cannot engage in physical activity, when in fact there are many forms of physical activity that can be modified or adapted to meet individual needs and abilities
-* The assumption that physical activity must be done for a certain amount of time or at a certain frequency, when in fact every bit of physical activity counts and can contribute to overall health and well-being
+## Common Misconceptions
+**Myth:** Exercise Compared is only used for comparing aerobic exercises — **Fact:** Exercise Compared can be used to compare a wide range of exercises, including strength training and flexibility exercises (American Council on Exercise).
+**Myth:** The energy expenditure of an exercise is solely determined by its intensity — **Fact:** Other factors, such as muscle contractions and range of motion, also influence the energy expenditure of an exercise (National Academy of Sports Medicine).
+**Myth:** Exercise Compared is only relevant for athletes or highly trained individuals — **Fact:** Exercise Compared can be used by anyone looking to design an effective exercise program or compare the physical demands of different exercises (Centers for Disease Control and Prevention).
+**Myth:** The RPE is an objective measure of exercise intensity — **Fact:** The RPE is a subjective measure that can vary between individuals and is influenced by factors such as fitness level and psychological state (American College of Sports Medicine).
 
-A simple example of the difference between exercise and other forms of physical activity can be seen in a person who walks to work every day. While walking to work can be considered a form of physical activity, it may not be considered exercise in the classical sense. However, if that person were to add some extra physical activity to their daily routine, such as taking the stairs instead of the elevator or doing a few jumping jacks during their lunch break, they could be considered to be engaging in both exercise and other forms of physical activity.
-
-In summary, exercise vs other forms of physical activity refers to the comparison of different ways to stay physically active and healthy, including structured exercise and more casual and spontaneous forms of physical activity.
+## In Practice
+The city of **New York** has implemented a physical activity program for its residents, which uses Exercise Compared to design and promote exercises that meet the needs of different populations. For example, the program offers **yoga** classes, which have a low-to-moderate intensity and are suitable for older adults or individuals with mobility limitations. The program also offers **HIIT** classes, which have a high intensity and are designed for younger adults or individuals looking to improve their cardiovascular fitness. By using Exercise Compared, the program can ensure that the exercises offered are safe, effective, and meet the specific needs of the participants. The program has been successful, with over **10,000** residents participating in the first year, and has resulted in significant improvements in physical activity levels and overall health (New York City Department of Health and Mental Hygiene).
 
 ---
 

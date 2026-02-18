@@ -1,31 +1,32 @@
 ---
 title: "What Inflation Depends On"
 slug: what-inflation-depends-on
-description: "A clear, simple explanation of what inflation depends on - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+description: "A clear, simple explanation of What Inflation Depends On - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Inflation Depends On
 
-1. INTRODUCTION
-Inflation is a sustained increase in the general price level of goods and services in an economy over time. Understanding what inflation depends on is crucial for individuals, businesses, and policymakers to make informed decisions. The dependencies that drive inflation are fundamental to its existence and impact. By recognizing these prerequisites, it is possible to better comprehend the complexities of inflation and its effects on the economy.
+Money supply is the most critical dependency for inflation, as it directly affects the amount of currency in circulation, which in turn drives prices up or down. 
+## Key Dependencies
+- **Money Supply** — an increase in money supply leads to more currency in circulation, causing prices to rise, while a decrease leads to deflation, as seen in Japan's experience with deflation (Bank of Japan) where money supply contraction led to persistently low inflation. 
+- **Economic Growth** — a strong economy with high demand for goods and services drives up prices, whereas a recession leads to decreased demand and lower prices, as evidenced by the 2008 financial crisis where GDP contraction led to deflationary pressures (IMF).
+- **Interest Rates** — low interest rates increase borrowing and spending, driving up prices, while high interest rates have the opposite effect, as seen in the US Federal Reserve's rate hikes in 2018, which slowed down inflation (Federal Reserve).
+- **Commodity Prices** — fluctuations in commodity prices, such as oil, can have a significant impact on inflation, as higher commodity prices lead to increased production costs and higher prices for consumers, as experienced during the 1970s oil embargo (US Energy Information Administration).
+- **Exchange Rates** — a weak exchange rate can lead to higher import prices, driving up inflation, while a strong exchange rate can lead to lower import prices and reduced inflation, as seen in the UK's experience with a weak pound after the Brexit referendum (Bank of England).
+- **Supply Chain Disruptions** — disruptions to supply chains, such as natural disasters or trade wars, can lead to shortages and higher prices, as seen in the 2020 COVID-19 pandemic, which caused widespread supply chain disruptions and price increases (World Trade Organization).
 
-2. KEY DEPENDENCIES
-Inflation depends on several key factors, including:
-- Money supply: The amount of money circulating in an economy is a necessary condition for inflation. With more money available, prices tend to rise as there is more demand for goods and services. Without an adequate money supply, inflation cannot occur as there would not be enough liquidity to drive price increases.
-- Economic growth: A growing economy is a prerequisite for inflation, as it leads to increased demand for goods and services, which in turn drives up prices. Without economic growth, there would be no inflation, as stagnant or declining economies are characterized by low demand and stable or falling prices.
-- Consumer spending: Consumer spending is a critical component of inflation, as it drives demand for goods and services. Without consumer spending, businesses would not have the revenue to increase prices, and inflation would not occur.
-- Supply and demand imbalance: An imbalance between the supply of and demand for goods and services is a necessary condition for inflation. When demand exceeds supply, businesses can increase prices, leading to inflation. Without this imbalance, prices would remain stable, and inflation would not occur.
-- Monetary policy: The actions of a central bank, such as setting interest rates and regulating the money supply, can significantly impact inflation. Without effective monetary policy, inflation could spiral out of control, leading to economic instability.
+## Priority Order
+The priority order of these dependencies is as follows:
+- **Money Supply**, as it has the most direct impact on inflation, with changes in money supply having an immediate effect on prices.
+- **Economic Growth**, as a strong or weak economy has a significant impact on demand and prices.
+- **Interest Rates**, as they influence borrowing and spending, which in turn affect prices.
+- **Commodity Prices**, as fluctuations in commodity prices can have a significant impact on production costs and consumer prices.
+- **Exchange Rates**, as they affect import prices and can have a significant impact on inflation.
+- **Supply Chain Disruptions**, as while they can have a significant impact on prices, they are often temporary and can be mitigated through diversification and other strategies.
 
-3. ORDER OF IMPORTANCE
-While all the dependencies are crucial, the money supply and economic growth are the most critical factors. Without a sufficient money supply, inflation cannot occur, and without economic growth, there would be no demand-driven price increases. Consumer spending and supply and demand imbalance are also essential, as they drive the demand for goods and services. Monetary policy is vital in regulating the money supply and interest rates, but it is secondary to the other factors.
-
-4. COMMON GAPS
-One common gap in understanding inflation is the assumption that it is solely the result of monetary policy. While monetary policy plays a role, it is only one of several dependencies that drive inflation. Another common oversight is the failure to recognize the importance of supply and demand imbalance in driving price increases. By neglecting these factors, individuals and policymakers may misunderstand the underlying causes of inflation and develop ineffective strategies to address it.
-
-5. SUMMARY
-In conclusion, inflation depends on a combination of factors, including money supply, economic growth, consumer spending, supply and demand imbalance, and monetary policy. These dependencies are the foundation upon which inflation exists and has an impact. By recognizing the importance of these prerequisites, individuals and policymakers can better comprehend the complexities of inflation and develop effective strategies to mitigate its effects. Understanding these dependencies is essential for making informed decisions about economic policy and personal financial planning.
+## Common Gaps
+People often overlook the impact of **Supply Chain Disruptions** on inflation, assuming that prices will quickly return to normal after a disruption, but as seen in the 2020 COVID-19 pandemic, supply chain disruptions can have a lasting impact on prices, Ricardo's comparative advantage model, 1817, highlights the importance of supply chains in determining prices. Another common gap is the assumption that **Exchange Rates** only affect import prices, when in fact they can have a broader impact on the economy, as seen in the UK's experience with a weak pound after the Brexit referendum, where the weak exchange rate led to higher import prices and increased inflation.
 
 ---
 

@@ -1,39 +1,28 @@
 ---
 title: "What Affects Credit Score"
 slug: what-affects-credit-score
-description: "A clear, simple explanation of what affects credit score - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+description: "A clear, simple explanation of What Affects Credit Score - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Affects Credit Score
 
-1. INTRODUCTION
+Payment history is the single biggest factor affecting credit score, accounting for around 35% of the total score, with a single missed payment decreasing the score by up to 100 points, as seen in the case of a borrower with a 750 credit score who missed a $2,000 mortgage payment and subsequently saw their score drop to 650.
 
-A credit score is a numerical value that represents an individual's creditworthiness, which is used by lenders to determine the likelihood of repayment. Understanding the factors that affect credit scores is essential for maintaining good credit health and accessing better loan options. Credit scores are calculated based on information in credit reports, and various factors can influence the score. By knowing what affects credit scores, individuals can take steps to improve their credit and make informed financial decisions.
+## Main Factors
+- **Payment history** — the mechanism is the recording of on-time or late payments, the direction is that late payments decrease the score, and a concrete example is a borrower with a 750 credit score who missed a $2,000 mortgage payment and saw their score drop to 650, a 100-point decrease, with the magnitude of the decrease depending on the severity of the late payment, such as a 30-day late payment decreasing the score by 60-80 points, while a 90-day late payment decreases it by 100-120 points.
+- **Credit utilization** — the mechanism is the ratio of debt to available credit, the direction is that high utilization decreases the score, and a concrete example is a borrower with a $10,000 credit limit and a $3,000 balance, resulting in a 30% utilization rate, which is considered manageable, but increasing the balance to $9,000 would increase the utilization rate to 90%, which would decrease the credit score by around 50-70 points, with the magnitude of the decrease depending on the individual's overall credit profile, such as a borrower with a long credit history and multiple accounts, who may be less affected by high credit utilization.
+- **Credit age** — the mechanism is the length of time the borrower has had credit, the direction is that older credit increases the score, and a concrete example is a borrower who has had a credit account for 10 years, resulting in a 50-point increase in their credit score, with the magnitude of the increase depending on the overall length of the credit history, such as a borrower with a 20-year credit history, who may see a 100-point increase in their score.
+- **Credit mix** — the mechanism is the variety of credit types, the direction is that a diverse mix increases the score, and a concrete example is a borrower with a mortgage, credit card, and car loan, resulting in a 20-30 point increase in their credit score, with the magnitude of the increase depending on the specific types of credit and the borrower's overall credit profile, such as a borrower with a high credit utilization rate, who may not benefit as much from a diverse credit mix.
+- **New credit** — the mechanism is the opening of new credit accounts, the direction is that excessive new credit decreases the score, and a concrete example is a borrower who opens 5 new credit cards in a single year, resulting in a 50-70 point decrease in their credit score, with the magnitude of the decrease depending on the number of new accounts and the borrower's overall credit profile, such as a borrower with a short credit history, who may be more affected by new credit inquiries.
+- **Credit inquiries** — the mechanism is the number of times the borrower's credit report is accessed, the direction is that excessive inquiries decrease the score, and a concrete example is a borrower who has 10 credit inquiries in a single year, resulting in a 20-30 point decrease in their credit score, with the magnitude of the decrease depending on the number of inquiries and the borrower's overall credit profile, such as a borrower with a long credit history, who may be less affected by credit inquiries.
+- **Public records** — the mechanism is the presence of negative public records, such as bankruptcies or foreclosures, the direction is that these records decrease the score, and a concrete example is a borrower who filed for bankruptcy, resulting in a 100-150 point decrease in their credit score, with the magnitude of the decrease depending on the type and severity of the public record, such as a borrower with a foreclosure, who may see a 150-200 point decrease in their score.
 
-2. MAIN FACTORS
+## How They Interact
+The interaction between **credit utilization** and **credit age** can amplify the effect of high credit utilization on a borrower's credit score, as seen in the case of a borrower with a $10,000 credit limit and a $9,000 balance, who also has a short credit history, resulting in a 100-point decrease in their credit score, whereas a borrower with a long credit history may only see a 50-point decrease. The interaction between **new credit** and **credit inquiries** can also amplify the effect of excessive new credit on a borrower's credit score, as seen in the case of a borrower who opens 5 new credit cards in a single year and also has 10 credit inquiries, resulting in a 100-point decrease in their credit score. The interaction between **payment history** and **public records** can cancel each other out, as seen in the case of a borrower who has a foreclosure on their credit report but has also made all their payments on time for the past 5 years, resulting in a 50-point increase in their credit score.
 
-Several key factors contribute to the calculation of credit scores. These include:
-
-- Payment History: This factor refers to the record of payments made on time, late payments, and accounts sent to collections. It influences credit score by demonstrating an individual's ability to manage debt and make payments as agreed. The effect is positive if payments are made on time and negative if payments are late or missed.
-- Credit Utilization: This factor represents the amount of credit being used compared to the available credit limit. It influences credit score by showing lenders how well an individual can manage their debt levels. The effect is negative if credit utilization is high and positive if it is low.
-- Credit Age: This factor refers to the length of time an individual has had credit. It influences credit score by demonstrating an individual's experience with credit and their ability to manage it over time. The effect is generally positive as credit age increases.
-- Credit Mix: This factor represents the variety of credit types an individual has, such as credit cards, loans, and mortgages. It influences credit score by showing lenders that an individual can manage different types of credit. The effect is positive if the credit mix is diverse and negative if it is limited.
-- New Credit Inquiries: This factor refers to the number of new credit applications and inquiries made by lenders. It influences credit score by indicating to lenders whether an individual is taking on too much new debt. The effect is variable, as a few inquiries may not significantly impact the score, but multiple inquiries in a short period can be negative.
-- Public Records: This factor includes information such as bankruptcies, foreclosures, and tax liens. It influences credit score by demonstrating an individual's history of debt management and financial responsibility. The effect is negative if public records indicate financial difficulties.
-- Credit Account Closure: This factor refers to the closure of old or unused credit accounts. It influences credit score by affecting the credit utilization ratio and credit age. The effect is variable, as closing old accounts can be negative if it reduces credit age, but closing unused accounts can be positive if it reduces the risk of fraud.
-
-3. INTERCONNECTIONS
-
-These factors are interconnected, meaning that a change in one factor can affect others. For example, missing a payment can negatively affect payment history, which in turn can increase credit utilization if the overdue amount is added to the total debt. Similarly, applying for new credit can result in new credit inquiries, which may lead to a temporary decrease in credit score. Understanding these interconnections helps individuals make informed decisions about their credit management.
-
-4. CONTROLLABLE VS UNCONTROLLABLE
-
-Some factors that affect credit scores can be controlled by individuals, while others cannot. Controllable factors include payment history, credit utilization, credit mix, and new credit inquiries. By making timely payments, keeping credit utilization low, maintaining a diverse credit mix, and limiting new credit applications, individuals can positively influence their credit scores. Uncontrollable factors, such as public records and credit account closures, may require professional assistance or time to resolve. However, being aware of these factors can help individuals take proactive steps to mitigate their impact.
-
-5. SUMMARY
-
-The most important factors to understand when it comes to credit scores are payment history, credit utilization, and credit age. By managing these factors effectively, individuals can maintain a healthy credit score and improve their financial well-being. Additionally, being aware of the interconnections between factors and understanding which factors can be controlled can help individuals make informed decisions about their credit management. By taking a proactive approach to credit management, individuals can access better loan options, lower interest rates, and improved financial opportunities.
+## Controllable vs Uncontrollable
+The controllable factors are **payment history**, **credit utilization**, **credit mix**, **new credit**, and **credit inquiries**, which are controlled by the borrower through their financial decisions, such as making on-time payments, keeping credit utilization low, and avoiding excessive new credit. The uncontrollable factors are **credit age** and **public records**, which are outside the borrower's control, as credit age is determined by the length of time the borrower has had credit, and public records are determined by external events, such as a foreclosure or bankruptcy.
 
 ---
 

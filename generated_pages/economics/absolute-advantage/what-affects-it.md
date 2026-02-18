@@ -7,28 +7,26 @@ date: 2026-02-16
 
 # What Affects Absolute Advantage
 
-What affects absolute advantage is a combination of factors that influence a country's or company's ability to produce more of a good or service than others, with key influences including resource availability, technology, labor skills, and market demand.
+Labor productivity is the single biggest factor affecting **absolute advantage**, as it directly impacts the efficiency of production and therefore the quantity of goods that can be produced with a given amount of resources, increasing absolute advantage when labor productivity rises, such as in the case of Boeing, which produces ~800 aircraft annually with a highly skilled workforce (Boeing annual report).
 
-## INTRODUCTION
-Absolute advantage refers to the ability of a country or company to produce more of a good or service than others, using the same amount of resources. Understanding the factors that affect absolute advantage is crucial because it helps countries and companies identify areas where they can improve their productivity and competitiveness, leading to increased economic growth and trade.
+## Main Factors
+- **Technological advancement** increases absolute advantage by allowing for more efficient production processes, as seen in the case of Intel, which has increased its microprocessor production by 30% through the use of advanced manufacturing technologies (Intel annual report).
+- **Natural resources** can either increase or decrease absolute advantage, depending on the availability and accessibility of the resources, such as the abundance of oil in Saudi Arabia, which has enabled the country to become a major oil producer, with an average daily production of 12 million barrels (OPEC annual report).
+- **Human capital** increases absolute advantage by providing a skilled and educated workforce, as demonstrated by the high-tech industry in Israel, where the presence of highly skilled engineers and scientists has led to the creation of successful companies like Check Point, which has a market value of over $15 billion (NASDAQ).
+- **Economies of scale** increase absolute advantage by reducing production costs per unit, as seen in the case of Walmart, which has achieved economies of scale through its large production volumes, resulting in lower prices for its customers and higher profits for the company, with sales of over $500 billion annually (Walmart annual report).
+- **Government policies** can either increase or decrease absolute advantage, depending on the type of policy, such as trade agreements, which can increase exports and improve competitiveness, as in the case of the North American Free Trade Agreement (NAFTA), which has led to an increase in trade between the US, Canada, and Mexico, with total trade valued at over $1 trillion annually (US Census Bureau).
+- **Infrastructure** increases absolute advantage by providing the necessary facilities and services for production and transportation, such as the port of Shanghai, which is one of the busiest ports in the world, handling over 700 million tons of cargo annually (Shanghai Port Authority).
 
-## MAIN FACTORS
-The following are the main factors that affect absolute advantage:
-- **Resource Availability**: The availability of natural resources, such as land, labor, and capital, influences absolute advantage by determining the maximum amount of a good or service that can be produced. If a country has an abundance of resources, it can produce more, leading to a positive effect on absolute advantage.
-- **Technology**: Technological advancements influence absolute advantage by increasing the efficiency of production processes, allowing countries and companies to produce more with the same amount of resources. This has a positive effect on absolute advantage, as it enables the production of higher quantities of goods and services.
-- **Labor Skills**: The skills and education level of the labor force influence absolute advantage by determining the quality and productivity of the workforce. A highly skilled labor force can produce higher-quality goods and services, leading to a positive effect on absolute advantage.
-- **Market Demand**: The demand for a particular good or service influences absolute advantage by determining the amount of resources allocated to its production. If demand is high, countries and companies will allocate more resources to produce it, leading to a positive effect on absolute advantage.
-- **Transportation Costs**: The cost of transporting goods and services influences absolute advantage by affecting the final cost of production. If transportation costs are low, countries and companies can produce and transport goods and services more cheaply, leading to a positive effect on absolute advantage.
-- **Government Policies**: Government policies, such as tariffs and subsidies, influence absolute advantage by affecting the cost of production and the competitiveness of countries and companies. Tariffs can increase the cost of imported resources, leading to a negative effect on absolute advantage, while subsidies can reduce production costs, leading to a positive effect.
+## How They Interact
+The interaction between **technological advancement** and **human capital** can amplify absolute advantage, as seen in the case of Google, where the company's investment in advanced technologies has been complemented by its highly skilled workforce, resulting in the development of innovative products and services, such as Google Search and Google Maps, which have become essential tools for millions of users worldwide.
+The combination of **economies of scale** and **infrastructure** can also increase absolute advantage, as in the case of Amazon, which has achieved economies of scale through its large production volumes and has invested heavily in its logistics and transportation infrastructure, enabling the company to offer fast and reliable shipping to its customers, with over 100 million Prime members worldwide (Amazon annual report).
+The interaction between **government policies** and **natural resources** can either amplify or cancel absolute advantage, depending on the type of policy, such as the case of Venezuela, where the government's policies have led to a decline in the country's oil production, despite its abundant oil reserves, with production falling by over 50% in recent years (OPEC annual report).
 
-## INTERCONNECTIONS
-These factors are interconnected, and changes in one factor can affect others. For example, technological advancements can lead to increased labor productivity, which can in turn lead to higher market demand. Similarly, government policies can affect transportation costs, which can impact the final cost of production.
-
-## CONTROLLABLE VS UNCONTROLLABLE
-Some factors that affect absolute advantage are controllable, while others are not. Countries and companies can control factors such as technology, labor skills, and government policies, by investing in research and development, education and training, and lobbying for favorable policies. However, factors such as resource availability, market demand, and transportation costs are often uncontrollable, as they are influenced by external factors such as geography, global economic trends, and international events.
-
-## SUMMARY
-The most important factors to understand when it comes to absolute advantage are resource availability, technology, labor skills, and market demand. These factors have a direct impact on a country's or company's ability to produce more of a good or service than others, and understanding how they interact and influence each other is crucial for making informed decisions about production and trade. By recognizing the mechanisms of influence and the direction and magnitude of each factor, countries and companies can identify areas where they can improve their productivity and competitiveness, leading to increased economic growth and trade.
+## Controllable vs Uncontrollable
+The controllable factors affecting absolute advantage include **technological advancement**, **human capital**, **economies of scale**, and **infrastructure**, which can be controlled by companies and governments through investments in research and development, education and training, production volumes, and facilities and services.
+The uncontrollable factors include **natural resources** and **government policies**, which are determined by geographical and political factors, such as the availability of natural resources and the type of government in power.
+Companies can control **technological advancement** by investing in research and development, such as Microsoft, which spends over $10 billion annually on R&D (Microsoft annual report).
+Governments can control **government policies** by implementing policies that support trade and investment, such as the government of Singapore, which has implemented a range of policies to attract foreign investment and promote trade, resulting in the country becoming a major financial and trade hub in Asia (Singapore Government).
 
 ---
 

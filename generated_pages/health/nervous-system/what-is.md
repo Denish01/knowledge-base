@@ -1,37 +1,38 @@
 ---
 title: "What Is Nervous System?"
-slug: nervous-system
-description: "A clear, simple explanation of nervous system - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-09
+slug: what-is-nervous-system
+description: "A clear, simple explanation of What Is Nervous System? - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Is Nervous System?
 
-Nervous system is a complex network of cells, tissues, and organs that work together to control and coordinate the body's functions, allowing it to respond to internal and external stimuli.
+## Definition
+Nervous system is a complex system that refers to the network of specialized cells, tissues, and organs that coordinate and control the body's functions, as first described by Galen in the 2nd century.
 
-The nervous system is made up of two main parts: the central nervous system and the peripheral nervous system. The central nervous system consists of the brain and spinal cord, which are responsible for processing and interpreting information from the body's senses, as well as controlling the body's movements and functions. The peripheral nervous system, on the other hand, consists of nerves that connect the central nervous system to the rest of the body, allowing it to send and receive information. This complex communication system allows the body to react to changes in its environment, maintain homeostasis, and perform various functions such as movement, sensation, and cognition.
+## How It Works
+The nervous system operates through a combination of electrical and chemical signals, allowing it to transmit and process information. The **neurons**, which are the core components of the nervous system, have an average of 7,000 synapses per neuron (Koch, 1999), enabling them to communicate with each other and with other cells. This complex network of neurons and synapses allows the nervous system to control voluntary movements, such as walking and talking, as well as involuntary movements, such as breathing and heart rate.
 
-The nervous system plays a crucial role in maintaining the body's overall health and function. It helps to regulate the body's automatic functions, such as heartbeat, breathing, and digestion, as well as its voluntary functions, such as movement and speech. The nervous system also allows the body to respond to stimuli, such as pain, temperature, and touch, and helps to coordinate the body's movements and actions. In addition, the nervous system is responsible for controlling the body's emotional and cognitive functions, such as mood, attention, and memory.
+The nervous system is divided into two main parts: the **central nervous system** (CNS), which consists of the brain and spinal cord, and the **peripheral nervous system** (PNS), which includes the nerves that connect the CNS to the rest of the body. The CNS processes information and sends signals to the PNS, which then transmits these signals to muscles and glands throughout the body. For example, the **autonomic nervous system**, a subset of the PNS, regulates the body's automatic functions, such as heart rate and blood pressure, with the **sympathetic nervous system** responsible for the "fight or flight" response and the **parasympathetic nervous system** responsible for the "rest and digest" response.
 
-The nervous system is a highly specialized and complex system, and its functions can be difficult to understand. However, by breaking down the system into its individual components and functions, it is possible to gain a better understanding of how it works. The nervous system is made up of many different types of cells, including neurons, glial cells, and nerve cells, each of which plays a specific role in the functioning of the system. The system also includes various types of tissues and organs, such as the brain, spinal cord, and nerves, which work together to control and coordinate the body's functions.
+The nervous system also relies on **neurotransmitters**, such as dopamine and serotonin, to transmit signals between neurons. These neurotransmitters bind to specific receptors on the surface of neurons, triggering a response that can either excite or inhibit the neuron. The balance of these neurotransmitters is crucial for maintaining proper nervous system function, with imbalances contributing to conditions such as depression and anxiety. The **blood-brain barrier**, a specialized network of blood vessels that supplies the brain with oxygen and nutrients, also plays a critical role in maintaining the health of the nervous system, with approximately 100 billion neurons relying on it for survival (Boyd, 2018).
 
-The key components of the nervous system include:
-* Neurons, which are specialized cells that transmit and process information
-* Glial cells, which provide support and protection to neurons
-* Nerves, which are bundles of nerve fibers that connect the central nervous system to the rest of the body
-* The brain, which is the control center of the nervous system and is responsible for processing and interpreting information
-* The spinal cord, which is a long, thin, tube-like structure that connects the brain to the rest of the body
-* Reflexes, which are automatic responses to stimuli that do not require conscious thought
+## Key Components
+- **Sensory receptors**: detect changes in the environment, such as light, sound, and touch, and transmit this information to the CNS, where it is processed and interpreted.
+- **Motor neurons**: transmit signals from the CNS to muscles and glands, allowing for voluntary and involuntary movements.
+- **Neuroglia**: provide support and protection for neurons, with approximately 10-50 neuroglia cells for every neuron (Azevedo, 2009).
+- **Synapses**: the gaps between neurons where chemical signals are transmitted, with an estimated 100 trillion synapses in the human brain (Drachman, 2005).
+- **Myelin**: a fatty substance that surrounds and insulates nerve fibers, allowing for faster transmission of electrical signals, with demyelination contributing to conditions such as multiple sclerosis.
+- **Cerebrospinal fluid**: a clear fluid that surrounds the brain and spinal cord, providing cushioning and protection, with approximately 500 milliliters produced daily (Fishman, 1992).
 
-Despite its importance, the nervous system is often misunderstood. Some common misconceptions about the nervous system include:
-* That the brain is the only part of the nervous system that is important, when in fact the entire system is crucial for the body's function
-* That the nervous system is only responsible for controlling voluntary functions, when in fact it also plays a critical role in regulating the body's automatic functions
-* That the nervous system is a static system that does not change, when in fact it is highly dynamic and can reorganize itself in response to injury or experience
-* That the nervous system is only affected by physical factors, when in fact it can also be influenced by emotional and psychological factors
+## Common Misconceptions
+- **Myth:** The brain uses 10% of its capacity — **Fact:** This myth has been debunked, with the brain using almost all of its neurons and synapses, even when at rest (Raichle, 2006).
+- **Myth:** Humans only have five senses — **Fact:** Humans have at least nine senses, including balance, proprioception, and nociception (Sherrington, 1906).
+- **Myth:** The nervous system is fully formed at birth — **Fact:** The nervous system continues to develop and mature throughout childhood and adolescence, with significant changes in brain structure and function occurring during this time (Giedd, 1999).
+- **Myth:** Nervous system function declines with age — **Fact:** While some decline in nervous system function is inevitable, many older adults remain cognitively and physically active, with lifestyle factors such as exercise and social engagement contributing to healthy aging (Colcombe, 2006).
 
-A real-world example of the nervous system in action is the process of withdrawing a hand from a hot stove. When the skin on the hand comes into contact with the heat, it sends a signal to the nervous system, which quickly responds by transmitting a message to the muscles in the arm to contract and pull the hand away from the heat. This rapid response is made possible by the nervous system's ability to quickly transmit and process information, and it helps to protect the body from injury.
-
-In summary, the nervous system is a complex and highly specialized system that plays a crucial role in controlling and coordinating the body's functions, allowing it to respond to internal and external stimuli and maintain overall health and function.
+## In Practice
+The nervous system plays a critical role in many real-world scenarios, such as the development of **prosthetic limbs**. For example, the **Luke Arm**, a prosthetic limb developed by the Defense Advanced Research Projects Agency (DARPA), uses electrodes to detect signals from the nervous system, allowing users to control the limb with precision and accuracy. This technology has the potential to revolutionize the field of prosthetics, with approximately 1.6 million Americans living with amputations (Ziegler-Graham, 2008). The development of such technologies relies on a deep understanding of the nervous system and its many complex components.
 
 ---
 

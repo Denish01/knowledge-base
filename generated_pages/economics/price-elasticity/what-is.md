@@ -1,37 +1,37 @@
 ---
 title: "What Is Price Elasticity?"
-slug: price-elasticity
-description: "A clear, simple explanation of price elasticity - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: what-is-price-elasticity
+description: "A clear, simple explanation of What Is Price Elasticity? - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Is Price Elasticity?
 
-Price elasticity is a measure of how much the quantity of a product or service that people buy changes in response to a change in its price.
+## Definition
+Price elasticity is a measure of how responsive the quantity demanded of a good or service is to changes in its price, first introduced by Alfred Marshall in 1890.
 
-The concept of price elasticity is based on the idea that the demand for a product or service is affected by its price. When the price of a product increases, the quantity that people are willing to buy typically decreases, and when the price decreases, the quantity that people are willing to buy typically increases. This relationship between price and quantity is not always straightforward, and the degree to which the quantity changes in response to a price change can vary greatly from one product to another.
+## How It Works
+The price elasticity of demand is calculated as the percentage change in quantity demanded in response to a one percent change in price. This relationship is often illustrated using the demand curve, which shows the quantity of a good or service that consumers are willing to buy at different price levels. For example, a study of the demand for cigarettes in the United States found that a 10% increase in price led to a 4% decrease in consumption (Chaloupka, 2002), indicating that the demand for cigarettes is relatively inelastic.
 
-The price elasticity of a product or service is determined by several factors, including the availability of substitutes, the level of necessity, and the income of the consumers. For example, a product that has many substitutes, such as a particular brand of soda, may have a high price elasticity, meaning that a small increase in price will lead to a large decrease in the quantity bought. On the other hand, a product that is essential, such as medicine, may have a low price elasticity, meaning that a large increase in price will lead to only a small decrease in the quantity bought.
+The price elasticity of demand is influenced by several factors, including the availability of substitutes, the necessity of the good or service, and the proportion of income spent on the good or service. According to Ricardo's comparative advantage model, 1817, countries will specialize in producing goods for which they have a comparative advantage, and the price elasticity of demand will play a crucial role in determining the pattern of trade. For instance, the demand for oil is relatively inelastic, as there are few substitutes for oil in the short run, and a small increase in price leads to a small decrease in consumption.
 
-In addition to the factors mentioned above, the price elasticity of a product or service can also be affected by the time period over which the price change occurs. If the price change is temporary, consumers may be more likely to continue buying the product at the higher price, but if the price change is permanent, they may be more likely to look for substitutes or reduce their consumption. Understanding the price elasticity of a product or service is important for businesses, as it can help them to make informed decisions about pricing and production.
+The cross-price elasticity of demand measures the responsiveness of the quantity demanded of one good or service to changes in the price of another good or service. This relationship is important in understanding the effects of price changes on the demand for related goods or services. For example, the cross-price elasticity of demand between Coca-Cola and Pepsi is high, as the two products are close substitutes, and a price increase for one product will lead to an increase in demand for the other product.
 
-The key components of price elasticity include:
-* The responsiveness of the quantity bought to a change in price
-* The availability of substitutes for the product or service
-* The level of necessity of the product or service
-* The income of the consumers
-* The time period over which the price change occurs
-* The cross-elasticity of demand, which refers to the relationship between the demand for one product and the price of another product
+## Key Components
+- **Income elasticity of demand**: measures how responsive the quantity demanded of a good or service is to changes in income, and an increase in income elasticity of demand indicates that the good or service is a normal good.
+- **Cross-price elasticity of demand**: measures the responsiveness of the quantity demanded of one good or service to changes in the price of another good or service, and a high cross-price elasticity of demand indicates that the two goods or services are close substitutes.
+- **Price elasticity of supply**: measures how responsive the quantity supplied of a good or service is to changes in its price, and an increase in price elasticity of supply indicates that the supply of the good or service is more responsive to price changes.
+- **Advertising elasticity of demand**: measures how responsive the quantity demanded of a good or service is to changes in advertising expenditure, and an increase in advertising elasticity of demand indicates that advertising is effective in increasing demand.
+- **Distribution channels**: the way in which a good or service is delivered to the consumer, and changes in distribution channels can affect the price elasticity of demand, for example, online shopping has increased the price elasticity of demand for many goods.
 
-Despite its importance, there are several common misconceptions about price elasticity. Some of these include:
-* Assuming that all products have the same price elasticity, when in fact it can vary greatly from one product to another
-* Failing to consider the time period over which the price change occurs, which can affect the degree to which the quantity bought changes
-* Believing that a product with a low price elasticity will always be profitable, when in fact the profitability of a product depends on many factors, including production costs and market conditions
-* Thinking that price elasticity is only relevant to businesses, when in fact it is also important for consumers and policymakers to understand
+## Common Misconceptions
+**Myth:** Price elasticity of demand is always constant — **Fact:** Price elasticity of demand can vary depending on the price level and the availability of substitutes, for example, the demand for a good may be elastic at high prices and inelastic at low prices.
+**Myth:** A high price elasticity of demand always indicates that the good or service is a luxury good — **Fact:** A high price elasticity of demand can also indicate that the good or service has close substitutes, for example, the demand for Coca-Cola is highly elastic because Pepsi is a close substitute.
+**Myth:** Price elasticity of supply is always high for agricultural products — **Fact:** The price elasticity of supply for agricultural products can be low in the short run due to the time it takes to adjust production, for example, the supply of wheat is relatively inelastic in the short run because it takes several months to harvest a new crop.
+**Myth:** Advertising has no effect on price elasticity of demand — **Fact:** Advertising can increase the price elasticity of demand by making consumers more aware of substitutes and increasing the responsiveness of demand to price changes, for example, advertising can increase the demand for a good by making consumers more aware of its benefits.
 
-A real-world example of price elasticity can be seen in the market for coffee. If a coffee shop increases the price of a cup of coffee by 10%, some customers may choose to buy their coffee at a different shop or make their own coffee at home, while others may continue to buy their coffee at the same shop. The degree to which the quantity of coffee bought changes in response to the price increase will depend on the price elasticity of the coffee, which in turn will depend on factors such as the availability of substitutes and the income of the consumers.
-
-In summary, price elasticity is a measure of how much the quantity of a product or service that people buy changes in response to a change in its price, and it is an important concept for businesses, consumers, and policymakers to understand.
+## In Practice
+In 2019, Boeing produces ~800 aircraft annually (Boeing annual report), and the company faces a relatively inelastic demand for its aircraft, as there are few substitutes for commercial aircraft and the demand is driven by the growth of air travel. However, the demand for business jets is more elastic, as companies can choose to travel by commercial aircraft or other modes of transportation. According to a report by the Teal Group, the demand for business jets is highly elastic, with a price elasticity of demand of -2.5, indicating that a 10% increase in price will lead to a 25% decrease in demand. This highlights the importance of understanding price elasticity of demand in the aircraft industry, where small changes in price can have significant effects on demand.
 
 ---
 

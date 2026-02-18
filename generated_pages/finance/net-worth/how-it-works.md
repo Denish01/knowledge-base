@@ -1,23 +1,36 @@
 ---
 title: "How Net Worth Works"
-slug: how-does-net-worth-work
-description: "A clear, simple explanation of how does net worth work - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: how-net-worth-works
+description: "A clear, simple explanation of How Net Worth Works - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # How Net Worth Works
 
-1. QUICK ANSWER: Net worth is calculated by subtracting an individual's total liabilities from their total assets, resulting in a numerical value that represents their overall financial situation. This calculation provides a snapshot of a person's financial health at a given time.
+Net worth is calculated by subtracting **liabilities** from **assets**, resulting in a financial snapshot of an individual's or organization's economic situation. This calculation is the core of the net worth mechanism, where inputs such as income, expenses, and investments are processed to produce an output of total wealth.
 
-2. STEP-BY-STEP PROCESS: First, an individual must identify and list all of their assets, which can include items such as cash, investments, real estate, and personal property. Next, they must determine the current value of each asset, which can be done by researching market prices or consulting with professionals. Then, the individual must identify and list all of their liabilities, such as debts, loans, and other financial obligations. After that, they must determine the current amount owed for each liability. Finally, the individual subtracts the total amount of their liabilities from the total value of their assets to calculate their net worth.
+## The Mechanism
+The net worth mechanism involves a simple yet powerful equation: **Net Worth = Total Assets - Total Liabilities**. This equation is the foundation of personal finance and is used by individuals, businesses, and governments to assess their financial health.
 
-3. KEY COMPONENTS: The key components involved in calculating net worth are assets and liabilities. Assets are items of value that an individual owns, such as a house, car, or savings account. Liabilities, on the other hand, are debts or financial obligations that an individual owes, such as a mortgage, credit card debt, or student loan. The role of assets is to contribute to the overall value of an individual's net worth, while the role of liabilities is to subtract from that value. Other important components include income, expenses, and savings, which can all impact an individual's net worth over time.
+## Step-by-Step
+1. **Asset accumulation**: Individuals and organizations acquire assets such as cash, stocks, bonds, and real estate, which have a combined value of $100,000, for example. This process is driven by income, investments, and savings, resulting in a measurable increase in total assets.
+2. **Liability creation**: Simultaneously, liabilities such as loans, credit card debt, and mortgages are incurred, totaling $50,000, for instance. These liabilities are caused by expenses, debt, and financial obligations, leading to a measurable decrease in net worth.
+3. **Expense management**: Expenses such as rent, utilities, and groceries are subtracted from income, resulting in a net income of $40,000 per year, for example. Effective expense management causes a reduction in liabilities and an increase in assets.
+4. **Investment returns**: Investments such as stocks and bonds generate returns, such as a 7% annual return on a $10,000 investment in a **diversified portfolio**. These returns cause an increase in total assets and a subsequent increase in net worth.
+5. **Debt repayment**: Liabilities are reduced through debt repayment, such as paying off a $20,000 mortgage with a 4% interest rate over 10 years. This process causes a decrease in total liabilities and an increase in net worth.
+6. **Wealth accumulation**: The combination of asset accumulation, expense management, investment returns, and debt repayment results in a net worth of $150,000, for example, after 5 years of disciplined financial management.
 
-4. VISUAL ANALOGY: A simple analogy for understanding net worth is to think of it as a scale. On one side of the scale, you have all of your assets, which represent the weight of your financial resources. On the other side, you have all of your liabilities, which represent the weight of your financial obligations. When you subtract your liabilities from your assets, you are essentially finding the balance point on the scale, which represents your net worth. If the weight of your assets is greater than the weight of your liabilities, your net worth will be positive. If the weight of your liabilities is greater, your net worth will be negative.
+## Key Components
+- **Assets**: include cash, stocks, bonds, real estate, and other investments, which are the foundation of net worth.
+- **Liabilities**: include loans, credit card debt, mortgages, and other financial obligations, which reduce net worth.
+- **Income**: is the primary driver of asset accumulation and debt repayment, with an average annual income of $60,000 in the United States (US Census Bureau).
+- **Expenses**: include rent, utilities, groceries, and other living expenses, which reduce net income and increase liabilities.
 
-5. COMMON QUESTIONS: But what about debts that have a low interest rate, such as a mortgage - do they still affect net worth? Yes, all debts, regardless of interest rate, are considered liabilities and will subtract from an individual's net worth. But what about assets that are difficult to value, such as a small business or a piece of art - how are they included in the calculation? These types of assets can be valued by consulting with professionals, such as appraisers or accountants. But what about income - does it directly affect net worth? Income can indirectly affect net worth by providing the means to pay off liabilities or acquire new assets. But what about expenses - do they affect net worth? Expenses can affect net worth if they contribute to an increase in liabilities or a decrease in assets.
-
-6. SUMMARY: Net worth is calculated by subtracting an individual's total liabilities from their total assets, providing a snapshot of their financial situation and serving as a key indicator of their overall financial health.
+## Common Questions
+What happens if I fail to repay my debts? Failure to repay debts can lead to a decrease in credit score, resulting in higher interest rates and reduced access to credit, as seen in the **credit scoring model** developed by FICO.
+How do investments affect my net worth? Investments such as stocks and bonds can generate returns, increasing total assets and net worth, as demonstrated by the **portfolio theory** of Harry Markowitz.
+What is the impact of expenses on my net worth? Expenses reduce net income, causing a decrease in asset accumulation and an increase in liabilities, as illustrated by the **life-cycle hypothesis** of Franco Modigliani.
+Can I increase my net worth by reducing my expenses? Yes, reducing expenses such as rent and utilities can increase net income, allowing for greater asset accumulation and debt repayment, as shown by the **permanent income hypothesis** of Milton Friedman.
 
 ---
 

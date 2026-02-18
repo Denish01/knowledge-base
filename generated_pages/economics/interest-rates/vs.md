@@ -1,37 +1,36 @@
 ---
 title: "Interest Rates Compared"
-slug: interest-rates-vs
-description: "A clear, simple explanation of interest rates vs - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: interest-rates-compared
+description: "A clear, simple explanation of Interest Rates Compared - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Interest Rates Compared
 
-Interest rates vs inflation is a fundamental concept in economics that refers to the relationship between the cost of borrowing money and the rate at which prices for goods and services are rising.
+## Definition
+Interest Rates Compared refers to the analysis of interest rates across different countries, institutions, or time periods, a concept rooted in **Ricardo's comparative advantage model, 1817**.
 
-Understanding interest rates and inflation is crucial in making informed decisions about personal finance, investments, and economic policy. Interest rates are the cost of borrowing money, typically expressed as a percentage of the principal amount borrowed. When interest rates are high, borrowing money becomes more expensive, and when they are low, it becomes cheaper. On the other hand, inflation is a measure of how quickly prices for goods and services are rising. As inflation increases, the purchasing power of money decreases, meaning that the same amount of money can buy fewer goods and services.
+## How It Works
+The comparison of interest rates involves examining the **yield curves** of different economies, which illustrate the relationship between interest rates and loan durations. For instance, the United States' yield curve, as reported by the **Federal Reserve**, typically slopes upward, indicating higher interest rates for longer-term loans. In contrast, the **European Central Bank**'s yield curve has been known to be flatter, reflecting the region's differing economic conditions. The **Fisher equation**, developed by Irving Fisher, provides a framework for understanding the relationship between interest rates, inflation, and expected returns, with the equation stating that the nominal interest rate equals the real interest rate plus the expected inflation rate.
 
-The relationship between interest rates and inflation is complex and can have significant effects on the economy. When inflation is high, interest rates may also rise to keep pace with the increasing prices, making borrowing more expensive. This can help to reduce inflation by reducing demand for goods and services. However, if interest rates are too high, it can also slow down economic growth by making it more expensive for businesses and individuals to borrow money. In contrast, when inflation is low, interest rates may also be low, making borrowing cheaper and stimulating economic growth.
+As interest rates fluctuate, they impact the **money supply** and, subsequently, the overall economy. The **monetary policy** implemented by central banks, such as the **Federal Reserve** in the United States, aims to regulate interest rates to promote economic growth, control inflation, and maintain financial stability. The **Taylor rule**, developed by John Taylor, provides a guideline for setting interest rates based on inflation and output gaps. For example, when the **Federal Reserve** lowers interest rates, it increases the money supply, stimulating economic growth by making borrowing cheaper, as seen in the aftermath of the 2008 financial crisis when the Fed lowered the federal funds rate to near zero.
 
-In addition to understanding the relationship between interest rates and inflation, it is also important to consider other factors that can affect the economy. For example, changes in interest rates can impact the value of currencies, making imports more or less expensive. This, in turn, can affect the prices of goods and services, contributing to inflation. Furthermore, interest rates can also influence consumer and business behavior, with high interest rates discouraging borrowing and spending, and low interest rates encouraging it.
+The comparison of interest rates also involves considering the **credit risk** associated with lending to different countries or institutions. The **credit default swap** (CDS) market provides a measure of credit risk, with higher CDS spreads indicating a higher perceived risk of default. For instance, the CDS spread for **Greece** has been significantly higher than that of **Germany**, reflecting the differing creditworthiness of the two countries. The **International Monetary Fund** (IMF) monitors credit risk and provides guidance on managing debt and promoting financial stability.
 
-The key components of interest rates vs inflation include:
-* The nominal interest rate, which is the interest rate before adjusting for inflation
-* The real interest rate, which is the interest rate after adjusting for inflation
-* The inflation rate, which is the rate at which prices for goods and services are rising
-* The monetary policy, which is the actions taken by a central bank to control the money supply and interest rates
-* The fiscal policy, which is the actions taken by a government to manage its spending and taxation
-* The exchange rate, which is the rate at which one currency can be exchanged for another
+## Key Components
+- **Nominal interest rate**: the interest rate that does not account for inflation, which affects the purchasing power of the loan; an increase in the nominal interest rate reduces borrowing and spending.
+- **Real interest rate**: the interest rate adjusted for inflation, which reflects the actual return on investment; a higher real interest rate attracts foreign investment, as seen in the case of **Switzerland**, which has historically offered high real interest rates.
+- **Yield curve**: a graphical representation of the relationship between interest rates and loan durations; a steep yield curve indicates high expectations for future economic growth, while a flat yield curve suggests low expectations.
+- **Credit risk**: the risk of default associated with lending to a particular country or institution; a higher credit risk leads to higher interest rates, as lenders demand a higher return to compensate for the increased risk.
+- **Liquidity**: the ability to quickly buy or sell assets without significantly affecting their price; high liquidity reduces the risk of holding an asset, leading to lower interest rates, as seen in the case of **US Treasury bonds**, which are highly liquid.
 
-Despite the importance of understanding interest rates and inflation, there are several common misconceptions about the topic. These include:
-* The idea that high interest rates always lead to high inflation, when in fact the relationship is more complex
-* The notion that low interest rates always stimulate economic growth, when in fact they can also lead to inflation if not managed properly
-* The belief that inflation is always bad, when in fact a moderate level of inflation can be a sign of a healthy economy
-* The assumption that interest rates and inflation only affect businesses and governments, when in fact they can also have a significant impact on individuals and their personal finances
+## Common Misconceptions
+**Myth:** Higher interest rates always lead to higher economic growth — **Fact:** High interest rates can actually reduce economic growth by increasing borrowing costs and reducing consumption, as seen in the case of **Brazil**, where high interest rates have hindered economic growth.
+**Myth:** The **Federal Reserve** has complete control over interest rates — **Fact:** The Fed influences interest rates through monetary policy, but market forces, such as **inflation expectations** and **global economic trends**, also play a significant role in determining interest rates.
+**Myth:** Interest rates are uniform across all countries — **Fact:** Interest rates vary significantly across countries, reflecting differences in economic conditions, credit risk, and monetary policy, as seen in the differing interest rates between **Japan** and **Australia**.
 
-A real-world example of the relationship between interest rates and inflation can be seen in a person who takes out a mortgage to buy a house. If the interest rate on the mortgage is 5% and the inflation rate is 2%, the real interest rate on the mortgage is 3%. This means that the borrower is effectively paying 3% more in interest each year than the rate of inflation, making the mortgage more expensive over time. However, if the inflation rate were to rise to 4%, the real interest rate on the mortgage would be 1%, making the mortgage less expensive in terms of the borrower's purchasing power.
-
-In summary, interest rates vs inflation is a complex and multifaceted concept that refers to the relationship between the cost of borrowing money and the rate at which prices for goods and services are rising, and understanding this relationship is crucial for making informed decisions about personal finance, investments, and economic policy.
+## In Practice
+In 2019, the **European Central Bank** implemented a negative interest rate policy, charging banks 0.5% to hold excess reserves, in an effort to stimulate economic growth and combat low inflation. This move led to a decrease in borrowing costs for households and businesses, with the **eurozone**'s average interest rate on new loans to households falling to 1.3% (European Central Bank). In contrast, the **Federal Reserve** in the United States raised interest rates in 2018 to 2.5%, citing a strong labor market and rising inflation (Federal Reserve). The differing interest rate policies reflect the unique economic conditions and challenges faced by each region, with the ECB aiming to boost growth and the Fed seeking to prevent overheating.
 
 ---
 

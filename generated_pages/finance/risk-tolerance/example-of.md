@@ -1,29 +1,38 @@
 ---
 title: "Example of Risk Tolerance"
-slug: examples-of-risk-tolerance
-description: "A clear, simple explanation of examples of risk tolerance - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: example-of-risk-tolerance
+description: "A clear, simple explanation of Example of Risk Tolerance - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Example of Risk Tolerance
 
-1. INTRODUCTION:
-Risk tolerance refers to the amount of uncertainty or risk an individual or organization is willing to accept in pursuit of a goal or reward. It is a crucial concept in decision-making, as it helps determine how much risk is acceptable and how much should be mitigated or avoided. Understanding risk tolerance is essential in various aspects of life, including finance, health, and personal relationships.
+## Definition
+Risk tolerance is the degree of uncertainty or potential loss an investor or individual is willing to accept in pursuit of a financial goal, as described by **Harry Markowitz** in his modern portfolio theory (1952).
 
-2. EVERYDAY EXAMPLES:
-In daily life, risk tolerance is evident in many common scenarios. For instance, a person who chooses to drive without wearing a seatbelt has a higher risk tolerance than someone who always wears one. Another example is a homeowner who decides not to purchase flood insurance, despite living in a flood-prone area, demonstrating a higher risk tolerance than someone who buys the insurance. A student who takes on a part-time job to support themselves while pursuing a degree is also exhibiting a certain level of risk tolerance, as they are sacrificing free time and energy for potential financial rewards. Furthermore, an investor who puts their savings into stocks rather than bonds is showing a higher risk tolerance, as stocks are generally more volatile and unpredictable.
+## How It Works
+Risk tolerance is a critical component of investment decisions, as it affects the types of assets an individual is willing to hold in their portfolio. The **Capital Asset Pricing Model (CAPM)**, developed by **William Sharpe** (1964), provides a framework for understanding the relationship between risk and return. According to the CAPM, investors demand a higher expected return for holding a riskier asset, as the potential for loss is greater. For example, an investor with a high risk tolerance may be willing to hold a portfolio consisting of 80% stocks and 20% bonds, while an investor with a low risk tolerance may prefer a more conservative allocation of 40% stocks and 60% bonds.
 
-3. NOTABLE EXAMPLES:
-There are several well-known examples of risk tolerance in various fields. The story of Steve Jobs and Steve Wozniak, co-founders of Apple, is a classic example. They took significant risks by investing their own savings and quitting their jobs to start the company, which eventually became one of the most successful technology firms in the world. Another example is the Wright brothers, who risked their lives to test and refine their flying machine, ultimately achieving the first powered flight. The entrepreneur Richard Branson, who has founded numerous companies, including Virgin Airlines and Virgin Records, is also known for his high risk tolerance, having taken significant risks throughout his career to achieve his goals.
+The **Sharpe Ratio**, named after **William Sharpe** (1966), is a measure of risk-adjusted return that helps investors evaluate the performance of their portfolio. The Sharpe Ratio calculates the excess return of an investment over the risk-free rate, relative to its volatility. A higher Sharpe Ratio indicates that an investment has generated excess returns relative to its risk. Investors with a high risk tolerance may be willing to accept a lower Sharpe Ratio, as they are more focused on achieving high returns than minimizing risk. In contrast, investors with a low risk tolerance may prioritize a higher Sharpe Ratio, as they seek to minimize losses and preserve their capital.
 
-4. EDGE CASES:
-Some unusual examples of risk tolerance include the actions of extreme sports athletes, such as skydivers or big wave surfers. These individuals willingly put themselves in harm's way, often with minimal protective gear, to experience the thrill of their sport. Another example is the story of Alex Honnold, a rock climber who climbed El Capitan in Yosemite National Park without any ropes or safety equipment, demonstrating an extremely high risk tolerance.
+The **portfolio optimization** process, which involves allocating assets to maximize returns while minimizing risk, is also influenced by an individual's risk tolerance. **Robert Merton**'s (1969) work on continuous-time finance provides a framework for understanding how investors can optimize their portfolios over time. By continuously monitoring and adjusting their portfolios, investors can manage their risk exposure and ensure that their investments remain aligned with their risk tolerance. For instance, an investor with a high risk tolerance may be willing to hold a portfolio with a **beta** of 1.2, indicating that the portfolio is expected to be 20% more volatile than the overall market.
 
-5. NON-EXAMPLES:
-There are several things that people often confuse with risk tolerance, but are not actually examples of it. For instance, recklessness is not the same as risk tolerance. A person who drives recklessly, such as speeding or running red lights, is not exhibiting risk tolerance, but rather a lack of concern for their own safety and the safety of others. Similarly, impulsiveness is not the same as risk tolerance. An impulsive person may make decisions without considering the potential consequences, whereas someone with a high risk tolerance will have thoughtfully considered the risks and rewards before making a decision. Additionally, a person who is forced into a situation due to circumstances, such as a natural disaster, is not exhibiting risk tolerance, as they do not have a choice in the matter.
+## Key Components
+- **Risk appetite**: the willingness to take on risk in pursuit of a financial goal, which increases as an individual's risk tolerance rises, and decreases as their risk tolerance falls.
+- **Investment horizon**: the length of time an investor has to achieve their financial goals, which affects their risk tolerance, with longer horizons allowing for more risk-taking.
+- **Diversification**: the process of spreading investments across different asset classes to minimize risk, which is more effective for investors with a low risk tolerance.
+- **Expected return**: the anticipated return on an investment, which is influenced by an individual's risk tolerance, with higher expected returns typically associated with higher risk investments.
+- **Volatility**: the degree of uncertainty or fluctuation in the value of an investment, which is a key consideration for investors with a low risk tolerance.
+- **Wealth level**: the amount of wealth an individual has, which can affect their risk tolerance, with wealthier individuals often having a higher risk tolerance due to their ability to absorb potential losses.
 
-6. PATTERN:
-All valid examples of risk tolerance have one thing in common: a conscious decision to accept a certain level of uncertainty or risk in pursuit of a goal or reward. Whether it is an investor choosing to put their money into stocks, an athlete participating in a high-risk sport, or an entrepreneur starting a new business, the individual has made a deliberate decision to accept the potential risks and rewards associated with their choice. This conscious decision-making process is what distinguishes risk tolerance from recklessness or impulsiveness, and it is what allows individuals and organizations to navigate complex and uncertain situations effectively.
+## Common Misconceptions
+**Myth:** Risk tolerance is fixed and unchanging — **Fact:** Risk tolerance can change over time due to shifts in an individual's financial circumstances, investment goals, or personal preferences (e.g., an investor may become more conservative as they approach retirement).
+**Myth:** All investors should aim to maximize returns, regardless of risk — **Fact:** Investors with a low risk tolerance may prioritize preserving their capital over achieving high returns, as evidenced by the popularity of **money market funds** (e.g., Vanguard's Prime Money Market Fund).
+**Myth:** Diversification is only necessary for investors with a low risk tolerance — **Fact:** Diversification is beneficial for all investors, as it can help minimize risk and increase potential returns, regardless of risk tolerance (e.g., **Warren Buffett**'s diversified portfolio has generated significant returns over the long term).
+**Myth:** Risk tolerance is the only factor influencing investment decisions — **Fact:** Other factors, such as investment horizon, wealth level, and expected return, also play a crucial role in determining an individual's investment strategy (e.g., **Ray Dalio**'s All Weather portfolio is designed to perform well across different market conditions).
+
+## In Practice
+The **CalPERS** pension fund, which manages over $400 billion in assets (CalPERS annual report), has a risk tolerance that is influenced by its long-term investment horizon and liability structure. As a result, CalPERS has allocated a significant portion of its portfolio to **private equity** and **real assets**, which are expected to generate higher returns over the long term. In contrast, the **Vanguard 500 Index Fund**, which has over $500 billion in assets (Vanguard annual report), has a more conservative investment strategy, with a focus on **diversification** and **low-cost** investing. This approach is suitable for investors with a low risk tolerance, as it provides broad exposure to the US stock market while minimizing costs and risk.
 
 ---
 

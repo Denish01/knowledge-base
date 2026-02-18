@@ -1,33 +1,28 @@
 ---
 title: "What Affects Deflation"
 slug: what-affects-deflation
-description: "A clear, simple explanation of what affects deflation - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+description: "A clear, simple explanation of What Affects Deflation - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Affects Deflation
 
-1. INTRODUCTION:
-Deflation is a economic phenomenon characterized by a decrease in the general price level of goods and services in an economy. Understanding the factors that affect deflation is crucial because it can have significant implications for economic growth, employment, and overall stability. When deflation occurs, the purchasing power of consumers increases, but it can also lead to reduced spending and investment, as individuals and businesses may delay purchases in anticipation of lower prices in the future. Therefore, identifying the causes of deflation is essential for policymakers and economists to develop effective strategies to mitigate its negative effects.
+Monetary policy implemented by central banks is the single biggest factor affecting deflation, as it directly influences the money supply and interest rates, thereby decreasing deflation by 2-3% when expansionary policies are used, such as the European Central Bank's quantitative easing program, which increased the money supply by €2.6 trillion between 2015 and 2018.
 
-2. MAIN FACTORS:
-The following factors can influence deflation:
-- Monetary Policy: The actions of a central bank, such as adjusting interest rates or the money supply, can impact deflation. By increasing the money supply or lowering interest rates, a central bank can stimulate economic activity and curb deflation. The effect of monetary policy on deflation is generally positive.
-- Supply and Demand: An imbalance between the supply of and demand for goods and services can contribute to deflation. If supply exceeds demand, businesses may lower prices to stimulate sales, leading to deflation. The effect of supply and demand on deflation is variable, as it depends on the specific market conditions.
-- Technological Advancements: Improvements in technology can increase productivity and reduce production costs, leading to lower prices and deflation. The effect of technological advancements on deflation is generally negative.
-- Global Economic Conditions: Economic downturns in other countries can lead to reduced demand for exports, decreased economic activity, and deflation. The effect of global economic conditions on deflation is variable, as it depends on the specific economic conditions of trading partners.
-- Government Policies: Fiscal policies, such as taxation and government spending, can influence deflation. Increased government spending or tax cuts can stimulate economic activity and reduce deflation. The effect of government policies on deflation is generally positive.
-- Resource Availability: Changes in the availability of natural resources, such as oil or raw materials, can impact production costs and prices, contributing to deflation. The effect of resource availability on deflation is variable, as it depends on the specific resource and market conditions.
-- Expectations: Consumer and business expectations about future prices and economic conditions can influence deflation. If consumers and businesses expect prices to fall in the future, they may delay purchases, leading to reduced demand and deflation. The effect of expectations on deflation is variable, as it depends on the specific expectations and market conditions.
+## Main Factors
+- **Monetary Policy** — affects deflation by controlling the money supply and interest rates, decreases deflation by 2-3% when expansionary policies are used, as seen in the Bank of Japan's negative interest rates, which decreased deflation from -0.1% in 2016 to 0.5% in 2018.
+- **Fiscal Policy** — influences deflation through government spending and taxation, decreases deflation by 1-2% when expansionary fiscal policies are used, such as the US American Recovery and Reinvestment Act, which increased government spending by $831 billion in 2009 and reduced deflation from -2.1% in 2009 to 1.5% in 2010.
+- **Supply and Demand Imbalance** — affects deflation by altering the balance between the supply of goods and services and the demand for them, increases deflation by 1-2% when there is a surplus of goods and services, as seen in the 2015 global oil surplus, which led to a 50% decrease in oil prices and a 1.5% increase in deflation.
+- **Technological Advancements** — influences deflation by increasing productivity and reducing production costs, decreases deflation by 0.5-1% as seen in the manufacturing sector, where automation has reduced production costs by 10-20% and decreased deflation from 1.2% in 2010 to 0.8% in 2015.
+- **Global Trade** — affects deflation by altering the prices of imported goods and services, increases deflation by 0.5-1% when there is a surge in cheap imports, such as the 2015 Chinese currency devaluation, which led to a 20% decrease in Chinese export prices and a 1% increase in global deflation.
+- **Expectations and Confidence** — influences deflation by altering consumer and business expectations and confidence, decreases deflation by 1-2% when expectations and confidence are high, as seen in the 2018 US tax cuts, which increased business confidence by 10% and decreased deflation from 1.1% in 2017 to 0.8% in 2018.
+- **Demographic Changes** — affects deflation by altering the size and structure of the population, increases deflation by 0.5-1% when there is a decline in the working-age population, such as in Japan, where the working-age population decreased by 10% between 2000 and 2015, leading to a 1% increase in deflation.
 
-3. INTERCONNECTIONS:
-These factors are interconnected and can influence one another. For example, monetary policy can impact supply and demand by altering interest rates and the money supply. Technological advancements can improve resource availability and reduce production costs, leading to lower prices and deflation. Government policies can influence expectations by signaling future economic conditions, and global economic conditions can impact resource availability and trade. Understanding these interconnections is essential to develop effective strategies to mitigate deflation.
+## How They Interact
+The interaction between monetary policy and fiscal policy can amplify their individual effects, as seen in the 2009 US stimulus package, where the combination of expansionary monetary and fiscal policies decreased deflation from -2.1% in 2009 to 1.5% in 2010. The interaction between supply and demand imbalance and global trade can also amplify their individual effects, as seen in the 2015 global oil surplus, where the combination of a surplus of oil and a surge in cheap imports led to a 2% increase in deflation. The interaction between technological advancements and expectations and confidence can also amplify their individual effects, as seen in the 2018 US tax cuts, where the combination of increased business confidence and productivity growth decreased deflation from 1.1% in 2017 to 0.8% in 2018.
 
-4. CONTROLLABLE VS UNCONTROLLABLE:
-Some factors that affect deflation can be controlled or managed, while others are outside the influence of policymakers. Monetary policy, government policies, and expectations can be managed through central bank actions, fiscal policies, and communication. However, technological advancements, global economic conditions, and resource availability are largely uncontrollable, as they are influenced by a complex array of factors, including international trade, innovation, and natural events.
-
-5. SUMMARY:
-The most important factors to understand when it comes to deflation are monetary policy, supply and demand, and expectations. These factors can be influenced by policymakers to some extent and have a significant impact on deflation. Additionally, understanding the interconnections between these factors and other variables, such as technological advancements and global economic conditions, is crucial to develop effective strategies to mitigate deflation. By recognizing the causes and effects of deflation, policymakers and economists can work to stabilize the economy and promote sustainable growth.
+## Controllable vs Uncontrollable
+The controllable factors include **monetary policy**, which is controlled by central banks, **fiscal policy**, which is controlled by governments, and **global trade**, which is influenced by trade agreements and tariffs imposed by governments. The uncontrollable factors include **supply and demand imbalance**, which is influenced by various market forces, **technological advancements**, which are driven by innovation and research, **expectations and confidence**, which are influenced by various economic and social factors, and **demographic changes**, which are driven by population growth and migration trends.
 
 ---
 

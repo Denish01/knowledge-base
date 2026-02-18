@@ -1,30 +1,31 @@
 ---
 title: "What Compound Interest Depends On"
 slug: what-compound-interest-depends-on
-description: "A clear, simple explanation of what compound interest depends on - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+description: "A clear, simple explanation of What Compound Interest Depends On - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Compound Interest Depends On
 
-1. INTRODUCTION
-Compound interest is the process by which interest is earned on both the principal amount and any accrued interest over time. Understanding what compound interest depends on is crucial for individuals to make informed decisions about their financial investments and savings. The dependencies of compound interest are the foundation upon which its calculations and effects are built. Without a clear understanding of these prerequisites, it is difficult to accurately predict and utilize compound interest.
+The **principal amount** is the most critical dependency for compound interest, as it dictates the base value that interest will accrue upon. Without a principal amount, compound interest cannot function, as seen in the case of the 2008 financial crisis where many mortgage-backed securities had inadequate or non-existent principal amounts, leading to a massive devaluation of these assets. 
 
-2. KEY DEPENDENCIES
-- The principal amount: This is the initial amount of money deposited or invested. It is necessary because it serves as the base for calculating interest. Without a principal amount, there is no foundation for earning interest.
-- The interest rate: This is the rate at which interest is earned on the principal amount. It is necessary because it determines how much interest is accrued over time. Without an interest rate, interest cannot be calculated.
-- Time: This refers to the duration over which interest is earned. It is necessary because it allows interest to accrue and compound. Without time, interest cannot be earned or compounded.
-- Compounding frequency: This refers to how often interest is compounded, such as monthly or annually. It is necessary because it affects how quickly interest accrues and grows. Without a compounding frequency, interest cannot be accurately calculated.
-- Initial deposit timing: This refers to when the principal amount is deposited. It is necessary because it affects when interest begins to accrue. Without a clear initial deposit timing, it is difficult to determine when interest starts to earn.
+## Key Dependencies
+- **Principal amount** — required to calculate the interest, and without it, compound interest cannot accrue, as the absence of a principal amount in the aforementioned mortgage-backed securities led to a loss of over $1 trillion in value (IMF).
+- **Interest rate** — needed to determine the rate at which interest will accrue, and a zero or negative interest rate would render compound interest ineffective, as seen in Japan's experience with negative interest rates, where economic growth remained stagnant despite the policy (Bank of Japan).
+- **Time** — necessary for interest to accrue, and without it, compound interest would not be able to grow, as exemplified by the failure of the Soviet Union's economic system, which did not account for the time value of money, leading to inefficient allocation of resources (Kornai's shortage economy model).
+- **Compounding frequency** — affects how often interest is applied to the principal amount, and a low compounding frequency would reduce the effectiveness of compound interest, as seen in the case of savings accounts with low compounding frequencies, which often result in lower returns for depositors (Federal Reserve).
+- **Risk-free rate** — influences the interest rate and, by extension, the compound interest, as a high risk-free rate would increase the interest rate, and a low risk-free rate would decrease it, as demonstrated by the impact of the US Federal Reserve's monetary policy on interest rates and economic growth (Milton Friedman's monetary policy framework).
 
-3. ORDER OF IMPORTANCE
-The most critical dependencies for compound interest are the principal amount, interest rate, and time. These three elements are essential for calculating interest and determining its effects. Compounding frequency and initial deposit timing are also important, but they are secondary to the primary dependencies.
+## Priority Order
+The dependencies can be ranked from most to least critical as follows:
+- **Principal amount**, as it is the foundation upon which compound interest is calculated, and without it, compound interest cannot exist.
+- **Interest rate**, as it determines the rate at which interest will accrue, and a zero or negative interest rate would render compound interest ineffective.
+- **Time**, as it is necessary for interest to accrue, and without it, compound interest would not be able to grow.
+- **Compounding frequency**, as it affects how often interest is applied to the principal amount, but its impact is less significant than the previous three dependencies.
+- **Risk-free rate**, as it influences the interest rate, but its impact is less direct than the previous four dependencies.
 
-4. COMMON GAPS
-One common gap in understanding compound interest is the assumption that it only depends on the interest rate. While the interest rate is crucial, it is not the only factor. Many people also overlook the importance of compounding frequency and initial deposit timing, which can significantly impact the amount of interest earned over time.
-
-5. SUMMARY
-In summary, compound interest depends on a combination of key elements, including the principal amount, interest rate, time, compounding frequency, and initial deposit timing. Understanding these dependencies is essential for accurately calculating and utilizing compound interest. By recognizing the importance of each dependency and how they interact, individuals can make informed decisions about their financial investments and savings, and maximize the benefits of compound interest. A solid foundation in these prerequisites is necessary for effectively working with compound interest and achieving long-term financial goals.
+## Common Gaps
+People often overlook or take for granted the **time value of money**, assuming that money today is equivalent to money in the future, which can lead to inadequate planning and a failure to account for inflation, as seen in the case of the Argentine economic crisis, where the government's failure to account for inflation led to a significant devaluation of the currency (Ricardo's comparative advantage model).
 
 ---
 

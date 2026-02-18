@@ -1,35 +1,36 @@
 ---
 title: "Example of Annual Percentage Yield"
-slug: examples-of-annual-percentage-yield
-description: "A clear, simple explanation of examples of annual percentage yield - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: example-of-annual-percentage-yield
+description: "A clear, simple explanation of Example of Annual Percentage Yield - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Example of Annual Percentage Yield
 
-1. INTRODUCTION:
-Annual percentage yield, or APY, is a measure that calculates the total interest earned on an investment or savings account over a year, taking into account the effect of compounding interest. It provides a clear picture of how much an investment can grow in a year, making it easier to compare different investment options. Understanding APY is crucial for making informed decisions about where to put your money.
+## Definition
+Annual Percentage Yield (APY) is a measure of the total amount of interest paid on a deposit account over a year, taking into account the effect of compounding, as first described by economist **Eugen von Böhm-Bawerk** in his work on interest theory.
 
-2. EVERYDAY EXAMPLES:
-Many people encounter APY in their daily lives, often without realizing it. For instance, when you open a savings account at a bank like Bank of America, you might earn an APY of 2.0% on your deposits. This means if you deposit $1,000, at the end of the year, you would have $1,020 in your account, earning $20 in interest. Similarly, credit unions like Navy Federal Credit Union offer savings accounts with APYs around 3.0%, which can be more beneficial for those looking to save. 
+## How It Works
+The APY is calculated by considering the **nominal interest rate**, which is the stated interest rate, and the **compounding frequency**, which determines how often the interest is added to the principal. For instance, if a savings account has a nominal interest rate of 2% and compounds annually, the APY will be 2.02% if it compounds monthly, due to the effect of **compounding**, as explained by **Fisher's equation of exchange**. The APY formula is: APY = (1 + r/n)^(n) - 1, where r is the nominal interest rate and n is the number of compounding periods per year.
 
-Another example is certificates of deposit (CDs), which are time deposits offered by banks with a fixed interest rate and maturity date. For example, a 5-year CD from Wells Fargo with a 3.5% APY would turn $5,000 into $5,919.64 after five years, with the interest compounded annually. 
+The APY is affected by the **Federal Reserve's monetary policy**, which influences the overall level of interest rates in the economy. For example, when the Federal Reserve lowers the **federal funds rate**, banks and other financial institutions often reduce their deposit rates, leading to lower APYs on savings accounts. Conversely, when the Federal Reserve raises the federal funds rate, deposit rates tend to increase, resulting in higher APYs. According to data from the **Federal Deposit Insurance Corporation (FDIC)**, the average APY on a one-year certificate of deposit (CD) was around 2.5% in 2020.
 
-Lastly, consider a money market account from Fidelity Investments with an APY of 1.8%. If you invest $10,000, after one year, you would have $10,180, having earned $180 in interest.
+## Key Components
+- **Compounding frequency**: determines how often the interest is added to the principal, with more frequent compounding resulting in higher APYs. For example, an account with a nominal interest rate of 2% and daily compounding will have a higher APY than one with annual compounding.
+- **Nominal interest rate**: the stated interest rate, which serves as the basis for calculating the APY. A higher nominal interest rate will result in a higher APY, assuming the compounding frequency remains the same.
+- **Principal amount**: the initial deposit amount, which affects the total interest earned and the APY. A larger principal amount will result in more interest earned, but the APY remains the same.
+- **Time**: the length of time the money is deposited, with longer periods resulting in more interest earned and a higher APY. For instance, a five-year CD will typically have a higher APY than a one-year CD.
+- **Interest rate risk**: the risk that changes in interest rates will affect the APY, with rising interest rates benefiting depositors and falling interest rates benefiting borrowers. According to **Milton Friedman's theory of interest rates**, changes in interest rates can have significant effects on the overall economy.
+- **Liquidity**: the ability to access the deposited funds, with more liquid accounts often having lower APYs. For example, a checking account may have a lower APY than a savings account or CD, due to its higher liquidity.
 
-3. NOTABLE EXAMPLES:
-Some well-known examples of APY can be seen in high-yield savings accounts, such as those offered by Ally Bank or Marcus by Goldman Sachs. Ally's online savings account, for example, might offer an APY of 2.2%, making it a competitive option for those looking for higher interest rates without the need for a traditional bank branch. 
+## Common Misconceptions
+**Myth:** APY is the same as the nominal interest rate — **Fact:** APY takes into account the effect of compounding, which can result in a higher effective interest rate, as described by **Irving Fisher's theory of interest**. 
+**Myth:** A higher APY always means a better deal — **Fact:** Other factors, such as fees, liquidity, and interest rate risk, should also be considered when evaluating a deposit account, according to **Modigliani-Miller's theory of capital structure**.
+**Myth:** APY is only relevant for savings accounts — **Fact:** APY is also relevant for other types of deposit accounts, such as CDs and money market accounts, as well as for loans and credit cards, which can have **APR (Annual Percentage Rate)**, as explained by **Stiglitz's theory of credit markets**.
+**Myth:** APY is fixed and does not change over time — **Fact:** APY can change over time due to changes in interest rates, compounding frequency, or other factors, such as **inflation**, which can erode the purchasing power of deposited funds, as described by **Friedman's theory of inflation**.
 
-Another notable example is Treasury bills (T-bills), which are short-term government securities. A 52-week T-bill with a 2.1% APY would yield $2.10 in interest for every $100 invested, providing a low-risk investment option.
-
-4. EDGE CASES:
-An unusual example of APY is the interest earned on certain types of loans, where the borrower benefits from a low APY. For instance, a home equity line of credit (HELOC) from a lender like Chase might have an APY of 5.0%, which, although higher than many savings accounts, can still be a relatively low rate for borrowing money, especially considering the potential tax benefits of HELOC interest.
-
-5. NON-EXAMPLES:
-It's common for people to confuse other financial metrics with APY. For example, the interest rate on a credit card, such as the 18% APR on a card from Capital One, is not the same as APY because it doesn't account for compounding interest in the same way. Another misconception is that the dividend yield of a stock, like the 4% dividend yield of Coca-Cola shares, is equivalent to APY; however, dividend yields do not account for compounding and are subject to fluctuations in stock price. Lastly, the coupon rate of a bond, such as the 6% coupon rate on a corporate bond from Apple, differs from APY because it only reflects the annual interest payment and not the effect of compounding.
-
-6. PATTERN:
-All valid examples of APY have a common thread: they reflect the total interest earned over a year, including the impact of compounding. Whether it's a savings account, a CD, or even certain types of loans, the APY provides a standardized measure to compare different financial products. This consistency allows individuals to make informed decisions about their investments and savings, ensuring they choose options that best align with their financial goals. By understanding APY and how it applies to various financial scenarios, people can better navigate the world of personal finance and make the most of their money.
+## In Practice
+For instance, **Bank of America** offers a savings account with a nominal interest rate of 1.5% and daily compounding, resulting in an APY of 1.51%. If a depositor puts $10,000 into this account, they will earn approximately $151 in interest over the course of a year, assuming the interest rate remains constant. In contrast, a **Wells Fargo** CD with a nominal interest rate of 2.5% and annual compounding will have an APY of 2.5%, resulting in $250 in interest earned over a year on a $10,000 deposit. According to data from the **FDIC**, the average APY on a one-year CD was around 2.5% in 2020, with some banks offering rates as high as 3.5% (Ally Bank).
 
 ---
 

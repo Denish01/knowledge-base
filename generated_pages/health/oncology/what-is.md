@@ -1,37 +1,38 @@
 ---
 title: "What Is Oncology?"
-slug: oncology
-description: "A clear, simple explanation of oncology - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-09
+slug: what-is-oncology
+description: "A clear, simple explanation of What Is Oncology? - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Is Oncology?
 
-Oncology is the branch of medicine that deals with the study, diagnosis, treatment, and prevention of cancer. 
+## Definition
+Oncology is the branch of medicine that deals with the study, diagnosis, treatment, and prevention of cancer, with the term originating from the Greek words "onkos" meaning mass or tumor and "logos" meaning study, first coined by **Rudolf Virchow** in the 19th century.
 
-Cancer is a group of diseases characterized by the uncontrolled growth and spread of abnormal cells in the body. When normal cells grow and divide, they follow a specific pattern, but cancer cells do not follow this pattern and can invade and damage surrounding tissues. The goal of oncology is to understand the causes of cancer, develop effective treatments, and improve the quality of life for people with cancer. 
+## How It Works
+Oncology involves a multidisciplinary approach, incorporating **surgery**, **radiation therapy**, and **chemotherapy** to treat cancer. The treatment plan depends on the type and stage of cancer, with **staging** based on the **TNM system**, which considers the size of the tumor, spread to lymph nodes, and metastasis to other parts of the body. For example, **breast cancer** is staged from 0 to IV, with stage 0 being non-invasive and stage IV being metastatic, according to the **American Joint Committee on Cancer**.
 
-The study of oncology is complex and involves many different fields, including biology, genetics, and pharmacology. Oncologists use a variety of techniques, such as surgery, chemotherapy, and radiation therapy, to treat cancer. They also work with other healthcare professionals, such as radiologists and pathologists, to diagnose and treat cancer. Understanding the biology of cancer cells is crucial in developing effective treatments, as it allows oncologists to target specific molecules or pathways that are involved in the growth and spread of cancer cells.
+The process of oncology also involves **cancer screening**, which aims to detect cancer at an early stage, when it is more treatable. Screening methods include **mammography** for breast cancer, **colonoscopy** for colorectal cancer, and **low-dose computed tomography** for lung cancer. The **United States Preventive Services Task Force** recommends regular screening for these cancers, with the frequency and starting age depending on individual risk factors. Additionally, **genetic testing** can identify individuals with a high risk of developing certain types of cancer, such as **BRCA1** and **BRCA2** for breast and ovarian cancer.
 
-Oncology is a constantly evolving field, and new discoveries are continually being made. However, the core principles of oncology remain the same: to diagnose cancer accurately, to develop effective treatments, and to improve the quality of life for people with cancer. 
+Oncology also encompasses **palliative care**, which focuses on alleviating the symptoms and stress of cancer, rather than treating the disease itself. **Hospice care** is a type of palliative care for patients with advanced cancer, providing emotional, social, and spiritual support. The **World Health Organization** estimates that approximately 18.1 million new cancer cases and 9.6 million cancer deaths occurred worldwide in 2018, highlighting the need for effective oncology care.
 
-Key components of oncology include:
-* Carcinogenesis, which is the process by which normal cells become cancerous
-* Tumor biology, which is the study of the growth and spread of cancer cells
-* Cancer diagnosis, which involves the use of techniques such as imaging and biopsy to diagnose cancer
-* Cancer treatment, which includes surgery, chemotherapy, and radiation therapy
-* Cancer prevention, which involves the use of strategies such as screening and vaccination to prevent cancer
-* Palliative care, which is the care and support provided to people with cancer to improve their quality of life
+## Key Components
+- **Tumor biology**: understanding the characteristics of cancer cells, such as their growth rate and ability to metastasize, is crucial for developing targeted therapies, with **angiogenesis inhibitors** being an example of a treatment that targets the formation of new blood vessels that feed the tumor.
+- **Imaging techniques**: **positron emission tomography** and **magnetic resonance imaging** are used to visualize the tumor and assess the effectiveness of treatment, with **response evaluation criteria in solid tumors** being a framework for measuring tumor response.
+- **Chemotherapeutic agents**: **anthracyclines** and **taxanes** are examples of chemotherapy drugs that target rapidly dividing cancer cells, with the **National Comprehensive Cancer Network** providing guidelines for their use.
+- **Immune system modulation**: **checkpoint inhibitors** and **cancer vaccines** are immunotherapies that enhance the body's natural defenses against cancer, with **pembrolizumab** being an example of a checkpoint inhibitor that has shown efficacy in treating **non-small cell lung cancer**.
+- **Clinical trials**: these studies evaluate the safety and efficacy of new cancer treatments, with **randomized controlled trials** being the gold standard for determining the effectiveness of a treatment, and **phases I-IV** representing the different stages of clinical trial development.
+- **Multidisciplinary care teams**: oncologists, surgeons, radiologists, and other healthcare professionals work together to provide comprehensive care for cancer patients, with **tumor boards** being a platform for discussing individual patient cases and developing treatment plans.
 
-Common misconceptions about oncology include:
-* That all cancers are the same and require the same treatment
-* That cancer is always fatal
-* That cancer is contagious and can be spread from person to person
-* That alternative therapies, such as herbal remedies, are effective in treating cancer
+## Common Misconceptions
+**Myth:** Cancer is a single disease — **Fact:** Cancer is a group of over 100 distinct diseases, each with its own unique characteristics and treatment approaches (National Cancer Institute).
+**Myth:** Cancer is always caused by genetic mutations — **Fact:** While genetic mutations can contribute to cancer development, environmental factors such as **tobacco use** and **ultraviolet radiation** also play a significant role (Centers for Disease Control and Prevention).
+**Myth:** Cancer treatment always involves chemotherapy — **Fact:** Treatment plans depend on the type and stage of cancer, and may involve surgery, radiation therapy, or other approaches, such as **hormone therapy** for **prostate cancer** (American Cancer Society).
+**Myth:** Cancer is always fatal — **Fact:** Many types of cancer are treatable, and the **5-year survival rate** for all cancers combined has increased to 68.6% in the United States, according to the **Surveillance, Epidemiology, and End Results** program.
 
-A real-world example of oncology in action is the treatment of breast cancer. When a woman is diagnosed with breast cancer, her oncologist may recommend a combination of treatments, such as surgery to remove the tumor, radiation therapy to kill any remaining cancer cells, and chemotherapy to prevent the cancer from spreading. The oncologist will work with other healthcare professionals, such as radiologists and pathologists, to develop a treatment plan that is tailored to the individual woman's needs.
-
-In summary, oncology is the branch of medicine that deals with the study, diagnosis, treatment, and prevention of cancer, and its goal is to understand the causes of cancer and develop effective treatments to improve the quality of life for people with cancer.
+## In Practice
+The **University of Texas MD Anderson Cancer Center** is a leading institution in oncology care, with a comprehensive approach that includes **surgical oncology**, **radiation oncology**, and **medical oncology**. The center treats over 150,000 patients annually, with a focus on **personalized medicine** and **translational research**. For example, the center's **Lung Cancer Moon Shot** program aims to reduce lung cancer deaths by 25% in the next 5 years, with a budget of $25 million, and has already shown promising results with **nivolumab**, a checkpoint inhibitor that has improved survival rates for patients with advanced non-small cell lung cancer.
 
 ---
 

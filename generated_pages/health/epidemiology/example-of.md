@@ -1,29 +1,38 @@
 ---
 title: "Example of Epidemiology"
-slug: examples-of-epidemiology
-description: "A clear, simple explanation of examples of epidemiology - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-09
+slug: example-of-epidemiology
+description: "A clear, simple explanation of Example of Epidemiology - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Example of Epidemiology
 
-1. INTRODUCTION
-Epidemiology is the study of how diseases spread and can be controlled in populations. It involves looking at the causes, patterns, and effects of health issues in groups of people. Epidemiologists use this information to develop strategies for preventing and treating diseases. By understanding how diseases spread, epidemiologists can help keep people healthy and save lives.
+## Definition
+Epidemiology is the study of the distribution and determinants of health-related events, diseases, or health-related characteristics among populations, with **Snow's** work on cholera in 1855 being a foundational example.
 
-2. EVERYDAY EXAMPLES
-In everyday life, epidemiology is used in many ways. For example, a school nurse might track the number of students who get the flu each year to see if the flu vaccine is working. If the number of flu cases goes down after the vaccine is given, the nurse knows the vaccine is effective. In a community, epidemiologists might study the connection between air pollution and asthma. They might find that people who live near busy roads are more likely to have asthma attacks. In a hospital, epidemiologists might look at how often patients get infections after surgery. If they find that patients who have surgery in the morning are less likely to get infections than those who have surgery in the afternoon, they might change the way surgeries are scheduled. In a small town, epidemiologists might investigate an outbreak of food poisoning at a restaurant. They might find that the people who got sick all ate the same type of food, and then they can warn others not to eat that food.
+## How It Works
+Epidemiology involves the collection and analysis of data to understand the patterns and causes of health issues. This is achieved through **descriptive epidemiology**, which examines the characteristics of a disease, such as its frequency, distribution, and trends over time. For instance, the Centers for Disease Control and Prevention (CDC) uses **surveillance systems** to monitor disease outbreaks, with ~800,000 reported cases of influenza in the United States during the 2019-2020 season (CDC). Epidemiologists also employ **analytical epidemiology** to investigate the relationships between risk factors and diseases, using statistical methods like regression analysis to identify correlations and causality.
 
-3. NOTABLE EXAMPLES
-There are many well-known examples of epidemiology in action. One example is the work of John Snow, who studied a cholera outbreak in London. He found that people who got cholera all got their water from the same pump, and he convinced the authorities to remove the handle from the pump. This stopped the outbreak. Another example is the study of the connection between smoking and lung cancer. Epidemiologists found that people who smoke are much more likely to get lung cancer than those who do not smoke. This led to warnings on cigarette packs and public health campaigns to reduce smoking. A third example is the investigation of the source of a Legionnaires' disease outbreak at a hotel. Epidemiologists found that the bacteria that cause the disease were in the hotel's air conditioning system, and they were able to stop the outbreak by cleaning the system.
+The **case-control study** design is a common approach in analytical epidemiology, where individuals with a specific disease or outcome are compared to those without it to identify potential risk factors. This design was used in a study on the association between smoking and lung cancer, which found that smokers were ~15 times more likely to develop lung cancer than non-smokers (Doll and Hill, 1950). Additionally, **cohort studies** involve following a group of individuals over time to examine the development of diseases and outcomes, such as the **Framingham Heart Study**, which has been tracking cardiovascular disease risk factors in a cohort of ~5,000 individuals since 1948 (Framingham Heart Study).
 
-4. EDGE CASES
-Epidemiology can also be used in unusual or unexpected ways. For example, epidemiologists might study the spread of a disease in animals, such as a outbreak of rabies in a population of raccoons. They might find that the disease is spreading quickly because the raccoons are coming into contact with each other at food sources. Another example is the study of the connection between a disease and a specific occupation. For instance, epidemiologists might find that miners are more likely to get a certain type of lung disease due to their exposure to dust in the mines.
+Epidemiology also relies on **experimental studies**, such as randomized controlled trials (RCTs), to evaluate the effectiveness of interventions and treatments. For example, the **Women's Health Initiative** RCT found that hormone replacement therapy increased the risk of breast cancer by ~26% (Women's Health Initiative, 2002). These different study designs and methods allow epidemiologists to investigate a wide range of health issues, from infectious diseases like tuberculosis, which affects ~10 million people worldwide (World Health Organization), to chronic conditions like diabetes, which affects ~34 million people in the United States (CDC).
 
-5. NON-EXAMPLES
-Some things might seem like epidemiology, but are not. For example, a doctor treating a single patient for a disease is not doing epidemiology, because epidemiology involves studying groups of people. A study of the chemical composition of a disease-causing agent is also not epidemiology, because it does not involve looking at how the disease spreads in a population. A public health campaign to promote healthy eating is not epidemiology, because it does not involve studying the causes or patterns of a specific disease.
+## Key Components
+- **Incidence** refers to the number of new cases of a disease that occur within a population over a specific time period, and is used to measure the risk of developing a disease. An increase in incidence may indicate an outbreak or increased transmission of a disease.
+- **Prevalence** is the total number of cases of a disease present in a population at a given time, and is used to measure the burden of a disease. A decrease in prevalence may indicate effective treatment or prevention efforts.
+- **Relative risk** is a measure of the association between a risk factor and a disease, and is used to quantify the strength of the relationship. A relative risk of ~2.0 indicates that individuals with the risk factor are twice as likely to develop the disease as those without it.
+- **Odds ratio** is a statistical measure used to estimate the association between a risk factor and a disease in case-control studies. An odds ratio of ~1.5 indicates that individuals with the risk factor are 1.5 times more likely to develop the disease than those without it.
+- **Confounding variables** are factors that can affect the relationship between a risk factor and a disease, and must be controlled for in epidemiological studies to ensure accurate results. For example, age and sex are common confounding variables that can affect the relationship between smoking and lung cancer.
+- **Bias** refers to systematic errors in the collection or analysis of data that can affect the validity of epidemiological studies. Types of bias include selection bias, information bias, and confounding bias, and must be minimized through careful study design and analysis.
 
-6. PATTERN
-All valid examples of epidemiology have one thing in common: they involve studying the causes, patterns, and effects of health issues in groups of people. Whether it is a school nurse tracking the flu, a researcher studying the connection between smoking and lung cancer, or an investigator looking into an outbreak of food poisoning, epidemiology always involves looking at how diseases spread and how they can be controlled. By understanding these patterns, epidemiologists can help keep people healthy and save lives. Epidemiology is a crucial tool for protecting public health, and its applications can be seen in many different contexts and scales.
+## Common Misconceptions
+**Myth:** Epidemiology is only concerned with infectious diseases — **Fact:** Epidemiology examines a wide range of health issues, including chronic diseases, mental health, and environmental health, with ~75% of healthcare costs in the United States attributed to chronic diseases (CDC).
+**Myth:** Correlation implies causation — **Fact:** Epidemiological studies must control for confounding variables and use statistical methods to establish causality, as seen in the **Bradford Hill criteria** for causality (Bradford Hill, 1965).
+**Myth:** Randomized controlled trials are the only valid study design — **Fact:** Observational studies, such as cohort and case-control studies, can provide valuable insights into health issues and are often used when RCTs are not feasible, as seen in the **Nurses' Health Study**, which has been tracking the health outcomes of ~120,000 nurses since 1976 (Nurses' Health Study).
+**Myth:** Epidemiology is a new field — **Fact:** Epidemiology has its roots in the work of **Hippocrates** and **Galen**, with modern epidemiology emerging in the 19th century with the work of **Snow** and **Farr** (Snow, 1855; Farr, 1885).
+
+## In Practice
+The CDC used epidemiological principles to investigate a **Salmonella** outbreak in the United States, which affected ~1,500 people and was linked to contaminated peanut products (CDC, 2009). The investigation involved **descriptive epidemiology**, **case-control studies**, and **laboratory testing** to identify the source of the outbreak and develop control measures. The CDC worked with state and local health departments to collect and analyze data, and used **statistical models** to predict the spread of the outbreak. The investigation resulted in the recall of ~3,900 products and the implementation of new safety protocols in the food industry, with the CDC estimating that the outbreak resulted in ~$1.4 billion in economic losses (CDC, 2009).
 
 ---
 

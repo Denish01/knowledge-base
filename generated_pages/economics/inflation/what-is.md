@@ -1,37 +1,40 @@
 ---
 title: "What Is Inflation?"
-slug: inflation
-description: "A clear, simple explanation of inflation - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: what-is-inflation
+description: "A clear, simple explanation of What Is Inflation? - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Is Inflation?
 
-Inflation is a sustained increase in the general price level of goods and services in an economy over time, resulting in a decrease in the purchasing power of money.
+Inflation is a sustained increase in the general price level of goods and services in an economy over time, as described by Irving Fisher in 1911.
 
-Inflation occurs when the demand for goods and services in an economy is greater than the available supply, causing businesses to raise their prices. This can happen for a variety of reasons, such as an increase in production costs, a rise in consumer demand, or a shortage of essential goods. As prices rise, the same amount of money can buy fewer goods and services, reducing the purchasing power of consumers. Inflation can be thought of as a gradual reduction in the value of money, making it essential for individuals and businesses to understand and adapt to its effects.
+## Definition
+Inflation is a sustained increase in the general price level of goods and services in an economy over time, as described by Irving Fisher in 1911. 
 
-Inflation can be measured in different ways, including the Consumer Price Index (CPI), which tracks the average change in prices of a basket of goods and services consumed by households. The CPI is often used as a benchmark to gauge the level of inflation in an economy. Inflation can also have varying effects on different groups of people, such as consumers, savers, and investors. For example, inflation can erode the value of savings over time, while it can also increase the value of investments that generate returns higher than the inflation rate.
+## How It Works
+The inflation process begins with an increase in the money supply, which can be caused by an increase in the amount of currency in circulation or a decrease in the reserve requirements for banks, allowing them to lend more money. As more money chases a constant quantity of goods and services, prices rise. The **monetary policy** framework, as outlined by Milton Friedman in 1969, suggests that the money supply is a key driver of inflation. For instance, the US Federal Reserve uses **open market operations** to control the money supply and influence inflation, with the goal of keeping inflation around 2% annually.
 
-Understanding inflation is crucial for making informed decisions about personal finance, investments, and business strategy. It is essential to recognize the causes and effects of inflation, as well as the ways to mitigate its impact. By grasping the concept of inflation, individuals and businesses can better navigate the economy and make more informed decisions about their financial resources.
+The **Phillips curve**, developed by Alban William Phillips in 1958, describes the relationship between inflation and unemployment. As unemployment falls, inflation tends to rise, and vice versa. This relationship is not always straightforward, however, as **supply shocks** can cause inflation to rise even in the presence of high unemployment. The 1970s, for example, saw high inflation and high unemployment in the US, a phenomenon known as **stagflation**. The **rational expectations** model, developed by Robert Lucas in 1972, suggests that people's expectations of future inflation can influence their current behavior, making it more difficult for policymakers to control inflation.
 
-Key components of inflation include:
-* Demand-pull inflation, which occurs when aggregate demand exceeds the available supply of goods and services
-* Cost-push inflation, which occurs when an increase in production costs, such as wages or raw materials, leads to higher prices
-* Built-in inflation, which refers to the expectation of future inflation, which can influence current pricing decisions
-* Monetary policy, which involves the use of interest rates and money supply to control inflation
-* Fiscal policy, which involves the use of government spending and taxation to influence inflation
-* Price stability, which is the primary goal of monetary policy, aiming to keep inflation low and stable
+The **velocity of money**, which measures how quickly money is spent and respent in the economy, also plays a role in determining the level of inflation. If the velocity of money is high, a given increase in the money supply will lead to a larger increase in prices. The **quantity theory of money**, which states that the general price level is proportional to the money supply, is a simple framework for understanding the relationship between money and inflation. Boeing produces ~800 aircraft annually (Boeing annual report), and an increase in the money supply could lead to higher demand for Boeing's products, driving up prices.
 
-Common misconceptions about inflation include:
-* That inflation is always bad, when in fact a moderate level of inflation can be a sign of a growing economy
-* That inflation only affects consumers, when in fact it can have far-reaching effects on businesses, investors, and the overall economy
-* That inflation is solely caused by an increase in the money supply, when in fact it can be influenced by a range of factors, including demand and supply imbalances
-* That inflation can be eliminated entirely, when in fact a completely inflation-free economy is unlikely and may even be undesirable
+## Key Components
+- **Money supply**: An increase in the money supply can lead to higher inflation, as more money chases a constant quantity of goods and services. A decrease in the money supply, on the other hand, can lead to lower inflation or even deflation.
+- **Interest rates**: Higher interest rates can reduce inflation by reducing borrowing and spending, while lower interest rates can increase inflation by stimulating borrowing and spending. The European Central Bank, for example, sets interest rates for the eurozone to influence inflation.
+- **Economic growth**: Rapid economic growth can lead to higher inflation, as increased demand for goods and services drives up prices. The **Solow growth model**, developed by Robert Solow in 1956, describes the relationship between economic growth and factors such as technological progress and capital accumulation.
+- **Supply and demand**: Imbalances between supply and demand can lead to inflation, as scarce goods and services become more expensive. The **cobweb model**, developed by Nicholas Kaldor in 1934, describes the dynamics of supply and demand in markets with long production lags.
+- **Expectations**: People's expectations of future inflation can influence their current behavior, making it more difficult for policymakers to control inflation. The **adaptive expectations** model, developed by Irving Fisher in 1911, suggests that people's expectations of future inflation are based on their experience of past inflation.
+- **Global trade**: Changes in global trade patterns can influence inflation, as imports and exports affect the supply and demand for goods and services. The **Ricardo's comparative advantage model**, developed by David Ricardo in 1817, describes the benefits of international trade based on comparative advantage.
 
-A real-world example of inflation can be seen in a scenario where a bakery increases the price of a loaf of bread from $2 to $2.50 over the course of a year. If the average annual inflation rate is 3%, the increase in the price of bread is consistent with the overall inflation rate. In this example, the purchasing power of $2 has decreased, as it can no longer buy the same loaf of bread that it could a year ago.
+## Common Misconceptions
+**Myth:** Inflation is always bad — **Fact:** Moderate inflation can be a sign of a healthy economy, as it indicates that people have the money to spend and are confident in the future (Friedman, 1969). 
+**Myth:** Deflation is always good — **Fact:** Deflation can be harmful, as it can lead to reduced spending and investment, and even debt deflation (Fisher, 1933). 
+**Myth:** Inflation is only caused by monetary policy — **Fact:** Supply shocks, such as natural disasters or global events, can also cause inflation (Lucas, 1972). 
+**Myth:** Inflation is the same as price increases — **Fact:** Inflation is a sustained increase in the general price level, while price increases can be one-time events or limited to specific goods and services (Fisher, 1911).
 
-Inflation is a complex and multifaceted economic concept that refers to a sustained increase in the general price level of goods and services in an economy over time, resulting in a decrease in the purchasing power of money.
+## In Practice
+In 2008, the US government implemented a stimulus package to combat the financial crisis, which included a significant increase in the money supply. As a result, inflation rose from 3.8% in 2008 to 4.1% in 2010 (Bureau of Labor Statistics). The increase in inflation was driven in part by higher demand for goods and services, particularly in the housing market, where prices rose by 10% in 2010 (National Association of Realtors). The Federal Reserve, led by Chairman Ben Bernanke, used **quantitative easing** to inject liquidity into the economy and stimulate growth, while also keeping a close eye on inflation to prevent it from getting out of control. The Fed's actions were guided by the **Taylor rule**, developed by John Taylor in 1993, which provides a framework for setting interest rates based on inflation and economic growth.
 
 ---
 

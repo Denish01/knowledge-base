@@ -1,37 +1,40 @@
 ---
 title: "What Is Recession?"
-slug: recession
-description: "A clear, simple explanation of recession - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: what-is-recession
+description: "A clear, simple explanation of What Is Recession? - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Is Recession?
 
-Recession is a period of economic decline, characterized by reduced economic activity, lower production, and higher unemployment.
+Recession is a period of economic decline, typically defined as a decline in gross domestic product (GDP) for two or more consecutive quarters, as described by economist **Julius Shiskin** in 1974.
 
-A recession occurs when there is a decline in the overall economy, resulting in a decrease in the production and sale of goods and services. This decline can be caused by various factors, such as a decrease in consumer spending, a reduction in business investment, or a disruption in international trade. When a recession occurs, it can have a significant impact on individuals, businesses, and the overall economy. People may lose their jobs, businesses may struggle to stay afloat, and the government may need to implement policies to stimulate economic growth.
+## Definition
+Recession is a period of economic decline, typically defined as a decline in gross domestic product (GDP) for two or more consecutive quarters, as described by economist **Julius Shiskin** in 1974.
 
-During a recession, the economy experiences a decline in economic indicators such as gross domestic product (GDP), which is the total value of goods and services produced within a country. This decline can also lead to a decrease in consumer spending, as people become more cautious with their money and reduce their purchases of non-essential goods and services. Additionally, businesses may reduce their production and investment, leading to a decrease in employment opportunities and a rise in unemployment. The government and central banks may respond to a recession by implementing monetary and fiscal policies to stimulate economic growth and reduce unemployment.
+## How It Works
+A recession occurs when there is a significant decline in economic activity, which can be triggered by a combination of factors such as a decrease in consumer spending, a reduction in business investment, and a decline in international trade. According to **Ricardo's comparative advantage model**, 1817, countries that specialize in producing goods for which they have a comparative advantage will experience economic growth, but during a recession, this growth slows down. For example, in the United States, a decline in housing market activity can lead to a recession, as it did in 2008, when housing prices fell by 30% (National Association of Realtors).
 
-The impact of a recession can be widespread, affecting not only the economy but also individuals and communities. People may experience a reduction in their income, leading to a decrease in their standard of living. Businesses may struggle to stay in operation, leading to a decline in the availability of goods and services. Furthermore, a recession can also have a psychological impact, as people may feel anxious and uncertain about their financial future. The effects of a recession can be long-lasting, and it may take time for the economy to recover and return to a state of growth.
+The mechanisms that lead to a recession can be complex and involve multiple factors, including monetary policy, fiscal policy, and external shocks. For instance, an increase in interest rates by the Federal Reserve can reduce borrowing and spending, leading to a recession, as seen in 1982, when the Fed raised interest rates to 20% (Federal Reserve Economic Data). Additionally, a decline in international trade, such as the one caused by the **Smoot-Hawley Tariff Act** in 1930, can also contribute to a recession.
 
-Key components of a recession include:
-* A decline in gross domestic product (GDP), which is the total value of goods and services produced within a country
-* An increase in unemployment, as businesses reduce their production and investment
-* A decrease in consumer spending, as people become more cautious with their money
-* A reduction in business investment, as companies become less confident in the economy
-* A decline in international trade, as countries reduce their imports and exports
-* A decrease in economic indicators such as retail sales, industrial production, and housing starts
+The duration and severity of a recession can vary significantly, depending on the specific circumstances. According to the **National Bureau of Economic Research** (NBER), the average length of a recession in the United States is approximately 11 months, with the longest recession on record being the **Great Depression**, which lasted for 43 months (NBER).
 
-Common misconceptions about recessions include:
-* That recessions only affect certain industries or sectors, when in fact they can have a widespread impact on the entire economy
-* That recessions are always caused by a single event or factor, when in fact they can be the result of a combination of factors
-* That recessions are always short-lived, when in fact they can last for an extended period
-* That recessions only affect businesses, when in fact they can also have a significant impact on individuals and communities
+## Key Components
+- **GDP**: a decrease in GDP is a key indicator of a recession, as it reflects a decline in economic activity, with the United States experiencing a 5.1% decline in GDP in 2009 (Bureau of Economic Analysis).
+- **Unemployment rate**: an increase in the unemployment rate is a common consequence of a recession, with the United States experiencing an unemployment rate of 10% in 2010 (Bureau of Labor Statistics).
+- **Inflation rate**: a decline in the inflation rate can be a sign of a recession, as it indicates a decrease in demand for goods and services, with the United States experiencing a decline in inflation from 3.8% in 2008 to -0.4% in 2009 (Bureau of Labor Statistics).
+- **Interest rates**: changes in interest rates can contribute to a recession, as higher interest rates can reduce borrowing and spending, with the Federal Reserve lowering interest rates to 0.25% in 2009 (Federal Reserve Economic Data).
+- **Consumer spending**: a decline in consumer spending is a key factor in a recession, as it accounts for approximately 70% of GDP in the United States (Bureau of Economic Analysis).
+- **Business investment**: a decline in business investment can also contribute to a recession, as it reduces the production capacity of businesses, with the United States experiencing a 20% decline in business investment in 2009 (Bureau of Economic Analysis).
 
-A real-world example of a recession is a situation where a country experiences a decline in its automotive industry, leading to a reduction in production and employment. As a result, people who work in the industry may lose their jobs, and businesses that supply goods and services to the industry may also struggle. The government may respond by implementing policies to stimulate economic growth, such as providing financial assistance to affected businesses or investing in infrastructure projects to create new employment opportunities.
+## Common Misconceptions
+**Myth:** Recessions are caused by external shocks, such as wars or natural disasters. **Fact:** While external shocks can contribute to a recession, they are not the primary cause, as seen in the 2008 recession, which was triggered by a housing market bubble (International Monetary Fund).
+**Myth:** Recessions are always accompanied by high inflation. **Fact:** In fact, recessions are often characterized by low inflation or even deflation, as seen in the 2009 recession, when the inflation rate was -0.4% (Bureau of Labor Statistics).
+**Myth:** Fiscal policy is ineffective in mitigating the effects of a recession. **Fact:** Fiscal policy, such as government spending and taxation, can be effective in stimulating economic growth during a recession, as seen in the **American Recovery and Reinvestment Act** of 2009, which provided $831 billion in stimulus funding (Congressional Budget Office).
+**Myth:** The Federal Reserve has no role in preventing recessions. **Fact:** The Federal Reserve can use monetary policy tools, such as interest rates and quantitative easing, to mitigate the effects of a recession, as seen in 2008, when the Fed lowered interest rates to 0.25% (Federal Reserve Economic Data).
 
-In summary, a recession is a complex and multifaceted economic phenomenon characterized by a decline in economic activity, lower production, and higher unemployment, which can have a significant impact on individuals, businesses, and the overall economy.
+## In Practice
+The 2008 recession in the United States is a concrete example of how a recession can occur and the mechanisms that lead to it. The recession was triggered by a housing market bubble, which burst in 2007, leading to a decline in housing prices and a subsequent decline in consumer spending. The Federal Reserve responded by lowering interest rates to 0.25% and implementing quantitative easing, which helped to stabilize the financial system and stimulate economic growth. The recession lasted for 18 months, with the United States experiencing a decline in GDP of 5.1% in 2009 (Bureau of Economic Analysis). The recession was eventually ended by a combination of fiscal and monetary policy, including the **American Recovery and Reinvestment Act**, which provided $831 billion in stimulus funding (Congressional Budget Office).
 
 ---
 

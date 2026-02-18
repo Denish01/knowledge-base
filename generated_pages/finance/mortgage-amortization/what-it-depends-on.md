@@ -1,40 +1,31 @@
 ---
 title: "What Mortgage Amortization Depends On"
 slug: what-mortgage-amortization-depends-on
-description: "A clear, simple explanation of what mortgage amortization depends on - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+description: "A clear, simple explanation of What Mortgage Amortization Depends On - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Mortgage Amortization Depends On
 
-1. INTRODUCTION:
-Mortgage amortization is the process of gradually paying off a mortgage loan through regular payments. Understanding what mortgage amortization depends on is crucial for borrowers to make informed decisions about their loan. The dependencies of mortgage amortization form the foundation upon which the entire process is built. Without a clear understanding of these prerequisites, borrowers may struggle to manage their loan effectively.
+Mortgage **amortization** depends most critically on **interest rates**, as fluctuations in rates can significantly impact the total cost of the loan, with a notable example being the 2008 housing market crisis where a sharp increase in interest rates led to a surge in mortgage defaults.
 
-2. KEY DEPENDENCIES:
-- The dependency: Loan amount
-  Why it's necessary: The loan amount determines the total amount of debt that needs to be repaid, which in turn affects the monthly payment amount.
-  What happens without it: Without a clear loan amount, it is impossible to calculate the monthly payment, making it difficult to create a repayment plan.
-- The dependency: Interest rate
-  Why it's necessary: The interest rate determines the amount of interest paid over the life of the loan, which affects the total cost of the loan.
-  What happens without it: Without an interest rate, borrowers cannot accurately calculate the total cost of the loan, making it challenging to compare different loan options.
-- The dependency: Loan term
-  Why it's necessary: The loan term determines the number of payments required to pay off the loan, which affects the monthly payment amount.
-  What happens without it: Without a clear loan term, borrowers may not be able to plan their finances effectively, as they will not know how many payments they need to make.
-- The dependency: Payment schedule
-  Why it's necessary: The payment schedule determines when payments are due, which helps borrowers stay on track with their repayment plan.
-  What happens without it: Without a payment schedule, borrowers may miss payments, leading to late fees and negatively impacting their credit score.
-- The dependency: Payment amount
-  Why it's necessary: The payment amount determines how much of the loan is paid off each month, which affects the speed at which the loan is repaid.
-  What happens without it: Without a clear payment amount, borrowers may not be able to budget effectively, leading to financial difficulties.
+## Key Dependencies
+- **Interest Rates** — required to calculate the monthly payment amount, and a change in rates can affect the borrower's ability to afford the loan, as seen in the case of the 2008 housing market crisis where many subprime borrowers defaulted on their mortgages due to rising interest rates.
+- **Loan Amount** — necessary to determine the total amount borrowed, and an incorrect loan amount can lead to an inaccurate amortization schedule, such as the case of the Wells Fargo fake accounts scandal where incorrect loan amounts led to improper mortgage approvals.
+- **Loan Term** — needed to calculate the number of payments, and an incorrect loan term can result in an inaccurate amortization schedule, as seen in the case of the Goldman Sachs mortgage settlement where borrowers were sold mortgages with longer terms than they had agreed to.
+- **Payment Frequency** — required to determine the number of payments per year, and an incorrect payment frequency can lead to an inaccurate amortization schedule, such as the case of the Bank of America mortgage servicing settlement where borrowers were incorrectly charged for monthly payments.
+- **Property Value** — necessary to determine the loan-to-value ratio, and an incorrect property value can lead to an inaccurate assessment of the borrower's creditworthiness, as seen in the case of the AppraiserLoft scandal where inflated property values led to improper mortgage approvals.
 
-3. ORDER OF IMPORTANCE:
-While all dependencies are crucial, the loan amount and interest rate are the most critical. These two factors determine the total cost of the loan and have the greatest impact on the monthly payment amount. The loan term and payment schedule are also essential, as they determine the number of payments and when they are due. The payment amount, while important, is often determined by the other factors and is therefore slightly less critical.
+## Priority Order
+The ranking of dependencies from most to least critical is as follows:
+- **Interest Rates**, as they have the greatest impact on the total cost of the loan
+- **Loan Amount**, as it directly affects the total amount borrowed
+- **Loan Term**, as it determines the number of payments
+- **Payment Frequency**, as it affects the number of payments per year
+- **Property Value**, as it affects the loan-to-value ratio, but is less critical than the other dependencies
 
-4. COMMON GAPS:
-Many borrowers overlook the importance of understanding the loan term and payment schedule. They may assume that they can simply make monthly payments without considering the long-term implications of their loan. Additionally, some borrowers may not fully comprehend the impact of the interest rate on their loan, leading to unexpected costs and financial difficulties.
-
-5. SUMMARY:
-In conclusion, mortgage amortization depends on several key factors, including the loan amount, interest rate, loan term, payment schedule, and payment amount. Understanding these dependencies is essential for borrowers to make informed decisions about their loan and to manage their finances effectively. By recognizing the importance of these prerequisites, borrowers can create a solid foundation for their mortgage repayment plan and avoid common pitfalls that can lead to financial difficulties.
+## Common Gaps
+People often overlook the assumption that **interest rates** will remain constant over the life of the loan, which can lead to a failure to account for potential interest rate fluctuations, such as the case of the 2008 housing market crisis where many borrowers were caught off guard by rising interest rates. Another common gap is the assumption that the **loan term** is fixed, which can lead to a failure to account for potential changes in the loan term, such as the case of the Goldman Sachs mortgage settlement where borrowers were sold mortgages with longer terms than they had agreed to.
 
 ---
 

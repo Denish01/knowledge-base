@@ -1,44 +1,33 @@
 ---
 title: "What Affordability Assessment Depends On"
 slug: what-affordability-assessment-depends-on
-description: "A clear, simple explanation of what affordability assessment depends on - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+description: "A clear, simple explanation of What Affordability Assessment Depends On - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Affordability Assessment Depends On
 
-1. INTRODUCTION:
-Affordability assessment is the process of evaluating whether an individual or organization can afford a particular product, service, or investment. It involves analyzing various factors to determine the feasibility of a purchase or expenditure. Understanding what affordability assessment depends on is crucial, as it helps identify the prerequisites and requirements necessary for making informed decisions. The accuracy and reliability of an affordability assessment rely heavily on the presence of certain key dependencies.
+Income level is the most critical dependency for affordability assessment, as it directly affects an individual's ability to pay for goods and services, with a notable example being the housing market crisis in 2008, where subprime lending to borrowers with insufficient income led to widespread defaults and a global economic downturn.
 
-2. KEY DEPENDENCIES:
-- The dependency: Accurate income information
-Why it's necessary: Income is a critical factor in determining affordability, as it directly affects an individual's or organization's ability to pay for a product or service. 
-What happens without it: Without accurate income information, the assessment may not accurately reflect the individual's or organization's financial situation, leading to potentially incorrect conclusions.
+## Key Dependencies
+- **Income level** — required to determine an individual's purchasing power, and without it, lenders may extend credit to borrowers who cannot afford repayments, as seen in the 2008 housing market crisis, where many borrowers defaulted on their mortgages due to insufficient income.
+- **Debt obligations** — necessary to assess an individual's existing financial commitments, and without it, lenders may not account for other debts, such as credit card debt, leading to overextension of credit, as experienced by many borrowers in the US, where credit card debt has been steadily increasing, with the average household holding ~$4,700 in credit card debt (Federal Reserve).
+- **Credit history** — essential to evaluate an individual's creditworthiness, and without it, lenders may not accurately assess the risk of lending, as seen in the case of Wells Fargo, which was fined for opening unauthorized credit accounts, resulting in damaged credit scores for many customers.
+- **Expense profile** — needed to understand an individual's spending habits, and without it, lenders may not account for essential expenses, such as rent or mortgage payments, leading to inaccurate affordability assessments, as experienced by many borrowers in the UK, where mortgage lenders were criticized for not adequately considering borrowers' expenses.
+- **Market conditions** — required to assess the current state of the economy and industry trends, and without it, lenders may not adjust their lending criteria to reflect changes in the market, as seen in the case of the Australian housing market, where lenders failed to account for a decline in housing prices, leading to a surge in mortgage defaults.
+- **Regulatory requirements** — necessary to ensure compliance with relevant laws and regulations, and without it, lenders may face legal and financial penalties, as experienced by many banks in the US, which were fined for non-compliance with the Dodd-Frank Act.
 
-- The dependency: Expense data
-Why it's necessary: Expense data is essential in understanding an individual's or organization's financial obligations and commitments, which in turn affects their ability to afford a particular product or service.
-What happens without it: Without expense data, the assessment may not account for all financial obligations, resulting in an incomplete picture of affordability.
+## Priority Order
+The dependencies can be ranked in the following order from most to least critical:
+- **Income level**, as it directly affects an individual's ability to pay for goods and services
+- **Debt obligations**, as it provides a comprehensive view of an individual's financial commitments
+- **Credit history**, as it helps lenders assess the risk of lending
+- **Expense profile**, as it provides insight into an individual's spending habits
+- **Market conditions**, as it allows lenders to adjust their lending criteria to reflect changes in the market
+- **Regulatory requirements**, as it ensures compliance with relevant laws and regulations, but is often already accounted for in the lending process.
 
-- The dependency: Credit history
-Why it's necessary: Credit history provides insight into an individual's or organization's creditworthiness and ability to manage debt, which is a critical factor in determining affordability.
-What happens without it: Without credit history, the assessment may not accurately reflect the individual's or organization's creditworthiness, potentially leading to incorrect conclusions about their ability to afford a product or service.
-
-- The dependency: Debt obligations
-Why it's necessary: Debt obligations, such as loans or mortgages, directly affect an individual's or organization's ability to afford a particular product or service.
-What happens without it: Without considering debt obligations, the assessment may overestimate the individual's or organization's ability to afford a product or service, potentially leading to financial difficulties.
-
-- The dependency: Financial goals
-Why it's necessary: Financial goals, such as saving for retirement or a down payment on a house, can impact an individual's or organization's ability to afford a particular product or service.
-What happens without it: Without considering financial goals, the assessment may not accurately reflect the individual's or organization's priorities and financial situation, potentially leading to incorrect conclusions about affordability.
-
-3. ORDER OF IMPORTANCE:
-While all dependencies are crucial, accurate income information and expense data are the most critical factors in an affordability assessment. These two dependencies provide the foundation for understanding an individual's or organization's financial situation and ability to afford a product or service. Credit history, debt obligations, and financial goals are also essential, but they build upon the foundation established by income and expense data.
-
-4. COMMON GAPS:
-People often overlook or assume certain dependencies, such as credit history or financial goals, when conducting an affordability assessment. This can lead to incomplete or inaccurate assessments, potentially resulting in poor financial decisions. It is essential to consider all key dependencies to ensure a comprehensive and reliable affordability assessment.
-
-5. SUMMARY:
-The essential foundation for affordability assessment consists of accurate income information, expense data, credit history, debt obligations, and financial goals. These key dependencies are necessary to ensure a comprehensive and reliable assessment of an individual's or organization's ability to afford a particular product or service. By understanding and considering these prerequisites, individuals and organizations can make informed decisions and avoid potential financial difficulties. A thorough affordability assessment requires careful consideration of these dependencies to provide an accurate picture of financial situation and affordability.
+## Common Gaps
+A common assumption is that **credit score** is the primary indicator of creditworthiness, which can lead to overlooking other essential factors, such as debt obligations and expense profile, resulting in inaccurate affordability assessments, as seen in the case of many lenders that rely heavily on credit scores, only to find that borrowers with high credit scores still default on their loans due to high debt levels or unstable income.
 
 ---
 

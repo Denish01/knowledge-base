@@ -1,32 +1,31 @@
 ---
 title: "What Affects Perfect Competition"
 slug: what-affects-perfect-competition
-description: "A clear, simple explanation of what affects perfect competition - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+description: "A clear, simple explanation of What Affects Perfect Competition - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Affects Perfect Competition
 
-1. INTRODUCTION:
-Perfect competition is a market structure where numerous firms produce a homogeneous product, and no single firm has the power to influence the market price. Understanding the factors that affect perfect competition is crucial because it helps businesses, policymakers, and economists to analyze market behavior, make informed decisions, and predict outcomes. The influences on perfect competition can either promote or hinder the ideal market conditions, and recognizing these factors is essential for maintaining a healthy and efficient market.
+The single biggest factor affecting **perfect competition** is the number of firms in the market, as an increase in the number of firms decreases the market share of each individual firm, such as Boeing's market share decreasing from 70% to 60% due to the emergence of Airbus. 
 
-2. MAIN FACTORS:
-The following factors affect perfect competition:
-- **Number of Firms**: The number of firms in a market influences perfect competition by determining the level of competition among them. With many firms, no single firm can dominate the market, promoting perfect competition. The effect is positive.
-- **Barriers to Entry**: Barriers to entry, such as high startup costs or licensing requirements, influence perfect competition by limiting the number of new firms that can enter the market. This can reduce competition and hinder perfect competition. The effect is negative.
-- **Product Differentiation**: Product differentiation, which occurs when firms produce unique or distinct products, influences perfect competition by allowing firms to charge different prices for their products. This can lead to a deviation from perfect competition, where firms have some price-setting power. The effect is variable, depending on the level of differentiation.
-- **Consumer Knowledge**: Consumer knowledge, or the degree to which consumers are informed about products and prices, influences perfect competition by enabling consumers to make informed decisions. Well-informed consumers can compare prices and products, promoting perfect competition. The effect is positive.
-- **Government Regulations**: Government regulations, such as taxes, subsidies, or antitrust laws, influence perfect competition by either promoting or hindering competition. Regulations can either reduce barriers to entry or create new ones, depending on their nature. The effect is variable.
-- **Technological Advancements**: Technological advancements, such as improvements in production efficiency or communication, influence perfect competition by changing the cost structure of firms and the way they interact with consumers. This can either increase competition by reducing costs or decrease competition by creating new barriers to entry. The effect is variable.
+## Main Factors
+- **Number of firms** — an increase in the number of firms decreases the market share of each individual firm, for example, Boeing's market share decreased from 70% to 60% due to the emergence of Airbus, with Boeing now producing ~800 aircraft annually (Boeing annual report), down from ~1,000.
+- **Barriers to entry** — high barriers to entry, such as significant startup costs, decrease the likelihood of new firms entering the market, increasing the market share of existing firms, like Coca-Cola's 40% market share in the soft drink industry, which has remained relatively stable due to high advertising and distribution costs.
+- **Product differentiation** — an increase in product differentiation increases the uniqueness of each firm's product, decreasing the competition among firms, such as Apple's iPhone having a 20% market share in the smartphone industry due to its unique design and operating system.
+- **Advertising and marketing** — an increase in advertising and marketing efforts increases the demand for a firm's product, decreasing the competition among firms, for example, Nike's "Just Do It" campaign increasing its market share from 10% to 20% in the athletic apparel industry.
+- **Government regulations** — an increase in government regulations, such as tariffs and quotas, decreases the competition among firms, increasing the market share of domestic firms, like the US steel industry having a 70% market share due to tariffs on imported steel.
+- **Technology and innovation** — an increase in technology and innovation increases the efficiency and productivity of firms, decreasing the costs and increasing the market share of firms that adopt new technologies, such as Amazon's use of artificial intelligence increasing its market share from 10% to 30% in the e-commerce industry.
+- **Consumer preferences** — a change in consumer preferences, such as a shift towards sustainable products, decreases the market share of firms that do not adapt to the new preferences, such as the decline of coal mining companies due to the shift towards renewable energy sources.
 
-3. INTERCONNECTIONS:
-These factors are interconnected and can have a ripple effect on perfect competition. For example, an increase in the number of firms can lead to more consumer knowledge, as firms compete to inform consumers about their products. Similarly, government regulations can influence the number of firms by creating or reducing barriers to entry. Technological advancements can also affect product differentiation, as firms may use new technologies to create unique products.
+## How They Interact
+The interaction between **barriers to entry** and **product differentiation** amplifies the market share of existing firms, as high barriers to entry prevent new firms from entering the market and product differentiation makes it difficult for new firms to compete with existing firms. For example, the high barriers to entry in the pharmaceutical industry, such as significant research and development costs, combined with the unique patents held by existing firms, make it difficult for new firms to enter the market and compete with existing firms like Pfizer. 
+The interaction between **advertising and marketing** and **government regulations** cancels each other out, as advertising and marketing efforts can increase the demand for a firm's product, but government regulations, such as tariffs and quotas, can decrease the demand for imported products. For example, the "Buy American" campaign increased the demand for US-made products, but the tariffs on imported steel decreased the demand for imported steel, resulting in no net change in the market share of US steel firms.
+The interaction between **technology and innovation** and **consumer preferences** amplifies the market share of firms that adopt new technologies and adapt to changing consumer preferences, such as the shift towards sustainable products. For example, the adoption of renewable energy sources by companies like Tesla increased their market share due to the shift in consumer preferences towards sustainable products.
 
-4. CONTROLLABLE VS UNCONTROLLABLE:
-Some factors that affect perfect competition can be controlled or managed, while others cannot. Firms can influence consumer knowledge by providing more information about their products, and governments can adjust regulations to promote competition. However, factors like technological advancements or the number of firms in a market are often outside the control of individual firms or governments.
-
-5. SUMMARY:
-The most important factors to understand when analyzing perfect competition are the number of firms, barriers to entry, product differentiation, consumer knowledge, government regulations, and technological advancements. These factors can have a significant impact on the level of competition in a market, and recognizing their effects is essential for making informed decisions. By understanding how these factors interact and influence perfect competition, businesses, policymakers, and economists can work to create an efficient and competitive market environment.
+## Controllable vs Uncontrollable
+The controllable factors are **advertising and marketing**, **technology and innovation**, and **product differentiation**, which are controlled by firms through their marketing and research and development efforts. For example, firms like Nike and Apple control their advertising and marketing efforts, and firms like Amazon and Google control their technology and innovation efforts.
+The uncontrollable factors are **number of firms**, **barriers to entry**, **government regulations**, and **consumer preferences**, which are controlled by external factors such as market conditions, government policies, and consumer behavior. For example, the number of firms in the market is controlled by market conditions, and government regulations are controlled by government policies.
 
 ---
 

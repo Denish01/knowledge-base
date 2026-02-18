@@ -1,37 +1,37 @@
 ---
 title: "What Is Capital Gains Tax?"
-slug: capital-gains-tax
-description: "A clear, simple explanation of capital gains tax - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: what-is-capital-gains-tax
+description: "A clear, simple explanation of What Is Capital Gains Tax? - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Is Capital Gains Tax?
 
-Capital gains tax is a type of tax imposed on the profit made from the sale of an asset, such as property, stocks, or investments, that has increased in value over time.
+## Definition
+Capital gains tax is a type of tax levied on the profit made from the sale of an investment or asset, such as stocks, bonds, or real estate, with the first recorded tax on capital gains dating back to the UK's Finance Act of 1965.
 
-When an individual or business buys an asset, its value may increase or decrease over time. If the asset is sold for a higher price than its original purchase price, the seller makes a profit, known as a capital gain. The capital gains tax is applied to this profit, and the amount of tax owed depends on the amount of the gain and the tax rate applicable to the seller. The tax rate may vary depending on the type of asset, the length of time it was held, and the seller's tax status.
+## How It Works
+The capital gains tax system operates by calculating the difference between the sale price of an asset and its original purchase price, with the resulting profit subject to taxation. The tax rate applied to this profit can vary depending on factors such as the type of asset, the length of time it was held, and the taxpayer's income level. For instance, in the United States, the tax rate on long-term capital gains, which are gains from assets held for more than one year, can range from 0% to 20% (IRS), with the exact rate determined by the taxpayer's filing status and income.
 
-The concept of capital gains tax is based on the idea that the profit made from the sale of an asset is considered income and should be subject to taxation. This tax is usually paid by the seller when the asset is sold, and it is typically calculated as a percentage of the capital gain. The tax authorities use the capital gains tax to raise revenue and to encourage fair and equitable taxation. The tax also helps to reduce the disparity between different types of income, such as income from employment and income from investments.
+The calculation of capital gains tax involves determining the **basis** of the asset, which is typically its original purchase price, and then subtracting this basis from the sale price to arrive at the gain. The gain is then subject to taxation at the applicable rate. The **wash sale rule**, which prohibits the deduction of losses from the sale of a security if a substantially identical security is purchased within 30 days, can also impact the calculation of capital gains tax (SEC). Additionally, the **step-up in basis** rule, which allows the basis of an inherited asset to be reset to its fair market value at the time of inheritance, can reduce the capital gains tax liability for heirs (IRS).
 
-The process of calculating capital gains tax can be complex, and it involves determining the gain made from the sale of the asset, applying the relevant tax rate, and deducting any allowable losses or exemptions. The tax authorities provide rules and guidelines to help taxpayers calculate and pay the correct amount of capital gains tax. These rules may include provisions for calculating the gain, such as using the original purchase price or the market value of the asset at the time of sale.
+The impact of capital gains tax on investor behavior is a topic of ongoing debate, with some arguing that high tax rates can discourage investment and others arguing that the tax is necessary to raise revenue and reduce income inequality. Ricardo's comparative advantage model, 1817, suggests that taxes on capital gains can influence the allocation of investment across different asset classes. For example, a higher tax rate on capital gains from stocks may lead investors to shift their investments to tax-exempt bonds or other assets with more favorable tax treatment.
 
-The key components of capital gains tax include:
-* The type of asset being sold, such as property, stocks, or investments
-* The original purchase price or cost basis of the asset
-* The sale price or market value of the asset at the time of sale
-* The length of time the asset was held, which may affect the tax rate
-* The tax rate applicable to the seller, which may depend on their tax status or the type of asset
-* Any allowable losses or exemptions that can be deducted from the gain
+## Key Components
+- **Tax rate**: The rate at which the capital gain is taxed, which can vary depending on factors such as the type of asset and the taxpayer's income level, with a higher tax rate potentially reducing the after-tax return on investment.
+- **Holding period**: The length of time the asset is held, which can affect the tax rate applied to the gain, with longer holding periods often resulting in more favorable tax treatment.
+- **Basis**: The original purchase price of the asset, which is used to calculate the gain, with a higher basis resulting in a lower taxable gain.
+- **Wash sale rule**: A rule that prohibits the deduction of losses from the sale of a security if a substantially identical security is purchased within 30 days, which can impact the calculation of capital gains tax.
+- **Step-up in basis**: A rule that allows the basis of an inherited asset to be reset to its fair market value at the time of inheritance, which can reduce the capital gains tax liability for heirs.
+- **Tax-deferred accounts**: Accounts such as 401(k) or IRA, which allow investments to grow tax-free until withdrawal, with the potential to reduce the overall tax liability on capital gains.
 
-Some common misconceptions about capital gains tax include:
-* That all profits from the sale of assets are subject to capital gains tax, when in fact some assets may be exempt or have special rules
-* That the tax rate is the same for all types of assets, when in fact the rate may vary depending on the type of asset or the seller's tax status
-* That capital gains tax is only paid by individuals, when in fact businesses and other organizations may also be subject to the tax
-* That the tax is only applied to the sale of assets that have increased in value, when in fact the tax may also apply to assets that have decreased in value, but are still sold for a profit
+## Common Misconceptions
+**Myth:** Capital gains tax only applies to wealthy investors — **Fact:** Capital gains tax can apply to anyone who sells an investment or asset for a profit, regardless of income level, with Boeing producing ~800 aircraft annually (Boeing annual report) and many of its employees holding stock options that are subject to capital gains tax.
+**Myth:** The tax rate on capital gains is always higher than the tax rate on ordinary income — **Fact:** The tax rate on long-term capital gains can be lower than the tax rate on ordinary income, with a top rate of 20% (IRS) compared to a top rate of 37% on ordinary income.
+**Myth:** Capital gains tax is only levied on the sale of stocks and bonds — **Fact:** Capital gains tax can be levied on the sale of any type of asset, including real estate, with the tax rate and rules varying depending on the type of asset and the taxpayer's circumstances.
 
-For example, suppose an individual buys a piece of property for $100,000 and sells it five years later for $150,000. The individual makes a profit of $50,000, which is subject to capital gains tax. If the tax rate is 20%, the individual would owe $10,000 in capital gains tax, which is 20% of the $50,000 gain.
-
-In summary, capital gains tax is a type of tax imposed on the profit made from the sale of an asset that has increased in value over time, and its calculation and payment are subject to various rules and guidelines that depend on the type of asset, the seller's tax status, and other factors.
+## In Practice
+In the United States, the capital gains tax system has a significant impact on the investment decisions of individuals and companies. For example, when Microsoft sold its stake in Comcast in 2009, the company realized a gain of $4.4 billion, which was subject to capital gains tax (Microsoft 10-K filing). The tax rate applied to this gain would have depended on the length of time Microsoft held the stake and the company's overall tax situation. Similarly, when an individual sells a stock or bond, they must calculate the capital gain and report it on their tax return, with the tax rate and rules varying depending on the type of asset and the taxpayer's circumstances.
 
 ---
 

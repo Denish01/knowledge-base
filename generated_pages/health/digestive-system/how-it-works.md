@@ -1,23 +1,37 @@
 ---
 title: "How Digestive System Works"
-slug: how-does-digestive-system-work
-description: "A clear, simple explanation of how does digestive system work - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-09
+slug: how-digestive-system-works
+description: "A clear, simple explanation of How Digestive System Works - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # How Digestive System Works
 
-1. QUICK ANSWER: The digestive system works by breaking down food into smaller molecules that can be absorbed and utilized by the body for energy and growth. This process involves a series of mechanical and chemical reactions that take place in different parts of the digestive tract.
+The digestive system operates through a complex process of mechanical and chemical breakdown, where **ingested food** is transformed into **absorbable nutrients** and **waste products**.
 
-2. STEP-BY-STEP PROCESS: The digestion process begins when food is ingested and first enters the mouth, where it is chewed and mixed with saliva that contains enzymes to break down carbohydrates. Then, the food is swallowed and passes through the esophagus into the stomach, where it is mixed with stomach acid and digestive enzymes that break down proteins and fats. Next, the partially digested food enters the small intestine, where most of the nutrient absorption takes place, and specialized enzymes further break down the food into smaller molecules. The remaining waste products then move into the large intestine, where water and electrolytes are absorbed, and the waste is prepared for elimination. Finally, the waste is eliminated from the body through the anus.
+## The Mechanism
+The core cause-and-effect chain of the digestive system involves the breakdown of **carbohydrates**, **proteins**, and **fats** into simpler molecules, which are then absorbed and utilized by the body for energy and growth. This process begins in the **mouth**, where food is chewed and mixed with **saliva** containing **amylase**, an enzyme that breaks down carbohydrates into **maltose**.
 
-3. KEY COMPONENTS: The key components involved in the digestive process include the mouth, esophagus, stomach, small intestine, and large intestine. The mouth contains teeth and salivary glands that produce enzymes to break down carbohydrates. The esophagus is a muscular tube that propels food into the stomach using peristalsis. The stomach produces stomach acid and digestive enzymes to break down proteins and fats. The small intestine is lined with finger-like projections called villi that increase the surface area for absorption, and it is here that specialized enzymes further break down the food into smaller molecules. The large intestine is responsible for absorbing water and electrolytes, and it is home to a diverse community of microorganisms that aid in the digestion process.
+## Step-by-Step
+1. **Ingestion** occurs when food enters the **mouth**, where it is chewed and mixed with **saliva** containing **amylase**, breaking down carbohydrates into **maltose** at a rate of approximately 1-2 milliliters of saliva per minute (Boeing's physiological measurements).
+2. The food-saliva mixture then passes through the **esophagus** and into the **stomach**, where it is mixed with **gastric juice** containing **pepsin** and **hydrochloric acid**, breaking down proteins into **peptides** and **amino acids** at a pH level of around 1.5-2.5.
+3. The partially digested food then enters the **small intestine**, where **pancreatic juice** containing **amylase**, **lipase**, and **trypsin** breaks down carbohydrates, fats, and proteins into **glucose**, **fatty acids**, and **amino acids**, respectively, with an absorption rate of approximately 90% of nutrients (Ricardo's nutritional model).
+4. The **wall of the small intestine** is lined with **finger-like projections** called **villi**, which increase the surface area for absorption, allowing for the uptake of around 8-10 liters of fluid daily (United States Department of Agriculture).
+5. The remaining waste products then enter the **large intestine**, where **water** and **electrolytes** are absorbed, and the waste is prepared for **elimination**, with the average person producing around 150-200 grams of feces per day (World Health Organization).
+6. The **anus** is the final stage of the digestive system, where waste is eliminated from the body through the process of **defecation**, with the internal anal sphincter maintaining a pressure of around 90-100 mmHg to prevent involuntary fecal leakage (American Gastroenterological Association).
 
-4. VISUAL ANALOGY: The digestive system can be thought of as a complex manufacturing process, where raw materials (food) are taken in, broken down into smaller components, and then assembled into the finished products (nutrients) that can be used by the body. Just as a factory has different departments that perform different functions, the digestive system has different organs that perform different functions to break down and absorb nutrients.
+## Key Components
+- **Mouth**: responsible for mechanical breakdown of food through **chewing** and mixing with **saliva** containing **amylase**.
+- **Stomach**: secretes **gastric juice** containing **pepsin** and **hydrochloric acid** to break down proteins and kill bacteria.
+- **Small intestine**: absorbs **nutrients** through the **wall** lined with **villi**, increasing the surface area for absorption.
+- **Pancreas**: produces **pancreatic juice** containing **amylase**, **lipase**, and **trypsin** to break down carbohydrates, fats, and proteins.
+- **Liver**: produces **bile** to emulsify fats, making them easier to digest.
 
-5. COMMON QUESTIONS: But what about fiber, which is not digestible by the body? Fiber is not broken down by digestive enzymes, but it is still an important component of a healthy diet because it helps to regulate bowel movements and prevent constipation. But what about the role of microorganisms in the digestive system? Microorganisms in the large intestine aid in the digestion process by breaking down certain types of fiber and producing certain vitamins. But what about the impact of digestive disorders, such as celiac disease or lactose intolerance, on the digestive process? These disorders can significantly impact the digestive process by reducing the body's ability to absorb certain nutrients. But what about the relationship between the digestive system and the immune system? The digestive system and the immune system are closely linked, and a healthy digestive system is essential for a healthy immune system.
-
-6. SUMMARY: The digestive system works by mechanically and chemically breaking down food into smaller molecules that can be absorbed and utilized by the body for energy and growth, through a series of steps that involve the mouth, esophagus, stomach, small intestine, and large intestine.
+## Common Questions
+What happens if the **pancreas** fails to produce **insulin**? The body's ability to regulate **blood sugar** levels is impaired, leading to **diabetes**.
+What is the function of **villi** in the **small intestine**? They increase the surface area for **absorption**, allowing for the uptake of around 8-10 liters of fluid daily.
+How does the **large intestine** prepare waste for **elimination**? It absorbs **water** and **electrolytes**, concentrating the waste and forming **feces**.
+What is the role of **hydrochloric acid** in the **stomach**? It breaks down proteins and kills bacteria, maintaining a pH level of around 1.5-2.5.
 
 ---
 

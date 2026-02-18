@@ -1,37 +1,38 @@
 ---
 title: "Opportunity Cost Compared"
-slug: opportunity-cost-vs
-description: "A clear, simple explanation of opportunity cost vs - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: opportunity-cost-compared
+description: "A clear, simple explanation of Opportunity Cost Compared - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Opportunity Cost Compared
 
-Opportunity cost refers to the value of the next best alternative that is given up when a choice is made, representing the trade-off between different options.
+## Definition
+Opportunity cost compared is a fundamental concept in economics that refers to the value of the next best alternative that is given up when a choice is made, as first introduced by **Friedrich von Wieser** in 1914.
 
-The concept of opportunity cost is fundamental to understanding the decision-making process in various aspects of life, including economics, finance, and personal choices. When an individual or organization makes a choice, they are essentially selecting one option over another. This means that they are giving up the potential benefits of the alternative option, which is known as the opportunity cost. Opportunity cost is not limited to financial decisions, but can also apply to other aspects of life, such as time, resources, and relationships.
+## How It Works
+The opportunity cost compared framework is based on the idea that every decision involves a trade-off between different options. When a choice is made, the opportunity cost is the value of the alternative that is foregone. For instance, if a company decides to invest $1 million in a new project, the opportunity cost is the potential return on investment that could have been earned if the money had been invested elsewhere, such as in a **diversified portfolio** with an expected return of 8% (BlackRock). The opportunity cost compared concept is closely related to **Ricardo's comparative advantage model**, 1817, which states that countries should specialize in producing goods for which they have a lower opportunity cost.
 
-In order to understand opportunity cost, it is essential to recognize that every choice has a trade-off. For instance, if an individual decides to spend their Saturday afternoon watching a movie, the opportunity cost is the value of the alternative activities they could have done, such as going for a walk, reading a book, or spending time with friends. Similarly, if a company decides to invest in a new project, the opportunity cost is the potential return on investment they could have earned if they had invested in a different project.
+The opportunity cost compared concept is also relevant in the context of **sunk cost**, which refers to a cost that has already been incurred and cannot be recovered. When a company is considering whether to continue investing in a project, it should ignore the sunk cost and focus on the opportunity cost of continuing the project compared to alternative uses of the resources. For example, **Boeing** produces ~800 aircraft annually (Boeing annual report), and if it decides to invest in a new production line, the opportunity cost is the potential revenue that could be earned if the resources were used to produce a different type of aircraft.
 
-Opportunity cost is a crucial concept because it helps individuals and organizations make informed decisions by considering the potential consequences of their choices. By weighing the potential benefits and costs of different options, they can make more rational decisions that align with their goals and priorities.
+The opportunity cost compared framework can be applied to a wide range of economic decisions, from personal finance to international trade. For instance, a country that imposes **tariffs** on imported goods may be giving up the opportunity to benefit from **comparative advantage** and specialize in producing goods in which it has a lower opportunity cost. According to the **World Trade Organization**, the average tariff rate for developed countries is around 3.5% (World Trade Organization), which can lead to significant opportunity costs for countries that impose higher tariffs.
 
-The key components of opportunity cost include:
-* The value of the next best alternative that is given up
-* The trade-off between different options
-* The potential benefits and costs of each alternative
-* The concept of scarcity, which refers to the limited nature of resources
-* The idea of marginal analysis, which involves evaluating the additional benefits and costs of a particular choice
-* The recognition that every choice has an opportunity cost, regardless of whether it is explicit or implicit
+## Key Components
+- **Alternative uses**: The opportunity cost compared concept relies on the idea that resources have alternative uses, and the value of these alternative uses is the opportunity cost. As the number of alternative uses increases, the opportunity cost also increases.
+- **Scarcity**: Opportunity cost compared is based on the idea of scarcity, which refers to the limited availability of resources. As resources become more scarce, the opportunity cost of using them increases.
+- **Trade-offs**: The opportunity cost compared framework involves making trade-offs between different options, and the value of these trade-offs is the opportunity cost. As the number of trade-offs increases, the opportunity cost also increases.
+- **Comparative advantage**: The opportunity cost compared concept is closely related to comparative advantage, which refers to the idea that countries should specialize in producing goods for which they have a lower opportunity cost. As countries specialize in producing goods in which they have a comparative advantage, the opportunity cost of production decreases.
+- **Sunk cost**: The opportunity cost compared concept is also related to sunk cost, which refers to a cost that has already been incurred and cannot be recovered. As sunk costs increase, the opportunity cost of continuing a project also increases.
+- **Opportunity cost of capital**: The opportunity cost compared concept also involves the opportunity cost of capital, which refers to the potential return on investment that could be earned if the capital were invested elsewhere. As the opportunity cost of capital increases, the opportunity cost of investing in a project also increases.
 
-Common misconceptions about opportunity cost include:
-* Believing that opportunity cost only applies to financial decisions
-* Failing to consider the potential long-term consequences of a choice
-* Overemphasizing the potential benefits of a particular option while ignoring its potential costs
-* Assuming that the opportunity cost of a choice is always zero or negligible
+## Common Misconceptions
+**Myth:** Opportunity cost compared is only relevant in the context of business decisions. **Fact:** Opportunity cost compared is a fundamental concept in economics that is relevant in all types of decision-making, from personal finance to international trade (Mankiw).
+**Myth:** Opportunity cost compared is the same as **sunk cost**. **Fact:** Sunk cost refers to a cost that has already been incurred and cannot be recovered, while opportunity cost compared refers to the value of the next best alternative that is given up when a choice is made (Brealey).
+**Myth:** Opportunity cost compared is only relevant in the short run. **Fact:** Opportunity cost compared is relevant in both the short run and the long run, as it involves making trade-offs between different options and considering the value of alternative uses (Krugman).
+**Myth:** Opportunity cost compared is not relevant in the context of **international trade**. **Fact:** Opportunity cost compared is highly relevant in the context of international trade, as it involves making trade-offs between different options and considering the value of alternative uses (Ricardo's comparative advantage model, 1817).
 
-A real-world example of opportunity cost is a student who decides to attend a university that is close to their home, rather than a more prestigious university that is located in a different city. The opportunity cost of this decision is the potential benefits they could have gained from attending the more prestigious university, such as greater career opportunities, a more diverse student body, and access to better resources.
-
-In summary, opportunity cost is the value of the next best alternative that is given up when a choice is made, representing the trade-off between different options and helping individuals and organizations make informed decisions by considering the potential consequences of their choices.
+## In Practice
+The opportunity cost compared concept can be illustrated using the example of **Coca-Cola**, which produces over 1.9 billion servings of beverages daily (Coca-Cola annual report). If Coca-Cola decides to invest $1 billion in a new production line, the opportunity cost is the potential revenue that could be earned if the resources were used to produce a different type of beverage. For instance, if Coca-Cola could have earned a 10% return on investment by investing in a new marketing campaign, the opportunity cost of investing in the production line is the potential revenue that could have been earned from the marketing campaign. According to **Interbrand**, the Coca-Cola brand is valued at over $80 billion (Interbrand), and the opportunity cost of investing in a new production line is the potential increase in brand value that could have been achieved through alternative investments.
 
 ---
 

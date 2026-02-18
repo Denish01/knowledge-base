@@ -1,29 +1,38 @@
 ---
 title: "Example of Opportunity Cost"
-slug: examples-of-opportunity-cost
-description: "A clear, simple explanation of examples of opportunity cost - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: example-of-opportunity-cost
+description: "A clear, simple explanation of Example of Opportunity Cost - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Example of Opportunity Cost
 
-1. INTRODUCTION
-Opportunity cost refers to the value of the next best alternative that is given up when a choice is made. In other words, it is the benefit that could have been realized if a different option had been chosen. Understanding opportunity cost is essential in making informed decisions, as it helps to evaluate the potential consequences of choosing one option over another.
+## Definition
+Opportunity cost refers to the value of the next best alternative that is given up when a choice is made, a concept first introduced by **Friedrich von Wieser** in 1914.
 
-2. EVERYDAY EXAMPLES
-Opportunity cost is a concept that applies to many everyday situations. For instance, consider a student who decides to spend their Saturday working at a part-time job instead of studying for an exam. The opportunity cost of working is the potential improvement in exam score that could have been achieved by studying. Another example is a person who chooses to buy a new video game for $60 instead of putting that money into a savings account. The opportunity cost of buying the video game is the interest that could have been earned if the money had been saved. Additionally, a family that decides to go on a vacation to the beach instead of the mountains gives up the experiences and memories they could have had in the mountains. A commuter who chooses to drive to work instead of taking public transportation gives up the time they could have used for reading or relaxing during their daily commute.
+## How It Works
+Opportunity cost is a fundamental principle in economics that helps individuals and businesses make informed decisions by considering the trade-offs involved. When a company like **Boeing** decides to allocate its resources to produce more commercial aircraft, it must forgo the opportunity to produce other products, such as military aircraft or spacecraft. This means that Boeing's production of ~800 aircraft annually (Boeing annual report) comes at the cost of not producing other potential products. The opportunity cost of this decision is the potential revenue and profits that Boeing could have earned from producing those other products.
 
-3. NOTABLE EXAMPLES
-Historically, the construction of the Aswan Dam in Egypt is a notable example of opportunity cost. The dam was built to provide hydroelectric power and control flooding, but it also resulted in the relocation of thousands of people and the destruction of several archaeological sites. The opportunity cost of building the dam was the preservation of these historical sites and the maintenance of the traditional way of life for the people who were relocated. Another example is the decision by Coca-Cola to introduce New Coke in the 1980s. The company replaced its original formula with a new one, but the move was met with widespread consumer dissatisfaction. The opportunity cost of introducing New Coke was the potential sales and customer loyalty that could have been maintained if the company had stuck with the original formula.
+The opportunity cost of a decision can be measured in terms of the **chance cost**, which is the cost of forgoing the next best alternative. For example, if **Ford** decides to invest $1 billion in developing a new electric vehicle, the opportunity cost of this investment is the potential return that Ford could have earned from investing that $1 billion in another project, such as expanding its production capacity or developing new technologies. Ricardo's comparative advantage model (1817) can be used to analyze the opportunity cost of trade-offs between different economic activities.
 
-4. EDGE CASES
-A unique example of opportunity cost is the decision by the British government to maintain a claim on the Falkland Islands. The cost of maintaining this claim, including the expense of defending the islands, is an opportunity cost because it means that the government cannot use those resources for other purposes, such as funding social programs or investing in education. Another unusual example is the opportunity cost of a person's decision to pursue a career as a professional athlete. The opportunity cost of dedicating time and resources to athletic training is the potential career advancement and financial gain that could have been achieved in a different field.
+The opportunity cost of a decision can also be influenced by **sunk costs**, which are costs that have already been incurred and cannot be recovered. For example, if **General Motors** has already invested $500 million in developing a new vehicle platform, the opportunity cost of abandoning that project is the sunk cost of $500 million, plus any additional costs that would be incurred to develop a new platform. This highlights the importance of considering opportunity costs when making decisions, as it can help individuals and businesses avoid **sunk cost fallacy**, which is the tendency to continue investing in a project because of the resources that have already been committed to it.
 
-5. NON-EXAMPLES
-Some things that people often confuse with opportunity cost are not actually examples of this concept. For instance, a person who buys a ticket to a concert and then decides not to attend does not experience an opportunity cost, because they have already made their choice and cannot go back. Another non-example is a situation where someone is forced to make a choice due to circumstances beyond their control, such as a natural disaster. In this case, the person is not giving up anything by choosing one option over another, because they have no other choice. A third non-example is a decision that has no alternative, such as a person who must choose to pay their rent or face eviction. In this case, there is no opportunity cost, because there is no other viable option.
+## Key Components
+- **Trade-offs**: Opportunity cost involves trade-offs between different alternatives, and the value of the next best alternative that is given up is the opportunity cost.
+- **Scarcity**: Opportunity cost is a result of scarcity, as individuals and businesses have limited resources and must make choices about how to allocate them.
+- **Alternative uses**: The opportunity cost of a decision depends on the alternative uses of the resources being allocated, and the value of the next best alternative that is given up.
+- **Sunk costs**: Sunk costs can influence the opportunity cost of a decision, as they are costs that have already been incurred and cannot be recovered.
+- **Comparative advantage**: The opportunity cost of trade-offs between different economic activities can be analyzed using Ricardo's comparative advantage model (1817).
+- **Marginal analysis**: Opportunity cost can be analyzed using marginal analysis, which involves evaluating the marginal benefits and costs of a decision.
 
-6. PATTERN
-All valid examples of opportunity cost have one thing in common: they involve a choice between two or more alternatives, and the decision to choose one option means giving up the potential benefits of the other options. Whether it is a personal decision, a business choice, or a government policy, opportunity cost is always about the value of what could have been achieved if a different option had been chosen. By recognizing and evaluating opportunity costs, individuals and organizations can make more informed decisions and achieve their goals more effectively.
+## Common Misconceptions
+**Myth:** Opportunity cost only applies to economic decisions — **Fact:** Opportunity cost applies to all decisions, including personal and social decisions, as it involves trade-offs between different alternatives (Friedman, 1962).
+**Myth:** Opportunity cost is only relevant in the short run — **Fact:** Opportunity cost is relevant in both the short run and the long run, as it involves considering the trade-offs involved in making decisions (Marshall, 1890).
+**Myth:** Opportunity cost is the same as **marginal cost** — **Fact:** Opportunity cost is different from marginal cost, as it involves considering the value of the next best alternative that is given up, while marginal cost involves considering the additional cost of producing one more unit of a good or service (Bohm-Bawerk, 1889).
+**Myth:** Opportunity cost is only relevant in a **perfect market** — **Fact:** Opportunity cost is relevant in all markets, including imperfect markets, as it involves considering the trade-offs involved in making decisions (Robinson, 1933).
+
+## In Practice
+The opportunity cost of **Amazon**'s decision to invest $5 billion in its drone delivery program is the potential revenue and profits that Amazon could have earned from investing that $5 billion in other projects, such as expanding its cloud computing services or developing new artificial intelligence technologies. This decision involves trade-offs between different alternatives, and the value of the next best alternative that is given up is the opportunity cost. Amazon's investment in drone delivery is expected to generate $10 billion in revenue annually, but it comes at the cost of not investing in other potential projects that could have generated similar or higher returns.
 
 ---
 

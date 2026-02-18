@@ -1,37 +1,37 @@
 ---
 title: "What Is Market Equilibrium?"
-slug: market-equilibrium
-description: "A clear, simple explanation of market equilibrium - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: what-is-market-equilibrium
+description: "A clear, simple explanation of What Is Market Equilibrium? - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Is Market Equilibrium?
 
-Market equilibrium is a state in which the supply of a product or service equals the demand for it, resulting in no tendency for the price to change.
+## Definition
+Market equilibrium is a state where the supply of a product or service equals the demand for it, a concept first introduced by Léon Walras in 1874.
 
-The concept of market equilibrium is based on the idea that the price of a product or service is determined by the interaction of buyers and sellers in a market. When the demand for a product is high and the supply is low, the price tends to rise. This is because buyers are willing to pay a higher price to get the product, and sellers are able to charge a higher price because of the limited supply. On the other hand, when the demand is low and the supply is high, the price tends to fall. This is because buyers are not willing to pay a high price, and sellers must lower their prices to encourage buyers to purchase the product.
+## How It Works
+The **law of supply** and **law of demand** are the two primary mechanisms driving market equilibrium. The law of supply states that as the price of a product increases, the quantity supplied also increases, as producers are incentivized to produce more. Conversely, the law of demand states that as the price of a product increases, the quantity demanded decreases, as consumers are less willing to buy. According to Ricardo's comparative advantage model, 1817, countries should specialize in producing goods for which they have a lower opportunity cost, leading to more efficient production and trade. For instance, Boeing produces ~800 aircraft annually (Boeing annual report), and the demand for these aircraft is influenced by factors such as fuel prices, airline profits, and global economic conditions.
 
-As the price of a product changes, it affects both the demand and the supply. For example, if the price of a product rises, some buyers may decide not to purchase it, while others may be willing to pay the higher price. At the same time, a higher price may encourage more sellers to enter the market, increasing the supply. Eventually, the market reaches a state of equilibrium, where the quantity of the product that buyers are willing to buy equals the quantity that sellers are willing to sell. This state of equilibrium is important because it determines the price and quantity of the product that will be bought and sold in the market.
+The supply and demand curves intersect at a point known as the equilibrium price and quantity. This equilibrium is not always stable, as changes in supply and demand can cause the market to shift. For example, a drought in Brazil can decrease the global supply of coffee, causing the price to rise and the quantity demanded to fall. The **cobweb model**, developed by Nicholas Kaldor, 1934, illustrates how supply and demand can oscillate around the equilibrium point, leading to fluctuations in price and quantity. The model shows that if the supply curve is steeper than the demand curve, the market will converge to equilibrium, but if the demand curve is steeper, the market will diverge.
 
-The market equilibrium can be affected by changes in demand or supply. For instance, if there is an increase in demand for a product, the price may rise, and more sellers may enter the market to meet the higher demand. On the other hand, if there is a decrease in demand, the price may fall, and some sellers may leave the market. Similarly, if there is an increase in supply, the price may fall, and some buyers may be encouraged to purchase more of the product. Understanding how the market equilibrium works is important for businesses, policymakers, and individuals who want to make informed decisions about buying and selling products.
+The **price elasticity of demand** also plays a crucial part in determining market equilibrium. If the demand for a product is highly elastic, a small increase in price will lead to a large decrease in quantity demanded, causing the market to shift away from equilibrium. On the other hand, if the demand is inelastic, a large increase in price will lead to only a small decrease in quantity demanded, causing the market to remain closer to equilibrium. For example, the demand for insulin is relatively inelastic, as diabetic patients require a constant supply, regardless of price increases.
 
-The main components of market equilibrium include:
-* The law of demand, which states that as the price of a product increases, the quantity demanded decreases, and vice versa
-* The law of supply, which states that as the price of a product increases, the quantity supplied increases, and vice versa
-* The equilibrium price, which is the price at which the quantity demanded equals the quantity supplied
-* The equilibrium quantity, which is the quantity of the product that will be bought and sold at the equilibrium price
-* The concept of surplus, which occurs when the quantity supplied exceeds the quantity demanded
-* The concept of shortage, which occurs when the quantity demanded exceeds the quantity supplied
+## Key Components
+- **Supply curve**: shows the relationship between the price of a product and the quantity supplied, with the curve typically sloping upward as higher prices incentivize producers to produce more.
+- **Demand curve**: shows the relationship between the price of a product and the quantity demanded, with the curve typically sloping downward as higher prices discourage consumers from buying.
+- **Equilibrium price**: the price at which the quantity supplied equals the quantity demanded, and the market is in a state of equilibrium.
+- **Equilibrium quantity**: the quantity at which the supply and demand curves intersect, and the market is in a state of equilibrium.
+- **Subsidies**: government payments to producers or consumers that can shift the supply or demand curve, affecting market equilibrium.
+- **Taxes**: government levies on producers or consumers that can also shift the supply or demand curve, affecting market equilibrium.
 
-However, there are some common misconceptions about market equilibrium. Some people believe that:
-* Market equilibrium is a static state that never changes, when in fact it can change in response to changes in demand or supply
-* Market equilibrium is always fair or just, when in fact it can result in prices that are unfair to some buyers or sellers
-* Market equilibrium is only relevant to perfect markets, when in fact it can occur in imperfect markets as well
-* Market equilibrium is always achievable, when in fact it may not be possible in some cases, such as when there are externalities or information asymmetries
+## Common Misconceptions
+**Myth:** Market equilibrium is always stable — **Fact:** Market equilibrium can be unstable, as changes in supply and demand can cause the market to shift, as illustrated by the cobweb model (Kaldor, 1934).
+**Myth:** The law of supply and demand only applies to individual markets — **Fact:** The law of supply and demand applies to all markets, including aggregate markets, as demonstrated by the **IS-LM model** (Hicks, 1937).
+**Myth:** Government intervention always disrupts market equilibrium — **Fact:** Government intervention, such as subsidies or taxes, can sometimes be used to correct market failures and achieve a more efficient equilibrium, as shown by the **theory of second best** (Lipsey and Lancaster, 1956).
 
-A real-world example of market equilibrium can be seen in the market for coffee. Suppose that the price of coffee is $2 per cup, and at this price, the quantity of coffee that buyers are willing to buy is equal to the quantity that sellers are willing to sell. If the price of coffee were to rise to $3 per cup, some buyers may decide not to purchase coffee, while others may be willing to pay the higher price. At the same time, more sellers may enter the market to meet the higher demand. Eventually, the market may reach a new equilibrium price and quantity, where the quantity of coffee that buyers are willing to buy equals the quantity that sellers are willing to sell.
-
-In summary, market equilibrium is a state in which the supply of a product or service equals the demand for it, resulting in no tendency for the price to change, and it is determined by the interaction of buyers and sellers in a market.
+## In Practice
+In the United States, the market for wheat is subject to fluctuations in supply and demand. According to the United States Department of Agriculture (USDA), the country produces approximately 1.9 billion bushels of wheat annually, with the majority being exported to countries such as Japan and Mexico. The demand for wheat is influenced by factors such as global food prices, weather conditions, and government policies. For instance, the 2019 tariffs imposed by the United States on Chinese goods led to a decrease in Chinese imports of American wheat, causing the price to fall and the quantity supplied to increase. The USDA reported that the 2019 wheat crop was valued at approximately $10.2 billion, highlighting the significant economic impact of market equilibrium on the agricultural sector.
 
 ---
 

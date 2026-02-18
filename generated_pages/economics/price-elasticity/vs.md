@@ -1,37 +1,38 @@
 ---
 title: "Price Elasticity Compared"
-slug: price-elasticity-vs
-description: "A clear, simple explanation of price elasticity vs - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: price-elasticity-compared
+description: "A clear, simple explanation of Price Elasticity Compared - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Price Elasticity Compared
 
-Price elasticity vs refers to the comparison of how responsive the quantity demanded of a good or service is to changes in its price, and how this responsiveness compares to other factors that can affect demand, such as changes in income or the prices of related goods.
+## Definition
+Price elasticity of demand refers to the measure of how responsive the quantity demanded of a good is to a change in its price, first introduced by Alfred Marshall in 1890.
 
-The concept of price elasticity is a fundamental idea in economics, as it helps to explain how consumers react to changes in the prices of the goods and services they buy. When the price of a good or service increases, the quantity demanded of it typically decreases, as consumers may choose to buy less of it or seek out alternative products. However, the extent to which the quantity demanded decreases in response to a price increase can vary greatly depending on the specific good or service and the characteristics of the market in which it is sold.
+## How It Works
+The price elasticity of demand is calculated as the percentage change in quantity demanded in response to a 1% change in price, with **elastic** goods having an elasticity greater than 1, indicating a significant response to price changes, and **inelastic** goods having an elasticity less than 1, indicating a relatively small response. According to Ricardo's comparative advantage model, 1817, countries should export goods for which they have a lower opportunity cost, which can lead to increased trade and economic efficiency. For instance, Boeing produces ~800 aircraft annually (Boeing annual report), and a change in aircraft prices can significantly affect the quantity demanded, as airlines and other buyers are sensitive to price changes.
 
-For example, some goods or services may be considered essential, such as food or healthcare, and consumers may continue to buy them even if their prices increase. In these cases, the demand for the good or service is said to be inelastic, meaning that it is not very responsive to changes in price. On the other hand, goods or services that are considered non-essential, such as luxury items or entertainment, may experience a significant decrease in demand if their prices increase, and are said to be elastic.
+The price elasticity of demand is influenced by several factors, including the availability of substitutes, the necessity of the good, and the income level of the buyers. For example, luxury goods such as diamonds have a high elasticity, as buyers can easily substitute them with other luxury goods or postpone their purchase, whereas essential goods like food have a low elasticity, as buyers are less responsive to price changes. The **cross-price elasticity** of demand measures the response of the quantity demanded of one good to a change in the price of another good, and can be used to identify complementary or substitute goods.
 
-The comparison of price elasticity to other factors that can affect demand is also important, as it can help to identify the relative importance of different influences on consumer behavior. For instance, changes in income or the prices of related goods can also impact the quantity demanded of a good or service, and understanding how these factors interact with price elasticity can provide valuable insights into the behavior of consumers in different markets.
+The price elasticity of supply is also an important concept, as it measures the responsiveness of the quantity supplied of a good to a change in its price. According to the **law of supply**, an increase in price leads to an increase in the quantity supplied, as producers are incentivized to produce more at higher prices. However, the price elasticity of supply can vary depending on the industry and the production costs, with some industries having a more elastic supply curve than others. For instance, the supply of agricultural products is often inelastic in the short run, as farmers cannot quickly adjust their production in response to price changes.
 
-Key components of price elasticity vs include:
-* The law of demand, which states that the quantity demanded of a good or service decreases as its price increases
-* The concept of elasticity, which measures the responsiveness of the quantity demanded to changes in price
-* The distinction between elastic and inelastic demand, which depends on the magnitude of the response to a price change
-* The role of income and substitution effects, which can influence the demand for a good or service
-* The impact of changes in the prices of related goods, such as complements or substitutes
-* The use of elasticity measures, such as the price elasticity of demand, to quantify the responsiveness of demand to price changes
+## Key Components
+- **Substitutes**: Availability of substitutes affects the elasticity of demand, with more substitutes leading to higher elasticity, as buyers can easily switch to alternative products.
+- **Income level**: The income level of buyers affects their responsiveness to price changes, with higher-income buyers being less responsive to price changes for essential goods.
+- **Necessity of the good**: Essential goods tend to have lower elasticity, as buyers are less responsive to price changes, whereas luxury goods have higher elasticity.
+- **Time period**: The elasticity of demand can vary depending on the time period, with short-run elasticity often being lower than long-run elasticity, as buyers may take time to adjust to price changes.
+- **Production costs**: The elasticity of supply is affected by production costs, with industries having lower production costs tend to have a more elastic supply curve.
+- **Market structure**: The market structure, such as **monopoly** or **perfect competition**, can influence the elasticity of demand and supply, with monopolies often having more inelastic demand curves.
 
-Common misconceptions about price elasticity vs include:
-* The assumption that all goods or services have the same level of price elasticity, when in fact it can vary greatly depending on the specific market and product
-* The belief that price elasticity is the only factor that affects demand, when in fact other factors such as income and the prices of related goods can also play a significant role
-* The idea that a good or service with inelastic demand will always experience an increase in revenue if its price is increased, when in fact the impact on revenue will depend on the specific circumstances of the market
-* The notion that price elasticity is a fixed characteristic of a good or service, when in fact it can change over time in response to changes in consumer preferences or market conditions
+## Common Misconceptions
+**Myth:** Price elasticity of demand is always constant — **Fact:** Elasticity can vary depending on the price level, with higher prices leading to higher elasticity, as seen in the demand for luxury goods.
+**Myth:** All essential goods have low elasticity — **Fact:** Some essential goods, such as healthcare services, can have high elasticity, as buyers may respond to price changes by postponing or forgoing treatment.
+**Myth:** Price elasticity of supply is always high — **Fact:** The supply of some goods, such as agricultural products, can be inelastic in the short run, as producers cannot quickly adjust their production in response to price changes.
+**Myth:** Cross-price elasticity is only relevant for complementary goods — **Fact:** Cross-price elasticity can also be used to identify substitute goods, such as Coca-Cola and Pepsi, which have a high cross-price elasticity.
 
-A real-world example of price elasticity vs can be seen in the market for coffee. If the price of coffee increases, some consumers may choose to buy less of it or switch to a different type of coffee, while others may continue to buy the same amount at the higher price. In this case, the demand for coffee is likely to be somewhat elastic, as some consumers are responsive to the price change, but others are not. However, if the price of a related good, such as tea, also increases at the same time, the demand for coffee may be affected to a greater or lesser extent, depending on the degree to which tea is a substitute for coffee.
-
-Summary: Price elasticity vs is a concept that compares the responsiveness of the quantity demanded of a good or service to changes in its price, and how this responsiveness compares to other factors that can affect demand, such as changes in income or the prices of related goods.
+## In Practice
+In the United States, the demand for gasoline is relatively inelastic, with an elasticity of around 0.3, as drivers are less responsive to price changes, according to the US Energy Information Administration. However, the supply of gasoline is more elastic, as refineries can adjust their production in response to price changes. In 2020, the COVID-19 pandemic led to a significant decrease in gasoline demand, with prices falling by over 30% in some areas, resulting in a decrease in production by refineries, such as ExxonMobil, which reduced its production by ~20% (ExxonMobil annual report). The price elasticity of demand for gasoline can vary depending on the region and the time period, with some studies suggesting that the elasticity is higher in the long run, as drivers can adjust their behavior and purchase more fuel-efficient vehicles in response to sustained price changes.
 
 ---
 

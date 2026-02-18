@@ -1,46 +1,30 @@
 ---
 title: "Types of Price To Earnings Ratio"
 slug: types-of-price-to-earnings-ratio
-description: "A clear, simple explanation of types of price to earnings ratio - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+description: "A clear, simple explanation of Types of Price To Earnings Ratio - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Types of Price To Earnings Ratio
 
-1. INTRODUCTION:
-The price to earnings ratio (P/E ratio) is a widely used metric in finance that helps investors and analysts evaluate the value of a company's stock. It is calculated by dividing the current stock price by the company's earnings per share. Understanding the different types of price to earnings ratio is essential for making informed investment decisions, as each type provides unique insights into a company's financial performance and growth potential. Classification of these types matters because it enables investors to choose the most suitable metric for their analysis, depending on the company's specific characteristics and the investor's goals. By recognizing the various types of P/E ratios, investors can better assess a company's valuation, identify potential risks and opportunities, and make more accurate comparisons between different companies.
+There are four primary categories of **Price to Earnings Ratio** (P/E ratio), a valuation metric used to assess a company's stock price, which are organized based on the type of earnings used in the calculation. 
 
-2. MAIN CATEGORIES:
-- **Trailing P/E Ratio**
-  - Definition: The trailing P/E ratio is calculated using the company's earnings per share from the previous 12 months. It reflects the company's past performance and is widely used as a benchmark for valuation.
-  - Key characteristics: Uses historical earnings data, provides a snapshot of the company's past performance.
-  - Example: If a company's current stock price is $50 and its earnings per share over the past 12 months were $2, the trailing P/E ratio would be 25 ($50 / $2).
-- **Forward P/E Ratio**
-  - Definition: The forward P/E ratio is calculated using the company's projected earnings per share for the next 12 months. It provides insight into the company's expected future performance.
-  - Key characteristics: Uses forecasted earnings data, reflects the company's future growth prospects.
-  - Example: If a company's current stock price is $50 and its projected earnings per share for the next 12 months are $3, the forward P/E ratio would be 16.67 ($50 / $3).
-- **Shiller P/E Ratio**
-  - Definition: The Shiller P/E ratio, also known as the cyclically adjusted P/E ratio, is calculated using the company's average earnings per share over the past 10 years, adjusted for inflation. It helps smooth out fluctuations in earnings and provides a long-term perspective on valuation.
-  - Key characteristics: Uses historical earnings data over a 10-year period, adjusts for inflation.
-  - Example: If a company's current stock price is $50 and its average earnings per share over the past 10 years, adjusted for inflation, were $4, the Shiller P/E ratio would be 12.5 ($50 / $4).
-- **Price to Earnings Growth Ratio (PEG Ratio)**
-  - Definition: The PEG ratio is a variation of the P/E ratio that takes into account the company's expected growth rate. It is calculated by dividing the P/E ratio by the company's expected earnings growth rate.
-  - Key characteristics: Uses the P/E ratio and expected earnings growth rate, provides insight into the company's valuation relative to its growth prospects.
-  - Example: If a company's P/E ratio is 20 and its expected earnings growth rate is 10%, the PEG ratio would be 2 (20 / 10%).
+## Main Categories
+- **Trailing P/E Ratio** — calculated using the company's historical earnings over the past 12 months, providing a snapshot of the company's current valuation, with **Coca-Cola** being a notable example, as its trailing P/E ratio is often used as a benchmark for the consumer goods industry.
+- **Forward P/E Ratio** — based on estimated future earnings, offering a glimpse into the company's potential growth prospects, with **Amazon** being a prime example, as its forward P/E ratio reflects investors' expectations of the company's future expansion.
+- **Shiller P/E Ratio** — also known as the **Cyclically Adjusted Price-to-Earnings Ratio** (CAPE), which uses the average earnings of the company over the past 10 years, adjusted for inflation, to provide a more nuanced view of the company's valuation, with **Johnson & Johnson** being a case in point, as its Shiller P/E ratio is often cited as an example of a stable company with a strong track record.
+- **Adjusted P/E Ratio** — which takes into account non-recurring items, such as one-time gains or losses, to provide a more accurate picture of the company's underlying earnings, with **Microsoft** being a notable example, as its adjusted P/E ratio is often used to evaluate the company's financial performance excluding non-recurring items.
 
-3. COMPARISON TABLE:
-| Type of P/E Ratio | Calculation | Key Characteristics | Example |
+## Comparison Table
+| Category | Calculation Basis | Time Horizon | Example Company |
 | --- | --- | --- | --- |
-| Trailing P/E | Current stock price / past 12 months' earnings per share | Uses historical earnings data | 25 ($50 / $2) |
-| Forward P/E | Current stock price / projected earnings per share for the next 12 months | Uses forecasted earnings data | 16.67 ($50 / $3) |
-| Shiller P/E | Current stock price / average earnings per share over the past 10 years, adjusted for inflation | Smoothes out fluctuations in earnings | 12.5 ($50 / $4) |
-| PEG Ratio | P/E ratio / expected earnings growth rate | Takes into account expected growth rate | 2 (20 / 10%) |
+| Trailing P/E Ratio | Historical earnings | Past 12 months | Coca-Cola |
+| Forward P/E Ratio | Estimated future earnings | Future 12 months | Amazon |
+| Shiller P/E Ratio | Average earnings over 10 years | Past 10 years | Johnson & Johnson |
+| Adjusted P/E Ratio | Underlying earnings excluding non-recurring items | Varies | Microsoft |
 
-4. HOW THEY RELATE:
-The different types of price to earnings ratio are connected in that they all provide a measure of a company's valuation, but they differ in the data they use and the perspective they offer. The trailing P/E ratio looks at past performance, while the forward P/E ratio looks at expected future performance. The Shiller P/E ratio takes a long-term view, smoothing out fluctuations in earnings, and the PEG ratio considers the company's expected growth rate. By using these different metrics, investors can gain a more comprehensive understanding of a company's valuation and make more informed investment decisions.
-
-5. SUMMARY:
-The classification system of price to earnings ratio includes trailing, forward, Shiller, and PEG ratios, each providing a unique perspective on a company's valuation and growth prospects.
+## How They Relate
+The **Trailing P/E Ratio** and **Forward P/E Ratio** are often used in conjunction to assess a company's current valuation and future growth prospects, with the **Forward P/E Ratio** being more relevant for companies with high growth expectations, such as **Tesla**. The **Shiller P/E Ratio** is commonly used to evaluate the valuation of the overall market, with a **Shiller P/E Ratio** above 25 indicating an overvalued market, according to **Robert Shiller's** framework. The **Adjusted P/E Ratio** is often used to compare companies with different accounting practices, such as **General Electric** and **3M**, to provide a more accurate comparison of their financial performance. Furthermore, the **Trailing P/E Ratio** and **Adjusted P/E Ratio** can be used together to evaluate a company's current valuation and underlying earnings, with **Procter & Gamble** being a notable example, as its trailing P/E ratio and adjusted P/E ratio are often used to assess the company's financial performance.
 
 ---
 

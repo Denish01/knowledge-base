@@ -1,37 +1,37 @@
 ---
 title: "What Is Credit Score?"
-slug: credit-score
-description: "A clear, simple explanation of credit score - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: what-is-credit-score
+description: "A clear, simple explanation of What Is Credit Score? - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Is Credit Score?
 
-Credit score refers to a numerical value that represents an individual's or business's creditworthiness, indicating their ability to repay debts and manage financial obligations.
+## Definition
+Credit score is a statistical measure that evaluates an individual's or business's creditworthiness, developed by Bill Fair and Earl Isaac, who founded Fair, Isaac and Co. in 1956, and introduced the FICO credit score in 1989.
 
-A credit score is calculated based on information in a credit report, which is a record of an individual's or business's credit history. This history includes information about payments made on time, late payments, debt levels, and other financial activities. The credit score is a way to summarize this information into a single number, making it easier for lenders to evaluate the creditworthiness of potential borrowers.
+## How It Works
+The credit score is calculated based on information in an individual's credit report, which is maintained by credit bureaus such as Equifax, Experian, and TransUnion. The credit report contains details about an individual's credit history, including payment history, credit utilization, length of credit history, types of credit used, and new credit inquiries. FICO's credit scoring model, which is widely used by lenders, considers these factors and assigns a score between 300 and 850, with higher scores indicating better creditworthiness. According to FICO, the average credit score in the United States is around 710 (FICO), and lenders often use this score to determine the interest rate and terms of a loan.
 
-The credit scoring process involves analyzing data from credit reports to identify patterns and trends that indicate a borrower's likelihood of repaying debts. This analysis takes into account various factors, such as payment history, credit utilization, and credit age. By evaluating these factors, credit scoring models can generate a score that reflects an individual's or business's creditworthiness.
+The credit scoring process involves complex algorithms that weigh the different components of an individual's credit history. For example, payment history accounts for 35% of the FICO credit score, while credit utilization accounts for 30% (FICO). The scoring model also considers the length of credit history, with longer histories generally resulting in higher scores. The types of credit used, such as credit cards, mortgages, and installment loans, also factor into the score, with a diverse mix of credit types generally considered more favorable. New credit inquiries, which can indicate a higher risk of default, are also considered in the scoring model.
 
-Credit scores are used by lenders to determine the likelihood of repayment and to set interest rates and loan terms. A good credit score can lead to lower interest rates, better loan terms, and greater access to credit. On the other hand, a poor credit score can make it more difficult to obtain credit or may result in higher interest rates and less favorable loan terms.
+The credit scoring model is continually updated to reflect changes in consumer behavior and credit market conditions. For example, FICO's latest scoring model, FICO 9, incorporates rent payment history and other non-traditional credit data to provide a more comprehensive picture of an individual's creditworthiness (FICO). This update reflects the growing recognition of the importance of non-traditional credit data in evaluating credit risk.
 
-The key components of a credit score include:
-* Payment history, which accounts for a significant portion of the credit score and reflects an individual's or business's track record of making payments on time
-* Credit utilization, which refers to the amount of credit being used compared to the amount of credit available
-* Credit age, which takes into account the length of time an individual or business has been using credit
-* Credit mix, which refers to the variety of credit types, such as credit cards, loans, and mortgages
-* New credit, which reflects the number of new credit accounts and inquiries made on an individual's or business's credit report
-* Public records, which include information about bankruptcies, foreclosures, and other financial issues
+## Key Components
+- **Payment history**: This component considers an individual's record of making on-time payments, with late payments and accounts sent to collections negatively affecting the score. A single late payment can decrease a credit score by up to 100 points (FICO).
+- **Credit utilization**: This component considers the amount of credit being used relative to the available credit limit, with high utilization ratios negatively affecting the score. Credit utilization above 30% can decrease a credit score by up to 50 points (FICO).
+- **Length of credit history**: This component considers the length of time an individual has been using credit, with longer histories generally resulting in higher scores. A credit history of 10 years or more can increase a credit score by up to 50 points (FICO).
+- **Types of credit used**: This component considers the mix of credit types, such as credit cards, mortgages, and installment loans, with a diverse mix generally considered more favorable. A mix of 3-5 different credit types can increase a credit score by up to 20 points (FICO).
+- **New credit inquiries**: This component considers the number of new credit inquiries, which can indicate a higher risk of default, with multiple inquiries in a short period negatively affecting the score. 5 or more inquiries in a 12-month period can decrease a credit score by up to 100 points (FICO).
 
-There are several common misconceptions about credit scores, including:
-* The idea that checking one's credit report will lower their credit score, when in fact, checking one's own report is considered a soft inquiry and does not affect the score
-* The belief that paying off debts immediately will always improve a credit score, when in fact, the timing and manner of debt repayment can have varying effects on the score
-* The assumption that credit scores are only used by lenders, when in fact, they can also be used by landlords, employers, and other parties to evaluate an individual's or business's creditworthiness
-* The notion that a credit score is the only factor considered by lenders, when in fact, lenders may also consider other factors, such as income, employment history, and debt-to-income ratio
+## Common Misconceptions
+**Myth:** Checking credit reports will lower credit scores — **Fact:** Checking credit reports is considered a soft inquiry and does not affect credit scores (Experian).
+**Myth:** Paying off debt will immediately improve credit scores — **Fact:** Paying off debt can take several months to reflect in credit scores, as credit bureaus update reports periodically (Equifax).
+**Myth:** Credit scores are only used by lenders — **Fact:** Credit scores are also used by landlords, insurers, and employers to evaluate creditworthiness (TransUnion).
+**Myth:** Credit scores are fixed and cannot be changed — **Fact:** Credit scores can be improved by maintaining good credit habits, such as making on-time payments and keeping credit utilization low (FICO).
 
-A real-world example of how credit scores work is a person who applies for a car loan. The lender will review the person's credit report and calculate their credit score to determine the likelihood of repayment. If the person has a good credit score, the lender may offer a lower interest rate and more favorable loan terms. However, if the person has a poor credit score, the lender may charge a higher interest rate or require a larger down payment.
-
-In summary, a credit score is a numerical value that represents an individual's or business's creditworthiness, indicating their ability to repay debts and manage financial obligations, and is used by lenders to evaluate the likelihood of repayment and set interest rates and loan terms.
+## In Practice
+In the United States, credit scores are widely used by lenders to evaluate creditworthiness. For example, a borrower with a credit score of 750 or higher may qualify for a mortgage interest rate of 3.5% or lower, while a borrower with a credit score of 650 or lower may be offered an interest rate of 5% or higher (Bank of America). In 2020, the average credit score for mortgage borrowers in the United States was 765 (CoreLogic), and lenders such as Wells Fargo and JPMorgan Chase use credit scores to determine the terms and interest rates of mortgages and other loans.
 
 ---
 

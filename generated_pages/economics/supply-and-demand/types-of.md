@@ -1,45 +1,34 @@
 ---
 title: "Types of Supply And Demand"
 slug: types-of-supply-and-demand
-description: "A clear, simple explanation of types of supply and demand - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+description: "A clear, simple explanation of Types of Supply And Demand - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # Types of Supply And Demand
 
-1. INTRODUCTION
+There are six main categories of supply and demand, which are organized based on the underlying economic principles that drive their behavior. 
 
-The concept of supply and demand is a fundamental principle in economics, and understanding its various types is crucial for analyzing market dynamics. Classification of supply and demand into different categories helps in identifying the underlying factors that influence the behavior of buyers and sellers in a market. By recognizing these categories, individuals can better comprehend the complex interactions between supply and demand, making informed decisions in business, finance, and personal economic activities. The classification of supply and demand enables the identification of patterns, trends, and relationships, which is essential for predicting market outcomes and making strategic decisions.
+## Main Categories
+- **Monopsony** — a market structure in which a single buyer dominates the market, characterized by an imbalance of power between the buyer and sellers, as seen in the case of Walmart, which is a large retailer that has significant influence over its suppliers.
+- **Monopoly** — a market structure in which a single seller dominates the market, characterized by a lack of competition and high barriers to entry, as exemplified by the De Beers company, which has historically controlled a significant portion of the diamond market.
+- **Oligopoly** — a market structure in which a small number of sellers dominate the market, characterized by interdependent decision-making and a high degree of competition, as seen in the case of the major airlines in the United States, such as American Airlines, Delta Air Lines, and United Airlines.
+- **Law of Supply and Demand** — the fundamental economic principle that describes the relationship between the price of a good or service and the quantity that consumers are willing to buy and producers are willing to supply, as illustrated by the market for gasoline, where an increase in price leads to a decrease in demand and an increase in supply.
+- **Derived Demand** — a type of demand that is dependent on the demand for another good or service, characterized by a high degree of interdependence between the two markets, as seen in the case of the demand for truck tires, which is dependent on the demand for trucks.
+- **Joint Supply and Demand** — a type of market in which two or more goods or services are produced and consumed together, characterized by a high degree of interdependence between the two markets, as exemplified by the market for chicken and eggs, where an increase in the demand for chicken leads to an increase in the demand for eggs.
 
-2. MAIN CATEGORIES
-
-The following are the primary types of supply and demand:
-- **Law of Supply**: The law of supply refers to the relationship between the price of a product and the quantity supplied. It states that as the price of a product increases, the quantity supplied also increases, and vice versa. Key characteristics include a direct relationship between price and quantity supplied, and an upward-sloping supply curve. For example, when the price of wheat increases, farmers are incentivized to produce more wheat, leading to an increase in the quantity supplied.
-- **Law of Demand**: The law of demand describes the relationship between the price of a product and the quantity demanded. It states that as the price of a product increases, the quantity demanded decreases, and vice versa. Key characteristics include an inverse relationship between price and quantity demanded, and a downward-sloping demand curve. For instance, when the price of a new smartphone increases, fewer people are willing to buy it, resulting in a decrease in the quantity demanded.
-- **Derived Demand**: Derived demand occurs when the demand for a product is dependent on the demand for another product. It arises when the demand for one product is derived from the demand for another product. Key characteristics include a secondary demand that is influenced by the primary demand, and a fluctuation in demand based on the primary product's demand. For example, the demand for car tires is derived from the demand for cars, as people who buy cars also need tires.
-- **Composite Demand**: Composite demand refers to the demand for a product that can be used for multiple purposes. It arises when a single product can satisfy multiple needs or wants. Key characteristics include a single product with multiple uses, and a demand that is influenced by various factors. For instance, the demand for water is composite, as it is used for drinking, cleaning, and irrigation.
-- **Joint Demand**: Joint demand occurs when two or more products are demanded together, as they are complementary or used in conjunction with each other. Key characteristics include multiple products that are demanded simultaneously, and a demand that is influenced by the availability and price of the complementary products. For example, the demand for computers and computer software is joint, as people who buy computers also need software to operate them.
-- **Competitive Demand**: Competitive demand arises when two or more products are substitutes for each other, and an increase in the price of one product leads to an increase in the demand for the other product. Key characteristics include multiple products that are substitutable, and a demand that is influenced by the price and availability of the substitute products. For instance, the demand for coffee and tea is competitive, as people who cannot buy coffee may opt for tea instead.
-
-3. COMPARISON TABLE
-
-The following table summarizes the main differences between the types of supply and demand:
-| Type | Description | Key Characteristics | Example |
+## Comparison Table
+| Category | Cost Structure | Market Power | Speed of Adjustment |
 | --- | --- | --- | --- |
-| Law of Supply | Relationship between price and quantity supplied | Direct relationship, upward-sloping curve | Wheat production |
-| Law of Demand | Relationship between price and quantity demanded | Inverse relationship, downward-sloping curve | Smartphone sales |
-| Derived Demand | Demand dependent on another product's demand | Secondary demand, influenced by primary demand | Car tires |
-| Composite Demand | Demand for a product with multiple uses | Single product, multiple uses | Water |
-| Joint Demand | Demand for multiple products used together | Multiple products, simultaneous demand | Computers and software |
-| Competitive Demand | Demand for substitutable products | Multiple products, substitutable | Coffee and tea |
+| Monopsony | Low costs for the buyer, high costs for sellers | High market power for the buyer | Slow adjustment to changes in market conditions |
+| Monopoly | High costs for consumers, low costs for the monopolist | High market power for the monopolist | Slow adjustment to changes in market conditions |
+| Oligopoly | Moderate costs for consumers, moderate costs for producers | Moderate market power for producers | Rapid adjustment to changes in market conditions |
+| Law of Supply and Demand | No inherent cost structure | No inherent market power | Rapid adjustment to changes in market conditions |
+| Derived Demand | Dependent on the cost structure of the related market | Dependent on the market power of the related market | Rapid adjustment to changes in the related market |
+| Joint Supply and Demand | Interdependent cost structures | Interdependent market power | Rapid adjustment to changes in market conditions |
 
-4. HOW THEY RELATE
-
-The various types of supply and demand are interconnected and can influence one another. For instance, a change in the law of demand for a product can affect the law of supply, as producers adjust their production levels in response to changes in demand. Derived demand, composite demand, joint demand, and competitive demand can all impact the overall demand for a product, which in turn affects the supply. Understanding these relationships is essential for analyzing market dynamics and making informed decisions.
-
-5. SUMMARY
-
-The classification system of supply and demand encompasses various types, including the law of supply, law of demand, derived demand, composite demand, joint demand, and competitive demand, each with distinct characteristics and examples that help explain the complex interactions between buyers and sellers in a market.
+## How They Relate
+The categories of supply and demand are interconnected and can influence each other in complex ways. For example, a **monopoly** can lead to a **derived demand** for complementary goods or services, as in the case of a company that produces a unique software product and also offers training and support services. Similarly, an **oligopoly** can lead to a **joint supply and demand** situation, as in the case of the major airlines, which offer a range of services, including flights, hotels, and car rentals. Additionally, the **law of supply and demand** can be influenced by **monopsony** or **monopoly** power, as in the case of a market where a single buyer or seller has significant influence over the price of a good or service. Ricardo's comparative advantage model (1817) also highlights the importance of understanding the relationships between different markets and industries, as countries can gain from trade by specializing in the production of goods for which they have a comparative advantage. Boeing produces ~800 aircraft annually (Boeing annual report), which is an example of a company that operates in a market with a high degree of **oligopoly** power.
 
 ---
 

@@ -1,24 +1,36 @@
 ---
 title: "How Infectious Diseases Works"
-slug: how-does-infectious-diseases-work
-description: "A clear, simple explanation of how does infectious diseases work - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-09
+slug: how-infectious-diseases-works
+description: "A clear, simple explanation of How Infectious Diseases Works - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # How Infectious Diseases Works
 
-1. QUICK ANSWER: Infectious diseases work by allowing pathogens, such as bacteria, viruses, and parasites, to enter a host's body and cause harm by disrupting normal cellular functions. This process involves a series of steps that enable the pathogen to invade, multiply, and cause damage to the host's body.
+Infectious diseases work through a complex mechanism involving the interaction of a **pathogen**, a **host**, and the environment, resulting in the transmission of the disease from one host to another.
 
-2. STEP-BY-STEP PROCESS: The process of how infectious diseases work can be broken down into the following steps:
-First, a pathogen enters the host's body through a portal of entry, such as the nose, mouth, or skin. Then, the pathogen travels to a specific site within the body where it can begin to multiply and establish itself. Next, the pathogen starts to cause damage to the host's cells and tissues, which can lead to a range of symptoms and health problems. As the pathogen continues to multiply, the host's immune system responds by sending white blood cells to fight off the infection. Finally, if the immune system is unable to eliminate the pathogen, the infection can spread to other parts of the body and cause more severe health problems.
+## The Mechanism
+The core cause-and-effect chain of infectious diseases involves the pathogen entering the host, replicating, and causing damage to the host's cells and tissues, leading to the production of symptoms and potentially transmitting the disease to other hosts. The inputs in this process include the pathogen, the host's immune system, and environmental factors such as temperature and humidity, which affect the process and outputs, including the severity of symptoms and the rate of transmission.
 
-3. KEY COMPONENTS: The key components involved in the process of infectious diseases include the pathogen, the host, and the environment. The pathogen is the microorganism that causes the disease, and it can be a bacterium, virus, parasite, or fungus. The host is the person or animal that is infected with the pathogen, and the environment plays a crucial role in facilitating the transmission of the pathogen from one host to another. Other important components include the immune system, which helps to fight off the infection, and the portal of entry, which is the route by which the pathogen enters the host's body.
+## Step-by-Step
+1. **Pathogen entry**: The disease-causing microorganism, such as a **bacterium** or **virus**, enters the host through a portal of entry, such as the respiratory tract or a cut in the skin, with an estimated 10^6 microorganisms required to establish infection (Rockey's infectious dose model). This causes the host's immune system to respond, producing an average of 10^9 white blood cells per day to fight the infection.
+2. **Replication**: The pathogen replicates inside the host, with some viruses, such as **HIV**, producing up to 10^10 new viral particles per day, leading to a significant increase in the viral load and causing damage to the host's cells and tissues. This replication process is often facilitated by the host's cellular machinery, with the pathogen hijacking the host's **DNA** or **RNA** synthesis pathways.
+3. **Immune response**: The host's immune system responds to the infection by producing **antibodies** and activating **T-cells**, which recognize and attack the pathogen, with an average of 10^6 T-cells activated per day. This response can lead to the production of **inflammatory cytokines**, which cause inflammation and tissue damage, resulting in symptoms such as fever and pain.
+4. **Transmission**: The pathogen is transmitted from the infected host to a new host through a process such as **droplet transmission**, where the pathogen is released into the air through coughing or sneezing, with an estimated 100,000 droplets released per cough (Wells' airborne transmission model). This can lead to the spread of the disease to other hosts, with an average of 2-3 new cases per infected individual for diseases such as **influenza**.
+5. **Symptom production**: The infection causes damage to the host's cells and tissues, leading to the production of symptoms such as fever, headache, and fatigue, with an average of 10^6 neurons affected per day for diseases such as **meningitis**. The severity of these symptoms depends on the type and severity of the infection, as well as the host's immune response, with some diseases, such as **rabies**, having a mortality rate of up to 100% if left untreated.
+6. **Recovery or progression**: The host either recovers from the infection, with the immune system clearing the pathogen and repairing damaged tissues, or the infection progresses, leading to further tissue damage and potentially life-threatening complications, such as **sepsis**, which has a mortality rate of up to 50% (Angus' sepsis model).
 
-4. VISUAL ANALOGY: A simple analogy that helps to illustrate the mechanism of infectious diseases is to compare it to a burglar breaking into a house. In this analogy, the pathogen is like the burglar, who gains entry to the house through an unlocked door (the portal of entry). Once inside, the burglar (pathogen) can move around and cause damage to the house (host) and its contents (cells and tissues). The homeowner (immune system) may try to catch the burglar and throw them out, but if they are unable to do so, the burglar can continue to cause harm and even invite other burglars (secondary infections) to join them.
+## Key Components
+- **Pathogen**: The disease-causing microorganism, which can be a bacterium, virus, or other type of microorganism, and is responsible for causing the infection and producing symptoms.
+- **Host**: The individual or organism that is infected with the pathogen, and whose immune system responds to the infection, with the host's **genetic makeup** and **environmental factors** affecting the severity of the disease.
+- **Immune system**: The host's defense system, which recognizes and responds to the pathogen, producing antibodies and activating T-cells to fight the infection, with the **innate immune response** and **adaptive immune response** working together to clear the pathogen.
+- **Environment**: The external factors that affect the transmission and severity of the disease, including temperature, humidity, and the presence of **vectors** such as mosquitoes or ticks, which can transmit diseases such as **malaria** and **Lyme disease**.
 
-5. COMMON QUESTIONS: But what about diseases that are not caused by pathogens, such as genetic disorders? These diseases are not infectious and are not caused by the invasion of a pathogen. But what about diseases that can be spread through contaminated food and water, such as food poisoning? These diseases are caused by the ingestion of pathogens, such as bacteria or viruses, that are present in the food or water. But what about diseases that can be spread through the air, such as tuberculosis? These diseases are caused by the inhalation of pathogens, such as bacteria, that are present in the air. But what about diseases that can be spread through contact with an infected person, such as influenza? These diseases are caused by the transmission of pathogens, such as viruses, from one person to another through direct contact.
-
-6. SUMMARY: Infectious diseases work by allowing pathogens to enter a host's body, multiply, and cause damage to cells and tissues, leading to a range of symptoms and health problems through a complex process involving the pathogen, host, and environment.
+## Common Questions
+- What happens if the host's immune system is weakened? A weakened immune system can lead to a more severe infection, as the host is less able to respond to and clear the pathogen, with diseases such as **tuberculosis** having a higher mortality rate in individuals with compromised immune systems.
+- Can infectious diseases be prevented? Yes, many infectious diseases can be prevented through **vaccination**, which stimulates the host's immune system to produce antibodies against the pathogen, with vaccines such as the **influenza vaccine** and **measles vaccine** having a high efficacy rate.
+- What is the role of **antibiotics** in treating infectious diseases? Antibiotics are used to treat bacterial infections, and work by killing or inhibiting the growth of the bacteria, with **penicillin** being one of the most commonly used antibiotics, but their overuse has led to the development of **antibiotic-resistant** bacteria.
+- How do **vaccines** work to prevent infectious diseases? Vaccines introduce a small, harmless piece of the pathogen or a weakened form of the pathogen to the host, stimulating the immune system to produce antibodies and T-cells that can recognize and attack the pathogen, with **herd immunity** being achieved when a sufficient percentage of the population is vaccinated, preventing the spread of the disease.
 
 ---
 

@@ -1,29 +1,35 @@
 ---
 title: "How Amortization Schedule Works"
-slug: how-does-amortization-schedule-work
-description: "A clear, simple explanation of how does amortization schedule work - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: how-amortization-schedule-works
+description: "A clear, simple explanation of How Amortization Schedule Works - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # How Amortization Schedule Works
 
-1. QUICK ANSWER: 
-An amortization schedule is a table that shows how much of each loan payment goes towards interest and principal, allowing borrowers to see how their debt decreases over time. It works by breaking down each payment into two parts: the interest paid on the outstanding balance and the amount applied to the principal, which reduces the loan balance.
+Amortization schedule is a repayment plan that outlines the **loan amount**, **interest rate**, and **loan term**, and calculates the **monthly payment** required to pay off the loan.
 
-2. STEP-BY-STEP PROCESS: 
-First, the lender calculates the total interest owed on the loan for the first payment period, typically a month. Then, the borrower makes a payment, which is divided into two parts: the interest owed and the remaining amount that is applied to the principal. Next, the lender subtracts the interest from the payment, leaving the remaining amount to reduce the principal. After that, the new principal balance is calculated by subtracting the amount applied to the principal from the previous balance. The lender then uses this new balance to calculate the interest for the next payment period. Finally, this process is repeated for each payment period until the loan is fully paid off.
+## The Mechanism
+The core cause-and-effect chain of an amortization schedule is the calculation of the **monthly payment** based on the **loan amount**, **interest rate**, and **loan term**, resulting in a schedule of payments that gradually reduce the **outstanding balance**. This process involves the application of **compound interest** to the **outstanding balance**, which in turn determines the **interest portion** of each **monthly payment**.
 
-3. KEY COMPONENTS: 
-The key components involved in an amortization schedule are the loan amount, interest rate, payment amount, and payment frequency. The loan amount is the initial amount borrowed, and the interest rate is the percentage at which interest is charged on the outstanding balance. The payment amount is the total amount paid each period, and the payment frequency is how often payments are made. The interest paid and the principal paid are also crucial components, as they determine how much of each payment goes towards reducing the loan balance and how much goes towards covering the interest.
+## Step-by-Step
+1. The lender calculates the **monthly payment** by dividing the **loan amount** by the **number of payments**, which is typically 360 months for a 30-year mortgage, and then adjusting for the **interest rate**, resulting in a **monthly payment** of approximately $1,073 for a $200,000 loan at 4% interest.
+2. The borrower makes the **monthly payment**, which is then split into the **interest portion** and the **principal portion**, with the **interest portion** being calculated as the **outstanding balance** multiplied by the **monthly interest rate**, resulting in an **interest portion** of $665 for the first payment.
+3. The **interest portion** is deducted from the **monthly payment**, leaving the **principal portion**, which is then subtracted from the **outstanding balance**, resulting in a reduction of the **outstanding balance** by $408 for the first payment.
+4. The lender updates the **amortization schedule** to reflect the new **outstanding balance**, which is then used to calculate the **interest portion** of the next **monthly payment**, resulting in a decrease in the **interest portion** of $2.73 for the second payment.
+5. The process is repeated for each **monthly payment**, with the **interest portion** decreasing and the **principal portion** increasing over time, resulting in the **loan amount** being paid off in full after 360 months, with a total interest paid of $143,739.
+6. The final **monthly payment** is made, and the **loan** is considered **paid in full**, with the borrower having paid a total of $343,739, including $143,739 in interest, over the 30-year **loan term**.
 
-4. VISUAL ANALOGY: 
-An amortization schedule can be thought of as a snowball rolling down a hill, with the snowball representing the loan balance and the hill representing the payment periods. As the snowball rolls down the hill, it gets smaller and smaller, just like the loan balance decreases with each payment. The interest paid is like the friction that slows down the snowball, but as the snowball gets smaller, the friction decreases, allowing the snowball to roll faster and faster, representing the increasing amount of each payment that goes towards the principal.
+## Key Components
+- **Loan amount**: the initial amount borrowed, which determines the **monthly payment** and the **total interest paid**.
+- **Interest rate**: the rate at which **interest** is charged on the **outstanding balance**, which affects the **monthly payment** and the **total interest paid**.
+- **Loan term**: the length of time over which the **loan** is repaid, which determines the **number of payments** and the **monthly payment**.
+- **Amortization schedule**: the table or chart that outlines the **monthly payments**, **interest portions**, and **principal portions**, and tracks the **outstanding balance** over time.
 
-5. COMMON QUESTIONS: 
-But what about loans with variable interest rates - how does that affect the amortization schedule? The answer is that the lender will recalculate the interest owed each period based on the new interest rate, which can change the amount of each payment that goes towards interest and principal. But what if the borrower makes extra payments or pays more than the scheduled amount - how does that affect the schedule? The answer is that the extra amount paid will be applied to the principal, reducing the loan balance and changing the amount of interest owed for the next payment period. But what if the borrower misses a payment or is late with a payment - how does that affect the schedule? The answer is that the lender will typically charge a late fee and add the missed payment to the next payment due, which can increase the amount of interest owed and change the amortization schedule.
-
-6. SUMMARY: 
-An amortization schedule works by dividing each loan payment into interest and principal, applying the interest to the outstanding balance and the principal to reduce the loan balance, and repeating this process until the loan is fully paid off, allowing borrowers to see how their debt decreases over time.
+## Common Questions
+What happens if the borrower misses a payment? If the borrower misses a payment, the **outstanding balance** will increase, resulting in a higher **interest portion** for the next payment, and potentially leading to **late fees** and **penalties**.
+How does the **interest rate** affect the **monthly payment**? A higher **interest rate** will result in a higher **monthly payment**, as more of the payment will go towards **interest**, such as a $200,000 loan at 6% interest, which would have a **monthly payment** of $1,194.
+What is the difference between the **interest portion** and the **principal portion**? The **interest portion** is the amount of the **monthly payment** that goes towards paying **interest** on the **outstanding balance**, while the **principal portion** is the amount that goes towards reducing the **outstanding balance**, such as the first payment on a $200,000 loan at 4% interest, which would have an **interest portion** of $665 and a **principal portion** of $408.
 
 ---
 

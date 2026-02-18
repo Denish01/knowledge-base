@@ -1,37 +1,42 @@
 ---
 title: "What Is Consumer Price Index?"
-slug: consumer-price-index
-description: "A clear, simple explanation of consumer price index - definition, key concepts, examples, and common misconceptions."
-date: 2026-02-06
+slug: what-is-consumer-price-index
+description: "A clear, simple explanation of What Is Consumer Price Index? - definition, key concepts, examples, and common misconceptions."
+date: 2026-02-16
 ---
 
 # What Is Consumer Price Index?
 
-Consumer price index refers to a statistical measure that tracks the average change in prices of a basket of goods and services consumed by households over time.
+## Definition
+Consumer Price Index (CPI) refers to a measure of the total change in prices of a basket of goods and services consumed by households, developed by Étienne Laspeyres in 1871.
 
-The consumer price index is an important economic indicator that helps measure inflation, which is the rate at which prices for goods and services are rising. It is calculated by collecting data on the prices of a wide range of items, including food, housing, clothing, transportation, and healthcare. The prices of these items are then weighted according to their importance in the average household budget, and the resulting index provides a snapshot of the overall level of prices in the economy.
+## How It Works
+The CPI calculation involves tracking the prices of a representative basket of goods and services, which includes **food**, **housing**, **clothing**, **transportation**, and **healthcare**. The prices are collected from a sample of retailers, service providers, and other sources, with the frequency of collection varying by country, such as monthly in the United States (Bureau of Labor Statistics) and quarterly in Australia (Australian Bureau of Statistics). The CPI is then calculated by taking a weighted average of the price changes of the individual items in the basket, using weights that reflect the relative importance of each item in the average household budget, such as the 42% weight assigned to **housing** in the US CPI (Bureau of Labor Statistics).
 
-The consumer price index is typically calculated and published by government agencies, such as national statistical offices or central banks. These agencies use a variety of methods to collect price data, including surveys of retailers, online price tracking, and administrative data from government sources. The resulting index is usually expressed as a percentage change from a base period, which provides a clear and simple way to compare prices over time.
+The CPI serves as a proxy for inflation, which is the rate of change of the CPI over time. Central banks, such as the Federal Reserve in the United States, use the CPI to set monetary policy, aiming to keep inflation within a target range, typically around 2% annual rate (Federal Reserve). For example, the European Central Bank uses the **Harmonized Index of Consumer Prices** (HICP) to measure inflation in the Eurozone, which has a target rate of below 2% (European Central Bank). The CPI also affects the **cost of living adjustments** made to social security benefits, pensions, and other government payments, with the US Social Security Administration using the CPI to adjust benefits annually (Social Security Administration).
 
-The consumer price index can be used for a variety of purposes, including adjusting wages and pensions to keep pace with inflation, setting interest rates, and evaluating the effectiveness of economic policies. It is also an important tool for businesses and individuals, as it helps them to make informed decisions about investments, savings, and spending.
+The CPI has several limitations, including the potential for **bias** in the sample of prices collected and the difficulty of capturing changes in **quality** of goods and services over time. To address these limitations, some countries use alternative measures, such as the **Gross Domestic Product** (GDP) deflator, which measures the change in prices of all goods and services produced within a country (World Bank). The **Personal Consumption Expenditures** (PCE) index, used by the US Federal Reserve, is another alternative, which includes a broader range of expenditures, such as healthcare and financial services (Bureau of Economic Analysis).
 
-The key components of the consumer price index include:
-* A basket of goods and services, which is a representative sample of the items that households typically purchase
-* Weighting, which refers to the process of assigning relative importance to each item in the basket based on its share of the average household budget
-* Price collection, which involves gathering data on the prices of the items in the basket
-* Index calculation, which involves using the price data to calculate the overall index
-* Base period, which is the period against which the index is compared
-* Seasonal adjustment, which involves removing the effects of seasonal fluctuations in prices from the index
+## Key Components
+- **Weighted average**: the CPI is calculated by taking a weighted average of the price changes of the individual items in the basket, with weights that reflect the relative importance of each item in the average household budget.
+- **Basket of goods and services**: the CPI tracks the prices of a representative basket of goods and services, which includes food, housing, clothing, transportation, and healthcare.
+- **Price collection**: the prices are collected from a sample of retailers, service providers, and other sources, with the frequency of collection varying by country.
+- **Inflation target**: central banks use the CPI to set monetary policy, aiming to keep inflation within a target range, typically around 2% annual rate.
+- **Cost of living adjustments**: the CPI affects the cost of living adjustments made to social security benefits, pensions, and other government payments.
+- **Quality adjustment**: the CPI has difficulty capturing changes in quality of goods and services over time, which can lead to bias in the measurement of inflation.
 
-Some common misconceptions about the consumer price index include:
-* That it measures the absolute level of prices, rather than the change in prices over time
-* That it only includes certain types of goods and services, such as food or housing
-* That it is a perfect measure of inflation, rather than an imperfect but useful indicator
-* That it is only used by government agencies, rather than being a useful tool for businesses and individuals as well
+## Common Misconceptions
+**Myth:** The CPI measures the actual change in the cost of living for individual households. 
+**Fact:** The CPI measures the average change in prices of a basket of goods and services, which may not reflect the actual change in cost of living for individual households, as households have different consumption patterns (Bureau of Labor Statistics).
+**Myth:** The CPI is a perfect measure of inflation.
+**Fact:** The CPI has limitations, including the potential for bias in the sample of prices collected and the difficulty of capturing changes in quality of goods and services over time, which can lead to inaccurate measurements of inflation (Bureau of Labor Statistics).
+**Myth:** The CPI only measures the prices of goods.
+**Fact:** The CPI also measures the prices of services, such as healthcare and financial services, which are included in the basket of goods and services (Bureau of Labor Statistics).
+**Myth:** The CPI is only used by central banks.
+**Fact:** The CPI is used by a wide range of organizations, including government agencies, businesses, and individuals, to make informed decisions about prices, wages, and benefits (Bureau of Labor Statistics).
 
-For example, suppose that the consumer price index for a given country shows that the average price of a basket of goods and services has increased by 2% over the past year. This means that, on average, households in that country will need to spend 2% more to purchase the same basket of goods and services as they did the previous year. This information can be used by policymakers to adjust interest rates or by businesses to adjust their pricing strategies.
-
-In summary, the consumer price index is a statistical measure that tracks the average change in prices of a basket of goods and services consumed by households over time, providing a useful indicator of inflation and a tool for making informed economic decisions.
+## In Practice
+In the United States, the CPI is used to adjust the **Social Security benefits**, with a 1.3% cost of living adjustment made in 2021, resulting in an increase of $20 per month for the average beneficiary (Social Security Administration). The CPI is also used by the **Federal Reserve** to set monetary policy, with the target inflation rate set at 2% annual rate (Federal Reserve). In Australia, the CPI is used to adjust the **pensions** and **benefits** paid to eligible recipients, with a 1.6% increase made in 2020, resulting in an increase of AUD 14 per week for the average pensioner (Australian Government Department of Social Services).
 
 ---
 
