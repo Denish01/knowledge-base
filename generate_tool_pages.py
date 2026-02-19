@@ -202,10 +202,10 @@ def generate_tool_content(calc_def, country_name=None):
 def markdown_to_html(content):
     """Convert markdown content to HTML for tool pages."""
     def bold(text):
-        return re.sub(r'\*\*(.+?)\*\*', r'<strong>\\1</strong>', text)
+        return re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
 
     def inline_code(text):
-        return re.sub(r'`(.+?)`', r'<code>\\1</code>', text)
+        return re.sub(r'`(.+?)`', r'<code>\1</code>', text)
 
     def process_inline(text):
         return inline_code(bold(text))
