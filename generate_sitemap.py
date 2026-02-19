@@ -386,6 +386,7 @@ def _build_tools_homepage_section():
             "slug": calc["slug"],
             "title": calc["title"],
             "type": "standalone",
+            "desc": calc.get("meta_description", ""),
         })
     for calc in registry.get("country_calculators", []):
         cat = calc["category"]
@@ -440,10 +441,20 @@ def _build_tools_homepage_section():
       </div>
 """
             else:
+                # Extract brief description from meta_description
+                desc = tool.get("desc", "")
+                # Strip "Free X calculator. " prefix to get the action part
+                brief = desc
+                if ". " in brief:
+                    brief = brief.split(". ", 1)[1]
+                # Truncate to ~60 chars
+                if len(brief) > 65:
+                    brief = brief[:62].rsplit(" ", 1)[0] + "..."
+                sub_html = f'\n          <span class="tool-chip-sub">{brief}</span>' if brief else ""
                 standalone_chips += f"""      <a href="/tools/{slug}/" class="tool-chip" style="--tool-color:{color}">
         <span class="tool-chip-icon">{icon}</span>
         <span class="tool-chip-text">
-          <span class="tool-chip-title">{short}</span>
+          <span class="tool-chip-title">{short}</span>{sub_html}
         </span>
       </a>
 """
