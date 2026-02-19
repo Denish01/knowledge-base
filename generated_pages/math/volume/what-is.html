@@ -380,6 +380,7 @@ a:hover { text-decoration: underline; }
         <li><a href="/#life_obligations">Life Obligations</a></li>
         <li><a href="/#math" class="active">Math</a></li>
         <li><a href="/#science">Science</a></li>
+        <li><a href="/tools/">Tools</a></li>
         </ul>
     </div>
 </header>
@@ -396,12 +397,151 @@ a:hover { text-decoration: underline; }
 
             
 
-            
+            <div class="calculator-callout"><div class="calculator-callout-header">Calculator</div><div class="calculator-callout-body">
+<style>
+.calculator {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+}
+.calculator h3 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.calculator label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.calculator button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.calculator button:hover {
+    background: #1557b0;
+}
+.calc-result {
+    margin-top: 16px;
+    padding: 12px;
+    background: white;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+.calc-result p {
+    margin: 8px 0;
+}
+.calc-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tab-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+.tab-btn.active {
+    background: #1a73e8;
+    color: white;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+</style>
 
-            <p>Volume is the amount of space inside a three-dimensional object, measured in units such as cubic meters, liters, or gallons.</p>
+<div class="calculator" id="vol-calc">
+    <h3>Volume Calculator</h3>
+    <div class="calc-grid">
+        <label>Shape
+            <select id="vol-shape" onchange="updateVolFields()">
+                <option value="cube">Cube</option>
+                <option value="box" selected>Rectangular Prism</option>
+                <option value="sphere">Sphere</option>
+                <option value="cylinder">Cylinder</option>
+                <option value="cone">Cone</option>
+            </select>
+        </label>
+        <label id="vol-a-label">Length <input type="number" id="vol-a" value="5" min="0" step="0.1"></label>
+        <label id="vol-b-label">Width <input type="number" id="vol-b" value="3" min="0" step="0.1"></label>
+        <label id="vol-c-label">Height <input type="number" id="vol-c" value="4" min="0" step="0.1"></label>
+    </div>
+    <button onclick="calculateVolume()">Calculate</button>
+    <div class="calc-result" id="vol-result"></div>
+</div>
+<script>
+function updateVolFields() {
+    const shape = document.getElementById('vol-shape').value;
+    const bLabel = document.getElementById('vol-b-label');
+    const cLabel = document.getElementById('vol-c-label');
+    if (shape === 'cube') {
+        document.getElementById('vol-a-label').firstChild.textContent = 'Side Length';
+        bLabel.style.display = 'none'; cLabel.style.display = 'none';
+    } else if (shape === 'box') {
+        document.getElementById('vol-a-label').firstChild.textContent = 'Length';
+        bLabel.firstChild.textContent = 'Width'; bLabel.style.display = '';
+        cLabel.firstChild.textContent = 'Height'; cLabel.style.display = '';
+    } else if (shape === 'sphere') {
+        document.getElementById('vol-a-label').firstChild.textContent = 'Radius';
+        bLabel.style.display = 'none'; cLabel.style.display = 'none';
+    } else if (shape === 'cylinder') {
+        document.getElementById('vol-a-label').firstChild.textContent = 'Radius';
+        bLabel.firstChild.textContent = 'Height'; bLabel.style.display = '';
+        cLabel.style.display = 'none';
+    } else if (shape === 'cone') {
+        document.getElementById('vol-a-label').firstChild.textContent = 'Radius';
+        bLabel.firstChild.textContent = 'Height'; bLabel.style.display = '';
+        cLabel.style.display = 'none';
+    }
+}
+function calculateVolume() {
+    const shape = document.getElementById('vol-shape').value;
+    const a = parseFloat(document.getElementById('vol-a').value);
+    const b = parseFloat(document.getElementById('vol-b').value);
+    const c = parseFloat(document.getElementById('vol-c').value);
+    let vol, formula;
+    if (shape === 'cube') { vol = Math.pow(a, 3); formula = 'V = s&sup3;'; }
+    else if (shape === 'box') { vol = a * b * c; formula = 'V = l &times; w &times; h'; }
+    else if (shape === 'sphere') { vol = (4/3) * Math.PI * Math.pow(a, 3); formula = 'V = (4/3)&pi;r&sup3;'; }
+    else if (shape === 'cylinder') { vol = Math.PI * a * a * b; formula = 'V = &pi;r&sup2;h'; }
+    else if (shape === 'cone') { vol = (1/3) * Math.PI * a * a * b; formula = 'V = (1/3)&pi;r&sup2;h'; }
+    document.getElementById('vol-result').innerHTML = `
+        <p><strong>Volume:</strong> ${vol.toFixed(4)} cubic units</p>
+        <p style="font-size:13px;color:#666">Formula: ${formula}</p>
+    `;
+}
+calculateVolume();
+</script>
+</div></div>
+
+            <h2 id="introduction">Introduction</h2>
+<p>Volume is the amount of space inside a three-dimensional object, measured in units such as cubic meters, liters, or gallons.</p>
 <p>The concept of volume is fundamental to understanding the physical properties of objects and substances. In everyday life, we often encounter objects with different volumes, such as a small box, a large bucket, or a swimming pool. To calculate the volume of an object, we need to know its dimensions, such as length, width, and height. For example, the volume of a rectangular box can be calculated by multiplying its length, width, and height.</p>
 <p>The volume of an object can also be affected by its shape. For instance, a sphere, such as a basketball, has a different volume than a cube with the same diameter. The volume of a sphere is calculated using a formula that involves its radius, which is the distance from the center of the sphere to its surface. The volume of other shapes, such as cones and cylinders, can also be calculated using specific formulas.</p>
 <p>Understanding volume is essential in various fields, including science, engineering, and architecture. Architects need to calculate the volume of buildings and rooms to determine the amount of materials needed for construction. Engineers need to calculate the volume of fluids and gases to design systems that can handle specific capacities. Scientists use volume to study the properties of substances and objects, such as density and buoyancy.</p>
+<h2 id="key-components">Key Components</h2>
 <p>The key components of volume include:</p>
 <ul>
 <li>Length, width, and height, which are the dimensions of an object</li>
@@ -411,6 +551,7 @@ a:hover { text-decoration: underline; }
 <li>Density, which is the ratio of an object's mass to its volume</li>
 <li>Capacity, which is the maximum volume of a container or object</li>
 </ul>
+<h2 id="common-misconceptions">Common Misconceptions</h2>
 <p>However, there are common misconceptions about volume, including:</p>
 <ul>
 <li>Confusing volume with weight or mass, which are related but distinct concepts</li>
@@ -418,12 +559,24 @@ a:hover { text-decoration: underline; }
 <li>Believing that volume is only relevant to liquids, when in fact it applies to all three-dimensional objects and substances</li>
 <li>Thinking that volume is a fixed property of an object, when in fact it can change depending on the object's shape and dimensions</li>
 </ul>
+<h2 id="real-world-example">Real-World Example</h2>
 <p>A real-world example of volume is a water tank. Imagine a water tank that is 2 meters long, 1 meter wide, and 1 meter high. To calculate the volume of the tank, we multiply its length, width, and height, which gives us a volume of 2 cubic meters. This means that the tank can hold 2 cubic meters of water, or approximately 2,000 liters.</p>
+<h2 id="summary">Summary</h2>
 <p>In summary, volume is the amount of space inside a three-dimensional object, measured in units such as cubic meters, liters, or gallons, and is a fundamental concept in understanding the physical properties of objects and substances.</p>
 
             
 
-            
+            <div class="related-concepts">
+    <h3>Related Concepts</h3>
+    <div class="related-grid">
+        <a href="/math/absolute-value/what-is.html" class="related-link">Absolute Value</a>
+        <a href="/math/area-of-a-circle/what-is.html" class="related-link">Area Of A Circle</a>
+        <a href="/math/greatest-common-factor/what-is.html" class="related-link">Greatest Common Factor</a>
+        <a href="/math/percentages/what-is.html" class="related-link">Percentages</a>
+        <a href="/math/ratios/what-is.html" class="related-link">Ratios</a>
+        <a href="/math/standard-deviation/what-is.html" class="related-link">Standard Deviation</a>
+    </div>
+</div>
         </article>
     </main>
 

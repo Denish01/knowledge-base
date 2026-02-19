@@ -260,6 +260,7 @@ def generate_index_page(pages_by_domain, flat_domains=None):
         concept_count = len(concepts)
         is_flat = slug in flat_domains
 
+        is_tools = slug == "tools"
         cards = ""
         for concept, angles in sorted(concepts.items()):
             concept_title = concept.replace("-", " ").title()
@@ -267,13 +268,19 @@ def generate_index_page(pages_by_domain, flat_domains=None):
             for angle in sorted(angles):
                 from templates import ANGLE_DISPLAY
                 angle_display = ANGLE_DISPLAY.get(angle, angle.replace("-", " ").title())
-                if is_flat:
+                if is_tools:
+                    if angle == "index":
+                        continue  # Skip — same as concept heading link
+                    angle_tags += f'          <a href="/{slug}/{concept}/{angle}/" class="angle-link">{angle_display}</a>\n'
+                elif is_flat:
                     filename = _flat_angle_to_filename(concept, angle)
                     angle_tags += f'          <a href="/{slug}/{filename}.html" class="angle-link">{angle_display}</a>\n'
                 else:
                     angle_tags += f'          <a href="/{slug}/{concept}/{angle}.html" class="angle-link">{angle_display}</a>\n'
             # "What Is" link for the concept heading
-            if is_flat:
+            if is_tools:
+                main_href = f"/{slug}/{concept}/"
+            elif is_flat:
                 main_href = f"/{slug}/{concept}.html"
             else:
                 main_href = f"/{slug}/{concept}/what-is.html"
@@ -368,9 +375,15 @@ def main():
         else:
             # Structured-layout page — parse from URL
             parts = page["url"].strip("/").split("/")
-            if len(parts) < 3:
+            if len(parts) == 2 and parts[0] == "tools":
+                # Standalone tool page: /tools/slug/
+                domain = "tools"
+                concept = parts[1]
+                angle = "index"
+            elif len(parts) < 3:
                 continue
-            domain, concept, angle = parts[0], parts[1], parts[2]
+            else:
+                domain, concept, angle = parts[0], parts[1], parts[2]
             # Strip .html extension since we add it back when building links
             if angle.endswith(".html"):
                 angle = angle[:-5]

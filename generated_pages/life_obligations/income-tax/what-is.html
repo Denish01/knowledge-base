@@ -380,6 +380,7 @@ a:hover { text-decoration: underline; }
         <li><a href="/#life_obligations" class="active">Life Obligations</a></li>
         <li><a href="/#math">Math</a></li>
         <li><a href="/#science">Science</a></li>
+        <li><a href="/tools/">Tools</a></li>
         </ul>
     </div>
 </header>
@@ -396,12 +397,155 @@ a:hover { text-decoration: underline; }
 
             
 
-            
+            <div class="calculator-callout"><div class="calculator-callout-header">Calculator</div><div class="calculator-callout-body">
+<style>
+.calculator {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0;
+}
+.calculator h3 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.calculator label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.calculator button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.calculator button:hover {
+    background: #1557b0;
+}
+.calc-result {
+    margin-top: 16px;
+    padding: 12px;
+    background: white;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+.calc-result p {
+    margin: 8px 0;
+}
+.calc-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tab-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+.tab-btn.active {
+    background: #1a73e8;
+    color: white;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+</style>
 
-            <p>Income tax is a type of tax that governments impose on individuals and businesses based on their income, which is the money they earn from various sources such as jobs, investments, and business activities.</p>
+<div class="calculator" id="tax-calc">
+    <h3>Income Tax Calculator</h3>
+    <div class="calc-grid">
+        <label>Annual Gross Income ($)
+            <input type="number" id="tax-income" value="75000" min="0">
+        </label>
+        <label>Filing Status
+            <select id="tax-status">
+                <option value="single">Single</option>
+                <option value="married">Married Filing Jointly</option>
+                <option value="head">Head of Household</option>
+            </select>
+        </label>
+        <label>Standard Deduction ($)
+            <input type="number" id="tax-deduction" value="14600" min="0">
+        </label>
+    </div>
+    <button onclick="calculateIncomeTax()">Calculate</button>
+    <div class="calc-result" id="tax-result"></div>
+</div>
+<script>
+function calculateIncomeTax() {
+    const income = parseFloat(document.getElementById('tax-income').value);
+    const deduction = parseFloat(document.getElementById('tax-deduction').value);
+    const status = document.getElementById('tax-status').value;
+
+    const taxableIncome = Math.max(0, income - deduction);
+
+    // US 2024 brackets (simplified)
+    const brackets = {
+        single: [[11600, 0.10], [47150, 0.12], [100525, 0.22], [191950, 0.24], [243725, 0.32], [609350, 0.35], [Infinity, 0.37]],
+        married: [[23200, 0.10], [94300, 0.12], [201050, 0.22], [383900, 0.24], [487450, 0.32], [731200, 0.35], [Infinity, 0.37]],
+        head: [[16550, 0.10], [63100, 0.12], [100500, 0.22], [191950, 0.24], [243700, 0.32], [609350, 0.35], [Infinity, 0.37]]
+    };
+
+    const rates = brackets[status];
+    let tax = 0;
+    let prev = 0;
+    let breakdownHtml = '';
+
+    for (const [limit, rate] of rates) {
+        if (taxableIncome <= prev) break;
+        const taxable = Math.min(taxableIncome, limit) - prev;
+        const bracketTax = taxable * rate;
+        tax += bracketTax;
+        if (taxable > 0) {
+            breakdownHtml += '<p style="font-size:13px">' + (rate * 100).toFixed(0) + '% bracket: $' + taxable.toFixed(2) + ' = $' + bracketTax.toFixed(2) + '</p>';
+        }
+        prev = limit;
+    }
+
+    const effectiveRate = (tax / income * 100).toFixed(2);
+    const marginalRate = rates.find(([limit]) => taxableIncome <= limit)?.[1] * 100 || 37;
+    const afterTax = income - tax;
+
+    document.getElementById('tax-result').innerHTML = `
+        <p><strong>Taxable Income:</strong> $${taxableIncome.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Estimated Federal Tax:</strong> $${tax.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <p><strong>Effective Tax Rate:</strong> ${effectiveRate}%</p>
+        <p><strong>Marginal Tax Rate:</strong> ${marginalRate}%</p>
+        <p><strong>After-Tax Income:</strong> $${afterTax.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+        <details style="margin-top:12px"><summary style="cursor:pointer;font-weight:600;color:#1a73e8">Tax Bracket Breakdown</summary>${breakdownHtml}</details>
+    `;
+}
+calculateIncomeTax();
+</script>
+</div></div>
+
+            <h2 id="introduction">Introduction</h2>
+<p>Income tax is a type of tax that governments impose on individuals and businesses based on their income, which is the money they earn from various sources such as jobs, investments, and business activities.</p>
 <p>Income tax is an important source of revenue for governments, and it is used to fund public goods and services such as roads, schools, and healthcare. The concept of income tax is based on the idea that those who have a higher income should contribute a larger share of their income to the government, while those with lower incomes should contribute a smaller share. This is often achieved through a progressive tax system, where higher income earners are taxed at a higher rate than lower income earners.</p>
 <p>The income tax system is typically administered by a government agency, which is responsible for collecting tax revenue, enforcing tax laws, and providing taxpayer services. Taxpayers are required to report their income and pay taxes on a regular basis, usually annually. The tax authority may also conduct audits to ensure that taxpayers are complying with tax laws and paying the correct amount of tax. In addition to income tax, governments may also impose other types of taxes, such as sales tax, property tax, and payroll tax, which are levied on different types of transactions or assets.</p>
 <p>Income tax can be complex, with many rules and regulations that govern how tax is calculated and paid. However, the basic principle of income tax is straightforward: it is a tax on income, and the amount of tax paid depends on the amount of income earned. Income tax can be levied on various types of income, including employment income, business income, investment income, and capital gains. Taxpayers may also be eligible for tax deductions and credits, which can reduce the amount of tax they owe.</p>
+<h2 id="key-components">Key Components</h2>
 <p>The key components of income tax include:</p>
 <ul>
 <li>Taxable income, which is the amount of income that is subject to tax</li>
@@ -411,6 +555,7 @@ a:hover { text-decoration: underline; }
 <li>Tax brackets, which are the ranges of income that are subject to different tax rates</li>
 <li>Filing status, which determines the tax rates and deductions that apply to an individual or business</li>
 </ul>
+<h2 id="common-misconceptions">Common Misconceptions</h2>
 <p>Despite its importance, income tax is often misunderstood, and there are several common misconceptions about how it works. Some of these misconceptions include:</p>
 <ul>
 <li>That income tax is a flat tax, where everyone pays the same rate, regardless of their income level</li>
@@ -418,12 +563,24 @@ a:hover { text-decoration: underline; }
 <li>That income tax only applies to employment income, when in fact it can apply to many types of income</li>
 <li>That tax authorities have the power to arbitrarily decide how much tax an individual or business owes, when in fact tax laws and regulations govern the tax system</li>
 </ul>
+<h2 id="real-world-example">Real-World Example</h2>
 <p>For example, consider a person who earns $50,000 per year from their job and has $10,000 in tax deductions. If the tax rate is 20% on the first $40,000 of income and 25% on income above $40,000, the person's taxable income would be $40,000, and they would owe $8,000 in tax, plus 25% of the remaining $10,000, which is $2,500, for a total tax liability of $10,500. However, if they are eligible for a tax credit of $2,000, their total tax liability would be reduced to $8,500.</p>
+<h2 id="summary">Summary</h2>
 <p>In summary, income tax is a type of tax that is levied on individuals and businesses based on their income, with the amount of tax paid depending on the amount of income earned and the applicable tax rates and deductions.</p>
 
             
 
-            
+            <div class="related-concepts">
+    <h3>Related Concepts</h3>
+    <div class="related-grid">
+        <a href="/life_obligations/estimated-tax/what-is.html" class="related-link">Estimated Tax</a>
+        <a href="/life_obligations/tax-credit/what-is.html" class="related-link">Tax Credit</a>
+        <a href="/life_obligations/tax-deduction/what-is.html" class="related-link">Tax Deduction</a>
+        <a href="/life_obligations/tax-filing/what-is.html" class="related-link">Tax Filing</a>
+        <a href="/life_obligations/tax-liability/what-is.html" class="related-link">Tax Liability</a>
+        <a href="/life_obligations/tax-refund/what-is.html" class="related-link">Tax Refund</a>
+    </div>
+</div>
         </article>
     </main>
 

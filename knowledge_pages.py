@@ -2385,11 +2385,74 @@ def generate_angle_crossref_html(concept_slug, angle_id, domain_slug):
 </div>"""
 
 
+def _inject_headings_into_flat_prose(content):
+    """Pre-process flat prose content to inject ## headings based on content cues.
+
+    Detects paragraph-level patterns like 'The key components of X include:'
+    and injects markdown headings before them.
+    """
+    import re
+
+    # Check if content already has headings — skip if so
+    if re.search(r'^##\s', content, re.MULTILINE):
+        return content
+    if re.search(r'^\d+\.\s+[A-Z][A-Z]', content, re.MULTILINE):
+        return content
+    if re.search(r'^[A-Z][A-Z \-/&]{3,}:?\s*$', content, re.MULTILINE):
+        return content
+    if '[SECTION]' in content:
+        return content
+
+    lines = content.split('\n')
+    result = []
+    heading_injected = False
+    intro_done = False
+
+    # Cue phrases that signal a new section
+    cue_patterns = [
+        (r'^(The |Some |)key (components|elements|features|parts|factors|aspects) (of .+ )?include', 'Key Components'),
+        (r'^(However,? |Despite .+?,? |)(there are |some |many |)(common |widespread |popular |)(misconception|myth|misunderstanding)', 'Common Misconceptions'),
+        (r'^(A |One |The most |For |To |In )?(simple |common |real[- ]world |practical |everyday )?(example|illustration|instance|scenario)', 'Real-World Example'),
+        (r'^(In |To )?(summary|conclusion|sum up|short)', 'Summary'),
+        (r'^(The |Some |)main (types|categories|kinds|forms|varieties) (of .+ )?include', 'Types'),
+        (r'^(The |Some |)(main |primary |key |major )?(difference|distinction|comparison)', 'Key Differences'),
+        (r'^(How|The process|The way|The mechanism) .+ (work|function|operate)', 'How It Works'),
+        (r'^(The |Some |)(benefits|advantages|pros) (of .+ )?(include|are)', 'Benefits'),
+        (r'^(The |Some |)(drawbacks|disadvantages|cons|limitations) (of .+ )?(include|are)', 'Drawbacks'),
+    ]
+
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+
+        # Inject "Introduction" before the very first paragraph if we haven't injected anything
+        if stripped and not intro_done and not stripped.startswith(('*', '-', '#', '[', '|')):
+            result.append('## Introduction')
+            result.append('')
+            intro_done = True
+
+        # Check for cue phrases in paragraph text
+        for pattern, heading in cue_patterns:
+            if re.match(pattern, stripped, re.IGNORECASE):
+                # Add heading before this line
+                result.append('')
+                result.append(f'## {heading}')
+                result.append('')
+                heading_injected = True
+                break
+
+        result.append(line)
+
+    return '\n'.join(result)
+
+
 def markdown_to_html(content):
     """Convert markdown/tag content to HTML.
     Handles both markdown (##, *, |) and structured tags
     ([FACTBOX], [CALLOUT], [SECTION], [TABLE], [RATING])."""
     import re
+
+    # Pre-process flat prose to inject section headings
+    content = _inject_headings_into_flat_prose(content)
 
     def bold(text):
         return re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
@@ -2551,6 +2614,30 @@ def markdown_to_html(content):
                 in_list = True
             item = re.sub(r'^[-*•]\s+', '', stripped)
             html_lines.append(f'<li>{bold(item)}</li>')
+            continue
+
+        # ── Numbered ALL-CAPS section heading ──
+        # Matches: "1. INTRODUCTION:" or "1. INTRODUCTION" (heading only)
+        # Also:    "1. QUICK ANSWER: The benefit threshold is..." (heading + inline content)
+        caps_heading = re.match(r'^(\d+)\.\s+([A-Z][A-Z \-/&]{2,}):?\s*$', stripped)
+        caps_heading_inline = None
+        if not caps_heading:
+            caps_heading_inline = re.match(r'^(\d+)\.\s+([A-Z][A-Z \-/&]{2,}):\s+(.+)', stripped)
+        if caps_heading or caps_heading_inline:
+            close_list()
+            match = caps_heading or caps_heading_inline
+            title = match.group(2).strip().title()
+            html_lines.append(f'<h2 id="{slugify(title)}">{title}</h2>')
+            if caps_heading_inline:
+                html_lines.append(f'<p>{bold(caps_heading_inline.group(3))}</p>')
+            continue
+
+        # ── ALL-CAPS standalone heading: "INTRODUCTION:" or "KEY CONCEPTS" ──
+        allcaps_heading = re.match(r'^([A-Z][A-Z \-/&]{3,}):?\s*$', stripped)
+        if allcaps_heading:
+            close_list()
+            title = allcaps_heading.group(1).strip().title()
+            html_lines.append(f'<h2 id="{slugify(title)}">{title}</h2>')
             continue
 
         # ── Numbered list ──
@@ -3218,6 +3305,8 @@ def rebuild_all_html():
         all_concepts = []
         if domain_slug:
             domain_dir = OUTPUT_DIR / f"{domain_slug}_structured"
+            if not domain_dir.exists():
+                domain_dir = OUTPUT_DIR / domain_slug
             if domain_dir.exists():
                 all_concepts = [d.name for d in domain_dir.iterdir() if d.is_dir()]
 
