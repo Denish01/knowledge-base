@@ -297,9 +297,11 @@ TOOLS_HOMEPAGE_CSS = """
     text-overflow: ellipsis;
 }
 .tool-chip-sub {
+    display: block;
     font-size: 11px;
-    color: #9CA3AF;
-    margin-top: 2px;
+    color: #6B7280;
+    margin-top: 4px;
+    line-height: 1.4;
 }
 .tools-country-grid {
     display: grid;
