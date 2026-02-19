@@ -3,6 +3,7 @@ Sitemap Generator for Knowledge Base
 Crawls structured folders and generates sitemap.xml
 """
 
+import json
 import os
 from pathlib import Path
 from datetime import datetime
@@ -226,6 +227,217 @@ def _flat_angle_to_filename(concept, angle):
     return flat_angle_to_filename(concept, angle)
 
 
+TOOLS_HOMEPAGE_CSS = """
+/* === Tools Showcase === */
+.tools-showcase {
+    max-width: 1200px;
+    margin: 64px auto 0;
+    padding: 0 24px;
+}
+.tools-showcase-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #E5E7EB;
+}
+.tools-showcase-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F2937;
+}
+.tools-showcase-header .tools-view-all {
+    font-size: 14px;
+    font-weight: 600;
+    color: #059669;
+}
+.tools-showcase-header .tools-view-all:hover { text-decoration: underline; }
+.tools-cat-group { margin-bottom: 28px; }
+.tools-cat-label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    padding-left: 2px;
+}
+.tools-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+}
+.tool-chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1F2937;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+    border-left: 3px solid var(--tool-color, #059669);
+}
+.tool-chip:hover {
+    border-color: var(--tool-color, #059669);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+    text-decoration: none;
+    color: #1F2937;
+}
+.tool-chip-icon { font-size: 20px; flex-shrink: 0; }
+.tool-chip-text { min-width: 0; }
+.tool-chip-title {
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tool-chip-sub {
+    font-size: 11px;
+    color: #9CA3AF;
+    margin-top: 2px;
+}
+.tool-country-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+    padding-left: 2px;
+}
+.tool-country-link {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: #F3F4F6;
+    color: #6B7280;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+}
+.tool-country-link:hover {
+    background: #ECFDF5;
+    color: #059669;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .tools-row { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+    .tool-chip { padding: 10px 12px; }
+    .tool-chip-title { font-size: 13px; }
+}
+"""
+
+# Category icons for tool chips
+_TOOL_CAT_ICONS = {
+    "finance": "💰", "tax": "🏛️", "math": "🔢",
+    "business": "📊", "health": "❤️", "conversion": "🔄",
+}
+_TOOL_CAT_COLORS = {
+    "finance": "#059669", "tax": "#DC2626", "math": "#D97706",
+    "business": "#7C3AED", "health": "#0891B2", "conversion": "#2563EB",
+}
+
+
+def _build_tools_homepage_section():
+    """Build a custom tools showcase section for the homepage using tool_registry.json."""
+    registry_path = Path(__file__).parent / "tool_registry.json"
+    if not registry_path.exists():
+        return ""
+
+    registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    categories_meta = registry.get("categories", {})
+    category_order = ["finance", "tax", "math", "business", "health", "conversion"]
+
+    # Group standalone + country calculators by category
+    by_category = {}
+    for calc in registry.get("calculators", []):
+        cat = calc["category"]
+        by_category.setdefault(cat, []).append({
+            "slug": calc["slug"],
+            "title": calc["title"],
+            "type": "standalone",
+        })
+    for calc in registry.get("country_calculators", []):
+        cat = calc["category"]
+        by_category.setdefault(cat, []).append({
+            "slug": calc["slug"],
+            "title": calc["title_pattern"].replace(" — {Country}", ""),
+            "type": "country",
+            "countries": calc.get("countries", []),
+        })
+
+    # Count total tools
+    total_tools = sum(len(tools) for tools in by_category.values())
+    total_country_pages = sum(
+        len(t.get("countries", []))
+        for tools in by_category.values()
+        for t in tools
+        if t["type"] == "country"
+    )
+
+    # Build category groups
+    groups_html = ""
+    for cat_slug in category_order:
+        if cat_slug not in by_category:
+            continue
+        cat_meta = categories_meta.get(cat_slug, {"name": cat_slug.title(), "icon": "", "color": "#666"})
+        color = _TOOL_CAT_COLORS.get(cat_slug, "#059669")
+        icon = _TOOL_CAT_ICONS.get(cat_slug, "🔧")
+        tools = by_category[cat_slug]
+
+        chips = ""
+        for tool in tools:
+            slug = tool["slug"]
+            title = tool["title"]
+            # Shorten long titles for the chip
+            short = title.replace(" Calculator", "").replace(" Converter", "")
+
+            if tool["type"] == "country":
+                # Country calculator — show chip + country links below
+                country_links = ""
+                for cs in tool.get("countries", []):
+                    cn = cs.replace("-", " ").title()
+                    country_links += f'<a href="/tools/{slug}/{cs}/" class="tool-country-link">{cn}</a>\n'
+                chips += f"""      <div>
+        <a href="/tools/{slug}/" class="tool-chip" style="--tool-color:{color}">
+          <span class="tool-chip-icon">{icon}</span>
+          <span class="tool-chip-text">
+            <span class="tool-chip-title">{short}</span>
+            <span class="tool-chip-sub">{len(tool['countries'])} countries</span>
+          </span>
+        </a>
+        <div class="tool-country-row">
+          {country_links}
+        </div>
+      </div>
+"""
+            else:
+                chips += f"""      <a href="/tools/{slug}/" class="tool-chip" style="--tool-color:{color}">
+        <span class="tool-chip-icon">{icon}</span>
+        <span class="tool-chip-text">
+          <span class="tool-chip-title">{short}</span>
+        </span>
+      </a>
+"""
+
+        groups_html += f"""    <div class="tools-cat-group">
+      <div class="tools-cat-label" style="color:{color}">{cat_meta.get('icon', icon)} {cat_meta['name']}</div>
+      <div class="tools-row">
+{chips}      </div>
+    </div>
+"""
+
+    return f"""<section class="tools-showcase" id="tools">
+    <div class="tools-showcase-header">
+      <h2>🛠️ Free Calculators &amp; Tools</h2>
+      <a href="/tools/" class="tools-view-all">View all {total_tools} tools &rarr;</a>
+    </div>
+{groups_html}</section>
+"""
+
+
 def generate_index_page(pages_by_domain, flat_domains=None):
     """Generate the redesigned index.html homepage."""
     if flat_domains is None:
@@ -238,9 +450,11 @@ def generate_index_page(pages_by_domain, flat_domains=None):
     total_concepts = sum(len(concepts) for concepts in pages_by_domain.values())
     total_domains = len(pages_by_domain)
 
-    # Build domain cards
+    # Build domain cards (exclude tools — shown separately)
     domain_cards = ""
     for slug, concepts in pages_by_domain.items():
+        if slug == "tools":
+            continue
         meta = DOMAIN_META.get(slug, {"name": slug.replace("_", " ").title(), "color": "#6B7280", "icon": "📄", "description": ""})
         concept_count = len(concepts)
         page_count = sum(len(a) for a in concepts.values())
@@ -253,14 +467,15 @@ def generate_index_page(pages_by_domain, flat_domains=None):
       </div>
 """
 
-    # Build concept grids per domain
+    # Build concept grids per domain (skip tools — handled separately)
     concept_sections = ""
     for slug, concepts in pages_by_domain.items():
+        if slug == "tools":
+            continue
         meta = DOMAIN_META.get(slug, {"name": slug.replace("_", " ").title(), "color": "#6B7280", "icon": "📄"})
         concept_count = len(concepts)
         is_flat = slug in flat_domains
 
-        is_tools = slug == "tools"
         cards = ""
         for concept, angles in sorted(concepts.items()):
             concept_title = concept.replace("-", " ").title()
@@ -268,19 +483,13 @@ def generate_index_page(pages_by_domain, flat_domains=None):
             for angle in sorted(angles):
                 from templates import ANGLE_DISPLAY
                 angle_display = ANGLE_DISPLAY.get(angle, angle.replace("-", " ").title())
-                if is_tools:
-                    if angle == "index":
-                        continue  # Skip — same as concept heading link
-                    angle_tags += f'          <a href="/{slug}/{concept}/{angle}/" class="angle-link">{angle_display}</a>\n'
-                elif is_flat:
+                if is_flat:
                     filename = _flat_angle_to_filename(concept, angle)
                     angle_tags += f'          <a href="/{slug}/{filename}.html" class="angle-link">{angle_display}</a>\n'
                 else:
                     angle_tags += f'          <a href="/{slug}/{concept}/{angle}.html" class="angle-link">{angle_display}</a>\n'
             # "What Is" link for the concept heading
-            if is_tools:
-                main_href = f"/{slug}/{concept}/"
-            elif is_flat:
+            if is_flat:
                 main_href = f"/{slug}/{concept}.html"
             else:
                 main_href = f"/{slug}/{concept}/what-is.html"
@@ -301,6 +510,9 @@ def generate_index_page(pages_by_domain, flat_domains=None):
     </div>
 """
 
+    # Build tools showcase section from registry
+    tools_section = _build_tools_homepage_section()
+
     header = generate_header_html()
     footer = generate_footer_html()
     homepage_desc = "360Library — free encyclopedic reference covering economics, finance, health, life obligations, math, and science. Every concept explained from multiple angles."
@@ -320,6 +532,7 @@ def generate_index_page(pages_by_domain, flat_domains=None):
     <style>
 {SHARED_CSS}
 {HOMEPAGE_CSS}
+{TOOLS_HOMEPAGE_CSS}
     </style>
 </head>
 <body>
@@ -339,6 +552,8 @@ def generate_index_page(pages_by_domain, flat_domains=None):
     <div class="domain-cards-grid">
 {domain_cards}    </div>
 </section>
+
+{tools_section}
 
 <section class="concepts-section">
 {concept_sections}</section>
