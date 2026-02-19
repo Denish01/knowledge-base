@@ -344,12 +344,40 @@ a:hover { text-decoration: underline; }
     color: #9CA3AF;
     margin-top: 2px;
 }
+.tools-country-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+.tool-country-card {
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-left: 3px solid var(--tool-color, #059669);
+    border-radius: 10px;
+    padding: 16px;
+}
+.tool-country-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.tool-country-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1F2937;
+    text-decoration: none;
+    display: block;
+}
+.tool-country-card-title:hover {
+    color: #1B4D8E;
+    text-decoration: underline;
+}
 .tool-country-row {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-top: 8px;
-    padding-left: 2px;
 }
 .tool-country-link {
     font-size: 11px;
@@ -523,6 +551,7 @@ a:hover { text-decoration: underline; }
         </span>
       </a>
       </div>
+      
     </div>
     <div class="tools-cat-group">
       <div class="tools-cat-label" style="color:#DC2626">🏛️ Tax</div>
@@ -539,16 +568,17 @@ a:hover { text-decoration: underline; }
           <span class="tool-chip-title">VAT</span>
         </span>
       </a>
-      <div>
-        <a href="/tools/income-tax-calculator/" class="tool-chip" style="--tool-color:#DC2626">
+      </div>
+      <div class="tools-country-grid">
+      <div class="tool-country-card" style="--tool-color:#DC2626">
+        <div class="tool-country-card-header">
           <span class="tool-chip-icon">🏛️</span>
-          <span class="tool-chip-text">
-            <span class="tool-chip-title">Income Tax</span>
+          <div>
+            <a href="/tools/income-tax-calculator/" class="tool-country-card-title">Income Tax</a>
             <span class="tool-chip-sub">12 countries</span>
-          </span>
-        </a>
-        <div class="tool-country-row">
-          <a href="/tools/income-tax-calculator/united-states/" class="tool-country-link">United States</a>
+          </div>
+        </div>
+        <div class="tool-country-row"><a href="/tools/income-tax-calculator/united-states/" class="tool-country-link">United States</a>
 <a href="/tools/income-tax-calculator/united-kingdom/" class="tool-country-link">United Kingdom</a>
 <a href="/tools/income-tax-calculator/canada/" class="tool-country-link">Canada</a>
 <a href="/tools/income-tax-calculator/australia/" class="tool-country-link">Australia</a>
@@ -560,19 +590,17 @@ a:hover { text-decoration: underline; }
 <a href="/tools/income-tax-calculator/nigeria/" class="tool-country-link">Nigeria</a>
 <a href="/tools/income-tax-calculator/kenya/" class="tool-country-link">Kenya</a>
 <a href="/tools/income-tax-calculator/south-africa/" class="tool-country-link">South Africa</a>
-
-        </div>
+</div>
       </div>
-      <div>
-        <a href="/tools/salary-after-tax-calculator/" class="tool-chip" style="--tool-color:#DC2626">
+      <div class="tool-country-card" style="--tool-color:#DC2626">
+        <div class="tool-country-card-header">
           <span class="tool-chip-icon">🏛️</span>
-          <span class="tool-chip-text">
-            <span class="tool-chip-title">Salary After Tax</span>
+          <div>
+            <a href="/tools/salary-after-tax-calculator/" class="tool-country-card-title">Salary After Tax</a>
             <span class="tool-chip-sub">12 countries</span>
-          </span>
-        </a>
-        <div class="tool-country-row">
-          <a href="/tools/salary-after-tax-calculator/united-states/" class="tool-country-link">United States</a>
+          </div>
+        </div>
+        <div class="tool-country-row"><a href="/tools/salary-after-tax-calculator/united-states/" class="tool-country-link">United States</a>
 <a href="/tools/salary-after-tax-calculator/united-kingdom/" class="tool-country-link">United Kingdom</a>
 <a href="/tools/salary-after-tax-calculator/canada/" class="tool-country-link">Canada</a>
 <a href="/tools/salary-after-tax-calculator/australia/" class="tool-country-link">Australia</a>
@@ -584,19 +612,17 @@ a:hover { text-decoration: underline; }
 <a href="/tools/salary-after-tax-calculator/nigeria/" class="tool-country-link">Nigeria</a>
 <a href="/tools/salary-after-tax-calculator/kenya/" class="tool-country-link">Kenya</a>
 <a href="/tools/salary-after-tax-calculator/south-africa/" class="tool-country-link">South Africa</a>
-
-        </div>
+</div>
       </div>
-      <div>
-        <a href="/tools/capital-gains-tax-calculator/" class="tool-chip" style="--tool-color:#DC2626">
+      <div class="tool-country-card" style="--tool-color:#DC2626">
+        <div class="tool-country-card-header">
           <span class="tool-chip-icon">🏛️</span>
-          <span class="tool-chip-text">
-            <span class="tool-chip-title">Capital Gains Tax</span>
+          <div>
+            <a href="/tools/capital-gains-tax-calculator/" class="tool-country-card-title">Capital Gains Tax</a>
             <span class="tool-chip-sub">12 countries</span>
-          </span>
-        </a>
-        <div class="tool-country-row">
-          <a href="/tools/capital-gains-tax-calculator/united-states/" class="tool-country-link">United States</a>
+          </div>
+        </div>
+        <div class="tool-country-row"><a href="/tools/capital-gains-tax-calculator/united-states/" class="tool-country-link">United States</a>
 <a href="/tools/capital-gains-tax-calculator/united-kingdom/" class="tool-country-link">United Kingdom</a>
 <a href="/tools/capital-gains-tax-calculator/canada/" class="tool-country-link">Canada</a>
 <a href="/tools/capital-gains-tax-calculator/australia/" class="tool-country-link">Australia</a>
@@ -608,19 +634,17 @@ a:hover { text-decoration: underline; }
 <a href="/tools/capital-gains-tax-calculator/nigeria/" class="tool-country-link">Nigeria</a>
 <a href="/tools/capital-gains-tax-calculator/kenya/" class="tool-country-link">Kenya</a>
 <a href="/tools/capital-gains-tax-calculator/south-africa/" class="tool-country-link">South Africa</a>
-
-        </div>
+</div>
       </div>
-      <div>
-        <a href="/tools/self-employment-tax-calculator/" class="tool-chip" style="--tool-color:#DC2626">
+      <div class="tool-country-card" style="--tool-color:#DC2626">
+        <div class="tool-country-card-header">
           <span class="tool-chip-icon">🏛️</span>
-          <span class="tool-chip-text">
-            <span class="tool-chip-title">Self-Employment Tax</span>
+          <div>
+            <a href="/tools/self-employment-tax-calculator/" class="tool-country-card-title">Self-Employment Tax</a>
             <span class="tool-chip-sub">12 countries</span>
-          </span>
-        </a>
-        <div class="tool-country-row">
-          <a href="/tools/self-employment-tax-calculator/united-states/" class="tool-country-link">United States</a>
+          </div>
+        </div>
+        <div class="tool-country-row"><a href="/tools/self-employment-tax-calculator/united-states/" class="tool-country-link">United States</a>
 <a href="/tools/self-employment-tax-calculator/united-kingdom/" class="tool-country-link">United Kingdom</a>
 <a href="/tools/self-employment-tax-calculator/canada/" class="tool-country-link">Canada</a>
 <a href="/tools/self-employment-tax-calculator/australia/" class="tool-country-link">Australia</a>
@@ -632,19 +656,17 @@ a:hover { text-decoration: underline; }
 <a href="/tools/self-employment-tax-calculator/nigeria/" class="tool-country-link">Nigeria</a>
 <a href="/tools/self-employment-tax-calculator/kenya/" class="tool-country-link">Kenya</a>
 <a href="/tools/self-employment-tax-calculator/south-africa/" class="tool-country-link">South Africa</a>
-
-        </div>
+</div>
       </div>
-      <div>
-        <a href="/tools/vat-sales-tax-calculator/" class="tool-chip" style="--tool-color:#DC2626">
+      <div class="tool-country-card" style="--tool-color:#DC2626">
+        <div class="tool-country-card-header">
           <span class="tool-chip-icon">🏛️</span>
-          <span class="tool-chip-text">
-            <span class="tool-chip-title">VAT/Sales Tax</span>
+          <div>
+            <a href="/tools/vat-sales-tax-calculator/" class="tool-country-card-title">VAT/Sales Tax</a>
             <span class="tool-chip-sub">12 countries</span>
-          </span>
-        </a>
-        <div class="tool-country-row">
-          <a href="/tools/vat-sales-tax-calculator/united-states/" class="tool-country-link">United States</a>
+          </div>
+        </div>
+        <div class="tool-country-row"><a href="/tools/vat-sales-tax-calculator/united-states/" class="tool-country-link">United States</a>
 <a href="/tools/vat-sales-tax-calculator/united-kingdom/" class="tool-country-link">United Kingdom</a>
 <a href="/tools/vat-sales-tax-calculator/canada/" class="tool-country-link">Canada</a>
 <a href="/tools/vat-sales-tax-calculator/australia/" class="tool-country-link">Australia</a>
@@ -656,8 +678,7 @@ a:hover { text-decoration: underline; }
 <a href="/tools/vat-sales-tax-calculator/nigeria/" class="tool-country-link">Nigeria</a>
 <a href="/tools/vat-sales-tax-calculator/kenya/" class="tool-country-link">Kenya</a>
 <a href="/tools/vat-sales-tax-calculator/south-africa/" class="tool-country-link">South Africa</a>
-
-        </div>
+</div>
       </div>
       </div>
     </div>
@@ -707,6 +728,7 @@ a:hover { text-decoration: underline; }
         </span>
       </a>
       </div>
+      
     </div>
     <div class="tools-cat-group">
       <div class="tools-cat-label" style="color:#7C3AED">📊 Business</div>
@@ -736,6 +758,7 @@ a:hover { text-decoration: underline; }
         </span>
       </a>
       </div>
+      
     </div>
     <div class="tools-cat-group">
       <div class="tools-cat-label" style="color:#0891B2">❤️ Health</div>
@@ -753,6 +776,7 @@ a:hover { text-decoration: underline; }
         </span>
       </a>
       </div>
+      
     </div>
     <div class="tools-cat-group">
       <div class="tools-cat-label" style="color:#2563EB">🔄 Conversion</div>
@@ -776,6 +800,7 @@ a:hover { text-decoration: underline; }
         </span>
       </a>
       </div>
+      
     </div>
 </section>
 

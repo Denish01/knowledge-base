@@ -301,12 +301,40 @@ TOOLS_HOMEPAGE_CSS = """
     color: #9CA3AF;
     margin-top: 2px;
 }
+.tools-country-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+.tool-country-card {
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-left: 3px solid var(--tool-color, #059669);
+    border-radius: 10px;
+    padding: 16px;
+}
+.tool-country-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.tool-country-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1F2937;
+    text-decoration: none;
+    display: block;
+}
+.tool-country-card-title:hover {
+    color: #1B4D8E;
+    text-decoration: underline;
+}
 .tool-country-row {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-top: 8px;
-    padding-left: 2px;
 }
 .tool-country-link {
     font-size: 11px;
@@ -387,34 +415,32 @@ def _build_tools_homepage_section():
         icon = _TOOL_CAT_ICONS.get(cat_slug, "🔧")
         tools = by_category[cat_slug]
 
-        chips = ""
+        # Separate standalone tools from country-variant tools
+        standalone_chips = ""
+        country_chips = ""
         for tool in tools:
             slug = tool["slug"]
             title = tool["title"]
-            # Shorten long titles for the chip
             short = title.replace(" Calculator", "").replace(" Converter", "")
 
             if tool["type"] == "country":
-                # Country calculator — show chip + country links below
                 country_links = ""
                 for cs in tool.get("countries", []):
                     cn = cs.replace("-", " ").title()
                     country_links += f'<a href="/tools/{slug}/{cs}/" class="tool-country-link">{cn}</a>\n'
-                chips += f"""      <div>
-        <a href="/tools/{slug}/" class="tool-chip" style="--tool-color:{color}">
+                country_chips += f"""      <div class="tool-country-card" style="--tool-color:{color}">
+        <div class="tool-country-card-header">
           <span class="tool-chip-icon">{icon}</span>
-          <span class="tool-chip-text">
-            <span class="tool-chip-title">{short}</span>
+          <div>
+            <a href="/tools/{slug}/" class="tool-country-card-title">{short}</a>
             <span class="tool-chip-sub">{len(tool['countries'])} countries</span>
-          </span>
-        </a>
-        <div class="tool-country-row">
-          {country_links}
+          </div>
         </div>
+        <div class="tool-country-row">{country_links}</div>
       </div>
 """
             else:
-                chips += f"""      <a href="/tools/{slug}/" class="tool-chip" style="--tool-color:{color}">
+                standalone_chips += f"""      <a href="/tools/{slug}/" class="tool-chip" style="--tool-color:{color}">
         <span class="tool-chip-icon">{icon}</span>
         <span class="tool-chip-text">
           <span class="tool-chip-title">{short}</span>
@@ -422,10 +448,17 @@ def _build_tools_homepage_section():
       </a>
 """
 
+        standalone_html = ""
+        if standalone_chips:
+            standalone_html = f'<div class="tools-row">\n{standalone_chips}      </div>'
+        country_html = ""
+        if country_chips:
+            country_html = f'<div class="tools-country-grid">\n{country_chips}      </div>'
+
         groups_html += f"""    <div class="tools-cat-group">
       <div class="tools-cat-label" style="color:{color}">{cat_meta.get('icon', icon)} {cat_meta['name']}</div>
-      <div class="tools-row">
-{chips}      </div>
+      {standalone_html}
+      {country_html}
     </div>
 """
 
