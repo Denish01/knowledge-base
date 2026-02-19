@@ -500,6 +500,96 @@ def rebuild_html(count=None):
 # TOOLS INDEX PAGE
 # =============================================================================
 
+def build_country_calculator_indexes():
+    """Build index pages for country-variant calculators.
+
+    Creates /tools/{slug}/index.html listing all available countries.
+    """
+    registry = load_tool_registry()
+    categories_meta = registry.get("categories", {})
+    built = 0
+
+    for calc_def in registry.get("country_calculators", []):
+        slug = calc_def["slug"]
+        title = calc_def["title_pattern"].replace(" — {Country}", "")
+        category = calc_def["category"]
+        cat_meta = categories_meta.get(category, {"name": category.title(), "icon": "", "color": "#666"})
+        color = TOOL_CATEGORY_COLORS.get(category, "#059669")
+        countries = calc_def.get("countries", [])
+        related = calc_def.get("related_tools", [])
+
+        # Build country grid
+        country_cards = ""
+        for cs in countries:
+            cn = cs.replace("-", " ").title()
+            country_cards += f"""      <a href="/tools/{slug}/{cs}/" class="tool-index-card" style="--cat-color:{color}">
+        <h3>{cn}</h3>
+        <p>{title} for {cn}</p>
+      </a>
+"""
+
+        # Related tools links
+        related_html = ""
+        if related:
+            related_items = ""
+            for rs in related:
+                rn = rs.replace("-", " ").title()
+                related_items += f'<a href="/tools/{rs}/" style="margin-right:12px;color:{color}">{rn}</a> '
+            related_html = f'<div style="margin-top:24px;padding-top:16px;border-top:1px solid #E5E7EB"><strong>Related:</strong> {related_items}</div>'
+
+        header = generate_header_html(active_domain="tools")
+        footer = generate_footer_html()
+        breadcrumb = generate_tool_breadcrumb_html(title, slug)
+        og = generate_og_tags(
+            f"{title} - 360Library",
+            f"Free {title.lower()} for {len(countries)} countries. Select your country for accurate calculations.",
+            f"https://360library.com/tools/{slug}/",
+        )
+
+        html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free {title.lower()} for {len(countries)} countries. Select your country for accurate calculations.">
+    <link rel="canonical" href="https://360library.com/tools/{slug}/">
+    {og}
+    <title>{title} - Select Country - 360Library</title>
+    <style>
+{SHARED_CSS}
+{TOOL_CSS}
+    </style>
+</head>
+<body>
+{header}
+
+<div class="tool-page">
+  <div class="tool-content">
+    {breadcrumb}
+    <h1>{cat_meta.get('icon', '')} {title}</h1>
+    <p style="font-size:18px;color:#6B7280;margin-bottom:32px">Select your country to get accurate calculations based on local tax rates and regulations.</p>
+
+    <div class="tools-grid">
+{country_cards}    </div>
+
+    {related_html}
+  </div>
+</div>
+
+{footer}
+</body>
+</html>"""
+
+        out_dir = OUTPUT_DIR / slug
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "index.html").write_text(html, encoding="utf-8")
+        built += 1
+        log(f"  Built country index: {slug} ({len(countries)} countries)")
+
+    log(f"Built {built} country calculator index pages", "SUCCESS")
+    return built
+
+
 def build_tools_index():
     """Build the /tools/index.html landing page."""
     registry = load_tool_registry()
@@ -661,6 +751,7 @@ def main():
         rebuild_html(count=args.count)
 
     if args.build_index:
+        build_country_calculator_indexes()
         build_tools_index()
 
 
