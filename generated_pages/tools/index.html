@@ -384,6 +384,41 @@ a:hover { text-decoration: underline; }
     color: #6B7280;
     line-height: 1.5;
 }
+.tool-index-card-country {
+    cursor: default;
+}
+.tool-index-card-country:hover {
+    transform: none;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.tool-index-card-country h3 a {
+    color: #1F2937;
+    text-decoration: none;
+}
+.tool-index-card-country h3 a:hover {
+    color: #1B4D8E;
+    text-decoration: underline;
+}
+.tool-country-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+}
+.tool-country-tag {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #F3F4F6;
+    color: #4B5563;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+}
+.tool-country-tag:hover {
+    background: #E8F0FE;
+    color: #1B4D8E;
+    text-decoration: none;
+}
 
 @media (max-width: 900px) {
     .tool-wrapper {
@@ -491,31 +526,31 @@ a:hover { text-decoration: underline; }
         <h3>VAT Calculator</h3>
         <p>Free VAT calculator. Quickly add or remove VAT at any rate. Works for UK VAT (20%), EU VAT, and any custom tax rate.</p>
       </a>
-      <a href="/tools/income-tax-calculator/" class="tool-index-card" style="--cat-color:#DC2626">
-        <h3>Income Tax Calculator</h3>
+      <div class="tool-index-card tool-index-card-country" style="--cat-color:#DC2626">
+        <h3><a href="/tools/income-tax-calculator/">Income Tax Calculator</a></h3>
         <p>Available for 12 countries</p>
-        <div style="margin-top:8px"><a href="/tools/income-tax-calculator/united-states/" style="font-size:12px;color:#6B7280;margin-right:8px">United States</a> <a href="/tools/income-tax-calculator/united-kingdom/" style="font-size:12px;color:#6B7280;margin-right:8px">United Kingdom</a> <a href="/tools/income-tax-calculator/canada/" style="font-size:12px;color:#6B7280;margin-right:8px">Canada</a> <a href="/tools/income-tax-calculator/australia/" style="font-size:12px;color:#6B7280;margin-right:8px">Australia</a> <a href="/tools/income-tax-calculator/india/" style="font-size:12px;color:#6B7280;margin-right:8px">India</a> <a href="/tools/income-tax-calculator/germany/" style="font-size:12px;color:#6B7280;margin-right:8px">Germany</a> </div>
-      </a>
-      <a href="/tools/salary-after-tax-calculator/" class="tool-index-card" style="--cat-color:#DC2626">
-        <h3>Salary After Tax Calculator</h3>
+        <div class="tool-country-tags"><a href="/tools/income-tax-calculator/united-states/" class="tool-country-tag">United States</a> <a href="/tools/income-tax-calculator/united-kingdom/" class="tool-country-tag">United Kingdom</a> <a href="/tools/income-tax-calculator/canada/" class="tool-country-tag">Canada</a> <a href="/tools/income-tax-calculator/australia/" class="tool-country-tag">Australia</a> <a href="/tools/income-tax-calculator/india/" class="tool-country-tag">India</a> <a href="/tools/income-tax-calculator/germany/" class="tool-country-tag">Germany</a> <a href="/tools/income-tax-calculator/france/" class="tool-country-tag">France</a> <a href="/tools/income-tax-calculator/japan/" class="tool-country-tag">Japan</a> <a href="/tools/income-tax-calculator/brazil/" class="tool-country-tag">Brazil</a> <a href="/tools/income-tax-calculator/nigeria/" class="tool-country-tag">Nigeria</a> <a href="/tools/income-tax-calculator/kenya/" class="tool-country-tag">Kenya</a> <a href="/tools/income-tax-calculator/south-africa/" class="tool-country-tag">South Africa</a> </div>
+      </div>
+      <div class="tool-index-card tool-index-card-country" style="--cat-color:#DC2626">
+        <h3><a href="/tools/salary-after-tax-calculator/">Salary After Tax Calculator</a></h3>
         <p>Available for 12 countries</p>
-        <div style="margin-top:8px"><a href="/tools/salary-after-tax-calculator/united-states/" style="font-size:12px;color:#6B7280;margin-right:8px">United States</a> <a href="/tools/salary-after-tax-calculator/united-kingdom/" style="font-size:12px;color:#6B7280;margin-right:8px">United Kingdom</a> <a href="/tools/salary-after-tax-calculator/canada/" style="font-size:12px;color:#6B7280;margin-right:8px">Canada</a> <a href="/tools/salary-after-tax-calculator/australia/" style="font-size:12px;color:#6B7280;margin-right:8px">Australia</a> <a href="/tools/salary-after-tax-calculator/india/" style="font-size:12px;color:#6B7280;margin-right:8px">India</a> <a href="/tools/salary-after-tax-calculator/germany/" style="font-size:12px;color:#6B7280;margin-right:8px">Germany</a> </div>
-      </a>
-      <a href="/tools/capital-gains-tax-calculator/" class="tool-index-card" style="--cat-color:#DC2626">
-        <h3>Capital Gains Tax Calculator</h3>
+        <div class="tool-country-tags"><a href="/tools/salary-after-tax-calculator/united-states/" class="tool-country-tag">United States</a> <a href="/tools/salary-after-tax-calculator/united-kingdom/" class="tool-country-tag">United Kingdom</a> <a href="/tools/salary-after-tax-calculator/canada/" class="tool-country-tag">Canada</a> <a href="/tools/salary-after-tax-calculator/australia/" class="tool-country-tag">Australia</a> <a href="/tools/salary-after-tax-calculator/india/" class="tool-country-tag">India</a> <a href="/tools/salary-after-tax-calculator/germany/" class="tool-country-tag">Germany</a> <a href="/tools/salary-after-tax-calculator/france/" class="tool-country-tag">France</a> <a href="/tools/salary-after-tax-calculator/japan/" class="tool-country-tag">Japan</a> <a href="/tools/salary-after-tax-calculator/brazil/" class="tool-country-tag">Brazil</a> <a href="/tools/salary-after-tax-calculator/nigeria/" class="tool-country-tag">Nigeria</a> <a href="/tools/salary-after-tax-calculator/kenya/" class="tool-country-tag">Kenya</a> <a href="/tools/salary-after-tax-calculator/south-africa/" class="tool-country-tag">South Africa</a> </div>
+      </div>
+      <div class="tool-index-card tool-index-card-country" style="--cat-color:#DC2626">
+        <h3><a href="/tools/capital-gains-tax-calculator/">Capital Gains Tax Calculator</a></h3>
         <p>Available for 12 countries</p>
-        <div style="margin-top:8px"><a href="/tools/capital-gains-tax-calculator/united-states/" style="font-size:12px;color:#6B7280;margin-right:8px">United States</a> <a href="/tools/capital-gains-tax-calculator/united-kingdom/" style="font-size:12px;color:#6B7280;margin-right:8px">United Kingdom</a> <a href="/tools/capital-gains-tax-calculator/canada/" style="font-size:12px;color:#6B7280;margin-right:8px">Canada</a> <a href="/tools/capital-gains-tax-calculator/australia/" style="font-size:12px;color:#6B7280;margin-right:8px">Australia</a> <a href="/tools/capital-gains-tax-calculator/india/" style="font-size:12px;color:#6B7280;margin-right:8px">India</a> <a href="/tools/capital-gains-tax-calculator/germany/" style="font-size:12px;color:#6B7280;margin-right:8px">Germany</a> </div>
-      </a>
-      <a href="/tools/self-employment-tax-calculator/" class="tool-index-card" style="--cat-color:#DC2626">
-        <h3>Self-Employment Tax Calculator</h3>
+        <div class="tool-country-tags"><a href="/tools/capital-gains-tax-calculator/united-states/" class="tool-country-tag">United States</a> <a href="/tools/capital-gains-tax-calculator/united-kingdom/" class="tool-country-tag">United Kingdom</a> <a href="/tools/capital-gains-tax-calculator/canada/" class="tool-country-tag">Canada</a> <a href="/tools/capital-gains-tax-calculator/australia/" class="tool-country-tag">Australia</a> <a href="/tools/capital-gains-tax-calculator/india/" class="tool-country-tag">India</a> <a href="/tools/capital-gains-tax-calculator/germany/" class="tool-country-tag">Germany</a> <a href="/tools/capital-gains-tax-calculator/france/" class="tool-country-tag">France</a> <a href="/tools/capital-gains-tax-calculator/japan/" class="tool-country-tag">Japan</a> <a href="/tools/capital-gains-tax-calculator/brazil/" class="tool-country-tag">Brazil</a> <a href="/tools/capital-gains-tax-calculator/nigeria/" class="tool-country-tag">Nigeria</a> <a href="/tools/capital-gains-tax-calculator/kenya/" class="tool-country-tag">Kenya</a> <a href="/tools/capital-gains-tax-calculator/south-africa/" class="tool-country-tag">South Africa</a> </div>
+      </div>
+      <div class="tool-index-card tool-index-card-country" style="--cat-color:#DC2626">
+        <h3><a href="/tools/self-employment-tax-calculator/">Self-Employment Tax Calculator</a></h3>
         <p>Available for 12 countries</p>
-        <div style="margin-top:8px"><a href="/tools/self-employment-tax-calculator/united-states/" style="font-size:12px;color:#6B7280;margin-right:8px">United States</a> <a href="/tools/self-employment-tax-calculator/united-kingdom/" style="font-size:12px;color:#6B7280;margin-right:8px">United Kingdom</a> <a href="/tools/self-employment-tax-calculator/canada/" style="font-size:12px;color:#6B7280;margin-right:8px">Canada</a> <a href="/tools/self-employment-tax-calculator/australia/" style="font-size:12px;color:#6B7280;margin-right:8px">Australia</a> <a href="/tools/self-employment-tax-calculator/india/" style="font-size:12px;color:#6B7280;margin-right:8px">India</a> <a href="/tools/self-employment-tax-calculator/germany/" style="font-size:12px;color:#6B7280;margin-right:8px">Germany</a> </div>
-      </a>
-      <a href="/tools/vat-sales-tax-calculator/" class="tool-index-card" style="--cat-color:#DC2626">
-        <h3>VAT/Sales Tax Calculator</h3>
+        <div class="tool-country-tags"><a href="/tools/self-employment-tax-calculator/united-states/" class="tool-country-tag">United States</a> <a href="/tools/self-employment-tax-calculator/united-kingdom/" class="tool-country-tag">United Kingdom</a> <a href="/tools/self-employment-tax-calculator/canada/" class="tool-country-tag">Canada</a> <a href="/tools/self-employment-tax-calculator/australia/" class="tool-country-tag">Australia</a> <a href="/tools/self-employment-tax-calculator/india/" class="tool-country-tag">India</a> <a href="/tools/self-employment-tax-calculator/germany/" class="tool-country-tag">Germany</a> <a href="/tools/self-employment-tax-calculator/france/" class="tool-country-tag">France</a> <a href="/tools/self-employment-tax-calculator/japan/" class="tool-country-tag">Japan</a> <a href="/tools/self-employment-tax-calculator/brazil/" class="tool-country-tag">Brazil</a> <a href="/tools/self-employment-tax-calculator/nigeria/" class="tool-country-tag">Nigeria</a> <a href="/tools/self-employment-tax-calculator/kenya/" class="tool-country-tag">Kenya</a> <a href="/tools/self-employment-tax-calculator/south-africa/" class="tool-country-tag">South Africa</a> </div>
+      </div>
+      <div class="tool-index-card tool-index-card-country" style="--cat-color:#DC2626">
+        <h3><a href="/tools/vat-sales-tax-calculator/">VAT/Sales Tax Calculator</a></h3>
         <p>Available for 12 countries</p>
-        <div style="margin-top:8px"><a href="/tools/vat-sales-tax-calculator/united-states/" style="font-size:12px;color:#6B7280;margin-right:8px">United States</a> <a href="/tools/vat-sales-tax-calculator/united-kingdom/" style="font-size:12px;color:#6B7280;margin-right:8px">United Kingdom</a> <a href="/tools/vat-sales-tax-calculator/canada/" style="font-size:12px;color:#6B7280;margin-right:8px">Canada</a> <a href="/tools/vat-sales-tax-calculator/australia/" style="font-size:12px;color:#6B7280;margin-right:8px">Australia</a> <a href="/tools/vat-sales-tax-calculator/india/" style="font-size:12px;color:#6B7280;margin-right:8px">India</a> <a href="/tools/vat-sales-tax-calculator/germany/" style="font-size:12px;color:#6B7280;margin-right:8px">Germany</a> </div>
-      </a>
+        <div class="tool-country-tags"><a href="/tools/vat-sales-tax-calculator/united-states/" class="tool-country-tag">United States</a> <a href="/tools/vat-sales-tax-calculator/united-kingdom/" class="tool-country-tag">United Kingdom</a> <a href="/tools/vat-sales-tax-calculator/canada/" class="tool-country-tag">Canada</a> <a href="/tools/vat-sales-tax-calculator/australia/" class="tool-country-tag">Australia</a> <a href="/tools/vat-sales-tax-calculator/india/" class="tool-country-tag">India</a> <a href="/tools/vat-sales-tax-calculator/germany/" class="tool-country-tag">Germany</a> <a href="/tools/vat-sales-tax-calculator/france/" class="tool-country-tag">France</a> <a href="/tools/vat-sales-tax-calculator/japan/" class="tool-country-tag">Japan</a> <a href="/tools/vat-sales-tax-calculator/brazil/" class="tool-country-tag">Brazil</a> <a href="/tools/vat-sales-tax-calculator/nigeria/" class="tool-country-tag">Nigeria</a> <a href="/tools/vat-sales-tax-calculator/kenya/" class="tool-country-tag">Kenya</a> <a href="/tools/vat-sales-tax-calculator/south-africa/" class="tool-country-tag">South Africa</a> </div>
+      </div>
       </div>
     </div>
     <div class="tools-category">

@@ -1111,6 +1111,41 @@ TOOL_CSS = """
     color: #6B7280;
     line-height: 1.5;
 }
+.tool-index-card-country {
+    cursor: default;
+}
+.tool-index-card-country:hover {
+    transform: none;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.tool-index-card-country h3 a {
+    color: #1F2937;
+    text-decoration: none;
+}
+.tool-index-card-country h3 a:hover {
+    color: #1B4D8E;
+    text-decoration: underline;
+}
+.tool-country-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+}
+.tool-country-tag {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #F3F4F6;
+    color: #4B5563;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+}
+.tool-country-tag:hover {
+    background: #E8F0FE;
+    color: #1B4D8E;
+    text-decoration: none;
+}
 
 @media (max-width: 900px) {
     .tool-wrapper {

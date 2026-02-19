@@ -637,16 +637,16 @@ def build_tools_index():
             color = TOOL_CATEGORY_COLORS.get(cat_slug, "#059669")
 
             if tool.get("is_country"):
-                # Country calculator card with sub-links
+                # Country calculator card — use div (not <a>) to allow nested links
                 country_links = ""
-                for cs in tool.get("countries", [])[:6]:
+                for cs in tool.get("countries", []):
                     cn = cs.replace("-", " ").title()
-                    country_links += f'<a href="/tools/{slug}/{cs}/" style="font-size:12px;color:#6B7280;margin-right:8px">{cn}</a> '
-                cards += f"""      <a href="/tools/{slug}/" class="tool-index-card" style="--cat-color:{color}">
-        <h3>{title}</h3>
+                    country_links += f'<a href="/tools/{slug}/{cs}/" class="tool-country-tag">{cn}</a> '
+                cards += f"""      <div class="tool-index-card tool-index-card-country" style="--cat-color:{color}">
+        <h3><a href="/tools/{slug}/">{title}</a></h3>
         <p>{desc}</p>
-        <div style="margin-top:8px">{country_links}</div>
-      </a>
+        <div class="tool-country-tags">{country_links}</div>
+      </div>
 """
             else:
                 cards += f"""      <a href="/tools/{slug}/" class="tool-index-card" style="--cat-color:{color}">
