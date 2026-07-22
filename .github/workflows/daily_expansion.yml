@@ -1,9 +1,14 @@
 name: Daily Domain Expansion
 
 on:
-  schedule:
-    # Run daily at 3 AM UTC
-    - cron: '0 3 * * *'
+  # PAUSED 2026-07-22: 360library.com has 0 pages indexed by Google and 5 clicks
+  # in its lifetime (0.16% CTR). Daily auto-generation was spending LLM API credits
+  # to publish YMYL (finance/health) AI prose into a site Google won't index.
+  # Re-enable by uncommenting the schedule ONLY after a real strategy change;
+  # manual runs still work via workflow_dispatch.
+  # schedule:
+  #   # Run daily at 3 AM UTC
+  #   - cron: '0 3 * * *'
   workflow_dispatch:
     inputs:
       force_domain:
