@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kenya PAYE Income Tax Calculator (2026) — KRA Bands &amp; Personal Relief</title>
+<meta name="description" content="Calculate your Kenya PAYE income tax for 2026 with the current KRA bands (10% / 25% / 30% / 32.5% / 35%), personal relief and insurance relief. See a band-by-band breakdown of exactly where your tax comes from.">
+<link rel="canonical" href="https://example.com/kenya/income-tax-calculator/">
+<style>
+:root{
+  --paper:#F6F4EF; --surface:#FFFFFF; --ink:#1B1A16; --muted:#6A6F67;
+  --line:#E5E1D8; --accent:#1E6B54; --accent-ink:#12513F; --clay:#B4552F;
+  --field:#FCFBF8; --shadow:0 1px 2px rgba(27,26,22,.05),0 8px 24px -12px rgba(27,26,22,.18);
+  /* progressive band heat scale: low rate (green) -> high rate (clay) */
+  --b1:#2E8B6B; --b2:#6C9A4E; --b3:#C29B32; --b4:#C4772F; --b5:#B0492A;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#14140F; --surface:#1E1F19; --ink:#ECEAE1; --muted:#9AA091;
+    --line:#2F3129; --accent:#47A585; --accent-ink:#7FC7AE; --clay:#D57C51;
+    --field:#191A14; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -14px rgba(0,0,0,.6);
+    --b1:#38A17D; --b2:#84A85B; --b3:#D3AB3E; --b4:#D9884A; --b5:#CE6244;
+  }
+}
+:root[data-theme="light"]{
+  --paper:#F6F4EF; --surface:#FFFFFF; --ink:#1B1A16; --muted:#6A6F67; --line:#E5E1D8;
+  --accent:#1E6B54; --accent-ink:#12513F; --clay:#B4552F; --field:#FCFBF8;
+  --shadow:0 1px 2px rgba(27,26,22,.05),0 8px 24px -12px rgba(27,26,22,.18);
+  --b1:#2E8B6B; --b2:#6C9A4E; --b3:#C29B32; --b4:#C4772F; --b5:#B0492A;
+}
+:root[data-theme="dark"]{
+  --paper:#14140F; --surface:#1E1F19; --ink:#ECEAE1; --muted:#9AA091; --line:#2F3129;
+  --accent:#47A585; --accent-ink:#7FC7AE; --clay:#D57C51; --field:#191A14;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -14px rgba(0,0,0,.6);
+  --b1:#38A17D; --b2:#84A85B; --b3:#D3AB3E; --b4:#D9884A; --b5:#CE6244;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px; margin:0 auto; padding:28px 20px 80px}
+.serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif}
+.num{font-variant-numeric:tabular-nums; font-feature-settings:"tnum" 1}
+.eyebrow{
+  font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent-ink);
+  font-weight:600; margin:0 0 10px; display:flex; gap:8px; align-items:center; flex-wrap:wrap;
+}
+.eyebrow .dot{width:4px;height:4px;border-radius:50%;background:currentColor;opacity:.5}
+h1{
+  font-size:clamp(27px,5vw,38px); line-height:1.12; margin:0 0 12px; font-weight:600;
+  letter-spacing:-.01em; text-wrap:balance;
+}
+.lede{font-size:17px; color:var(--muted); margin:0 0 26px; max-width:60ch}
+.theme-btn{
+  position:absolute; top:20px; right:20px; background:var(--surface); color:var(--muted);
+  border:1px solid var(--line); border-radius:999px; padding:7px 14px; font:inherit; font-size:13px;
+  cursor:pointer;
+}
+.theme-btn:hover{color:var(--ink)}
+
+.card{
+  background:var(--surface); border:1px solid var(--line); border-radius:16px;
+  box-shadow:var(--shadow); overflow:hidden;
+}
+.calc{display:grid; grid-template-columns:1fr; gap:0}
+@media(min-width:640px){.calc{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr)}}
+.inputs{padding:24px 22px; border-bottom:1px solid var(--line)}
+@media(min-width:640px){.inputs{border-bottom:none; border-right:1px solid var(--line)}}
+.result{padding:24px 22px; background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 6%,var(--surface)),var(--surface))}
+
+.field{margin:0 0 16px}
+.field:last-child{margin-bottom:0}
+label{display:block; font-size:13px; font-weight:600; margin:0 0 6px; color:var(--ink)}
+.hint{font-weight:400; color:var(--muted); font-size:12px}
+.control{
+  display:flex; align-items:stretch; border:1px solid var(--line); border-radius:10px;
+  background:var(--field); overflow:hidden; transition:border-color .15s, box-shadow .15s;
+}
+.control:focus-within{border-color:var(--accent); box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+.control .prefix{display:flex; align-items:center; padding:0 12px; color:var(--muted); font-size:14px; border-right:1px solid var(--line); background:color-mix(in srgb,var(--ink) 3%,transparent)}
+.control input{
+  border:0; background:transparent; color:var(--ink); font:inherit; font-size:16px;
+  padding:11px 12px; width:100%; outline:none;
+}
+.control input.num{font-weight:600}
+.seg{display:inline-flex; background:var(--field); border:1px solid var(--line); border-radius:10px; padding:3px; gap:2px}
+.seg button{
+  border:0; background:transparent; color:var(--muted); font:inherit; font-size:13px; font-weight:600;
+  padding:7px 14px; border-radius:7px; cursor:pointer;
+}
+.seg button[aria-pressed="true"]{background:var(--accent); color:#fff}
+:root[data-theme="dark"] .seg button[aria-pressed="true"]{color:#0d130f}
+@media (prefers-color-scheme:dark){.seg button[aria-pressed="true"]{color:#0d130f}}
+:root[data-theme="light"] .seg button[aria-pressed="true"]{color:#fff}
+details.adv{margin-top:16px; border-top:1px dashed var(--line); padding-top:14px}
+details.adv>summary{cursor:pointer; font-size:13px; font-weight:600; color:var(--accent-ink); list-style:none}
+details.adv>summary::-webkit-details-marker{display:none}
+details.adv>summary::before{content:"+ "; }
+details.adv[open]>summary::before{content:"– "}
+details.adv .field{margin-top:14px}
+
+.result .rlabel{font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0}
+.big{font-size:clamp(34px,8vw,46px); font-weight:700; letter-spacing:-.02em; line-height:1; margin:6px 0 2px}
+.sub{color:var(--muted); font-size:14px; margin:0}
+.pill{display:inline-flex; align-items:center; gap:6px; margin-top:14px; background:color-mix(in srgb,var(--accent) 12%,transparent); color:var(--accent-ink); border-radius:999px; padding:5px 12px; font-size:13px; font-weight:600}
+
+.bar{display:flex; height:14px; border-radius:7px; overflow:hidden; margin:20px 0 6px; background:color-mix(in srgb,var(--ink) 6%,transparent)}
+.bar span{display:block; height:100%}
+.legend{display:flex; flex-wrap:wrap; gap:4px 14px; font-size:12px; color:var(--muted)}
+.legend .k{display:inline-flex; align-items:center; gap:6px}
+.legend .sw{width:9px;height:9px;border-radius:2px;display:inline-block}
+
+.break{margin:18px 0 0; width:100%; border-collapse:collapse; font-size:13.5px}
+.break th,.break td{text-align:right; padding:7px 4px; border-bottom:1px solid var(--line)}
+.break th:first-child,.break td:first-child{text-align:left}
+.break thead th{font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); font-weight:600}
+.break .band td:first-child{display:flex; align-items:center; gap:8px}
+.break tfoot td{font-weight:700; border-bottom:none; padding-top:10px}
+.break .relief td{color:var(--accent-ink)}
+
+section.doc{margin-top:44px}
+section.doc h2{font-size:22px; margin:34px 0 12px; font-weight:600; letter-spacing:-.01em}
+section.doc h2:first-of-type{margin-top:0}
+section.doc p{margin:0 0 14px; max-width:65ch}
+.tbl{width:100%; overflow-x:auto}
+table.bands{width:100%; border-collapse:collapse; font-size:14px; min-width:420px}
+table.bands th,table.bands td{padding:9px 10px; border-bottom:1px solid var(--line); text-align:right}
+table.bands th:first-child,table.bands td:first-child{text-align:left}
+table.bands thead th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.note{background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:10px; padding:14px 16px; font-size:14px; color:var(--muted); margin:16px 0}
+.note strong{color:var(--ink)}
+.updated{display:inline-flex; gap:8px; align-items:center; font-size:12.5px; color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:5px 12px}
+.updated b{color:var(--accent-ink); font-weight:600}
+.faq details{border-bottom:1px solid var(--line); padding:4px 0}
+.faq summary{cursor:pointer; font-weight:600; padding:10px 0; list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+"; float:right; color:var(--muted)}
+.faq details[open] summary::after{content:"–"}
+.faq p{padding:0 0 12px; color:var(--muted)}
+.src{font-size:13px; color:var(--muted)}
+.src a{color:var(--accent-ink)}
+footer{margin-top:40px; padding-top:18px; border-top:1px solid var(--line); font-size:12.5px; color:var(--muted)}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px}
+</style>
+</head>
+<body>
+<button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle light or dark theme">Theme</button>
+<main class="wrap">
+  <p class="eyebrow">Kenya <span class="dot"></span> KRA PAYE <span class="dot"></span> Tax year 2026</p>
+  <h1 class="serif">Kenya PAYE Income Tax Calculator</h1>
+  <p class="lede">Enter your gross pay to see your PAYE income tax on the current KRA bands — and exactly which band each shilling is taxed in. Figures reflect the Finance Act 2023 rates in force for 2026.</p>
+
+  <div class="card">
+    <div class="calc">
+      <div class="inputs">
+        <div class="field">
+          <label for="gross">Gross pay <span class="hint">before tax</span></label>
+          <div class="control">
+            <span class="prefix">KES</span>
+            <input id="gross" class="num" inputmode="numeric" value="50,000" autocomplete="off" aria-describedby="periodLabel">
+          </div>
+        </div>
+        <div class="field">
+          <label id="periodLabel">Pay period</label>
+          <div class="seg" role="group" aria-label="Pay period">
+            <button type="button" data-period="month" aria-pressed="true">Monthly</button>
+            <button type="button" data-period="year" aria-pressed="false">Annual</button>
+          </div>
+        </div>
+        <details class="adv">
+          <summary>Add pension &amp; insurance relief</summary>
+          <div class="field">
+            <label for="deduct">Pre-tax deductions <span class="hint">pension / NSSF, per period</span></label>
+            <div class="control">
+              <span class="prefix">KES</span>
+              <input id="deduct" class="num" inputmode="numeric" value="0" autocomplete="off">
+            </div>
+          </div>
+          <div class="field">
+            <label for="ins">Life/health insurance premium <span class="hint">per period · 15% relief, capped</span></label>
+            <div class="control">
+              <span class="prefix">KES</span>
+              <input id="ins" class="num" inputmode="numeric" value="0" autocomplete="off">
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <div class="result" aria-live="polite">
+        <p class="rlabel">PAYE income tax</p>
+        <p class="big num" id="payeMonthly">KES 7,383</p>
+        <p class="sub"><span class="num" id="payeAnnual">KES 88,600</span> per year</p>
+        <span class="pill">Effective rate <span class="num" id="effRate">14.8%</span></span>
+
+        <div class="bar" id="bar" role="img" aria-label="Share of income taxed in each band"></div>
+        <div class="legend" id="legend"></div>
+
+        <table class="break">
+          <thead><tr><th>Band</th><th>Income in band</th><th>Tax</th></tr></thead>
+          <tbody id="rows"></tbody>
+          <tfoot>
+            <tr class="relief"><td>Less personal relief</td><td></td><td class="num" id="reliefCell">−2,400</td></tr>
+            <tr class="relief" id="insReliefRow" hidden><td>Less insurance relief</td><td></td><td class="num" id="insReliefCell">−0</td></tr>
+            <tr><td>Net PAYE payable</td><td></td><td class="num" id="netCell">7,383</td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <p style="margin:16px 2px 0"><span class="updated">Rates <b>verified for 2026</b> · Finance Act 2023 bands · last checked 22 Jul 2026</span></p>
+
+  <section class="doc">
+    <h2 class="serif">Kenya PAYE tax bands for 2026</h2>
+    <p>Kenya taxes employment income (PAYE) progressively: each band's rate applies only to the income that falls within it, not to your whole salary. After the tax is worked out, every resident employee subtracts a flat <strong>personal relief of KES 2,400 a month</strong> (KES 28,800 a year).</p>
+    <div class="tbl">
+      <table class="bands">
+        <thead><tr><th>Monthly income (KES)</th><th>Annual (KES)</th><th>Rate</th></tr></thead>
+        <tbody class="num">
+          <tr><td>0 – 24,000</td><td>0 – 288,000</td><td>10%</td></tr>
+          <tr><td>24,001 – 32,333</td><td>288,001 – 388,000</td><td>25%</td></tr>
+          <tr><td>32,334 – 500,000</td><td>388,001 – 6,000,000</td><td>30%</td></tr>
+          <tr><td>500,001 – 800,000</td><td>6,000,001 – 9,600,000</td><td>32.5%</td></tr>
+          <tr><td>Above 800,000</td><td>Above 9,600,000</td><td>35%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><strong>Personal relief:</strong> KES 2,400/month. <strong>Insurance relief:</strong> 15% of life or health insurance premiums, up to KES 5,000/month (KES 60,000/year). If your calculated tax is below the relief, your PAYE is zero — there is no negative refund through payroll.</div>
+
+    <h2 class="serif">Worked example — KES 50,000 a month</h2>
+    <p>A gross salary of KES 50,000/month is taxed band by band:</p>
+    <div class="tbl">
+      <table class="bands num">
+        <thead><tr><th>Band</th><th>Income taxed</th><th>Rate</th><th>Tax</th></tr></thead>
+        <tbody>
+          <tr><td>10%</td><td>24,000</td><td>10%</td><td>2,400.00</td></tr>
+          <tr><td>25%</td><td>8,333</td><td>25%</td><td>2,083.25</td></tr>
+          <tr><td>30%</td><td>17,667</td><td>30%</td><td>5,300.10</td></tr>
+          <tr><td>Gross PAYE</td><td></td><td></td><td>9,783.35</td></tr>
+          <tr><td>Less personal relief</td><td></td><td></td><td>−2,400.00</td></tr>
+          <tr><td><strong>Net PAYE</strong></td><td></td><td></td><td><strong>7,383.35</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="serif">Questions</h2>
+    <div class="faq">
+      <details><summary>Is this my full take-home pay?</summary><p>No — this is your <strong>PAYE income tax</strong> only. Your actual net salary is also reduced by statutory deductions: NSSF, the Social Health Insurance Fund (SHIF, 2.75% of gross), and the Affordable Housing Levy (1.5% of gross). Add those to get take-home pay. This tool isolates the income-tax portion so you can see the bands clearly.</p></details>
+      <details><summary>What is personal relief?</summary><p>A flat KES 2,400 per month (KES 28,800 per year) that every resident employee subtracts from their calculated PAYE. It is a credit against tax, not a deduction from income, which is why low earners pay no PAYE at all.</p></details>
+      <details><summary>How does insurance relief work?</summary><p>If you pay for qualifying life or health insurance, you get relief worth 15% of the premium, capped at KES 5,000/month (KES 60,000/year). Enter your premium under "Add pension &amp; insurance relief" to include it.</p></details>
+      <details><summary>Do the bands really jump at 500,000 and 800,000?</summary><p>Yes. The Finance Act 2023 added a 32.5% band on monthly income between KES 500,001 and 800,000, and a 35% band above KES 800,000. Some older calculators still show only four bands (35% above 500,000) — that is out of date and overstates tax for high earners.</p></details>
+    </div>
+
+    <h2 class="serif">Sources</h2>
+    <p class="src">Bands and reliefs verified against the Kenya Revenue Authority PAYE schedule and the Finance Act 2023. Always confirm your own position with the <a href="https://www.kra.go.ke/" rel="nofollow noopener">Kenya Revenue Authority</a> or a licensed tax adviser before making decisions.</p>
+  </section>
+
+  <footer>
+    This calculator computes Kenya PAYE income tax for the 2026 tax year and is provided for general information only — it is not tax advice. Verify statutory deductions (NSSF, SHIF, Housing Levy) separately for full take-home pay.
+  </footer>
+</main>
+
+<script>
+const BANDS=[ // monthly cumulative thresholds
+  {upTo:24000,   rate:0.10, key:'b1', label:'10%'},
+  {upTo:32333,   rate:0.25, key:'b2', label:'25%'},
+  {upTo:500000,  rate:0.30, key:'b3', label:'30%'},
+  {upTo:800000,  rate:0.325,key:'b4', label:'32.5%'},
+  {upTo:Infinity,rate:0.35, key:'b5', label:'35%'},
+];
+const PERSONAL_RELIEF=2400, INS_RATE=0.15, INS_CAP=5000;
+
+const el=id=>document.getElementById(id);
+let period='month';
+
+function parseNum(v){const n=parseFloat(String(v).replace(/[^0-9.]/g,''));return isNaN(n)?0:n;}
+function fmt(n){return n.toLocaleString('en-KE',{maximumFractionDigits:0});}
+function fmt2(n){return n.toLocaleString('en-KE',{minimumFractionDigits:0,maximumFractionDigits:0});}
+
+function compute(taxableMonthly, insMonthly){
+  let gross=0, lower=0; const slices=[];
+  for(const b of BANDS){
+    if(taxableMonthly>lower){
+      const amt=Math.min(taxableMonthly,b.upTo)-lower;
+      const tax=amt*b.rate;
+      gross+=tax;
+      slices.push({key:b.key,label:b.label,amount:amt,tax:tax});
+      lower=b.upTo;
+    } else break;
+  }
+  const insRelief=Math.min(insMonthly*INS_RATE, INS_CAP);
+  const net=Math.max(0, gross-PERSONAL_RELIEF-insRelief);
+  return {gross,insRelief,net,slices};
+}
+
+function render(){
+  const grossPer=parseNum(el('gross').value);
+  const deductPer=parseNum(el('deduct').value);
+  const insPer=parseNum(el('ins').value);
+  const div=period==='year'?12:1;
+  const grossM=grossPer/div, deductM=deductPer/div, insM=insPer/div;
+  const taxableM=Math.max(0, grossM-deductM);
+  const r=compute(taxableM, insM);
+
+  el('payeMonthly').textContent='KES '+fmt(r.net);
+  el('payeAnnual').textContent='KES '+fmt(r.net*12);
+  el('effRate').textContent=(grossM>0? (r.net/grossM*100):0).toFixed(1)+'%';
+
+  // stacked bar (share of gross monthly taxed in each band)
+  const bar=el('bar'), legend=el('legend'); bar.innerHTML=''; legend.innerHTML='';
+  const base=Math.max(grossM, taxableM, 1);
+  r.slices.forEach(s=>{
+    const seg=document.createElement('span');
+    seg.style.width=(s.amount/base*100)+'%';
+    seg.style.background='var(--'+s.key+')';
+    seg.title=s.label+' band: KES '+fmt(s.amount);
+    bar.appendChild(seg);
+    const k=document.createElement('span'); k.className='k';
+    k.innerHTML='<span class="sw" style="background:var(--'+s.key+')"></span>'+s.label;
+    legend.appendChild(k);
+  });
+  const untaxed=Math.max(0, grossM-taxableM);
+  if(untaxed>0.5){const seg=document.createElement('span');seg.style.width=(untaxed/base*100)+'%';seg.style.background='color-mix(in srgb,var(--ink) 12%,transparent)';seg.title='Pre-tax deductions';bar.appendChild(seg);}
+
+  // breakdown rows (in selected period)
+  const rows=el('rows'); rows.innerHTML='';
+  r.slices.forEach(s=>{
+    const tr=document.createElement('tr'); tr.className='band';
+    tr.innerHTML='<td><span class="sw" style="width:9px;height:9px;border-radius:2px;display:inline-block;background:var(--'+s.key+')"></span>'+s.label+'</td>'+
+      '<td class="num">'+fmt(s.amount*div)+'</td><td class="num">'+fmt(s.tax*div)+'</td>';
+    rows.appendChild(tr);
+  });
+  el('reliefCell').textContent='−'+fmt(PERSONAL_RELIEF*div);
+  const insRow=el('insReliefRow');
+  if(r.insRelief>0){insRow.hidden=false; el('insReliefCell').textContent='−'+fmt(r.insRelief*div);}
+  else insRow.hidden=true;
+  el('netCell').textContent=fmt(r.net*div);
+}
+
+// input formatting + events
+function bindNum(input){
+  input.addEventListener('input',()=>{
+    const raw=input.value.replace(/[^0-9.]/g,'');
+    const parts=raw.split('.');
+    let out=parts[0]?parseInt(parts[0],10).toLocaleString('en-US'):'';
+    if(parts.length>1) out+='.'+parts[1];
+    input.value=out;
+    render();
+  });
+}
+['gross','deduct','ins'].forEach(id=>bindNum(el(id)));
+document.querySelectorAll('.seg button').forEach(b=>{
+  b.addEventListener('click',()=>{
+    period=b.dataset.period;
+    document.querySelectorAll('.seg button').forEach(x=>x.setAttribute('aria-pressed', x===b?'true':'false'));
+    render();
+  });
+});
+
+// theme toggle
+const root=document.documentElement;
+el('themeBtn').addEventListener('click',()=>{
+  const cur=root.getAttribute('data-theme')|| (matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+  root.setAttribute('data-theme', cur==='dark'?'light':'dark');
+});
+
+render();
+</script>
+</body>
+</html>
