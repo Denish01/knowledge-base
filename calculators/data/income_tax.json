@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "tax_type": "income-tax",
+    "generated": "2026-07-23",
+    "note": "All bands stored as ANNUAL taxable-income thresholds with marginal rates (%). Each country's figures are verified against the cited authority on the 'verified' date. This file is the single source of truth — the generator renders pages from it, so accuracy is audited here, not in HTML.",
+    "disclaimer": "General information only, not tax advice. Verify with the named authority or a licensed adviser."
+  },
+  "countries": {
+    "kenya": {
+      "name": "Kenya",
+      "currency": "KES",
+      "symbol": "KSh",
+      "tax_year": "2026",
+      "source": "Kenya Revenue Authority · Finance Act 2023",
+      "source_url": "https://www.kra.go.ke/",
+      "verified": "2026-07-23",
+      "bands": [[288000, 10], [388000, 25], [6000000, 30], [9600000, 32.5], [null, 35]],
+      "credits": [{"label": "Personal relief", "annual": 28800}],
+      "deductions": [{"id": "pension", "label": "Pension / NSSF contributions", "hint": "per period", "kind": "direct"}],
+      "example_annual": 600000,
+      "notes": [
+        "Personal relief of KES 28,800/year is a credit against tax, so PAYE is nil for the lowest earners.",
+        "Insurance relief (15% of qualifying premiums, up to KES 60,000/year) may also apply on top of personal relief.",
+        "This is PAYE income tax only — NSSF, SHIF (2.75% of gross) and the Affordable Housing Levy (1.5%) further reduce take-home pay."
+      ]
+    },
+    "nigeria": {
+      "name": "Nigeria",
+      "currency": "NGN",
+      "symbol": "₦",
+      "tax_year": "2026",
+      "source": "Nigeria Tax Act 2025 (effective 1 January 2026)",
+      "source_url": "https://www.firs.gov.ng/",
+      "verified": "2026-07-23",
+      "bands": [[800000, 0], [3000000, 15], [12000000, 18], [25000000, 21], [50000000, 23], [null, 25]],
+      "credits": [],
+      "deductions": [
+        {"id": "pension", "label": "Pension / NHF contributions", "hint": "per period", "kind": "direct"},
+        {"id": "rent", "label": "Annual rent paid", "hint": "rent relief = 20%, capped ₦500,000", "kind": "rent20cap500k"}
+      ],
+      "example_annual": 6000000,
+      "notes": [
+        "The first ₦800,000 of annual income is tax-free under the 2026 reform (up from ₦300,000).",
+        "Rent relief = 20% of annual rent, capped at ₦500,000/year, deducted from income before tax.",
+        "New progressive bands took effect 1 January 2026, replacing the old Consolidated Relief Allowance system — many older calculators still show the outdated bands."
+      ]
+    },
+    "south_africa": {
+      "name": "South Africa",
+      "currency": "ZAR",
+      "symbol": "R",
+      "tax_year": "2026",
+      "source": "SARS 2026/2027 tax tables",
+      "source_url": "https://www.sars.gov.za/",
+      "verified": "2026-07-23",
+      "bands": [[245100, 18], [383100, 26], [530200, 31], [695800, 36], [887000, 39], [1878600, 41], [null, 45]],
+      "credits": [{"label": "Primary rebate (under 65)", "annual": 17820}],
+      "deductions": [{"id": "pension", "label": "Retirement fund contributions", "hint": "per period", "kind": "direct"}],
+      "example_annual": 500000,
+      "notes": [
+        "The primary rebate of R17,820 is a credit against tax, so you pay no income tax below roughly R99,000/year.",
+        "Rates shown are for taxpayers under 65; those aged 65+ and 75+ receive larger rebates.",
+        "Excludes UIF and medical scheme tax credits, which further adjust the final figure."
+      ]
+    }
+  }
+}
