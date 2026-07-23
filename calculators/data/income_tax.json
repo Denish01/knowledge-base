@@ -62,6 +62,60 @@
         "Rates shown are for taxpayers under 65; those aged 65+ and 75+ receive larger rebates.",
         "Excludes UIF and medical scheme tax credits, which further adjust the final figure."
       ]
+    },
+    "ghana": {
+      "name": "Ghana",
+      "currency": "GHS",
+      "symbol": "GH₵",
+      "tax_year": "2026",
+      "source": "Ghana Revenue Authority (PwC-confirmed bands)",
+      "source_url": "https://gra.gov.gh/",
+      "verified": "2026-07-23",
+      "bands": [[5880, 0], [7200, 5], [8760, 10], [46760, 17.5], [238760, 25], [605000, 30], [null, 35]],
+      "credits": [],
+      "deductions": [{"id": "pension", "label": "SSNIT / pension contributions", "hint": "per period · 5.5% employee", "kind": "direct"}],
+      "example_annual": 60000,
+      "notes": [
+        "The first GHS 5,880/year (about GHS 490/month) is tax-free.",
+        "Bands apply to chargeable income after reliefs — SSNIT (5.5% employee) is deducted before PAYE, so enter it above.",
+        "PAYE income tax only; other statutory contributions are separate."
+      ]
+    },
+    "australia": {
+      "name": "Australia",
+      "currency": "AUD",
+      "symbol": "A$",
+      "tax_year": "2026",
+      "source": "Australian Taxation Office · 2025–26 resident rates",
+      "source_url": "https://www.ato.gov.au/",
+      "verified": "2026-07-23",
+      "bands": [[18200, 0], [45000, 16], [135000, 30], [190000, 37], [null, 45]],
+      "credits": [],
+      "deductions": [{"id": "pension", "label": "Salary sacrifice / deductions", "hint": "per period, pre-tax", "kind": "direct"}],
+      "example_annual": 90000,
+      "notes": [
+        "The tax-free threshold is A$18,200; these are the resident Stage-3 rates, unchanged from 2024–25.",
+        "Excludes the 2% Medicare levy, which is calculated separately on taxable income.",
+        "Excludes offsets such as the low-income tax offset (LITO)."
+      ]
+    },
+    "united_kingdom": {
+      "name": "United Kingdom",
+      "currency": "GBP",
+      "symbol": "£",
+      "tax_year": "2026",
+      "source": "HMRC · 2025–26 (England, Wales & N. Ireland)",
+      "source_url": "https://www.gov.uk/income-tax-rates",
+      "verified": "2026-07-23",
+      "bands": [[12570, 0], [50270, 20], [125140, 40], [null, 45]],
+      "credits": [],
+      "deductions": [{"id": "pension", "label": "Pension contributions", "hint": "per period, pre-tax", "kind": "direct"}],
+      "example_annual": 40000,
+      "notes": [
+        "The £12,570 personal allowance is shown as the 0% band. It tapers above £100,000 (reduced £1 for every £2 over, gone at £125,140), so effective tax is higher between £100k and £125k — verify that range with HMRC.",
+        "Rates are for England, Wales and Northern Ireland; Scotland has its own bands.",
+        "Excludes National Insurance contributions, which are separate."
+      ]
     }
   }
 }
